@@ -1,0 +1,1973 @@
+smiles,compound,flashpoint,source,pure substance,canonical smiles
+OC/C=C/CO,"(2E)-but-2-ene-1,4-diol",401.0,Saldana11,1,OC/C=C/CO
+OC[C@H](O)[C@@H](O)[C@H](O)[C@H](O)CO,"(2R,3R,4R,5S)-hexane-1,2,3,4,5,6-hexol",422.0,Saldana11,1,OC[C@H](O)[C@@H](O)[C@H](O)[C@H](O)CO
+OCC[C@H](O)CO,"(2S)-butane-1,2,4-triol",385.0,Saldana11,1,OCC[C@H](O)CO
+OC/C=C\CO,"(2Z)-but-2-ene-1,4-diol",401.0,Saldana11,1,OC/C=C\CO
+CCCCC(CC)(CO)CO,"2-butyl-2-ethylpropane-1,3-diol",386.0,Saldana11,1,CCCCC(CC)(CO)CO
+CCCCCCC(CO)CCCC,2-butyloctan-1-ol,382.0,Saldana11,1,CCCCCCC(CO)CCCC
+CCC(CC)CO,2-ethylbutan-1-ol,330.0,Saldana11,1,CCC(CC)CO
+CCCCC(CC)CO,2-ethylhexan-1-ol,346.0,Saldana11,1,CCCCC(CC)CO
+CCCC(O)C(CC)CO,"2-ethylhexane-1,3-diol",409.0,Saldana11,1,CCCC(O)C(CC)CO
+CCC(C)CO,2-methylbutan-1-ol,316.0,Saldana11,1,CCC(C)CO
+CCC(C)(C)O,2-methylbutan-2-ol,294.0,Saldana11,1,CCC(C)(C)O
+CCCC(C)CO,2-methylpentan-1-ol,319.0,Saldana11,1,CCCC(C)CO
+CC(O)CC(C)(C)O,"2-methylpentane-2,4-diol",366.0,Saldana11,1,CC(O)CC(C)(C)O
+OCC(C)C,2-methylpropan-1-ol,301.0,Saldana11,1,CC(C)CO
+CC(C)(C)O,2-methylpropan-2-ol,284.0,Saldana11,1,CC(C)(C)O
+OCC(CO)(CO)CO,"2,2-bis(hydroxymethyl)propane-1,3-diol",533.0,Saldana11,1,OCC(CO)(CO)CO
+CCC(CC)(CO)CO,"2,2-diethylpropane-1,3-diol",374.0,Saldana11,1,CCC(CC)(CO)CO
+OCC(C)(C)CO,"2,2-dimethylpropane-1,3-diol",371.0,Saldana11,1,CC(C)(CO)CO
+OCC(C)(C)CC(C)C,"2,2,4-trimethylpentan-1-ol",330.0,Saldana11,1,CC(C)CC(C)(C)CO
+OCC(C)(C)C(O)C(C)C,"2,2,4-trimethylpentane-1,3-diol",383.0,Saldana11,1,CC(C)C(O)C(C)(C)CO
+CC(C)(O)C(C)(C)O,"2,3-dimethylbutane-2,3-diol",350.0,Saldana11,1,CC(C)(O)C(C)(C)O
+OCC(C)C(C)C(C)C,"2,3,4-trimethylpentan-1-ol",333.0,Saldana11,1,CC(C)C(C)C(C)CO
+OCC(C)CC(C)(C)C,"2,4,4-trimethylpentan-1-ol",333.0,Saldana11,1,CC(CO)CC(C)(C)C
+OCCC(C)C,3-methylbutan-1-ol,316.0,Saldana11,1,CC(C)CCO
+CC(O)C(C)C,3-methylbutan-2-ol,299.0,Saldana11,1,CC(C)C(C)O
+CCCCC(C)(O)CC,3-methylheptan-3-ol,327.0,Saldana11,1,CCCCC(C)(O)CC
+OCCC(C)CC,3-methylpentan-1-ol,331.0,Saldana11,1,CCC(C)CCO
+CCC(C)(O)CC,3-methylpentan-3-ol,297.0,Saldana11,1,CCC(C)(O)CC
+OCCC(C)(C)C,"3,3-dimethylbutan-1-ol",321.0,Saldana11,1,CC(C)(C)CCO
+CC(C)CC(C)O,4-methylpentan-2-ol,314.0,Saldana11,1,CC(C)CC(C)O
+CCC(C)CC(O)CC,5-methylheptan-3-ol,327.0,Saldana11,1,CCC(C)CC(O)CC
+OCCCCCCCC(C)C,8-methylnonan-1-ol,378.0,Saldana11,1,CC(C)CCCCCCCO
+CCCCO,butan-1-ol,310.0,Saldana11,1,CCCCO
+CCC(C)O,butan-2-ol,296.0,Saldana11,1,CCC(C)O
+CCC(O)CO,"butane-1,2-diol",363.0,Saldana11,1,CCC(O)CO
+OCCC(C)O,"butane-1,3-diol",382.0,Saldana11,1,CC(O)CCO
+OCCCCO,"butane-1,4-diol",407.0,Saldana11,1,OCCCCO
+CC(O)C(C)O,"butane-2,3-diol",358.0,Saldana11,1,CC(O)C(C)O
+CCCCCCCCCCO,decan-1-ol,378.0,Saldana11,1,CCCCCCCCCCO
+OCCO,"ethane-1,2-diol",383.0,Saldana11,1,OCCO
+CCO,ethanol,286.0,Saldana11,1,CCO
+CCCCCCCO,heptan-1-ol,346.0,Saldana11,1,CCCCCCCO
+CCCCCC(C)O,heptan-2-ol,332.0,Saldana11,1,CCCCCC(C)O
+CCCCCCO,hexan-1-ol,335.0,Saldana11,1,CCCCCCO
+CCCCC(C)O,hexan-2-ol,314.0,Saldana11,1,CCCCC(C)O
+OCCCCC(O)CO,"hexane-1,2,6-triol",471.0,Saldana11,1,OCCCCC(O)CO
+OCCCCCCO,"hexane-1,6-diol",420.0,Saldana11,1,OCCCCCCO
+CC(O)CCC(C)O,"hexane-2,5-diol",374.0,Saldana11,1,CC(O)CCC(C)O
+CO,methanol,284.0,Saldana11,1,CO
+CCCCCCCCCO,nonan-1-ol,353.0,Saldana11,1,CCCCCCCCCO
+CCCCCC(O)C=C,oct-1-en-3-ol,341.0,Saldana11,1,C=CC(O)CCCCC
+CCCCCCCCO,octan-1-ol,354.0,Saldana11,1,CCCCCCCCO
+CCCCCCC(C)O,octan-2-ol,358.0,Saldana11,1,CCCCCCC(C)O
+CCCCCO,pentan-1-ol,330.0,Saldana11,1,CCCCCO
+CCCC(C)O,pentan-2-ol,314.0,Saldana11,1,CCCC(C)O
+CCC(O)CC,pentan-3-ol,313.0,Saldana11,1,CCC(O)CC
+OCCCCCO,"pentane-1,5-diol",402.0,Saldana11,1,OCCCCCO
+CC(O)CC(C)O,"pentane-2,4-diol",374.0,Saldana11,1,CC(O)CC(C)O
+OCC=C,prop-2-en-1-ol,294.0,Saldana11,1,C=CCO
+CCCO,propan-1-ol,298.0,Saldana11,1,CCCO
+CC(C)O,propan-2-ol,285.0,Saldana11,1,CC(C)O
+CCC(O)O,"propane-1,1-diol",372.0,Saldana11,1,CCC(O)O
+OCC(C)O,"propane-1,2-diol",372.0,Saldana11,1,CC(O)CO
+OCC(O)CO,"propane-1,2,3-triol",433.0,Saldana11,1,OCC(O)CO
+OCCCO,"propane-1,3-diol",352.0,Saldana11,1,OCCCO
+CCCCCCCCCCCCCCO,tetradecan-1-ol,418.0,Saldana11,1,CCCCCCCCCCCCCCO
+CCCCCCCCCCCCCO,tridecan-1-ol,394.0,Saldana11,1,CCCCCCCCCCCCCO
+CCCCCCC(C)c1ccccc1,(1-methylheptyl)benzene,373.0,Saldana11,1,CCCCCCC(C)c1ccccc1
+C/C=C/c1ccccc1,(1E)-prop-1-en-1-ylbenzene,325.0,Saldana11,1,C/C=C/c1ccccc1
+C/C=C\c1ccccc1,(1Z)-prop-1-enylbenzene,311.0,Saldana11,1,C/C=C\c1ccccc1
+CCC(C)Cc1ccccc1,(2-methylbutyl)benzene,337.0,Saldana11,1,CCC(C)Cc1ccccc1
+CC(C)(C)Cc1ccccc1,"(2,2-dimethylpropyl)benzene",323.0,Saldana11,1,CC(C)(C)Cc1ccccc1
+CC(C)c1ccccc1C,1-ethyl-2-isopropylbenzene,331.0,Saldana11,1,Cc1ccccc1C(C)C
+CCc1ccccc1C,1-ethyl-2-methylbenzene,312.0,Saldana11,1,CCc1ccccc1C
+CCc1cccc(C)c1C,"1-ethyl-2,3-dimethylbenzene",338.0,Saldana11,1,CCc1cccc(C)c1C
+CCc1ccc(C)cc1C,"1-ethyl-2,4-dimethylbenzene",330.0,Saldana11,1,CCc1ccc(C)cc1C
+CCc1cccc(C)c1,1-ethyl-3-methylbenzene,311.0,Saldana11,1,CCc1cccc(C)c1
+CCc1ccc(C)cc1,1-ethyl-4-methylbenzene,309.0,Saldana11,1,CCc1ccc(C)cc1
+C=Cc1ccccc1C,1-methyl-2-ethenylbenzene,320.0,Saldana11,1,C=Cc1ccccc1C
+Cc1cccc(c1)C(C)C,1-methyl-3-(propan-2-yl)benzene,323.0,Saldana11,1,Cc1cccc(C(C)C)c1
+C=Cc1cccc(C)c1,1-methyl-3-ethenylbenzene,324.0,Saldana11,1,C=Cc1cccc(C)c1
+CCCc1cccc(C)c1,1-methyl-3-propylbenzene,325.0,Saldana11,1,CCCc1cccc(C)c1
+C=Cc1ccc(C)cc1,1-methyl-4-ethenylbenzene,319.0,Saldana11,1,C=Cc1ccc(C)cc1
+CC(c1ccccc1)c1ccccc1,"1,1-diphenylethane",402.0,Saldana11,1,CC(c1ccccc1)c1ccccc1
+CCc1ccccc1CC,"1,2-diethylbenzene",330.0,Saldana11,1,CCc1ccccc1CC
+CCCc1cccc(C)c1C,"1,2-dimethyl-3-propylbenzene",345.0,Saldana11,1,CCCc1cccc(C)c1C
+Cc1ccccc1C,"1,2-dimethylbenzene",290.0,Saldana11,1,Cc1ccccc1C
+c1ccc(cc1)c1ccccc1c1ccccc1,"1,2-diphenylbenzene",436.0,Saldana11,1,c1ccc(-c2ccccc2-c2ccccc2)cc1
+c1ccc(cc1)CCc1ccccc1,"1,2-diphenylethane",402.0,Saldana11,1,c1ccc(CCc2ccccc2)cc1
+Cc1cccc(C)c1C,"1,2,3-trimethylbenzene",317.0,Saldana11,1,Cc1cccc(C)c1C
+Cc1ccc(C)c(C)c1C,"1,2,3,4-tetramethylbenzene",341.0,Saldana11,1,Cc1ccc(C)c(C)c1C
+Cc1cc(C)c(C)c(C)c1,"1,2,3,5-tetramethylbenzene",336.0,Saldana11,1,Cc1cc(C)c(C)c(C)c1
+CCc1ccc(CC)c(CC)c1,"1,2,4-triethylbenzene",353.0,Saldana11,1,CCc1ccc(CC)c(CC)c1
+Cc1ccc(C)c(C)c1,"1,2,4-trimethylbenzene",319.0,Saldana11,1,Cc1ccc(C)c(C)c1
+Cc1cc(C)c(C)cc1C,"1,2,4,5-tetramethylbenzene",328.0,Saldana11,1,Cc1cc(C)c(C)cc1C
+CC(C)c1cccc(c1)C(C)C,"1,3-di(propan-2-yl)benzene",349.0,Saldana11,1,CC(C)c1cccc(C(C)C)c1
+CCc1cccc(CC)c1,"1,3-diethylbenzene",329.0,Saldana11,1,CCc1cccc(CC)c1
+c1ccc(cc1)c1cccc(c1)c1ccccc1,"1,3-diphenylbenzene",464.0,Saldana11,1,c1ccc(-c2cccc(-c3ccccc3)c2)cc1
+Cc1cccc(C)c1,"1,3-xylene",298.0,Saldana11,1,Cc1cccc(C)c1
+CCc1cc(CC)cc(CC)c1,"1,3,5-triethylbenzene",354.0,Saldana11,1,CCc1cc(CC)cc(CC)c1
+CC(C)c1cc(cc(c1)C(C)C)C(C)C,"1,3,5-triisopropylbenzene",360.0,Saldana11,1,CC(C)c1cc(C(C)C)cc(C(C)C)c1
+Cc1cc(C)cc(C)c1,"1,3,5-trimethylbenzene",318.0,Saldana11,1,Cc1cc(C)cc(C)c1
+CCc1ccc(CC)cc1,"1,4-diethylbenzene",329.0,Saldana11,1,CCc1ccc(CC)cc1
+CC(C)c1ccc(cc1)C(C)C,"1,4-diisopropylbenzene",349.0,Saldana11,1,CC(C)c1ccc(C(C)C)cc1
+Cc1ccc(C)cc1,"1,4-dimethylbenzene",298.0,Saldana11,1,Cc1ccc(C)cc1
+c1ccc(cc1)c1ccc(cc1)c1ccccc1,"1,4-diphenylbenzene",480.0,Saldana11,1,c1ccc(-c2ccc(-c3ccccc3)cc2)cc1
+CCc1cc(C)ccc1C,"2-ethyl-1,4-dimethylbenzene",329.0,Saldana11,1,CCc1cc(C)ccc1C
+CCC(C)(C)c1ccccc1,2-phenyl-2-methylbutane,338.0,Saldana11,1,CCC(C)(C)c1ccccc1
+CC(C)(c1ccccc1)c1ccccc1,"2,2-diphenylpropane",383.0,Saldana11,1,CC(C)(c1ccccc1)c1ccccc1
+CCc1ccc(C)c(C)c1,"4-ethyl-1,2-dimethylbenzene",331.0,Saldana11,1,CCc1ccc(C)c(C)c1
+Cc1ccc(cc1)C(C)C,4-isopropyltoluene,320.0,Saldana11,1,Cc1ccc(C(C)C)cc1
+CC(=C)c1ccccc1,alpha-methylstyrene,313.0,Saldana11,1,C=C(C)c1ccccc1
+c1ccccc1,benzene,262.0,Saldana11,1,c1ccccc1
+c1ccc(cc1)c1ccccc1,biphenyl,386.0,Saldana11,1,c1ccc(-c2ccccc2)cc1
+C1CCC(CC1)c1ccccc1,cyclohexylbenzene,372.0,Saldana11,1,c1ccc(C2CCCCC2)cc1
+c1ccc(cc1)Cc1ccccc1,diphenylmethane,403.0,Saldana11,1,c1ccc(Cc2ccccc2)cc1
+C=Cc1ccccc1,ethenylbenzene,305.0,Saldana11,1,C=Cc1ccccc1
+CCc1ccccc1,ethylbenzene,288.0,Saldana11,1,CCc1ccccc1
+c1ccc2CCCc2c1,indane,322.0,Saldana11,1,c1ccc2c(c1)CCC2
+CC(C)Cc1ccccc1,isobutylbenzene,325.0,Saldana11,1,CC(C)Cc1ccccc1
+CC(C)CCc1ccccc1,isopentylbenzene,335.0,Saldana11,1,CC(C)CCc1ccccc1
+CC(C)c1ccccc1,isopropylbenzene,304.0,Saldana11,1,CC(C)c1ccccc1
+CCCCc1ccccc1,n-butylbenzene,323.0,Saldana11,1,CCCCc1ccccc1
+CCCCCCCCCCc1ccccc1,n-decylbenzene,380.0,Saldana11,1,CCCCCCCCCCc1ccccc1
+CCCCCCCCCCCCc1ccccc1,n-dodecylbenzene,414.0,Saldana11,1,CCCCCCCCCCCCc1ccccc1
+CCCCCCCc1ccccc1,n-heptylbenzene,368.0,Saldana11,1,CCCCCCCc1ccccc1
+CCCCCCc1ccccc1,n-hexylbenzene,353.0,Saldana11,1,CCCCCCc1ccccc1
+CCCc1ccccc1,n-propylbenzene,303.0,Saldana11,1,CCCc1ccccc1
+CCCCCCCCCCCc1ccccc1,n-undecylbenzene,417.0,Saldana11,1,CCCCCCCCCCCc1ccccc1
+CCCCCCCCCc1ccccc1,nonylbenzene,372.0,Saldana11,1,CCCCCCCCCc1ccccc1
+CCCCCCCCc1ccccc1,octylbenzene,380.0,Saldana11,1,CCCCCCCCc1ccccc1
+Cc1cc(C)c(C)c(C)c1C,pentamethylbenzene,364.0,Saldana11,1,Cc1cc(C)c(C)c(C)c1C
+CCCCCc1ccccc1,pentylbenzene,338.0,Saldana11,1,CCCCCc1ccccc1
+CCC(C)c1ccccc1,sec-butylbenzene,325.0,Saldana11,1,CCC(C)c1ccccc1
+CC(C)(C)c1ccccc1,tert-butylbenzene,333.0,Saldana11,1,CC(C)(C)c1ccccc1
+C1CCc2ccccc2C1,tetralin,350.0,Saldana11,1,c1ccc2c(c1)CCCC2
+Cc1ccccc1,toluene,277.0,Saldana11,1,Cc1ccccc1
+C[C@@H](O)c1ccccc1,(1R)-1-phenylethan-1-ol,358.0,Saldana11,1,C[C@@H](O)c1ccccc1
+OCc1ccccc1C,(2-methylphenyl)methanol,377.0,Saldana11,1,Cc1ccccc1CO
+OCc1cccc(C)c1,(3-methylphenyl)methanol,378.0,Saldana11,1,Cc1cccc(CO)c1
+OCc1ccc(CO)cc1,[4-(hydroxymethyl)phenyl]methanol,461.0,Saldana11,1,OCc1ccc(CO)cc1
+O=C(OCC1CCC(CC1)COC(=O)c1ccccc1)c1ccccc1,{4-[(benzoyloxy)methyl]cyclohexyl}methyl benzoate,434.0,Saldana11,1,O=C(OCC1CCC(COC(=O)c2ccccc2)CC1)c1ccccc1
+CCC(O)c1ccccc1,1-phenylpropan-1-ol,363.0,Saldana11,1,CCC(O)c1ccccc1
+CC(O)Cc1ccccc1,1-phenylpropan-2-ol,358.0,Saldana11,1,CC(O)Cc1ccccc1
+CCc1ccccc1O,2-ethylphenol,351.0,Saldana11,1,CCc1ccccc1O
+OCc1ccco1,2-furylmethanol,356.0,Saldana11,1,OCc1ccco1
+Cc1ccccc1O,2-methylphenol,354.0,Saldana11,1,Cc1ccccc1O
+OCCc1ccccc1,2-phenylethanol,369.0,Saldana11,1,OCCc1ccccc1
+OCC(C)c1ccccc1,2-phenylpropan-1-ol,366.0,Saldana11,1,CC(CO)c1ccccc1
+CC(C)(O)c1ccccc1,2-phenylpropan-2-ol,360.0,Saldana11,1,CC(C)(O)c1ccccc1
+Cc1cc(c(O)c(c1)C(C)(C)C)C(C)(C)C,"2,6-di-tert-butyl-p-cresol",390.0,Saldana11,1,Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1
+CCc1cccc(O)c1,3-ethylphenol,367.0,Saldana11,1,CCc1cccc(O)c1
+Cc1cccc(O)c1,3-methylphenol,368.0,Saldana11,1,Cc1cccc(O)c1
+OCCCc1ccccc1,3-phenylpropan-1-ol,373.0,Saldana11,1,OCCCc1ccccc1
+CCC(C)(C)c1ccc(O)cc1,4-(2-methylbutan-2-yl)phenol,384.0,Saldana11,1,CCC(C)(C)c1ccc(O)cc1
+Oc1ccc(cc1)C(C)(C)c1ccc(O)cc1,4-[2-(4-hydroxyphenyl)propan-2-yl]phenol,480.0,Saldana11,1,CC(C)(c1ccc(O)cc1)c1ccc(O)cc1
+CCc1ccc(O)cc1,4-ethylphenol,373.0,Saldana11,1,CCc1ccc(O)cc1
+Cc1ccc(O)cc1,4-methylphenol,368.0,Saldana11,1,Cc1ccc(O)cc1
+Oc1ccc(cc1O)C(C)(C)C,"4-tert-butylbenzene-1,2-diol",403.0,Saldana11,1,CC(C)(C)c1ccc(O)c(O)c1
+Oc1ccc(cc1)C(C)(C)C,4-tert-butylphenol,386.0,Saldana11,1,CC(C)(C)c1ccc(O)cc1
+Oc1ccccc1O,"benzene-1,2-diol",400.0,Saldana11,1,Oc1ccccc1O
+Oc1cccc(O)c1,"benzene-1,3-diol",400.0,Saldana11,1,Oc1cccc(O)c1
+Oc1ccc(O)cc1,"benzene-1,4-diol",438.0,Saldana11,1,Oc1ccc(O)cc1
+O=C(OCc1ccccc1)c1ccccc1,benzyl benzoate,418.0,Saldana11,1,O=C(OCc1ccccc1)c1ccccc1
+CC(=O)OCc1ccccc1,benzyl ethanoate,363.0,Saldana11,1,CC(=O)OCc1ccccc1
+O=COCc1ccccc1,benzyl methanoate,355.0,Saldana11,1,O=COCc1ccccc1
+CCCCOC(=O)c1ccccc1,butyl benzoate,379.0,Saldana11,1,CCCCOC(=O)c1ccccc1
+CCCCOC(=O)c1ccccc1C(=O)OCCCC,di-n-butyl phthalate,430.0,Saldana11,1,CCCCOC(=O)c1ccccc1C(=O)OCCCC
+CCCCCCCCCCOC(=O)c1ccccc1C(=O)OCCCCCCCCCC,di-n-decyl phthalate,505.0,Saldana11,1,CCCCCCCCCCOC(=O)c1ccccc1C(=O)OCCCCCCCCCC
+CCCCCCOC(=O)c1ccccc1C(=O)OCCCCCC,di-n-hexyl phthalate,466.0,Saldana11,1,CCCCCCOC(=O)c1ccccc1C(=O)OCCCCCC
+CCCCCCCCCOC(=O)c1ccccc1C(=O)OCCCCCCCCC,di-n-nonyl phthalate,489.0,Saldana11,1,CCCCCCCCCOC(=O)c1ccccc1C(=O)OCCCCCCCCC
+CCOC(=O)c1ccccc1C(=O)OCC,diethyl phthalate,390.0,Saldana11,1,CCOC(=O)c1ccccc1C(=O)OCC
+CC(C)COC(=O)c1ccccc1C(=O)OCC(C)C,diisobutyl phthalate,434.0,Saldana11,1,CC(C)COC(=O)c1ccccc1C(=O)OCC(C)C
+CC(C)CCCCCCCOC(=O)c1ccccc1C(=O)OCCCCCCCC(C)C,diisodecyl phthalate,505.0,Saldana11,1,CC(C)CCCCCCCOC(=O)c1ccccc1C(=O)OCCCCCCCC(C)C
+COC(=O)c1cccc(c1)C(=O)OC,dimethyl isophthalate,411.0,Saldana11,1,COC(=O)c1cccc(C(=O)OC)c1
+COC(=O)c1ccccc1C(=O)OC,dimethyl phthalate,419.0,Saldana11,1,COC(=O)c1ccccc1C(=O)OC
+CCCCC(CC)COC(=O)c1ccccc1C(=O)OCC(CC)CCCC,dioctyl phthalate,489.0,Saldana11,1,CCCCC(CC)COC(=O)c1ccccc1C(=O)OCC(CC)CCCC
+CCOC(=O)c1ccccc1,ethyl benzoate,357.0,Saldana11,1,CCOC(=O)c1ccccc1
+COC(=O)c1ccccc1,methyl benzoate,355.0,Saldana11,1,COC(=O)c1ccccc1
+CCCOC(=O)c1ccccc1,n-propyl benzoate,371.0,Saldana11,1,CCCOC(=O)c1ccccc1
+CCCCCCCCCc1ccccc1O,nonylphenol,411.0,Saldana11,1,CCCCCCCCCc1ccccc1O
+Oc1ccccc1,phenol,353.0,Saldana11,1,Oc1ccccc1
+OCc1ccccc1,phenylmethanol,374.0,Saldana11,1,OCc1ccccc1
+Cc1ccc(O)c(C)c1,"xylen-2,4-ol",368.0,Saldana11,1,Cc1ccc(O)c(C)c1
+Oc1c(C)cccc1C,"xylen-2,6-ol",346.0,Saldana11,1,Cc1cccc(C)c1O
+C[C@H]1CC[C@H](C(C)C)[C@@H](O)C1,"(1R,2S,5R)-5-methyl-2-propan-2-ylcyclohexan-1-ol",366.0,Saldana11,1,CC(C)[C@H]1CC[C@H](C)C[C@@H]1O
+CC1(O)CCCCC1,1-methylcyclohexan-1-ol,338.0,Saldana11,1,CC1(O)CCCCC1
+OCC1CCC=CC1,"1,2,3,6-tetrahydrobenzyl alcohol",346.0,Saldana11,1,OCC1CC=CCC1
+OCC1CCC(CO)CC1,"1,4-cyclohexanedimethanol",434.0,Saldana11,1,OCC1CCC(CO)CC1
+CC1=CCC(CC1)C(C)(C)O,2-(4-methylcyclohex-3-en-1-yl)propan-2-ol,367.0,Saldana11,1,CC1=CCC(C(C)(C)O)CC1
+OCC1CCC(C)CC1,4-methyl-cyclohexane-methanol,354.0,Saldana11,1,CC1CCC(CO)CC1
+CC1CCC(=O)O1,5-methyloxolan-2-one,354.0,Saldana11,1,CC1CCC(=O)O1
+C[C@H]1CCCC[C@H]1O,cis-2-methylcyclohexanol,331.0,Saldana11,1,C[C@H]1CCCC[C@H]1O
+C[C@H]1CCC[C@@H](O)C1,cis-3-methylcyclohexanol,335.0,Saldana11,1,C[C@H]1CCC[C@@H](O)C1
+C[C@@H]1CC[C@H](O)CC1,cis-4-methylcyclohexanol,343.0,Saldana11,1,C[C@H]1CC[C@@H](O)CC1
+OC1CCCCC1,cyclohexanol,341.0,Saldana11,1,OC1CCCCC1
+CC(=O)OC1CCCCC1,cyclohexyl ethanoate,330.0,Saldana11,1,CC(=O)OC1CCCCC1
+O=COC1CCCCC1,cyclohexyl methanoate,324.0,Saldana11,1,O=COC1CCCCC1
+COC(=O)C1CCC(CC1)C(=O)OC,"dimethyl-1,4-cyclohexanedicarboxylate",383.0,Saldana11,1,COC(=O)C1CCC(C(=O)OC)CC1
+O=C1CCCCCO1,oxepan-2-one,382.0,Saldana11,1,O=C1CCCCCO1
+C1COC1=O,oxetan-2-one,343.0,Saldana11,1,O=C1CCO1
+O=C1CCCO1,oxolan-2-one,371.0,Saldana11,1,O=C1CCCO1
+C[C@@H]1CCCC[C@H]1O,trans-2-methylcyclohexanol,331.0,Saldana11,1,C[C@@H]1CCCC[C@H]1O
+C[C@@H]1CCC[C@@H](O)C1,trans-3-methylcyclohexanol,335.0,Saldana11,1,C[C@@H]1CCC[C@@H](O)C1
+CCC(CC)OC(=O)C,1-ethylpropyl ethanoate,318.0,Saldana11,1,CCC(CC)OC(C)=O
+CC(=C)OC(=O)C,1-methylethenyl ethanoate,283.0,Saldana11,1,C=C(C)OC(C)=O
+CC(=O)OC(C)C(C)C,"1,2-dimethylpropyl ethanoate",316.0,Saldana11,1,CC(=O)OC(C)C(C)C
+CCCCC(CC)COC(=O)C,2-ethylhexyl ethanoate,344.0,Saldana11,1,CCCCC(CC)COC(C)=O
+CCCCC(CC)COC(=O)C=C,2-ethylhexyl prop-2-enoate,355.0,Saldana11,1,C=CC(=O)OCC(CC)CCCC
+O=COCC(C)(C)C,"2,2-dimethylpropyl methanoate",311.0,Saldana11,1,CC(C)(C)COC=O
+CCC(=O)OCC(C)(C)C,"2,2-dimethylpropyl propanoate",334.0,Saldana11,1,CCC(=O)OCC(C)(C)C
+C=CCOC(=O)C(=C)C,allyl 2-methylpropenoate,306.0,Saldana11,1,C=CCOC(=O)C(=C)C
+CC(=O)OCC=C,allyl ethanoate,295.0,Saldana11,1,C=CCOC(C)=O
+C=CC(OC(=O)C)OC(=O)C,allylidene diethanoate,355.0,Saldana11,1,C=CC(OC(C)=O)OC(C)=O
+CCCCOC(=O)C(=C)C,butyl 2-methylprop-2-enoate,322.0,Saldana11,1,C=C(C)C(=O)OCCCC
+CCCCOC(=O)CCC,butyl butanoate,326.0,Saldana11,1,CCCCOC(=O)CCC
+CCCCOC(=O)C,butyl ethanoate,295.0,Saldana11,1,CCCCOC(C)=O
+CCCCOC=O,butyl methanoate,291.0,Saldana11,1,CCCCOC=O
+CCCCOC(=O)C=C,butyl prop-2-enoate,312.0,Saldana11,1,C=CC(=O)OCCCC
+CCCCOC(=O)CC,butyl propanoate,305.0,Saldana11,1,CCCCOC(=O)CC
+CCCCCCCCCCOC(=O)C,decyl ethanoate,378.0,Saldana11,1,CCCCCCCCCCOC(C)=O
+CCCCCCCCCCOC=O,decyl methanoate,373.0,Saldana11,1,CCCCCCCCCCOC=O
+CCCCC(CC)COC(=O)CCCCC(=O)OCC(CC)CCCC,di(2-ethylhexyl)hexanedioate,466.0,Saldana11,1,CCCCC(CC)COC(=O)CCCCC(=O)OCC(CC)CCCC
+C=CCOC(=O)/C=C\C(=O)OCC=C,diallyl (2Z)-but-2-enedioate,393.0,Saldana11,1,C=CCOC(=O)/C=C\C(=O)OCC=C
+CCCCOC(=O)/C=C\C(=O)OCCCC,dibutyl (2Z)-but-2-enedioate,413.0,Saldana11,1,CCCCOC(=O)/C=C\C(=O)OCCCC
+CCCCOC(=O)CCCCCCCCC(=O)OCCCC,dibutyl decanedioate,451.0,Saldana11,1,CCCCOC(=O)CCCCCCCCC(=O)OCCCC
+CCOC(=O)/C=C\C(=O)OCC,diethyl (2Z)-but-2-enedioate,366.0,Saldana11,1,CCOC(=O)/C=C\C(=O)OCC
+CCOC(=O)CCC(=O)OCC,diethyl butanedioate,363.0,Saldana11,1,CCOC(=O)CCC(=O)OCC
+CCOC(=O)OCC,diethyl carbonate,298.0,Saldana11,1,CCOC(=O)OCC
+CCOC(=O)C(=O)OCC,diethyl oxalate,395.0,Saldana11,1,CCOC(=O)C(=O)OCC
+CCOC(=O)CC(=O)OCC,diethyl propanedioate,366.0,Saldana11,1,CCOC(=O)CC(=O)OCC
+CCCCCCOC(=O)CCCCC(=O)OCCCCCC,dihexyl hexanedioate,464.0,Saldana11,1,CCCCCCOC(=O)CCCCC(=O)OCCCCCC
+COC(=O)/C=C\C(=O)OC,dimethyl (2Z)-but-2-enedioate,368.0,Saldana11,1,COC(=O)/C=C\C(=O)OC
+COC(=O)CC(=O)OC,dimethyl propanedioate,363.0,Saldana11,1,COC(=O)CC(=O)OC
+CCCCCCCCOC(=O)CCCCC(=O)OCCCCCCCC,dioctyl hexanedioate,452.0,Saldana11,1,CCCCCCCCOC(=O)CCCCC(=O)OCCCCCCCC
+CCCCCCCCCCCCOC(=O)CCC,dodecyl butanoate,433.0,Saldana11,1,CCCCCCCCCCCCOC(=O)CCC
+CCCCCCCCCCCCOC(=O)C,dodecyl ethanoate,389.0,Saldana11,1,CCCCCCCCCCCCOC(C)=O
+CCCCCCCCCCCCOC(=O)CC,dodecyl propanoate,421.0,Saldana11,1,CCCCCCCCCCCCOC(=O)CC
+C=COC(=O)C(C)(C)C,"ethenyl 2,2-dimethylpropanoate",282.0,Saldana11,1,C=COC(=O)C(C)(C)C
+CC(=O)OC=C,ethenyl ethanoate,265.0,Saldana11,1,C=COC(C)=O
+C=COC=O,ethenyl methanoate,256.0,Saldana11,1,C=COC=O
+CCC(=O)OC=C,ethenyl propanoate,274.0,Saldana11,1,C=COC(=O)CC
+CCOC(=O)/C=C/C=C/C,"ethyl (2E,4E)-hexa-2,4-dienoate",342.0,Saldana11,1,C/C=C/C=C/C(=O)OCC
+CCCCC/C=C\C=C\C(=O)OCC,"ethyl (2E,4Z)-deca-2,4-dienoate",386.0,Saldana11,1,CCCCC/C=C\C=C\C(=O)OCC
+CCOC(=O)/C=C/C,ethyl (2E)-but-2-enoate,275.0,Saldana11,1,C/C=C/C(=O)OCC
+CCCCCCC/C=C/C(=O)OCC,ethyl (2E)-dec-2-enoate,364.0,Saldana11,1,CCCCCCC/C=C/C(=O)OCC
+CC/C=C/CC(=O)OCC,ethyl (2E)-hex-3-enoate,332.0,Saldana11,1,CC/C=C/CC(=O)OCC
+CCCCC/C=C/C(=O)OCC,ethyl (2E)-oct-2-enoate,371.0,Saldana11,1,CCCCC/C=C/C(=O)OCC
+CCC/C=C/CCC(=O)OCC,ethyl (2E)-oct-4-enoate,352.0,Saldana11,1,CCC/C=C/CCC(=O)OCC
+CCCCCCCC/C=C\CCCCCCCC(=O)OCC,ethyl (9Z)-octadec-9-enoate,365.0,Saldana11,1,CCCCCCCC/C=C\CCCCCCCC(=O)OCC
+CCOC(=O)C(C)O,ethyl 2-hydroxypropanoate,319.0,Saldana11,1,CCOC(=O)C(C)O
+CCOC(=O)C(=C)C,ethyl 2-methylprop-2-enoate,293.0,Saldana11,1,C=C(C)C(=O)OCC
+CCOC(=O)C=C=C,"ethyl buta-2,3-dienoate",320.0,Saldana11,1,C=C=CC(=O)OCC
+CCCC(=O)OCC,ethyl butanoate,297.0,Saldana11,1,CCCC(=O)OCC
+CCCCCCCCCC(=O)OCC,ethyl decanoate,375.0,Saldana11,1,CCCCCCCCCC(=O)OCC
+CCCCCCCCCCCC(=O)OCC,ethyl dodecanoate,386.0,Saldana11,1,CCCCCCCCCCCC(=O)OCC
+CCCCCCCCCCCCCCCCCCCC(=O)OCC,ethyl eicosanoate,444.0,Saldana11,1,CCCCCCCCCCCCCCCCCCCC(=O)OCC
+CCOC(=O)C,ethyl ethanoate,269.0,Saldana11,1,CCOC(C)=O
+C=CCCCCC(=O)OCC,ethyl hept-6-enoate,352.0,Saldana11,1,C=CCCCCC(=O)OCC
+CCCCCCCCCCCCCCCCC(=O)OCC,ethyl heptadecanoate,428.0,Saldana11,1,CCCCCCCCCCCCCCCCC(=O)OCC
+CCCCCCC(=O)OCC,ethyl heptanoate,347.0,Saldana11,1,CCCCCCC(=O)OCC
+CCCCCCCCCCCCCCCC(=O)OCC,ethyl hexadecanoate,386.0,Saldana11,1,CCCCCCCCCCCCCCCC(=O)OCC
+CCCCCC(=O)OCC,ethyl hexanoate,326.0,Saldana11,1,CCCCCC(=O)OCC
+CCOC(=O)C(C)C,ethyl isobutanoate,287.0,Saldana11,1,CCOC(=O)C(C)C
+CCOC(=O)CC(C)C,ethyl isopentanoate,298.0,Saldana11,1,CCOC(=O)CC(C)C
+CCOC=O,ethyl methanoate,253.0,Saldana11,1,CCOC=O
+CCCCCCCCC(=O)OCC,ethyl nonanoate,367.0,Saldana11,1,CCCCCCCCC(=O)OCC
+CCCCCCCCCCCCCCCCCC(=O)OCC,ethyl octadecanoate,441.0,Saldana11,1,CCCCCCCCCCCCCCCCCC(=O)OCC
+CCCCCCCC(=O)OCC,ethyl octanoate,354.0,Saldana11,1,CCCCCCCC(=O)OCC
+CCCCC(=O)OCC,ethyl pentanoate,307.0,Saldana11,1,CCCCC(=O)OCC
+CCOC(=O)C=C,ethyl prop-2-enoate,282.0,Saldana11,1,C=CC(=O)OCC
+CCOC(=O)CC,ethyl propanoate,285.0,Saldana11,1,CCOC(=O)CC
+CCCCCCCCCCCCCC(=O)OCC,ethyl tetradecanoate,386.0,Saldana11,1,CCCCCCCCCCCCCC(=O)OCC
+C=CCCCCCCCCC(=O)OCC,ethyl undec-10-enoate,386.0,Saldana11,1,C=CCCCCCCCCC(=O)OCC
+CCCCCCCCCCC(=O)OCC,ethyl undecanoate,386.0,Saldana11,1,CCCCCCCCCCC(=O)OCC
+CC(=O)OCCOC(=O)C,ethylene glycol diethanoate,361.0,Saldana11,1,CC(=O)OCCOC(C)=O
+C=CC(=O)OCCOC(=O)C=C,ethylene glycol diprop-2-enoate,373.0,Saldana11,1,C=CC(=O)OCCOC(=O)C=C
+CCCCCCCOC(=O)C,heptyl ethanoate,349.0,Saldana11,1,CCCCCCCOC(C)=O
+CCCCCCOC(=O)C,hexyl ethanoate,310.0,Saldana11,1,CCCCCCOC(C)=O
+CCCCCCOC=O,hexyl methanoate,330.0,Saldana11,1,CCCCCCOC=O
+CC(C)COC(=O)C(C)C,isobutyl 2-methylpropanoate,311.0,Saldana11,1,CC(C)COC(=O)C(C)C
+CC(C)COC(=O)C(=C)C,isobutyl 2-methylpropenoate,314.0,Saldana11,1,C=C(C)C(=O)OCC(C)C
+CCCC(=O)OCC(C)C,isobutyl butanoate,330.0,Saldana11,1,CCCC(=O)OCC(C)C
+CC(C)COC(=O)C,isobutyl ethanoate,291.0,Saldana11,1,CC(=O)OCC(C)C
+O=COCC(C)C,isobutyl methanoate,302.0,Saldana11,1,CC(C)COC=O
+C=CC(=O)OCC(C)C,isobutyl prop-2-enoate,304.0,Saldana11,1,C=CC(=O)OCC(C)C
+CCC(=O)OCC(C)C,isobutyl propanoate,320.0,Saldana11,1,CCC(=O)OCC(C)C
+CCCC(=O)OCCC(C)C,isopentyl butanoate,331.0,Saldana11,1,CCCC(=O)OCCC(C)C
+CCCCCCCCCCCC(=O)OCCC(C)C,isopentyl dodecanoate,386.0,Saldana11,1,CCCCCCCCCCCC(=O)OCCC(C)C
+CC(C)CCOC(=O)C,isopentyl ethanoate,298.0,Saldana11,1,CC(=O)OCCC(C)C
+CCCCCC(=O)OCCC(C)C,isopentyl hexanoate,358.0,Saldana11,1,CCCCCC(=O)OCCC(C)C
+CC(C)CCOC(=O)CC(C)C,isopentyl isopentanoate,345.0,Saldana11,1,CC(C)CCOC(=O)CC(C)C
+O=COCCC(C)C,isopentyl methanoate,314.0,Saldana11,1,CC(C)CCOC=O
+CCC(=O)OCCC(C)C,isopentyl propanoate,321.0,Saldana11,1,CCC(=O)OCCC(C)C
+CC(C)OC(=O)C,isopropyl ethanoate,275.0,Saldana11,1,CC(=O)OC(C)C
+CCCCCC/C=C/CCCCCCCCCC(=O)OC,methyl (11E)-octadec-11-enoate,335.0,Saldana11,1,CCCCCC/C=C/CCCCCCCCCC(=O)OC
+CCCCCCCC/C=C\CCCCCCCCCC(=O)OC,methyl (11Z)-eicos-11-enoate,386.0,Saldana11,1,CCCCCCCC/C=C\CCCCCCCCCC(=O)OC
+CCCCCC/C=C\CCCCCCCCCC(=O)OC,methyl (11Z)-octadec-11-enoate,335.0,Saldana11,1,CCCCCC/C=C\CCCCCCCCCC(=O)OC
+CCCCCCCC/C=C\CCCCCCCCCCCC(=O)OC,methyl (13Z)-docos-13-enoate,306.0,Saldana11,1,CCCCCCCC/C=C\CCCCCCCCCCCC(=O)OC
+CCCCCC/C=C/C(=O)OC,methyl (2E)-non-2-enoate,364.0,Saldana11,1,CCCCCC/C=C/C(=O)OC
+CCCCC/C=C/C(=O)OC,methyl (2E)-oct-2-enoate,356.0,Saldana11,1,CCCCC/C=C/C(=O)OC
+COC(=O)/C=C/C=C,"methyl (2E)-penta-2,4-dienoate",310.0,Saldana11,1,C=C/C=C/C(=O)OC
+COC(=O)/C=C\C=C,"methyl (2Z)-penta-2,4-dienoate",310.0,Saldana11,1,C=C/C=C\C(=O)OC
+CC/C=C/CC(=O)OC,methyl (3E)-hex-3-enoate,319.0,Saldana11,1,CC/C=C/CC(=O)OC
+CCCCC/C=C/CC(=O)OC,methyl (3E)-non-3-enoate,361.0,Saldana11,1,CCCCC/C=C/CC(=O)OC
+C/C=C/CC(=O)OC,methyl (3E)-pent-3-enoate,297.0,Saldana11,1,C/C=C/CC(=O)OC
+CCCCC/C=C\CC(=O)OC,methyl (3Z)-non-3-enoate,361.0,Saldana11,1,CCCCC/C=C\CC(=O)OC
+C/C=C\C/C=C\C/C=C\C/C=C\C/C=C\C/C=C\CCCC(=O)OC,"methyl (4Z,7Z,10Z,13Z,16Z,19Z)-docosa-4,7,10,13,16,19-hexaenoate",366.0,Saldana11,1,C/C=C\C/C=C\C/C=C\C/C=C\C/C=C\C/C=C\CCCC(=O)OC
+CC/C=C\C/C=C\C/C=C\C/C=C\C/C=C\CCCC(=O)OC,"methyl (5Z,8Z,11Z,14Z,17Z)-eicosa-5,8,11,14,17-pentaenoate",377.0,Saldana11,1,CC/C=C\C/C=C\C/C=C\C/C=C\C/C=C\CCCC(=O)OC
+CCCCC/C=C/C/C=C/C/C=C/CCCCC(=O)OC,"methyl (6E,9E,12E)-octadeca-6,9,12-trienoate",335.0,Saldana11,1,CCCCC/C=C/C/C=C/C/C=C/CCCCC(=O)OC
+CCCCC/C=C\C/C=C/C/C=C/CCCCC(=O)OC,"methyl (6E,9E,12Z)-octadeca-6,9,12-trienoate",335.0,Saldana11,1,CCCCC/C=C\C/C=C/C/C=C/CCCCC(=O)OC
+CCCCC/C=C/C/C=C\C/C=C/CCCCC(=O)OC,"methyl (6E,9Z,12E)-octadeca-6,9,12-trienoate",335.0,Saldana11,1,CCCCC/C=C/C/C=C\C/C=C/CCCCC(=O)OC
+CCCCC/C=C\C/C=C\C/C=C/CCCCC(=O)OC,"methyl (6E,9Z,12Z)-octadeca-6,9,12-trienoate",335.0,Saldana11,1,CCCCC/C=C\C/C=C\C/C=C/CCCCC(=O)OC
+CCCCC/C=C/C/C=C/C/C=C\CCCCC(=O)OC,"methyl (6Z,9E,12E)-octadeca-6,9,12-trienoate",335.0,Saldana11,1,CCCCC/C=C/C/C=C/C/C=C\CCCCC(=O)OC
+CCCCC/C=C\C/C=C/C/C=C\CCCCC(=O)OC,"methyl (6Z,9E,12Z)-octadeca-6,9,12-trienoate",335.0,Saldana11,1,CCCCC/C=C\C/C=C/C/C=C\CCCCC(=O)OC
+CCCCC/C=C/C/C=C\C/C=C\CCCCC(=O)OC,"methyl (6Z,9Z,12E)-octadeca-6,9,12-trienoate",335.0,Saldana11,1,CCCCC/C=C/C/C=C\C/C=C\CCCCC(=O)OC
+CCCCC/C=C\C/C=C\C/C=C\CCCCC(=O)OC,"methyl (6Z,9Z,12Z)-octadeca-6,9,12-trienoate",335.0,Saldana11,1,CCCCC/C=C\C/C=C\C/C=C\CCCCC(=O)OC
+CC/C=C\C/C=C\C/C=C\CCCCCCCC(=O)OC,"methyl (9Z,12Z,15Z)-octadeca-9,12,15-trienoate",386.0,Saldana11,1,CC/C=C\C/C=C\C/C=C\CCCCCCCC(=O)OC
+CCCCC/C=C\C/C=C\CCCCCCCC(=O)OC,"methyl (9Z,12Z)-octadeca-9,12-dienoate",386.0,Saldana11,1,CCCCC/C=C\C/C=C\CCCCCCCC(=O)OC
+CCCCCC/C=C\CCCCCCCC(=O)OC,methyl (9Z)-hexadec-9-enoate,386.0,Saldana11,1,CCCCCC/C=C\CCCCCCCC(=O)OC
+CCCCCCCC/C=C\CCCCCCCC(=O)OC,methyl (9Z)-octadec-9-enoate,386.0,Saldana11,1,CCCCCCCC/C=C\CCCCCCCC(=O)OC
+C=CCCCCCCCCC(=O)OC,methyl 10-undecenoate,373.0,Saldana11,1,C=CCCCCCCCCC(=O)OC
+COC(=O)C(=C)C,methyl 2-methylprop-2-enoate,284.0,Saldana11,1,C=C(C)C(=O)OC
+COC(=O)C(C)C,methyl 2-methylpropanoate,276.0,Saldana11,1,COC(=O)C(C)C
+COC(=O)CC=C,methyl but-3-enoate,293.0,Saldana11,1,C=CCC(=O)OC
+CCCC(=O)OC,methyl butanoate,287.0,Saldana11,1,CCCC(=O)OC
+CCCCCCCCCC(=O)OC,methyl decanoate,367.0,Saldana11,1,CCCCCCCCCC(=O)OC
+CCCCCCCCCCCC(=O)OC,methyl dodecanoate,386.0,Saldana11,1,CCCCCCCCCCCC(=O)OC
+CCCCCCCCCCCCCCCCCCCC(=O)OC,methyl eicosanoate,386.0,Saldana11,1,CCCCCCCCCCCCCCCCCCCC(=O)OC
+COC(=O)C,methyl ethanoate,263.0,Saldana11,1,COC(C)=O
+CCCCCCCCCCCCCCCCCCCCC(=O)OC,methyl heneicosanoate,386.0,Saldana11,1,CCCCCCCCCCCCCCCCCCCCC(=O)OC
+CCCCCCCCCCCCCCCCC(=O)OC,methyl heptadecanoate,383.0,Saldana11,1,CCCCCCCCCCCCCCCCC(=O)OC
+CCCCCCC(=O)OC,methyl heptanoate,325.0,Saldana11,1,CCCCCCC(=O)OC
+C=CCCCC(=O)OC,methyl hex-5-enoate,319.0,Saldana11,1,C=CCCCC(=O)OC
+CCCCCCCCCCCCCCCC(=O)OC,methyl hexadecanoate,425.0,Saldana11,1,CCCCCCCCCCCCCCCC(=O)OC
+CCCCCC(=O)OC,methyl hexanoate,316.0,Saldana11,1,CCCCCC(=O)OC
+COC=O,methyl methanoate,254.0,Saldana11,1,COC=O
+CCCCCCCCCCCCCCCCCCC(=O)OC,methyl nonadecanoate,386.0,Saldana11,1,CCCCCCCCCCCCCCCCCCC(=O)OC
+CCCCCCCCC(=O)OC,methyl nonanoate,360.0,Saldana11,1,CCCCCCCCC(=O)OC
+CCCCCCCCCCCCCCCCCC(=O)OC,methyl octadecanoate,388.0,Saldana11,1,CCCCCCCCCCCCCCCCCC(=O)OC
+CCCCCCCC(=O)OC,methyl octanoate,342.0,Saldana11,1,CCCCCCCC(=O)OC
+COC(=O)CCC=C,methyl pent-4-enoate,302.0,Saldana11,1,C=CCCC(=O)OC
+CCCCCCCCCCCCCCC(=O)OC,methyl pentadecanoate,386.0,Saldana11,1,CCCCCCCCCCCCCCC(=O)OC
+COC(=O)C=C,methyl prop-2-enoate,270.0,Saldana11,1,C=CC(=O)OC
+CCC(=O)OC,methyl propanoate,271.0,Saldana11,1,CCC(=O)OC
+CCCCCCCCCCCCC(=O)OC,methyl tridecanoate,386.0,Saldana11,1,CCCCCCCCCCCCC(=O)OC
+CCCCCCCCCCCCCCCCCC(=O)OCCCC,n-butyl octadecanoate,433.0,Saldana11,1,CCCCCCCCCCCCCCCCCC(=O)OCCCC
+CCCOC(=O)C,n-propyl ethanoate,288.0,Saldana11,1,CCCOC(C)=O
+CCCOC=O,n-propyl methanoate,270.0,Saldana11,1,CCCOC=O
+CCCOC(=O)CC,n-propyl propanoate,292.0,Saldana11,1,CCCOC(=O)CC
+CC(=O)OCC(C)(C)C,neopentyl ethanoate,316.0,Saldana11,1,CC(=O)OCC(C)(C)C
+CCCCCCCCCOC(=O)C,nonyl ethanoate,372.0,Saldana11,1,CCCCCCCCCOC(C)=O
+CCCCCCCCCOC=O,nonyl methanoate,360.0,Saldana11,1,CCCCCCCCCOC=O
+CCCCCCCCOC(=O)CCC,octyl butanoate,378.0,Saldana11,1,CCCCCCCCOC(=O)CCC
+CCCCCCCCOC(=O)C,octyl ethanoate,359.0,Saldana11,1,CCCCCCCCOC(C)=O
+CCCCCCCCOC=O,octyl methanoate,353.0,Saldana11,1,CCCCCCCCOC=O
+CCCCCOC(=O)CCC,pentyl butanoate,345.0,Saldana11,1,CCCCCOC(=O)CCC
+CCCCCOC(=O)C,pentyl ethanoate,312.0,Saldana11,1,CCCCCOC(C)=O
+CCCCCOC=O,pentyl methanoate,319.0,Saldana11,1,CCCCCOC=O
+CCCCCOC(=O)CC,pentyl propanoate,336.0,Saldana11,1,CCCCCOC(=O)CC
+CCCOC(=O)C(=C)C,propyl 2-methylprop-2-enoate,322.0,Saldana11,1,C=C(C)C(=O)OCCC
+CCCOC(=O)C=C,propyl prop-2-enoate,311.0,Saldana11,1,C=CC(=O)OCCC
+CCC(C)OC(=O)C,sec-butyl ethanoate,255.0,Saldana11,1,CCC(C)OC(C)=O
+CC(CC)OC=O,sec-butyl methanoate,299.0,Saldana11,1,CCC(C)OC=O
+CC(=C)C(=O)OC(C)(C)C,tert-butyl 2-methylprop-2-enoate,300.0,Saldana11,1,C=C(C)C(=O)OC(C)(C)C
+CCCC(=O)OC(C)(C)C,tert-butyl butanoate,320.0,Saldana11,1,CCCC(=O)OC(C)(C)C
+CC(=O)OC(C)(C)C,tert-butyl ethanoate,287.0,Saldana11,1,CC(=O)OC(C)(C)C
+O=COC(C)(C)C,tert-butyl methanoate,264.0,Saldana11,1,CC(C)(C)OC=O
+CCCCCCCCCCCCCCOC=O,tetradecyl methanoate,433.0,Saldana11,1,CCCCCCCCCCCCCCOC=O
+CCCCCCCCCCCOC(=O)CCC,undecyl butanoate,421.0,Saldana11,1,CCCCCCCCCCCOC(=O)CCC
+CCCCCCCCCCCOC(=O)C,undecyl ethanoate,398.0,Saldana11,1,CCCCCCCCCCCOC(C)=O
+CCCCCCCCCCCOC=O,undecyl methanoate,385.0,Saldana11,1,CCCCCCCCCCCOC=O
+CCCCCCCCCCCOC(=O)CC,undecyl propanoate,410.0,Saldana11,1,CCCCCCCCCCCOC(=O)CC
+CC1=CCC(CC1)C(=C)C,1-methyl-4-(prop-1-en-2-yl)cyclohex-1-ene,318.0,Saldana11,1,C=C(C)C1CC=C(C)CC1
+CC1=CC=C(CC1)C(C)C,"1-methyl-4-(propan-2-yl)cyclohexa-1,3-diene",319.0,Saldana11,1,CC1=CC=C(C(C)C)CC1
+CC1=CCC(=CC1)C(C)C,"1-methyl-4-(propan-2-yl)cyclohexa-1,4-diene",324.0,Saldana11,1,CC1=CCC(C(C)C)=CC1
+C[C@H]1C[C@H](C)C[C@H](C)C1,"1-trans-3,5-trimethylcyclohexane",292.0,Saldana11,1,C[C@H]1C[C@H](C)C[C@@H](C)C1
+CCC1(CC)CCCCC1,"1,1-diethylcyclohexane",322.0,Saldana11,1,CCC1(CC)CCCCC1
+CC1(C)CCCCC1,"1,1-dimethylcyclohexane",280.0,Saldana11,1,CC1(C)CCCCC1
+CC1(C)CCCC1,"1,1-dimethylcyclopentane",257.0,Saldana11,1,CC1(C)CCCC1
+CC12CC3CC(C1)CC(C)(C3)C2,"1,3-dimethyladamantane",325.0,Saldana11,1,CC12CC3CC(C1)CC(C)(C3)C2
+CC1=CCC(C=C1)C(C)C,"2-methyl-5-propan-2-ylcyclohexa-1,3-diene",322.0,Saldana11,1,CC1=CCC(C(C)C)C=C1
+C1CC2C=CC1C2,2-norbornene,258.0,Saldana11,1,C1=CC2CCC1C2
+C=C1CCC(C=C1)C(C)C,3-methylidene-6-(propan-2-yl)cyclohex-1-ene,322.0,Saldana11,1,C=C1C=CC(C(C)C)CC1
+C=C1C2CCC(C2)C1(C)C,"3,3-dimethyl-2-methylidenebicyclo[2.2.1]heptane",309.0,Saldana11,1,C=C1C2CCC(C2)C1(C)C
+CC1=CCC2CC1C2(C)C,"4,6,6-trimethylbicyclo[3.1.1]hept-3-ene",303.0,Saldana11,1,CC1=CCC2CC1C2(C)C
+CC=C1CC2CC1C=C2,5-ethylidene-2-norbornene,311.0,Saldana11,1,CC=C1CC2C=CC1C2
+C=C1CCC2CC1C2(C)C,"6,6-dimethyl-4-methylidenebicyclo[3.1.1]heptane",304.0,Saldana11,1,C=C1CCC2CC1C2(C)C
+C1CCC(CC1)C1CCCCC1,bicyclohexyl,347.0,Saldana11,1,C1CCC(C2CCCCC2)CC1
+CCCCC1CCCCC1,butylcyclohexane,321.0,Saldana11,1,CCCCC1CCCCC1
+CCCCC1CCCC1,butylcyclopentane,308.0,Saldana11,1,CCCCC1CCCC1
+C[C@@H]1CCCC[C@@H]1C,"cis-1,2-dimethylcyclohexane",284.0,Saldana11,1,C[C@H]1CCCC[C@H]1C
+C[C@@H]1CCC[C@@H]1C,"cis-1,2-dimethylcyclopentane",269.0,Saldana11,1,C[C@H]1CCC[C@H]1C
+C[C@@H]1CCC[C@H](C)C1,"cis-1,3-dimethylcyclohexane",279.0,Saldana11,1,C[C@H]1CCC[C@@H](C)C1
+C[C@H]1CC[C@@H](C)CC1,"cis-1,4-dimethylcyclohexane",279.0,Saldana11,1,C[C@H]1CC[C@@H](C)CC1
+C1CC[C@@H]2CCCC[C@@H]2C1,cis-decalin,323.0,Saldana11,1,C1CC[C@H]2CCCC[C@H]2C1
+C1CCCCCCCCC1,cyclodecane,338.0,Saldana11,1,C1CCCCCCCCC1
+C1C=CCCC=CCCC=CC1,"cyclododeca-1,5,9-triene",360.0,Saldana11,1,C1=CCCC=CCCC=CCC1
+C1CCCCCC1,cycloheptane,267.0,Saldana11,1,C1CCCCCC1
+C1CC=CC=C1,"cyclohexa-1,3-diene",257.0,Saldana11,1,C1=CCCC=C1
+C1C=CCC=C1,"cyclohexa-1,4-diene",262.0,Saldana11,1,C1=CCC=CC1
+C1CCCCC1,cyclohexane,253.0,Saldana11,1,C1CCCCC1
+C1CCCCCCCC1,cyclononane,316.0,Saldana11,1,C1CCCCCCCC1
+C1=CC=CC=CC=C1,"cycloocta-1,3,5,7-tetraene",295.0,Saldana11,1,C1=CC=CC=CC=C1
+C1C=CCCC=CC1,"cycloocta-1,5-diene",308.0,Saldana11,1,C1=CCCC=CCC1
+C1CCCCCCC1,cyclooctane,303.0,Saldana11,1,C1CCCCCCC1
+C1C=CC=C1,"cyclopenta-1,3-diene",273.0,Saldana11,1,C1=CCC=C1
+C1CCCC1,cyclopentane,236.0,Saldana11,1,C1CCCC1
+C1=CC2C3C=CC(C3)C2C1,dicyclopentadiene,305.0,Saldana11,1,C1=CC2C3C=CC(C3)C2C1
+C=CC1CC2C=CC1C2,ethenylnorbornene,300.0,Saldana11,1,C=CC1CC2C=CC1C2
+CCC1CCCCC1,ethylcyclohexane,295.0,Saldana11,1,CCC1CCCCC1
+CCC1CCCC1,ethylcyclopentane,269.0,Saldana11,1,CCC1CCCC1
+CC(C)C1CCCCC1,isopropylcyclohexane,308.0,Saldana11,1,CC(C)C1CCCCC1
+CC(C)C1CCCC1,isopropylcyclopentane,287.0,Saldana11,1,CC(C)C1CCCC1
+CC1CCCCC1,methylcyclohexane,267.0,Saldana11,1,CC1CCCCC1
+CC1=CC=CC1,methylcyclopentadiene,322.0,Saldana11,1,CC1=CC=CC1
+CC1CCCC1,methylcyclopentane,246.0,Saldana11,1,CC1CCCC1
+C=C1CCCC1,methylenecyclopentane,254.0,Saldana11,1,C=C1CCCC1
+CCCCCC1CCCCC1,pentylcyclohexane,339.0,Saldana11,1,CCCCCC1CCCCC1
+C=CCC1CCCCC1,prop-2-enylcyclohexane,302.0,Saldana11,1,C=CCC1CCCCC1
+C=CCC1CCCC1,prop-2-enylcyclopentane,285.0,Saldana11,1,C=CCC1CCCC1
+CCCC1CCCCC1,propylcyclohexane,304.0,Saldana11,1,CCCC1CCCCC1
+CCCC1CCCC1,propylcyclopentane,289.0,Saldana11,1,CCCC1CCCC1
+CC1=CCC(=C(C)C)CC1,terpinolene,311.0,Saldana11,1,CC1=CCC(=C(C)C)CC1
+CC(C)(C)C1CCCCC1,tert-butylcyclohexane,315.0,Saldana11,1,CC(C)(C)C1CCCCC1
+C[C@@H]1CCCC[C@H]1C,"trans-1,2-dimethylcyclohexane",280.0,Saldana11,1,C[C@@H]1CCCC[C@H]1C
+C[C@@H]1CCC[C@@H](C)C1,"trans-1,3-dimethylcyclohexane",281.0,Saldana11,1,C[C@@H]1CCC[C@@H](C)C1
+C[C@@H]1CC[C@@H](C)CC1,"trans-1,4-dimethylcyclohexane",284.0,Saldana11,1,C[C@H]1CC[C@H](C)CC1
+C1CC[C@@H]2CCCC[C@H]2C1,trans-decalin,325.0,Saldana11,1,C1CC[C@H]2CCCC[C@@H]2C1
+C/C=C/C=C/C,"(2E,4E)-hexa-2,4-diene",266.0,Saldana11,1,C/C=C/C=C/C
+CCC/C=C/C,(2E)-2-hexene,246.0,Saldana11,1,C/C=C/CCC
+CC/C=C/C,(2E)-2-pentene,228.0,Saldana11,1,C/C=C/CC
+CCC/C=C/CC,(2E)-3-heptene,267.0,Saldana11,1,CC/C=C/CCC
+CC/C(=C/C)/C,(2E)-3-methylpent-2-ene,246.0,Saldana11,1,C/C=C(\C)CC
+C/C=C/C(C)C,(2E)-4-methylpent-2-ene,239.0,Saldana11,1,C/C=C/C(C)C
+CCCC/C=C/C,(2E)-hept-2-ene,272.0,Saldana11,1,C/C=C/CCCC
+CCCCC/C=C/C,(2E)-oct-2-ene,294.0,Saldana11,1,C/C=C/CCCCC
+C/C=C/C=C\C,"(2Z,4E)-hexa-2,4-diene",266.0,Saldana11,1,C/C=C\C=C\C
+CC/C(=C\C)/C,(2Z)-3-methylpent-2-ene,245.0,Saldana11,1,C/C=C(/C)CC
+C/C=C\C(C)C,(2Z)-4-methylpent-2-ene,237.0,Saldana11,1,C/C=C\C(C)C
+C/C=C\C,(2Z)-but-2-ene,200.0,Saldana11,1,C/C=C\C
+CCCC/C=C\C,(2Z)-hept-2-ene,265.0,Saldana11,1,C/C=C\CCCC
+CCC/C=C\C,(2Z)-hex-2-ene,247.0,Saldana11,1,C/C=C\CCC
+CCCCC/C=C\C,(2Z)-oct-2-ene,294.0,Saldana11,1,C/C=C\CCCCC
+CC/C=C\C,(2Z)-pent-2-ene,226.0,Saldana11,1,C/C=C\CC
+CC/C=C/C=C,"(3E)-1,3-hexadiene",254.0,Saldana11,1,C=C/C=C/CC
+CC/C=C/CC,(3E)-3-hexene,261.0,Saldana11,1,CC/C=C/CC
+CCCC/C=C/CC,(3E)-3-octene,282.0,Saldana11,1,CC/C=C/CCCC
+CCC/C=C\CC,(3Z)-hept-3-ene,264.0,Saldana11,1,CC/C=C\CCC
+CC/C=C\CC,(3Z)-hex-3-ene,245.0,Saldana11,1,CC/C=C\CC
+CCCC/C=C\CC,(3Z)-oct-3-ene,290.0,Saldana11,1,CC/C=C\CCCC
+C=CC/C=C/C,"(4E)-hexa-1,4-diene",248.0,Saldana11,1,C=CC/C=C/C
+CCC/C=C/CCC,(4E)-oct-4-ene,281.0,Saldana11,1,CCC/C=C/CCC
+C=CC/C=C\C,"(4Z)-hexa-1,4-diene",248.0,Saldana11,1,C=CC/C=C\C
+CCC/C=C\CCC,(4Z)-oct-4-ene,290.0,Saldana11,1,CCC/C=C\CCC
+CC1=CCCCC1,1-methylcyclohex-1-ene,272.0,Saldana11,1,CC1=CCCCC1
+CC1=CCCC1,1-methylcyclopent-1-ene,256.0,Saldana11,1,CC1=CCCC1
+CC1CCCC(=C1)C,"1,3-dimethylcyclohex-1-ene",285.0,Saldana11,1,CC1=CC(C)CCC1
+CCC(=C)CC,2-ethylbut-1-ene,247.0,Saldana11,1,C=C(CC)CC
+CCCC(=C)CC,2-ethylpent-1-ene,263.0,Saldana11,1,C=C(CC)CCC
+CCC(=C)C,2-methylbut-1-ene,226.0,Saldana11,1,C=C(C)CC
+CC=C(C)C,2-methylbut-2-ene,228.0,Saldana11,1,CC=C(C)C
+CCCCCC(=C)C,2-methylhept-1-ene,283.0,Saldana11,1,C=C(C)CCCCC
+CCCCC=C(C)C,2-methylhept-2-ene,281.0,Saldana11,1,CCCCC=C(C)C
+CCCCC(=C)C,2-methylhex-1-ene,267.0,Saldana11,1,C=C(C)CCCC
+CCCC(=C)C,2-methylpent-1-ene,247.0,Saldana11,1,C=C(C)CCC
+CCC=C(C)C,2-methylpent-2-ene,250.0,Saldana11,1,CCC=C(C)C
+CC(=C)C,2-methylprop-1-ene,197.0,Saldana11,1,C=C(C)C
+CC(=C)C(C)C,"2,3-dimethylbut-1-ene",255.0,Saldana11,1,C=C(C)C(C)C
+CC(=C(C)C)C,"2,3-dimethylbut-2-ene",257.0,Saldana11,1,CC(C)=C(C)C
+CC(=C)C(=C)C,"2,3-dimethylbuta-1,3-diene",251.0,Saldana11,1,C=C(C)C(=C)C
+CCCC(C)C(=C)C,"2,3-dimethylhex-1-ene",281.0,Saldana11,1,C=C(C)C(C)CCC
+CCC(C)C(=C)C,"2,3-dimethylpent-1-ene",256.0,Saldana11,1,C=C(C)C(C)CC
+CC(=C)C(C)(C)C,"2,3,3-trimethylbut-1-ene",256.0,Saldana11,1,C=C(C)C(C)(C)C
+CC(C)C(=C(C)C)C,"2,3,4-trimethylpent-2-ene",275.0,Saldana11,1,CC(C)=C(C)C(C)C
+CC(=C)CC(C)(C)C,"2,4,4-trimethylpent-1-ene",268.0,Saldana11,1,C=C(C)CC(C)(C)C
+CC(=CC(C)(C)C)C,"2,4,4-trimethylpent-2-ene",272.0,Saldana11,1,CC(C)=CC(C)(C)C
+CC(=C)CCC(=C)C,"2,5-dimethylhexa-1,5-diene",280.0,Saldana11,1,C=C(C)CCC(=C)C
+CC(=CC=C(C)C)C,"2,5-dimethylhexa-2,4-diene",297.0,Saldana11,1,CC(C)=CC=C(C)C
+CCCC(CC)C=C,3-ethylhex-1-ene,274.0,Saldana11,1,C=CC(CC)CCC
+CCC(CC)C=C,3-ethylpent-1-ene,256.0,Saldana11,1,C=CC(CC)CC
+CCC(=CC)CC,3-ethylpent-2-ene,267.0,Saldana11,1,CC=C(CC)CC
+C=CC(C)C,3-methylbut-1-ene,217.0,Saldana11,1,C=CC(C)C
+C=C=C(C)C,"3-methylbuta-1,2-diene",261.0,Saldana11,1,C=C=C(C)C
+CC1CCCC=C1,3-methylcyclohex-1-ene,270.0,Saldana11,1,CC1C=CCCC1
+CC(CCC)C=C,3-methylhex-1-ene,255.0,Saldana11,1,C=CC(C)CCC
+CC(CC)C=C,3-methylpent-1-ene,245.0,Saldana11,1,C=CC(C)CC
+CC=C(C)C=C,"3-methylpenta-1,3-diene",245.0,Saldana11,1,C=CC(C)=CC
+C=CC(C)(C)C,"3,3-dimethylbut-1-ene",245.0,Saldana11,1,C=CC(C)(C)C
+C=CC1CCC=CC1,4-ethenylcyclohex-1-ene,289.0,Saldana11,1,C=CC1CC=CCC1
+CCCC(C)CC=C,4-methylhept-1-ene,275.0,Saldana11,1,C=CCC(C)CCC
+CC(CC=C)CC,4-methylhex-1-ene,258.0,Saldana11,1,C=CCC(C)CC
+C=CCC(C)C,4-methylpent-1-ene,242.0,Saldana11,1,C=CCC(C)C
+C=CC=C(C)C,"4-methylpenta-1,3-diene",255.0,Saldana11,1,C=CC=C(C)C
+C=CCC(C)(C)C,"4,4-dimethylpent-1-ene",261.0,Saldana11,1,C=CCC(C)(C)C
+C=CCCC(C)C,5-methylhex-1-ene,263.0,Saldana11,1,C=CCCC(C)C
+C=CCCCCC(C)C,7-methyloct-1-ene,291.0,Saldana11,1,C=CCCCCC(C)C
+CCC=C,but-1-ene,193.0,Saldana11,1,C=CCC
+C=CC=C,"buta-1,3-diene",197.0,Saldana11,1,C=CC=C
+C1CCC=CCC1,cycloheptene,267.0,Saldana11,1,C1=CCCCCC1
+C1CCC=CC1,cyclohexene,243.0,Saldana11,1,C1=CCCCC1
+C1CCCC=CCC1,cyclooctene,298.0,Saldana11,1,C1=CCCCCCC1
+C1CC=CC1,cyclopentene,244.0,Saldana11,1,C1=CCCC1
+CCCCCCCCC=C,dec-1-ene,311.0,Saldana11,1,C=CCCCCCCCC
+CCCCCCCCCCC=C,dodec-1-ene,346.0,Saldana11,1,C=CCCCCCCCCCC
+CCCCCC=C,hept-1-ene,265.0,Saldana11,1,C=CCCCCC
+C=CCCCC=C,"hepta-1,6-diene",263.0,Saldana11,1,C=CCCCC=C
+CCCCCCCCCCCCCCCC=C,heptadec-1-ene,408.0,Saldana11,1,C=CCCCCCCCCCCCCCCC
+CCCCC=C,hex-1-ene,247.0,Saldana11,1,C=CCCCC
+C=CCCC=C,"hexa-1,5-diene",246.0,Saldana11,1,C=CCCC=C
+CCCCCCCCCCCCCCC=C,hexadec-1-ene,405.0,Saldana11,1,C=CCCCCCCCCCCCCCC
+C=CC(=C)C,isoprene,219.0,Saldana11,1,C=CC(=C)C
+CCCCCCCC=C,non-1-ene,298.0,Saldana11,1,C=CCCCCCCC
+C=CCCCCCC=C,"nona-1,8-diene",299.0,Saldana11,1,C=CCCCCCC=C
+CCCCCCC=C,oct-1-ene,281.0,Saldana11,1,C=CCCCCCC
+C=CCCCCC=C,"octa-1,7-diene",282.0,Saldana11,1,C=CCCCCC=C
+CCCCCCCCCCCCCCCCC=C,octadec-1-ene,421.0,Saldana11,1,C=CCCCCCCCCCCCCCCCC
+CCCC=C,pent-1-ene,222.0,Saldana11,1,C=CCCC
+CCCCCCCCCCCCCC=C,pentadec-1-ene,385.0,Saldana11,1,C=CCCCCCCCCCCCCC
+CC=C,propylene,165.0,Saldana11,1,C=CC
+CCCCCCCCCCCCC=C,tetradec-1-ene,370.0,Saldana11,1,C=CCCCCCCCCCCCC
+CCCCCCCCCCCC=C,tridec-1-ene,352.0,Saldana11,1,C=CCCCCCCCCCCC
+CCCCCCCCCC=C,undec-1-ene,327.0,Saldana11,1,C=CCCCCCCCCC
+CCCCCC(C)C,2-methylheptane,277.0,Saldana11,1,CCCCCC(C)C
+CCCCC(C)C,2-methylhexane,255.0,Saldana11,1,CCCCC(C)C
+CCCCCCCC(C)C,2-methylnonane,314.0,Saldana11,1,CCCCCCCC(C)C
+CCCCCCC(C)C,2-methyloctane,297.0,Saldana11,1,CCCCCCC(C)C
+CCC(C)(C)C,"2,2-dimethylbutane",225.0,Saldana11,1,CCC(C)(C)C
+CCCCCC(C)(C)C,"2,2-dimethylheptane",297.0,Saldana11,1,CCCCCC(C)(C)C
+CCCCC(C)(C)C,"2,2-dimethylhexane",269.0,Saldana11,1,CCCCC(C)(C)C
+CCCCCCC(C)(C)C,"2,2-dimethyloctane",304.0,Saldana11,1,CCCCCCC(C)(C)C
+CCCC(C)(C)C,"2,2-dimethylpentane",258.0,Saldana11,1,CCCC(C)(C)C
+CC(C)(C)C,"2,2-dimethylpropane",208.0,Saldana11,1,CC(C)(C)C
+CC(C)C(C)(C)C,"2,2,3-trimethylbutane",249.0,Saldana11,1,CC(C)C(C)(C)C
+CCCC(C)C(C)(C)C,"2,2,3-trimethylhexane",288.0,Saldana11,1,CCCC(C)C(C)(C)C
+CCC(C)C(C)(C)C,"2,2,3-trimethylpentane",270.0,Saldana11,1,CCC(C)C(C)(C)C
+CC(C)(C)C(C)(C)C,"2,2,3,3-tetramethylbutane",278.0,Saldana11,1,CC(C)(C)C(C)(C)C
+CCCC(C)(C)C(C)(C)C,"2,2,3,3-tetramethylhexane",304.0,Saldana11,1,CCCC(C)(C)C(C)(C)C
+CCC(C)(C)C(C)(C)C,"2,2,3,3-tetramethylpentane",289.0,Saldana11,1,CCC(C)(C)C(C)(C)C
+CCC(C)C(C)C(C)(C)C,"2,2,3,4-tetramethylhexane",304.0,Saldana11,1,CCC(C)C(C)C(C)(C)C
+CC(C)C(C)C(C)(C)C,"2,2,3,4-tetramethylpentane",284.0,Saldana11,1,CC(C)C(C)C(C)(C)C
+CCC(C)CC(C)(C)C,"2,2,4-trimethylhexane",288.0,Saldana11,1,CCC(C)CC(C)(C)C
+CC(C)CC(C)(C)C,"2,2,4-trimethylpentane",261.0,Saldana11,1,CC(C)CC(C)(C)C
+CCC(C)(C)CC(C)(C)C,"2,2,4,4-tetramethylhexane",304.0,Saldana11,1,CCC(C)(C)CC(C)(C)C
+CC(C)(C)CC(C)(C)C,"2,2,4,4-tetramethylpentane",276.0,Saldana11,1,CC(C)(C)CC(C)(C)C
+CC(CC(C)(C)C)CC(C)(C)CC(C)(C)C,"2,2,4,4,6,8,8-heptamethylnonane",368.0,Saldana11,1,CC(CC(C)(C)C)CC(C)(C)CC(C)(C)C
+CC(C)CCC(C)(C)C,"2,2,5-trimethylhexane",286.0,Saldana11,1,CC(C)CCC(C)(C)C
+CC(C)(C)CCC(C)(C)C,"2,2,5,5-tetramethylhexane",289.0,Saldana11,1,CC(C)(C)CCC(C)(C)C
+CC(C)C(C)C,"2,3-dimethylbutane",244.0,Saldana11,1,CC(C)C(C)C
+CCCCC(C)C(C)C,"2,3-dimethylheptane",288.0,Saldana11,1,CCCCC(C)C(C)C
+CCCC(C)C(C)C,"2,3-dimethylhexane",278.0,Saldana11,1,CCCC(C)C(C)C
+CCCCCC(C)C(C)C,"2,3-dimethyloctane",309.0,Saldana11,1,CCCCCC(C)C(C)C
+CCC(C)C(C)C,"2,3-dimethylpentane",258.0,Saldana11,1,CCC(C)C(C)C
+CCCC(C)(C)C(C)C,"2,3,3-trimethylhexane",288.0,Saldana11,1,CCCC(C)(C)C(C)C
+CCC(C)(C)C(C)C,"2,3,3-trimethylpentane",273.0,Saldana11,1,CCC(C)(C)C(C)C
+CCC(C)C(C)(C)C(C)C,"2,3,3,4-tetramethylhexane",304.0,Saldana11,1,CCC(C)C(C)(C)C(C)C
+CC(C)C(C)(C)C(C)C,"2,3,3,4-tetramethylpentane",284.0,Saldana11,1,CC(C)C(C)(C)C(C)C
+CCC(C)C(C)C(C)C,"2,3,4-trimethylhexane",288.0,Saldana11,1,CCC(C)C(C)C(C)C
+CC(C)C(C)C(C)C,"2,3,4-trimethylpentane",273.0,Saldana11,1,CC(C)C(C)C(C)C
+CCC(C)(C)C(C)C(C)C,"2,3,4,4-tetramethylhexane",304.0,Saldana11,1,CCC(C)(C)C(C)C(C)C
+CC(C)C(C)C(C)C(C)C,"2,3,4,5-tetramethylhexane",304.0,Saldana11,1,CC(C)C(C)C(C)C(C)C
+CCC(C)CC(C)C(C)C,"2,3,5-trimethylheptane",304.0,Saldana11,1,CCC(C)CC(C)C(C)C
+CC(C)CC(C)C(C)C,"2,3,5-trimethylhexane",288.0,Saldana11,1,CC(C)CC(C)C(C)C
+CCCC(C)CC(C)C,"2,4-dimethylheptane",288.0,Saldana11,1,CCCC(C)CC(C)C
+CCC(C)CC(C)C,"2,4-dimethylhexane",283.0,Saldana11,1,CCC(C)CC(C)C
+CC(C)CC(C)C,"2,4-dimethylpentane",261.0,Saldana11,1,CC(C)CC(C)C
+CCC(C)(C)CC(C)C,"2,4,4-trimethylhexane",288.0,Saldana11,1,CCC(C)(C)CC(C)C
+CCC(C)C(C)CC(C)C,"2,4,5-trimethylheptane",304.0,Saldana11,1,CCC(C)C(C)CC(C)C
+CC(C)CC(C)CC(C)C,"2,4,6-trimethylheptane",304.0,Saldana11,1,CC(C)CC(C)CC(C)C
+CCC(C)CCC(C)C,"2,5-dimethylheptane",288.0,Saldana11,1,CCC(C)CCC(C)C
+CC(C)CCC(C)C,"2,5-dimethylhexane",271.0,Saldana11,1,CC(C)CCC(C)C
+CC(C)CCCC(C)C,"2,6-dimethylheptane",299.0,Saldana11,1,CC(C)CCCC(C)C
+CCC(C)CCCC(C)C,"2,6-dimethyloctane",307.0,Saldana11,1,CCC(C)CCCC(C)C
+CC(CCCCC(C)CCCC(C)CCCC(C)C)CCCC(C)CCCC(C)C,"2,6,10,15,19,23-hexamethyltetracosane",490.0,Saldana11,1,CC(C)CCCC(C)CCCC(C)CCCCC(C)CCCC(C)CCCC(C)C
+CC(C)CCCCC(C)C,"2,7-dimethyloctane",314.0,Saldana11,1,CC(C)CCCCC(C)C
+CCC(CC)C(C)C,3-ethyl-2-methylpentane,276.0,Saldana11,1,CCC(CC)C(C)C
+CCCC(CC)C(C)(C)C,"3-ethyl-2,2-dimethylhexane",311.0,Saldana11,1,CCCC(CC)C(C)(C)C
+CCC(CC)C(C)(C)C,"3-ethyl-2,2-dimethylpentane",286.0,Saldana11,1,CCC(CC)C(C)(C)C
+CCC(C)(CC)C(C)C,"3-ethyl-2,3-dimethylpentane",288.0,Saldana11,1,CCC(C)(CC)C(C)C
+CCC(C)(C(C)C)C(C)C,"3-ethyl-2,3,4-trimethylpentane",304.0,Saldana11,1,CCC(C)(C(C)C)C(C)C
+CCC(C(C)C)C(C)C,"3-ethyl-2,4-dimethylpentane",288.0,Saldana11,1,CCC(C(C)C)C(C)C
+CCCCC(C)(CC)CC,3-ethyl-3-methylheptane,314.0,Saldana11,1,CCCCC(C)(CC)CC
+CCC(C)(CC)CC,3-ethyl-3-methylpentane,276.0,Saldana11,1,CCC(C)(CC)CC
+CCC(CC)C(C)CC,3-ethyl-4-methylhexane,288.0,Saldana11,1,CCC(C)C(CC)CC
+CCC(C)CC(CC)CC,3-ethyl-5-methylheptane,304.0,Saldana11,1,CCC(C)CC(CC)CC
+CCCC(CC)CC,3-ethylhexane,278.0,Saldana11,1,CCCC(CC)CC
+CCC(CC)CC,3-ethylpentane,261.0,Saldana11,1,CCC(CC)CC
+CCCCC(C)CC,3-methylheptane,279.0,Saldana11,1,CCCCC(C)CC
+CCCC(C)CC,3-methylhexane,269.0,Saldana11,1,CCCC(C)CC
+CCCCCCC(C)CC,3-methylnonane,311.0,Saldana11,1,CCCCCCC(C)CC
+CCCCCC(C)CC,3-methyloctane,297.0,Saldana11,1,CCCCCC(C)CC
+CCC(C)CC,3-methylpentane,241.0,Saldana11,1,CCC(C)CC
+CCC(CC)(CC)CC,"3,3-diethylpentane",294.0,Saldana11,1,CCC(CC)(CC)CC
+CCCC(C)(C)CC,"3,3-dimethylhexane",272.0,Saldana11,1,CCCC(C)(C)CC
+CCCCCC(C)(C)CC,"3,3-dimethyloctane",314.0,Saldana11,1,CCCCCC(C)(C)CC
+CCC(C)(C)CC,"3,3-dimethylpentane",254.0,Saldana11,1,CCC(C)(C)CC
+CCC(C)C(C)(C)CC,"3,3,4-trimethylhexane",288.0,Saldana11,1,CCC(C)C(C)(C)CC
+CCC(C)(C)C(C)(C)CC,"3,3,4,4-tetramethylhexane",304.0,Saldana11,1,CCC(C)(C)C(C)(C)CC
+CCC(C)CC(C)(C)CC,"3,3,5-trimethylheptane",304.0,Saldana11,1,CCC(C)CC(C)(C)CC
+CCCC(C)C(C)CC,"3,4-dimethylheptane",288.0,Saldana11,1,CCCC(C)C(C)CC
+CCC(C)C(C)CC,"3,4-dimethylhexane",277.0,Saldana11,1,CCC(C)C(C)CC
+CCC(C)C(C)C(C)CC,"3,4,5-trimethylheptane",304.0,Saldana11,1,CCC(C)C(C)C(C)CC
+CCC(C)CC(C)CC,"3,5-dimethylheptane",288.0,Saldana11,1,CCC(C)CC(C)CC
+CCCC(C)CC(C)CC,"3,5-dimethyloctane",314.0,Saldana11,1,CCCC(C)CC(C)CC
+CCCC(CC)C(C)CC,4-ethyl-3-methylheptane,314.0,Saldana11,1,CCCC(CC)C(C)CC
+CCCC(CC)CCC,4-ethylheptane,288.0,Saldana11,1,CCCC(CC)CCC
+CCCCC(CC)CCC,4-ethyloctane,314.0,Saldana11,1,CCCCC(CC)CCC
+CCCC(C)CCC,4-methylheptane,279.0,Saldana11,1,CCCC(C)CCC
+CCCCCC(C)CCC,4-methylnonane,311.0,Saldana11,1,CCCCCC(C)CCC
+CCCCC(C)CCC,4-methyloctane,295.0,Saldana11,1,CCCCC(C)CCC
+CCCC(CCC)CCC,4-propylheptane,314.0,Saldana11,1,CCCC(CCC)CCC
+CCCC(C)(C)CCC,"4,4-dimethylheptane",288.0,Saldana11,1,CCCC(C)(C)CCC
+CCCCC(C)CCCC,5-methylnonane,312.0,Saldana11,1,CCCCC(C)CCCC
+CC(C)C,isobutane,190.0,Saldana11,1,CC(C)C
+CCCC(C)C,isohexane,250.0,Saldana11,1,CCCC(C)C
+CCC(C)C,isopentane,217.0,Saldana11,1,CCC(C)C
+CCCCCCCCCC,n-decane,319.0,Saldana11,1,CCCCCCCCCC
+CCCCCCCCCCCC,n-dodecane,347.0,Saldana11,1,CCCCCCCCCCCC
+CCCCCCCCCCCCCCCCC,n-heptadecane,421.0,Saldana11,1,CCCCCCCCCCCCCCCCC
+CCCCCCC,n-heptane,269.0,Saldana11,1,CCCCCCC
+CCCCCCCCCCCCCCCC,n-hexadecane,408.0,Saldana11,1,CCCCCCCCCCCCCCCC
+CCCCCC,n-hexane,252.0,Saldana11,1,CCCCCC
+CCCCCCCCCCCCCCCCCCC,n-nonadecane,441.0,Saldana11,1,CCCCCCCCCCCCCCCCCCC
+CCCCCCCCC,n-nonane,304.0,Saldana11,1,CCCCCCCCC
+CCCCCCCCCCCCCCCCCC,n-octadecane,438.0,Saldana11,1,CCCCCCCCCCCCCCCCCC
+CCCCCCCC,n-octane,286.0,Saldana11,1,CCCCCCCC
+CCCCCCCCCCCCCCC,n-pentadecane,388.0,Saldana11,1,CCCCCCCCCCCCCCC
+CCCCC,n-pentane,233.0,Saldana11,1,CCCCC
+CCCCCCCCCCCCCC,n-tetradecane,373.0,Saldana11,1,CCCCCCCCCCCCCC
+CCCCCCCCCCCCC,n-tridecane,352.0,Saldana11,1,CCCCCCCCCCCCC
+CCCCCCCCCCC,n-undecane,338.0,Saldana11,1,CCCCCCCCCCC
+CCCCC,pentane,233.0,carroll11,1,OC/C=C/CO
+CCCCCC,hexane,247.0,carroll11,1,OC[C@H](O)[C@@H](O)[C@H](O)[C@H](O)CO
+CCCCCCC,heptane,269.0,carroll11,1,OCC[C@H](O)CO
+CCCCCCCC,octane,286.0,carroll11,1,OC/C=C\CO
+CCCCCCCCC,nonane,304.0,carroll11,1,CC/C=C\C/C=C\C/C=C\CCCCCCCCO
+CCCCCCCCCC,decane,319.0,carroll11,1,CCCCC/C=C\C/C=C\CCCCCCCCO
+CCCCCCCCCCC,undecane,333.0,carroll11,1,CCCCCC/C=C\CCCCCCCCO
+CCCCCCCCCCCC,dodecane,344.0,carroll11,1,CCCCCCCC/C=C\CCCCCCCCO
+CCCCCCCCCCCCC,tridecane,367.0,carroll11,1,CCCCC(CC)(CO)CO
+CCCCCCCCCCCCCC,tetradecane,373.0,carroll11,1,CCCCCCC(CO)CCCC
+CCCCCCCCCCCCCCC,pentadecane,388.0,carroll11,1,CCC(CC)CO
+CCCCCCCCCCCCCCCC,hexadecane,408.0,carroll11,1,CCCCC(CC)CO
+CCCCCCCCCCCCCCCCC,heptadecane,421.0,carroll11,1,CCCC(O)C(CC)CO
+CC(C)CC,2-methylbutane,222.0,carroll11,1,CCC(C)CO
+CC(C)CCC,2-methylpentane,241.0,carroll11,1,CCC(C)(C)O
+CC(C)CCCCC,2-methylheptane,277.0,carroll11,1,CCCCCC(C)(C)O
+CC(C)CCCCCC,2-methyloctane,297.0,carroll11,1,CCCCC(C)(C)O
+CC(C)CCCCCCC,2-methylnonane,311.0,carroll11,1,CCCCCCCC(C)(C)O
+CC(C)CCCCCCCC,2-methyldecane,323.0,carroll11,1,CCCCCCC(C)(C)O
+CC(C)CCCCCCCCC,2-methylundecane,334.0,carroll11,1,CCCC(C)CO
+CC(C)CCCCCCCCCC,2-methyldodecane,344.0,carroll11,1,CCCC(C)(C)O
+C1CCCC1,cyclopentane,236.0,carroll11,1,CC(O)CC(C)(C)O
+CC(C)(CC)C,"2,2-dimethylbutane",244.0,carroll11,1,CC(C)CO
+CC(C)C(C)C,"2,3-dimethylbutane",244.0,carroll11,1,CC(C)(C)O
+CC1CCCC1,methylcyclopentane,250.0,carroll11,1,OCC(CO)(CO)CO
+CC(C)(CCC)C,"2,2-dimethylpentane",250.0,carroll11,1,CCC(CC)(CO)CO
+CC(C)(C(C)C)C,"2,2,3-trimethylbutane",249.0,carroll11,1,CC(C)(CO)CO
+CC(C)CC(C)C,"2,4-dimethylpentane",261.0,carroll11,1,CC(C)CC(C)(C)CO
+C1CCCCC1,cyclohexane,255.0,carroll11,1,CC(C)C(O)C(C)(C)CO
+CC(CC)(CC)C,"3,3-dimethylpentane",254.0,carroll11,1,CC(C)(O)C(C)(C)O
+CC1(CCCC1)C,"1,1-dimethylcyclopentane",257.0,carroll11,1,CC(C)C(C)C(C)CO
+CC(C)C(CC)C,"2,3-dimethylpentane",258.0,carroll11,1,CC(CO)CC(C)(C)C
+CC(CC)CC,3-methylpentane,241.0,carroll11,1,CCCC[C@@H](CC)CO
+CC(CC)CCC,3-methylhexane,258.0,carroll11,1,CCCC[C@H](CC)CO
+CC(CC)CCCC,3-methylheptane,279.0,carroll11,1,CC(C)CCO
+CC(CC)CCCCC,3-methyloctane,297.0,carroll11,1,CC(C)C(C)O
+CC(CC)CCCCCC,3-methylnonane,314.0,carroll11,1,CCCCCCCC(C)(O)CC
+C(C)C(CC)CC,3-ethylpentane,261.0,carroll11,1,CCCCC(C)(O)CC
+CC(C)(CC(C)C)C,"2,2,4-trimethylpentane",266.0,carroll11,1,CCCC(C)(O)CC
+C[C@H]1[C@H](CCC1)C,"cis-1,2-dimethylcyclopentane",269.0,carroll11,1,CCCCCCC(C)(O)CC
+CC1CCCCC1,methylcyclohexane,269.0,carroll11,1,CCCCCC(C)(O)CC
+C(C)C1CCCC1,ethylcyclopentane,269.0,carroll11,1,CCC(C)CCO
+CC(C)(CCCC)C,"2,2-dimethylhexane",270.0,carroll11,1,CCC(C)(O)CC
+CC(C)(C(C)(C)C)C,"2,2,3,3-tetramethylbutane",273.0,carroll11,1,CC(C)(C)CCO
+CC(C)CCC(C)C,"2,5-dimethylhexane",271.0,carroll11,1,CC(C)CC(C)O
+CC(C)(C(CC)C)C,"2,2,3-trimethylpentane",270.0,carroll11,1,CCC(C)CC(O)CC
+CC(CC)(CCC)C,"3,3-dimethylhexane",272.0,carroll11,1,CC(C)CCCCCCCO
+CC(C)C(C(C)C)C,"2,3,4-trimethylpentane",273.0,carroll11,1,CCCCO
+CC(C)C(CC)(C)C,"2,3,3-trimethylpentane",278.0,carroll11,1,CCC(C)O
+C(C)C(C(C)C)CC,3-ethyl-2-methylpentane,276.0,carroll11,1,CCCC(O)O
+CC(C)C(CCC)C,"2,3-dimethylhexane",278.0,carroll11,1,CCC(O)CO
+CC(CC)C(CC)C,"3,4-dimethylhexane",279.0,carroll11,1,CC(O)CCO
+CC(CCC)CCC,4-methylheptane,278.0,carroll11,1,OCCCCO
+C(C)C(CC)(CC)C,3-ethyl-3-methylpentane,276.0,carroll11,1,CC(O)C(C)O
+C(C)C(CC)CCC,3-ethylhexane,278.0,carroll11,1,CCCCCCCCCCO
+C1CCCCCC1,cycloheptane,279.0,carroll11,1,CCCCCCCCC(C)O
+C[C@@H]1CC[C@H](CC1)C,"trans-1,4-dimethylcyclohexane",279.0,carroll11,1,CCCCCCCC(O)CC
+C[C@@H]1C[C@@H](CCC1)C,"cis-1,3-dimethylcyclohexane",279.0,carroll11,1,CCCCCCC(O)CCC
+CC1(CCCCC1)C,"1,1-dimethylcyclohexane",280.0,carroll11,1,CCCCCCCCCCCCO
+CC(C)(CC(C)(C)C)C,"2,2,4,4-tetramethylpentane",279.0,carroll11,1,CCCCCCCCCCC(C)O
+C(C)C1(CCCC1)C,1-ethyl-1-methylcyclopentane,279.0,carroll11,1,CCCCCCCCCC(O)CC
+CC(C)(CCC(C)C)C,"2,2,5-trimethylhexane",286.0,carroll11,1,CCCCCCCCC(O)CCC
+C[C@@H]1C[C@H](CCC1)C,"trans-1,3-dimethylcyclohexane",281.0,carroll11,1,CCCCCCCCCCCCCCCCCCCCO
+C[C@@H]1CC[C@@H](CC1)C,"cis-1,4-dimethylcyclohexane",279.0,carroll11,1,CCCCCCCCCCCCCCCCCCC(C)O
+C(C)(C)C1CCCC1,isopropylcyclopentane,287.0,carroll11,1,CCCCCCCCCCCCCCCCCC(O)CC
+CC(C)(CC(CC)C)C,"2,2,4-trimethylhexane",286.0,carroll11,1,CCCCCCCCCCCCCCCCC(O)CCC
+C[C@H]1[C@H](CCCC1)C,"cis-1,2-dimethylcyclohexane",285.0,carroll11,1,OCCO
+CC(C)CC(CC)(C)C,"2,4,4-trimethylhexane",288.0,carroll11,1,CCO
+CC(C)C(CC(C)C)C,"2,3,5-trimethylhexane",288.0,carroll11,1,CCCCCCCCCCCCCCCCCO
+C(CC)C1CCCC1,propylcyclopentane,289.0,carroll11,1,CCCCCCCCCCCCCCCC(C)O
+C(C)C1CCCCC1,ethylcyclohexane,291.0,carroll11,1,CCCCCCCCCCCCCCC(O)CC
+CC(C)(C(C(C)C)C)C,"2,2,3,4-tetramethylpentane",284.0,carroll11,1,CCCCCCCCCCCCCC(O)CCC
+CC(C)CC(CCC)C,"2,4-dimethylheptane",288.0,carroll11,1,CCCCCCCO
+CC(C)(CCCCC)C,"2,2-dimethylheptane",297.0,carroll11,1,CCCCCC(C)O
+C(C)C(C(C)(C)C)CC,"3-ethyl-2,2-dimethylpentane",286.0,carroll11,1,CCCCC(O)CC
+CC(C)(C(CCC)C)C,"2,2,3-trimethylhexane",288.0,carroll11,1,CCCC(O)CCC
+CC(CCC)(CCC)C,"4,4-dimethylheptane",288.0,carroll11,1,CCCCCCCCCCCCCCCCO
+CC(C)CCC(CC)C,"2,5-dimethylheptane",288.0,carroll11,1,CCCCCCCCCCCCCCC(C)O
+CC(C)CCCC(C)C,"2,6-dimethylheptane",299.0,carroll11,1,CCCCCCCCCCCCCC(O)CC
+CC(CC)CC(CC)C,"3,5-dimethylheptane",288.0,carroll11,1,CCCCCCCCCCCCC(O)CCC
+C(C)C(C(C)C)C(C)C,"3-ethyl-2,4-dimethylpentane",288.0,carroll11,1,CCCCCCO
+CC(C)(CCC(C)(C)C)C,"2,2,5,5-tetramethylhexane",289.0,carroll11,1,CCCCC(C)O
+CC(C)C(CCC)(C)C,"2,3,3-trimethylhexane",288.0,carroll11,1,CCCC(O)CC
+CC(C)C(C(CC)C)C,"2,3,4-trimethylhexane",288.0,carroll11,1,OCCCCC(O)CO
+CC(C)C(C(C)C)(C)C,"2,3,3,4-tetramethylpentane",284.0,carroll11,1,OCCCCCCO
+CC(C)C(CCCC)C,"2,3-dimethylheptane",288.0,carroll11,1,CC(O)CCC(C)O
+CC(C)(C(CC)(C)C)C,"2,2,3,3-tetramethylpentane",289.0,carroll11,1,CO
+C(C)C(CCC)CCC,4-ethylheptane,288.0,carroll11,1,CCCCCCCCCCCCCCCCCCCO
+C(C)C(CC)C(CC)C,3-ethyl-4-methylhexane,288.0,carroll11,1,CCCCCCCCCCCCCCCCCC(C)O
+CC(CC)C(CCC)C,"3,4-dimethylheptane",288.0,carroll11,1,CCCCCCCCCCCCCCCCC(O)CC
+CC(CC)(C(CC)C)C,"3,3,4-trimethylhexane",288.0,carroll11,1,CCCCCCCCCCCCCCCC(O)CCC
+C(C)C(C(C)C)(CC)C,"3-ethyl-2,3-dimethylpentane",288.0,carroll11,1,CCCCCCCCCO
+CC(CCC)CCCC,4-methyloctane,295.0,carroll11,1,CCCCCCCC(C)O
+C(C)C(CC)(CC)CC,"3,3-diethylpentane",294.0,carroll11,1,CCCCCCC(O)CC
+CC(C)CC(CC(C)C)C,"2,4,6-trimethylheptane",304.0,carroll11,1,CCCCCC(O)CCC
+C1CCCCCCC1,cyclooctane,301.0,carroll11,1,C=CC(O)CCCCC
+CC(C)(CC(CC)(C)C)C,"2,2,4,4-tetramethylhexane",304.0,carroll11,1,CCCCCCCCCCCCCCCCCCO
+CC(C)(CCCCCC)C,"2,2-dimethyloctane",304.0,carroll11,1,CCCCCCCCCCCCCCCCC(C)O
+CC(C)(C(C(CC)C)C)C,"2,2,3,4-tetramethylhexane",304.0,carroll11,1,CCCCCCCCCCCCCCCC(O)CC
+C(C)(C)C1CCCCC1,isopropylcyclohexane,308.0,carroll11,1,CCCCCCCCCCCCCCC(O)CCC
+CC(CC)(CC(CC)C)C,"3,3,5-trimethylheptane",304.0,carroll11,1,CCCCCCCCO
+CC(C)C(C(C(C)C)C)C,"2,3,4,5-tetramethylhexane",304.0,carroll11,1,CCCCCCC(C)O
+C(CC)C1CCCCC1,propylcyclohexane,304.0,carroll11,1,CCCCCC(O)CC
+C(CCC)C1CCCC1,butylcyclopentane,305.0,carroll11,1,CCCCC(O)CCC
+C(C)C(CC)CC(CC)C,3-ethyl-5-methylheptane,304.0,carroll11,1,CCCCCCCCCCCCCCCO
+CC(C)CCCC(CC)C,"2,6-dimethyloctane",307.0,carroll11,1,CCCCCCCCCCCCCC(C)O
+C(C)C(C(C)(C)C)CCC,"3-ethyl-2,2-dimethylhexane",311.0,carroll11,1,CCCCCCCCCCCCC(O)CC
+CC(CC)CC(CCC)C,"3,5-dimethyloctane",314.0,carroll11,1,CCCCCCCCCCCC(O)CCC
+CC(C)(C(CCC)(C)C)C,"2,2,3,3-tetramethylhexane",304.0,carroll11,1,CCCCCO
+CC(CC)(CCCCC)C,"3,3-dimethyloctane",314.0,carroll11,1,CCCC(C)O
+CC(C)C(C(CC)(C)C)C,"2,3,4,4-tetramethylhexane",304.0,carroll11,1,CCC(O)CC
+C(CC)C(CCC)CCC,4-propylheptane,308.0,carroll11,1,CCCCC(O)O
+C(C)C(CCC)CCCC,4-ethyloctane,314.0,carroll11,1,CCCC(O)CO
+CC(CC)C(C(CC)C)C,"3,4,5-trimethylheptane",304.0,carroll11,1,CCC(O)CCO
+CC(C)C(CCCCC)C,"2,3-dimethyloctane",309.0,carroll11,1,CC(O)CCCO
+C(C)C(CC)(CCCC)C,3-ethyl-3-methylheptane,314.0,carroll11,1,OCCCCCO
+CC(C)C(C(CC)C)(C)C,"2,3,3,4-tetramethylhexane",304.0,carroll11,1,CC(O)CC(C)O
+CC(CCCC)CCCC,5-methylnonane,310.0,carroll11,1,C=CCO
+CC(CCC)CCCCC,4-methylnonane,311.0,carroll11,1,CCCO
+C(C)C(C(CC)C)CCC,4-ethyl-3-methylheptane,314.0,carroll11,1,CC(C)O
+C(C)C(C(C)C)(C(C)C)C,"3-ethyl-2,3,4-trimethylpentane",304.0,carroll11,1,CCC(O)O
+CC(CC)(C(CC)(C)C)C,"3,3,4,4-tetramethylhexane",304.0,carroll11,1,CC(O)CO
+C(C)(C)(C)C1CCCCC1,tert-butylcyclohexane,313.0,carroll11,1,OCC(O)CO
+C1CCCCCCCC1,cyclononane,316.0,carroll11,1,OCCCO
+C(CCC)C1CCCCC1,butylcyclohexane,321.0,carroll11,1,CCCCCCCCCCCCCCO
+C1CCC[C@@H]2CCCC[C@@H]12,trans-decalin,326.0,carroll11,1,CCCCCCCCCCCCC(C)O
+C1CCC[C@@H]2CCCC[C@H]12,cis-decalin,330.0,carroll11,1,CCCCCCCCCCCC(O)CC
+C1CCCCCCCCC1,cyclodecane,332.0,carroll11,1,CCCCCCCCCCC(O)CCC
+C(CCCC)C1CCCCC1,pentylcyclohexane,336.0,carroll11,1,CCCCCCCCCCCCCO
+C1(CCCCC1)C1CCCCC1,bicyclohexyl,365.0,carroll11,1,CCCCCCCCCCCC(C)O
+CC(C)(CC(CC(CC(C)(C)C)C)(C)C)C,"2,2,4,4,6,8,8-heptamethylnonane",368.0,carroll11,1,CCCCCCCCCCC(O)CC
+C=CCCC,1-pentene,222.0,carroll11,1,CCCCCCCCCC(O)CCC
+C=CCCCC,1-hexene,247.0,carroll11,1,CCCCCCCCCCCO
+C=CCCCCC,1-heptene,264.0,carroll11,1,CCCCCCCCCC(C)O
+C=CCCCCCCC,1-nonene,298.0,carroll11,1,CCCCCCCCC(O)CC
+C=CCCCCCCCC,1-decene,311.0,carroll11,1,CCCCCCCC(O)CCC
+C=CCCCCCCCCC,1-undecene,327.0,carroll11,1,CCCCCCC(C)c1ccccc1
+C=CCCCCCCCCCC,1-dodecene,346.0,carroll11,1,C/C=C/c1ccccc1
+C=CCCCCCCCCCCC,1-tridecene,365.0,carroll11,1,C/C=C\c1ccccc1
+C=CCCCCCCCCCCCC,1-tetradecene,370.0,carroll11,1,CCC(C)Cc1ccccc1
+C=CCCCCCCCCCCCCC,1-pentadecene,386.0,carroll11,1,CC(C)(C)Cc1ccccc1
+C=CCCCCCCCCCCCCCC,1-hexadecene,402.0,carroll11,1,CCCCCCCC/C=C(\C)c1ccccc1
+C=CCCCCCCCCCCCCCCC,1-heptadecene,414.0,carroll11,1,CCCCCCCC/C=C(/C)c1ccccc1
+C=CCCCCCCCCCCCCCCCC,1-octadecene,427.0,carroll11,1,CC[C@@H](C)C[C@@](C)(CC)c1ccc2ccccc2c1
+C\C=C/CC,cis-2-pentene,227.0,carroll11,1,CC[C@@H](C)C[C@](C)(CC)c1ccc2ccccc2c1
+C\C=C\CC,trans-2-pentene,228.0,carroll11,1,CC[C@H](C)C[C@@](C)(CC)c1ccc2ccccc2c1
+CC\C=C/CC,cis-3-hexene,248.0,carroll11,1,CC[C@H](C)C[C@](C)(CC)c1ccc2ccccc2c1
+CC\C=C\CC,trans-3-hexene,248.0,carroll11,1,CCCCc1cccc2ccccc12
+C\C=C\CCC,trans-2-hexene,248.0,carroll11,1,Cc1ccccc1C(C)C
+C\C=C/CCC,cis-2-hexene,248.0,carroll11,1,CCc1ccccc1C
+CC\C=C/CCC,cis-3-heptene,264.0,carroll11,1,CCc1cccc(C)c1C
+CC\C=C\CCC,trans-3-heptene,266.0,carroll11,1,CCc1ccc(C)cc1C
+C\C=C\CCCC,trans-2-heptene,267.0,carroll11,1,CCc1cccc(C)c1
+C\C=C/CCCC,cis-2-heptene,267.0,carroll11,1,CCc1cc(C)cc2ccccc12
+CCC\C=C\CCC,trans-4-octene,281.0,carroll11,1,CCc1ccc(C)cc1
+CC\C=C\CCCC,trans-3-octene,282.0,carroll11,1,Cc1cccc2c1Cc1ccccc1C2
+CCC\C=C/CCC,cis-4-octene,290.0,carroll11,1,CCc1cccc2ccccc12
+CC\C=C/CCCC,cis-3-octene,287.0,carroll11,1,CCC1CCCc2ccccc21
+C\C=C\CCCCC,trans-2-octene,287.0,carroll11,1,C=Cc1ccccc1C
+CC(=C)CC,2-methyl-1-butene,226.0,carroll11,1,Cc1cccc(C(C)C)c1
+CC(C)=CC,2-methyl-2-butene,228.0,carroll11,1,C=Cc1cccc(C)c1
+C1=CCCC1,cyclopentene,243.0,carroll11,1,CCCc1cccc(C)c1
+CC(CC=C)C,4-methyl-1-pentene,241.0,carroll11,1,CCCCC(CC)c1ccc(C)cc1
+CC(C=C)CC,3-methyl-1-pentene,240.0,carroll11,1,C=Cc1ccc(C)cc1
+CC(\C=C/C)C,cis-4-methyl-2-pentene,240.0,carroll11,1,CCCCCCCc1ccc(C)cc1
+CC(/C=C/C)C,trans-4-methyl-2-pentene,246.0,carroll11,1,CCCCCc1ccc(C)cc1
+CC(=C)CCC,2-methyl-1-pentene,246.0,carroll11,1,Cc1cccc2ccccc12
+C(C)C(=C)CC,2-ethyl-1-butene,247.0,carroll11,1,CC1CCCc2ccccc21
+CC(C)=C(C)C,"2,3-dimethyl-2-butene",253.0,carroll11,1,CC(c1ccccc1)c1ccccc1
+C=C1CCCC1,methylenecyclopentane,255.0,carroll11,1,CCc1ccccc1CC
+CC1=CCCC1,1-methylcyclopentene,254.0,carroll11,1,CCCc1cccc(C)c1C
+CC(=C)C(C)(C)C,"2,3,3-trimethyl-1-butene",256.0,carroll11,1,Cc1ccccc1C
+C1=CCCCC1,cyclohexene,256.0,carroll11,1,c1ccc(-c2ccccc2-c2ccccc2)cc1
+CC(C=C)CCC,3-methyl-1-hexene,255.0,carroll11,1,c1ccc(CCc2ccccc2)cc1
+CC(=C)C(CC)C,"2,3-dimethyl-1-pentene",256.0,carroll11,1,Cc1cccc(C)c1C
+C(C)C(C=C)CC,3-ethyl-1-pentene,256.0,carroll11,1,Cc1ccc(C)c(C)c1C
+CC(CCC=C)C,5-methyl-1-hexene,263.0,carroll11,1,Cc1cc(C)c(C)c(C)c1
+CC(CC=C)CC,4-methyl-1-hexene,258.0,carroll11,1,CCc1ccc(CC)c(CC)c1
+CC(=C)CCCC,2-methyl-1-hexene,265.0,carroll11,1,CCCCCCCCCCCCCCCCc1cc(C)c(C)cc1C
+C(C)C(=C)CCC,2-ethyl-1-pentene,263.0,carroll11,1,Cc1ccc(C)c(C)c1
+C(C)C(=CC)CC,3-ethyl-2-pentene,267.0,carroll11,1,Cc1cc(C)c(C)cc1C
+C12C=CC(CC1)C2,2-norbornene,259.0,carroll11,1,CC(C)c1cccc(C(C)C)c1
+CC(=C)CC(C)(C)C,"2,4,4-trimethyl-1-pentene",269.0,carroll11,1,CCCCc1cc(CC)cc(CC)c1
+CC1CC=CCC1,4-methylcyclohexene,272.0,carroll11,1,CCc1cccc(CC)c1
+C=C1CCCCC1,methylenecyclohexane,271.0,carroll11,1,c1ccc(-c2cccc(-c3ccccc3)c2)cc1
+CC1C=CCCC1,3-methylcyclohexene,270.0,carroll11,1,Cc1cccc(C)c1
+CC(C)=CC(C)(C)C,"2,4,4-trimethyl-2-pentene",272.0,carroll11,1,CCc1cc(CC)cc(CC)c1
+CC1=CCCCC1,1-methylcyclohexene,272.0,carroll11,1,CC(C)c1cc(C(C)C)cc(C(C)C)c1
+C(C)C(C=C)CCC,3-ethyl-1-hexene,274.0,carroll11,1,Cc1cc(C)cc(C)c1
+CC(CC=C)CCC,4-methyl-1-heptene,275.0,carroll11,1,CCc1ccc(CC)cc1
+CC(=C)CCCCC,2-methyl-1-heptene,283.0,carroll11,1,CC(C)c1ccc(C(C)C)cc1
+CC(C)=CCCCC,2-methyl-2-heptene,282.0,carroll11,1,Cc1ccc(C)cc1
+C(C=C)C1CCCC1,allylcyclopentane,285.0,carroll11,1,CCCCCCCCC1CCc2ccccc2C1CCCCCCCC
+C(=C)C1CCCCC1,vinylcyclohexane,294.0,carroll11,1,c1ccc(-c2ccc(-c3ccccc3)cc2)cc1
+CC(CCCCC=C)C,7-methyl-1-octene,291.0,carroll11,1,CCc1cc(C)ccc1C
+C12C=C(CCC1C2(C)C)C,2-carene,311.0,carroll11,1,CCCCCCCCC(C)(C)c1ccc2ccccc2c1
+C=CC(C)=C,isoprene,225.0,carroll11,1,CCCCC(C)(C)c1ccc2ccccc2c1
+CC(=C)C(=C)C,"2,3-dimethyl-1,3-butadiene",251.0,carroll11,1,CCCCCCCCCCCCCCCC(C)(C)c1ccccc1
+CC(=CC=C)C,"4-methyl-1,3-pentadiene",255.0,carroll11,1,CCCCCCCCCCCCCC(C)(C)c1ccccc1
+C=CCCCC=C,"1,6-heptadiene",263.0,carroll11,1,CCCCCCCC(CC(C)C)(CC(C)C)c1ccccc1
+C=CCCCCC=C,"1,7-octadiene",278.0,carroll11,1,CCCc1ccc2cc(C)ccc2c1
+CC(C)=CC=C(C)C,"2,5-dimethyl-2,4-hexadiene",297.0,carroll11,1,CCCCCCCCc1ccc2ccccc2c1
+C=CCCCCCC=C,"1,8-nonadiene",299.0,carroll11,1,CCC(C)(C)c1ccccc1
+C1=CC=CCC1,"1,3-cyclohexadiene",257.0,carroll11,1,CCCC1Cc2ccccc2C1
+C1=CCC=CC1,"1,4-cyclohexadiene",262.0,carroll11,1,CCCc1ccc2ccccc2c1
+C(=C)C1CC=CCC1,4-vinyl-1-cyclohexene,289.0,carroll11,1,CC(C)(C)c1ccc2ccccc2c1
+C1=CCCC=CCC1,"1,5-cyclooctadiene",308.0,carroll11,1,CC(C)(c1ccccc1)c1ccccc1
+C12C=CC(C=C1)C2,"2,5-norbornadiene",262.0,carroll11,1,Cc1ccc2cc(C)ccc2c1
+C(C)=C1C2C=CC(C1)C2,5-ethylidene-2-norbornene,302.0,carroll11,1,CCCCCC[C@@H](C)c1ccccc1
+C1=CC=CC=CC=C1,"1,3,5,7-cyclooctatetraene",295.0,carroll11,1,CCCCCCCCCCCC[C@@H](C)c1ccccc1
+C#CCCC,1-pentyne,239.0,carroll11,1,CCCCCCCCC[C@@H](C)c1ccccc1
+C#CCCCC,1-hexyne,253.0,carroll11,1,CCCCCC[C@H](C)c1ccccc1
+C#CCCCCC,1-heptyne,271.0,carroll11,1,CCCCCCCCCCCC[C@H](C)c1ccccc1
+C#CCCCCCC,1-octyne,289.0,carroll11,1,CCCCCCCCC[C@H](C)c1ccccc1
+C#CCCCCCCC,1-nonyne,306.0,carroll11,1,CCCCCCC(CC)(CC)c1ccc2ccccc2c1
+C#CCCCCCCCC,1-decyne,321.0,carroll11,1,CCc1ccc(C)c(C)c1
+C#CCCCCCCCCC,1-undecyne,338.0,carroll11,1,Cc1ccc(C(C)C)cc1
+C#CCCCCCCCCCC,1-dodecyne,352.0,carroll11,1,CCCC(C)(CCC)c1ccc2ccccc2c1
+C#CCCCCCCCCCCC,1-tridecyne,366.0,carroll11,1,CCCCCCCC[C@@H](CCC)c1ccccc1
+CC#CCC,2-pentyne,243.0,carroll11,1,CCCCCCCC[C@H](CCC)c1ccccc1
+CC#CCCC,2-hexyne,263.0,carroll11,1,CCCCCCCCCC(CCCC)(CCCC)c1ccccc1
+CC#CCCCC,2-heptyne,281.0,carroll11,1,CCc1cccc2c1CCCC2
+CC#CCCCCC,2-octyne,297.0,carroll11,1,CCCCC(C)(CCCC)c1ccc2ccccc2c1
+CC#CCCCCCC,2-nonyne,312.0,carroll11,1,Cc1cccc2c1CCCC2
+CC#CCCCCCCC,2-decyne,326.0,carroll11,1,CCCCCCCCCCCCCCC[C@@H](CCCC)c1ccccc1
+CC#CCCCCCCCCC,2-dodecyne,351.0,carroll11,1,CCCCCCCCCCCCCCC[C@H](CCCC)c1ccccc1
+CCC#CCC,3-hexyne,259.0,carroll11,1,CCCCCCC(CCCCCC)c1ccccc1
+CCC#CCCC,3-heptyne,278.0,carroll11,1,C=C(C)c1ccccc1
+CCC#CCCCCC,3-nonyne,311.0,carroll11,1,c1ccccc1
+CCCC#CCCCC,4-nonyne,308.0,carroll11,1,c1ccc(-c2ccccc2)cc1
+CCCC#CCCC,4-octyne,291.0,carroll11,1,CCCCC1CCCc2ccccc21
+CCC#CCCCCCC,3-decyne,325.0,carroll11,1,c1ccc(C2CCCCC2)cc1
+CCCC#CCCCCC,4-decyne,325.0,carroll11,1,c1ccc(Cc2ccccc2)cc1
+CCCC#CCCCCCC,4-undecyne,339.0,carroll11,1,CCCCCCCCCCCCCCCCCCCCc1ccccc1
+CCCCC#CCCCCC,5-undecyne,339.0,carroll11,1,C=Cc1ccccc1
+CC(C#C)(C)C,"3,3-dimethyl-1-butyne",239.0,carroll11,1,CCc1ccccc1
+CC(CC#C)C,4-methyl-1-pentyne,249.0,carroll11,1,CCCCCCCCCCCCCCCCCc1ccccc1
+CC(C#CC)(C)C,"4,4-dimethyl-2-pentyne",263.0,carroll11,1,CCCCCCCCCCCCCCCCc1ccccc1
+CC(CCC#C)C,5-methyl-1-hexyne,266.0,carroll11,1,c1ccc2c(c1)CCC2
+C#CCCCC#C,"1,6-heptadiyne",282.0,carroll11,1,CC(C)Cc1ccccc1
+C#CCCCCC#C,"1,7-octadiyne",296.0,carroll11,1,CC(C)CCc1ccccc1
+C#CCCCCCC#C,"1,8-nonadiyne",315.0,carroll11,1,CC(C)c1ccccc1
+C1=CC=CC=C1,benzene,262.0,carroll11,1,CCCCc1ccccc1
+CC1=CC=CC=C1,toluene,280.0,carroll11,1,CCCCCCCCCCc1ccccc1
+C(C)C1=CC=CC=C1,ethylbenzene,294.0,carroll11,1,CCCCCCCCCCCCc1ccccc1
+C(CC)C1=CC=CC=C1,propylbenzene,303.0,carroll11,1,CCCCCCCc1ccccc1
+C(CCC)C1=CC=CC=C1,butylbenzene,323.0,carroll11,1,CCCCCCc1ccccc1
+C(CCCC)C1=CC=CC=C1,pentylbenzene,339.0,carroll11,1,CCCc1ccccc1
+C(CCCCC)C1=CC=CC=C1,hexylbenzene,356.0,carroll11,1,CCCCCCCCCCCc1ccccc1
+C(CCCCCC)C1=CC=CC=C1,heptylbenzene,368.0,carroll11,1,CCCCCCCCCCCCCCCCCCCc1ccccc1
+C(CCCCCCC)C1=CC=CC=C1,octylbenzene,380.0,carroll11,1,CCCCCCCCCc1ccccc1
+C(CCCCCCCC)C1=CC=CC=C1,nonylbenzene,390.0,carroll11,1,CCCCCCCCCCCCCCCCCCc1ccccc1
+C(CCCCCCCCCC)C1=CC=CC=C1,undecylbenzene,417.0,carroll11,1,CCCCCCCCc1ccccc1
+C1(=CC=C(C=C1)C)C,p-xylene,298.0,carroll11,1,CCCCCCCCC1CCCc2ccccc21
+C1(=CC(=CC=C1)C)C,m-xylene,298.0,carroll11,1,CCCCCCCCc1cccc(C)c1C
+C=1(C(=CC=CC1)C)C,o-xylene,303.0,carroll11,1,CCCCCCCCCCCCCCCc1ccccc1
+C1(=CC=CC=C1)C(C)C,cumene,304.0,carroll11,1,Cc1cc(C)c(C)c(C)c1C
+C(C)C1=CC=C(C)C=C1,p-ethyltoluene,309.0,carroll11,1,CCCCCc1ccccc1
+C(C)C=1C=C(C)C=CC1,m-ethyltoluene,311.0,carroll11,1,CCCC1CCCc2ccccc21
+C(C)C1=C(C)C=CC=C1,o-ethyltoluene,312.0,carroll11,1,CC[C@@H](C)c1ccccc1
+CC1=CC(=CC(=C1)C)C,"1,3,5-trimethylbenzene",317.0,carroll11,1,CC[C@@H](C)C1CCCc2ccccc21
+CC1=C(C=C(C=C1)C)C,"1,2,4-trimethylbenzene",319.0,carroll11,1,CC[C@H](C)c1ccccc1
+C(C)(C)(C)C1=CC=CC=C1,tert-butylbenzene,317.0,carroll11,1,CC[C@H](C)C1CCCc2ccccc21
+C(C(C)C)C1=CC=CC=C1,isobutylbenzene,323.0,carroll11,1,CCC(C)c1ccccc1
+C(C)(C)C=1C=C(C)C=CC1,m-isopropyltoluene,320.0,carroll11,1,CC(C)(C)c1ccccc1
+CC1=C(C(=CC=C1)C)C,"1,2,3-trimethylbenzene",324.0,carroll11,1,CC(C)(C)C1CCCc2ccccc21
+C(C)(C)C1=CC=C(C)C=C1,p-isopropyltoluene,320.0,carroll11,1,CCCCCCCCCCCCCCc1ccccc1
+C(C)(C)C1=C(C)C=CC=C1,o-isopropyltoluene,323.0,carroll11,1,c1ccc2c(c1)CCCC2
+C(C)C1=CC(=CC=C1)CC,m-diethylbenzene,324.0,carroll11,1,Cc1ccccc1
+C(CC)C=1C=C(C)C=CC1,m-propyltoluene,325.0,carroll11,1,CCCCCCCCCCCCCc1ccccc1
+C(C)C1=CC=C(C=C1)CC,p-diethylbenzene,328.0,carroll11,1,C[C@@H](O)c1ccccc1
+C(C)C1=C(C=CC=C1)CC,o-diethylbenzene,328.0,carroll11,1,Cc1ccccc1CO
+C(C(C)(C)C)C1=CC=CC=C1,neopentylbenzene,323.0,carroll11,1,Cc1cccc(CO)c1
+C(C)C1=C(C=CC(=C1)C)C,"2-ethyl-1,4-dimethylbenzene",329.0,carroll11,1,OCc1ccc(CO)cc1
+C(C)C1=C(C=C(C=C1)C)C,"1-ethyl-2,4-dimethylbenzene",330.0,carroll11,1,O=C(OCC1CCC(COC(=O)c2ccccc2)CC1)c1ccccc1
+C(C)C1=CC(=C(C=C1)C)C,"4-ethyl-1,2-dimethylbenzene",331.0,carroll11,1,CCC(O)c1ccccc1
+C(C)C1=CC(=CC=C1)C(C)C,1-ethyl-3-isopropylbenzene,336.0,carroll11,1,CC(O)Cc1ccccc1
+C(C)C1=C(C(=CC=C1)C)C,"1-ethyl-2,3-dimethylbenzene",338.0,carroll11,1,CCc1ccccc1O
+C1(=CC=CC=C1)CC(CC)C,1-phenyl-2-methylbutane,337.0,carroll11,1,OCc1ccco1
+C(CC(C)C)C1=CC=CC=C1,isopentylbenzene,335.0,carroll11,1,Cc1ccccc1O
+CC1=C(C(=CC(=C1)C)C)C,"1,2,3,5-tetramethylbenzene",336.0,carroll11,1,OCCc1ccccc1
+C(C)(C)C1=CC(=CC=C1)C(C)C,"1,3-diisopropylbenzene",349.0,carroll11,1,CC(CO)c1ccccc1
+CC1=C(C(=C(C=C1)C)C)C,"1,2,3,4-tetramethylbenzene",341.0,carroll11,1,CC(C)(O)c1ccccc1
+C1(=CC=CC=C1)C(C)(CC)C,2-phenyl-2-methylbutane,332.0,carroll11,1,Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1
+CC1=C(C(=CC=C1)CCC)C,"1,2-dimethyl-3-propylbenzene",345.0,carroll11,1,CCc1cccc(O)c1
+C(C)(C)C1=CC=C(C=C1)C(C)C,"1,4-diisopropylbenzene",349.0,carroll11,1,Cc1cccc(O)c1
+C1CCCC2=CC=CC=C12,"1,2,3,4-tetrahydronaphthalene",344.0,carroll11,1,OCCCc1ccccc1
+C1(CCCCC1)C1=CC=CC=C1,cyclohexylbenzene,371.0,carroll11,1,CCC(C)(C)c1ccc(O)cc1
+CC(CCCCCC)C1=CC=CC=C1,(1-methylheptyl)benzene,373.0,carroll11,1,CC(C)(c1ccc(O)cc1)c1ccc(O)cc1
+C1(=CC=CC=C1)CC1=CC=CC=C1,diphenylmethane,400.0,carroll11,1,CCc1ccc(O)cc1
+C(C)OC=O,ethylformate,254.0,carroll11,1,Cc1ccc(O)cc1
+C(CC)OC=O,propylformate,270.0,carroll11,1,CC(C)(C)c1ccc(O)c(O)c1
+C(CCC)OC=O,butylformate,291.0,carroll11,1,CC(C)(C)c1ccc(O)cc1
+C(CCCC)OC=O,pentylformate,299.0,carroll11,1,Oc1ccccc1O
+C(CCCCC)OC=O,hexylformate,317.0,carroll11,1,Oc1cccc(O)c1
+C(CCCCCC)OC=O,heptylformate,333.0,carroll11,1,Oc1ccc(O)cc1
+C(CCCCCCC)OC=O,octylformate,342.0,carroll11,1,O=C(OCc1ccccc1)c1ccccc1
+C(CCCCCCCC)OC=O,nonylformate,361.0,carroll11,1,CC(=O)OCc1ccccc1
+C(CCCCCCCCC)OC=O,decylformate,373.0,carroll11,1,O=COCc1ccccc1
+C(C)(C)OC=O,isopropylformate,259.0,carroll11,1,CCCCOC(=O)c1ccccc1
+C(C)(C)(C)OC=O,tert-butylformate,264.0,carroll11,1,CCCCOC(=O)c1ccccc1C(=O)OCCCC
+C(CC(C)C)OC=O,isopentylformate,295.0,carroll11,1,CCCCCCCCCCOC(=O)c1ccccc1C(=O)OCCCCCCCCCC
+C(C(C)C)OC=O,isobutylformate,277.0,carroll11,1,CCCCCCOC(=O)c1ccccc1C(=O)OCCCCCC
+C1(CCCCC1)C(=O)[O-],cyclohexylformate,324.0,carroll11,1,CCCCCCCCCOC(=O)c1ccccc1C(=O)OCCCCCCCCC
+COC(C)=O,methylacetate,260.0,carroll11,1,CCOC(=O)c1ccccc1C(=O)OCC
+C(C)OC(C)=O,ethylacetate,269.0,carroll11,1,CC(C)COC(=O)c1ccccc1C(=O)OCC(C)C
+C(CC)OC(C)=O,propylacetate,283.0,carroll11,1,CC(C)CCCCCCCOC(=O)c1ccccc1C(=O)OCCCCCCCC(C)C
+C(CCC)OC(C)=O,butylacetate,298.0,carroll11,1,COC(=O)c1cccc(C(=O)OC)c1
+C(CCCC)OC(C)=O,pentylacetate,312.0,carroll11,1,COC(=O)c1ccccc1C(=O)OC
+C(CCCCC)OC(C)=O,hexylacetate,328.0,carroll11,1,CCCCC(CC)COC(=O)c1ccccc1C(=O)OCC(CC)CCCC
+C(CCCCCC)OC(C)=O,heptylacetate,340.0,carroll11,1,CCOC(=O)c1ccccc1
+C(CCCCCCC)OC(C)=O,octylacetate,355.0,carroll11,1,COC(=O)c1ccccc1
+C(CCCCCCCC)OC(C)=O,nonylacetate,364.0,carroll11,1,CCCOC(=O)c1ccccc1
+C(CCCCCCCCC)OC(C)=O,decylacetate,377.0,carroll11,1,CCCCCCCCCc1ccccc1O
+C(CCCCCCCCCC)OC(C)=O,undecylacetate,384.0,carroll11,1,Oc1ccccc1
+C(CCCCCCCCCCC)OC(C)=O,dodecylacetate,393.0,carroll11,1,OCc1ccccc1
+C(C)(C)OC(C)=O,isopropylacetate,275.0,carroll11,1,Cc1ccc(O)c(C)c1
+C(C)(C)(C)OC(C)=O,tert-butylacetate,277.0,carroll11,1,Cc1cccc(C)c1O
+C(C)(CC)OC(C)=O,sec-butylacetate,289.0,carroll11,1,CC(C)[C@H]1CC[C@H](C)C[C@@H]1O
+C(C(C)C)OC(C)=O,isobutylacetate,291.0,carroll11,1,CC1(O)CCCCC1
+C(CCCC)CC(=O)[O-],2-pentylacetate,305.0,carroll11,1,OCC1CC=CCC1
+C(CC(C)C)OC(C)=O,isopentylacetate,309.0,carroll11,1,OCC1CCC(CO)CC1
+C(C)(C)(CC)OC(C)=O,tert-pentylacetate,298.0,carroll11,1,CC1=CCC(C(C)(C)O)CC1
+C1(CCCCC1)CC(=O)[O-],cyclohexylacetate,331.0,carroll11,1,CC1CCC(CO)CC1
+C1(CCCCCCCCC1)CC(=O)[O-],cyclodecylacetate,379.0,carroll11,1,CC1CCC(=O)O1
+COC(CC)=O,methylpropanoate,271.0,carroll11,1,C[C@H]1CCCC[C@H]1O
+C(C)OC(CC)=O,ethylpropanoate,285.0,carroll11,1,C[C@H]1CCC[C@@H](O)C1
+C(C)(C)(C)OC(CC)=O,tert-butylpropanoate,293.0,carroll11,1,C[C@H]1CC[C@@H](O)CC1
+C(CC)OC(CC)=O,propylpropanoate,295.0,carroll11,1,OC1CCCCC1
+C(CCC)OC(CC)=O,butylpropanoate,311.0,carroll11,1,CC(=O)OC1CCCCC1
+C(CC(C)C)OC(CC)=O,isopentylpropanoate,319.0,carroll11,1,O=COC1CCCCC1
+C(CCCC)OC(CC)=O,pentylpropanoate,326.0,carroll11,1,COC(=O)C1CCC(C(=O)OC)CC1
+C(CCCCC)OC(CC)=O,hexylpropanoate,338.0,carroll11,1,O=C1CCCCCO1
+C1(CCCCC1)OC(CC)=O,cyclohexylpropanoate,341.0,carroll11,1,O=C1CCO1
+C(C)OC(CCC)=O,ethylbutanoate,293.0,carroll11,1,O=C1CCCO1
+C(C)(C)OC(CCC)=O,isopropylbutanoate,297.0,carroll11,1,C[C@@H]1CCCC[C@H]1O
+C(CC)OC(CCC)=O,propylbutanoate,308.0,carroll11,1,C[C@@H]1CCC[C@@H](O)C1
+C(C(C)C)OC(CCC)=O,isobutylbutanoate,319.0,carroll11,1,CC/C=C\C/C=C\C/C=C\CCCCCCCC(=O)O
+C(CCC)OC(CCC)=O,butylbutanoate,322.0,carroll11,1,CCCCC/C=C\C/C=C\CCCCCCCC(=O)O
+C(CC(C)C)OC(CCC)=O,isopentylbutanoate,332.0,carroll11,1,CCCCCCCC/C=C\CCCCCCCC(=O)O
+COC(CCCC)=O,methylpentanoate,295.0,carroll11,1,CCC(CC)OC(C)=O
+C(C)OC(CCCC)=O,ethylpentanoate,308.0,carroll11,1,C=C(C)OC(C)=O
+COC(CCCCC)=O,methylhexanoate,314.0,carroll11,1,CC(=O)OC(C)C(C)C
+COC(CCCCCC)=O,methylheptanoate,325.0,carroll11,1,CCCCCCCC/C=C\CCCCCCCC(=O)OCCC(CC)CCC
+COC(CCCCCCC)=O,methyloctanoate,342.0,carroll11,1,CCCCC(CC)COC(C)=O
+COC(C(C)C)=O,methyl2-methylpropanoate,276.0,carroll11,1,CCCCCCCCCCCCCCCC(=O)OCCC(CC)CCC
+C(C)OC(C(C)C)=O,ethyl2-methylpropanoate,286.0,carroll11,1,CCCCCCCCCCCCCCCCCC(=O)OCCC(CC)CCC
+COC(=O)C1CC1,methylcyclopropanecarboxylate,291.0,carroll11,1,C=CC(=O)OCC(CC)CCCC
+C(CC)OC(C(C)C)=O,propyl2-methylpropanoate,303.0,carroll11,1,CC(C)(C)COC=O
+C(C(C)C)OC(C(C)C)=O,isobutyl2-methylpropanoate,311.0,carroll11,1,CCC(=O)OCC(C)(C)C
+COC(=O)C1CCCCC1,methylcyclohexanecarboxylate,333.0,carroll11,1,CC/C=C\C/C=C\C/C=C\CCCCCCCC(=O)OCC(COC(=O)CCCCCCC/C=C\C/C=C\C/C=C\CC)OC(=O)CCCCCCC/C=C\C/C=C\C/C=C\CC
+CC1(CCC(=O)O1)C=C,4-methyl-4-vinylbutyrolactone,348.0,carroll11,1,CCCCC/C=C\C/C=C\CCCCCCCC(=O)OCC(COC(=O)CCCCCCC/C=C\C/C=C\CCCCC)OC(=O)CCCCCCC/C=C\C/C=C\CCCCC
+C(C)(C)OC,isopropylmethylether,226.0,carroll11,1,CCCCCCCC/C=C\CCCCCCCC(=O)OCC(COC(=O)CCCCCCC/C=C\CCCCCCCC)OC(=O)CCCCCCC/C=C\CCCCCCCC
+C(C)OCC,diethylether,233.0,carroll11,1,CCCC(=O)OCC(COC(=O)CCC)OC(=O)CCC
+C1C(C)O1,propyleneoxide,236.0,carroll11,1,CCCCCCCCCCCC(=O)OCC(COC(=O)CCCCCCCCCCC)OC(=O)CCCCCCCCCCC
+C(C)(C)(C)OC,tert-butylmethylether,245.0,carroll11,1,CCCCCCCCCCCCCCCC(=O)OCC(COC(=O)CCCCCCCCCCCCCCC)OC(=O)CCCCCCCCCCCCCCC
+C(C(C)C)OC,isobutylmethylether,244.0,carroll11,1,CCCCCCCCCCCCCCCCCC(=O)OCC(COC(=O)CCCCCCCCCCCCCCCCC)OC(=O)CCCCCCCCCCCCCCCCC
+COC(C)CC,2-methoxybutane,244.0,carroll11,1,CCCCCCCCCCCCCC(=O)OCC(COC(=O)CCCCCCCCCCCCC)OC(=O)CCCCCCCCCCCCC
+C(C)OCCC,ethylpropylether,248.0,carroll11,1,C=CCOC(=O)C(=C)C
+O1CCCC1,tetrahydrofuran,252.0,carroll11,1,C=CCOC(C)=O
+C(C)(C)OC(C)C,diisopropylether,245.0,carroll11,1,C=CC(OC(C)=O)OC(C)=O
+C(CCC)OC,butylmethylether,263.0,carroll11,1,CC/C=C\C/C=C\C/C=C\CCCCCCCC(=O)OCCCC
+CC1OCCC1,2-methyltetrahydrofuran,261.0,carroll11,1,CCCCC/C=C\C/C=C\CCCCCCCC(=O)OCCCC
+COC(C)(C)CC,methyltert-pentylether,266.0,carroll11,1,CCCCCC/C=C\CCCCCCCC(=O)OCCCC
+C(CCC)OCC,butylethylether,268.0,carroll11,1,CCCCCCCC/C=C\CCCCCCCC(=O)OCCCC
+C1(CCCC1)OC,cyclopentylmethylether,272.0,carroll11,1,C=C(C)C(=O)OCCCC
+C(C)(CC)OC(C)CC,di-sec-butylether,288.0,carroll11,1,CCCCOC(=O)CCC
+C12C(CCCC1)O2,cyclohexeneoxide,297.0,carroll11,1,CCCCCCCCCC(=O)OCCCC
+C1(CCCCC1)OC,cyclohexylmethylether,294.0,carroll11,1,CCCCCCCCCCCC(=O)OCCCC
+C(CCC)OCCCC,dibutylether,298.0,carroll11,1,CCCCCCCCCCCCCCCCCCCC(=O)OCCCC
+C(CC(C)C)OCCC(C)C,diisopentylether,319.0,carroll11,1,CCCCOC(C)=O
+C(CCCC)OCCCCC,dipentylether,330.0,carroll11,1,CCCCCCCCCCCCCCCC(=O)OCCCC
+C(C)OCOCC,diethoxymethane,268.0,carroll11,1,CCCCOC=O
+COC(C)OC,"1,1-dimethoxyethane",256.0,carroll11,1,CCCCCCCCC(=O)OCCCC
+COCCOC,"1,2-dimethoxyethane",271.0,carroll11,1,CCCCCCCC(=O)OCCCC
+C(C)(C)OCC1CO1,isopropylglycidylether,306.0,carroll11,1,C=CC(=O)OCCCC
+C(C)OC(OCC)OCC,triethoxymethane,308.0,carroll11,1,CCCCOC(=O)CC
+O1COCC1,"1,3-dioxolane",267.0,carroll11,1,CCCCCCCCCCCCCC(=O)OCCCC
+CC1OCCO1,"2-methyl-1,3-dioxolane",271.0,carroll11,1,CCCCCCCCCCCCC(=O)OCCCC
+O1CCOCC1,"1,4-dioxane",284.0,carroll11,1,CCCCCCCCCCC(=O)OCCCC
+C(CC)=O,propanal,246.0,carroll11,1,CCCCCCCCCC(=O)O
+C(CCC)=O,butanal,266.0,carroll11,1,CCCCCCCCCCOC(=O)CCCCCCCCC
+C(CCCC)=O,pentanal,281.0,carroll11,1,CCCCCCCCCCCC(=O)OCCCCCCCCCC
+C(CCCCC)=O,hexanal,298.0,carroll11,1,CCCCCCCCCCOC(C)=O
+C(CCCCCC)=O,heptanal,313.0,carroll11,1,CCCCCCCCCCCCCCCC(=O)OCCCCCCCCCC
+C(CCCCCCC)=O,octanal,324.0,carroll11,1,CCCCCCCCCCOC=O
+C(CCCCCCCC)=O,nonanal,336.0,carroll11,1,CCCCCCCCCCOC(=O)CCCC
+C(CCCCCCCCC)=O,decanal,356.0,carroll11,1,CCCCCCCCCCCCCC(=O)OCCCCCCCCCC
+C(CCCCCCCCCC)=O,undecanal,368.0,carroll11,1,CCCCC(CC)COC(=O)CCCCC(=O)OCC(CC)CCCC
+C(CCCCCCCCCCC)=O,dodecanal,375.0,carroll11,1,C=CCOC(=O)/C=C\C(=O)OCC=C
+CC(C=O)C,2-methylpropanal,254.0,carroll11,1,CCCCOC(=O)/C=C\C(=O)OCCCC
+CC(=O)C,acetone,253.0,carroll11,1,CCCCOC(=O)CCCCCCCCC(=O)OCCCC
+CC(CC)=O,2-butanone,266.0,carroll11,1,CCOC(=O)/C=C\C(=O)OCC
+CC(CCCCC)=O,2-heptanone,312.0,carroll11,1,CCOC(=O)CCC(=O)OCC
+CC(CCCCCC)=O,2-octanone,329.0,carroll11,1,CCOC(=O)OCC
+CC(CCCCCCC)=O,2-nonanone,341.0,carroll11,1,CCOC(=O)CCCCC(=O)OCC
+CC(CCCCCCCC)=O,2-decanone,358.0,carroll11,1,CCOC(=O)C(=O)OCC
+CC(CCCCCCCCC)=O,2-undecanone,362.0,carroll11,1,CCOC(=O)CC(=O)OCC
+CC(CCCCCCCCCC)=O,2-dodecanone,381.0,carroll11,1,CCCCCCOC(=O)CCCCC(=O)OCCCCCC
+CCC(CC)=O,3-pentanone,280.0,carroll11,1,COC(=O)/C=C\C(=O)OC
+CCC(CCC)=O,3-hexanone,296.0,carroll11,1,COC(=O)CC(=O)OC
+CCC(CCCC)=O,3-heptanone,311.0,carroll11,1,CCCCCCCCOC(=O)CCCCC(=O)OCCCCCCCC
+CCC(CCCCC)=O,3-octanone,324.0,carroll11,1,CCCCCCCC/C=C\CCCCCCCC(=O)OCCCCCCCCCCCC
+CCC(CCCCCC)=O,3-nonanone,336.0,carroll11,1,CCCCCCCCCCCCOC(=O)CCC
+CCC(CCCCCCCC)=O,3-undecanone,362.0,carroll11,1,CCCCCCCCCCCCOC(=O)CCCCCCCCCCC
+CC(C(C)=O)C,3-methyl-2-butanone,272.0,carroll11,1,CCCCCCCCCCCCOC(C)=O
+C1(CCC1)=O,cyclobutanone,283.0,carroll11,1,CCCCCCCCCCCCOC(=O)CCCC
+CC(C(C)(C)C)=O,pinacolone,278.0,carroll11,1,CCCCCCCCCCCCOC(=O)CC
+C1(CC1)C(=O)C,cyclopropylmethylketone,286.0,carroll11,1,CCCCCCCCCCCCCC(=O)OCCCCCCCCCCCC
+CC(C)C(CC)=O,2-methyl-3-pentanone,289.0,carroll11,1,C=COC(=O)C(C)(C)C
+CC(CC(C)=O)C,4-methyl-2-pentanone,287.0,carroll11,1,C=COC(C)=O
+C(C)C(C=O)CC,2-ethylbutanal,294.0,carroll11,1,C=COC=O
+CC(C(C)=O)CC,3-methyl-2-pentanone,285.0,carroll11,1,C=COC(=O)CC
+C1(CCCC1)=O,cyclopentanone,299.0,carroll11,1,C/C=C/C=C/C(=O)OCC
+C(C)C1CC(CC1)=O,3-ethylcyclopentanone,319.0,carroll11,1,CCCCC/C=C\C=C\C(=O)OCC
+C[C@@H]1CC(C[C@H]1C)=O,"trans-3,4-dimethylcyclopentanone",314.0,carroll11,1,C/C=C/C(=O)OCC
+C(CCC)C1C(CCC1)=O,2-butylcyclopentanone,341.0,carroll11,1,CCCCCCC/C=C/C(=O)OCC
+CC1CC(CC1)=O,3-methylcyclopentanone,307.0,carroll11,1,CC/C=C/CC(=O)OCC
+CC1C(CCC1)=O,2-methylcyclopentanone,299.0,carroll11,1,CCCCC/C=C/C(=O)OCC
+C(CCCC)C1C(CCC1)=O,2-pentylcyclopentanone,351.0,carroll11,1,CCC/C=C/CCC(=O)OCC
+C[C@@H]1C(C[C@H](C1)C)=O,"trans-2,4-dimethylcyclopentanone",315.0,carroll11,1,CC/C=C\C/C=C\C/C=C\CCCCCCCC(=O)OCC
+CC1(C(CCC1)=O)C,"2,2-dimethylcyclopentanone",306.0,carroll11,1,CCCCC/C=C\C/C=C\CCCCCCCC(=O)OCC
+C1(CCCC1)C1C(CCC1)=O,2-cyclopentylcyclopentanone,363.0,carroll11,1,CCCCCC/C=C\CCCCCCCC(=O)OCC
+CC1C(CC(C1)(C)C)=O,"2,4,4-trimethylcyclopentanone",316.0,carroll11,1,CCCCCCCC/C=C\CCCCCCCC(=O)OCC
+C(C)(C)(C)C1CC(CC1)=O,3-tert-butylcyclopentanone,337.0,carroll11,1,CCOC(=O)C(C)O
+C1(CCCC1)C=O,cyclopentanecarboxaldehyde,301.0,carroll11,1,C=C(C)C(=O)OCC
+CC(CCC(C)=O)C,5-methyl-2-hexanone,309.0,carroll11,1,CCOC(=O)CCC(C)=O
+C1(CCCCC1)=O,cyclohexanone,316.0,carroll11,1,C=C=CC(=O)OCC
+COC1C(CCCC1)=O,2-methoxycyclohexanone,342.0,carroll11,1,CCCC(=O)OCC
+CC1CC(CCC1)=O,3-methylcyclohexanone,321.0,carroll11,1,CCCCCCCCCC(=O)OCC
+C(C)C1C(CCCC1)=O,2-ethylcyclohexanone,332.0,carroll11,1,CCCCCCCCCCCC(=O)OCC
+C(C)(C)C1C(CCCC1)=O,2-isopropylcyclohexanone,338.0,carroll11,1,CCCCCCCCCCCCCCCCCCCC(=O)OCC
+CC1C(CCCC1)=O,2-methylcyclohexanone,319.0,carroll11,1,CCOC(C)=O
+CC1CCC(CC1)=O,4-methylcyclohexanone,321.0,carroll11,1,C=CCCCCC(=O)OCC
+C(C)C1CCC(CC1)=O,4-ethylcyclohexanone,336.0,carroll11,1,CCCCCCCCCCCCCCCCC(=O)OCC
+C(CC)C1CCC(CC1)=O,4-propylcyclohexanone,359.0,carroll11,1,CCCCCCC(=O)OCC
+C(C)(C)C1CCC(CC1)=O,4-isopropylcyclohexanone,338.0,carroll11,1,CCCCCCCCCCCCCCCC(=O)OCC
+CC(CC(CC)=O)CC,5-methyl-3-heptanone,316.0,carroll11,1,CCCCCC(=O)OCC
+C1(CCCCC1)C=O,cyclohexanecarboxaldehyde,314.0,carroll11,1,CCOC(=O)C(C)C
+C(C)C(C=O)CCCC,2-ethylhexanal,319.0,carroll11,1,CCOC(=O)CC(C)C
+CCCC(CCCC)=O,4-octanone,318.0,carroll11,1,CCOC=O
+CCCC(CCCCC)=O,4-nonanone,335.0,carroll11,1,CCCCCCCCC(=O)OCC
+CCCC(CCCCCC)=O,4-decanone,344.0,carroll11,1,CCCCCCCCCCCCCCCCCC(=O)OCC
+CCCC(CCCCCCC)=O,4-undecanone,365.0,carroll11,1,CCCCCCCC(=O)OCC
+C(C(C)C)C(=O)CC(C)C,diisobutylketone,322.0,carroll11,1,CCCCC(=O)OCC
+C1(CCCCCC1)=O,cycloheptanone,329.0,carroll11,1,C=CC(=O)OCC
+C(C)C1C(CCCCC1)=O,2-ethylcycloheptanone,344.0,carroll11,1,CCOC(=O)CC
+CC1CCCC(CCC1)=O,5-methylcyclooctanone,344.0,carroll11,1,CCCCCCCCCCCCCC(=O)OCC
+CC1C(CCCCCC1)=O,2-methylcyclooctanone,344.0,carroll11,1,CCCCCCCCCCCCC(=O)OCC
+CCCCC(CCCC)=O,5-nonanone,333.0,carroll11,1,C=CCCCCCCCCC(=O)OCC
+C(C)(C)(C)C1C(CCCC1)=O,2-tert-butylcyclohexanone,345.0,carroll11,1,CCCCCCCCCCC(=O)OCC
+CC1(CC(CC(C1)(C)C)=O)C,"3,3,5,5-tetramethylcyclohexanone",346.0,carroll11,1,CC(=O)OCCOC(C)=O
+CCCCCC(CCCCC)=O,6-undecanone,361.0,carroll11,1,C=CC(=O)OCCOC(=O)C=C
+COC(OC)=O,dimethylcarbonate,287.0,carroll11,1,CC(=O)OCC(COC(C)=O)OC(C)=O
+C(C)OC(OCC)=O,diethylcarbonate,306.0,carroll11,1,CCCCCCCOC(C)=O
+C(CC)OC(OCCC)=O,dipropylcarbonate,328.0,carroll11,1,CCCCCCCCCCCCCCCCOC(=O)CCCCCCCCCCC
+C(C=C)CCOC([O-])=O,allylethylcarbonate,319.0,carroll11,1,CCCCCCCCCCCCCCCCOC(C)=O
+C(C)O,ethanol,285.0,carroll11,1,CCCCCCCCCCCCCCCCOC(=O)CCCC
+C(CC)O,1-propanol,296.0,carroll11,1,CCCCCCCC/C=C\CCCCCCCC(=O)OCCCCCC
+C(CCC)O,1-butanol,307.0,carroll11,1,CCCCCCCCCC(=O)OCCCCCC
+C(CCCC)O,1-pentanol,322.0,carroll11,1,CCCCCCCCCCCC(=O)OCCCCCC
+C(CCCCC)O,1-hexanol,332.0,carroll11,1,CCCCCCOC(C)=O
+C(CCCCCC)O,1-heptanol,343.0,carroll11,1,CCCCCCCCCCCCCCCC(=O)OCCCCCC
+C(CCCCCCCC)O,1-nonanol,371.0,carroll11,1,CCCCCCOC=O
+C(CCCCCCCCC)O,1-decanol,381.0,carroll11,1,CCCCCCCCCCCCCC(=O)OCCCCCC
+C(CCCCCCCCCCC)O,1-dodecanol,400.0,carroll11,1,CCCCCCCC/C=C\CCCCCCCC(=O)OCC(C)C
+C(CCCCCCCCCC)O,1-undecanol,388.0,carroll11,1,CC(C)COC(=O)C(C)C
+CC(C)O,2-propanol,285.0,carroll11,1,C=C(C)C(=O)OCC(C)C
+CC(CC)O,2-butanol,297.0,carroll11,1,CCCC(=O)OCC(C)C
+CC(CCC)O,2-pentanol,307.0,carroll11,1,CCCCCCCCCC(=O)OCC(C)C
+CC(CCCC)O,2-hexanol,319.0,carroll11,1,CCCCCCCCCCCC(=O)OCC(C)C
+CC(CCCCC)O,2-heptanol,332.0,carroll11,1,CC(=O)OCC(C)C
+CC(CCCCCC)O,2-octanol,345.0,carroll11,1,CCCCCCCCCCCCCCCC(=O)OCC(C)C
+CC(CCCCCCC)O,2-nonanol,355.0,carroll11,1,CC(C)COC=O
+CC(CCCCCCCC)O,2-decanol,358.0,carroll11,1,CCCCCCCCCCCCCCCCCC(=O)OCC(C)C
+CC(CCCCCCCCC)O,2-undecanol,380.0,carroll11,1,C=CC(=O)OCC(C)C
+CC(CCCCCCCCCC)O,2-dodecanol,386.0,carroll11,1,CCC(=O)OCC(C)C
+CCC(CC)O,3-pentanol,306.0,carroll11,1,CCCCCCCCCCCCCC(=O)OCC(C)C
+CCC(CCC)O,3-hexanol,318.0,carroll11,1,CCCC(=O)OCCC(C)C
+CCC(CCCC)O,3-heptanol,328.0,carroll11,1,CCCCCCCCCC(=O)OCCC(C)C
+CCC(CCCCCC)O,3-nonanol,352.0,carroll11,1,CCCCCCCCCCCC(=O)OCCC(C)C
+CCC(CCCCCCC)O,3-decanol,372.0,carroll11,1,CC(=O)OCCC(C)C
+CCC(CCCCC)O,3-octanol,341.0,carroll11,1,CCCCCC(=O)OCCC(C)C
+C(C)(C)(C)O,tert-butylalcohol,284.0,carroll11,1,CC(C)CCOC(=O)CC(C)C
+CC(C)(CC)O,2-methyl-2-butanol,294.0,carroll11,1,CC(C)CCOC=O
+C(C=C)O,allylalcohol,295.0,carroll11,1,CCC(=O)OCCC(C)C
+CC(CO)C,2-methyl-1-propanol,301.0,carroll11,1,CCCCCCCCCCCCCC(=O)OCCC(C)C
+CC(C(C)O)C,3-methyl-2-butanol,300.0,carroll11,1,CCCCCCCC/C=C\CCCCCCCC(=O)OC(C)C
+CC(C)C(CC)O,2-methyl-3-pentanol,319.0,carroll11,1,CCCCCCCCCC(=O)OC(C)C
+CC(CO)CC,2-methyl-1-butanol,316.0,carroll11,1,CC(=O)OC(C)C
+CC(CCO)C,3-methyl-1-butanol,316.0,carroll11,1,CCCCCCCCCCCCCCCC(=O)OC(C)C
+CC(CC(C)O)C,4-methyl-2-pentanol,314.0,carroll11,1,CCCCCCCCCCCCCCCCCC(=O)OC(C)C
+CC(C(C)O)CC,3-methyl-2-pentanol,314.0,carroll11,1,CCCCCC/C=C/CCCCCCCCCC(=O)OC
+C1(CCCC1)O,cyclopentanol,324.0,carroll11,1,CCCCCCCC/C=C\CCCCCCCCCC(=O)OC
+CC(CO)CCC,2-methyl-1-pentanol,324.0,carroll11,1,CCCCCC/C=C\CCCCCCCCCC(=O)OC
+C(C)C(CO)CC,2-ethyl-1-butanol,330.0,carroll11,1,CCCCCCCC/C=C\CCCCCCCCCCCC(=O)OC
+CC(CCCO)C,4-methyl-1-pentanol,324.0,carroll11,1,C/C=C/C=C/C(=O)OC
+CC(CCO)CC,3-methyl-1-pentanol,331.0,carroll11,1,CCCCCC/C=C/C(=O)OC
+C1(CCCCC1)O,cyclohexanol,336.0,carroll11,1,CCCCC/C=C/C(=O)OC
+C1(CCCC1)CO,cyclopentylmethanol,335.0,carroll11,1,C=C/C=C/C(=O)OC
+C[C@@H]1[C@@H](CCCC1)O,cis-2-methylcyclohexanol,332.0,carroll11,1,C=C/C=C\C(=O)OC
+C[C@H]1[C@@H](CCCC1)O,trans-2-methylcyclohexanol,332.0,carroll11,1,CC/C=C/CC(=O)OC
+C[C@@H]1CC[C@H](CC1)O,trans-4-methylcyclohexanol,343.0,carroll11,1,CCCCC/C=C/CC(=O)OC
+C(C)C(CO)CCCC,2-ethyl-1-hexanol,347.0,carroll11,1,C/C=C/CC(=O)OC
+C1(CCCCCC1)O,cycloheptanol,344.0,carroll11,1,CCCCC/C=C\CC(=O)OC
+CC(CCO)CC(C)(C)C,"3,5,5-trimethyl-1-hexanol",353.0,carroll11,1,C/C=C\C/C=C\C/C=C\C/C=C\C/C=C\C/C=C\CCCC(=O)OC
+CC(C(C)O)O,"2,3-butanediol",358.0,carroll11,1,CC/C=C\C/C=C\C/C=C\C/C=C\C/C=C\CCCC(=O)OC
+C(C(C)O)O,"1,2-propanediol",372.0,carroll11,1,CCCCC/C=C/C/C=C/C/C=C/CCCCC(=O)OC
+C(C(CC)O)O,"1,2-butanediol",366.0,carroll11,1,CCCCC/C=C\C/C=C/C/C=C/CCCCC(=O)OC
+C(CO)O,"1,2-ethanediol",381.0,carroll11,1,CCCCC/C=C/C/C=C\C/C=C/CCCCC(=O)OC
+C(C(CCC)O)O,"1,2-pentanediol",378.0,carroll11,1,CCCCC/C=C\C/C=C\C/C=C/CCCCC(=O)OC
+C(CC(C)O)O,"1,3-butanediol",382.0,carroll11,1,CCCCC/C=C/C/C=C/C/C=C\CCCCC(=O)OC
+C(C(CCCC)O)O,"1,2-hexanediol",395.0,carroll11,1,CCCCC/C=C\C/C=C/C/C=C\CCCCC(=O)OC
+C(CCCO)O,"1,4-butanediol",394.0,carroll11,1,CCCCC/C=C/C/C=C\C/C=C\CCCCC(=O)OC
+C(CCCCO)O,"1,5-pentanediol",402.0,carroll11,1,CCCCC/C=C\C/C=C\C/C=C\CCCCC(=O)OC
+C1(CCCCCCC1)O,cyclooctanol,361.0,carroll11,1,CC/C=C\C/C=C\C/C=C\CCCCCCCC(=O)OC
+C(C)(=O)O,aceticacid,313.0,carroll11,1,CCCCC/C=C\C/C=C\CCCCCCCC(=O)OC
+C(CC)(=O)O,propionicacid,331.0,carroll11,1,CCCCCC/C=C\CCCCCCCC(=O)OC
+C(CCC)(=O)O,butanoicacid,342.0,carroll11,1,CCCCCCCC/C=C\CCCCCCCC(=O)OC
+C(CCCC)(=O)O,pentanoicacid,358.0,carroll11,1,C=CCCCCCCCCC(=O)OC
+C(CCCCC)(=O)O,hexanoicacid,375.0,carroll11,1,C=C(C)C(=O)OC
+C(CCCCCC)(=O)O,heptanoicacid,382.0,carroll11,1,COC(=O)C(C)C
+CC(C(=O)O)C,2-methylpropanoicacid,332.0,carroll11,1,C=CCC(=O)OC
+CC(CC(=O)O)C,3-methylbutanoicacid,347.0,carroll11,1,CCCC(=O)OC
+CC(C(=O)O)CC,2-methylbutanoicacid,350.0,carroll11,1,CCCCCCCCCC(=O)OC
+C(C)C(C(=O)O)CC,2-ethylbutanoicacid,360.0,carroll11,1,CCCCCCCCCCCC(=O)OC
+CC(CC(=O)O)(C)C,"3,3-dimethylbutanoicacid",361.0,carroll11,1,CCCCCCCCCCCCCCCCCCCC(=O)OC
+CC(CCC(=O)O)C,4-methylpentanoicacid,370.0,carroll11,1,COC(C)=O
+CC(C(=O)O)CCC,2-methylpentanoicacid,364.0,carroll11,1,CCCCCCCCCCCCCCCCCCCCC(=O)OC
+CC(C(=O)O)CCCC,2-methylhexanoicacid,378.0,carroll11,1,CCCCCCCCCCCCCCCCC(=O)OC
+CC(CC(=O)O)CCC,3-methylhexanoicacid,376.0,carroll11,1,CCCCCCC(=O)OC
+CC(CCC(=O)O)CC,4-methylhexanoicacid,376.0,carroll11,1,C=CCCCC(=O)OC
+C(C)(=O)OC(C)=O,aceticanhydride,322.0,carroll11,1,CCCCCCCCCCCCCCCC(=O)OC
+C(CCC)(=O)OC(CCC)=O,butanoicanhydride,355.0,carroll11,1,CCCCCC(=O)OC
+C(CCCC)(=O)OC(CCCC)=O,pentanoicanhydride,374.0,carroll11,1,COC=O
+C(CCCCC)(=O)OC(CCCCC)=O,hexanoicanhydride,386.0,carroll11,1,CCCCCCCCCCCCCCCCCCC(=O)OC
+C(CCCCCC)(=O)OC(CCCCCC)=O,heptanoicanhydride,403.0,carroll11,1,CCCCCCCCC(=O)OC
+C(C(C)C)(=O)OC(C(C)C)=O,isobutanoicanhydride,340.0,carroll11,1,CCCCCCCCCCCCCCCCCC(=O)OC
+C(C(C)(C)C)(=O)OC(C(C)(C)C)=O,pivalicanhydride,336.0,carroll11,1,CCCCCCCC(=O)OC
+CC(CC(=O)OC(CC(C)C)=O)C,3-methylbutanoicanhydride,364.0,carroll11,1,C=CCCC(=O)OC
+C(C)(C)N,isopropylamine,241.0,carroll11,1,CCCCCCCCCCCCCCC(=O)OC
+C(C)(C)(C)N,tert-butylamine,235.0,carroll11,1,C=CC(=O)OC
+C(CC)N,propylamine,243.0,carroll11,1,CCC(=O)OC
+C1(CC1)N,cyclopropylamine,248.0,carroll11,1,CCCCCCCCCCCCCC(=O)OC
+CNC(C)C,N-methylisopropylamine,253.0,carroll11,1,CCCCCCCCCCCCC(=O)OC
+C(C)NCC,diethylamine,250.0,carroll11,1,CCCCCCCCCCC(=O)OC
+C(C)(CC)N,sec-butylamine,254.0,carroll11,1,CCCCCCCCCCCCCCCCCC(=O)OCCCC
+C(C=C)CN,allylmethylamine,265.0,carroll11,1,CCCOC(C)=O
+C(C(C)C)N,isobutylamine,263.0,carroll11,1,CCCOC=O
+C(CCC)N,butylamine,266.0,carroll11,1,CCCOC(=O)CC
+C1(CCC1)N,cyclobutylamine,269.0,carroll11,1,CC(=O)OCC(C)(C)C
+C(C)(C)NC(C)C,diisopropylamine,266.0,carroll11,1,CCCCCCCCCOC(C)=O
+CCC(CC)N,3-pentanamine,275.0,carroll11,1,CCCCCCCCCOC=O
+CNCCCC,N-methylbutylamine,275.0,carroll11,1,CCCCCCCCCCCCCCCCCC(=O)O
+C(CCCC)N,pentylamine,277.0,carroll11,1,CCCCCCCCCCCCCCCCCCOC(C)=O
+C1(CCCC1)N,cyclopentylamine,285.0,carroll11,1,CCCCCCCC/C=C\CCCCCCCC(=O)OCCCCCCCC
+C(CC)NCCC,dipropylamine,280.0,carroll11,1,CCCCCCCCOC(=O)CCC
+C(CCCCC)N,hexylamine,300.0,carroll11,1,CCCCCCCCCCCC(=O)OCCCCCCCC
+C(C(C)C)NCC(C)C,diisobutylamine,303.0,carroll11,1,CCCCCCCCOC(C)=O
+C(CCCCCC)N,heptylamine,317.0,carroll11,1,CCCCCCCCCCCCCCCC(=O)OCCCCCCCC
+C(CCC)NCCCC,dibutylamine,320.0,carroll11,1,CCCCCCCCOC=O
+C(C)C(CN)CCCC,2-ethyl-1-hexanamine,323.0,carroll11,1,CCCCCCCCOC(=O)CCCC
+C(CCCCCCC)N,octylamine,333.0,carroll11,1,CCCCCCCCCCCCCC(=O)OCCCCCCCC
+C(CCCCCCCC)N,nonylamine,347.0,carroll11,1,CC/C=C\C/C=C\C/C=C\CCCCCCCC(=O)OCCCCC
+C(CCCCCCCCC)N,1-decanamine,358.0,carroll11,1,CCCCC/C=C\C/C=C\CCCCCCCC(=O)OCCCCC
+C(C)NC1CCCCC1,N-ethylcyclohexanamine,318.0,carroll11,1,CCCCCC/C=C\CCCCCCCC(=O)OCCCCC
+C(C)(CC)NC(C)CC,di-sec-butylamine,297.0,carroll11,1,CCCCCCCC/C=C\CCCCCCCC(=O)OCCCCC
+NCC1CCCCC1,(aminomethyl)cyclohexane,316.0,carroll11,1,CCCCCOC(=O)CCC
+C(C)N(CC)C,N-ethyl-N-methylethanamine,250.0,carroll11,1,CCCCCCCCCC(=O)OCCCCC
+C(C)N(CC)CC,triethylamine,264.0,carroll11,1,CCCCCCCCCCCC(=O)OCCCCC
+C(CC)N(CCC)CCC,tripropylamine,308.0,carroll11,1,CCCCCCCCCCCCCCCCCCCC(=O)OCCCCC
+C(CCC)N(CCCC)CCCC,tributylamine,344.0,carroll11,1,CCCCCOC(C)=O
+C(C)N(C)C,N-ethyldimethylamine,237.0,carroll11,1,CCCCCCCCCCCCCCCC(=O)OCCCCC
+C(C)N1CCCCC1,1-ethylpiperidine,291.0,carroll11,1,CCCCCOC=O
+NCCNCCN,diethylenetriamine,363.0,carroll11,1,CCCCCCCCC(=O)OCCCCC
+CN(C)C1CCCCC1,"N,N-dimethylcyclohexylamine",314.0,carroll11,1,CCCCCCCCCCCCCCCCCC(=O)OCCCCC
+C(CN)N,"1,2-ethanediamine",307.0,carroll11,1,CCCCCOC(=O)CC
+C(CCN)N,"1,3-propanediamine",321.0,carroll11,1,CCCCCCCCCCCCCC(=O)OCCCCC
+CN(CCCN)C,"N,N-dimethyl-1,3-propanediamine",305.0,carroll11,1,CCCCCCCCCCCCC(=O)OCCCCC
+CN(C=O)C,"N,N-dimethylformamide",330.0,carroll11,1,CCCCCCCCCCC(=O)OCCCCC
+CN(C(C)=O)C,"N,N-dimethylacetamide",339.0,carroll11,1,CC/C=C\C/C=C\C/C=C\CCCCCCCC(=O)OCCC
+C(C)N(C=O)CC,"N,N-diethylformamide",338.0,carroll11,1,CCCCC/C=C\C/C=C\CCCCCCCC(=O)OCCC
+C(C)N(C(C)=O)CC,"N,N-diethylacetamide",349.0,carroll11,1,CCCCCC/C=C\CCCCCCCC(=O)OCCC
+C(C)NC=O,N-ethylformamide,359.0,carroll11,1,CCCCCCCC/C=C\CCCCCCCC(=O)OCCC
+CNC=O,N-methylformamide,371.0,carroll11,1,C=C(C)C(=O)OCCC
+C(C)NC(C)=O,N-ethylacetamide,379.0,carroll11,1,CCCCCCCCCC(=O)OCCC
+C(CCC)NC(C)=O,N-butylacetamide,388.0,carroll11,1,CCCCCCCCCCCC(=O)OCCC
+C(C)(C)N(C=O)C(C)C,"N,N-diisopropylformamide",348.0,carroll11,1,CCCCCCCCCCCCCCCCCCCC(=O)OCCC
+C(C)#N,acetonitrile,275.0,carroll11,1,CCCCCCCCCCCCCCCC(=O)OCCC
+C(CC)#N,propionitrile,279.0,carroll11,1,CCCCCCCCC(=O)OCCC
+C(CCC)#N,butyronitrile,291.0,carroll11,1,CCCCCCCCCCCCCCCCCC(=O)OCCC
+C(CCCC)#N,pentanenitrile,305.0,carroll11,1,C=CC(=O)OCCC
+C(CCCCC)#N,hexanenitrile,320.0,carroll11,1,CCCCCCCCCCCCCC(=O)OCCC
+C(CCCCCC)#N,heptanenitrile,331.0,carroll11,1,CCCCCCCCCCCCC(=O)OCCC
+C(CCCCCCC)#N,octanenitrile,347.0,carroll11,1,CCCCCCCCCCC(=O)OCCC
+C(CCCCCCCC)#N,nonanenitrile,355.0,carroll11,1,CCCCCCCC/C=C\CCCCCCCC(=O)OC(C)CC
+C(CCCCCCCCC)#N,decanenitrile,365.0,carroll11,1,CCC(C)OC(C)=O
+CC(C#N)(C)C,"2,2-dimethylpropanenitrile",277.0,carroll11,1,CCCCCCCCCCCCCCCC(=O)OC(C)CC
+C(C(C)C)#N,isobutyronitrile,281.0,carroll11,1,CCC(C)OC=O
+C1(CC1)C#N,cyclopropanecarbonitrile,305.0,carroll11,1,CCCCCCCCCCCCCCCCCC(=O)OC(C)CC
+CC(CC#N)C,3-methylbutanenitrile,301.0,carroll11,1,C=C(C)C(=O)OC(C)(C)C
+C(#N)CCCCC#N,"1,4-dicyanobutane",432.0,carroll11,1,CCCC(=O)OC(C)(C)C
+C(CC)S,1-propanethiol,259.0,carroll11,1,CC(=O)OC(C)(C)C
+C(CCC)S,1-butanethiol,275.0,carroll11,1,CC(C)(C)OC=O
+C(CCCC)S,1-pentanethiol,291.0,carroll11,1,CCCCCCCCCCCCCCOC(C)=O
+C(CCCCC)S,1-hexanethiol,303.0,carroll11,1,CCCCCCCCCCCCCCOC=O
+C(CCCCCC)S,1-heptanethiol,319.0,carroll11,1,CCCCCCCCCCCCCCOC(=O)CCCC
+C(CCCCCCC)S,1-octanethiol,341.0,carroll11,1,CCCCCCCCCCCOC(=O)CCC
+C(CCCCCCCC)S,1-nonanethiol,352.0,carroll11,1,CCCCCCCCCCCOC(C)=O
+C(CCCCCCCCC)S,1-decanethiol,372.0,carroll11,1,CCCCCCCCCCCOC=O
+C(CCCCCCCCCC)S,1-undecanethiol,382.0,carroll11,1,CCCCCCCCCCCOC(=O)CC
+CC(CC)S,2-butanethiol,250.0,carroll11,1,CCCCCCCCCCCCC1CCCC(C)C1
+CC(CCC)S,2-pentanethiol,288.0,carroll11,1,CCCCCCCC1CCCC(C)C1
+CC(C)(C)S,2-methyl-2-propanethiol,249.0,carroll11,1,CCCCCCCCCC1CCCC(C)C1
+CC(CS)CC,2-methyl-1-butanethiol,292.0,carroll11,1,CCCCCC1CCCC(C)C1
+CC(C(C)S)C,3-methyl-2-butanethiol,282.0,carroll11,1,CCCC1CCCC(C)C1
+C1(CCCC1)S,cyclopentanethiol,298.0,carroll11,1,CCCCCCCCCCCC1CCCC(C)C1
+C1(CCCCC1)S,cyclohexanethiol,314.0,carroll11,1,C=C(C)C1CC=C(C)CC1
+C(C)C(CC)(CC)S,3-ethyl-3-pentanethiol,307.0,carroll11,1,CC1=CC=C(C(C)C)CC1
+CC(C)(CCC)S,2-methyl-2-pentanethiol,293.0,carroll11,1,CC1=CCC(C(C)C)=CC1
+CCC(CCC)S,3-hexanethiol,303.0,carroll11,1,C[C@H]1C[C@H](C)C[C@@H](C)C1
+CSC,dimethylsulfide,237.0,carroll11,1,CCC1(CC)CCCCC1
+C(C)SCC,diethylsulfide,263.0,carroll11,1,CC1(C)CCCCC1
+C(CC)SCCC,dipropylsulfide,301.0,carroll11,1,CC1(C)CCCC1
+C(CCC)SCCCC,dibutylsulfide,333.0,carroll11,1,CCCCCCCCCCCCCCCCC1CC(C)C(C)CC1C
+C(C)SC,ethylmethylsulfide,255.0,carroll11,1,CCCC(CC)C1CC(C)CC(C)C1
+C(C)(C)(C)SC,tert-butylmethylsulfide,270.0,carroll11,1,CCCCCC(CC)C1CC(C)CC(C)C1
+S1CCCC1,thiacyclopentane,286.0,carroll11,1,CC12CC3CC(C1)CC(C)(C3)C2
+S1CCCCC1,thiacyclohexane,294.0,carroll11,1,CC1CC(C)CC(C)C1
+C(C)(C)(C)SC(C)(C)C,di-tert-butylsulfide,300.0,carroll11,1,C1CCC2CC3CCCCC3CC2C1
+C(C)(CC)SC(C)CC,di-sec-butylsulfide,312.0,carroll11,1,C1CC2CCC3CCCC4CCC(C1)C2C34
+C(CC(C)C)SCCC(C)C,diisopentylsulfide,350.0,carroll11,1,CCCCCCCCCCC1CCC2CCCCC2C1
+C(C=C)SCC=C,diallylsulfide,296.0,carroll11,1,CCCCC1CCC2CCC(CC)CC2C1
+C(C=C)SCC,allylethylsulfide,289.0,carroll11,1,CCCCCCC1CCC2CCCCC2C1
+C(C=C)SCCC,allylpropylsulfide,302.0,carroll11,1,CCCCCCCCCCCCCC(C)(C)C1CCCCC1
+ClCCCCCC,1-chlorohexane,299.0,carroll11,1,CCCCCCCCC(C)(C)C1CCCC2CCCCC21
+ClCCCCCCC,1-chloroheptane,314.0,carroll11,1,CCCCCC[C@@H](C(C)C)C1CCCCC1
+ClCCCCCCCC,1-chlorooctane,331.0,carroll11,1,CCCCCC[C@H](C(C)C)C1CCCCC1
+ClCCCCCCCCC,1-chlorononane,347.0,carroll11,1,CC1=CCC(C(C)C)C=C1
+ClCCCCCCCCCC,1-chlorodecane,356.0,carroll11,1,CC1CCC2CCCCC2C1
+ClC(C)C,2-chloropropane,241.0,carroll11,1,C1=CC2CCC1C2
+ClC(C)CC,2-chlorobutane,258.0,carroll11,1,CC1CC(C)C2CCCCC2C1
+ClC(C)CCC,2-chloropentane,274.0,carroll11,1,CCCCCCCCCCCC[C@@H](C)C1CCCCC1
+ClCC=C,3-chloropropene,245.0,carroll11,1,CCCCCCCCCCCC[C@H](C)C1CCCCC1
+ClC(C)(C)C,2-chloro-2-methylpropane,250.0,carroll11,1,C=C1C=CC(C(C)C)CC1
+ClCC(C)C,1-chloro-2-methylpropane,256.0,carroll11,1,C=C1C2CCC(C2)C1(C)C
+ClC1CCCC1,chlorocyclopentane,288.0,carroll11,1,CCC[C@@H](CC)C1CCCCC1
+ClC1CCCCC1,chlorocyclohexane,301.0,carroll11,1,CCCCCC[C@@](C)(CC)C1CCCC2CCCCC21
+ClC(CC)Cl,"1,1-dichloropropane",280.0,carroll11,1,CCC[C@H](CC)C1CCCCC1
+ClC(C)Cl,"1,1-dichloroethane",263.0,carroll11,1,CCCCCC[C@](C)(CC)C1CCCC2CCCCC21
+ClCCCl,"1,2-dichloroethane",286.0,carroll11,1,CCCC(C)(CCC)C1CCCC2CCCCC21
+ClCC(C)Cl,"1,2-dichloropropane",286.0,carroll11,1,CC1=CCC2CC1C2(C)C
+ClCCCCl,"1,3-dichloropropane",294.0,carroll11,1,CC=C1CC2C=CC1C2
+BrCC,bromoethane,253.0,carroll11,1,CCCCCCCCCCCCCCC[C@@H](CCCC)C1CCCCC1
+BrCCC,1-bromopropane,269.0,carroll11,1,CCCCCCCCCCCCCCC[C@H](CCCC)C1CCCCC1
+BrCCCC,1-bromobutane,283.0,carroll11,1,C=C1CCC2CC1C2(C)C
+BrCCCCC,1-bromopentane,303.0,carroll11,1,C1CCC(C2CCCCC2)CC1
+BrCCCCCC,1-bromohexane,320.0,carroll11,1,CCCCC1CCCCC1
+BrCCCCCCC,1-bromoheptane,334.0,carroll11,1,CCCCC1CCCC1
+BrCCCCCCCC,1-bromooctane,351.0,carroll11,1,CCCCC1CCCC2CCCCC12
+BrC(C)CCC,2-bromopentane,294.0,carroll11,1,C[C@H]1CCCC[C@H]1C
+BrC(C)CCCC,2-bromohexane,313.0,carroll11,1,C[C@H]1CCC[C@H]1C
+BrC(CC)CC,3-bromopentane,292.0,carroll11,1,C[C@H]1CCC[C@@H](C)C1
+BrC1CCCC1,bromocyclopentane,308.0,carroll11,1,C[C@H]1CC[C@@H](C)CC1
+BrC(CC)CCC,3-bromohexane,313.0,carroll11,1,C1CC[C@H]2CCCC[C@H]2C1
+BrC1CCCCC1,bromocyclohexane,335.0,carroll11,1,C1CCCCCCCCC1
+ICC,iodoethane,268.0,carroll11,1,C1=CCCC=CCCC=CCC1
+IC(C)CC,2-iodobutane,297.0,carroll11,1,C1CCCCCC1
+ICCCC,1-iodobutane,306.0,carroll11,1,C1=CCCC=C1
+IC(C)CCC,2-iodopentane,318.0,carroll11,1,C1=CCC=CC1
+IC1CCCC1,iodocyclopentane,325.0,carroll11,1,C1CCCCC1
+IC(CC)CCC,3-iodohexane,328.0,carroll11,1,C1CCCCCCCC1
+ICCCCCC,1-iodohexane,334.0,carroll11,1,C1=CC=CC=CC=C1
+ICCCCCCC,1-iodoheptane,352.0,carroll11,1,C1=CCCC=CCC1
+ICCCCCCCC,1-iodooctane,368.0,carroll11,1,C1CCCCCCC1
+CSSC,dimethyldisulfide,283.0,carroll11,1,C1=CCC=C1
+C(C)SSCC,diethyldisulfide,312.0,carroll11,1,C1CCCC1
+C(CC)SSCCC,dipropyldisulfide,339.0,carroll11,1,CCCCCCCCCCC1CCCCC1
+C(C)(C)(C)SSC(C)(C)C,di-tert-butyldisulfide,340.0,carroll11,1,C1=CC2C3C=CC(C3)C2C1
+C(CCC)SSCCCC,dibutyldisulfide,366.0,carroll11,1,CCCCCCCCCCCCC1CCCCC1
+C(C)SSCCC,ethylpropyldisulfide,330.0,carroll11,1,CCCCCCCCCCCCCCCCCCCCC1CCCCC1
+[N+](=O)([O-])C1CCCCC1,nitrocyclohexane,354.0,carroll11,1,C=CC1CC2C=CC1C2
+[N+](=O)([O-])C1CCCC1,nitrocyclopentane,340.0,carroll11,1,CCC1CCCCC1
+[N+](=O)([O-])CC,nitroethane,301.0,carroll11,1,CCC1CCCC1
+[N+](=O)([O-])C(C)C,2-nitropropane,301.0,carroll11,1,CCCCCCCCCCCCCCCCCC1CCCCC1
+[N+](=O)([O-])CCC,1-nitropropane,307.0,carroll11,1,CCCCCCCC1CCCCC1
+[N+](=O)([O-])CCCC,1-nitrobutane,320.0,carroll11,1,CCCCCCCCCCCCCCCCC1CCCCC1
+[N+](=O)([O-])CCCCC,1-nitropentane,334.0,carroll11,1,CCCCCCC1CCCCC1
+[N+](=O)([O-])CCCCCC,1-nitrohexane,345.0,carroll11,1,CC(C)C1CCCCC1
+[N+](=O)([O-])C(C)CCC,2-nitropentane,319.0,carroll11,1,CC(C)C1CCCC1
+C(C)OC=C,ethylvinylether,228.0,carroll11,1,CC1CCCCC1
+C(C=C)N,allylamine,245.0,carroll11,1,CC1=CC=CC1
+C(=O)C=C,acrolein,254.0,carroll11,1,CC1CCCC1
+O1CCC=C1,"2,3-dihydrofuran",249.0,carroll11,1,C=C1CCCC1
+C(CC)OC=C,propylvinylether,251.0,carroll11,1,CCCCCCCCCCCCCCCCCCCC1CCCCC1
+C(C=C)OCC,allylethylether,253.0,carroll11,1,CCCCCCCCCC1CCCCC1
+C(C)(C)(C)OC=C,tert-butylvinylether,256.0,carroll11,1,CCCCCCCCCCCCCCCCCCC1CCCCC1
+CC(C=O)=C,2-methyl-2-propenal,258.0,carroll11,1,CCCCCCCCC1CCCCC1
+ClCC(=C)C,3-chloro-2-methyl-1-propene,261.0,carroll11,1,CCCCCCCCC1CCCC2CCCCC12
+CC1=CCCO1,"2,3-dihydro-5-methylfuran",261.0,carroll11,1,CCCCCCCCCCCCCCCC1CCCCC1
+C(C(C)C)OC=C,isobutylvinylether,264.0,carroll11,1,CCCCCC1CCCCC1
+C(C=C)OCC=C,diallylether,266.0,carroll11,1,C=CCC1CCCCC1
+C(C=C)OCCC,allylpropylether,268.0,carroll11,1,C=CCC1CCCC1
+C(C=C)#N,acrylonitrile,268.0,carroll11,1,CCCC1CCCCC1
+COC(C=C)=O,methylacrylate,270.0,carroll11,1,CCCC1CCCC1
+C(C)OC(C=C)=O,ethylacrylate,281.0,carroll11,1,CCCC1CCCC2CCCCC12
+BrCCC=C,4-bromo-1-butene,282.0,carroll11,1,CC[C@@H](C)C1CCCC2CCCCC21
+C(C)OC(C(=C)C)=O,ethylmethacrylate,292.0,carroll11,1,CC[C@H](C)C1CCCC2CCCCC21
+COC(C(=C)C)=O,methylmethacrylate,283.0,carroll11,1,CC1=CCC(=C(C)C)CC1
+C(CCC)OC(C(=C)C)=O,butylmethacrylate,322.0,carroll11,1,CC(C)(C)C1CCCCC1
+C(C(C)C)OC(C(=C)C)=O,isobutylmethacrylate,314.0,carroll11,1,CC(C)(C)C1CCCC2CCCCC21
+C(=C)(C)CC(=O)[O-],isopropenylacetate,283.0,carroll11,1,CCCCCCCCCCCCCCC1CCCCC1
+C(C=C)C(=O)[O-],allylformate,279.0,carroll11,1,C[C@@H]1CCCC[C@H]1C
+C(C=C)CC(=O)[O-],allylacetate,284.0,carroll11,1,C[C@@H]1CCC[C@@H](C)C1
+C(C=C)OC(CC)=O,allylpropanoate,298.0,carroll11,1,C[C@H]1CC[C@H](C)CC1
+C(C=C)OC(CCC)=O,allylbutanoate,315.0,carroll11,1,C1CC[C@H]2CCCC[C@@H]2C1
+C(\C=C\C)=O,trans-2-butenal,282.0,carroll11,1,CCCCCCCCCCCCCC1CCCCC1
+ICC=C,3-iodo-1-propene,289.0,carroll11,1,CCCCCCCCCCCC1CCCCC1
+CC(C=C)O,3-buten-2-ol,293.0,carroll11,1,CCCCCCCCC[C@@H](C)/C=C/[C@H](C)CCCCCCCCC
+C(=C)CC(=O)[O-],vinylacetate,265.0,carroll11,1,CCCCCCCCC[C@H](C)/C=C/[C@H](C)CCCCCCCCC
+C(=C)OC(CC)=O,vinylpropanoate,279.0,carroll11,1,CCCCCCCCC[C@H](C)/C=C/[C@@H](C)CCCCCCCCC
+C(=C)OC(CCC)=O,vinylbutanoate,293.0,carroll11,1,CCCCCCCCC[C@@H](C)/C=C\[C@H](C)CCCCCCCCC
+C(C=CC)#N,2-butenenitrile,290.0,carroll11,1,CCCCCCCCC[C@H](C)/C=C\[C@H](C)CCCCCCCCC
+C(C=C)SSCC=C,diallyldisulfide,335.0,carroll11,1,CCCCCCCCC[C@H](C)/C=C\[C@@H](C)CCCCCCCCC
+C(CCC=C)O,4-penten-1-ol,316.0,carroll11,1,C/C=C/C=C/C
+C(CC=C)#N,3-butenenitrile,294.0,carroll11,1,C/C=C/CCC
+C(CC)OC(C=C)=O,propylacrylate,297.0,carroll11,1,C/C=C/CC
+C1(=C(C(=CC(=C1)C)C)OC1=C(C=C(C=C1C)C)C)C,mesityloxide,298.0,carroll11,1,CC/C=C/CCC
+C=CC1=CC=CC=C1,styrene,304.0,carroll11,1,C/C=C(\C)CC
+C(CC)OC(C(=C)C)=O,propylmethacrylate,308.0,carroll11,1,C/C=C/C(C)C
+C(CC=C)O,3-buten-1-ol,305.0,carroll11,1,C/C=C/CCCC
+CC(CO)=C,2-methyl-2-propen-1-ol,306.0,carroll11,1,C/C=C/CCCCC
+C(CCC)OC(C=C)=O,butylacrylate,310.0,carroll11,1,C/C=C\C=C\C
+CC1=CC=C(C=C)C=C1,4-methylstyrene,319.0,carroll11,1,C/C=C(/C)CC
+C(CCC=C)CC(=O)[O-],4-pentenylacetate,318.0,carroll11,1,C/C=C\C(C)C
+C(CCCC=C)O,5-hexen-1-ol,320.0,carroll11,1,C/C=C\C
+CC=1C=C(C=C)C=CC1,3-methylstyrene,321.0,carroll11,1,C/C=C\CCCC
+C(C=C)(=O)O,acrylicacid,327.0,carroll11,1,C/C=C\CCC
+C1(C=CCCC1)=O,2-cyclohexen-1-one,329.0,carroll11,1,C/C=C\CCCCC
+C(=C\CCCC)/CC(=O)[O-],trans-2-hexenylacetate,331.0,carroll11,1,C/C=C\CC
+C(=C)N(C(C)=O)C,N-vinyl-N-methylacetamide,336.0,carroll11,1,C=C/C=C/CC
+CC(CC=O)CCC=C(C)C,"3,7-dimethyl-6-octenal",351.0,carroll11,1,CC/C=C/CC
+O=C1C=C(CC(C)(C)C1)C,isophorone,357.0,carroll11,1,CC/C=C/CCCC
+C(C)C(COC(C=C)=O)CCCC,2-ethylhexylacrylate,359.0,carroll11,1,CC/C=C\CCC
+C(\C=C\CC)(=O)O,trans-2-pentenoicacid,375.0,carroll11,1,CC/C=C\CC
+C(CC(C)CCC=C(C)C)CC(=O)[O-],citronellylacetate,376.0,carroll11,1,CC/C=C\CCCC
+C(CCCCCCCC=C)O,9-decen-1-ol,392.0,carroll11,1,CCCCCCC/C=C(\CCC)CCCC
+ClCCCC#C,5-chloro-1-pentyne,288.0,carroll11,1,C=CC/C=C/C
+C(C#C)O,2-propyn-1-ol,309.0,carroll11,1,CCC/C=C/CCC
+COC(C#CCCCCC)=O,methyl2-octynoate,362.0,carroll11,1,CCCCCCC/C=C(/CCC)CCCC
+ClC(=C)Cl,"1,1-dichloroethene",248.0,carroll11,1,CCC/C=C(/CCCC)CCCCCCC
+FC1=CC=CC=C1,fluorobenzene,258.0,carroll11,1,C=CC/C=C\C
+ClC(C)(C)Cl,"2,2-dichloropropane",268.0,carroll11,1,CCC/C=C\CCC
+FC1=CC=C(C)C=C1,4-fluorotoluene,285.0,carroll11,1,CCC/C=C(\CCCC)CCCCCCC
+FC1=CC=C(C=C)C=C1,4-fluorostyrene,308.0,carroll11,1,CCCCCC/C(C)=C(\C)CCC=C(C)C
+C(C)C1=CC=C(C=C1)F,1-ethyl-4-fluorobenzene,303.0,carroll11,1,CCCCCC/C(C)=C(/C)CCC=C(C)C
+CC1=C(C=C(C=C1)F)C,"1,2-dimethyl-4-fluorobenzene",313.0,carroll11,1,CCCCCC[C@@H](C)/C=C/[C@H](C)CCCCCC
+FC1=CC(=CC(=C1)C)C,"1-fluoro-3,5-dimethylbenzene",308.0,carroll11,1,CCCCCC[C@H](C)/C=C/[C@H](C)CCCCCC
+CC(C(C)=O)=O,"2,3-butanedione",283.0,carroll11,1,CCCCCC[C@H](C)/C=C/[C@@H](C)CCCCCC
+FC1=C(C)C=CC=C1,2-fluorotoluene,285.0,carroll11,1,CCCCCC/C=C(\CCC)CCCCCCC
+FC=1C=C(C)C=CC1,3-fluorotoluene,285.0,carroll11,1,CCCCCC[C@@H](C)/C=C\[C@H](C)CCCCCC
+C(C)OC(CC)OCC,"1,1-diethoxypropane",286.0,carroll11,1,CCCCCC[C@H](C)/C=C\[C@H](C)CCCCCC
+CN1CCOCC1,N-methylmorpholine,287.0,carroll11,1,CCCCCC[C@H](C)/C=C\[C@@H](C)CCCCCC
+CN1C=CC=C1,1-methylpyrrole,288.0,carroll11,1,CCCCCC/C=C(/CCC)CCCCCCC
+N1=CC=CC=C1,pyridine,290.0,carroll11,1,CCCCCCC/C=C(\C)CCCCCCCC
+ClCSC,chloromethylmethylsulfide,290.0,carroll11,1,CCCCCCC/C=C(/C)CCCCCCCC
+N1=C(C=CC=C1)C,2-picoline,299.0,carroll11,1,CC1=CCCCC1
+ClCC(CC)Cl,"1,2-dichlorobutane",300.0,carroll11,1,CC1=CCCC1
+ClC1=CC=CC=C1,chlorobenzene,301.0,carroll11,1,CC1=CC(C)CCC1
+COCCCN,3-methoxypropylamine,296.0,carroll11,1,C=C(CC)CC
+N1C=CC=C1,pyrrole,306.0,carroll11,1,C=C(CC)CCC
+C(C(C)N)N,"1,2-propanediamine",306.0,carroll11,1,C=C(C)CC
+ClCCC(C)Cl,"1,3-dichlorobutane",304.0,carroll11,1,CC=C(C)C
+N1CCOCC1,morpholine,304.0,carroll11,1,C=C(C)CCCCC
+N1=CC(=CC=C1)C,3-picoline,309.0,carroll11,1,CCCCC=C(C)C
+N1=CC=C(C=C1)C,4-picoline,311.0,carroll11,1,C=C(C)CCCC
+CC(CC(C)=O)=O,"2,4-pentanedione",311.0,carroll11,1,C=C(C)CCC
+C(C)OC(CCl)=O,ethylchloroacetate,326.0,carroll11,1,CCC=C(C)C
+ClCCCCCl,"1,4-dichlorobutane",316.0,carroll11,1,C=C(C)C
+ClC1=C(C)C=CC=C1,2-chlorotoluene,320.0,carroll11,1,C=C(CC(C)(C)C)CC(C)(C)CC(C)(C)C
+ClCCCS,3-chloro-1-propanethiol,316.0,carroll11,1,C=C(C)C(C)C
+COCCOC(C)=O,2-methoxyethylacetate,316.0,carroll11,1,CC(C)=C(C)C
+CC1=NC=CC(=C1)C,"2,4-dimethylpyridine",320.0,carroll11,1,C=C(C)C(=C)C
+ClC1=CC=C(C)C=C1,4-chlorotoluene,319.0,carroll11,1,C=C(C)C(C)CCC
+ClC=1C=C(C)C=CC1,3-chlorotoluene,323.0,carroll11,1,C=C(C)C(C)CC
+C1(=CC=CC=C1)S,benzenethiol,324.0,carroll11,1,C=C(C)C(C)(C)C
+BrC1=CC=CC=C1,bromobenzene,324.0,carroll11,1,CC(C)=C(C)C(C)C
+C(C)OCCOC(C)=O,2-ethoxyethylacetate,324.0,carroll11,1,C=C(C)CC(C)(C)C
+CC1=C(C=CC=C1)OC,2-methylanisole,324.0,carroll11,1,CC(C)=CC(C)(C)C
+CC=1C=C(C=CC1)OC,3-methylanisole,325.0,carroll11,1,C=C(C)CCC(=C)C
+ClC(CO)C,2-chloro-1-propanol,324.0,carroll11,1,CC(C)=CC=C(C)C
+CC1=CC=C(C=C1)OC,4-methylanisole,326.0,carroll11,1,C=C(C)CCCC(C)C
+C(C1=CC=CC=C1)OC,benzylmethylether,326.0,carroll11,1,C=CC(CC)CCC
+ClCCO,2-chloroethanol,328.0,carroll11,1,C=CC(CC)CC
+CC1=NC(=CC(=C1)C)C,"2,4,6-trimethylpyridine",327.0,carroll11,1,CC=C(CC)CC
+C(CCSC)=O,4-thiapentanal,334.0,carroll11,1,C=CC(C)C
+C(C1=CC=CC=C1)OCC,benzylethylether,332.0,carroll11,1,C=C=C(C)C
+C(C1=CC=CC=C1)Cl,benzylchloride,333.0,carroll11,1,CC1C=CCCC1
+C(C1=CC=CC=C1)=O,benzaldehyde,335.0,carroll11,1,C=CC(C)CCC
+BrC1=CC(=CC=C1)CC,1-bromo-3-ethylbenzene,344.0,carroll11,1,C=CC(C)CC
+ClCCCCCCl,"1,5-dichloropentane",336.0,carroll11,1,C=CC(C)=CC
+ClC1=CC=C(C=C1)CC,1-chloro-4-ethylbenzene,335.0,carroll11,1,CCC(=CCCCCCCC=C(CC)CC)CC
+C(C1=CC=CC=C1)N,benzylamine,338.0,carroll11,1,C=CC(C)(C)C
+SCCO,2-mercaptoethanol,341.0,carroll11,1,C=CC1CC=CCC1
+NC1=CC=CC=C1,aniline,343.0,carroll11,1,CC1CC=CCC1
+C(C)C1=C(N)C(=CC=C1)C,2-ethyl-6-methylaniline,375.0,carroll11,1,C=CCC(C)CCC
+C(C1=CC=CC=C1)#N,benzonitrile,343.0,carroll11,1,C=CCC(C)CC
+C(C1=CC=CC=C1)S,benzylmercaptan,343.0,carroll11,1,C=CCC(C)C
+C(C)OC(CC(=O)C)=O,ethylacetoacetate,343.0,carroll11,1,C=CC=C(C)C
+C(CCC)OCCOC(C)=O,2-butoxyethylacetate,344.0,carroll11,1,C=CCC(C)(C)C
+C(C1=CC=CC=C1)SC,benzylmethylsulfide,346.0,carroll11,1,C=CCCC(C)C
+ClCCCO,3-chloro-1-propanol,346.0,carroll11,1,CCCCCCCC=C(CCCCCC)CCCCCC
+C(C)(C)(C)OC(CC(=O)C)=O,tert-butylacetoacetate,349.0,carroll11,1,C=CCCCCC(C)C
+IC1=CC=CC=C1,iodobenzene,347.0,carroll11,1,C=CCCCC[C@H](CCCC)CCCCCC
+BrC=1C=C(C)C=CC1,3-bromotoluene,348.0,carroll11,1,C=CCCCC[C@@H](CCCC)CCCCCC
+CN(C1=CC=CC=C1)C,"N,N-dimethylaniline",348.0,carroll11,1,C=CCC
+BrC1=C(C=CC=C1)CC,1-bromo-2-ethylbenzene,352.0,carroll11,1,C=CC=C
+C(C)(=O)C1=CC=CC=C1,acetophenone,350.0,carroll11,1,C1=CCCCCC1
+BrC1=C(C)C=CC=C1,2-bromotoluene,351.0,carroll11,1,C1=CCCCC1
+CNC1=CC=CC=C1,N-methylaniline,352.0,carroll11,1,C1=CCCCCCC1
+C(C1=CC=CC=C1)Br,benzylbromide,352.0,carroll11,1,C1=CCCC1
+CC(CCC(C)=O)=O,"2,5-hexanedione",351.0,carroll11,1,C=CCCCCCCCC
+COC(C1=CC=CC=C1)=O,methylbenzoate,353.0,carroll11,1,C=CCCCCCCC=C
+C(C)OC(C1=CC=CC=C1)=O,ethylbenzoate,357.0,carroll11,1,C=CCCCCCCCCCC
+C(CC)OC(C1=CC=CC=C1)=O,propylbenzoate,371.0,carroll11,1,C=CC1CCCCC1
+C(CCC)OC(C1=CC=CC=C1)=O,butylbenzoate,380.0,carroll11,1,C=CCCCCC
+C(CCCC)OC(C1=CC=CC=C1)=O,pentylbenzoate,393.0,carroll11,1,C#CCCCCC
+IC1=CC(=CC=C1)C,1-iodo-3-methylbenzene,356.0,carroll11,1,C=CCCCC=C
+NC=1C(=CC=CC1)C,o-toluidine,358.0,carroll11,1,C=CCCCCCCCCCCCCCCC
+C(C)C1=C(C=CC=C1)O,2-ethylphenol,358.0,carroll11,1,C=CCCCC
+CC=1C=C(C=CC1)CC(=O)[O-],3-methylphenylacetate,358.0,carroll11,1,C=CCCC=C
+C1=C(C=CC=C1O)C,m-cresol,359.0,carroll11,1,C=CCCCCCCCCCCCCCC
+CC=1C=C(N)C=CC1,3-methylaniline,359.0,carroll11,1,C=CC(=C)C
+C(C)C1=CC=C(N)C=C1,4-ethylaniline,370.0,carroll11,1,C=CCCCCCCC
+C(C)C=1C=C(N)C=CC1,3-ethylaniline,358.0,carroll11,1,C=CCCCCCC=C
+C(C)C1=C(N)C=CC=C1,2-ethylaniline,358.0,carroll11,1,C=CCCCCCC
+[N+](=O)([O-])C1=CC=CC=C1,nitrobenzene,361.0,carroll11,1,C=CCCCCC=C
+C(C)N(C1=CC=CC=C1)CC,"N,N-diethylaniline",361.0,carroll11,1,C=CCCCCCCCCCCCCCCCC
+C(C)(C)C1=C(C=CC=C1)O,2-isopropylphenol,362.0,carroll11,1,C=CCCC
+IC1=C(C)C=CC=C1,2-iodotoluene,363.0,carroll11,1,C=CCCCCCCCCCCCCC
+IC1=CC=C(C)C=C1,4-iodotoluene,363.0,carroll11,1,C=CC
+C(CC)C1=CC=C(C=C1)OC,4-propylanisole,355.0,carroll11,1,C=CCCCCCCCCCCCC
+C1(=CC=CC=C1)CC(CC)=O,1-phenyl-2-butanone,364.0,carroll11,1,C=CCCCCCCCCCCC
+C1(=CC=CC=C1)C(C)OC(C)=O,1-phenylethylacetate,364.0,carroll11,1,C=CCCCCCCCCC
+C(C1=CC=CC=C1)O,benzylalcohol,366.0,carroll11,1,CCCCCCCCC[C@@H](C)CC[C@H](C)CCCCCCCCC
+C(CC)C1=C(C=CC=C1)O,2-propylphenol,366.0,carroll11,1,CCCCCCCCC[C@H](C)CC[C@H](C)CCCCCCCCC
+CC1=C(C=CC(=C1)C)O,"2,4-dimethylphenol",367.0,carroll11,1,CCCCCCCCC[C@H](C)CC[C@@H](C)CCCCCCCCC
+C(C)C=1C=C(C=CC1)O,3-ethylphenol,367.0,carroll11,1,CCCCCCCCCCC[C@@H](C)CCCC[C@H](C)CC
+C1(=CC=CC=C1)C(C)OC(CC)=O,1-phenylethylpropionate,379.0,carroll11,1,CCCCCCCCCCC[C@H](C)CCCC[C@H](C)CC
+C(C1=CC=CC=C1)CC(=O)[O-],benzylacetate,363.0,carroll11,1,CCCCCCCCCC[C@@H](C)[C@H](C)CC
+C(CCCCS)S,"1,5-pentanedithiol",368.0,carroll11,1,CCCCCCCCCC[C@H](C)[C@H](C)CC
+CC1=C(N)C=CC=C1C,"2,3-dimethylaniline",369.0,carroll11,1,CCC(CC)CCCCC[C@@H](C)C[C@H](C)CC
+C(C1=CC=CC=C1)OC(CC)=O,benzylpropanoate,369.0,carroll11,1,CCCCCCCC(CC)[C@H](C)C[C@H](C)CC
+C1(=CC=CC=C1)C(CCC)=O,1-phenyl-1-butanone,361.0,carroll11,1,CCC[C@@H](CC)[C@H](C)C[C@H](C)CC
+C(C1=CC=CC=C1)I,benzyliodide,370.0,carroll11,1,CCC(CC)CCC[C@@H](C)C[C@H](C)CC
+C(C1=CC=CC=C1)C#N,benzylcyanide,374.0,carroll11,1,CCCC[C@@H](C)C[C@H](C)CC
+C(C)(C)(C)C1=CC=C(N)C=C1,4-tert-butylaniline,375.0,carroll11,1,CC[C@@H](C)C[C@@H](C)[C@H](C)CC
+C(C)(C)(C)C=1C=C(N)C=CC1,3-tert-butylaniline,374.0,carroll11,1,CCC(CC)CCCCC[C@H](C)C[C@H](C)CC
+C(CCC)C1=CC=C(N)C=C1,4-butylaniline,375.0,carroll11,1,CCCCCCCC(CC)[C@@H](C)C[C@H](C)CC
+C(CC)C1=CC=C(N)C=C1,4-propylaniline,376.0,carroll11,1,CCCCC[C@@H](CC)[C@H](C)C[C@H](C)CC
+C(CC)C1=C(N)C=CC=C1,2-propylaniline,370.0,carroll11,1,CCC(CC)CCC[C@H](C)C[C@H](C)CC
+C(C)(C)C1=C(N)C=CC=C1,2-isopropylaniline,368.0,carroll11,1,CCCC[C@H](C)C[C@H](C)CC
+C(C)(C)C=1C=C(C=CC1)O,3-isopropylphenol,377.0,carroll11,1,CCCCC[C@@H](C)CC[C@H](C)CC
+N1=CC=CC2=CC=CC=C12,quinoline,374.0,carroll11,1,CCCCC[C@H](C)CC[C@H](C)CC
+C1(=CC=CC=C1)CCOC(C)=O,2-phenylethylacetate,375.0,carroll11,1,CCCCCC[C@@H](C)CCC[C@H](C)CC
+C(CC)C1=CC=C(C=C1)O,4-propylphenol,379.0,carroll11,1,CCCCCC[C@H](C)CCC[C@H](C)CC
+C1(=CC=CC=C1)CCOC(CC)=O,2-phenylethylpropionate,386.0,carroll11,1,CCCCCCC[C@@H](C)CCCC[C@H](C)CC
+C(C1=CC=CC=C1)OC(CCC)=O,benzylbutanoate,380.0,carroll11,1,CCCCCCC[C@H](C)CCCC[C@H](C)CC
+C(C)(CC)C1=C(C=CC=C1)O,2-sec-butylphenol,380.0,carroll11,1,CCCCCCCCC[C@@H](C)CCCC[C@H](C)CC
+C(CCC)NC1=CC=CC=C1,N-butylaniline,380.0,carroll11,1,CCCCCCCCC[C@H](C)CCCC[C@H](C)CC
+C(C)(CC)NC1=CC=CC=C1,N-sec-butylaniline,366.0,carroll11,1,CCCCCCCCCCC[C@@H](C)CCCC[C@@H](C)CC
+C(C)(C)(C)NC1=CC=CC=C1,N-tert-butylaniline,361.0,carroll11,1,CCCCCCCCCCC[C@H](C)CCCC[C@@H](C)CC
+C(C)(CC)C1=CC=C(N)C=C1,4-sec-butylaniline,381.0,carroll11,1,CCCCCCCCCC[C@@H](C)[C@@H](C)CC
+C(C)(CC)C1=C(N)C=CC=C1,2-sec-butylaniline,375.0,carroll11,1,CCCCCCCCCC[C@H](C)[C@@H](C)CC
+C(C)(C)(C)C1=C(C=CC=C1)O,2-tert-butylphenol,375.0,carroll11,1,CCC(CC)CCCCC[C@@H](C)C[C@@H](C)CC
+C1(=CC=CC=C1)CCCOC(C)=O,3-phenylpropylacetate,386.0,carroll11,1,CCCCCCCC(CC)[C@H](C)C[C@@H](C)CC
+C(C)(C)C1=C(N)C(=CC=C1)C(C)C,"2,6-diisopropylaniline",396.0,carroll11,1,CCC(CC)CCC[C@@H](C)C[C@@H](C)CC
+C(C=C)OC1=CC=CC=C1,allylphenylether,336.0,carroll11,1,CCCC[C@@H](C)C[C@@H](C)CC
+C(=C)OC=C,divinylether,226.0,carroll11,1,CCC(CC)CCCCC[C@H](C)C[C@@H](C)CC
+O1C=CC=C1,furan,237.0,carroll11,1,CCCCCCCC(CC)[C@@H](C)C[C@@H](C)CC
+CC=1OC=CC1,2-methylfuran,247.0,carroll11,1,CCC(CC)CCC[C@H](C)C[C@@H](C)CC
+S1C=CC=C1,thiophene,264.0,carroll11,1,CCCC[C@H](C)C[C@@H](C)CC
+CC=1SC=CC1,2-methylthiophene,281.0,carroll11,1,CCCCC[C@@H](C)CC[C@@H](C)CC
+C(C)C=1SC=CC1,2-ethylthiophene,294.0,carroll11,1,CCCCC[C@H](C)CC[C@@H](C)CC
+C(CC)C=1SC=CC1,2-propylthiophene,305.0,carroll11,1,CCCCCC[C@@H](C)CCC[C@@H](C)CC
+C(C)(C)(C)C=1OC=CC1,2-tert-butylfuran,280.0,carroll11,1,CCCCCC[C@H](C)CCC[C@@H](C)CC
+CC1=CSC=C1,3-methylthiophene,284.0,carroll11,1,CCCCCCC[C@@H](C)CCCC[C@@H](C)CC
+C(C=C)OC(C(=C)C)=O,allylmethacrylate,310.0,carroll11,1,CCCCCCC[C@H](C)CCCC[C@@H](C)CC
+C(\C=C(/C)\CCC=C(C)C)C(=O)[O-],geranylformate,368.0,carroll11,1,CCCCCCCCC[C@@H](C)CCCC[C@@H](C)CC
+C(\C=C(/C)\CCC=C(C)C)CC(=O)[O-],geranylacetate,377.0,carroll11,1,CCCCCCCCC[C@H](C)CCCC[C@@H](C)CC
+C(=CC)C1=CC=C(C=C1)OC,4-propenylanisole,369.0,carroll11,1,CCC[C@@H](CC)[C@H](CC)CCC
+C(C)\C(=C(/C(=O)[O-])\CC)\C(=O)[O-],diethylfumarate,366.0,carroll11,1,CCC[C@H](CC)[C@H](CC)CCC
+C(C)OC(C=CC1=CC=CC=C1)=O,ethylcinnamate,408.0,carroll11,1,CCC[C@H](CC)[C@@H](CC)CCC
+COCC(C)O,1-methoxy-2-propanol,304.0,carroll11,1,CCCCCCCC[C@@H](C)[C@H](C)CCCC
+COCCO,2-methoxyethanol,311.0,carroll11,1,CCCCCCCC[C@H](C)[C@H](C)CCCC
+CN(CCO)C,2-dimethylaminoethanol,314.0,carroll11,1,CCCCCCCC[C@@H](C)[C@@H](C)CCCC
+C(C)OCCO,2-ethoxyethanol,315.0,carroll11,1,CCCCCCCC[C@H](C)[C@@H](C)CCCC
+C(C)(C)OCCO,2-isopropoxyethanol,316.0,carroll11,1,CCCCCC[C@@H](CC)[C@H](CC)CCCCCC
+BrCC(OC)OC,"2-bromo-1,1-dimethoxyethane",324.0,carroll11,1,CCCCCC[C@@H](C)[C@H](C)CCCCCC
+COCCNCCOC,bis(2-methoxyethyl)amine,331.0,carroll11,1,CCCCCC[C@H](CC)[C@H](CC)CCCCCC
+C(CCC)OCCO,2-butoxyethanol,335.0,carroll11,1,CCCCCC[C@H](C)[C@H](C)CCCCCC
+ClC1=CC(=CC=C1)Cl,"1,3-dichlorobenzene",336.0,carroll11,1,CCCCCC[C@H](CC)[C@@H](CC)CCCCCC
+ClC1=NC=CC=C1,2-chloropyridine,337.0,carroll11,1,CCCCCC[C@H](C)[C@@H](C)CCCCCC
+ClC1=C(C=CC=C1)Cl,"1,2-dichlorobenzene",341.0,carroll11,1,CCCCCCCC[C@@H](C)[C@H](C)CCCCCCCC
+NC(CO)(C)C,2-amino-2-methyl-1-propanol,341.0,carroll11,1,CCCCCCCC[C@@H](CCC)[C@H](CCC)CCCCCCCC
+CNCCO,2-(methylamino)ethanol,345.0,carroll11,1,CCCCCCCC[C@H](C)[C@H](C)CCCCCCCC
+NCC(C)O,1-amino-2-propanol,340.0,carroll11,1,CCCCCCCC[C@H](CCC)[C@H](CCC)CCCCCCCC
+ClC1=C(C=CC=C1)O,2-chlorophenol,345.0,carroll11,1,CCCCCCCC[C@H](C)[C@@H](C)CCCCCCCC
+OCCNCCC,(2-hydroxyethyl)propylamine,351.0,carroll11,1,CCCCCCCC[C@H](CCC)[C@@H](CCC)CCCCCCCC
+COC1=C(C=CC=C1)OC,"1,2-dimethoxybenzene",360.0,carroll11,1,CCCCC(CC)C(C)C
+ClC(CO)CCl,"2,3-dichloro-1-propanol",366.0,carroll11,1,CCCC(CC)C(C)C
+C1(=CC=CC=C1)OC1=CC=CC=C1,diphenylether,388.0,carroll11,1,CCCC(CC)CC(C)C
+COC(C=1C(C(=O)OC)=CC=CC1)=O,dimethylphthalate,423.0,carroll11,1,CCC(CC)CC(C)C
+C(C(C)C)OC(C=1C(C(=O)OCC(C)C)=CC=CC1)=O,diisobutylphthalate,458.0,carroll11,1,CCCCCCCCC(C)C
+C(C)OC(C=1C(C(=O)OCC)=CC=CC1)=O,diethylphthalate,433.0,carroll11,1,CCCCCCCCCCC(C)C
+C(C1=CC=CO1)=O,furfural,331.0,carroll11,1,CCCCCCCCCCCCCCCCCCC(C)C
+C(C1=CC=CO1)O,furfurylalcohol,348.0,carroll11,1,CCCCCCCCCCCCCCCC(C)C
+C(C1=CC=CO1)CC(=O)[O-],furfurylacetate,338.0,carroll11,1,CCCCCC(C)C
+C(C1=CC=CO1)OC(CC)=O,furfurylpropanoate,355.0,carroll11,1,CCCCCCCCCCCCCCC(C)C
+COC1OC(C=C1)OC,"2,5-dimethoxy-2,5-dihydrofuran",320.0,carroll11,1,CCCCC(C)C
+COC=1C(C(=O)[O-])=CC=CC1,methylsalicylate,372.0,carroll11,1,CCCCCCCCCCCCCCCCCC(C)C
+C(C)OC=1C(C(=O)[O-])=CC=CC1,ethylsalicylate,380.0,carroll11,1,CCCCCCCC(C)C
+C1(=CC=CC=C1)CCO,2-phenylethanol,375.0,carroll11,1,CCCCCCCCCCCCCCCCC(C)C
+C(COCCO)O,diethyleneglycol,397.0,carroll11,1,CCCCCCC(C)C
+CN(CCO)CCO,N-methyldiethanolamine,410.0,carroll11,1,CCCCCCCCCCCCCC(C)C
+CC1=COC=C1,3-methylfuran,251.0,carroll11,1,CCCCCCCCCCCCC(C)C
+C(C)C=1OC=CC1,2-ethylfuran,271.0,carroll11,1,CCCCCCCCCCCC(C)C
+C(C)C1=CSC=C1,3-ethylthiophene,296.0,carroll11,1,CCCCCCCCCC(C)C
+C1(CCCCC1)OC(C(=C)C)=O,cyclohexylmethacrylate,355.0,carroll11,1,CCC(C)(C)C
+C1(CCCCC1)OC(C=C)=O,cyclohexylacrylate,341.0,carroll11,1,CCCCCCCCC(C)(C)C
+C1(=CC=CC=C1)CCC(CC)=O,1-phenyl-3-pentanone,376.0,carroll11,1,CCCCCC(C)(C)C
+C(CC)C=1OC=CC1,2-propylfuran,288.0,carroll11,1,CCCCC(C)(C)C
+C(C(C)C)OC(C1=CC=CC=C1)=O,isobutylbenzoate,375.0,carroll11,1,CCCCCCC(C)(C)C
+ClCCCCCCC#CCC,10-chloro-3-decyne,359.0,carroll11,1,CCCC(C)(C)C
+ClCCCC#CCCCCC,1-chloro-4-decyne,360.0,carroll11,1,CC(C)(C)C
+ClC(=C)C=C,"2-chloro-1,3-butadiene",253.0,carroll11,1,CC(C)C(C)(C)C
+C(C(C)C)OCCO,2-isobutoxyethanol,324.0,carroll11,1,CCCC(C)C(C)(C)C
+Cl[SiH](Cl)Cl,Trichlorosilane,245.0,pan12,1,OC/C=C/CO
+Cl[SiH2]Cl,Dichlorosilane,236.0,pan12,1,OC[C@H](O)[C@@H](O)[C@H](O)[C@H](O)CO
+C[Si](Cl)(Cl)Cl,Methyltrichlorosilane,276.0,pan12,1,OCC[C@H](O)CO
+C[SiH](Cl)Cl,Methyldichlorosilane,241.0,pan12,1,OC/C=C\CO
+ClC(Cl)[Si](Cl)(Cl)C,Dichloromethylmethyldichlorosilane,301.0,pan12,1,CC/C=C\C/C=C\C/C=C\CCCCCCCCO
+C(C)[Si](Cl)(Cl)Cl,Ethyltrichlorosilane,295.0,pan12,1,CCCCC/C=C\C/C=C\CCCCCCCCO
+C[Si](Cl)(Cl)C,Dimethyldichlorosilane,257.0,pan12,1,CCCCCC/C=C\CCCCCCCCO
+C[SiH](Cl)C,Dimethylchlorosilane,245.0,pan12,1,CCCCCCCC/C=C\CCCCCCCCO
+FC(C(C)[Si](Cl)(Cl)Cl)(F)F,"1,1,1-Trifluoropropyltrichlorosilane",288.0,pan12,1,CCCCC(CC)(CO)CO
+C(C=C)[Si](Cl)(Cl)Cl,Allyltrichlorosilane,304.0,pan12,1,CCCCCCC(CO)CCCC
+CC=C[SiH](Cl)Cl,Methylvinyldichlorosilane,272.0,pan12,1,CCC(CC)CO
+ClCCC[Si](Cl)(Cl)Cl,3-Chloropropyltrichlorosilane,357.0,pan12,1,CCCCC(CC)CO
+BrC[Si](Cl)(C)C,Bromomethyldimethylchlorosilane,314.0,pan12,1,CCCC(O)C(CC)CO
+ClC[Si](Cl)(C)C,Chloromethyldimethylchlorosilane,295.0,pan12,1,CCC(C)CO
+C[Si](Br)(C)C,Trimethylbromosilane,270.0,pan12,1,CCC(C)(C)O
+C[Si](Cl)(C)C,Trimethylchlorosilane,255.0,pan12,1,CCCCCC(C)(C)O
+CO[SiH](OC)OC,Trimethoxysilane,264.0,pan12,1,CCCCC(C)(C)O
+C[SiH](C)C,Trimethylsilane,204.0,pan12,1,CCCCCCCC(C)(C)O
+C(#N)CC[Si](Cl)(Cl)C,Cyanoethylmethyldichlorosilane,333.0,pan12,1,CCCCCCC(C)(C)O
+C(C=C)C[SiH](Cl)Cl,Allylmethyldichlorosilane,300.0,pan12,1,CCCC(C)CO
+ClCCC[Si](Cl)(Cl)C,3-Chloropropylmethyldichlorosilane,359.0,pan12,1,CCCC(C)(C)O
+C(C)(C)(C)[Si](Cl)(Cl)Cl,t-Butyltrichlorosilane,294.0,pan12,1,CC(O)CC(C)(C)O
+C(C(C)C)[Si](Cl)(Cl)Cl,Isobutyltrichlorosilane,310.0,pan12,1,CC(C)CO
+C(CCC)[Si](Cl)(Cl)Cl,n-Butyltrichlorosilane,327.0,pan12,1,CC(C)(C)O
+C(CC)[Si](Cl)(Cl)C,n-Propylmethyldichlorosilane,300.0,pan12,1,OCC(CO)(CO)CO
+BrC[Si](C)(C)C,Bromomethyltrimethylsilane,289.0,pan12,1,CCC(CC)(CO)CO
+C(C)[Si](Cl)(C)C,Ethyldimethylchlorosilane,269.0,pan12,1,CC(C)(CO)CO
+Cl[Si](O[Si](Cl)(C)C)(C)C,"1,3-Dichlorotetramethyldisiloxane",288.0,pan12,1,CC(C)CC(C)(C)CO
+C[Si](OC)(OC)C,Dimethyldimethoxysilane,265.0,pan12,1,CC(C)C(O)C(C)(C)CO
+C[Si](OC)(OC)OC,Methyltrimethoxysilane,284.0,pan12,1,CC(C)(O)C(C)(C)O
+CO[Si](OC)(OC)OC,Tetramethoxysilane,294.0,pan12,1,CC(C)C(C)C(C)CO
+C[Si](C)(C)C,Tetramethylsilane,245.0,pan12,1,CC(CO)CC(C)(C)C
+CN(C)[SiH](C)C,"(N,N-Dimethylamino)dimethylsilane",260.0,pan12,1,CCCC[C@@H](CC)CO
+C[SiH](O[SiH](C)C)C,"1,1,3,3-Tetramethyldisiloxane",251.0,pan12,1,CCCC[C@H](CC)CO
+CN([Si](C)(C)C)[SiH3],Tetramethyldisilazane,284.0,pan12,1,CC(C)CCO
+C1(CCCC1)[Si](Cl)(Cl)Cl,Cyclopentyltrichlorosilane,350.0,pan12,1,CC(C)C(C)O
+C[Si](C)(C)OC(C(F)(F)F)=O,Trimethylsilyltrifluoroacetate,273.0,pan12,1,CCCCCCCC(C)(O)CC
+C1(CCCC1)[SiH](Cl)Cl,Cyclopentyldichlorosilane,316.0,pan12,1,CCCCC(C)(O)CC
+C(C=C)[Si](Cl)(C)C,Allyldimethylchlorosilane,278.0,pan12,1,CCCC(C)(O)CC
+ClCC(C[Si](Cl)(Cl)C)C,3-Chloro-2-methylpropylmethyldichlorosilane,363.0,pan12,1,CCCCCCC(C)(O)CC
+C(CCC)[Si](Cl)(Cl)C,n-Butylmethyldichlorosilane,303.0,pan12,1,CCCCCC(C)(O)CC
+CC=C[SiH](OC)OC,Methylvinyldimethoxysilane,277.0,pan12,1,CCC(C)CCO
+CC(=C(C)C)[SiH3],Trimethylvinylsilane,239.0,pan12,1,CCC(C)(O)CC
+C(C)[Si](Cl)(C)CC,Diethylmethylchlorosilane,288.0,pan12,1,CC(C)(C)CCO
+ClC[Si](OCC)(C)C,Chloromethyldimethylethoxysilane,299.0,pan12,1,CC(C)CC(C)O
+C(C)[Si](OC)(OC)OC,Ethyltrimethoxysilane,300.0,pan12,1,CCC(C)CC(O)CC
+CN(C)[Si](C)(C)C,"(N,N-Dimethylamino)trimethylsilane",254.0,pan12,1,CC(C)CCCCCCCO
+CN(C)C(N(C)C)[SiH3],Bis(dimethylamino)methylsilane,270.0,pan12,1,CCCCO
+C[SiH](O[Si](C)(C)C)C,Pentamethyldisiloxane,254.0,pan12,1,CCC(C)O
+C1(=CC=CC=C1)[SiH](Cl)Cl,Phenyldichlorosilane,333.0,pan12,1,CCCC(O)O
+C1(=CC=CC=C1)[SiH3],Phenylsilane,281.0,pan12,1,CCC(O)CO
+C(=CCCCC)[Si](Cl)(Cl)Cl,1-Hexenyltrichlorosilane,333.0,pan12,1,CC(O)CCO
+ClC[Si](O[Si](C)(C)C)(C)CCl,Bis(chloromethyl)tetramethyldisiloxane,346.0,pan12,1,OCCCCO
+CN(C(C(F)(F)F)=O)[Si](C)(C)C,N-Methyl-N-trimethylsilyltrifluoroacetamide,298.0,pan12,1,CC(O)C(C)O
+C(C#C)O[Si](C)(C)C,Propargyloxytrimethylsilane,300.0,pan12,1,CCCCCCCCCCO
+C[Si](OC(C)=O)(OC(C)=O)C,Dimethyldiacetoxysilane,310.0,pan12,1,CCCCCCCCC(C)O
+C(=C)[Si](C)(C)C=C,Divinyldimethylsilane,281.0,pan12,1,CCCCCCCC(O)CC
+C(CCCCC)[Si](Cl)(Cl)Cl,n-Hexyltrichlorosilane,358.0,pan12,1,CCCCCCC(O)CCC
+C(=C)[Si](OCC)(C)C,Vinyldimethylethoxysilane,277.0,pan12,1,CCCCCCCCCCCCO
+C[Si]1(OCCCC1)C,"1,1-Dimethyl-1-sila-2-oxacyclohexane",287.0,pan12,1,CCCCCCCCCCC(C)O
+C(C=C)O[Si](C)(C)C,Allyloxytrimethylsilane,273.0,pan12,1,CCCCCCCCCC(O)CC
+C(C)(=O)OC[Si](C)(C)C,Acetoxymethyltrimethylsilane,293.0,pan12,1,CCCCCCCCC(O)CCC
+C(C=C)[Si](C)(C)C,Allyltrimethylsilane,280.0,pan12,1,CCCCCCCCCCCCCCCCCCCCO
+C(C)[Si](Cl)(CC)CC,Triethylchlorosilane,303.0,pan12,1,CCCCCCCCCCCCCCCCCCC(C)O
+C(C)(C)(C)[Si](Cl)(C)C,t-Butyldimethylchlorosilane,295.0,pan12,1,CCCCCCCCCCCCCCCCCC(O)CC
+ClCCC[Si](OC)(OC)OC,3-Chloropropyltrimethoxysilane,348.0,pan12,1,CCCCCCCCCCCCCCCCC(O)CCC
+C[Si](OCCC)(C)C,Trimethyl-n-propoxysilane,283.0,pan12,1,OCCO
+C(C)(C)(C)[Si](O)(C)C,t-Butyldimethylsilanol,318.0,pan12,1,CCO
+C[Si](OCC)(OCC)C,Dimethyldiethoxysilane,284.0,pan12,1,CCCCCCCCCCCCCCCCCO
+C(C)[SiH](CC)CC,Triethylsilane,270.0,pan12,1,CCCCCCCCCCCCCCCC(C)O
+C(CCCCC)[SiH3],Hexylsilane,285.0,pan12,1,CCCCCCCCCCCCCCC(O)CC
+C(C)(C)(C)[SiH](C)C,t-Butyldimethylsilane,251.0,pan12,1,CCCCCCCCCCCCCC(O)CCC
+CN(C)[Si](C)(C)N(C)C,Bis(dimethylamino)dimethylsilane,266.0,pan12,1,CCCCCCCO
+C[Si]1(O[Si](O[Si](O1)(C)C)(C)C)C,Hexamethylcyclotrisiloxane,305.0,pan12,1,CCCCCC(C)O
+C[Si](S[Si](C)(C)C)(C)C,Hexamethyldisilthiane,299.0,pan12,1,CCCCC(O)CC
+C[Si]([Si](C)(C)C)(C)C,Hexamethyldisilane,272.0,pan12,1,CCCC(O)CCC
+CN(C)[SiH](N(C)C)N(C)C,Tris(dimethylamino)silane,298.0,pan12,1,CCCCCCCCCCCCCCCCO
+C[Si](O[SiH2]O[Si](C)(C)C)(C)C,Hexamethyltrisiloxane,293.0,pan12,1,CCCCCCCCCCCCCCC(C)O
+C1(=CC=CC=C1)C[SiH](Cl)Cl,Phenylmethyldichlorosilane,355.0,pan12,1,CCCCCCCCCCCCCC(O)CC
+C1(=CC=CC=C1)C[SiH2]Cl,Phenylmethylchlorosilane,355.0,pan12,1,CCCCCCCCCCCCC(O)CCC
+C(=C)C(C=C)(C=C)[SiH3],Trivinylmethylsilane,288.0,pan12,1,CCCCCCO
+C1(CCCCC1)C[SiH](Cl)Cl,Cyclohexylmethyldichlorosilane,355.0,pan12,1,CCCCC(C)O
+C[Si](OC=CC=C)(C)C,"1-(Trimethylsiloxy)-1,3-butadiene",298.0,pan12,1,CCCC(O)CC
+ClCC(=C)C[Si](C)(C)C,2-Chloromethyl-3-trimethylsilyl-1-propene,316.0,pan12,1,OCCCCC(O)CO
+C(CCCCC)[Si](Cl)(Cl)C,n-Hexylmethyldichlorosilane,358.0,pan12,1,OCCCCCCO
+C(=C)C[SiH](OCC)OCC,Vinylmethyldiethoxysilane,289.0,pan12,1,CC(O)CCC(C)O
+C(=C)[Si](C)(CC)CC,Vinyldiethylmethylsilane,288.0,pan12,1,CO
+C[Si](N1CCOCC1)(C)C,N-(Trimethylsilyl)morpholine,300.0,pan12,1,CCCCCCCCCCCCCCCCCCCO
+C[Si](C)(C)N=C=N[Si](C)(C)C,Bis(trimethylsilyl)carbodiimide,315.0,pan12,1,CCCCCCCCCCCCCCCCCC(C)O
+C(C)(C)(C)O[Si](C)(C)C,t-Butoxytrimethylsilane,287.0,pan12,1,CCCCCCCCCCCCCCCCC(O)CC
+C(=C)[Si](O[Si](C)(C)C)(C)C,Vinylpentamethyldisiloxane,285.0,pan12,1,CCCCCCCCCCCCCCCC(O)CCC
+C(C(C)C)[Si](OC)(OC)OC,Isobutyltrimethoxysilane,315.0,pan12,1,CCCCCCCCCO
+C[Si](OCC)(OCC)OCC,Methyltriethoxysilane,297.0,pan12,1,CCCCCCCC(C)O
+C(C)N(CC)[Si](C)(C)C,(Diethylamino)trimethylsilane,283.0,pan12,1,CCCCCCC(O)CC
+C[Si](C)(C)C[Si](C)(C)C,Bis(trimethylsilyl)methane,285.0,pan12,1,CCCCCC(O)CCC
+C1(=CC=CC=C1)CC[SiH](Cl)Cl,Phenylethyldichlorosilane,365.0,pan12,1,C=CC(O)CCCCC
+C1(=CC=CC=C1)[Si](Cl)(C)C,Phenyldimethylchlorosilane,334.0,pan12,1,CCCCCCCCCCCCCCCCCCO
+CN(C)[Si](CC)(CC)CC,"(N,N-Dimethylamino)triethylsilane",299.0,pan12,1,CCCCCCCCCCCCCCCCC(C)O
+C(=C)[Si](C=C)(C=C)C=C,Tetravinylsilane,291.0,pan12,1,CCCCCCCCCCCCCCCC(O)CC
+C1(=CC=CC=C1)[SiH](C)C,Phenyldimethylsilane,311.0,pan12,1,CCCCCCCCCCCCCCC(O)CCC
+C(C)[Si](OC(C)=O)(OC(C)=O)OC(C)=O,Ethyltriacetoxysilane,377.0,pan12,1,CCCCCCCCO
+C1(C=CC=C1)[Si](C)(C)C,Cyclopentadienyltrimethylsilane,302.0,pan12,1,CCCCCCC(C)O
+C[Si](C1C=CCC1)(C)C,3-(Trimethylsilyl)cyclopentene,299.0,pan12,1,CCCCCC(O)CC
+C(C=CC=C)[Si](C)(C)C,"(2,4-Pentadienyl)trimethylsilane",291.0,pan12,1,CCCCC(O)CCC
+C(CCCCCCC)[Si](Cl)(Cl)Cl,n-Octyltrichlorosilane,369.0,pan12,1,CCCCCCCCCCCCCCCO
+C(CCCCCC)[Si](Cl)(Cl)C,n-Heptylmethyldichlorosilane,339.0,pan12,1,CCCCCCCCCCCCCC(C)O
+C(C)C(C(=O)O[SiH3])(CC)CC,Triethylacetoxysilane,314.0,pan12,1,CCCCCCCCCCCCC(O)CC
+C(=C)[Si](OCC)(OCC)OCC,Vinyltriethoxysilane,307.0,pan12,1,CCCCCCCCCCCC(O)CCC
+C(=C)[Si](CC)(CC)CC,Vinyltriethylsilane,298.0,pan12,1,CCCCCO
+C(=C)[Si](N[Si](C=C)(C)C)(C)C,"1,3-Divinyltetramethyldisilazane",307.0,pan12,1,CCCC(C)O
+C(C)O[Si](OCC)(OCC)OCC,Tetraethoxysilane,323.0,pan12,1,CCC(O)CC
+C(C)[Si](CC)(CC)CC,Tetraethylsilane,299.0,pan12,1,CCCCC(O)O
+C(CCCCCCC)[SiH3],n-Octylsilane,309.0,pan12,1,CCCC(O)CO
+NCCNCCC[Si](OC)(OC)OC,Aminoethylaminopropyltrimethoxysilane,369.0,pan12,1,CCC(O)CCO
+C[Si](O[Si](O[Si](C)(C)C)(C)C)(C)C,Octamethyltrisiloxane,303.0,pan12,1,CC(O)CCCO
+C[Si]1(O[Si](O[Si](O[Si](O1)(C)C)(C)C)(C)C)C,Octamethylcyclotetrasiloxane,330.0,pan12,1,OCCCCCO
+C[Si]1(N[Si](N[Si](N[Si](N1)(C)C)(C)C)(C)C)C,Octamethylcyclotetrasilazane,339.0,pan12,1,CC(O)CC(C)O
+C[SiH](O[Si](O[SiH](C)C)(O[SiH](C)C)O[SiH](C)C)C,Tetrakisdimethylsiloxysilane,340.0,pan12,1,C=CCO
+ClC1=CC=C(C=C1)[Si](C)(C)C,p-Chlorophenyltrimethylsilane,322.0,pan12,1,CCCO
+C[Si](OC)(OC)C1=CC=CC=C1,Methylphenyldimethoxysilane,349.0,pan12,1,CC(C)O
+C1(=CC=CC=C1)[Si](OC)(OC)OC,Phenyltrimethoxysilane,358.0,pan12,1,CCC(O)O
+C[Si](C1=CC=CC=C1)(C)C,Trimethylphenylsilane,313.0,pan12,1,CC(O)CO
+C(#N)CC[Si](OCC)(OCC)OCC,2-Cyanoethyltriethoxysilane,359.0,pan12,1,OCC(O)CO
+C1(CCCCC1)C[SiH](OC)OC,Cyclohexylmethyldimethoxysilane,343.0,pan12,1,OCCCO
+C(C1CO1)OCCC[Si](OC)(OC)OC,3-Glycidoxypropyltrimethoxysilane,383.0,pan12,1,CCCCCCCCCCCCCCO
+C(C)(C)(C)[Si](Cl)(C)C(C)(C)C,Di-t-butylmethylchlorosilane,342.0,pan12,1,CCCCCCCCCCCCC(C)O
+C(CCCCC)[Si](OC)(OC)OC,Hexyltrimethoxysilane,335.0,pan12,1,CCCCCCCCCCCC(O)CC
+C(C)(C)[SiH](C(C)C)C(C)C,Triisopropylsilane,310.0,pan12,1,CCCCCCCCCCC(O)CCC
+C(CC)[SiH](CCC)CCC,Tri-n-propylsilane,316.0,pan12,1,CCCCCCCCCCCCCO
+C(C)(C)N(C(C)C)[Si](C)(C)C,(Diisopropylamino)trimethylsilane,301.0,pan12,1,CCCCCCCCCCCC(C)O
+Cl[Si](O[Si](O[Si](O[Si](C)(C)C)(C)C)(C)C)(C)C,1-Chlorononamethyltetrasiloxane,347.0,pan12,1,CCCCCCCCCCC(O)CC
+C(CC)[Si](O[SiH](C)C)(O[SiH](C)C)O[SiH](C)C,Propyltris(dimethylsiloxy)silane,323.0,pan12,1,CCCCCCCCCC(O)CCC
+C(C1=CC=CC=C1)[Si](C)(C)C,Benzyltrimethylsilane,335.0,pan12,1,CCCCCCCCCCCO
+C(C(=C)C)(=O)OCCC[Si](OC)(OC)OC,3-Methacryloxypropyltrimethoxysilane,365.0,pan12,1,CCCCCCCCCC(C)O
+C(CCCCCCC)[Si](Cl)(C)C,n-Octyldimethylchlorosilane,370.0,pan12,1,CCCCCCCCC(O)CC
+C(C)N(CC)[Si](C)(C)N(CC)CC,Bis(diethylamino)dimethylsilane,308.0,pan12,1,CCCCCCCC(O)CCC
+C[Si](O[Si](O[Si](O[Si](C)(C)C)(C)C)(C)C)(C)C,Decamethyltetrasiloxane,335.0,pan12,1,CCCCCCC(C)c1ccccc1
+C[Si]1(O[Si](O[Si](O[Si](O[Si](O1)(C)C)(C)C)(C)C)(C)C)C,Decamethylcyclopentasiloxane,350.0,pan12,1,C/C=C/c1ccccc1
+C1(CC2C(CC1)O2)CC[Si](OC)(OC)OC,"2-(3,4-epoxycyclohexyl)ethyltrimethoxysilane",419.0,pan12,1,C/C=C\c1ccccc1
+C(CCCCCCCCC)[Si](Cl)(Cl)C,n-Decylmethyldichlorosilane,393.0,pan12,1,CCC(C)Cc1ccccc1
+C(=C)[Si](CC)(CC)CC,Vinyltriethylsilane,318.0,pan12,1,CC(C)(C)Cc1ccccc1
+C1(=CC=CC=C1)[Si](OCC)(OCC)OCC,Phenyltriethoxysilane,393.0,pan12,1,CCCCCCCC/C=C(\C)c1ccccc1
+C1(=CC=CC=C1)[SiH2]C1=CC=CC=C1,Diphenylsilane,371.0,pan12,1,CCCCCCCC/C=C(/C)c1ccccc1
+C[Si]1([Si]([Si]([Si]1(C=C)C)(C=C)C)(C=C)C)C=C,Tetramethyltetravinylcyclotetrasilane,385.0,pan12,1,CC[C@@H](C)C[C@@](C)(CC)c1ccc2ccccc2c1
+C(CCCCCCCCCCC)[Si](Cl)(Cl)Cl,n-Dodecyltrichlorosilane,435.0,pan12,1,CC[C@@H](C)C[C@](C)(CC)c1ccc2ccccc2c1
+C(C)[Si](O[Si](CC)(CC)CC)(CC)CC,Hexaethyldisiloxane,349.0,pan12,1,CC[C@H](C)C[C@@](C)(CC)c1ccc2ccccc2c1
+C[Si](O[Si](O[Si](O[Si](O[Si](C)(C)C)(C)C)(C)C)(C)C)(C)C,Dodecamethylpentasiloxane,352.0,pan12,1,CC[C@H](C)C[C@](C)(CC)c1ccc2ccccc2c1
+C[Si]1(O[Si](O[Si](O[Si](O[Si](O[Si](O1)(C)C)(C)C)(C)C)(C)C)(C)C)C,Dodecamethylcyclohexasiloxane,366.0,pan12,1,CCCCc1cccc2ccccc12
+C[Si](Cl)(C1=CC=CC=C1)C1=CC=CC=C1,Methyldiphenylchlorosilane,411.0,pan12,1,Cc1ccccc1C(C)C
+C(CCCCCCCCCCC)[Si](Cl)(Cl)C,n-Dodecylmethyldichlorosilane,416.0,pan12,1,CCc1ccccc1C
+C1(=CC=CC=C1)[Si](OC)(OC)C1=CC=CC=C1,Diphenyldimethoxysilane,394.0,pan12,1,CCc1cccc(C)c1C
+C(CCCCCCC)[Si](OCC)(OCC)OCC,Octyltriethoxysilane,373.0,pan12,1,CCc1ccc(C)cc1C
+C[Si](O[Si](O[Si](O[Si](O[Si](O[Si](C)(C)C)(C)C)(C)C)(C)C)(C)C)(C)C,Tetradecamethylhexasiloxane,375.0,pan12,1,CCc1cccc(C)c1
+C(CCCCCCCCCCCCCCCCC)[Si](Cl)(Cl)Cl,n-Octadecyltrichlorosilane,466.0,pan12,1,CCc1cc(C)cc2ccccc12
+C[Si](O[Si](O[Si](O[Si](O[Si](O[Si](O[Si](O[Si](C)(C)C)(C)C)(C)C)(C)C)(C)C)(C)C)(C)C)(C)C,Octadecamethyloctasiloxane,417.0,pan12,1,CCc1ccc(C)cc1
+C(=C)[Si](Cl)(Cl)Cl,Vinyltrichlorosilane,294.0,pan12,1,Cc1cccc2c1Cc1ccccc1C2
+C(C)[SiH3],Ethylsilane,213.0,pan12,1,CCc1cccc2ccccc12
+C(CC)[Si](Cl)(Cl)Cl,n-Propyltrichlorosilane,310.0,pan12,1,CCC1CCCc2ccccc21
+C[Si](F)(C)C,Trimethylfluorosilane,238.0,pan12,1,C=Cc1ccccc1C
+CC(=C[SiH2]Cl)C,Dimethylvinylchlorosilane,268.0,pan12,1,Cc1cccc(C(C)C)c1
+C[Si](C)(C)N=C=S,Trimethylsilylisothiocyanate,308.0,pan12,1,C=Cc1cccc(C)c1
+CO[Si](C)(C)C,Methoxytrimethylsilane,243.0,pan12,1,CCCc1cccc(C)c1
+C(C)[SiH2]CC,Diethylsilane,253.0,pan12,1,CCCCC(CC)c1ccc(C)cc1
+N(=C=O)[Si](N=C=O)(N=C=O)N=C=O,Tetraisocyanatosilane,323.0,pan12,1,C=Cc1ccc(C)cc1
+C(C)(CCC)[Si](Cl)(Cl)Cl,sec-Amyltrichlorosilane,303.0,pan12,1,CCCCCCCc1ccc(C)cc1
+C(=C)[Si](OC)(OC)OC,Vinyltrimethoxysilane,296.0,pan12,1,CCCCCc1ccc(C)cc1
+C(C)O[Si](C)(C)C,Ethoxytrimethylsilane,246.0,pan12,1,Cc1cccc2ccccc12
+C1(=CC=CC=C1)[Si](Cl)(Cl)Cl,Phenyltrichlorosilane,364.0,pan12,1,CC1CCCc2ccccc21
+C1(CCCCC1)[Si](Cl)(Cl)Cl,Cyclohexyltrichlorosilane,358.0,pan12,1,CC(c1ccccc1)c1ccccc1
+C[Si](C#CC)(C)C,1-Trimethylsilylpropyne,270.0,pan12,1,CCc1ccccc1CC
+C(CCCCC)[SiH](Cl)Cl,Hexyldichlorosilane,337.0,pan12,1,CCCc1cccc(C)c1C
+C(C=C)[Si](OC)(OC)OC,Allyltrimethoxysilane,319.0,pan12,1,Cc1ccccc1C
+ClCCC[Si](OC)(OC)C,3-Chloropropylmethyldimethoxysilane,318.0,pan12,1,c1ccc(-c2ccccc2-c2ccccc2)cc1
+C(CC)[Si](OC)(OC)OC,n-Propyltrimethoxysilane,298.0,pan12,1,c1ccc(CCc2ccccc2)cc1
+C[Si](O[Si](C)(C)C)(C)C,Hexamethyldisiloxane,270.0,pan12,1,Cc1cccc(C)c1C
+C[Si](N[Si](C)(C)C)(C)C,Hexamethyldisilazane,281.0,pan12,1,Cc1ccc(C)c(C)c1C
+C[Si](OC(C)=O)(OC(C)=O)OC(C)=O,Methyltriacetoxysilane,358.0,pan12,1,Cc1cc(C)c(C)c(C)c1
+C(CCCCCC)[Si](Cl)(Cl)Cl,n-Heptyltrichlorosilane,337.0,pan12,1,CCc1ccc(CC)c(CC)c1
+COCC(C)O[Si](C)(C)C,(1-Methoxy-2-propoxy)trimethylsilane,293.0,pan12,1,CCCCCCCCCCCCCCCCc1cc(C)c(C)cc1C
+C[Si](N([Si](C)(C)C)C)(C)C,Heptamethyldisilazane,300.0,pan12,1,Cc1ccc(C)c(C)c1
+C(=C)[Si](OC(C)=O)(OC(C)=O)OC(C)=O,Vinyltriacetoxysilane,361.0,pan12,1,Cc1cc(C)c(C)cc1C
+C1(=CCCC1)O[Si](C)(C)C,(Cyclopentenyloxy)trimethylsilane,311.0,pan12,1,CC(C)c1cccc(C(C)C)c1
+C[Si](O[Si](C=C)(C=C)C)(C)C,Tetramethyldivinyldisiloxane,292.0,pan12,1,CCCCc1cc(CC)cc(CC)c1
+C(C)[Si](OCC)(OCC)CC,Diethyldiethoxysilane,316.0,pan12,1,CCc1cccc(CC)c1
+CC(C(O[Si]([O])OCC)(C)C)C,Tetramethyldiethoxysiloxane,311.0,pan12,1,c1ccc(-c2cccc(-c3ccccc3)c2)cc1
+C(CC)[Si](Cl)(CCC)CCC,Tri-n-propylchlorosilane,349.0,pan12,1,Cc1cccc(C)c1
+C[Si](OB(O[Si](C)(C)C)O[Si](C)(C)C)(C)C,Tris(trimethylsiloxy)boron,315.0,pan12,1,CCc1cc(CC)cc(CC)c1
+C(#CCCCCC)[Si](C)(C)C,1-Heptynyltrimethylsilane,315.0,pan12,1,CC(C)c1cc(C(C)C)cc(C(C)C)c1
+C[Si](OC(O[Si](C)(C)C)(O[Si](C)(C)C)[SiH3])(C)C,Tristrimethylsiloxymethylsilane,336.0,pan12,1,Cc1cc(C)cc(C)c1
+C1(=CC=CC=C1)[Si](Cl)(Cl)C1=CC=CC=C1,Diphenyldichlorosilane,415.0,pan12,1,CCc1ccc(CC)cc1
+C(CC)O[Si](OCCC)(OCCC)OCCC,Tetra-n-propoxysilane,368.0,pan12,1,CC(C)c1ccc(C(C)C)cc1
+C1(=CC=CC=C1)C(C1=CC=CC=C1)[SiH3],Diphenylmethylsilane,393.0,pan12,1,Cc1ccc(C)cc1
+C[Si](O[Si](O[Si](O[Si](O[Si](O[Si](O[Si](C)(C)C)(C)C)(C)C)(C)C)(C)C)(C)C)(C)C,Hexadecamethylheptasiloxane,406.0,pan12,1,CCCCCCCCC1CCc2ccccc2C1CCCCCCCC
+Cl[SiH](Cl)Cl,Trichlorosilane,245.15,chen14,1,OC/C=C/CO
+C[Si](Cl)(Cl)Cl,Methyltrichlorosilane,276.15,chen14,1,OC[C@H](O)[C@@H](O)[C@H](O)[C@H](O)CO
+C(=C)[Si](Cl)(Cl)Cl,Vinyltrichlorosilane,294.15,chen14,1,OCC[C@H](O)CO
+ClC(Cl)[Si](Cl)(Cl)C,Dichloromethylmethyldichlorosilane,301.15,chen14,1,OC/C=C\CO
+C(C)[Si](Cl)(Cl)Cl,Ethyltrichlorosilane,263.15,chen14,1,CC/C=C\C/C=C\C/C=C\CCCCCCCCO
+C[SiH](Cl)C,Dimethylchlorosilane,245.15,chen14,1,CCCCC/C=C\C/C=C\CCCCCCCCO
+C(C)[SiH3],Ethylsilane,213.15,chen14,1,CCCCCC/C=C\CCCCCCCCO
+Cl[Si](CCC(F)(F)F)(Cl)Cl,"Trichloro(3,3,3-trifluoropropyl)silane",288.15,chen14,1,CCCCCCCC/C=C\CCCCCCCCO
+C(C=C)[Si](Cl)(Cl)Cl,Allyltrichlorosilane,304.15,chen14,1,CCCCC(CC)(CO)CO
+ClCCC[Si](Cl)(Cl)Cl,3-Chloropropyltrichlorosilane,357.15,chen14,1,CCCCCCC(CO)CCCC
+C(CC)[Si](Cl)(Cl)Cl,n-Propyltrichlorosilane,310.15,chen14,1,CCC(CC)CO
+ClC[Si](Cl)(C)C,Chloromethyldimethylchlorosilane,295.15,chen14,1,CCCCC(CC)CO
+C[Si](Br)(C)C,Trimethyl bromosilane,270.15,chen14,1,CCCC(O)C(CC)CO
+C[Si](Cl)(C)C,Trimethylchlorosilane,255.15,chen14,1,CCC(C)CO
+C[Si](F)(C)C,Trimethylfluorosilane,238.15,chen14,1,CCC(C)(C)O
+CO[SiH](OC)OC,Trimethoxysilane,264.15,chen14,1,CCCCCC(C)(C)O
+C(#N)CC[Si](Cl)(Cl)C,2-Cyanoethylmethyldichlorosilane,333.15,chen14,1,CCCCC(C)(C)O
+C(C=C)C[SiH](Cl)Cl,Allylmethyldichlorosilane,300.15,chen14,1,CCCCCCCC(C)(C)O
+C(C)(C)(C)[Si](Cl)(Cl)Cl,t-Butyltrichlorosilane,294.15,chen14,1,CCCCCCC(C)(C)O
+C(C(C)C)[Si](Cl)(Cl)Cl,Isobutyltrichlorosilane,310.15,chen14,1,CCCC(C)CO
+C(CCC)[Si](Cl)(Cl)Cl,n-Butyltrichlorosilane,327.15,chen14,1,CCCC(C)(C)O
+C[Si](C)(C)N=C=S,Trimethylsilylisothiocyanate,308.15,chen14,1,CC(O)CC(C)(C)O
+C(CC)[Si](Cl)(Cl)C,n-Propylmethyldichlorosilane,300.15,chen14,1,CC(C)CO
+BrC[Si](C)(C)C,Bromomethyltrimethylsilane,289.15,chen14,1,CC(C)(C)O
+C(C)[Si](Cl)(C)C,ETHYLDIMETHYLCHLOROSILANE,269.15,chen14,1,OCC(CO)(CO)CO
+CO[Si](C)(C)C,Methoxytrimethylsilane,243.15,chen14,1,CCC(CC)(CO)CO
+C[Si](OC)(OC)C,Dimethyldimethoxysilane,265.15,chen14,1,CC(C)(CO)CO
+C[Si](OC)(OC)OC,Methyltrimethoxysilane,284.15,chen14,1,CC(C)CC(C)(C)CO
+CO[Si](OC)(OC)OC,Tetramethoxysilane,294.15,chen14,1,CC(C)C(O)C(C)(C)CO
+C[Si](C)(C)C,Tetramethylsilane,245.15,chen14,1,CC(C)(O)C(C)(C)O
+C(C)[SiH2]CC,Diethylsilane,253.15,chen14,1,CC(C)C(C)C(C)CO
+CN(C)[SiH](C)C,"(N,N-Dimethylamino)dimethylsilane",260.15,chen14,1,CC(CO)CC(C)(C)C
+N(=C=O)[Si](N=C=O)(N=C=O)N=C=O,Tetraisocyanatosilane,323.15,chen14,1,CCCC[C@@H](CC)CO
+C1(CCCC1)[Si](Cl)(Cl)Cl,Cyclopentyltrichlorosilane,350.15,chen14,1,CCCC[C@H](CC)CO
+C[Si](C)(C)OC(C(F)(F)F)=O,Trimethylsilyltrifluoroacetate,273.15,chen14,1,CC(C)CCO
+C1(CCCC1)[SiH](Cl)Cl,Cyclopentyldichlorosilane,316.15,chen14,1,CC(C)C(C)O
+ClCC(C[Si](Cl)(Cl)C)C,3-Chloro-2-methylpropylmethyldichlorosilane,363.15,chen14,1,CCCCCCCC(C)(O)CC
+CC=C[SiH](OC)OC,Methylvinyldimethoxysilane,277.15,chen14,1,CCCCC(C)(O)CC
+C(=C)[Si](OC)(OC)OC,Vinyltrimethoxysilane,296.15,chen14,1,CCCC(C)(O)CC
+CC(=C(C)C)[SiH3],Trimethylvinylsilane,239.15,chen14,1,CCCCCCC(C)(O)CC
+C(C)[Si](Cl)(C)CC,Diethylmethylchlorosilane,288.15,chen14,1,CCCCCC(C)(O)CC
+ClC[Si](OCC)(C)C,Chloromethyldimethylethoxysilane,299.15,chen14,1,CCC(C)CCO
+C(C)O[Si](C)(C)C,Ethoxytrimethylsilane,246.15,chen14,1,CCC(C)(O)CC
+C(C)[Si](OC)(OC)OC,Ethyltrimethoxysilane,300.15,chen14,1,CC(C)(C)CCO
+CN(C)[Si](C)(C)C,"(N,N-Dimethylamino)trimethylsilane",254.5,chen14,1,CC(C)CC(C)O
+C[SiH](O[Si](C)(C)C)C,Pentamethyldisiloxane,254.15,chen14,1,CCC(C)CC(O)CC
+C1(=CC=CC=C1)[SiH3],Phenylsilane,281.15,chen14,1,CC(C)CCCCCCCO
+C(=CCCCC)[Si](Cl)(Cl)Cl,1-Hexenyltrichlorosilane,333.15,chen14,1,CCCCO
+C1(CCCCC1)[Si](Cl)(Cl)Cl,Cyclohexyltrichlorosilane,358.15,chen14,1,CCC(C)O
+ClC[Si](O[Si](C)(C)C)(C)CCl,Bis(chloromethyl)tetramethyldisiloxane,346.15,chen14,1,CCCC(O)O
+C(C#C)O[Si](C)(C)C,Propargyloxytrimethylsilane,300.15,chen14,1,CCC(O)CO
+C(=C)[Si](C)(C)C=C,Divinyldimethylsilane,281.15,chen14,1,CC(O)CCO
+C(CCCCC)[Si](Cl)(Cl)Cl,n-Hexyltrichlorosilane,358.15,chen14,1,OCCCCO
+C(CCCCC)[SiH](Cl)Cl,Hexyldichlorosilane,337.15,chen14,1,CC(O)C(C)O
+C[Si]1(OCCCC1)C,"1,1 -Dimethyl-1-sila-2-oxacyclohexane",287.15,chen14,1,CCCCCCCCCCO
+C(C)(=O)OC[Si](C)(C)C,Acetoxymethyltrimethylsilane,293.15,chen14,1,CCCCCCCCC(C)O
+C(C=C)[Si](C)(C)C,Allyltrimethylsilane,280.15,chen14,1,CCCCCCCC(O)CC
+C(C)[Si](Cl)(CC)CC,Triethylchlorosilane,303.15,chen14,1,CCCCCCC(O)CCC
+C(C)(C)(C)[Si](Cl)(C)C,t-Butyldimethylchlorosilane,295.15,chen14,1,CCCCCCCCCCCCO
+ClCCC[Si](OC)(OC)C,3-Chloropropylmethyldimethoxysilane,318.15,chen14,1,CCCCCCCCCCC(C)O
+C[Si](OCCC)(C)C,Trimethyl-n-propoxysilane,283.15,chen14,1,CCCCCCCCCC(O)CC
+C(C)(C)(C)[Si](O)(C)C,t-Butyldimethylsilanol,318.15,chen14,1,CCCCCCCCC(O)CCC
+C[Si](OCC)(OCC)C,Dimethyldiethoxysilane,284.15,chen14,1,CCCCCCCCCCCCCCCCCCCCO
+C(C)[SiH](CC)CC,Triethylsilane,270.15,chen14,1,CCCCCCCCCCCCCCCCCCC(C)O
+C(CCCCC)[SiH3],Hexylsilane,285.15,chen14,1,CCCCCCCCCCCCCCCCCC(O)CC
+C(C)(C)(C)[SiH](C)C,t-Butyld imethyl silane,251.15,chen14,1,CCCCCCCCCCCCCCCCC(O)CCC
+CN(C)[Si](C)(C)N(C)C,Bis(dimethylamino)dimethylsilane,266.15,chen14,1,OCCO
+C[Si]1(O[Si](O[Si](O1)(C)C)(C)C)C,Hexamethylcyclotrisiloxane,305.15,chen14,1,CCO
+C[Si](S[Si](C)(C)C)(C)C,Hexamethyldisilthiane,299.15,chen14,1,CCCCCCCCCCCCCCCCCO
+C[Si](N[Si](C)(C)C)(C)C,Hexamethyldisilazane,281.15,chen14,1,CCCCCCCCCCCCCCCC(C)O
+CN(C)[SiH](N(C)C)N(C)C,Tris(dimethylamino)silane,298.15,chen14,1,CCCCCCCCCCCCCCC(O)CC
+C[Si](O[SiH2]O[Si](C)(C)C)(C)C,Hexamethyltrisiloxane,293.15,chen14,1,CCCCCCCCCCCCCC(O)CCC
+C1(=CC=CC=C1)C[SiH](Cl)Cl,Phenylmethyldichlorosilane,340.15,chen14,1,CCCCCCCO
+C1(=CC=CC=C1)C[SiH2]Cl,Phenylmethylchlorosilane,355.15,chen14,1,CCCCCC(C)O
+C[Si](OC(C)=O)(OC(C)=O)OC(C)=O,Methyltriacetoxysilane,358.15,chen14,1,CCCCC(O)CC
+C(=C)C(C=C)(C=C)[SiH3],Trivinylmethylsilane,288.15,chen14,1,CCCC(O)CCC
+C1(CCCCC1)C[SiH](Cl)Cl,Cyclohexylmethyldichlorosilane,355.15,chen14,1,CCCCCCCCCCCCCCCCO
+C[Si](OC=CC=C)(C)C,"1-(Trimethylsiloxy)-1,3-butadiene",298.15,chen14,1,CCCCCCCCCCCCCCC(C)O
+ClCC(=C)C[Si](C)(C)C,2-Chloromethyl-3-trimethylsilyl-1-propene,316.15,chen14,1,CCCCCCCCCCCCCC(O)CC
+C(CCCCCC)[Si](Cl)(Cl)Cl,n-Heptyltrichlorosilane,337.15,chen14,1,CCCCCCCCCCCCC(O)CCC
+C(CCCCC)[Si](Cl)(Cl)C,n-Hexylmethyldichlorosilane,358.15,chen14,1,CCCCCCO
+C(=C)C[SiH](OCC)OCC,Vinylmethyldiethoxysilane,289.15,chen14,1,CCCCC(C)O
+C[Si](N1CCOCC1)(C)C,N-(Trimethylsilyl)morpholine,300.15,chen14,1,CCCC(O)CC
+C(C)(C)(C)O[Si](C)(C)C,t-Butoxytrimethylsilane,287.15,chen14,1,OCCCCC(O)CO
+COCC(C)O[Si](C)(C)C,(1-Methoxy-2-propoxy)trimethylsilane,293.15,chen14,1,OCCCCCCO
+C[Si](OCC)(OCC)OCC,Methyltriethoxysilane,297.15,chen14,1,CC(O)CCC(C)O
+C(C)N(CC)[Si](C)(C)C,(Diethylamino)trimethylsilane,283.15,chen14,1,CO
+C[Si](C)(C)C[Si](C)(C)C,Bis(trimethylsilyl)methane,285.15,chen14,1,CCCCCCCCCCCCCCCCCCCO
+C[Si](N([Si](C)(C)C)C)(C)C,Heptamethyldisilazane,300.15,chen14,1,CCCCCCCCCCCCCCCCCC(C)O
+C[Si](OC(O[Si](C)(C)C)[SiH3])(C)C,Bis(trimethylsiloxy)methylsilane,296.15,chen14,1,CCCCCCCCCCCCCCCCC(O)CC
+C(=C)[Si](C=C)(C=C)C=C,Tetravinylsilane,291.15,chen14,1,CCCCCCCCCCCCCCCC(O)CCC
+C1(C=CC=C1)[Si](C)(C)C,Cyclopentadienyltrimethylsilane,302.15,chen14,1,CCCCCCCCCO
+C1(=CCCC1)O[Si](C)(C)C,(Cyclopentenyloxy)trimethylsilane,311.15,chen14,1,CCCCCCCC(C)O
+C(C=CC=C)[Si](C)(C)C,"(2,4-Pentadienyl)trimethylsilane",291.15,chen14,1,CCCCCCC(O)CC
+C(CCCCCCC)[Si](Cl)(Cl)Cl,n-Octyltrichlorosilane,369.15,chen14,1,CCCCCC(O)CCC
+C(CCCCCC)[Si](Cl)(Cl)C,n-Heptylmethyldichlorosilane,339.15,chen14,1,C=CC(O)CCCCC
+C[Si](O[Si](C=C)(C=C)C)(C)C,Tetramethyldivinyldisiloxane,292.15,chen14,1,CCCCCCCCCCCCCCCCCCO
+C(C)C(C(=O)O[SiH3])(CC)CC,Triethylacetoxysilane,314.15,chen14,1,CCCCCCCCCCCCCCCCC(C)O
+C(=C)[Si](OCC)(OCC)OCC,Vinyltriethoxysilane,307.15,chen14,1,CCCCCCCCCCCCCCCC(O)CC
+C(=C)[Si](N[Si](C=C)(C)C)(C)C,"1,3-Divinyltetramethyldisilazane",307.15,chen14,1,CCCCCCCCCCCCCCC(O)CCC
+C(C)[Si](OCC)(OCC)CC,Diethyldiethoxysilane,316.15,chen14,1,CCCCCCCCO
+C(C)O[Si](OCC)(OCC)OCC,Tetraethoxysilane,323.15,chen14,1,CCCCCCC(C)O
+C(C)[Si](CC)(CC)CC,Tetraethylsilane,305.15,chen14,1,CCCCCC(O)CC
+NCCNCCC[Si](OC)(OC)OC,Aminoethylaminopropyltrimethoxysilane,269.15,chen14,1,CCCCC(O)CCC
+CC(C(O[Si]([O])OCC)(C)C)C,Tetramethyldiethoxysiloxane,311.15,chen14,1,CCCCCCCCCCCCCCCO
+C[Si](O[Si](O[Si](C)(C)C)(C)C)(C)C,Octamethyltrisiloxane,303.15,chen14,1,CCCCCCCCCCCCCC(C)O
+C[Si]1(O[Si](O[Si](O[Si](O1)(C)C)(C)C)(C)C)C,Octamethylcyclotetrasiloxane,330.15,chen14,1,CCCCCCCCCCCCC(O)CC
+C[Si]1(N[Si](N[Si](N[Si](N1)(C)C)(C)C)(C)C)C,Octamethylcyclotetrasilazane,339.15,chen14,1,CCCCCCCCCCCC(O)CCC
+C[SiH](O[Si](O[SiH](C)C)(O[SiH](C)C)O[SiH](C)C)C,Tetrakisdimethylsiloxysilane,340.15,chen14,1,CCCCCO
+ClC1=CC=C(C=C1)[Si](C)(C)C,p-Chlorophenyltrimethylsilane,322.15,chen14,1,CCCC(C)O
+C1(=CC=CC=C1)[Si](OC)(OC)OC,Phenyltrimethoxysilane,358.15,chen14,1,CCC(O)CC
+C[Si](C1=CC=CC=C1)(C)C,Trimethylphenylsilane,313.15,chen14,1,CCCCC(O)O
+C1(CCCCC1)C[SiH](OC)OC,Cyclohexylmethyldimethoxysilane,343.15,chen14,1,CCCC(O)CO
+C(CCCCC)[Si](OC)(OC)OC,Hexyltrimethoxysilane,335.15,chen14,1,CCC(O)CCO
+C(C)(C)[SiH](C(C)C)C(C)C,Triisopropylsilane,310.15,chen14,1,CC(O)CCCO
+C(CC)[SiH](CCC)CCC,Tri-n-propylsilane,316.15,chen14,1,OCCCCCO
+C(CC)[Si](O[SiH](C)C)(O[SiH](C)C)O[SiH](C)C,Propyltris(dimethylsiloxy)silane,323.15,chen14,1,CC(O)CC(C)O
+C(C1=CC=CC=C1)[Si](C)(C)C,Benzyltrimethylsilane,335.15,chen14,1,C=CCO
+C(C(=C)C)(=O)OCCC[Si](OC)(OC)OC,3-Methacryloxypropyltrimethoxysilane,365.15,chen14,1,CCCO
+C(#CCCCCC)[Si](C)(C)C,1-Heptynyltrimethylsilane,315.15,chen14,1,CC(C)O
+C(CCCCCCC)[Si](Cl)(C)C,n-Octyldimethylchlorosilane,370.15,chen14,1,CCC(O)O
+C(C)N(CC)[Si](C)(C)N(CC)CC,Bis(diethylamino)dimethylsilane,308.15,chen14,1,CC(O)CO
+C[Si](O[Si](O[Si](O[Si](C)(C)C)(C)C)(C)C)(C)C,Decamethyltetrasiloxane,335.15,chen14,1,OCC(O)CO
+C[Si]1(O[Si](O[Si](O[Si](O[Si](O1)(C)C)(C)C)(C)C)(C)C)C,Decamethylcyclopentasiloxane,350.15,chen14,1,OCCCO
+C1(CC2C(CC1)O2)CC[Si](OC)(OC)OC,"2-(3,4-epoxycyclohexyl)ethyltrimethoxysilane",419.15,chen14,1,CCCCCCCCCCCCCCO
+C(CCCCCCCCC)[Si](Cl)(Cl)C,n-Decylmethyldichlorosilane,393.15,chen14,1,CCCCCCCCCCCCC(C)O
+C(=C)[Si](CC)(CC)CC,Vinyltriethylsilane,318.15,chen14,1,CCCCCCCCCCCC(O)CC
+C1(=CC=CC=C1)[Si](Cl)(Cl)C1=CC=CC=C1,Diphenyldichlorosilane,415.15,chen14,1,CCCCCCCCCCC(O)CCC
+C1(=CC=CC=C1)[Si](OCC)(OCC)OCC,Phenyltriethoxysilane,393.15,chen14,1,CCCCCCCCCCCCCO
+C1(=CC=CC=C1)[SiH2]C1=CC=CC=C1,Diphenylsilane,371.15,chen14,1,CCCCCCCCCCCC(C)O
+C(=C)[Si]1(O[Si](O[Si](O[Si](O1)(C)C=C)(C)C=C)(C)C=C)C,"2,4,6,8-Tetravinyl-2,4,6,8-tetramethylcyclotetrasiloxane",385.15,chen14,1,CCCCCCCCCCC(O)CC
+C(CCCCCCCCCCC)[Si](Cl)(Cl)Cl,n-Dodecyltrichlorosilane,435.15,chen14,1,CCCCCCCCCC(O)CCC
+C(CC)O[Si](OCCC)(OCCC)OCCC,Tetra-n-propoxysilane,368.15,chen14,1,CCCCCCCCCCCO
+C(C)[Si](O[Si](CC)(CC)CC)(CC)CC,Hexaethyldisiloxane,349.15,chen14,1,CCCCCCCCCC(C)O
+C[Si](O[Si](O[Si](O[Si](O[Si](C)(C)C)(C)C)(C)C)(C)C)(C)C,Dodecamethylpentasiloxane,352.15,chen14,1,CCCCCCCCC(O)CC
+C[Si]1(O[Si](O[Si](O[Si](O[Si](O[Si](O1)(C)C)(C)C)(C)C)(C)C)(C)C)C,Dodecamethylcyclohexasiloxane,366.15,chen14,1,CCCCCCCC(O)CCC
+C[Si](Cl)(C1=CC=CC=C1)C1=CC=CC=C1,Methyldiphenylchlorosilane,411.15,chen14,1,CCCCCCC(C)c1ccccc1
+C(CCCCCCCCCCC)[Si](Cl)(Cl)C,n-Dodecylmethyldichlorosilane,416.15,chen14,1,C/C=C/c1ccccc1
+C1(=CC=CC=C1)[Si](OC)(OC)C1=CC=CC=C1,Diphenyldimethoxysilane,394.15,chen14,1,C/C=C\c1ccccc1
+C(CCCCCCC)[Si](OCC)(OCC)OCC,Octyltriethoxysilane,373.15,chen14,1,CCC(C)Cc1ccccc1
+C[Si](O[Si](O[Si](O[Si](O[Si](O[Si](C)(C)C)(C)C)(C)C)(C)C)(C)C)(C)C,Tetradecamethylhexasiloxane,375.15,chen14,1,CC(C)(C)Cc1ccccc1
+C[Si](O[Si](O[Si](O[Si](O[Si](O[Si](O[Si](C)(C)C)(C)C)(C)C)(C)C)(C)C)(C)C)(C)C,Hexadecamethylheptasiloxane,406.15,chen14,1,CCCCCCCC/C=C(\C)c1ccccc1
+C(CCCCCCCCCCCCCCCCC)[Si](Cl)(Cl)Cl,n-Octadecyltrichlorosilane,466.15,chen14,1,CCCCCCCC/C=C(/C)c1ccccc1
+C[Si](O[Si](O[Si](O[Si](O[Si](O[Si](O[Si](O[Si](C)(C)C)(C)C)(C)C)(C)C)(C)C)(C)C)(C)C)(C)C,Octadecamethyloctasiloxane,417.15,chen14,1,CC[C@@H](C)C[C@@](C)(CC)c1ccc2ccccc2c1
+C(=C)[Si](OCCOC)(OCCOC)OCCOC,Vinyltris(methoxyethoxy)silane,353.15,chen14,1,CC[C@@H](C)C[C@](C)(CC)c1ccc2ccccc2c1
+C[Si](OC=C)(C)C,Trimethyl(vinyloxy)silane,263.15,chen14,1,CC[C@H](C)C[C@@](C)(CC)c1ccc2ccccc2c1
+Cl[Si](CCCC#N)(Cl)Cl,Trichloro(3-cyanopropyl) Silane,365.15,chen14,1,CC[C@H](C)C[C@](C)(CC)c1ccc2ccccc2c1
+Cl[Si](CCC1=CC=CC=C1)(Cl)Cl,Trichloro(2-phenylethyl)silane,364.15,chen14,1,CCCCc1cccc2ccccc12
+Cl[Si](CCC(F)(F)F)(C)C,"Chlorodimethyl(3,3,3-trifluoropropyl) silane",293.15,chen14,1,Cc1ccccc1C(C)C
+C(=C)C[SiH](O[Si](C)(C)C)O[Si](C)(C)C,Vinylmethylbis (trimethylsiloxy) silane,324.15,chen14,1,CCc1ccccc1C
+Cl[Si](CCl)(Cl)Cl,Trichloro(Chloromethyl) silane,342.15,chen14,1,CCc1cccc(C)c1C
+C[SiH](C1=C(C(=C(C(=C1F)F)F)F)F)C,Dimethyl(pentafluorophenyl) silane,313.15,chen14,1,CCc1ccc(C)cc1C
+Cl[Si](C1=CC=C(C=C1)Cl)(Cl)Cl,Trichloro(p-chlorophenyl)silane,397.05,chen14,1,CCc1cccc(C)c1
+[SiH3][SiH2][SiH3],Trisilane,273.15,chen14,1,CCc1cc(C)cc2ccccc12
+ClC(CCCCCCCC[SiH3])(Cl)Cl,Trichlorononylsilane,387.15,chen14,1,CCc1ccc(C)cc1
+ClC(C[SiH3])Cl,Dichloroethylsilane,263.75,chen14,1,Cc1cccc2c1Cc1ccccc1C2
+Cl[Si](C1=C(C(=CC=C1)Cl)Cl)(Cl)Cl,Trichloro(dichlorophenyl)silane,419.15,chen14,1,CCc1cccc2ccccc12
+C[Si](C)(C)[SiH]([Si](C)(C)C)[Si](C)(C)C,Tris(trimethylsilyl)silane,328.15,chen14,1,CCC1CCCc2ccccc21
+C[Si](O[SiH](O[Si](C)(C)C)O[Si](C)(C)C)(C)C,Tris(trimethylsiloxy)silane,323.15,chen14,1,C=Cc1ccccc1C
+C(CCCCCCCCCCCCCCC)[Si](Cl)(Cl)Cl,Hexadecyltrichlorosilane,427.15,chen14,1,Cc1cccc(C(C)C)c1
+Cl[SiH2]Cl,Dichlorosilane,236.15,chen14,1,C=Cc1cccc(C)c1
+C[Si](Cl)(Cl)C,Dimethyldichlorosilane,257.15,chen14,1,CCCc1cccc(C)c1
+BrC[Si](Cl)(C)C,Bromomethyldimethylchlorosilane,314.15,chen14,1,CCCCC(CC)c1ccc(C)cc1
+C[SiH](C)C,Trimethylsilane,204.15,chen14,1,C=Cc1ccc(C)cc1
+CC(=C[SiH2]Cl)C,Dimethylvinylchlorosilane,268.15,chen14,1,CCCCCCCc1ccc(C)cc1
+Cl[Si](O[Si](Cl)(C)C)(C)C,"1,3-Dichlorotetramethyldisiloxane",288.15,chen14,1,CCCCCc1ccc(C)cc1
+C[SiH](O[SiH](C)C)C,"1,1,3,3-Tetramethyldisiloxane",251.15,chen14,1,Cc1cccc2ccccc12
+CN([Si](C)(C)C)[SiH3],Tetramethyldisilazane,284.15,chen14,1,CC1CCCc2ccccc21
+C(C=C)[Si](Cl)(C)C,Allyl Dimethylchlorosilane,278.15,chen14,1,CC(c1ccccc1)c1ccccc1
+C(C)(CCC)[Si](Cl)(Cl)Cl,sec-Amyltrichlorosilane,303.15,chen14,1,CCc1ccccc1CC
+C(CCC)[Si](Cl)(Cl)C,n-Butylmethyldichlorosilane,303.15,chen14,1,CCCc1cccc(C)c1C
+CN(C)C(N(C)C)[SiH3],Bis(dimethylamino)methylsilane,270.15,chen14,1,Cc1ccccc1C
+C1(=CC=CC=C1)[Si](Cl)(Cl)Cl,Phenyltrichlorosilane,364.15,chen14,1,c1ccc(-c2ccccc2-c2ccccc2)cc1
+C1(=CC=CC=C1)[Si](F)(F)F,Phenyl trifluorosilane,268.15,chen14,1,c1ccc(CCc2ccccc2)cc1
+C[Si](OC(C)=O)(OC(C)=O)C,Dimethyldiacetoxysilane,310.15,chen14,1,Cc1cccc(C)c1C
+C[Si](C#CC)(C)C,1-Trimethylsilylpropyne,270.15,chen14,1,Cc1ccc(C)c(C)c1C
+C(=C)[Si](OCC)(C)C,Vinyldimethylethoxysilane,277.15,chen14,1,Cc1cc(C)c(C)c(C)c1
+C(C=C)O[Si](C)(C)C,Allyloxytrimethylsilane,273.15,chen14,1,CCc1ccc(CC)c(CC)c1
+C(C=C)[Si](OC)(OC)OC,Allyltrimethoxysilane,319.15,chen14,1,CCCCCCCCCCCCCCCCc1cc(C)c(C)cc1C
+ClCCC[Si](OC)(OC)OC,3-Chloropropyltrimethoxysilane,348.15,chen14,1,Cc1ccc(C)c(C)c1
+C(CC)[Si](OC)(OC)OC,n-Propyltrimethoxysilane,298.15,chen14,1,Cc1cc(C)c(C)cc1C
+C[Si](O[Si](C)(C)C)(C)C,Hexamethyldisiloxane,270.15,chen14,1,CC(C)c1cccc(C(C)C)c1
+C[Si]([Si](C)(C)C)(C)C,Hexamethyldisilane,272.15,chen14,1,CCCCc1cc(CC)cc(CC)c1
+C(=C)[Si](C)(CC)CC,Vinyldiethylmethylsilane,288.15,chen14,1,CCc1cccc(CC)c1
+C(C(C)C)[Si](OC)(OC)OC,Isobutyltrimethoxysilane,315.15,chen14,1,c1ccc(-c2cccc(-c3ccccc3)c2)cc1
+C1(=CC=CC=C1)[Si](Cl)(C)C,Phenyldimethylchlorosilane,334.15,chen14,1,Cc1cccc(C)c1
+CN(C)[Si](CC)(CC)CC,"(N,N-Dimethylamino)triethylsilane",299.15,chen14,1,CCc1cc(CC)cc(CC)c1
+C(=C)[Si](OC(C)=O)(OC(C)=O)OC(C)=O,Vinyltriacetoxysilane,361.15,chen14,1,CC(C)c1cc(C(C)C)cc(C(C)C)c1
+C(C)[Si](OC(C)=O)(OC(C)=O)OC(C)=O,Ethyltriacetoxysilane,377.15,chen14,1,Cc1cc(C)cc(C)c1
+C[Si](C1C=CCC1)(C)C,3-(Trimethylsilyl)cyclopentene,299.15,chen14,1,CCc1ccc(CC)cc1
+C(=C)[Si](CC)(CC)CC,Vinyltriethylsilane,298.15,chen14,1,CC(C)c1ccc(C(C)C)cc1
+C(CCCCCCC)[SiH3],n-Octylsilane,309.15,chen14,1,Cc1ccc(C)cc1
+C[Si](OC)(OC)C1=CC=CC=C1,Methyl phenyldimethoxysilane,349.15,chen14,1,CCCCCCCCC1CCc2ccccc2C1CCCCCCCC
+C(#N)CC[Si](OCC)(OCC)OCC,2-Cyanoethyltriethoxysilane,359.15,chen14,1,c1ccc(-c2ccc(-c3ccccc3)cc2)cc1
+C(C1CO1)OCCC[Si](OC)(OC)OC,3-Glycidoxypropyltrimethoxysilane,383.15,chen14,1,CCc1cc(C)ccc1C
+C(C)(C)(C)[Si](Cl)(C)C(C)(C)C,Di-t-butylmethylchlorosilane,342.15,chen14,1,CCCCCCCCC(C)(C)c1ccc2ccccc2c1
+C(CC)[Si](Cl)(CCC)CCC,Tri-n-propylchlorosilane,349.15,chen14,1,CCCCC(C)(C)c1ccc2ccccc2c1
+C(C)(C)N(C(C)C)[Si](C)(C)C,(Diisopropylamino)trimethylsilane,301.15,chen14,1,CCCCCCCCCCCCCCCC(C)(C)c1ccccc1
+Cl[Si](O[Si](O[Si](O[Si](C)(C)C)(C)C)(C)C)(C)C,1-Chlorononamethyltetrasiloxane,347.15,chen14,1,CCCCCCCCCCCCCC(C)(C)c1ccccc1
+C[Si](OC(O[Si](C)(C)C)(O[Si](C)(C)C)[SiH3])(C)C,Tristrimethylsiloxymethylsilane,336.15,chen14,1,CCCCCCCC(CC(C)C)(CC(C)C)c1ccccc1
+C1(=CC=CC=C1)C(C1=CC=CC=C1)[SiH3],Diphenylmethylsilane,393.15,chen14,1,CCCc1ccc2cc(C)ccc2c1
+C[Si](OC(=C)C)(C)C,Trimethyl[(1-methylethenyl)oxy]silane,272.15,chen14,1,CCCCCCCCc1ccc2ccccc2c1
+ClC(Cl)[SiH2]CCC(F)(F)F,"Dichloromethyl-3,3,3-trifluoropropylsilane",288.15,chen14,1,CCC(C)(C)c1ccccc1
+ClCOCC[Si](C)(C)C,[2-(chloromethoxy)ethyl]trimethylsilane,319.15,chen14,1,CCCC1Cc2ccccc2C1
+I[Si](C)(C)C,Iodotrimethylsilane,288.15,chen14,1,CCCc1ccc2ccccc2c1
+C1(=CC=CC=C1)[SiH](C1=CC=CC=C1)C1=CC=CC=C1,Triphenylsilane,416.35,chen14,1,CC(C)(C)c1ccc2ccccc2c1
+SCCC[Si](OCC)(OCC)OCC,[3-(mercapto)propyl]triethoxysilane,360.93,chen14,1,CC(C)(c1ccccc1)c1ccccc1
+C[Si](O[Si](O[Si](O[Si](O[Si](O[Si](O[Si](C)(C)C)(C)C)(C)C)(C)C)(C)C)(C)C)(C)C,Hexadecamethylheptasiloxane,406.15,chen14,1,Cc1ccc2cc(C)ccc2c1
+NCCC[SiH2]OCC,Gamma-aminopropylethoxysilane,369.26,chen14,1,CCCCCC[C@@H](C)c1ccccc1
+Cl[Si](CC)(CC)Cl,Dichlorodiethylsilane,297.15,chen14,1,CCCCCCCCCCCC[C@@H](C)c1ccccc1
+C[SiH](Cl)C,Dimethylchlorosilane,245.15,chen14,1,CCCCCCCCC[C@@H](C)c1ccccc1
