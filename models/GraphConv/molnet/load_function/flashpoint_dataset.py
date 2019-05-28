@@ -1,7 +1,7 @@
 """
-Loader for flashpoint dataset collected by Nathaniel.
+Loader for flashpoint dataset
 Author: Sean Sun
-2019/2/16
+2019/5/28
 """
 from __future__ import division
 from __future__ import unicode_literals
@@ -13,7 +13,7 @@ import deepchem
 logger = logging.getLogger(__name__)
 
 
-def load_flashpoint(usr_data_dir, featurizer='ECFP', split='index', reload=True, move_mean=True):
+def load_flashpoint(usr_data_dir, dataset_name = 'data.csv', featurizer='ECFP', split='index', reload=True, move_mean=True):
   """Load flashpoint datasets."""
   logger.info("About to featurize flashpoint dataset.")
   logger.info("About to load flashpoint dataset.")
@@ -26,7 +26,7 @@ def load_flashpoint(usr_data_dir, featurizer='ECFP', split='index', reload=True,
       dir_name = "falshpoint/" + featurizer + "_mean_unmoved/" + str(split)
     save_dir = os.path.join(data_dir, dir_name)
 
-  dataset_file = os.path.join(data_dir, "data.csv")
+  dataset_file = os.path.join(data_dir, dataset_name)
   if not os.path.exists(dataset_file):
       print("data.csv was not found")
 
