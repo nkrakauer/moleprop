@@ -1,0 +1,235 @@
+Table A1 Experimental value and predicted values of FP for the training data set ,,,,,,,
+NO , Compound name , Chemical formula , BP(K), Exp. Value (K), Predicted Value (K) 13-descriptor model , Predicted Value (K) 6-descriptor model, Predicted Value (K) Hshieh's model 
+1, Trichlorosilane , HCl3Si ,305.05,245.15,261.73,265.86,245.15
+2, Methyltrichlorosilane , CH3Cl3Si ,339.25,276.15,272.32,273.09,276.15
+3, Vinyltrichlorosilane , C2H3Cl3Si ,363.85,294.15,290.21,296.06,294.15
+4, Dichloromethylmethyldichlorosilane , C2H4Cl4Si ,423.15,301.15,313.68,322.02,301.15
+5, Ethyltrichlorosilane , C2H5Cl3Si ,372.05,263.15,292.12,297.92,263.15
+6, Dimethylchlorosilane , C2H7ClSi ,308.45,245.15,238.63,238.42,245.15
+7, Ethylsilane , C2H8Si ,259.45,213.15,221.48,214.91,213.15
+8,"1,1,1-Trifluoropropyltrichlorosilane ", C3H4Cl3F3Si,387.35,288.15,319.54,327.69,288.15
+9, Allyltrichlorosilane , C3H5Cl3Si ,391.15,304.15,303.68,308.09,304.15
+10, Methylvinyldichlorosilane , C3H6Cl2Si ,366.95,272.15,278.6,282.24,272.15
+11, 3-Chloropropyltrichlorosilane , C3H6Cl4Si ,455.65,357.15,349.35,336.95,357.15
+12, n-Propyltrichlorosilane , C3H7Cl3Si ,397.65,310.15,304.36,308.67,310.15
+13, Chloromethyldimethylchlorosilane , C3HsCl2Si ,388.05,295.15,279.68,283.34,295.15
+14, Trimethylbromosilane , C3H9BrSi ,353.15,270.15,273.21,238.59,270.15
+15, Trimethylchlorosilane , C3H9ClSi ,330.85,255.15,248.77,245.21,255.15
+16, Trimethylfluorosilane , C3H9FSi ,289.15,238.15,235.95,226.65,238.15
+17, Trimethoxysilane , C3H10O3Si ,357.05,264.15,271.26,275.51,264.15
+18, Cyanoethylmethyldichlorosilane , C4H7Cl2NSi,492.15,333.15,333.96,321.23,333.15
+19, Allylmethyldichlorosilane , C4H8Cl2Si ,394.15,300.15,291.98,294.22,300.15
+20, 3-Chloropropylmethyldichlorosilane , C4H9Cl3Si ,459.05,359.15,361.29,323.08,359.15
+21, t-Butyltrichlorosilane , C4H9Cl3Si ,407.15,294.15,312.46,316.03,294.15
+22, Isobutyltrichlorosilane , C4H9Cl3Si ,415.15,310.15,311.88,311.53,310.15
+23, n-Butyltrichlorosilane , C4H9Cl3Si ,421.15,327.15,321.86,323.97,327.15
+24, Trimethylsilylisothiocyanate , C4H9NSSi ,417.15,308.15,281.98,264.18,308.15
+25, n-Propylmethyldichlorosilane , C4H10Cl2Si,398.95,300.15,293.01,294.8,300.15
+26, Bromomethyltrimethylsilane , C4H11BrSi ,389.15,289.15,287.61,258.17,289.15
+27, Ethyldimethylchlorosilane , C4H11ClSi ,364.15,269.15,279.68,283.34,269.15
+28, Methoxytrimethylsilane , C4H12OSi ,330.25,243.15,254.12,253.46,243.15
+29, Dimethyldimethoxysilane , C4H12O2Si ,354.55,265.15,269.03,271.51,265.15
+30, Methyltrimethoxysilane , C4H12O3Si ,376.15,284.15,281.6,285.64,284.15
+31, Tetramethoxysilane , C4H12O4Si ,395.15,294.15,292.32,296.18,294.15
+32, Tetramethylsilane , C4H12Si ,299.75,245.15,237.07,231.33,245.15
+33, Diethylsilane , C4H12Si ,329.15,253.15,252.66,254.67,253.15
+34,"(N,N-Dimethylamino)dimethylsilane ", C4H13NSi ,340.15,260.15,255.91,257.51,260.15
+35,"1,3,57-Tetramethylcyclotetrasiloxane ", C4H16O3Si4,408.75,304.15,312.66,331.47,304.15
+36, Tetraisocyanatosilane , C4N4O4Si ,459.15,323.15,336.1,319.64,323.15
+37, Cyclopentyltrichlorosilane , C5H9Cl3Si ,451.15,350.15,346.54,349.15,350.15
+38, Trimethylsilyltrifluoroacetate , C5H9F302Si,361.15,273.15,259.97,290.6,273.15
+39, Cyclopentyldichlorosilane , C5H10Cl2Si,436.25,316.15,324.49,328.19,316.15
+40, n-Amyltrichlorosilane , C5H11Cl3Si,444.15,303.15,333.92,338.03,303.15
+41, 3-Chloro-2-methylpropylmethyldichlorosilane , C3H11Cl3Si,471.15,363.15,346.08,322.73,363.15
+42, Methylvinyldimethoxysilane , C5H12O2Si ,377.65,277.15,282.52,286.41,277.15
+43, Vinyltrimethoxysilane , C5H12O3Si ,397.85,296.15,293.07,296.7,296.15
+44, Trimethylvinylsilane , C5H12Si ,327.55,239.15,255.43,254.73,239.15
+45, Cyclotrimethylenedimethylsilane , C5H12Si ,355.15,268.15,277.8,276.44,268.15
+46, Diethylmethylchlorosilane , C5H13ClSi ,393.15,288.15,286.08,289.95,288.15
+47, Chloromethyldimethylethoxysilane , C5H13ClOSi,405.15,299.15,298.97,296.77,299.15
+48, Ethoxytrimethylsilane , C5H14OSi ,348.15,246.15,265.63,264.08,246.15
+49, Ethyltrimethoxysilane , C5H14O3Si ,397.75,300.15,293.99,297.85,300.15
+50,"(N,N-Dimethylamino)trimethylsilane ", C5H15NSi ,359.15,254.15,266.63,266.27,254.15
+51, Pentamethyldisiloxane , C5H16OSi2 ,359.15,254.15,267.32,271.5,254.15
+52, Phenyldichlorosilane , C6H6Cl2Si ,474.95,333.15,337.6,337.12,333.15
+53, Phenylsilane , C6H8Si ,393.15,281.15,290.32,285.42,281.15
+54, 1-Hexenyltrichlorosilane , C6H11Cl3Si,465.15,333.15,347.12,350.81,333.15
+55, Cyclohexyltrichlorosilane , C6H11Cl3Si,477.15,358.15,361.38,360.3,358.15
+56, Bis(chloromethyl)tetramethyldisiloxane , C6H12Cl2OSi2,477.15,346.15,333.04,338.27,346.15
+57, N-Methyl-N-trimethylsilyltrifluroacetamide , C6H12F3NOSi,404.15,298.15,273.42,303.8,298.15
+58, Propargyloxytrimethylsilane , C6H12OSi ,383.15,300.15,281.06,278.89,300.15
+59, Divinyldimethylsilane , C6H12Si ,355.15,281.15,271.16,273.62,281.15
+60, n-Hexyltrichlorosilane , C6H13Cl3Si,464.15,358.15,345.95,351.27,358.15
+61, Hexyltriflurosilane , C6H13F3Si ,361.15,266.15,266.68,300.05,266.15
+62, n-Amylmethyldichlorosilane , C6H14Cl2Si,445.15,308.15,322.18,324.17,308.15
+63, Hexyldichlorosilane , C6H14Cl2Si,445.15,337.15,325.94,331.5,337.15
+64,"1,1-Dimethyl-1-sila-2-oxacyclohexane ", C6H14Si ,395.15,287.15,297.44,296.23,287.15
+65, Acetoxymethyltrimethylsilane , C6H14Si ,409.15,293.15,289.58,285.47,293.15
+66, Allyltrimethylsilane , C6H15ClSi ,359.15,280.15,268.25,266.63,280.15
+67, Cyclotetramethylenedimethylsilane , C6H15ClSi ,380.15,288.15,287.84,286.1,288.15
+68, Triethylchlorosilane , C6H15ClO2Si,419.95,303.15,300.16,306.23,303.15
+69, t-Butyldimethylchlorosilane , C6H16OSi ,399.15,295.15,289.43,288.49,295.15
+70, 3-Chloropropylmethyldimethoxysilane , C6H16OSi ,458.15,318.15,319.33,316.88,318.15
+71, Trimethyl-n-propoxysilane , C6H16O2Si ,374.15,283.15,281.19,279.48,283.15
+72, t-Butyldimethylsilanol , C6H16Si ,413.15,318.15,274.29,271.31,318.15
+73, Dimethyldiethoxysilane , C6H16Si ,387.15,284.15,290.58,289.36,284.15
+74, Triethylsilane , C6H16Si ,380.15,270.15,276.78,281,270.15
+75, Hexylsilane , C6H18N2Si ,387.15,285.15,284.08,281.79,285.15
+76, t-Butyldimethylsilane , C6H16Si ,354.15,251.15,266.52,265.03,251.15
+77, Bis(dimethylamino)dimethylsilane , C6H18N2Si ,401.15,266.15,290.29,290.99,266.15
+78, Hexamethylcyclotrisiloxane , C6H18O3Si3,408.25,305.15,309.95,312.56,305.15
+79, Hexamethyldisilthiane , C6H18SSi2 ,435.15,299.15,300.69,290.16,299.15
+80, Hexamethyldisilazane , C6H19NSi2 ,399.35,281.15,276.47,276.52,281.15
+81, Tris(dimethylamino)silane , C6H19N3Si ,418.15,298.15,293.54,288.95,298.15
+82, Hexamethyltrisiloxane , C6H20O2Si3,401.15,293.15,292.67,302.31,293.15
+83, p-Tolytrichlorosilane , C7H7Cl3Si ,491.15,365.15,367.47,365.77,365.15
+84, Phenylmethyldichlorosilane , C7H8Cl2Si ,477.35,340.15,345.27,343.82,340.15
+85, Phenylmethylchlorosilane , C7H9ClSi ,454.35,355.15,323.37,323.62,355.15
+86, Methyltriacetoxysilane , C7H12O6Si ,493.15,358.15,355.22,359.65,358.15
+87, Trivinylmethylsilane , C7H12Si ,375.15,288.15,284.24,288.17,288.15
+88, Cyclohexylmethyldichlorosilane , C7H14Cl2Si,480.45,355.15,349.21,346.47,355.15
+89," 1-(Trimethylsiloxy)-1,3-butadiene ", C7H14OSi ,404.15,298.15,294.31,292.58,298.15
+90, 2-Chloromethyl-3-trimethylsilyl-1-propene , C7H15OSi ,435.15,316.15,304.14,299.3,316.15
+91, n-Heptyltrichlorosilane , C7H15Cl3Si,484.15,337.15,358.28,363.81,337.15
+92, n-Hexylmethyldichlorosilane , C7H15Cl2Si,467.15,358.15,334.64,337.41,358.15
+93, Vinylmethyldiethoxysilane , C7H16O2Si ,406.15,289.15,302.11,302.44,289.15
+94, Ethyl(2-trimethylsilyl)acetate , C7H16O2Si ,430.15,308.15,300.92,295.69,308.15
+95, Cyclopentamethylenedimethylsilane , C7H16Si ,405.15,303.15,300.29,299.04,303.15
+96, N-(Trimethylsilyl)morpholine , C7H17NOSi,433.15,300.15,320.64,316.45,300.15
+97, Bis(trimethylsily)carbodiimide , C7H18N2Si2,437.15,315.15,305.21,306.69,315.15
+98, t-Butoxytrimethylsilane , C7H18OSi ,377.15,287.15,276.93,266.7,287.15
+99, Vinylpentamethyldisiloxane , C7H18OSi2 ,393.15,285.15,290.11,292.27,285.15
+100, (1-Methoxy-2-propoxy)trimethylsilane , C7H18O2Si ,405.15,293.15,298.88,293.92,293.15
+101, Methyltriethoxysilane , C7H18O3Si ,416.45,297.15,308.84,307.77,297.15
+102, (Diethylamino)trimethylsilane , C7H19NSi ,399.15,283.15,289.8,288.07,283.15
+103, Bis(trimethylsilyl)methane , C7H20Si2 ,405.15,285.15,280.52,280.41,285.15
+104, Heptamethyldisilazane , C7H21NSi2 ,421.15,300.15,292.74,296.34,300.15
+105, Heptamethylsiloxane , C7H22O2Si3,415.75,296.15,306.4,307.41,296.15
+106, Phenylethyldichlorosilane , C8H10Cl2Si,498.15,365.15,359.51,360.26,365.15
+107, Tetravinylsilane , C8H12Si ,403.15,291.15,294.85,298.69,291.15
+108, Phenyldimethylsilane , C8H12Si ,429.15,311.15,313.18,312.74,311.15
+109, Cyclopentadienyltrimethylsilane , C8H14Si ,411.15,302.15,309.33,306.42,302.15
+110, (Cyclopentenyloxy)trimethylsilane , C8H16OSi ,431.15,311.15,318.2,313.04,311.15
+111," (2,4-Pentadienyl)trimethylsilane ", C8H16Si ,400.15,291.15,296.8,295.43,291.15
+112, n-Octyltrichlorosilane , C8H17Cl3Si,503.15,369.15,368.76,375.69,369.15
+113, n-Heptylmethyldichlorosilane , C8H18Cl2Si,486.15,339.15,345.89,349.94,339.15
+114, Tetramethyldivinyldisiloxane , C8H18OSi2 ,413.15,292.15,304.04,309,292.15
+115, Triethylacetoxysilane , C8H18O2Si ,446.15,314.15,327.91,328.25,314.15
+116, Vinyltriethoxysilane , C8H18O3Si ,433.15,307.15,318.77,316.98,307.15
+117,"1,3-Divinyltetramethyldisilazane ", C8H19NSi2 ,433.15,307.15,305.79,310.53,307.15
+118, Diethyldiethoxysilane , C8H20O2Si ,430.15,316.15,314.88,314.39,316.15
+119, Tetraethoxysilane , C8H20O4Si ,441.45,323.15,324.84,321.11,323.15
+120, Tetraethylsilane , C8H20Si ,426.15,305.15,300.51,304.2,305.15
+121, Aminoethylaminopropyltrimethoxysilane , C8H22N2O3Si,537.15,369.15,351.2,353,369.15
+122, Tetramethyldiethoxysiloxane , C8H22O3Si2,434.15,311.15,319.08,319.4,311.15
+123, Octamethyltrisiloxane , C8H24O2Si3,425.75,303.15,306.79,307.41,303.15
+124, Octamethylcyclotetrasiloxane , C8H24O4Si4,448.65,330.15,334.38,336.35,330.15
+125, Octamethylcyclotetrasilazane , C8H28N4Si ,498.15,339.15,340.4,342.26,339.15
+126, Tetrakisdimethylsiloxysilane , C8H28O4Si5,462.85,340.15,323.82,337.65,340.15
+127, p-Tolydimethylchlorosilane , C9H13ClSi ,488.15,340.15,341.92,338.22,340.15
+128, p-Chlorophenyltrimethylsilane , C9H13ClSi ,479.15,322.15,341.8,337.51,322.15
+129, Phenyltrimethoxysilane , C9H14O3Si ,491.65,358.15,349.38,347.62,358.15
+130, Trimethylphenylsilane , C9H14Si ,444.45,313.15,319.51,316.36,313.15
+131, Cyclohexylmethyldimethoxysilane , C9H20O2Si ,474.35,343.15,344.03,343,343.15
+132, Hexyltrimethoxysilane ,  C9H22O3Si,475.15,335.15,340.55,342.5,335.15
+133, Triisopropylsilane ,  C9H22Si ,442.15,310.15,297.73,293.02,310.15
+134, Tri-n-propylsilane ,  C9H22Si ,446.15,316.15,309.15,310.15,316.15
+135, Tris(trimethylsioxy) boron ,  C9H27BO3Si3,457.15,315.15,326.54,330.47,315.15
+136, Propyltris(dimethylsiloxy)silane ,  C9H28O3Si4,467.55,323.15,326.37,335.84,323.15
+137, Benzyltrimethylsilane ,  C10H16Si ,463.15,335.15,330.57,325.15,335.15
+138, 3-Methacryloxypropyltrimethoxysilane ,  C10H20O5Si,523.15,365.15,365.28,363.46,365.15
+139, 1-Heptynyltrimethylsilane ,  C10H20Si ,449.15,315.15,319.87,319.69,315.15
+140,"1,4-Divinyltetramethyldisilylethane ",  C10H22Si ,438.15,313.15,324.21,330.59,313.15
+141, n-Octyldimethylchlorosilane ,  C10H23ClSi,495.15,370.15,345.8,348,370.15
+142, Bis(diethylamino)dimethylsilane ,  C10H26N2Si,465.15,308.15,330.8,327.13,308.15
+143, Decamethyltetrasiloxane ,  C10H30O3Si4,467.55,335.15,332.89,333.79,335.15
+144, Decamethylcyclopentasiloxane ,  C10H30O5Si5,484.15,350.15,354.92,353.96,350.15
+145," 2-(3,4-epoxycyclohexyl)ethyltrimethoxysilane ",  C11H22O4Si,583.15,419.15,401.15,393.57,419.15
+146, n-Decylmethyldichlorosilane ,  C11H24Cl2Si,541.15,393.15,379.46,383.83,393.15
+147, Vinyltriethylsilane ,  C11H24O3Si,452.15,318.15,299.25,302.76,318.15
+148, Diphenyldichlorosilane ,  C12H10Cl2Si,577.15,415.15,414.44,409.98,415.15
+149, Phenyltriethoxysilane ,  C12H20O3Si,508.15,393.15,368.9,360.46,393.15
+150, Diphenylsilane ,  C12H22Si ,533.15,371.15,369.97,370.91,371.15
+151, Tetramethyltetravinylcyclotetrasilane ,  C12H24O4Si4,502.15,385.15,377.44,381.73,385.15
+152, n-Dodecyltrichlorosilane ,  C12H12Cl3Si,573.15,435.15,413.6,417.75,435.15
+153, Tetra-n-propoxysilane ,  C12H12O4Si,497.15,368.15,363.21,356.11,368.15
+154, Hexaethyldisiloxane ,  C12H30OSi2,504.15,349.15,352.96,357.73,349.15
+155, Dodecamethylpentasiloxane ,  C12H36O4Si5,503.15,352.15,355.52,355.58,352.15
+156, Dodecamethylcyclohexasiloxane ,  C12H36O6Si6,518.15,366.15,373.77,369.91,366.15
+157, Methyldiphenylchlorosilane , C13H13ClSi,572.05,411.15,399.83,396.39,411.15
+158, n-Dodecylmethyldichlorosilane , C13H28Cl2Si,575.15,416.15,400.95,403.89,416.15
+159, Diphenyldimethoxysilane , C14H16O2Si,565.15,394.15,401.11,392.21,394.15
+160, Octyltriethoxysilane , C14H32O3Si,530.25,373.15,381.98,374.94,373.15
+161, Tetradecamethylhexasiloxane , C14H42O3Si6,532.95,375.15,376.42,373.75,375.15
+162, Hexadecamethylheptasiloxane , C16H48O6Si7,559.95,406.15,396.56,388.96,406.15
+163, n-0ctadecyltrichlorosilane , C18H37Cl3Si,638.15,466.15,468.12,468.74,466.15
+164, Octadecamethyloctasiloxane , C18H54O7Si8,583.65,417.15,412.84,401.65,417.15
+165, Vinyltris(methoxyethoxy)silane , C11H24O6Si,558.15,353.15,376.15,370,353.15
+166, Trimethyl(vinyloxy)silane , C5H12OSi ,347.15,263.15,265.58,263.74,263.15
+167," Dichloromethyl(2-tricyclo[3.3.1.1(3,7)-]dec-1-y lethyl) silane ", C13H22Cl2Si,584.15,408.15,428.89,423,408.15
+168, Trichloro(3-cyanopropyl) Silane , C4H6Cl3NSi,367.15,365.15,356.9,349.15,365.15
+169, Trichloro(2-phenylethyl)silane , C8H9Cl3Si ,515.15,364.15,381.05,382.25,364.15
+170," Chlorodimethyl(3,3,3-trifluoropropyl) silane ", C5H10ClF3Si,391.15,293.15,278.23,300.01,293.15
+171, Vinylmethylbis (trimethylsiloxy) silane , C9H24O2Si3,439.15,324.15,317.39,318.86,324.15
+172, Trichloro(Chloromethyl) silane , CH2Cl4Si ,390.15,342.15,303.03,311.02,342.15
+173, Dimethyl(pentafluorophenyl) silane , C8H7F5Si ,443.15,313.15,327.44,339.54,313.15
+174, Trichloro(p-chlorophenyl)silane , C6H4Cl4Si ,506.15,397.05,380.95,378.76,397.05
+175, Trisilane , Si3H8 ,326.05,273.15,239.81,243.3,273.15
+176, Trichlorononylsilane , C9H19Cl3Si,517.15,387.15,380.78,386.96,387.15
+177, Dichloroethylsilane , C2H6Cl2Si ,348.65,263.75,269.56,275.77,263.75
+178, Trichloro(dichlorophenyl)silane , C6H3Cl5Si ,533.15,419.15,412.85,393.65,419.15
+179, Tris(trimethylsilyl)silane , C9H28Si4 ,355.15,328.15,341.6,349.85,328.15
+180, Tris(trimethylsiloxy)silane , C9H28O3Si4,457.15,323.15,326.58,330.47,323.15
+181, Hexadecyltrichlorosilane , C16H33Cl3Si,542.15,427.15,452.35,453.05,427.15
+182, Flusilazol , C16H15F2N3Si,666.15,464.15,445.76,436.77,464.15
+183, Dichlorosilane , H2Cl2Si ,281.55,236.15,239.67,241.66,236.15
+184, Methyldichlorosilane , CH4Cl2Si ,314.45,241.15,250.15,252.11,241.15
+ ,,,,,,,
+Table A2 Experimental value and predicted values of FP for the testing data set ,,,,,,,
+NO , Compound name , Chemical formula , BP(K), Exp. Value (K) , Predicted Value (K) 13-descriptor model , Predicted Value (K) 6-descriptor model , Predicted Value (K) Hshieh's model 
+1, Dimethyldichlorosilane , C2H6Cl2Si ,343.25,257.15,260.52,259.12,263.53
+2, Bromomethyldimethylchlorosilane , C3H8BrClSi,403.15,314.15,299.22,271.95,297.54
+3, Trimethylsilane , C3H10Si ,279.85,204.15,227.16,224.78,230.77
+4, Dimethylvinylchlorosilane , C4H9ClSi ,356.15,268.15,266.99,268.46,270.61
+5,"1,3-Dichlorotetramethyldisiloxane ", C4H12Cl20Si2,411.15,288.15,298.4,302.14,302.31
+6,"1,1,3,3-Tetramethyldisiloxane ", C4H14OSi2 ,344.65,251.15,259.2,267.4,264.29
+7, Tetramethyldisilazane , C4H15NSi2 ,372.15,284.15,260.81,268.93,279.57
+8, Allyldimethylchlorosilane , C5H11ClSi ,385.15,278.15,280.02,280.4,287.01
+9, sec-Amyltrichlorosilane , C5H11Cl3Si,441.15,303.15,331.06,329.27,320.65
+10, n-Butylmethyldichlorosilane , C5H12Cl2Si,422.85,303.15,301.05,302.24,309.37
+11, Bis(dimethylamino)methylsilane , C5H16N2Si ,385.15,270.15,278.62,279.3,287.01
+12, Phenyltrichlorosilane , C6H5Cl3Si ,474.15,364.15,359.36,357.61,341.7
+13, Phenyltriflurosilane , C6H5F3Si ,374.15,268.15,275.98,307.57,280.7
+14, Dimethyldiacetoxysilane , C6H12O4Si ,437.15,310.15,322.42,326.51,318.17
+15, 1-Trimethylsilylpropyne , C6H12Si ,372.15,270.15,266.51,264.61,279.57
+16, Vinyldimethylethoxysilane , C6H14OSi ,372.15,277.15,281.07,282.14,279.57
+17, Allyloxytrimethylsilane , C6H14OSi ,373.15,273.15,280.81,279.06,280.14
+18, Allyltrimethoxysilane , C6H14O3Si ,419.15,319.15,304.56,305.33,307.13
+19, 3-Chloropropyltrimethoxysilane , C6H15ClO3Si,472.15,348.15,332.77,331.52,340.4
+20, n-Propyltrimethoxysilane , C6H16O3Si ,416.95,298.15,305.42,305.91,305.8
+21, Hexamethyldisiloxane , C6H18OSi2 ,373.65,270.15,274.74,274.79,280.42
+22, Hexamethyldisilane , C6H18Si2 ,386.15,272.15,287.89,294.85,287.59
+23, Vinyldiethylmethylsilane , C7H16Si ,391.15,288.15,287.35,291.11,290.49
+24, Isobutyltrimethoxysilane , C7H18OSi ,428.65,315.15,310.66,307.71,312.92
+25, Phenyldimethylchlorosilane , C8H11ClSi ,468.25,334.15,332.65,330.07,337.87
+26," (N,N-Dimethylamino)triethylsilane ", C8H11NSi ,439.15,299.15,306.32,307.37,319.41
+27, Vinyltriacetoxysilane , C8H12O6Si ,493.15,361.15,364.33,367.9,354.22
+28, Ethyltriacetoxysilane , C8H14O6Si ,500.15,377.15,367.33,369.05,358.91
+29, 3-(Trimethylsilyl)cyclopentene , C8H16Si ,417.15,299.15,310.59,307.82,305.92
+30, Vinyltriethylsilane , C8H18Si ,419.15,298.15,299.25,302.76,307.13
+31, n-Octylsilane , C8H20Si ,435.15,309.15,307.94,308.4,316.93
+32, Methylphenyldimethoxysilane , C9H14O2Si ,477.75,349.15,342.19,340.63,344.05
+33, n-(t-Butyldimethylsilyl)-n-methyl-trifluoroaceta mide , C9H18F3NOSi,441.15,325.15,300.4,329.39,320.65
+34, 2-Cyanoethyltriethoxysilane , C9H19NO3Si,497.15,359.15,345.95,343.85,356.9
+35, 3-Glycidoxypropyltrimethoxysilane ,  C9H20O5Si,535.05,383.15,377.65,376.01,382.9
+36, Di-t-butylmethylchlorosilane ,  C9H21ClSi,464.15,342.15,320.38,315.79,335.23
+37, Tri-n-propylchlorosilane ,  C9H21ClSi,472.15,349.15,328.9,328.76,340.4
+38, (Diisopropylamino)trimethylsilane ,  C9H23NSi ,430.15,301.15,300.01,291.16,313.84
+39, 1-Chlorononamethyltetrasiloxane ,  C9H27ClO3Si4,480.75,347.15,345.95,347.46,346.01
+40, Tristrimethylsiloxymethylsilane ,  C10H30O3Si4,464.35,336.15,329.2,327.24,335.35
+41, Diphenylmethylsilane , C13H14Si ,539.15,393.15,379.46,377.75,385.78
+42, Trimethyl[(1-methylethenyl)oxy]silane , C6H14OSi ,360.15,272.15,271.16,266.15,272.83
+43," Dichloromethyl-3,3,3-trifluoropropylsilane ", C4H7Cl2F3Si,394.15,288.15,295.42,313.82,292.24
+44, [2-(chloromethoxy)ethyl]trimethylsilane , C6H15ClOSi,330.15,319.15,304.64,302.51,256.49
+45, Iodotrimethylsilane , C3H9Sil ,379.15,288.15,291.98,242.89,283.56
+46, Triphenylsilane , (C6H5)3SiH,425.15,349.15,429.13,421.31,310.78
