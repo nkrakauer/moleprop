@@ -22,11 +22,11 @@ def load(file_name, data_dir = './'):
 def k_fold_splitter(dataset, n_splits = 3):
     """
     split data into k-fold
-    return indice of training and test sets
+    return indices of training and test sets
     """
     kf = KFold(n_splits)
-    indice = kf.split(dataset)
-    return indice
+    indices = kf.split(dataset)
+    return indices
     
 def cv(file_name, data_dir = './', n_splits = 3):   
     """
@@ -35,9 +35,9 @@ def cv(file_name, data_dir = './', n_splits = 3):
     data = load(file_name, data_dir)
     indice = k_fold_splitter(data,n_splits)
     cv_scores = []
-    for train_indice, test_indice in indice:
-        train_set = data.iloc[train_indice]
-        test_set = data.iloc[test_indice]
+    for train_indices, test_indices in indice:
+        train_set = data.iloc[train_indices]
+        test_set = data.iloc[test_indices]
         ### define model
         ### model.fit(train_set)
         ### score = model.evaluate(test_set)
