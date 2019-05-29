@@ -11,8 +11,7 @@ def load(file_name, data_dir = './'):
     # TODO: need to clean data before loading?
     data_file = os.path.join(data_dir, file_name)
     if not os.path.exists(data_file):
-        print(file_name + " was not found in " + data_dir + " directory")
-        return
+        sys.exit(file_name + " was not found in " + data_dir + " directory")
     print("|||||||||||||||||||||Loading " + file_name+ "|||||||||||||||||||||||")
     data = pd.read_csv(data_file) # encoding='latin-1' might be needed
     return data
