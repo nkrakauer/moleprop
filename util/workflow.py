@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 import os
 import sys
 import numpy as np
@@ -14,9 +8,6 @@ from sklearn.model_selection import KFold
 import tensorflow as tf
 import deepchem as dc
 # from deepchem.models.tensorgraph.models.graph_models import GraphConvModel
-
-
-# In[3]:
 
 
 class Loader:
@@ -57,8 +48,6 @@ class Loader:
         print('-----------------------------------------------------')
 
 
-# In[4]:
-
 
 class Splitter:
 
@@ -93,8 +82,6 @@ class Splitter:
         """
         return 0
 
-
-# In[5]:
 
 
 class Simulate:
@@ -146,7 +133,6 @@ class Simulate:
 
 
 
-# In[6]:
 
 
 class Model:
@@ -162,14 +148,16 @@ class Model:
             'mode': 'regression'},
         'MPNN':{
             'n_tasks':1,
-            'n_atom_feat':70,
-            'n_pair_feat':8,
-            'T'5,
-            'M':10,
+            'n_atom_feat':75,
+            'n_pair_feat':14,
+            'T':1,
+            'M':1,
             'batch_size':32,
+            'nb_epoch': 50,
             'learning_rate':0.0001,
             'use_queue':False,
-            'mode':"regression"
+            'mode':"regression",
+            'n_hidden' :75
         }
     }
     
@@ -209,8 +197,9 @@ class Model:
         metric = dc.metrics.Metric(dc.metrics.rms_score, np.mean)
         model.fit(train_dataset, batch_size = batch_size, nb_epoch = nb_epoch) 
         score = list( model.evaluate(test_dataset, [metric],transformers).values()).pop()
-        print("GraphConv\n ===============================\n RMSE score is: ", score)
-        return score
+        print("=================================")
+        print("GraphConv\n -----------------------------\n RMSE score is: ", score)        
+        print("=================================")        return score
 
     def MPNN(args, train_set, test_set):
         # parse arguments
@@ -222,14 +211,17 @@ class Model:
         T = args['T']
         M = args['M']
         batch_size = args['batch_size']
-        learning_rate = agrs['learning_rate']
-        use_queue = agrs['use_queue']
+        learning_rate = args['learning_rate']
+        use_queue = args['use_queue']
         mode = args['mode']
+        nb_epoch = args['nb_epoch']
+        n_hidden = args['n_hidden]
 
         flashpoint_tasks = ['flashPoint']  # Need to set the column name to be excatly "flashPoint"
         loader = dc.data.CSVLoader(tasks = flashpoint_tasks, 
                                         smiles_field="smiles", 
-                                        featurizer = dc.feat.ConvMolFeaturizer())
+                                        featurizer = dc.feat.WeaveFeaturizer())
+
         train_dataset = loader.featurize(train_set, shard_size=8192)
         test_dataset = loader.featurize(test_set, shard_size=8192)
         transformers = [
@@ -245,20 +237,21 @@ class Model:
         for transformer in transformers:
              test_dataset = transformer.transform(test_dataset)
 
-        model = dc.models.MPNNModel(len(tasks),
+        model = dc.models.MPNNModel(n_tasks = n_tasks,
                                     n_atom_feat=n_atom_feat,
                                     n_pair_feat=n_pair_feat,
-                                    T=5,
-                                    M=10,
+                                    n_hidden= n_hidden,
+				                    T=T,
+                                    M=M,
                                     batch_size=batch_size,
                                     learning_rate=learning_rate,
-                                    use_queue=use_queue,
+                                    use_queue=True,#use_queue,
                                     mode=mode)        
                 
         metric = dc.metrics.Metric(dc.metrics.rms_score, np.mean)
-        model.fit(train_dataset, batch_size = batch_size, nb_epoch = nb_epoch) 
+        model.fit(train_dataset, nb_epoch = nb_epoch) 
         score = list( model.evaluate(test_dataset, [metric],transformers).values()).pop()
-        print("MPNN\n ===============================\n RMSE score is: ", score)
-#         print("--------------------------------")
+        print("=================================")
+        print("MPNN\n -----------------------------\n RMSE score is: ", score)        
+        print("=================================")
         return score
-
