@@ -1,0 +1,118 @@
+compound,smiles,flashpoint,pure substance,source
+ALUMINUM DIISOPROPOXIDE ETHYLACETOACETATE,CC(C)[O-].CC(C)[O-].CCOC(=O)CC(C)=O.[Al+2],323.15,1,gelest_metal-organics
+ALUMINUM 9-OCTADECENYLACETOACETATE DIISOPROPOXIDE,CC(C)[O-].CC(C)[O-].CCCCCCCCC=CCCCCCCCCCC(=O)CC(=O)[O-].[Al+3],294.15,0,gelest_metal-organics
+ANTIMONY(III) n-BUTOXIDE,CCCC[O-].CCCC[O-].CCCC[O-].[Sb+3],341.15,1,gelest_metal-organics
+ARSENIC TRIETHOXIDE,CC[O-].CC[O-].CC[O-].[As+3],322.15,1,gelest_metal-organics
+BARIUM ISOPROPOXIDE,CC(C)[O-].CC(C)[O-].[Ba+2],285.15,0,gelest_metal-organics
+BORON ALLYLOXIDE,C=CCOCC=C.[B],304.15,1,gelest_metal-organics
+BORON n-BUTOXIDE,CCCC[O-].CCCC[O-].CCCC[O-].[B+3],366.15,1,gelest_metal-organics
+BORON ETHOXIDE,CC[O-].CC[O-].CC[O-].[B+3],284.15,1,gelest_metal-organics
+BORON ISOPROPOXIDE,CC(C)[O-].CC(C)[O-].CC(C)[O-].[B+3],301.15,1,gelest_metal-organics
+BORON METHOXIDE,C[O-].C[O-].C[O-].[B+3],272.15,1,gelest_metal-organics
+BORON METHOXIDE,C[O-].C[O-].C[O-].[B+3],266.15,0,gelest_metal-organics
+BORON METHOXYETHOXIDE,COC(C)[O-].COC(C)[O-].COC(C)[O-].[B+3],386.15,1,gelest_metal-organics
+CALCIUM METHOXYETHOXIDE,COC(C)[O-].COC(C)[O-].[Ca+2],312.15,0,gelest_metal-organics
+CERIUM(IV) METHOXYETHOXIDE,COC(C)[O-].COC(C)[O-].COC(C)[O-].COC(C)[O-].[Ce+4],312.15,0,gelest_metal-organics
+CESIUM METHOXIDE,C[O-].[Cs+],284.15,0,gelest_metal-organics
+COPPER(II) METHOXYETHOXYETHOXIDE,COCCOC(C)[O-].COCCOC(C)[O-].[Cu+2],357.15,0,gelest_metal-organics
+ERBIUM METHOXYETHOXIDE,COC(C)[O-].COC(C)[O-].COC(C)[O-].[Er+3],312.15,0,gelest_metal-organics
+HAFNIUM n-BUTOXIDE,CCCC[O-].CCCC[O-].CCCC[O-].CCCC[O-].[Hf+4],250.14999999999998,0,gelest_metal-organics
+LANTHANUM METHOXYETHOXIDE,COC(C)[O-].COC(C)[O-].COC(C)[O-].[La+3],312.15,0,gelest_metal-organics
+LITHIUM t-BUTOXIDE,CC(C)(C)[O-].[Li+],259.15,0,gelest_metal-organics
+LITHIUM METHOXIDE,C[O-].[Li+],284.15,0,gelest_metal-organics
+MAGNESIUM METHOXIDE,C[O-].C[O-].[Mg+2],284.15,0,gelest_metal-organics
+MAGNESIUM METHOXYETHOXIDE,COC(C)[O-].COC(C)[O-].[Mg+2],312.15,0,gelest_metal-organics
+MAGNESIUM METHYL CARBONATE,COC(=O)[O-].COC(=O)[O-].[Mg+2],331.15,0,gelest_metal-organics
+NEODYMIUM METHOXYETHOXIDE,COC(C)[O-].COC(C)[O-].COC(C)[O-].[Nd+3],312.15,0,gelest_metal-organics
+NICKEL DI-n-BUTYLDITHIOCARBAMATE,CCCCN(CCCC)C(=S)[S-].CCCCN(CCCC)C(=S)[S-].[Ni+2],533.15,1,gelest_metal-organics
+NIOBIUM(V) n-BUTOXIDE,CCCC[O-].CCCC[O-].CCCC[O-].CCCC[O-].CCCC[O-].[Nb+5],363.15,1,gelest_metal-organics
+NIOBIUM(V) ETHOXIDE,CC[O-].CC[O-].CC[O-].CC[O-].CC[O-].[Nb+5],347.15,1,gelest_metal-organics
+POTASSIUM t-BUTOXIDE,CC(C)(C)[O-].[K+],259.15,0,gelest_metal-organics
+POTASSIUM t-BUTOXIDE,CC(C)(C)[O-].[K+],259.15,0,gelest_metal-organics
+POTASSIUM ETHOXIDE,CC[O-].[K+],288.15,0,gelest_metal-organics
+POTASSIUM ISOPROPOXIDE,CC(C)[O-].[K+],285.15,0,gelest_metal-organics
+POTASSIUM METHOXIDE,C[O-].[K+],284.15,0,gelest_metal-organics
+SODIUM ALUMINUM HYDRIDE BIS(METHOXYETHOXIDE),COC(C)[O-].COC(C)[O-].[AlH4-].[Na+],277.15,0,gelest_metal-organics
+SODIUM n-BUTOXIDE,CCCC[O-].[Na+],308.15,0,gelest_metal-organics
+SODIUM ETHOXIDE,CC[O-].[Na+],285.15,0,gelest_metal-organics
+SODIUM ISOPROPOXIDE,CC(C)[O-].[Na+],259.15,0,gelest_metal-organics
+SODIUM METHOXYETHOXIDE,COC(C)[O-].[Na+],312.15,0,gelest_metal-organics
+SODIUM PHENOXIDE,[Na+].[O-]c1ccccc1,284.15,0,gelest_metal-organics
+TANTALUM(V) n-BUTOXIDE,CCCC[O-].CCCC[O-].CCCC[O-].CCCC[O-].CCCC[O-].[Ta+5],339.15,1,gelest_metal-organics
+TANTALUM(V) ETHOXIDE,CC[O-].CC[O-].CC[O-].CC[O-].CC[O-].[Ta+5],313.15,1,gelest_metal-organics
+TITANIUM n-BUTOXIDE,CCCC[O-].CCCC[O-].CCCC[O-].CCCC[O-].[Ti+4],349.15,1,gelest_metal-organics
+TITANIUM CHLORIDE TRIISOPROPOXIDE,CC(C)[O-].CC(C)[O-].CC(C)[O-].[Cl-].[Ti+4],295.15,1,gelest_metal-organics
+TITANIUM CHLORIDE TRIISOPROPOXIDE,CC(C)[O-].CC(C)[O-].CC(C)[O-].[Cl-].[Ti+4],250.14999999999998,0,gelest_metal-organics
+TITANIUM CHLORIDE TRIISOPROPOXIDE,CC(C)[O-].CC(C)[O-].CC(C)[O-].[Cl-].[Ti+4],259.15,0,gelest_metal-organics
+TITANIUM CHLORIDE TRIISOPROPOXIDE,CC(C)[O-].CC(C)[O-].CC(C)[O-].[Cl-].[Ti+4],269.15,0,gelest_metal-organics
+TITANIUM ETHOXIDE,CC[O-].CC[O-].CC[O-].CC[O-].[Ti+4],301.15,1,gelest_metal-organics
+TITANIUM ETHOXIDE,CC[O-].CC[O-].CC[O-].CC[O-].[Ti+4],303.15,1,gelest_metal-organics
+TITANIUM DIISOPROPOXIDE BIS(ETHYLACETOACETATE),CC(C)[O-].CC(C)[O-].CCCC(=O)CC(=O)[O-].CCCC(=O)CC(=O)[O-].[Ti+4],300.15,1,gelest_metal-organics
+TITANIUM IODIDE TRIISOPROPOXIDE,CC(C)[O-].CC(C)[O-].CC(C)[O-].[I-].[Ti+4],259.15,0,gelest_metal-organics
+TITANIUM ISOBUTOXIDE,CC(C)C[O-].CC(C)C[O-].CC(C)C[O-].CC(C)C[O-].[Ti+4],350.15,1,gelest_metal-organics
+TITANIUM ISOPROPOXIDE,CC(C)[O-].CC(C)[O-].CC(C)[O-].CC(C)[O-].[Ti+4],298.15,1,gelest_metal-organics
+TITANIUM METHACRYLOXYETHYLACETOACETATE TRIISOPROPOXIDE,C=C(C)C(=O)OCCOC(=O)CC(C)=O.CC(C)[O-].CC(C)[O-].CC(C)[O-].[Ti+3],285.15,0,gelest_metal-organics
+TITANIUM METHOXIDE,C[O-].C[O-].C[O-].C[O-].[Ti+4],321.15,1,gelest_metal-organics
+TITANIUM METHYLPHENOXIDE,Cc1ccccc1[O-].Cc1ccccc1[O-].Cc1ccccc1[O-].Cc1ccccc1[O-].[Ti+4],339.15,1,gelest_metal-organics
+TITANIUM n-PROPOXIDE,CCC[O-].CCC[O-].CCC[O-].CCC[O-].[Ti+4],318.15,1,gelest_metal-organics
+TITANIUM TRIACRYLATE METHOXYETHOXYETHOXIDE,C=CC(=O)[O-].C=CC(=O)[O-].C=CC(=O)[O-].COCCOC(C)[O-].[Ti+4],338.15,0,gelest_metal-organics
+TITANIUM TRIISOSTEAROYLISOPROPOXIDE,CC(C)CCCCCCCCCCCCCCC(=O)C(C(=O)CCCCCCCCCCCCCCC(C)C)(C(=O)CCCCCCCCCCCCCCC(C)C)C(C)[O-].CC(C)CCCCCCCCCCCCCCC(=O)C(C(=O)CCCCCCCCCCCCCCC(C)C)(C(=O)CCCCCCCCCCCCCCC(C)C)C(C)[O-].CC(C)CCCCCCCCCCCCCCC(=O)C(C(=O)CCCCCCCCCCCCCCC(C)C)(C(=O)CCCCCCCCCCCCCCC(C)C)C(C)[O-].CC(C)CCCCCCCCCCCCCCC(=O)C(C(=O)CCCCCCCCCCCCCCC(C)C)(C(=O)CCCCCCCCCCCCCCC(C)C)C(C)[O-].[Ti+4],366.15,1,gelest_metal-organics
+TITANIUM TRIMETHACRYLATE METHOXYETHOXYETHOXIDE,C=C(C)C(=O)[O-].C=C(C)C(=O)[O-].C=C(C)C(=O)[O-].COCCOC(C)[O-].[Ti+4],333.15,0,gelest_metal-organics
+ZIRCONIUM n-BUTOXIDE,CCCC[O-].CCCC[O-].CCCC[O-].CCCC[O-].[Zr+4],307.15,0,gelest_metal-organics
+ZIRCONIUM t-BUTOXIDE,CC(C)(C)[O-].CC(C)(C)[O-].CC(C)(C)[O-].CC(C)(C)[O-].[Zr+4],358.15,1,gelest_metal-organics
+ZIRCONIUM ISOPROPOXIDE,CC(C)[O-].CC(C)[O-].CC(C)[O-].CC(C)[O-].[Zr+4],266.15,0,gelest_metal-organics
+ZIRCONIUM n-PROPOXIDE,CCC[O-].CCC[O-].CCC[O-].CCC[O-].[Zr+4],296.15,0,gelest_metal-organics
+BISMUTH 2-ETHYLHEXANOATE,CCCCC(CC)C(=O)[O-].CCCCC(CC)C(=O)[O-].CCCCC(CC)C(=O)[O-].[Bi+3],322.15,0,gelest_metal-organics
+CALCIUM 2-ETHYLHEXANOATE,CCCCC(CC)C(=O)[O-].CCCCC(CC)C(=O)[O-].[Ca+2],400.15,1,gelest_metal-organics
+CERIUM(III) 2-ETHYLHEXANOATE,CCCCC(CC)C(=O)[O-].CCCCC(CC)C(=O)[O-].CCCCC(CC)C(=O)[O-].[Ce+3],335.15,0,gelest_metal-organics
+CHROMIUM(III) 2-ETHYLHEXANOATE,CCCCC(CC)C(=O)[O-].CCCCC(CC)C(=O)[O-].CCCCC(CC)C(=O)[O-].[Cr+3],383.15,0,gelest_metal-organics
+NEODYMIUM NEODECANOATE,CC(C)(C)CCCCCC(=O)[O-].CC(C)(C)CCCCCC(=O)[O-].CC(C)(C)CCCCCC(=O)[O-].[Nd+3],265.15,0,gelest_metal-organics
+POTASSIUM ACRYLATE,C=CC(=O)[O-].[K+],284.15,0,gelest_metal-organics
+SILVER NEODECANOATE,CC(C)(C)CCCCCC(=O)[O-].[Ag+],375.15,1,gelest_metal-organics
+SILVER NEODECANOATE,CC(C)(C)CCCCCC(=O)[O-].[Ag+],303.15,0,gelest_metal-organics
+ZINC 2-ETHYLHEXANOATE,CCCCC(CC)C(=O)[O-].CCCCC(CC)C(=O)[O-].[Zn+2],400.15,1,gelest_metal-organics
+ZINC NEODECANOATE,CC(C)(C)CCCCCC(=O)[O-].CC(C)(C)CCCCCC(=O)[O-].[Zn+2],375.15,1,gelest_metal-organics
+ZIRCONIUM 2-ETHYLHEXANOATE,CCCCC(CC)C(=O)[O-].CCCCC(CC)C(=O)[O-].CCCCC(CC)C(=O)[O-].CCCCC(CC)C(=O)[O-].[Zr+4],338.15,0,gelest_metal-organics
+ALUMINUM YTTRIUM,[Al].[Y],308.15,0,gelest_metal-organics
+LITHIUM TANTALUM,[Li].[Ta],308.15,0,gelest_metal-organics
+STRONTIUM TITANIUM,[Sr].[Ti],312.15,0,gelest_metal-organics
+STRONTIUM ZIRCONIUM,[Sr].[Zr],302.15,0,gelest_metal-organics
+TITANIUM TETRACHLORIDE,Cl[Ti](Cl)(Cl)Cl,377.15,1,gelest_metal-organics
+DIISOBUTYLALUMINUM HYDRIDE,CC(C)C[AlH]CC(C)C,269.15,0,gelest_metal-organics
+DIISOBUTYLALUMINUM HYDRIDE,CC(C)C[AlH]CC(C)C,259.15,0,gelest_metal-organics
+DIMETHYLALUMINUM CHLORIDE,C[Al](C)Cl,255.14999999999998,1,gelest_metal-organics
+DIMETHYLISOPROPOXYALUMINUM,CC(C)O[Al](C)C,278.15,1,gelest_metal-organics
+ETHYLALUMINUM DICHLORIDE,CC[Al](Cl)Cl,277.15,0,gelest_metal-organics
+TRIMETHYLALUMINUM,C[Al](C)C,269.15,0,gelest_metal-organics
+TRIMETHYLALUMINUM,C[Al](C)C,277.15,0,gelest_metal-organics
+TRIS(PENTAFLUOROPHENYL)BORON,Fc1c(F)c(F)c(B(c2c(F)c(F)c(F)c(F)c2F)c2c(F)c(F)c(F)c(F)c2F)c(F)c1F,277.15,0,gelest_metal-organics
+DIMETHYLCADMIUM,C[Cd]C,255.14999999999998,1,gelest_metal-organics
+VINYLFERROCENE,C=C[c-]1cccc1.[Fe+2].c1cc[cH-]c1,335.15,1,gelest_metal-organics
+TRIMETHYLGALLIUM,C[Ga](C)C,272.15,1,gelest_metal-organics
+TRIS(DIMETHYLAMINO)GALLIUM,CN(C)[Ga](N(C)C)N(C)C,329.15,1,gelest_metal-organics
+HAFNIUM TETRAKIS(ETHYLMETHYLAMIDE),CC[N-]C.CC[N-]C.CC[N-]C.CC[N-]C.[Hf+4],283.15,1,gelest_metal-organics
+HAFNIUM TETRAKIS(ETHYLMETHYLAMIDE),CC[N-]C.CC[N-]C.CC[N-]C.CC[N-]C.[Hf+4],283.15,1,gelest_metal-organics
+n-BUTYLLITHIUM,[Li]CCCC,250.14999999999998,0,gelest_metal-organics
+DICYCLOHEXYLPHOSPHINE,C1CCC(PC2CCCCC2)CC1,383.15,1,gelest_metal-organics
+DIETHYLPHOSPHITE,CCOP([O-])OCC,363.15,1,gelest_metal-organics
+DIPHENYLPHOSPHINE,c1ccc(Pc2ccccc2)cc1,383.15,1,gelest_metal-organics
+DIPHENYLPHOSPHINE,c1ccc(Pc2ccccc2)cc1,269.15,0,gelest_metal-organics
+DIPHENYLPHOSPHORYL AZIDE,[N-]=[N+]=NP(=O)(c1ccccc1)c1ccccc1,385.15,1,gelest_metal-organics
+TETRABUTYLPHOSPHONIUM CHLORIDE,CCCC[P+](CCCC)(CCCC)CCCC.[Cl-],277.15,0,gelest_metal-organics
+TETRADECYL(TRIHEXYL)PHOSPHONIUM CHLORIDE,CCCCCCCCCCCCCC[P+](CCCCCC)(CCCCCC)CCCCCC.[Cl-],391.15,1,gelest_metal-organics
+TRIETHYLPHOSPHATE,CCOP(=O)(OCC)OCC,389.15,1,gelest_metal-organics
+TRIETHYLPHOSPHITE,CCOP(OCC)OCC,327.15,1,gelest_metal-organics
+TRIMETHYLPHOSPHITE,COP(OC)OC,300.15,1,gelest_metal-organics
+TRIOCTYLPHOSPHINE,CCCCCCCCP(CCCCCCCC)CCCCCCCC,420.15,1,gelest_metal-organics
+TRIPHENYLPHOSPHINE,c1ccc(P(c2ccccc2)c2ccccc2)cc1,455.15,1,gelest_metal-organics
+TRIS(4-ISOCYANATOPHENYL)THIOPHOSPHATE,O=C=Nc1ccc(OP(=S)(Oc2ccc(N=C=O)cc2)Oc2ccc(N=C=O)cc2)cc1,269.15,0,gelest_metal-organics
+TRIS(DIETHYLAMINO)(t-BUTYLIMINO) TANTALUM,CCN(CC)[Ta](=NC(C)(C)C)(N(CC)CC)N(CC)CC,319.15,1,gelest_metal-organics
+PHENYLTITANIUM TRIISOPROPOXIDE,CC(C)[O-].CC(C)[O-].CC(C)[O-].[Ti+3]c1ccccc1,259.15,0,gelest_metal-organics
+TITANIUM TETRAKIS(DIETHYLAMIDE),CC[N-]CC.CC[N-]CC.CC[N-]CC.CC[N-]CC.[Ti+4],310.15,1,gelest_metal-organics
+TITANIUM TETRAKIS(DIMETHYLAMIDE),C[N-]C.C[N-]C.C[N-]C.C[N-]C.[Ti+4],281.15,1,gelest_metal-organics
+TITANIUM TETRAKIS(ETHYLMETHYLAMIDE),CC[N-]C.CC[N-]C.CC[N-]C.CC[N-]C.[Ti+4],283.15,1,gelest_metal-organics
+DIETHYLZINC,CC[Zn]CC,269.15,0,gelest_metal-organics
+ZIRCONIUM TETRAKIS(ETHYLMETHYLAMIDE),CC[N-]C.CC[N-]C.CC[N-]C.CC[N-]C.[Zr+4],283.15,1,gelest_metal-organics
+TETRAETHYLLEAD,CC[Pb](CC)(CC)CC,346.15,1,gelest_metal-organics
+LITHIUM TRIMETHYLSILANOLATE,C[Si](C)(C)[O-].[Li+],277.15,0,gelest_metal-organics
+TRIS(TRIMETHYLSILOXY)BORON,C[Si](C)(C)OB(O[Si](C)(C)C)O[Si](C)(C)C,315.15,1,gelest_metal-organics
