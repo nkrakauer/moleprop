@@ -77,10 +77,9 @@ class Splitter:
 
         # remove data points in  train dataframe that match smiles strings in
         # test dataframe
-        for row in test_df.itterrows():
+        for index, row in test_df.iterrows():
             smi = row['smiles']
-            if train_df['smiles'].str.contains[smi]:
-                train_df = train_df[train_df['smiles'] != smi]
+            train_df = train_df[train_df['smiles'] != smi]
 
         frames = [train_df, test_df]
         dataset = pd.concat(frames)
@@ -92,7 +91,25 @@ class Splitter:
             if dataset.iloc[i]['source'] == test_group:
                 test_indices.append(i)
                 train_indices.remove(i)
-        return (train_indices, test_indices)
+        return (train_indices, test_indices, dataset)
+
+    def leave_out_duplicates(data):
+        """
+        dataset: dataframe of integrated dataset
+        returns: dataframe with no duplicates
+        """
+        result = data.drop_duplicates(subset='smiles', keep=False)#[~duplicates]
+        #for each unique smiles that has duplicates
+        for smiles in data[data.duplicated(subset='smiles')]['smiles'].unique():
+            dup_rows = data.loc[data['smiles'] == smiles]
+            if dup_rows['flashpoint'].unique().shape[0] == 1:
+                # remove all but one
+                result = result.append(dup_rows.iloc[0], sort=False)
+            else:
+                if dup_rows['flashpoint'].std() < 5:
+                    # add 1 back
+                    result = result.append(dup_rows.iloc[0], sort=False)
+        return result  
     
     def leave_out_moleClass(dataset, mole_class_to_leave_out):
         """
