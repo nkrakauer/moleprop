@@ -1,5 +1,6 @@
+from rdkit import Chem
+
 def remove_duplicates(data):
-    duplicates = data[data.duplicated(subset='smiles')]
     result = data.drop_duplicates(subset='smiles', keep=False)#[~duplicates]
     #for each unique smiles that has duplicates
     for smiles in data[data.duplicated(subset='smiles')]['smiles'].unique():
@@ -13,7 +14,7 @@ def remove_duplicates(data):
                 result = result.append(dup_rows.iloc[0], sort=False)
     return result  
 
-def canoicalize_smiles(data):
+def canonicalize_smiles(data):
     for idx, row in data.iterrows():
         m = Chem.MolFromSmiles(data.iloc[idx]['smiles'])
         if m != None:
@@ -27,3 +28,6 @@ def kelvinToCelsius(temp):
 
 def celsiusToKelvin(temp):
     return temp + 273.15
+
+def get_compound_with_element(data, element):
+    return data[data['smiles'].str.contains(element)]
