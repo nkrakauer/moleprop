@@ -63,9 +63,9 @@ class Splitter:
 	indices of k-fold training and test sets
 	new dataset after removing duplicates
         """
-	dataset = integration_helpers.remove_duplicates(dataset)
-        if shuffle == True:
-            random_state = 4396
+    dataset = integration_helpers.remove_duplicates(dataset)
+    if shuffle == True:
+        random_state = 4396
         kf = KFold(n_splits, shuffle, random_state)
         indices = kf.split(dataset)
         return (indices, dataset)
