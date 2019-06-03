@@ -2,10 +2,14 @@ import os
 import sys
 import numpy as np
 import pandas as pd
-import integration_helpers ##for removing duplicates for k_fold splitter or other place where we need to remove duplicates 
+# import bokeh             # TODO for interactive plot
+import statistics as stat
+import seaborn as sns
+import matplotlib.pyplot as plt
+import integration_helpers # for removing duplicates
 from sklearn.model_selection import KFold
 
-# pkg needed for DeepChem
+## pkg needed for DeepChem
 import tensorflow as tf
 import deepchem as dc
 # from deepchem.models.tensorgraph.models.graph_models import GraphConvModel
@@ -296,3 +300,46 @@ class Model:
         print("MPNN\n -----------------------------\n RMSE score is: ", score)        
         print("=================================")
         return score
+			
+			
+class Plot:
+    
+    def parity_plot(pred, test_dataset, errorbar = False):
+        """
+        pred_rsutl: List - predicted results
+        test_dataset: DataFrame - original test dataset containing index, true flashpoints, source
+        errorbar: if true, plot scatter plot for error bars
+        """
+        # add pred_result to the test_dataset DataFrame
+        sns.set(style = 'white',font_scale = 2)
+        yeer = []
+        avg_pred = []
+        if errorbar == True:
+            for i in range(len(test_dataset)):
+                yeer.append(max(pred[i]) - min(pred[i]))
+                avg_pred.append(stat.mean(pred[i]))
+        else:
+            avg_pred = pred
+            yeer = [0]*len(test_dataset)
+        test_dataset['pred'] = avg_pred
+        test_dataset['yeer'] = yeer
+        x = list(test_dataset['flashPoint'].values)
+        y = list(test_dataset['pred'].values)
+        # set figure parameters
+        fg = seaborn.FacetGrid(data=test_dataset, hue='source', height = 8, aspect=1)
+        fg.map(plt.errorbar,                  # type of plot
+               'flashPoint', 'pred', 'yeer',  # data column
+               fmt = 'o', markersize = 10     # args for errorbar
+              ).add_legend()                  # add legend
+        # set x,y limit
+        min_val = min(min(y),min(y)-max(yeer),min(x)-max(yeer))
+        max_val = max(max(y),max(y)+max(yeer),max(x)+max(yeer))
+        for ax in fg.axes.flat:
+            ax.plot((min_val, max_val),(min_val, max_val))
+        plt.title("Parity Plot") 
+        plt.ylabel("Predicted") 
+        plt.xlabel("Experimental") 
+        sns.despine(fg.fig,top=False, right=False)#, left=True, bottom=True,)
+    
+    def interactive_plot(pred_result,true_result):
+        return 0
