@@ -46,6 +46,9 @@ class Loader:
         for s in sources:
             print("  Source Name: " + s + ", Number of Data: " + str(source_info[s]))
         print('-----------------------------------------------------')
+        print("Mean: " + data['flashpoint'].mean())
+        print('-----------------------------------------------------')
+        print("Std: " + data['flashpoint'].std())
 
 
 
@@ -65,7 +68,23 @@ class Splitter:
     def LOG(dataset, test_group):  # leave out group
         """
         split dataset by leaving out a specific source as test set
+        dataset: data frame
+        test_group: string
         """
+        # remove duplicates in train group.
+        test_df = dataset[dataset['source'] == test_group]
+        train_df = dataset[dataset['source'] != test_group]
+
+        # remove data points in  train dataframe that match smiles strings in
+        # test dataframe
+        for row in test_df.itterrows():
+            smi = row['smiles']
+            if train_df['smiles'].str.contains[smi]:
+                train_df = train_df[train_df['smiles'] != smi]
+
+        frames = [train_df, test_df]
+        dataset = pd.concat(frames)
+        dataset.reset_index(drop=True, inplace=True)
         test_indices = []
         train_indices = list(range(len(dataset.index)))
         print("||||||||||||||||||| "+test_group+ " will be used as test set|||||||||||||||||||")
@@ -199,7 +218,8 @@ class Model:
         score = list( model.evaluate(test_dataset, [metric],transformers).values()).pop()
         print("=================================")
         print("GraphConv\n -----------------------------\n RMSE score is: ", score)        
-        print("=================================")        return score
+        print("=================================")        
+        return score
 
     def MPNN(args, train_set, test_set):
         # parse arguments

@@ -5,8 +5,6 @@ compound,flashpoint,pure substance,smiles,source
 "1,2,4-trichlorobenzene",383.15,1,C1=CC(=C(C=C1Cl)Cl)Cl,pubchem
 2-chloroacetaldehyde,361.15,1,C(C=O)Cl,pubchem
 2-chloroethanol,333.15,1,C(CCl)O,pubchem
-acetic acid,313.15,1,CC(=O)O,pubchem
-acetaldehyde,233.15,1,CC=O,pubchem
 3-hydroxybutan-2-one,314.15,1,CC(C(=O)C)O,pubchem
 hexanedioic acid,464.15,1,C(CCC(=O)O)CC(=O)O,pubchem
 azane,405.15,1,N,pubchem
@@ -15,8 +13,6 @@ benzaldehyde,337.15,1,C1=CC=C(C=C1)C=O,pubchem
 benzoate,394.15,1,C1=CC=C(C=C1)C(=O)[O-],pubchem
 benzoic acid,394.15,1,C1=CC=C(C=C1)C(=O)O,pubchem
 phenylmethanol,374.15,1,C1=CC=C(C=C1)CO,pubchem
-butanal,266.15,1,CCCC=O,pubchem
-butanoic acid,350.15,1,CCCC(=O)O,pubchem
 "pentane-1,5-diamine",335.15,1,C(CCN)CCN,pubchem
 formic acid,342.15,1,C(=O)O,pubchem
 "benzene-1,2-diol",400.15,1,C1=CC=C(C(=C1)O)O,pubchem
@@ -27,14 +23,10 @@ chromen-2-one,424.15,1,C1=CC=C2C(=C1)C=CC(=O)O2,pubchem
 2-methylphenol,354.15,1,CC1=CC=CC=C1O,pubchem
 2-hydroxybenzoic acid,430.15,1,C1=CC=C(C(=C1)C(=O)O)O,pubchem
 3-methylphenol,359.15,1,CC1=CC(=CC=C1)O,pubchem
-octanoic acid,383.15,1,CCCCCCCC(=O)O,pubchem
-2-nitropropane,297.15,1,CC(C)[N+](=O)[O-],pubchem
 sulfane,480.15,1,S,pubchem
 4-aminophenol,468.15,1,C1=CC(=CC=C1N)O,pubchem
 "propane-1,3-diamine",297.15,1,C(CN)CN,pubchem
-octanal,325.15,1,CCCCCCCC=O,pubchem
 2-methoxyphenol,347.15,1,COC1=CC=CC=C1O,pubchem
-propanal,264.15,1,CCC=O,pubchem
 "butane-2,3-dione",300.15,1,CC(=O)C(=O)C,pubchem
 "3,4-dihydrochromen-2-one",403.15,1,C1CC(=O)OC2=CC=CC=C21,pubchem
 N-methylmethanamine,266.15,1,CNC,pubchem
@@ -43,9 +35,7 @@ methylsulfinylmethane,368.15,1,CS(=O)C,pubchem
 formaldehyde,333.15,1,C=O,pubchem
 formamide,427.15,1,C(=O)N,pubchem
 "propane-1,2,3-triol",433.15,1,C(C(CO)O)O,pubchem
-formonitrile,255.15,1,C#N,pubchem
 "benzene-1,4-diol",438.15,1,C1=CC(=CC=C1O)O,pubchem
-hydroxylamine,402.15,1,NO,pubchem
 1H-imidazole,418.15,1,C1=CN=CN1,pubchem
 "2,3-dihydroxybutanedioic acid",483.15,1,C(C(C(=O)O)O)(C(=O)O)O,pubchem
 methanethiol,255.15,1,CS,pubchem
@@ -61,7 +51,6 @@ phenol,352.15,1,C1=CC=C(C=C1)O,pubchem
 2-phenylacetic acid,405.15,1,C1=CC=C(C=C1)CC(=O)O,pubchem
 phthalic acid,441.15,1,C1=CC=C(C(=C1)C(=O)O)C(=O)O,pubchem
 "propane-1,2-diol",372.15,1,CC(CO)O,pubchem
-propanoic acid,327.15,1,CCC(=O)O,pubchem
 pyridine,293.15,1,C1=CC=NC=C1,pubchem
 butanedioic acid,433.15,1,C(CC(=O)O)C(=O)O,pubchem
 thiolane,286.15,1,C1CCSC1,pubchem
@@ -86,7 +75,6 @@ decanoic acid,386.15,1,CCCCCCCCCC(=O)O,pubchem
 "dibutyl benzene-1,2-dicarboxylate",430.15,1,CCCCOC(=O)C1=CC=CC=C1C(=O)OCCCC,pubchem
 2-dimethoxyphosphinothioylsulfanyl-N-methylacetamide,324.15,1,CNC(=O)CSP(=S)(OC)OC,pubchem
 2-propylpentanoic acid,384.15,1,CCCC(CCC)C(=O)O,pubchem
-ethoxyethane,228.15,1,CCOCC,pubchem
 diethoxyphosphinothioylsulfanylmethylsulfanyl-diethoxy-sulfanylidene-Î»5-phosphane,449.15,1,CCOP(=S)(OCC)SCSP(=S)(OCC)OCC,pubchem
 "6-ethoxy-2,2,4-trimethyl-1H-quinoline",380.15,1,CCOC1=CC2=C(C=C1)NC(C=C2C)(C)C,pubchem
 2-methoxy-4-prop-2-enylphenol,377.15,1,COC1=C(C=CC(=C1)CC=C)O,pubchem
@@ -118,7 +106,6 @@ piperazine,361.15,1,C1CNCCN1,pubchem
 2-aminopropan-1-ol,336.15,1,CC(CO)N,pubchem
 "5-prop-2-enyl-1,3-benzodioxole",371.15,1,C=CCC1=CC2=C(C=C1)OCO2,pubchem
 decanedioic acid,493.15,1,C(CCCCC(=O)O)CCCC(=O)O,pubchem
-octadecanoic acid,469.15,1,CCCCCCCCCCCCCCCCCC(=O)O,pubchem
 2-(2-hydroxyethylsulfanyl)ethanol,386.15,1,C(CSCCO)O,pubchem
 "dimethylcarbamothioylsulfanyl N,N-dimethylcarbamodithioate",411.15,1,CN(C)C(=S)SSC(=S)N(C)C,pubchem
 "N,N-diethylpyridine-3-carboxamide",386.15,1,CCN(CC)C(=O)C1=CN=CC=C1,pubchem
@@ -144,10 +131,8 @@ methylhydrazine,343.15,1,CNN,pubchem
 ethyl methanesulfonate,373.15,1,CCOS(=O)(=O)C,pubchem
 aniline,343.15,1,C1=CC=C(C=C1)N,pubchem
 "N,N-dimethylnitrous amide",334.15,1,CN(C)N=O,pubchem
-diethyl sulfate,377.15,1,CCOS(=O)(=O)OCC,pubchem
 hexanal,305.15,1,CCCCCC=O,pubchem
 2-bromoacetic acid,386.15,1,C(C(=O)O)Br,pubchem
-"N,N-dimethylformamide",340.15,1,CN(C)C=O,pubchem
 4-methylbenzenesulfonamide,475.15,1,CC1=CC=C(C=C1)S(=O)(=O)N,pubchem
 4-chlorobenzoic acid,511.15,1,C1=CC(=CC=C1C(=O)O)Cl,pubchem
 "1-N,4-N-diphenylbenzene-1,4-diamine",477.15,1,C1=CC=C(C=C1)NC2=CC=C(C=C2)NC3=CC=CC=C3,pubchem
@@ -155,25 +140,15 @@ ethane,138.14999999999998,1,CC,pubchem
 ethene,137.14999999999998,1,C=C,pubchem
 acetylene,255.15,1,C#C,pubchem
 chloromethane,228.15,1,CCl,pubchem
-methanamine,273.15,1,CN,pubchem
 bromoethane,250.15,1,CCBr,pubchem
 propane,169.14999999999995,1,CCC,pubchem
-chloroethane,223.15,1,CCCl,pubchem
-chloroethene,194.15,1,C=CCl,pubchem
 iodoethane,334.15,1,CCI,pubchem
-acetonitrile,279.15,1,CC#N,pubchem
 methanedithione,243.15,1,C(=S)=S,pubchem
 oxirane,255.15,1,C1CO1,pubchem
 2-bromopropane,344.15,1,CC(C)Br,pubchem
 2-chloropropane,241.15,1,CC(C)Cl,pubchem
-propan-2-amine,236.15,1,CC(C)N,pubchem
 propane-2-thiol,239.15,1,CC(C)S,pubchem
-"1,1-dichloroethane",267.15,1,CC(Cl)Cl,pubchem
-"1,1-dichloroethene",263.15,1,C=C(Cl)Cl,pubchem
-acetyl chloride,277.15,1,CC(=O)Cl,pubchem
-nitromethane,308.15,1,C[N+](=O)[O-],pubchem
 2-methylaziridine,269.15,1,CC1CN1,pubchem
-2-methyloxirane,236.15,1,CC1CO1,pubchem
 2-methylpropan-2-amine,283.15,1,CC(C)(C)N,pubchem
 tetramethylplumbane,311.15,1,C[Pb](C)(C)C,pubchem
 methanesulfonic acid,462.15,1,CS(=O)(=O)O,pubchem
@@ -188,7 +163,6 @@ trichloro(ethenyl)silane,294.15,1,C=C[Si](Cl)(Cl)Cl,pubchem
 "2,2-dimethylpropanoic acid",337.15,1,CC(C)(C)C(=O)O,pubchem
 "(3-hydroxy-2,2,4-trimethylpentyl) 2-methylpropanoate",393.15,1,CC(C)C(C(C)(C)COC(=O)C(C)C)O,pubchem
 1-ethenylsulfonylethene,376.15,1,C=CS(=O)(=O)C=C,pubchem
-dimethyl sulfate,356.15,1,COS(=O)(=O)OC,pubchem
 "2,5-dihydrothiophene 1,1-dioxide",386.15,1,C1C=CCS1(=O)=O,pubchem
 [dimethylamino(ethoxy)phosphoryl]formonitrile,351.15,1,CCOP(=O)(C#N)N(C)C,pubchem
 "tributyl 2-acetyloxypropane-1,2,3-tricarboxylate",386.15,1,CCCCOC(=O)CC(CC(=O)OCCCC)(C(=O)OCCCC)OC(=O)C,pubchem
@@ -207,9 +181,7 @@ tris(2-butoxyethyl) phosphate,497.15,1,CCCCOCCOP(=O)(OCCOCCCC)OCCOCCCC,pubchem
 "3,7-dimethylocta-1,6-dien-3-ol",351.15,1,CC(=CCCC(C)(C=C)O)C,pubchem
 2-bromobutane,294.15,1,CCC(C)Br,pubchem
 "2-methylbuta-1,3-diene",219.15,1,CC(=C)C=C,pubchem
-2-methylpropan-1-amine,264.15,1,CC(C)CN,pubchem
 2-methylpropanenitrile,281.15,1,CC(C)C#N,pubchem
-2-methylpropan-1-ol,301.15,1,CC(C)CO,pubchem
 2-methylpropanal,233.15,1,CC(C)C=O,pubchem
 2-methylprop-2-enal,275.15,1,CC(=C)C=O,pubchem
 "1,2-dichloropropane",289.15,1,CC(CCl)Cl,pubchem
@@ -225,12 +197,9 @@ but-3-en-2-one,266.15,1,CC(=O)C=C,pubchem
 2-chloroacetyl chloride,373.15,1,C(C(=O)Cl)Cl,pubchem
 prop-2-enamide,411.15,1,C=CC(=O)N,pubchem
 2-chloroacetamide,443.15,1,C(C(=O)N)Cl,pubchem
-prop-2-enoic acid,327.15,1,C=CC(=O)O,pubchem
 N-methylacetamide,381.15,1,CC(=O)NC,pubchem
 methyl acetate,263.15,1,CC(=O)OC,pubchem
 ethaneperoxoic acid,314.15,1,CC(=O)OO,pubchem
-methyl carbonochloridate,285.15,1,COC(=O)Cl,pubchem
-1-nitroethane,314.15,1,CC[N+](=O)[O-],pubchem
 "1,1,2,2-tetrabromoethane",608.15,1,C(C(Br)Br)(Br)Br,pubchem
 2-methylpropanoic acid,329.15,1,CC(C)C(=O)O,pubchem
 "2,2-dichloroacetyl chloride",339.15,1,C(C(=O)Cl)(Cl)Cl,pubchem
@@ -299,7 +268,6 @@ naphthalen-1-ol,426.15,1,C1=CC=C2C(=C1)C=CC=C2O,pubchem
 "2,4,6-tris[(dimethylamino)methyl]phenol",397.15,1,CN(C)CC1=CC(=C(C(=C1)CN(C)C)O)CN(C)C,pubchem
 "1,3-diisocyanato-2-methylbenzene",405.15,1,CC1=C(C=CC=C1N=C=O)N=C=O,pubchem
 "benzene-1,2-dicarbonitrile",435.15,1,C1=CC=C(C(=C1)C#N)C#N,pubchem
-"1,2,3,4,4a,5,6,7,8,8a-decahydronaphthalene",330.15,1,C1CCC2CCCCC2C1,pubchem
 quinoline,332.15,1,C1=CC=C2C(=C1)C=CC=N2,pubchem
 1-methoxy-2-nitrobenzene,415.15,1,COC1=CC=CC=C1[N+](=O)[O-],pubchem
 N-butyl-N-phenylacetamide,414.15,1,CCCCN(C1=CC=CC=C1)C(=O)C,pubchem
@@ -353,7 +321,6 @@ benzoyl benzenecarboperoxoate,353.15,1,C1=CC=C(C=C1)C(=O)OOC(=O)C2=CC=CC=C2,pubc
 chloro(diethyl)alumane,250.15,1,CC[Al](CC)Cl,pubchem
 "1,2-dibromo-3-chloropropane",350.15,1,C(C(CBr)Br)Cl,pubchem
 "1,2,3-trichloropropane",355.15,1,C(C(CCl)Cl)Cl,pubchem
-pentan-3-one,286.15,1,CCC(=O)CC,pubchem
 "1,3-dichloropropan-2-ol",347.15,1,C(C(CCl)O)Cl,pubchem
 "3-chloropropane-1,2-diol",332.15,1,C(C(CCl)O)O,pubchem
 "1,3-dimethylurea",427.15,1,CNC(=O)NC,pubchem
@@ -420,7 +387,6 @@ phenylmethanethiol,343.15,1,C1=CC=C(C=C1)CS,pubchem
 phenylhydrazine,361.15,1,C1=CC=C(C=C1)NN,pubchem
 anisole,325.15,1,COC1=CC=CC=C1,pubchem
 2-ethenylpyridine,315.15,1,C=CC1=CC=CC=N1,pubchem
-4-ethylmorpholine,301.15,1,CCN1CCOCC1,pubchem
 "(2,2-dimethyl-1,3-dioxolan-4-yl)methanol",353.15,1,CC1(OCC(O1)CO)C,pubchem
 1-ethenyl-3-methylbenzene,333.15,1,CC1=CC=CC(=C1)C=C,pubchem
 triphenyl phosphite,491.15,1,C1=CC=C(C=C1)OP(OC2=CC=CC=C2)OC3=CC=CC=C3,pubchem
@@ -440,11 +406,9 @@ phenoxybenzene,388.15,1,C1=CC=C(C=C1)OC2=CC=CC=C2,pubchem
 ethyl 2-phenylacetate,372.15,1,CCOC(=O)CC1=CC=CC=C1,pubchem
 3-oxo-N-phenylbutanamide,436.15,1,CC(=O)CC(=O)NC1=CC=CC=C1,pubchem
 "1,2-diphenylguanidine",471.15,1,C1=CC=C(C=C1)NC(=NC2=CC=CC=C2)N,pubchem
-"N,N-dipropylpropan-1-amine",310.15,1,CCCN(CCC)CCC,pubchem
 "N,N-bis(prop-2-enyl)prop-2-en-1-amine",312.15,1,C=CCN(CC=C)CC=C,pubchem
 2-[bis(2-hydroxyethyl)amino]ethanol,458.15,1,C(CO)N(CCO)CCO,pubchem
 2-(dibutylamino)ethanol,372.15,1,CCCCN(CCCC)CCO,pubchem
-"N,N-dibutylbutan-1-amine",358.15,1,CCCCN(CCCC)CCCC,pubchem
 4-(morpholin-4-yldisulfanyl)morpholine,394.15,1,C1COCCN1SSN2CCOCC2,pubchem
 phenylmethoxymethylbenzene,408.15,1,C1=CC=C(C=C1)COCC2=CC=CC=C2,pubchem
 propylbenzene,321.15,1,CCCC1=CC=CC=C1,pubchem
@@ -465,19 +429,14 @@ decylbenzene,380.15,1,CCCCCCCCCCC1=CC=CC=C1,pubchem
 4-methoxyaniline,278.15,1,COC1=CC=C(C=C1)N,pubchem
 "1,4-diethylbenzene",329.15,1,CCC1=CC=C(C=C1)CC,pubchem
 [4-(hydroxymethyl)cyclohexyl]methanol,439.15,1,C1CC(CCC1CO)CO,pubchem
-ethyl 2-bromoacetate,321.15,1,CCOC(=O)CBr,pubchem
 ethyl propanoate,285.15,1,CCC(=O)OCC,pubchem
-ethyl 2-chloroacetate,311.15,1,CCOC(=O)CCl,pubchem
 ethyl N-methylcarbamate,346.15,1,CCOC(=O)NC,pubchem
 methyl 3-oxobutanoate,343.15,1,CC(=O)CC(=O)OC,pubchem
-ethyl 2-cyanoacetate,383.15,1,CCOC(=O)CC#N,pubchem
 "1,1-diethoxyethane",252.15,1,CCOC(C)OCC,pubchem
 azepan-2-one,398.15,1,C1CCC(=O)NCC1,pubchem
 dibutyl hexanedioate,386.15,1,CCCCOC(=O)CCCCC(=O)OCCCC,pubchem
 2-ethyl-N-(2-ethylhexyl)hexan-1-amine,405.15,1,CCCCC(CC)CNCC(CC)CCCC,pubchem
 "3,7-dimethyloct-6-enal",347.15,1,CC(CCC=C(C)C)CC=O,pubchem
-butanoyl butanoate,355.15,1,CCCC(=O)OC(=O)CCC,pubchem
-heptan-3-one,319.15,1,CCCCC(=O)CC,pubchem
 1-bromo-4-methylbenzene,358.15,1,CC1=CC=C(C=C1)Br,pubchem
 "1,4-xylene",300.15,1,CC1=CC=C(C=C1)C,pubchem
 1-chloro-4-methylbenzene,413.15,1,CC1=CC=C(C=C1)Cl,pubchem
@@ -495,21 +454,9 @@ octyl 8-(3-octyloxiran-2-yl)octanoate,490.15,1,CCCCCCCCC1C(O1)CCCCCCCC(=O)OCCCCC
 2-(chloromethyl)oxirane,307.15,1,C1C(O1)CCl,pubchem
 oxiran-2-ylmethyl prop-2-enoate,334.15,1,C=CC(=O)OCC1CO1,pubchem
 oxiran-2-ylmethyl 2-methylprop-2-enoate,356.15,1,CC(=C)C(=O)OCC1CO1,pubchem
-2-(prop-2-enoxymethyl)oxirane,330.15,1,C=CCOCC1CO1,pubchem
 1-bromopropane,299.15,1,CCCBr,pubchem
-3-bromoprop-1-ene,271.15,1,C=CCBr,pubchem
-3-bromoprop-1-yne,283.15,1,C#CCBr,pubchem
-butane,213.15,1,CCCC,pubchem
-prop-2-enal,247.15,1,C=CC=O,pubchem
 propane-1-thiol,258.15,1,CCCS,pubchem
-3-chloroprop-1-ene,241.15,1,C=CCCl,pubchem
-propan-1-amine,236.15,1,CCCN,pubchem
-prop-2-en-1-amine,244.15,1,C=CCN,pubchem
-propanenitrile,275.15,1,CCC#N,pubchem
-prop-2-enenitrile,273.15,1,C=CC#N,pubchem
 2-chloroacetonitrile,321.15,1,C(C#N)Cl,pubchem
-prop-2-en-1-ol,295.15,1,C=CCO,pubchem
-prop-2-yn-1-ol,306.15,1,C#CCO,pubchem
 oxaldehyde,493.15,1,C(=O)C=O,pubchem
 methoxyethene,217.15,1,COC=C,pubchem
 chloro(methoxy)methane,273.15,1,COCCl,pubchem
@@ -523,16 +470,12 @@ pentan-2-one,280.15,1,CCCC(=O)C,pubchem
 3-hydroxybutanal,339.15,1,CC(CC=O)O,pubchem
 1-methoxypropan-2-ol,309.15,1,CC(COC)O,pubchem
 2-(dimethylamino)ethanol,314.15,1,CN(C)CCO,pubchem
-1-nitropropane,307.15,1,CCC[N+](=O)[O-],pubchem
 4-methylpentan-2-amine,286.15,1,CC(C)CC(C)N,pubchem
 4-methylpentan-2-one,296.15,1,CC(C)CC(=O)C,pubchem
-N-propan-2-ylpropan-2-amine,272.15,1,CC(C)NC(C)C,pubchem
-2-propan-2-yloxypropane,245.15,1,CC(C)OC(C)C,pubchem
 propan-2-yl carbonochloridate,289.15,1,CC(C)OC(=O)Cl,pubchem
 acetyl acetate,322.15,1,CC(=O)OC(=O)C,pubchem
 "oxolane-2,5-dione",430.15,1,C1CC(=O)OC1=O,pubchem
 "furan-2,5-dione",376.15,1,C1=CC(=O)OC1=O,pubchem
-"4-methyl-1,3-dioxolan-2-one",389.15,1,CC1COC(=O)O1,pubchem
 "1,3-xylene",302.15,1,CC1=CC(=CC=C1)C,pubchem
 1-chloro-3-methylbenzene,325.15,1,CC1=CC(=CC=C1)Cl,pubchem
 3-chloroaniline,397.15,1,C1=CC(=CC(=C1)Cl)N,pubchem
@@ -545,7 +488,6 @@ acetyl acetate,322.15,1,CC(=O)OC(=O)C,pubchem
 "1,3,5-trichlorobenzene",380.15,1,C1=C(C=C(C=C1Cl)Cl)Cl,pubchem
 "2,4,6-trimethylpyridine",331.15,1,CC1=CC(=NC(=C1)C)C,pubchem
 "2,6-dimethylheptan-4-ol",347.15,1,CC(C)CC(CC(C)C)O,pubchem
-"2,6-dimethylheptan-4-one",333.15,1,CC(C)CC(=O)CC(C)C,pubchem
 4-methylpentan-2-yl acetate,318.15,1,CC(C)CC(C)OC(=O)C,pubchem
 bromobenzene,324.15,1,C1=CC=C(C=C1)Br,pubchem
 4-methylpyridine,330.15,1,CC1=CC=NC=C1,pubchem
@@ -558,25 +500,16 @@ benzenethiol,326.15,1,C1=CC=C(C=C1)S,pubchem
 2-methylpyridine,309.15,1,CC1=CC=CC=N1,pubchem
 butyl 3-methylbutanoate,326.15,1,CCCCOC(=O)CC(C)C,pubchem
 dihexyl nonanedioate,477.15,1,CCCCCCOC(=O)CCCCCCCC(=O)OCCCCCC,pubchem
-pentanoic acid,362.15,1,CCCCC(=O)O,pubchem
 1-ethenoxy-2-methylpropane,264.15,1,CC(C)COC=C,pubchem
 "N',N'-dimethylpropane-1,3-diamine",289.15,1,CN(C)CCCN,pubchem
 2-propan-2-yloxyethanol,306.15,1,CC(C)OCCO,pubchem
 propyl carbonochloridate,223.15,1,CCCOC(=O)Cl,pubchem
 "1,3-dibromopropane",239.15,1,C(CBr)CBr,pubchem
-1-bromobutane,291.15,1,CCCCBr,pubchem
-1-chlorobutane,266.15,1,CCCCCl,pubchem
 1-bromo-3-chloropropane,330.15,1,C(CCl)CBr,pubchem
-butan-1-amine,261.15,1,CCCCN,pubchem
-butanenitrile,290.15,1,CCCC#N,pubchem
 propanedinitrile,403.15,1,C(C#N)C#N,pubchem
-butane-1-thiol,286.15,1,CCCCS,pubchem
 "propane-1,3-dithiol",332.15,1,C(CS)CS,pubchem
-dimethoxymethane,255.15,1,COCOC,pubchem
 N-ethylethanamine,244.15,1,CCNCC,pubchem
-ethyl nitrite,238.15,1,CCON=O,pubchem
 1H-pyrrole,312.15,1,C1=CNC=C1,pubchem
-oxolane,259.15,1,C1CCOC1,pubchem
 thiophene,272.15,1,C1=CSC=C1,pubchem
 2-tert-butylperoxy-2-methylpropane,291.15,1,CC(C)(C)OOC(C)(C)C,pubchem
 5-methylhexan-2-one,309.15,1,CC(C)CCC(=O)C,pubchem
@@ -587,28 +520,20 @@ N-[2-(octadecanoylamino)ethyl]octadecanamide,553.15,1,CCCCCCCCCCCCCCCCCC(=O)NCCN
 heptan-2-one,312.15,1,CCCCCC(=O)C,pubchem
 2-methoxyethyl acetate,317.15,1,CC(=O)OCCOC,pubchem
 "1,4-dichlorobutane",313.15,1,C(CCCl)CCl,pubchem
-pentan-1-amine,280.15,1,CCCCCN,pubchem
 pentanenitrile,314.15,1,CCCCC#N,pubchem
 butanedinitrile,405.15,1,C(CC#N)C#N,pubchem
-pentanal,285.15,1,CCCCC=O,pubchem
 "butane-1,4-diol",392.15,1,C(CCO)CO,pubchem
 "but-2-yne-1,4-diol",401.15,1,C(C#CCO)O,pubchem
-pentane-1-thiol,291.15,1,CCCCCS,pubchem
-N-methylbutan-1-amine,286.15,1,CCCCNC,pubchem
 2-(ethylamino)ethanol,344.15,1,CCNCCO,pubchem
 1-chloro-2-ethenoxyethane,289.15,1,C=COCCCl,pubchem
 2-ethoxyethanol,314.15,1,CCOCCO,pubchem
 "3,4-dihydro-2H-pyran",255.15,1,C1CC=COC1,pubchem
-"1,3,5-trioxane",318.15,1,C1OCOCO1,pubchem
-piperidine,276.15,1,C1CCNCC1,pubchem
-morpholine,311.15,1,C1COCCN1,pubchem
 2-methyl-N-(2-methylpropyl)propan-1-amine,302.15,1,CC(C)CNCC(C)C,pubchem
 1-(2-hydroxypropylamino)propan-2-ol,399.15,1,CC(CNCC(C)O)O,pubchem
 1-(2-hydroxypropoxy)propan-2-ol,411.15,1,CC(COCC(C)O)O,pubchem
 octan-2-one,325.15,1,CCCCCCC(=O)C,pubchem
 2-ethoxyethyl acetate,330.15,1,CCOCCOC(=O)C,pubchem
 2-[2-(2-acetyloxyethoxy)ethoxy]ethyl acetate,447.15,1,CC(=O)OCCOCCOCCOC(=O)C,pubchem
-hexan-1-amine,302.15,1,CCCCCCN,pubchem
 "pentane-1,5-diol",402.15,1,C(CCO)CCO,pubchem
 hexane-1-thiol,293.15,1,CCCCCCS,pubchem
 1-ethenoxybutane,264.15,1,CCCCOC=C,pubchem
@@ -627,9 +552,7 @@ heptanal,308.15,1,CCCCCCC=O,pubchem
 2-(2-methoxyethoxy)ethanol,366.15,1,COCCOCCO,pubchem
 1-chlorooctane,343.15,1,CCCCCCCCCl,pubchem
 octane-1-thiol,319.15,1,CCCCCCCCS,pubchem
-2-(2-ethoxyethoxy)ethanol,369.15,1,CCOCCOCCO,pubchem
 1-chloro-2-(2-chloroethoxymethoxy)ethane,383.15,1,C(CCl)OCOCCCl,pubchem
-N-butylbutan-1-amine,325.15,1,CCCCNCCCC,pubchem
 3-(2-cyanoethylamino)propanenitrile,383.15,1,C(CNCCC#N)C#N,pubchem
 1-methoxy-2-(2-methoxyethoxy)ethane,340.15,1,COCCOCCOC,pubchem
 hexadecyl(trimethyl)azanium;chloride,294.15,1,CCCCCCCCCCCCCCCC[N+](C)(C)C.[Cl-],pubchem
@@ -658,7 +581,6 @@ dodecane-1-thiol,361.15,1,CCCCCCCCCCCCS,pubchem
 1-[2-(2-butoxyethoxy)ethoxy]butane,391.15,1,CCCCOCCOCCOCCCC,pubchem
 octadecan-1-ol,473.15,1,CCCCCCCCCCCCCCCCCCO,pubchem
 icosane,373.15,1,CCCCCCCCCCCCCCCCCCCC,pubchem
-methoxymethane,269.15,1,COC,pubchem
 2-methylbut-3-en-2-ol,286.15,1,CC(C)(C=C)O,pubchem
 2-methylbut-3-yn-2-ol,298.15,1,CC(C)(C#C)O,pubchem
 trichloro(ethyl)silane,295.15,1,CC[Si](Cl)(Cl)Cl,pubchem
@@ -716,7 +638,6 @@ butyl benzoate,380.15,1,CCCCOC(=O)C1=CC=CC=C1,pubchem
 methyl 2-cyanoprop-2-enoate,352.15,1,COC(=O)C(=C)C#N,pubchem
 "zinc;N,N-dimethylcarbamodithioate",366.15,1,CN(C)C(=S)[S-].CN(C)C(=S)[S-].[Zn+2],pubchem
 "2,4-di(nonyl)phenol",400.15,1,CCCCCCCCCC1=CC(=C(C=C1)O)CCCCCCCCC,pubchem
-butyl 2-hydroxypropanoate,344.15,1,CCCCOC(=O)C(C)O,pubchem
 2-[ethyl(2-hydroxyethyl)amino]ethanol,371.15,1,CCN(CCO)CCO,pubchem
 trisodium;2-[2-[bis(carboxylatomethyl)amino]ethyl-(2-hydroxyethyl)amino]acetate,373.15,1,C(CN(CC(=O)[O-])CC(=O)[O-])N(CCO)CC(=O)[O-].[Na+].[Na+].[Na+],pubchem
 tris(2-chloroethyl) phosphite,411.15,1,C(CCl)OP(OCCCl)OCCCl,pubchem
@@ -736,10 +657,8 @@ aniline;hydrochloride,466.15,1,C1=CC=C(C=C1)N.Cl,pubchem
 hexyl 2-methylprop-2-enoate,355.15,1,CCCCCCOC(=O)C(=C)C,pubchem
 N-(2-hydroxyethyl)acetamide,450.15,1,CC(=O)NCCO,pubchem
 "1,3-dichloropropane",294.15,1,C(CCl)CCl,pubchem
-hexanoic acid,377.15,1,CCCCCC(=O)O,pubchem
 oxane,253.15,1,C1CCOCC1,pubchem
 N-propylpropan-1-amine,290.15,1,CCCNCCC,pubchem
-1-butoxybutane,298.15,1,CCCCOCCCC,pubchem
 decane-1-thiol,371.15,1,CCCCCCCCCCS,pubchem
 N-hexylhexan-1-amine,368.15,1,CCCCCCNCCCCCC,pubchem
 2-[2-(2-butoxyethoxy)ethoxy]ethanol,416.15,1,CCCCOCCOCCOCCO,pubchem
@@ -750,7 +669,6 @@ dichloro-methyl-phenylsilane,301.15,1,C[Si](C1=CC=CC=C1)(Cl)Cl,pubchem
 tris(butylsulfanyl)phosphane,419.15,1,CCCCSP(SCCCC)SCCCC,pubchem
 4-methoxyphenol,405.15,1,COC1=CC=C(C=C1)O,pubchem
 "1,4-dimethoxybenzene",361.15,1,COC1=CC=C(C=C1)OC,pubchem
-aziridine,262.15,1,C1CN1,pubchem
 4-ethoxyaniline,389.15,1,CCOC1=CC=C(C=C1)N,pubchem
 3-aminopropan-1-ol,352.15,1,C(CN)CO,pubchem
 fluoranthene,471.15,1,C1=CC=C2C(=C1)C3=CC=CC4=C3C2=CC=C4,pubchem
@@ -760,7 +678,6 @@ acenaphthylene,395.15,1,C1=CC2=C3C(=C1)C=CC3=CC=C2,pubchem
 "1H-1,2,4-triazole",443.15,1,C1=NC=NN1,pubchem
 bis(2-ethylhexyl) hydrogen phosphate,469.15,1,CCCCC(CC)COP(=O)(O)OCC(CC)CCCC,pubchem
 tris(2-ethylhexyl) phosphite,444.15,1,CCCCC(CC)COP(OCC(CC)CCCC)OCC(CC)CCCC,pubchem
-hydrazine,325.15,1,NN,pubchem
 "1,2-dichloro-4-(trifluoromethyl)benzene",338.15,1,C1=CC(=C(C=C1C(F)(F)F)Cl)Cl,pubchem
 methyl trifluoromethanesulfonate,311.15,1,COS(=O)(=O)C(F)(F)F,pubchem
 2-fluoroaniline,333.15,1,C1=CC=C(C(=C1)N)F,pubchem
@@ -777,7 +694,6 @@ cyanamide,414.15,1,C(#N)N,pubchem
 1-bromo-4-fluorobenzene,333.15,1,C1=CC(=CC=C1F)Br,pubchem
 fluorobenzene,258.15,1,C1=CC=C(C=C1)F,pubchem
 pyridin-3-amine,463.15,1,C1=CC(=CN=C1)N,pubchem
-pentyl nitrite,283.15,1,CCCCCON=O,pubchem
 "3,3-dimethylbutan-2-ol",351.15,1,CC(C(C)(C)C)O,pubchem
 prop-2-ynoic acid,331.15,1,C#CC(=O)O,pubchem
 "2,6,6-trimethylbicyclo[3.1.1]heptane",313.15,1,CC1CCC2CC1C2(C)C,pubchem
@@ -813,8 +729,6 @@ butane-2-thiol,250.15,1,CCC(C)S,pubchem
 "2,3-di(octanoyloxy)propyl octanoate",450.15,1,CCCCCCCC(=O)OCC(COC(=O)CCCCCCC)OC(=O)CCCCCCC,pubchem
 2-bromoethanol,314.15,1,C(CBr)O,pubchem
 1-chloropropane,255.15,1,CCCCl,pubchem
-methoxyethane,236.15,1,CCOC,pubchem
-ethyl carbonochloridate,289.15,1,CCOC(=O)Cl,pubchem
 "1,3-dichlorobenzene",336.15,1,C1=CC(=CC(=C1)Cl)Cl,pubchem
 chlorocyclohexane,305.15,1,C1CCC(CC1)Cl,pubchem
 2-methylpropyl nitrite,250.15,1,CC(C)CON=O,pubchem
@@ -842,7 +756,6 @@ tris(3-methylphenyl) phosphate,483.15,1,CC1=CC(=CC=C1)OP(=O)(OC2=CC=CC(=C2)C)OC3
 "1,2-di(propan-2-yl)benzene",350.15,1,CC(C)C1=CC=CC=C1C(C)C,pubchem
 2-ethylaniline,358.15,1,CCC1=CC=CC=C1N,pubchem
 2-methylcyclohexan-1-ol,332.15,1,CC1CCCCC1O,pubchem
-2-methylcyclohexan-1-one,321.15,1,CC1CCCCC1=O,pubchem
 2-hydroxy-4-methylsulfanylbutanoic acid,394.15,1,CSCCC(C(=O)O)O,pubchem
 "butane-1,2-diol",313.15,1,CCC(CO)O,pubchem
 "2,4-diisocyanato-1-methylbenzene",405.15,1,CC1=C(C=C(C=C1)N=C=O)N=C=O,pubchem
@@ -883,14 +796,12 @@ triphenylphosphane,453.15,1,C1=CC=C(C=C1)P(C2=CC=CC=C2)C3=CC=CC=C3,pubchem
 tert-butyl benzenecarboperoxoate,366.15,1,CC(C)(C)OOC(=O)C1=CC=CC=C1,pubchem
 "2,4-dibromophenol",386.15,1,C1=CC(=C(C=C1Br)Br)O,pubchem
 "2,3-dichloropropan-1-ol",364.15,1,C(C(CCl)Cl)O,pubchem
-dimethyl carbonate,272.15,1,COC(=O)OC,pubchem
 pyrrolidin-2-one,402.15,1,C1CC(=O)NC1,pubchem
 "1,3-dichloro-5-nitrobenzene",413.15,1,C1=C(C=C(C=C1Cl)Cl)[N+](=O)[O-],pubchem
 "1-methyl-3,5-dinitrobenzene",480.15,1,CC1=CC(=CC(=C1)[N+](=O)[O-])[N+](=O)[O-],pubchem
 "2-methyl-1,4-dinitrobenzene",480.15,1,CC1=C(C=CC(=C1)[N+](=O)[O-])[N+](=O)[O-],pubchem
 1-(bromomethyl)-3-methylbenzene,355.15,1,CC1=CC(=CC=C1)CBr,pubchem
 3-methylbenzonitrile,360.15,1,CC1=CC=CC(=C1)C#N,pubchem
-"N,N-dipentylpentan-1-amine",375.15,1,CCCCCN(CCCCC)CCCCC,pubchem
 2-phenylmethoxyethanol,402.15,1,C1=CC=C(C=C1)COCCO,pubchem
 2-chloroethenylbenzene,331.15,1,C1=CC=C(C=C1)C=CCl,pubchem
 1-ethenyl-4-methylbenzene,325.15,1,CC1=CC=C(C=C1)C=C,pubchem
@@ -899,12 +810,10 @@ furan-2-ylmethyl acetate,339.15,1,CC(=O)OCC1=CC=CO1,pubchem
 methyl pentanoate,295.15,1,CCCCC(=O)OC,pubchem
 methylimino(oxo)methane,266.15,1,CN=C=O,pubchem
 2-methylbutan-2-yl acetate,299.15,1,CCC(C)(C)OC(=O)C,pubchem
-propan-2-yl formate,267.15,1,CC(C)OC=O,pubchem
 ethyl nitrate,283.15,1,CCO[N+](=O)[O-],pubchem
 "2,5-dimethylfuran",272.15,1,CC1=CC=C(O1)C,pubchem
 pentan-2-yl acetate,305.15,1,CCCC(C)OC(=O)C,pubchem
 2-ethoxyacetic acid,371.15,1,CCOCC(=O)O,pubchem
-propyl nitrate,293.15,1,CCCO[N+](=O)[O-],pubchem
 3-bromopropan-1-ol,367.15,1,C(CO)CBr,pubchem
 3-chloropropan-1-ol,346.15,1,C(CO)CCl,pubchem
 dimethyl hexanedioate,380.15,1,COC(=O)CCCCC(=O)OC,pubchem
@@ -967,7 +876,6 @@ S-ethyl N-cyclohexyl-N-ethylcarbamothioate,412.15,1,CCN(C1CCCCC1)C(=O)SCC,pubche
 "1,1-diphenylguanidine",443.15,1,C1=CC=C(C=C1)N(C2=CC=CC=C2)C(=N)N,pubchem
 2-ethylhexyl diphenyl phosphate,497.15,1,CCCCC(CC)COP(=O)(OC1=CC=CC=C1)OC2=CC=CC=C2,pubchem
 didecyl phenyl phosphite,698.15,1,CCCCCCCCCCOP(OCCCCCCCCCC)OC1=CC=CC=C1,pubchem
-8-methylnonanal,358.15,1,CC(C)CCCCCCC=O,pubchem
 8-methylnonyl prop-2-enoate,389.15,1,CC(C)CCCCCCCOC(=O)C=C,pubchem
 1-chloro-2-ethenylbenzene,332.15,1,C=CC1=CC=CC=C1Cl,pubchem
 nonane-1-thiol,351.15,1,CCCCCCCCCS,pubchem
@@ -1030,7 +938,6 @@ prop-2-enyl 3-methylbutanoate,312.15,1,CC(C)CC(=O)OCC=C,pubchem
 octadecane-1-thiol,458.15,1,CCCCCCCCCCCCCCCCCCS,pubchem
 hexadecane-1-thiol,375.15,1,CCCCCCCCCCCCCCCCS,pubchem
 "hexane-2,5-diol",374.15,1,CC(CCC(C)O)O,pubchem
-prop-2-enyl carbonochloridate,304.15,1,C=CCOC(=O)Cl,pubchem
 S-ethyl chloromethanethioate,304.15,1,CCSC(=O)Cl,pubchem
 "2-[2-(dimethylamino)ethoxy]-N,N-dimethylethanamine",352.15,1,CN(C)CCOCCN(C)C,pubchem
 "2,3-dibromopropyl 2-methylprop-2-enoate",332.15,1,CC(=C)C(=O)OCC(CBr)Br,pubchem
@@ -1122,24 +1029,18 @@ dodecylbenzene,408.15,1,CCCCCCCCCCCCC1=CC=CC=C1,pubchem
 heptan-4-one,322.15,1,CCCC(=O)CCC,pubchem
 ethenyl butanoate,293.15,1,CCCC(=O)OC=C,pubchem
 "7-methyl-3-methylideneocta-1,6-diene",312.15,1,CC(=CCCC(=C)C=C)C,pubchem
-4-hydroxy-4-methylpentan-2-one,325.15,1,CC(=O)CC(C)(C)O,pubchem
-3-methylbutan-1-ol,319.15,1,CC(C)CCO,pubchem
 "pentane-2,4-dione",307.15,1,CC(=O)CC(=O)C,pubchem
 propanoyl propanoate,336.15,1,CCC(=O)OC(=O)CC,pubchem
 "2,4,6-trimethyl-1,3,5-trioxane",309.15,1,CC1OC(OC(O1)C)C,pubchem
-pyrrolidine,276.15,1,C1CCNC1,pubchem
-"1,4-dioxane",285.15,1,C1COCCO1,pubchem
 N-prop-2-enylprop-2-en-1-amine,280.15,1,C=CCNCC=C,pubchem
 1-(2-butoxyethoxy)propan-2-ol,394.15,1,CCCCOCCOCC(C)O,pubchem
 2-(2-butoxyethoxy)ethyl acetate,389.15,1,CCCCOCCOCCOC(=O)C,pubchem
 nonanal,356.15,1,CCCCCCCCC=O,pubchem
 "2,2-dimethylpropane-1,3-diol",380.15,1,CC(C)(CO)CO,pubchem
 "thiolane 1,1-dioxide",439.15,1,C1CCS(=O)(=O)C1,pubchem
-tributyl phosphate,419.15,1,CCCCOP(=O)(OCCCC)OCCCC,pubchem
 2-methylprop-2-enenitrile,286.15,1,CC(=C)C#N,pubchem
 "2-chlorobuta-1,3-diene",253.15,1,C=CC(=C)Cl,pubchem
 1-chloropropan-2-ol,325.15,1,CC(CCl)O,pubchem
-"N,N-dimethylacetamide",339.15,1,CC(=O)N(C)C,pubchem
 "2,6-ditert-butyl-4-methylphenol",400.15,1,CC1=CC(=C(C(=C1)C(C)(C)C)O)C(C)(C)C,pubchem
 "N-(butoxymethyl)-2-chloro-N-(2,6-diethylphenyl)acetamide",387.15,1,CCCCOCN(C1=C(C=CC=C1CC)CC)C(=O)CCl,pubchem
 "4-diethoxyphosphinothioyloxy-N,N-diethyl-6-methylpyrimidin-2-amine",386.15,1,CCN(CC)C1=NC(=CC(=N1)OP(=S)(OCC)OCC)C,pubchem
@@ -1193,7 +1094,6 @@ prop-2-enyl nonanoate,302.15,1,CCCCCCCCC(=O)OCC=C,pubchem
 nickel(2+);dihydroxide,673.15,1,[OH-].[OH-].[Ni+2],pubchem
 3-propoxypropan-1-ol,326.15,1,CCCOCCCO,pubchem
 "4,4-dimethyl-1,3-oxazolidine",322.15,1,CC1(COCN1)C,pubchem
-propanoyl chloride,285.15,1,CCC(=O)Cl,pubchem
 2-methylpropyl carbonochloridate,300.15,1,CC(C)COC(=O)Cl,pubchem
 propan-2-yl 2-phenylacetate,368.15,1,CC(C)OC(=O)CC1=CC=CC=C1,pubchem
 undecane-1-thiol,382.15,1,CCCCCCCCCCCS,pubchem
@@ -1258,7 +1158,6 @@ hexanedioate,658.15,1,C(CCC(=O)[O-])CC(=O)[O-],pubchem
 "(1S,2R,6S,7R)-4-[[(1R,2R)-2-[[4-(1,2-benzothiazol-3-yl)piperazin-1-yl]methyl]cyclohexyl]methyl]-4-azatricyclo[5.2.1.02,6]decane-3,5-dione",282.15,1,C1CCC(C(C1)CN2CCN(CC2)C3=NSC4=CC=CC=C43)CN5C(=O)C6C7CCC(C7)C6C5=O,pubchem
 "N-(2,4-dimethylphenyl)-3-oxobutanamide",444.15,1,CC1=CC(=C(C=C1)NC(=O)CC(=O)C)C,pubchem
 1-methyl-4-(2-methyloxiran-2-yl)-7-oxabicyclo[4.1.0]heptane,391.15,1,CC12CCC(CC1O2)C3(CO3)C,pubchem
-octan-3-one,319.15,1,CCCCCC(=O)CC,pubchem
 [(E)-prop-1-enyl]benzene,325.15,1,CC=CC1=CC=CC=C1,pubchem
 N-chloroaniline,381.15,1,C1=CC=C(C=C1)NCl,pubchem
 "(1Z,3Z)-cycloocta-1,3-diene",308.15,1,C1CCC=CC=CC1,pubchem
@@ -1305,7 +1204,6 @@ zinc;N-[2-(sulfidocarbothioylamino)ethyl]carbamodithioate,363.15,1,C(CNC(=S)[S-]
 butyl (Z)-octadec-9-enoate,453.15,1,CCCCCCCCC=CCCCCCCCC(=O)OCCCC,pubchem
 methyl (E)-3-dimethoxyphosphoryloxybut-2-enoate,352.15,1,CC(=CC(=O)OC)OP(=O)(OC)OC,pubchem
 thallium,489.15,1,[Tl],pubchem
-sulfur,480.15,1,[S],pubchem
 "3-[(E)-dodec-2-enyl]oxolane-2,5-dione",451.15,1,CCCCCCCCCC=CCC1CC(=O)OC1=O,pubchem
 (E)-pent-2-enenitrile,296.15,1,CCC=CC#N,pubchem
 bis(2-ethylhexyl) (Z)-but-2-enedioate,458.15,1,CCCCC(CC)COC(=O)C=CC(=O)OCC(CC)CCCC,pubchem
@@ -1368,7 +1266,6 @@ butan-1-ol;titanium,350.15,1,CCCCO.[Ti],pubchem
 N-chloro-N-phenylnitramide,478.15,1,C1=CC=C(C=C1)N([N+](=O)[O-])Cl,pubchem
 "[(2S,3R,4S,5R,6R)-2-[(2R,3R,4S,5R,6S)-4,5-dinitrooxy-2-(nitrooxymethyl)-6-[(2R,3R,4S,5R,6S)-4,5,6-trinitrooxy-2-(nitrooxymethyl)oxan-3-yl]oxyoxan-3-yl]oxy-3,5-dinitrooxy-6-(nitrooxymethyl)oxan-4-yl] nitrate",285.15,1,C(C1C(C(C(C(O1)OC2C(OC(C(C2O[N+](=O)[O-])O[N+](=O)[O-])O[N+](=O)[O-])CO[N+](=O)[O-])O[N+](=O)[O-])O[N+](=O)[O-])OC3C(C(C(C(O3)CO[N+](=O)[O-])O[N+](=O)[O-])O[N+](=O)[O-])O[N+](=O)[O-])O[N+](=O)[O-],pubchem
 dichloro-chlorochloranuidyl-phenylsilane,397.15,1,C1=CC=C(C=C1)[Si](Cl)(Cl)[Cl-]Cl,pubchem
-ethoxy(trioxido)silane,310.15,1,CCO[Si]([O-])([O-])[O-],pubchem
 "InChI=1S/C9H12.H2O2/c1-8(2)9-6-4-3-5-7-9;1-2/h3-8H,1-2H3;1-2H/p-1",352.15,1,CC(C)C1=CC=CC=C1.O[O-],pubchem
 3-[3-[4-(4-bromophenyl)phenyl]-3-hydroxy-1-phenylpropyl]-4-hydroxychromen-2-one,491.15,1,C1=CC=C(C=C1)C(CC(C2=CC=C(C=C2)C3=CC=C(C=C3)Br)O)C4=C(C5=CC=CC=C5OC4=O)O,pubchem
 "2,3-dimethylaniline;2,4-dimethylaniline;2,5-dimethylaniline;2,6-dimethylaniline;3,4-dimethylaniline;3,5-dimethylaniline",370.15,1,CC1=CC(=C(C=C1)N)C.CC1=CC(=C(C=C1)C)N.CC1=C(C(=CC=C1)N)C.CC1=C(C(=CC=C1)C)N.CC1=C(C=C(C=C1)N)C.CC1=CC(=CC(=C1)N)C,pubchem
@@ -1535,10 +1432,8 @@ cyclohexene,256.0,1,C1=CCCCC1,carroll11
 2-ethyl-1-pentene,263.0,1,C(C)C(=C)CCC,carroll11
 3-ethyl-2-pentene,267.0,1,C(C)C(=CC)CC,carroll11
 2-norbornene,259.0,1,C12C=CC(CC1)C2,carroll11
-4-methylcyclohexene,272.0,1,CC1CC=CCC1,carroll11
 methylenecyclohexane,271.0,1,C=C1CCCCC1,carroll11
 3-methylcyclohexene,270.0,1,CC1C=CCCC1,carroll11
-"2,4,4-trimethyl-2-pentene",272.0,1,CC(C)=CC(C)(C)C,carroll11
 3-ethyl-1-hexene,274.0,1,C(C)C(C=C)CCC,carroll11
 4-methyl-1-heptene,275.0,1,CC(CC=C)CCC,carroll11
 2-methyl-1-heptene,283.0,1,CC(=C)CCCCC,carroll11
@@ -1645,7 +1540,6 @@ tert-butylformate,264.0,1,C(C)(C)(C)OC=O,carroll11
 isopentylformate,295.0,1,C(CC(C)C)OC=O,carroll11
 isobutylformate,277.0,1,C(C(C)C)OC=O,carroll11
 cyclohexylformate,324.0,1,C1(CCCCC1)C(=O)[O-],carroll11
-methylacetate,260.0,1,COC(C)=O,carroll11
 ethylacetate,269.0,1,C(C)OC(C)=O,carroll11
 propylacetate,283.0,1,C(CC)OC(C)=O,carroll11
 butylacetate,298.0,1,C(CCC)OC(C)=O,carroll11
@@ -1908,7 +1802,6 @@ tripropylamine,308.0,1,C(CC)N(CCC)CCC,carroll11
 tributylamine,344.0,1,C(CCC)N(CCCC)CCCC,carroll11
 N-ethyldimethylamine,237.0,1,C(C)N(C)C,carroll11
 1-ethylpiperidine,291.0,1,C(C)N1CCCCC1,carroll11
-diethylenetriamine,363.0,1,NCCNCCN,carroll11
 "1,3-propanediamine",321.0,1,C(CCN)N,carroll11
 "N,N-dimethyl-1,3-propanediamine",305.0,1,CN(CCCN)C,carroll11
 "N,N-dimethylformamide",330.0,1,CN(C=O)C,carroll11
@@ -1980,9 +1873,7 @@ chlorocyclopentane,288.0,1,ClC1CCCC1,carroll11
 chlorocyclohexane,301.0,1,ClC1CCCCC1,carroll11
 "1,1-dichloropropane",280.0,1,ClC(CC)Cl,carroll11
 "1,1-dichloroethane",263.0,1,ClC(C)Cl,carroll11
-"1,2-dichloroethane",286.0,1,ClCCCl,carroll11
 "1,2-dichloropropane",286.0,1,ClCC(C)Cl,carroll11
-"1,3-dichloropropane",294.0,1,ClCCCCl,carroll11
 bromoethane,253.0,1,BrCC,carroll11
 1-bromopropane,269.0,1,BrCCC,carroll11
 1-bromobutane,283.0,1,BrCCCC,carroll11
@@ -2105,7 +1996,6 @@ morpholine,304.0,1,N1CCOCC1,carroll11
 4-picoline,311.0,1,N1=CC=C(C=C1)C,carroll11
 "2,4-pentanedione",311.0,1,CC(CC(C)=O)=O,carroll11
 ethylchloroacetate,326.0,1,C(C)OC(CCl)=O,carroll11
-"1,4-dichlorobutane",316.0,1,ClCCCCCl,carroll11
 2-chlorotoluene,320.0,1,ClC1=C(C)C=CC=C1,carroll11
 3-chloro-1-propanethiol,316.0,1,ClCCCS,carroll11
 2-methoxyethylacetate,316.0,1,COCCOC(C)=O,carroll11
@@ -2315,19 +2205,15 @@ Dichlorodiethylsilane,297.15,1,Cl[Si](CC)(CC)Cl,chen14
 "butane-1,2-diol",363.0,1,CCC(O)CO,Saldana11
 "butane-1,3-diol",382.0,1,OCCC(C)O,Saldana11
 "butane-1,4-diol",407.0,1,OCCCCO,Saldana11
-"butane-2,3-diol",358.0,1,CC(O)C(C)O,Saldana11
-"ethane-1,2-diol",383.0,1,OCCO,Saldana11
 "hexane-1,2,6-triol",471.0,1,OCCCCC(O)CO,Saldana11
 "hexane-1,6-diol",420.0,1,OCCCCCCO,Saldana11
 "hexane-2,5-diol",374.0,1,CC(O)CCC(C)O,Saldana11
 oct-1-en-3-ol,341.0,1,CCCCCC(O)C=C,Saldana11
 pentan-3-ol,313.0,1,CCC(O)CC,Saldana11
-"pentane-1,5-diol",402.0,1,OCCCCCO,Saldana11
 "pentane-2,4-diol",374.0,1,CC(O)CC(C)O,Saldana11
 prop-2-en-1-ol,294.0,1,OCC=C,Saldana11
 "propane-1,1-diol",372.0,1,CCC(O)O,Saldana11
 "propane-1,2-diol",372.0,1,OCC(C)O,Saldana11
-"propane-1,2,3-triol",433.0,1,OCC(O)CO,Saldana11
 "propane-1,3-diol",352.0,1,OCCCO,Saldana11
 (1-methylheptyl)benzene,373.0,1,CCCCCCC(C)c1ccccc1,Saldana11
 (1E)-prop-1-en-1-ylbenzene,325.0,1,C/C=C/c1ccccc1,Saldana11
@@ -2348,7 +2234,6 @@ prop-2-en-1-ol,294.0,1,OCC=C,Saldana11
 "1,1-diphenylethane",402.0,1,CC(c1ccccc1)c1ccccc1,Saldana11
 "1,2-diethylbenzene",330.0,1,CCc1ccccc1CC,Saldana11
 "1,2-dimethyl-3-propylbenzene",345.0,1,CCCc1cccc(C)c1C,Saldana11
-"1,2-dimethylbenzene",290.0,1,Cc1ccccc1C,Saldana11
 "1,2-diphenylbenzene",436.0,1,c1ccc(cc1)c1ccccc1c1ccccc1,Saldana11
 "1,2-diphenylethane",402.0,1,c1ccc(cc1)CCc1ccccc1,Saldana11
 "1,2,3-trimethylbenzene",317.0,1,Cc1cccc(C)c1C,Saldana11
@@ -2360,13 +2245,11 @@ prop-2-en-1-ol,294.0,1,OCC=C,Saldana11
 "1,3-di(propan-2-yl)benzene",349.0,1,CC(C)c1cccc(c1)C(C)C,Saldana11
 "1,3-diethylbenzene",329.0,1,CCc1cccc(CC)c1,Saldana11
 "1,3-diphenylbenzene",464.0,1,c1ccc(cc1)c1cccc(c1)c1ccccc1,Saldana11
-"1,3-xylene",298.0,1,Cc1cccc(C)c1,Saldana11
 "1,3,5-triethylbenzene",354.0,1,CCc1cc(CC)cc(CC)c1,Saldana11
 "1,3,5-triisopropylbenzene",360.0,1,CC(C)c1cc(cc(c1)C(C)C)C(C)C,Saldana11
 "1,3,5-trimethylbenzene",318.0,1,Cc1cc(C)cc(C)c1,Saldana11
 "1,4-diethylbenzene",329.0,1,CCc1ccc(CC)cc1,Saldana11
 "1,4-diisopropylbenzene",349.0,1,CC(C)c1ccc(cc1)C(C)C,Saldana11
-"1,4-dimethylbenzene",298.0,1,Cc1ccc(C)cc1,Saldana11
 "1,4-diphenylbenzene",480.0,1,c1ccc(cc1)c1ccc(cc1)c1ccccc1,Saldana11
 "2-ethyl-1,4-dimethylbenzene",329.0,1,CCc1cc(C)ccc1C,Saldana11
 2-phenyl-2-methylbutane,338.0,1,CCC(C)(C)c1ccccc1,Saldana11
@@ -2374,22 +2257,15 @@ prop-2-en-1-ol,294.0,1,OCC=C,Saldana11
 "4-ethyl-1,2-dimethylbenzene",331.0,1,CCc1ccc(C)c(C)c1,Saldana11
 4-isopropyltoluene,320.0,1,Cc1ccc(cc1)C(C)C,Saldana11
 alpha-methylstyrene,313.0,1,CC(=C)c1ccccc1,Saldana11
-benzene,262.0,1,c1ccccc1,Saldana11
 biphenyl,386.0,1,c1ccc(cc1)c1ccccc1,Saldana11
 cyclohexylbenzene,372.0,1,C1CCC(CC1)c1ccccc1,Saldana11
 diphenylmethane,403.0,1,c1ccc(cc1)Cc1ccccc1,Saldana11
-ethenylbenzene,305.0,1,C=Cc1ccccc1,Saldana11
-ethylbenzene,288.0,1,CCc1ccccc1,Saldana11
 indane,322.0,1,c1ccc2CCCc2c1,Saldana11
-isobutylbenzene,325.0,1,CC(C)Cc1ccccc1,Saldana11
 isopentylbenzene,335.0,1,CC(C)CCc1ccccc1,Saldana11
-isopropylbenzene,304.0,1,CC(C)c1ccccc1,Saldana11
-n-butylbenzene,323.0,1,CCCCc1ccccc1,Saldana11
 n-decylbenzene,380.0,1,CCCCCCCCCCc1ccccc1,Saldana11
 n-dodecylbenzene,414.0,1,CCCCCCCCCCCCc1ccccc1,Saldana11
 n-heptylbenzene,368.0,1,CCCCCCCc1ccccc1,Saldana11
 n-hexylbenzene,353.0,1,CCCCCCc1ccccc1,Saldana11
-n-propylbenzene,303.0,1,CCCc1ccccc1,Saldana11
 n-undecylbenzene,417.0,1,CCCCCCCCCCCc1ccccc1,Saldana11
 nonylbenzene,372.0,1,CCCCCCCCCc1ccccc1,Saldana11
 octylbenzene,380.0,1,CCCCCCCCc1ccccc1,Saldana11
@@ -2398,7 +2274,6 @@ pentylbenzene,338.0,1,CCCCCc1ccccc1,Saldana11
 sec-butylbenzene,325.0,1,CCC(C)c1ccccc1,Saldana11
 tert-butylbenzene,333.0,1,CC(C)(C)c1ccccc1,Saldana11
 tetralin,350.0,1,C1CCc2ccccc2C1,Saldana11
-toluene,277.0,1,Cc1ccccc1,Saldana11
 (1R)-1-phenylethan-1-ol,358.0,1,C[C@@H](O)c1ccccc1,Saldana11
 (2-methylphenyl)methanol,377.0,1,OCc1ccccc1C,Saldana11
 (3-methylphenyl)methanol,378.0,1,OCc1cccc(C)c1,Saldana11
@@ -2407,29 +2282,21 @@ toluene,277.0,1,Cc1ccccc1,Saldana11
 1-phenylpropan-1-ol,363.0,1,CCC(O)c1ccccc1,Saldana11
 1-phenylpropan-2-ol,358.0,1,CC(O)Cc1ccccc1,Saldana11
 2-ethylphenol,351.0,1,CCc1ccccc1O,Saldana11
-2-furylmethanol,356.0,1,OCc1ccco1,Saldana11
-2-methylphenol,354.0,1,Cc1ccccc1O,Saldana11
 2-phenylethanol,369.0,1,OCCc1ccccc1,Saldana11
 2-phenylpropan-1-ol,366.0,1,OCC(C)c1ccccc1,Saldana11
 2-phenylpropan-2-ol,360.0,1,CC(C)(O)c1ccccc1,Saldana11
 "2,6-di-tert-butyl-p-cresol",390.0,1,Cc1cc(c(O)c(c1)C(C)(C)C)C(C)(C)C,Saldana11
 3-ethylphenol,367.0,1,CCc1cccc(O)c1,Saldana11
-3-methylphenol,368.0,1,Cc1cccc(O)c1,Saldana11
 3-phenylpropan-1-ol,373.0,1,OCCCc1ccccc1,Saldana11
 4-(2-methylbutan-2-yl)phenol,384.0,1,CCC(C)(C)c1ccc(O)cc1,Saldana11
 4-[2-(4-hydroxyphenyl)propan-2-yl]phenol,480.0,1,Oc1ccc(cc1)C(C)(C)c1ccc(O)cc1,Saldana11
 4-ethylphenol,373.0,1,CCc1ccc(O)cc1,Saldana11
-4-methylphenol,368.0,1,Cc1ccc(O)cc1,Saldana11
 "4-tert-butylbenzene-1,2-diol",403.0,1,Oc1ccc(cc1O)C(C)(C)C,Saldana11
 4-tert-butylphenol,386.0,1,Oc1ccc(cc1)C(C)(C)C,Saldana11
 "benzene-1,2-diol",400.0,1,Oc1ccccc1O,Saldana11
-"benzene-1,3-diol",400.0,1,Oc1cccc(O)c1,Saldana11
 "benzene-1,4-diol",438.0,1,Oc1ccc(O)cc1,Saldana11
-benzyl benzoate,418.0,1,O=C(OCc1ccccc1)c1ccccc1,Saldana11
-benzyl ethanoate,363.0,1,CC(=O)OCc1ccccc1,Saldana11
 benzyl methanoate,355.0,1,O=COCc1ccccc1,Saldana11
 butyl benzoate,379.0,1,CCCCOC(=O)c1ccccc1,Saldana11
-di-n-butyl phthalate,430.0,1,CCCCOC(=O)c1ccccc1C(=O)OCCCC,Saldana11
 di-n-decyl phthalate,505.0,1,CCCCCCCCCCOC(=O)c1ccccc1C(=O)OCCCCCCCCCC,Saldana11
 di-n-hexyl phthalate,466.0,1,CCCCCCOC(=O)c1ccccc1C(=O)OCCCCCC,Saldana11
 di-n-nonyl phthalate,489.0,1,CCCCCCCCCOC(=O)c1ccccc1C(=O)OCCCCCCCCC,Saldana11
@@ -2437,14 +2304,10 @@ diethyl phthalate,390.0,1,CCOC(=O)c1ccccc1C(=O)OCC,Saldana11
 diisobutyl phthalate,434.0,1,CC(C)COC(=O)c1ccccc1C(=O)OCC(C)C,Saldana11
 diisodecyl phthalate,505.0,1,CC(C)CCCCCCCOC(=O)c1ccccc1C(=O)OCCCCCCCC(C)C,Saldana11
 dimethyl isophthalate,411.0,1,COC(=O)c1cccc(c1)C(=O)OC,Saldana11
-dimethyl phthalate,419.0,1,COC(=O)c1ccccc1C(=O)OC,Saldana11
 dioctyl phthalate,489.0,1,CCCCC(CC)COC(=O)c1ccccc1C(=O)OCC(CC)CCCC,Saldana11
 ethyl benzoate,357.0,1,CCOC(=O)c1ccccc1,Saldana11
 methyl benzoate,355.0,1,COC(=O)c1ccccc1,Saldana11
 n-propyl benzoate,371.0,1,CCCOC(=O)c1ccccc1,Saldana11
-nonylphenol,411.0,1,CCCCCCCCCc1ccccc1O,Saldana11
-phenol,353.0,1,Oc1ccccc1,Saldana11
-phenylmethanol,374.0,1,OCc1ccccc1,Saldana11
 "xylen-2,4-ol",368.0,1,Cc1ccc(O)c(C)c1,Saldana11
 "xylen-2,6-ol",346.0,1,Oc1c(C)cccc1C,Saldana11
 "(1R,2S,5R)-5-methyl-2-propan-2-ylcyclohexan-1-ol",366.0,1,C[C@H]1CC[C@H](C(C)C)[C@@H](O)C1,Saldana11
@@ -2456,7 +2319,6 @@ phenylmethanol,374.0,1,OCc1ccccc1,Saldana11
 cis-2-methylcyclohexanol,331.0,1,C[C@H]1CCCC[C@H]1O,Saldana11
 cis-3-methylcyclohexanol,335.0,1,C[C@H]1CCC[C@@H](O)C1,Saldana11
 cis-4-methylcyclohexanol,343.0,1,C[C@@H]1CC[C@H](O)CC1,Saldana11
-cyclohexanol,341.0,1,OC1CCCCC1,Saldana11
 cyclohexyl methanoate,324.0,1,O=COC1CCCCC1,Saldana11
 "dimethyl-1,4-cyclohexanedicarboxylate",383.0,1,COC(=O)C1CCC(CC1)C(=O)OC,Saldana11
 oxepan-2-one,382.0,1,O=C1CCCCCO1,Saldana11
@@ -2504,7 +2366,6 @@ ethyl nonanoate,367.0,1,CCCCCCCCC(=O)OCC,Saldana11
 ethyl octadecanoate,441.0,1,CCCCCCCCCCCCCCCCCC(=O)OCC,Saldana11
 ethyl octanoate,354.0,1,CCCCCCCC(=O)OCC,Saldana11
 ethyl pentanoate,307.0,1,CCCCC(=O)OCC,Saldana11
-ethyl propanoate,285.0,1,CCOC(=O)CC,Saldana11
 ethyl tetradecanoate,386.0,1,CCCCCCCCCCCCCC(=O)OCC,Saldana11
 ethyl undec-10-enoate,386.0,1,C=CCCCCCCCCC(=O)OCC,Saldana11
 ethyl undecanoate,386.0,1,CCCCCCCCCCC(=O)OCC,Saldana11
@@ -2548,7 +2409,6 @@ methyl (9Z)-hexadec-9-enoate,386.0,1,CCCCCC/C=C\CCCCCCCC(=O)OC,Saldana11
 methyl (9Z)-octadec-9-enoate,386.0,1,CCCCCCCC/C=C\CCCCCCCC(=O)OC,Saldana11
 methyl 10-undecenoate,373.0,1,C=CCCCCCCCCC(=O)OC,Saldana11
 methyl 2-methylprop-2-enoate,284.0,1,COC(=O)C(=C)C,Saldana11
-methyl 2-methylpropanoate,276.0,1,COC(=O)C(C)C,Saldana11
 methyl but-3-enoate,293.0,1,COC(=O)CC=C,Saldana11
 methyl decanoate,367.0,1,CCCCCCCCCC(=O)OC,Saldana11
 methyl dodecanoate,386.0,1,CCCCCCCCCCCC(=O)OC,Saldana11
@@ -2683,7 +2543,6 @@ cyclooctene,298.0,1,C1CCCC=CCC1,Saldana11
 heptadec-1-ene,408.0,1,CCCCCCCCCCCCCCCC=C,Saldana11
 "hexa-1,5-diene",246.0,1,C=CCCC=C,Saldana11
 hexadec-1-ene,405.0,1,CCCCCCCCCCCCCCC=C,Saldana11
-isoprene,219.0,1,C=CC(=C)C,Saldana11
 octadec-1-ene,421.0,1,CCCCCCCCCCCCCCCCC=C,Saldana11
 pentadec-1-ene,385.0,1,CCCCCCCCCCCCCC=C,Saldana11
 2-methylnonane,314.0,1,CCCCCCCC(C)C,Saldana11
@@ -2843,7 +2702,6 @@ DIPHENYLPHOSPHINE,383.15,1,c1ccc(Pc2ccccc2)cc1,gelest_metal-organics
 DIPHENYLPHOSPHORYL AZIDE,385.15,1,[N-]=[N+]=NP(=O)(c1ccccc1)c1ccccc1,gelest_metal-organics
 TETRADECYL(TRIHEXYL)PHOSPHONIUM CHLORIDE,391.15,1,CCCCCCCCCCCCCC[P+](CCCCCC)(CCCCCC)CCCCCC.[Cl-],gelest_metal-organics
 TRIOCTYLPHOSPHINE,420.15,1,CCCCCCCCP(CCCCCCCC)CCCCCCCC,gelest_metal-organics
-TRIPHENYLPHOSPHINE,455.15,1,c1ccc(P(c2ccccc2)c2ccccc2)cc1,gelest_metal-organics
 TRIS(DIETHYLAMINO)(t-BUTYLIMINO) TANTALUM,319.15,1,CCN(CC)[Ta](=NC(C)(C)C)(N(CC)CC)N(CC)CC,gelest_metal-organics
 TITANIUM TETRAKIS(DIETHYLAMIDE),310.15,1,CC[N-]CC.CC[N-]CC.CC[N-]CC.CC[N-]CC.[Ti+4],gelest_metal-organics
 TITANIUM TETRAKIS(DIMETHYLAMIDE),281.15,1,C[N-]C.C[N-]C.C[N-]C.C[N-]C.[Ti+4],gelest_metal-organics
@@ -2916,7 +2774,6 @@ CHLOROMETHYLTRIMETHYLTIN,312.15,1,C[Sn](C)(C)CCl,gelest_tin
 DIALLYLDI-n-BUTYLTIN,374.15,1,C=CC[Sn](CC=C)(CCCC)CCCC,gelest_tin
 DI-n-BUTYLDIACETOXYTIN,416.15,1,CCCC[Sn](CCCC)(OC(C)=O)OC(C)=O,gelest_tin
 DI-n-BUTYLDI-n-BUTOXYTIN,389.15,1,CCCCO[Sn](CCCC)(CCCC)OCCCC,gelest_tin
-DI-n-BUTYLDICHLOROTIN,441.15,1,CCCC[Sn](Cl)(Cl)CCCC,gelest_tin
 DI-t-BUTYLDICHLOROTIN,386.15,1,CC(C)(C)[Sn](Cl)(Cl)C(C)(C)C,gelest_tin
 DI-n-BUTYLDIMETHOXYTIN,383.15,1,CCCC[Sn](CCCC)(OC)OC,gelest_tin
 DIMETHYLAMINOTRI-n-BUTYLTIN,388.15,1,CCCC[Sn](CCCC)(CCCC)N(C)C,gelest_tin
@@ -2962,7 +2819,6 @@ N-methyl-1-phenylpropan-2-amine;hydrochloride,282.15,1,CC(CC1=CC=CC=C1)NC.Cl,pub
 "(1,7,7-trimethyl-2-bicyclo[2.2.1]heptanyl) 2-thiocyanatoacetate",355.15,1,CC1(C2CCC1(C(C2)OC(=O)CSC#N)C)C,pubchem
 1-methyl-4-prop-1-en-2-ylcyclohexene,319.15,1,CC1=CCC(CC1)C(=C)C,pubchem
 "6,6-dimethyl-2-methylidenebicyclo[3.1.1]heptane",304.15,1,CC1(C2CCC(=C)C1C2)C,pubchem
-"2,6,6-trimethylbicyclo[3.1.1]hept-2-ene",306.15,1,CC1=CCC2CC1C2(C)C,pubchem
 but-2-enoic acid,361.15,1,CC=CC(=O)O,pubchem
 "1,3-dichlorobut-2-ene",300.15,1,CC(=CCCl)Cl,pubchem
 "3,7-dimethylocta-2,6-dienal",375.15,1,CC(=CCCC(=CC=O)C)C,pubchem
@@ -3009,29 +2865,18 @@ butan-1-ol;titanium,350.15,1,CCCCO.CCCCO.CCCCO.CCCCO.[Ti],pubchem
 zinc;bis(8-methylnonoxy)-sulfanylidene-sulfido-Î»5-phosphane,553.15,1,CC(C)CCCCCCCOP(=S)(OCCCCCCCC(C)C)[S-].CC(C)CCCCCCCOP(=S)(OCCCCCCCC(C)C)[S-].[Zn+2],pubchem
 "(7-chloro-6-bicyclo[3.2.0]hepta-2,6-dienyl) dimethyl phosphate",438.15,1,COP(=O)(OC)OC1=C(C2C1CC=C2)Cl,pubchem
 "(6Z,10E,14E,18E)-2,6,10,15,19,23-hexamethyltetracosa-2,6,10,14,18,22-hexaene",383.15,1,CC(=CCCC(=CCCC(=CCCC=C(C)CCC=C(C)CCC=C(C)C)C)C)C,pubchem
-hexane,250.15,1,CCCCCC,pubchem
-heptane,269.15,1,CCCCCCC,pubchem
-octane,286.15,1,CCCCCCCC,pubchem
 nonane,304.15,1,CCCCCCCCC,pubchem
-decane,319.15,1,CCCCCCCCCC,pubchem
 undecane,338.15,1,CCCCCCCCCCC,pubchem
-dodecane,347.15,1,CCCCCCCCCCCC,pubchem
-tetradecane,373.15,1,CCCCCCCCCCCCCC,pubchem
 hexadecane,408.15,1,CCCCCCCCCCCCCCCC,pubchem
 heptadecane,422.15,1,CCCCCCCCCCCCCCCCC,pubchem
-"2,3-dimethylbutane",244.15,1,CC(C)C(C)C,pubchem
 methylcyclopentane,249.15,1,CC1CCCC1,pubchem
-cyclohexane,253.15,1,C1CCCCC1,pubchem
-methylcyclohexane,269.15,1,CC1CCCCC1,pubchem
 "2,4,4-trimethylpent-1-ene",275.15,1,CC(=C)CC(C)(C)C,pubchem
 "octa-1,7-diene",282.15,1,C=CCCCCC=C,pubchem
 benzene,262.15,1,C1=CC=CC=C1,pubchem
 toluene,277.15,1,CC1=CC=CC=C1,pubchem
 "1,3,5-trimethylbenzene",323.15,1,CC1=CC(=CC(=C1)C)C,pubchem
 "1,2,3-trimethylbenzene",317.15,1,CC1=C(C(=CC=C1)C)C,pubchem
-"1,2-dimethoxyethane",273.15,1,COCCOC,pubchem
 propan-2-one,255.15,1,CC(=O)C,pubchem
-propan-2-ol,285.15,1,CC(C)O,pubchem
 pentan-3-ol,303.15,1,CCC(CC)O,pubchem
 "butane-2,3-diol",358.15,1,CC(C(C)O)O,pubchem
 "ethane-1,2-diol",384.15,1,C(CO)O,pubchem
@@ -3050,21 +2895,10 @@ tetramethylsilane,246.15,1,C[Si](C)(C)C,pubchem
 Hexadecamethylheptasiloxane,406.15,1,C[Si](O[Si](O[Si](O[Si](O[Si](O[Si](O[Si](C)(C)C)(C)C)(C)C)(C)C)(C)C)(C)C)(C)C,chen14
 Dimethylchlorosilane,245.15,1,C[SiH](Cl)C,chen14
 2-ethylbutan-1-ol,326.15,1,CCC(CC)CO,pubchem
-2-methylbutan-2-ol,292.15,1,CCC(C)(C)O,pubchem
-2-methylpropan-2-ol,284.15,1,CC(C)(C)O,pubchem
 4-methylpentan-2-ol,314.15,1,CC(C)CC(C)O,pubchem
-butan-2-ol,297.15,1,CCC(C)O,pubchem
-ethanol,286.15,1,CCO,pubchem
 heptan-1-ol,350.15,1,CCCCCCCO,pubchem
-hexan-1-ol,336.15,1,CCCCCCO,pubchem
-hexan-2-ol,314.15,1,CCCCC(C)O,pubchem
-methanol,284.15,1,CO,pubchem
 nonan-1-ol,347.15,1,CCCCCCCCCO,pubchem
-octan-1-ol,354.15,1,CCCCCCCCO,pubchem
-pentan-2-ol,308.15,1,CCCC(C)O,pubchem
-propan-1-ol,298.15,1,CCCO,pubchem
 tetradecan-1-ol,414.15,1,CCCCCCCCCCCCCCO,pubchem
-tridecan-1-ol,394.15,1,CCCCCCCCCCCCCO,pubchem
 5-methyloxolan-2-one,354.15,1,CC1CCC(=O)O1,pubchem
 cyclohexyl acetate,331.15,1,CC(=O)OC1CCCCC1,pubchem
 oxetan-2-one,343.15,1,C1COC1=O,pubchem
@@ -3074,36 +2908,27 @@ prop-2-enyl acetate,295.15,1,CC(=O)OCC=C,pubchem
 butyl 2-methylprop-2-enoate,325.15,1,CCCCOC(=O)C(=C)C,pubchem
 butyl butanoate,326.15,1,CCCCOC(=O)CCC,pubchem
 butyl acetate,295.15,1,CCCCOC(=O)C,pubchem
-butyl formate,291.15,1,CCCCOC=O,pubchem
 butyl propanoate,311.15,1,CCCCOC(=O)CC,pubchem
 bis(2-ethylhexyl) hexanedioate,469.15,1,CCCCC(CC)COC(=O)CCCCC(=O)OCC(CC)CCCC,pubchem
 dibutyl decanedioate,451.15,1,CCCCOC(=O)CCCCCCCCC(=O)OCCCC,pubchem
 diethyl butanedioate,363.15,1,CCOC(=O)CCC(=O)OCC,pubchem
-diethyl carbonate,298.15,1,CCOC(=O)OCC,pubchem
-diethyl propanedioate,366.15,1,CCOC(=O)CC(=O)OCC,pubchem
 ethenyl acetate,265.15,1,CC(=O)OC=C,pubchem
-ethyl 2-hydroxypropanoate,319.15,1,CCOC(=O)C(C)O,pubchem
 ethyl 2-methylprop-2-enoate,289.15,1,CCOC(=O)C(=C)C,pubchem
-ethyl butanoate,297.15,1,CCCC(=O)OCC,pubchem
 ethyl acetate,269.15,1,CCOC(=O)C,pubchem
-ethyl formate,253.15,1,CCOC=O,pubchem
 ethyl prop-2-enoate,282.15,1,CCOC(=O)C=C,pubchem
 hexyl acetate,310.15,1,CCCCCCOC(=O)C,pubchem
 2-methylpropyl 2-methylpropanoate,310.15,1,CC(C)COC(=O)C(C)C,pubchem
 2-methylpropyl acetate,290.15,1,CC(C)COC(=O)C,pubchem
 3-methylbutyl acetate,298.15,1,CC(C)CCOC(=O)C,pubchem
 propan-2-yl acetate,275.15,1,CC(C)OC(=O)C,pubchem
-methyl butanoate,287.15,1,CCCC(=O)OC,pubchem
 methyl propanoate,271.15,1,CCC(=O)OC,pubchem
 butyl octadecanoate,433.15,1,CCCCCCCCCCCCCCCCCC(=O)OCCCC,pubchem
 propyl acetate,287.15,1,CCCOC(=O)C,pubchem
-propyl formate,270.15,1,CCCOC=O,pubchem
 pentyl acetate,306.15,1,CCCCCOC(=O)C,pubchem
 cyclodecane,332.0,1,C1CCCCCCCCC1,carroll11
 cyclononane,316.0,1,C1CCCCCCCC1,carroll11
 "1,3,5,7-cyclooctatetraene",295.0,1,C1=CC=CC=CC=C1,carroll11
 cyclooctane,301.0,1,C1CCCCCCC1,carroll11
-cyclopentane,236.0,1,C1CCCC1,carroll11
 propan-2-ylcyclohexane,309.15,1,CC(C)C1CCCCC1,pubchem
 methylenecyclopentane,255.0,1,C=C1CCCC1,carroll11
 1-methylcyclohexene,272.0,1,CC1=CCCCC1,carroll11
@@ -3128,14 +2953,11 @@ prop-1-ene,165.14999999999995,1,CC=C,pubchem
 tridec-1-ene,352.15,1,CCCCCCCCCCCC=C,pubchem
 2-methylheptane,277.15,1,CCCCCC(C)C,pubchem
 2-methylhexane,255.15,1,CCCCC(C)C,pubchem
-"2,2-dimethylbutane",225.15,1,CCC(C)(C)C,pubchem
-"2,2,4-trimethylpentane",261.15,1,CC(C)CC(C)(C)C,pubchem
 "2,4-dimethylpentane",261.0,1,CC(C)CC(C)C,carroll11
 "2,5-dimethylhexane",271.0,1,CC(C)CCC(C)C,carroll11
 "2,6-dimethylheptane",299.0,1,CC(C)CCCC(C)C,carroll11
 2-methylpropane,190.15,1,CC(C)C,pubchem
 2-methylpentane,244.15,1,CCCC(C)C,pubchem
-2-methylbutane,216.15,1,CCC(C)C,pubchem
 pentadecane,388.0,1,CCCCCCCCCCCCCCC,carroll11
 butan-1-olate;titanium(4+),350.15,1,CCCC[O-].CCCC[O-].CCCC[O-].CCCC[O-].[Ti+4],pubchem
 TITANIUM ETHOXIDE,301.15,1,CC[O-].CC[O-].CC[O-].CC[O-].[Ti+4],gelest_metal-organics
@@ -3315,3 +3137,336 @@ N-(2-AMINOETHYL)-3-AMINOPROPYLTRIMETHOXYSILANE,423.15,1,CO[Si](CCCNCCN)(OC)OC,ge
 3-triethoxysilylpropan-1-amine,371.15,1,CCO[Si](CCCN)(OCC)OCC,pubchem
 3-AMINOPROPYLTRIMETHOXYSILANE,356.15,1,CO[Si](CCCN)(OC)OC,gelest_silanes
 TETRAMETHYLTIN,261.15,1,C[Sn](C)(C)C,gelest_tin
+Acetanilide,447.15,1,CC(=O)Nc1ccccc1,hazardous materials
+Acetic anhydride,327.15,1,CC(=O)OC(C)=O,hazardous materials
+Acetone,255.14999999999998,1,CC(C)=O,hazardous materials
+Acetone cyanohydrin,347.15,1,CC(C)(O)C#N,hazardous materials
+Acetyl peroxide,386.15,1,CC(=O)OOC(C)=O,hazardous materials
+Adipic acid,464.15,1,O=C(O)CCCCC(=O)O,hazardous materials
+Adiponitrile,366.15,1,N#CCCCCC#N,hazardous materials
+Allyl acetate,294.15,1,C=CCOC(C)=O,hazardous materials
+Aminoethylethanol amine,402.15,1,NCCC(O)CN,hazardous materials
+iso-Amyl acetate,296.15,1,CC(=O)OCCC(C)C,hazardous materials
+sec-Amyl acetate,305.15,1,CCCC(C)OC(C)=O,hazardous materials
+iso-Amyl formate,299.15,1,CC(C)CCOC=O,hazardous materials
+iso-Amyl nitrate,325.15,1,CC(C)CCO[N+](=O)[O-],hazardous materials
+Aniline,343.15,1,Nc1ccccc1,hazardous materials
+o-Anisaldehyde,391.15,1,COc1ccccc1C=O,hazardous materials
+Anisole,325.15,1,COc1ccccc1,hazardous materials
+Anthracene,394.15,1,c1ccc2cc3ccccc3cc2c1,hazardous materials
+Anthraquinone,458.15,1,O=C1c2ccccc2C(=O)c2ccccc21,hazardous materials
+Benzaldehyde,337.15,1,O=Cc1ccccc1,hazardous materials
+Benzoic acid,394.15,1,O=C(O)c1ccccc1,hazardous materials
+Benzonitrile,358.15,1,N#Cc1ccccc1,hazardous materials
+Benzotrifluoride,285.15,1,FC(F)(F)c1ccccc1,hazardous materials
+Benzoyl chloride,345.15,1,O=C(Cl)c1ccccc1,hazardous materials
+Benzylamine,336.15,1,NCc1ccccc1,hazardous materials
+Benzyl chloride,340.15,1,ClCc1ccccc1,hazardous materials
+Benzyl mercaptan,343.15,1,SCc1ccccc1,hazardous materials
+Bicyclohexyl,347.15,1,C1CCC(C2CCCCC2)CC1,hazardous materials
+Biphenyl,386.15,1,c1ccc(-c2ccccc2)cc1,hazardous materials
+Bromobenzene,324.15,1,Brc1ccccc1,hazardous materials
+o-Bromotoluene,352.15,1,Cc1ccccc1Br,hazardous materials
+1-Butene,193.14999999999998,1,C=CCC,hazardous materials
+n-Butyl acetate,300.15,1,CCCCOC(C)=O,hazardous materials
+iso-Butyl acetate,291.15,1,CC(=O)OCC(C)C,hazardous materials
+sec-Butyl acetate,304.15,1,CCC(C)OC(C)=O,hazardous materials
+n-Butyl alcohol,302.15,1,CCCCO,hazardous materials
+"1,3-Butylene glycol ",394.15,1,CC(O)CCO,hazardous materials
+Butyl methacrylate,325.15,1,C=C(C)C(=O)OCCCC,hazardous materials
+tert-Butyl perbenzoate,361.15,1,CC(C)(C)OOC(=O)c1ccccc1,hazardous materials
+Butyl vinyl ether,264.15,1,C=COCCCC,hazardous materials
+2-Butyrolactone,371.15,1,CCC1OC1=O,hazardous materials
+Camphor,339.15,1,CC12CCC(CC1=O)C2(C)C,hazardous materials
+Carbon disulphide,243.14999999999998,1,S=C=S,hazardous materials
+Chloroacetaldehyde,361.15,1,O=CCCl,hazardous materials
+Chlorobenzene,302.15,1,Clc1ccccc1,hazardous materials
+"1-Chloro-2,4-dinitrobenzene ",467.15,1,O=[N+]([O-])c1ccc(Cl)c([N+](=O)[O-])c1,hazardous materials
+Chloronaphthalene,405.15,1,Clc1cccc2ccccc12,hazardous materials
+1-Chloro-1-nitropropane,335.15,1,CCC(Cl)[N+](=O)[O-],hazardous materials
+o-Chlorophenol,337.15,1,Oc1ccccc1Cl,hazardous materials
+p-Chlorophenol,394.15,1,Oc1ccc(Cl)cc1,hazardous materials
+Chlorotrifluoroethylene,246.14999999999998,1,FC(F)=C(F)Cl,hazardous materials
+Cinnamaldehyde,322.15,1,O=CC=Cc1ccccc1,hazardous materials
+Crotonaldehyde,286.15,1,C/C=C/C=O,hazardous materials
+Cumene hydroperoxide,352.15,1,CC(C)c1ccccc1.[O-]O,hazardous materials
+Cyclohexanone,317.15,1,O=C1CCCCC1,hazardous materials
+Cyclohexylamine,305.15,1,NC1CCCCC1,hazardous materials
+Cyclohexylbenzene,372.15,1,c1ccc(C2CCCCC2)cc1,hazardous materials
+Cyclopentanone,299.15,1,O=C1CCCC1,hazardous materials
+p-Cymene,320.15,1,Cc1ccc(C(C)C)cc1,hazardous materials
+n-Decyl alcohol,355.15,1,CCCCCCCCCCO,hazardous materials
+Dibutyl oxalate,377.15,1,CCCCOC(=O)C(=O)OCCCC,hazardous materials
+Dibutyl peroxide,291.15,1,CCCCOOCCCC,hazardous materials
+Dibutyl phosphite,322.15,1,CCCCOP([O-])OCCCC,hazardous materials
+Dibutyl tartrate,364.15,1,CCCCOC(=O)C(O)C(O)C(=O)OCCCC,hazardous materials
+Dichloroacetyl chloride,339.15,1,O=C(Cl)C(Cl)Cl,hazardous materials
+"2,5-Dichloroaniline ",439.15,1,Nc1cc(Cl)ccc1Cl,hazardous materials
+o-Dichlorobenzene,339.15,1,Clc1ccccc1Cl,hazardous materials
+"1,3-Dichloro-2-butene ",300.15,1,CC(Cl)=CCCl,hazardous materials
+"1,1-Dichloro-1-nitroethane ",349.15,1,CC(Cl)(Cl)[N+](=O)[O-],hazardous materials
+"2,4-Dichlorophenol ",387.15,1,Oc1ccc(Cl)cc1Cl,hazardous materials
+"1,2-Dichloropropane ",289.15,1,CC(Cl)CCl,hazardous materials
+Dicyclohexylamine,372.15,1,C1CCC(NC2CCCCC2)CC1,hazardous materials
+Diethanolamine,425.15,1,OCCNCCO,hazardous materials
+"N,N-Diethylaniline ",358.15,1,CCN(CC)c1ccccc1,hazardous materials
+Diethylene glycol,397.15,1,OCCOCCO,hazardous materials
+"3,4-Dihydro-2H-pyran ",255.14999999999998,1,C1=COCCC1,hazardous materials
+Diisobutyl carbinol,347.15,1,CC(C)CC(O)CC(C)C,hazardous materials
+Diisopropyl benzene,349.15,1,CC(C)c1ccccc1C(C)C,hazardous materials
+Dimethoxypropane,266.15,1,COC(C)(C)OC,hazardous materials
+"N,N-Dimethylaniline ",336.15,1,CN(C)c1ccccc1,hazardous materials
+Dimethyl sulphoxide,368.15,1,CS(C)=O,hazardous materials
+m-Dinitrobenzene,423.15,1,O=[N+]([O-])c1cccc([N+](=O)[O-])c1,hazardous materials
+o-Dinitrobenzene,423.15,1,O=[N+]([O-])c1ccccc1[N+](=O)[O-],hazardous materials
+p-Dinitrobenzene,423.15,1,O=[N+]([O-])c1ccc([N+](=O)[O-])cc1,hazardous materials
+"2,4-Dinitrotoluene ",480.15,1,Cc1ccc([N+](=O)[O-])cc1[N+](=O)[O-],hazardous materials
+Di-n-Octyl phthalate,492.15,1,CCCCCCCCOC(=O)c1ccccc1C(=O)OCCCCCCCC,hazardous materials
+Di-sec-Octyl phthalate,491.15,1,CCCCCCC(C)OC(=O)c1ccccc1C(=O)OC(C)CCCCCC,hazardous materials
+Diphenylamine,426.15,1,c1ccc(Nc2ccccc2)cc1,hazardous materials
+Diphenylmethane,403.15,1,c1ccc(Cc2ccccc2)cc1,hazardous materials
+Dipropylene glycol methyl ether,358.15,1,COC(C)COC(C)CO,hazardous materials
+Epichlorohydrin,314.15,1,ClCC1CO1,hazardous materials
+Ethanolamine,358.15,1,NCCO,hazardous materials
+Ethyl acetanilide,325.15,1,CCCC(=O)Nc1ccccc1,hazardous materials
+Ethyl acetate,268.75,1,CCOC(C)=O,hazardous materials
+Ethyl acetoacetate,357.15,1,CCOC(=O)CC(C)=O,hazardous materials
+Ethyl acrylate,289.15,1,C=CC(=O)OCC,hazardous materials
+n-Ethyl aniline,358.15,1,CCNc1ccccc1,hazardous materials
+2-Ethyl butyraldehyde,294.15,1,CCC(C=O)CC,hazardous materials
+Ethyl crotonate,275.15,1,C/C=C/C(=O)OCC,hazardous materials
+Ethylene chlorohydrin,333.15,1,OCCCl,hazardous materials
+2-Ethyl hexanol,357.15,1,CCCCC(CC)CO,hazardous materials
+Ethyl oxalate,349.15,1,CCOC(=O)C(=O)[O-],hazardous materials
+2-Ethyl-3-propyl acrolein,341.15,1,CCCC=C(C=O)CC,hazardous materials
+Formamide,428.15,1,NC=O,hazardous materials
+Formic acid,342.15,1,O=CO,hazardous materials
+Furfural,333.15,1,O=Cc1ccco1,hazardous materials
+n-Heptylamine,327.15,1,CCCCCCCN,hazardous materials
+Hexachlorobenzene,515.15,1,Clc1c(Cl)c(Cl)c(Cl)c(Cl)c1Cl,hazardous materials
+"2,4-Hexadienal ",341.15,1,CC=CC=CC=O,hazardous materials
+"1,4-Hexadiene ",252.14999999999998,1,C=CCC=CC,hazardous materials
+sec-Hexyl acetate,318.15,1,CCCCC(C)OC(C)=O,hazardous materials
+Hydroquinone monomethyl ether,404.15,1,COc1ccc(O)cc1,hazardous materials
+Lactonitrile,350.15,1,CC(O)C#N,hazardous materials
+Maleic anhydride,375.15,1,O=C1C=CC(=O)O1,hazardous materials
+"p-Mentha-1,8-diene ",318.15,1,C=C(C)C1CC=C(C)CC1,hazardous materials
+2-Mercaptoethanol,347.15,1,OCCS,hazardous materials
+Mesityl oxide,304.15,1,CC(=O)C=C(C)C,hazardous materials
+Methyl acrylate,270.15,1,C=CC(=O)OC,hazardous materials
+Methyl butyl ketone,308.15,1,CCCCC(C)=O,hazardous materials
+Methyl ethyl ketone,266.15,1,CCC(C)=O,hazardous materials
+Methyl formate,254.14999999999998,1,COC=O,hazardous materials
+2-Methyl furan,243.14999999999998,1,Cc1ccco1,hazardous materials
+Methyl methacrylate,283.15,1,C=C(C)C(=O)OC,hazardous materials
+Methyl-n-Propyl ketone,280.15,1,CCCC(C)=O,hazardous materials
+Methyl salicylate,374.15,1,COC(=O)c1ccccc1O,hazardous materials
+Methyl vinyl ether,222.14999999999998,1,C=COC,hazardous materials
+Naphthalene,352.15,1,c1ccc2ccccc2c1,hazardous materials
+2-Naphthol,426.15,1,Oc1ccc2ccccc2c1,hazardous materials
+1-Naphthylamine,430.15,1,Nc1cccc2ccccc12,hazardous materials
+o-Nitroaniline,441.15,1,Nc1ccccc1[N+](=O)[O-],hazardous materials
+p-Nitroaniline,472.15,1,Nc1ccc([N+](=O)[O-])cc1,hazardous materials
+Nitrobenzene,361.15,1,O=[N+]([O-])c1ccccc1,hazardous materials
+o-Nitrobiphenyl,416.15,1,O=[N+]([O-])c1ccccc1-c1ccccc1,hazardous materials
+alpha-Nitronaphthalene,437.15,1,O=[N+]([O-])c1cccc2ccccc12,hazardous materials
+m-Nitrotoluene,379.15,1,Cc1cccc([N+](=O)[O-])c1,hazardous materials
+o-Nitrotoluene,379.15,1,Cc1ccccc1[N+](=O)[O-],hazardous materials
+p-Nitrotoluene,379.15,1,Cc1ccc([N+](=O)[O-])cc1,hazardous materials
+2-Octanol,361.15,1,CCCCCCC(C)O,hazardous materials
+Oleic acid,462.15,1,CCCCCCCC/C=C\CCCCCCCC(=O)O,hazardous materials
+n-Pentane,224.14999999999998,1,CCCCC,hazardous materials
+"2,4-Pentanedione ",314.15,1,CC(=O)CC(C)=O,hazardous materials
+Phenyl acetate,353.15,1,CC(=O)Oc1ccccc1,hazardous materials
+p-Phenylenediamine,429.15,1,Nc1ccc(N)cc1,hazardous materials
+Phenylethanolamine,425.15,1,NCC(O)c1ccccc1,hazardous materials
+Phenyl ether,369.15,1,c1ccc(Oc2ccccc2)cc1,hazardous materials
+Phenylhydrazine,362.15,1,NNc1ccccc1,hazardous materials
+o-Phenyl phenol,397.15,1,Oc1ccccc1-c1ccccc1,hazardous materials
+Phorone,358.15,1,CC(C)=CC(=O)C=C(C)C,hazardous materials
+Phthalic anhydride,424.15,1,O=C1OC(=O)c2ccccc21,hazardous materials
+2-Picoline,312.15,1,Cc1ccccn1,hazardous materials
+4-Picoline,330.15,1,Cc1ccncc1,hazardous materials
+Picric acid,423.15,1,O=[N+]([O-])c1cc([N+](=O)[O-])c(O)c([N+](=O)[O-])c1,hazardous materials
+Piperylene,230.14999999999998,1,C=CC=CC,hazardous materials
+"1,3-Propanediamine ",297.15,1,NCCCN,hazardous materials
+"1,2-Propanediol ",372.15,1,CC(O)CO,hazardous materials
+iso-Propenyl acetate,289.15,1,C=C(C)OC(C)=O,hazardous materials
+iso-Propyl acetate,277.15,1,CC(=O)OC(C)C,hazardous materials
+n-Propyl acetate,287.15,1,CCCOC(C)=O,hazardous materials
+iso-Propyl benzoate,372.15,1,CC(C)OC(=O)c1ccccc1,hazardous materials
+Propylene,165.14999999999998,1,C=CC,hazardous materials
+Pyridine,293.15,1,c1ccncc1,hazardous materials
+Pyruvic acid,276.15,1,CC(=O)C(=O)O,hazardous materials
+Salicylaldehyde,351.15,1,O=Cc1ccccc1O,hazardous materials
+Salicylic acid,430.15,1,O=C(O)c1ccccc1O,hazardous materials
+Succinonitrile,405.15,1,N#CCCC#N,hazardous materials
+Sulphur monochloride,391.15,1,[S]Cl,hazardous materials
+m-Terphenyl,408.15,1,c1ccc(-c2cccc(-c3ccccc3)c2)cc1,hazardous materials
+o-Terphenyl,436.15,1,c1ccc(-c2ccccc2-c2ccccc2)cc1,hazardous materials
+"1,2,4,5-Tetrachlorobenzene ",428.15,1,Clc1cc(Cl)c(Cl)cc1Cl,hazardous materials
+Tetraethylenepentamine,436.15,1,NCCNCCNCCNCCN,hazardous materials
+Tetraethyl lead,366.15,1,CC[Pb](CC)(CC)CC,hazardous materials
+Tetrahydronaphthalene,344.15,1,c1ccc2c(c1)CCCC2,hazardous materials
+"2,2'-Thiodiethanol ",433.15,1,OCCSCCO,hazardous materials
+Thiophene,272.15,1,c1ccsc1,hazardous materials
+m-Toluidine,359.15,1,Cc1cccc(N)c1,hazardous materials
+o-Toluidine,358.15,1,Cc1ccccc1N,hazardous materials
+p-Toluidine,360.15,1,Cc1ccc(N)cc1,hazardous materials
+"1,2,4-Trichlorobenzene ",372.15,1,Clc1ccc(Cl)c(Cl)c1,hazardous materials
+"1,2,3-Trichloropropane ",355.15,1,ClCC(Cl)CCl,hazardous materials
+Triethanolamine,452.15,1,OCCN(CCO)CCO,hazardous materials
+Triethylene glycol,450.15,1,OCCOCCOCCO,hazardous materials
+Triethylene-tetramine,408.15,1,NCCNCCNCCN,hazardous materials
+Trimethyl amine,266.15,1,CN(C)C,hazardous materials
+Triphenyl phosphate,493.15,1,O=P(Oc1ccccc1)(Oc1ccccc1)Oc1ccccc1,hazardous materials
+Tritolyl phosphate,498.15,1,Cc1ccccc1OP(=O)(Oc1ccccc1C)Oc1ccccc1C,hazardous materials
+Vinyl acetate,265.15,1,C=COC(C)=O,hazardous materials
+Xylidine,370.15,1,Cc1cccc(N)c1C,hazardous materials
+acetaldehyde,233.15,1,CC=O,pubchem
+acetic acid,313.15,1,CC(=O)O,pubchem
+acetonitrile,279.15,1,CC#N,pubchem
+acetyl chloride,277.15,1,CC(=O)Cl,pubchem
+prop-2-enal,247.15,1,C=CC=O,pubchem
+prop-2-enoic acid,327.15,1,C=CC(=O)O,pubchem
+prop-2-enenitrile,273.15,1,C=CC#N,pubchem
+prop-2-en-1-ol,295.15,1,C=CCO,pubchem
+prop-2-en-1-amine,244.15,1,C=CCN,pubchem
+3-bromoprop-1-ene,271.15,1,C=CCBr,pubchem
+3-chloroprop-1-ene,241.15,1,C=CCCl,pubchem
+prop-2-enyl carbonochloridate,304.15,1,C=CCOC(=O)Cl,pubchem
+2-(prop-2-enoxymethyl)oxirane,330.15,1,C=CCOCC1CO1,pubchem
+3-methylbutan-1-ol,319.15,1,CC(C)CCO,pubchem
+2-methylbutan-2-ol,292.15,1,CCC(C)(C)O,pubchem
+pentan-1-amine,280.15,1,CCCCCN,pubchem
+pentane-1-thiol,291.15,1,CCCCCS,pubchem
+pentyl nitrite,283.15,1,CCCCCON=O,pubchem
+aziridine,262.15,1,C1CN1,pubchem
+benzene,262.0,1,c1ccccc1,Saldana11
+phenylmethanol,374.0,1,OCc1ccccc1,Saldana11
+benzyl benzoate,418.0,1,O=C(OCc1ccccc1)c1ccccc1,Saldana11
+butane,213.15,1,CCCC,pubchem
+2-methylpropan-1-ol,301.15,1,CC(C)CO,pubchem
+butan-2-ol,297.15,1,CCC(C)O,pubchem
+2-methylpropan-2-ol,284.15,1,CC(C)(C)O,pubchem
+butan-1-amine,261.15,1,CCCCN,pubchem
+2-methylpropan-1-amine,264.15,1,CC(C)CN,pubchem
+isobutylbenzene,325.0,1,CC(C)Cc1ccccc1,Saldana11
+1-bromobutane,291.15,1,CCCCBr,pubchem
+"butane-2,3-diol",358.0,1,CC(O)C(C)O,Saldana11
+butyl formate,291.15,1,CCCCOC=O,pubchem
+butyl 2-hydroxypropanoate,344.15,1,CCCCOC(=O)C(C)O,pubchem
+butanal,266.15,1,CCCC=O,pubchem
+butanoyl butanoate,355.15,1,CCCC(=O)OC(=O)CCC,pubchem
+hexanoic acid,377.15,1,CCCCCC(=O)O,pubchem
+octanal,325.15,1,CCCCCCCC=O,pubchem
+3-methylphenol,368.0,1,Cc1cccc(O)c1,Saldana11
+2-methylphenol,354.0,1,Cc1ccccc1O,Saldana11
+4-methylphenol,368.0,1,Cc1ccc(O)cc1,Saldana11
+cyclohexane,253.15,1,C1CCCCC1,pubchem
+cyclohexanol,341.0,1,OC1CCCCC1,Saldana11
+"1,2,3,4,4a,5,6,7,8,8a-decahydronaphthalene",330.15,1,C1CCC2CCCCC2C1,pubchem
+8-methylnonanal,358.15,1,CC(C)CCCCCCC=O,pubchem
+decane,319.15,1,CCCCCCCCCC,pubchem
+N-butylbutan-1-amine,325.15,1,CCCCNCCCC,pubchem
+1-butoxybutane,298.15,1,CCCCOCCCC,pubchem
+di-n-butyl phthalate,430.0,1,CCCCOC(=O)c1ccccc1C(=O)OCCCC,Saldana11
+"1,1-dichloroethane",267.15,1,CC(Cl)Cl,pubchem
+diethyl carbonate,298.15,1,CCOC(=O)OCC,pubchem
+2-(2-ethoxyethoxy)ethanol,369.15,1,CCOCCOCCO,pubchem
+pentan-3-one,286.15,1,CCC(=O)CC,pubchem
+diethyl propanedioate,366.15,1,CCOC(=O)CC(=O)OCC,pubchem
+diethyl sulfate,377.15,1,CCOS(=O)(=O)OCC,pubchem
+"2,6-dimethylheptan-4-one",333.15,1,CC(C)CC(=O)CC(C)C,pubchem
+N-propan-2-ylpropan-2-amine,272.15,1,CC(C)NC(C)C,pubchem
+2-propan-2-yloxypropane,245.15,1,CC(C)OC(C)C,pubchem
+dimethoxymethane,255.15,1,COCOC,pubchem
+"2,2-dimethylbutane",225.15,1,CCC(C)(C)C,pubchem
+"2,3-dimethylbutane",244.15,1,CC(C)C(C)C,pubchem
+dimethyl phthalate,419.0,1,COC(=O)c1ccccc1C(=O)OC,Saldana11
+dimethyl sulfate,356.15,1,COS(=O)(=O)OC,pubchem
+"1,4-dioxane",285.15,1,C1COCCO1,pubchem
+dodecane,347.15,1,CCCCCCCCCCCC,pubchem
+2-methyloxirane,236.15,1,CC1CO1,pubchem
+ethanol,286.15,1,CCO,pubchem
+ethylbenzene,288.0,1,CCc1ccccc1,Saldana11
+ethyl 2-bromoacetate,321.15,1,CCOC(=O)CBr,pubchem
+heptan-3-one,319.15,1,CCCCC(=O)CC,pubchem
+ethyl butanoate,297.15,1,CCCC(=O)OCC,pubchem
+chloroethane,223.15,1,CCCl,pubchem
+ethyl carbonochloridate,289.15,1,CCOC(=O)Cl,pubchem
+ethyl 2-cyanoacetate,383.15,1,CCOC(=O)CC#N,pubchem
+"1,2-dichloroethane",286.0,1,ClCCCl,carroll11
+"ethane-1,2-diol",383.0,1,OCCO,Saldana11
+ethoxyethane,228.15,1,CCOCC,pubchem
+ethyl formate,253.15,1,CCOC=O,pubchem
+ethyl 2-hydroxypropanoate,319.15,1,CCOC(=O)C(C)O,pubchem
+methoxyethane,236.15,1,CCOC,pubchem
+4-ethylmorpholine,301.15,1,CCN1CCOCC1,pubchem
+ethyl nitrite,238.15,1,CCON=O,pubchem
+ethyl propanoate,285.0,1,CCOC(=O)CC,Saldana11
+"propane-1,2,3-triol",433.0,1,OCC(O)CO,Saldana11
+heptane,269.15,1,CCCCCCC,pubchem
+hexane,250.15,1,CCCCCC,pubchem
+hexan-1-ol,336.15,1,CCCCCCO,pubchem
+hexan-1-amine,302.15,1,CCCCCCN,pubchem
+formonitrile,255.15,1,C#N,pubchem
+hydroxylamine,402.15,1,NO,pubchem
+isoprene,219.0,1,C=CC(=C)C,Saldana11
+methylacetate,260.0,1,COC(C)=O,carroll11
+methanol,284.15,1,CO,pubchem
+hexan-2-ol,314.15,1,CCCCC(C)O,pubchem
+N-methylbutan-1-amine,286.15,1,CCCCNC,pubchem
+methyl butanoate,287.15,1,CCCC(=O)OC,pubchem
+methyl carbonochloridate,285.15,1,COC(=O)Cl,pubchem
+methylcyclohexane,269.15,1,CC1CCCCC1,pubchem
+2-methylcyclohexan-1-one,321.15,1,CC1CCCCC1=O,pubchem
+4-methylcyclohexene,272.0,1,CC1CC=CCC1,carroll11
+Isobutyl methyl ketone,290.15,1,CC(=O)CC(C)C,hazardous materials
+morpholine,311.15,1,C1COCCN1,pubchem
+1-nitroethane,314.15,1,CC[N+](=O)[O-],pubchem
+nitromethane,308.15,1,C[N+](=O)[O-],pubchem
+nonylphenol,411.0,1,CCCCCCCCCc1ccccc1O,Saldana11
+octane,286.15,1,CCCCCCCC,pubchem
+octan-1-ol,354.15,1,CCCCCCCCO,pubchem
+2-methylbutane,216.15,1,CCC(C)C,pubchem
+"pentane-1,5-diol",402.0,1,OCCCCCO,Saldana11
+pentan-2-ol,308.15,1,CCCC(C)O,pubchem
+phenol,353.0,1,Oc1ccccc1,Saldana11
+"2,6,6-trimethylbicyclo[3.1.1]hept-2-ene",306.15,1,CC1=CCC2CC1C2(C)C,pubchem
+prop-2-yn-1-ol,306.15,1,C#CCO,pubchem
+3-bromoprop-1-yne,283.15,1,C#CCBr,pubchem
+propanal,264.15,1,CCC=O,pubchem
+propanoic acid,327.15,1,CCC(=O)O,pubchem
+propanenitrile,275.15,1,CCC#N,pubchem
+propanoyl chloride,285.15,1,CCC(=O)Cl,pubchem
+propan-2-ol,285.15,1,CC(C)O,pubchem
+propan-1-amine,236.15,1,CCCN,pubchem
+propan-2-amine,236.15,1,CC(C)N,pubchem
+n-propylbenzene,303.0,1,CCCc1ccccc1,Saldana11
+propyl formate,270.15,1,CCCOC=O,pubchem
+propan-2-yl formate,267.15,1,CC(C)OC=O,pubchem
+propyl nitrate,293.15,1,CCCO[N+](=O)[O-],pubchem
+pyrrolidine,276.15,1,C1CCNC1,pubchem
+"benzene-1,3-diol",400.0,1,Oc1cccc(O)c1,Saldana11
+octadecanoic acid,469.15,1,CCCCCCCCCCCCCCCCCC(=O)O,pubchem
+ethenylbenzene,305.0,1,C=Cc1ccccc1,Saldana11
+sulfur,480.15,1,[S],pubchem
+tetradecane,373.15,1,CCCCCCCCCCCCCC,pubchem
+oxolane,259.15,1,C1CCOC1,pubchem
+toluene,277.0,1,Cc1ccccc1,Saldana11
+"N,N-dipentylpentan-1-amine",375.15,1,CCCCCN(CCCCC)CCCCC,pubchem
+"N,N-dibutylbutan-1-amine",358.15,1,CCCCN(CCCC)CCCC,pubchem
+tributyl phosphate,419.15,1,CCCCOP(=O)(OCCCC)OCCCC,pubchem
+tridecan-1-ol,394.15,1,CCCCCCCCCCCCCO,pubchem
+"2,2,4-trimethylpentane",261.15,1,CC(C)CC(C)(C)C,pubchem
+"2,4,4-trimethyl-2-pentene",272.0,1,CC(C)=CC(C)(C)C,carroll11
+"1,3,5-trioxane",318.15,1,C1OCOCO1,pubchem
+TRIPHENYLPHOSPHINE,455.15,1,c1ccc(P(c2ccccc2)c2ccccc2)cc1,gelest_metal-organics
+"N,N-dipropylpropan-1-amine",310.15,1,CCCN(CCC)CCC,pubchem
+pentanal,285.15,1,CCCCC=O,pubchem
+pentanoic acid,362.15,1,CCCCC(=O)O,pubchem
+chloroethene,194.15,1,C=CCl,pubchem
+"1,1-dichloroethene",263.15,1,C=C(Cl)Cl,pubchem
+"1,3-xylene",298.0,1,Cc1cccc(C)c1,Saldana11
+"1,4-dimethylbenzene",298.0,1,Cc1ccc(C)cc1,Saldana11
