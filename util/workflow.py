@@ -100,24 +100,6 @@ class Splitter:
                 test_indices.append(i)
                 train_indices.remove(i)
         return (train_indices, test_indices, dataset)
-
-#     def leave_out_duplicates(data):
-#         """
-#         dataset: dataframe of integrated dataset
-#         returns: dataframe with no duplicates
-#         """
-#         result = data.drop_duplicates(subset='smiles', keep=False)#[~duplicates]
-#         #for each unique smiles that has duplicates
-#         for smiles in data[data.duplicated(subset='smiles')]['smiles'].unique():
-#             dup_rows = data.loc[data['smiles'] == smiles]
-#             if dup_rows['flashpoint'].unique().shape[0] == 1:
-#                 # remove all but one
-#                 result = result.append(dup_rows.iloc[0], sort=False)
-#             else:
-#                 if dup_rows['flashpoint'].std() < 5:
-#                     # add 1 back
-#                     result = result.append(dup_rows.iloc[0], sort=False)
-#         return result  
     
     def leave_out_moleClass(dataset, mole_class_to_leave_out):
         """
@@ -127,32 +109,40 @@ class Splitter:
         return 0
 
 
-
 class Simulate:
         
     def cv(data,
            indices, # k-fold indices of training and test sets
            model,  # need to be either MPNN or GraphConv
-           model_args = None, 
+           model_args = None,
            n_splits = 3):   
         """
         pass data into models (MPNN or graphconv) and conduct cross validation
+        
+        Return:
+        avg_cv_rms_score
+        avg_cv_mae_score
+        cv_rms_scores: a list of RMSE scores from cross validation
+        cv_mae_scores: a list of MAE scores from cross validation
         """
-        if not (model == 'MPNN' or model == 'graphconv'):
+        if not (model == 'MPNN' or model == 'graphconv' or model == 'GC' or model == 'GraphConv'):
             sys.exit("Only support MPNN model and GraphConv model")
-        cv_scores = []
+        cv_rms_scores = []
+        cv_mae_score = []
         for train_indices, test_indices in indices:
             train_set = data.iloc[train_indices]
             test_set = data.iloc[test_indices]
             train_set.to_csv('train_set.csv',index = False)
             test_set.to_csv('test_set.csv',index = False)
             if model == 'MPNN':
-                score = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
-            elif model == 'graphconv':
-                score = Model.graphconv(model_args,"train_set.csv", "test_set.csv")       
-            cv_scores.append(score)
-        avg_cv_score = sum(cv_scores)/n_splits
-        return avg_cv_score
+                rms_score,mae_score = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
+            elif model == 'graphconv' or model == 'GC' or model == 'GraphConv':
+                rms_score,mae_score = Model.graphconv(model_args,"train_set.csv", "test_set.csv")       
+            cv_rms_scores.append(rms_score)
+            cv_mae_scores.append(mae_score)
+        avg_cv_rms_score = sum(cv_rms_scores)/n_splits
+        avg_cv_ame_score = sum(cv_mae_scores)/n_splits
+        return avg_cv_rms_score,avg_cv_mae_score,cv_rms_scores,cv_mae_scores
 
     def LOG_validation(data,
                        indices, 
@@ -162,7 +152,7 @@ class Simulate:
         Conduct leave-out-group validation
         """
         
-        if not (model == 'MPNN' or model == 'graphconv'):
+        if not (model == 'MPNN' or model == 'graphconv' or model == 'GC' or model == 'GraphConv'):
             sys.exit("Only supports MPNN model and graphconv model")
         train_indices, test_indices = indices
         train_set = data.iloc[train_indices]
@@ -170,13 +160,10 @@ class Simulate:
         train_set.to_csv('train_set.csv',index = False)
         test_set.to_csv('test_set.csv',index = False)
         if model == 'MPNN':
-            score = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
+            rms_score,mae_score = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
         elif model == 'GraphConv':
-            score = Model.graphconv(model_args, "train_set.csv", "test_set.csv")       
-        return score
-
-
-
+            rms_score,mae_score = Model.graphconv(model_args,"train_set.csv", "test_set.csv")       
+        return rms_score,mae_score
 
 
 class Model:
