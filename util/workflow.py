@@ -2,10 +2,14 @@ import os
 import sys
 import numpy as np
 import pandas as pd
-import integration_helpers ##for removing duplicates for k_fold splitter or other place where we need to remove duplicates 
+# import bokeh             # TODO for interactive plot
+import statistics as stat
+import seaborn as sns
+import matplotlib.pyplot as plt
+import integration_helpers # for removing duplicates
 from sklearn.model_selection import KFold
 
-# pkg needed for DeepChem
+## pkg needed for DeepChem
 import tensorflow as tf
 import deepchem as dc
 # from deepchem.models.tensorgraph.models.graph_models import GraphConvModel
