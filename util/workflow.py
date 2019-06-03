@@ -2,6 +2,7 @@ import os
 import sys
 import numpy as np
 import pandas as pd
+import integration_helpers ##for removing duplicates for k_fold splitter or other place where we need to remove duplicates 
 from sklearn.model_selection import KFold
 
 # pkg needed for DeepChem
@@ -57,13 +58,17 @@ class Splitter:
     def k_fold(dataset, n_splits = 3, shuffle = True):
         """
         split data into k-fold
-        return indices of training and test sets
+	
+        Return:
+	indices of k-fold training and test sets
+	new dataset after removing duplicates
         """
+	dataset = integration_helpers.remove_duplicates(dataset)
         if shuffle == True:
             random_state = 4396
         kf = KFold(n_splits, shuffle, random_state)
         indices = kf.split(dataset)
-        return indices
+        return (indices, dataset)
 
     def LOG(dataset, test_group):  # leave out group
         """
@@ -77,11 +82,9 @@ class Splitter:
 
         # remove data points in  train dataframe that match smiles strings in
         # test dataframe
-        for row in test_df.itterrows():
+        for index, row in test_df.iterrows():
             smi = row['smiles']
-            if train_df['smiles'].str.contains[smi]:
-                train_df = train_df[train_df['smiles'] != smi]
-
+            train_df = train_df[train_df['smiles'] != smi]
         frames = [train_df, test_df]
         dataset = pd.concat(frames)
         dataset.reset_index(drop=True, inplace=True)
@@ -92,7 +95,25 @@ class Splitter:
             if dataset.iloc[i]['source'] == test_group:
                 test_indices.append(i)
                 train_indices.remove(i)
-        return (train_indices, test_indices)
+        return (train_indices, test_indices, dataset)
+
+#     def leave_out_duplicates(data):
+#         """
+#         dataset: dataframe of integrated dataset
+#         returns: dataframe with no duplicates
+#         """
+#         result = data.drop_duplicates(subset='smiles', keep=False)#[~duplicates]
+#         #for each unique smiles that has duplicates
+#         for smiles in data[data.duplicated(subset='smiles')]['smiles'].unique():
+#             dup_rows = data.loc[data['smiles'] == smiles]
+#             if dup_rows['flashpoint'].unique().shape[0] == 1:
+#                 # remove all but one
+#                 result = result.append(dup_rows.iloc[0], sort=False)
+#             else:
+#                 if dup_rows['flashpoint'].std() < 5:
+#                     # add 1 back
+#                     result = result.append(dup_rows.iloc[0], sort=False)
+#         return result  
     
     def leave_out_moleClass(dataset, mole_class_to_leave_out):
         """
