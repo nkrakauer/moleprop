@@ -321,6 +321,7 @@ class Plot:
         # set x,y limit
         min_val = min(min(y),min(y)-max(yeer),min(x)-max(yeer))
         max_val = max(max(y),max(y)+max(yeer),max(x)+max(yeer))
+	fg.set(xlim = (min_val,max_val), ylim =(min_val, max_val))
         for ax in fg.axes.flat:
             ax.plot((min_val, max_val),(min_val, max_val))
         plt.title("Parity Plot") 
