@@ -2,13 +2,15 @@ import os
 import sys
 import numpy as np
 import pandas as pd
-import random              # for randomly choosing indices from left-out group as test indices
-# import bokeh             # TODO for interactive plot
+import random                                            # for randomly choosing indices from left-out group as test indices
+import bokeh                                             # TODO for interactive plot
 import statistics as stat
 import seaborn as sns
 import matplotlib.pyplot as plt
-import integration_helpers # for removing duplicates
+import integration_helpers                               # for removing duplicates
 from sklearn.model_selection import KFold
+from deepchem.trans.transformers import undo_transforms  # for getting real predictions
+
 
 ## pkg needed for DeepChem
 import tensorflow as tf
@@ -187,37 +189,31 @@ class Model:
             'mode': 'regression'},
         'MPNN':{
             'n_tasks':1,
-            'n_atom_feat':75,
-            'n_pair_feat':14,
-            'T':1,
-            'M':1,
+            'n_atom_feat':70,
+            'n_pair_feat':14,      # NEED to be 14 for WaveFeaturizer
+            'T':5,
+            'M':10,
             'batch_size':32,
             'nb_epoch': 50,
             'learning_rate':0.0001,
             'use_queue':False,
-            'mode':"regression",
-            'n_hidden' :75
+            'mode':"regression"
         }
     }
     
     def graphconv(args, train_set, test_set):
         # parse arguments
-        if args == None:
-            args = Model.default_args['graphconv']
-        nb_epoch = args["nb_epoch"]
-        batch_size =  args["batch_size"]
-        n_tasks = args["n_tasks"]
-        graph_conv_layers = args["graph_conv_layers"]
-        dense_layer_size = args["dense_layer_size"]
-        dropout = args["dropout"]
-        mode = args["mode"]  # regression or classificiation
-
-        flashpoint_tasks = ['flashPoint']  # Need to set the column name to be excatly "flashPoint"
+        model_args = Model.default_args['graphconv']
+        if args != None:
+            for key in args:
+                model_agrs[key] = args[key]
+        flashpoint_tasks = ['flashpoint']  # Need to set the column name to be excatly "flashPoint"
         loader = dc.data.CSVLoader(tasks = flashpoint_tasks, 
                                         smiles_field="smiles", 
                                         featurizer = dc.feat.ConvMolFeaturizer())
         train_dataset = loader.featurize(train_set, shard_size=8192)
         test_dataset = loader.featurize(test_set, shard_size=8192)
+        return_test_dataset = test_dataset  # used to return test dataset for plotting
         transformers = [
             dc.trans.NormalizationTransformer(
             transform_y=True, dataset=train_dataset, move_mean=True) # sxy: move_mean may need to change (3/23/2019)
@@ -232,38 +228,33 @@ class Model:
              test_dataset = transformer.transform(test_dataset)
                 
                 
-        model = dc.models.GraphConvModel(n_tasks = n_tasks, mode = mode, dropout = dropout)
-        metric = dc.metrics.Metric(dc.metrics.rms_score, np.mean)
-        model.fit(train_dataset, batch_size = batch_size, nb_epoch = nb_epoch) 
-        score = list( model.evaluate(test_dataset, [metric],transformers).values()).pop()
-        print("=================================")
-        print("GraphConv\n -----------------------------\n RMSE score is: ", score)        
-        print("=================================")        
-        return score
+        model = dc.models.GraphConvModel(n_tasks = model_args['n_tasks'], 
+                                         mode = model_args['mode'], 
+                                         dropout = model_args['dropout'])
+        metric_rms = dc.metrics.Metric(dc.metrics.rms_score, np.mean) # RMSE score
+        metric_mae = dc.metrics.Metric(dc.metrics.mae_score, np.mean) # MAE score
+        model.fit(train_dataset, nb_epoch = model_args['nb_epoch']) 
+        pred = model.predict(test_dataset)
+        pred = undo_transforms(pred, transformers)
+        rms_score = list( model.evaluate(test_dataset, [metric_rms],transformers).values()).pop()
+        mae_socre = list( model.evaluate(test_dataset, [metric_mae],transformers).values()).pop()
+        print("GraphConv\n ===============================\n RMSE score is: ", score)
+        return rms_score, mae_score,pred,return_test_dataset
 
     def MPNN(args, train_set, test_set):
         # parse arguments
-        if args == None:
-            args = Model.default_args['MPNN']       
-        n_tasks = args['n_tasks']
-        n_atom_feat = args['n_atom_feat']
-        n_pair_feat = args['n_pair_feat']
-        T = args['T']
-        M = args['M']
-        batch_size = args['batch_size']
-        learning_rate = args['learning_rate']
-        use_queue = args['use_queue']
-        mode = args['mode']
-        nb_epoch = args['nb_epoch']
-        n_hidden = args['n_hidden]
+        model_args = Model.default_args['MPNN']
+        if args != None:
+            for key in args:
+                model_args[key] = args[key]
 
         flashpoint_tasks = ['flashPoint']  # Need to set the column name to be excatly "flashPoint"
         loader = dc.data.CSVLoader(tasks = flashpoint_tasks, 
                                         smiles_field="smiles", 
                                         featurizer = dc.feat.WeaveFeaturizer())
-
         train_dataset = loader.featurize(train_set, shard_size=8192)
         test_dataset = loader.featurize(test_set, shard_size=8192)
+        return_test_dataset = test_dataset  # used to return test dataset for plotting
         transformers = [
             dc.trans.NormalizationTransformer(
             transform_y=True, dataset=train_dataset, move_mean=True) # sxy: move_mean may need to change (3/23/2019)
@@ -277,24 +268,26 @@ class Model:
         for transformer in transformers:
              test_dataset = transformer.transform(test_dataset)
 
-        model = dc.models.MPNNModel(n_tasks = n_tasks,
-                                    n_atom_feat=n_atom_feat,
-                                    n_pair_feat=n_pair_feat,
-                                    n_hidden= n_hidden,
-				    T=T,
-                                    M=M,
-                                    batch_size=batch_size,
-                                    learning_rate=learning_rate,
-                                    use_queue=True,#use_queue,
-                                    mode=mode)        
+        model = dc.models.MPNNModel(n_tasks = model_args['n_tasks'],
+                                    n_atom_feat = model_args['n_atom_feat'],
+                                    n_pair_feat = model_args['n_pair_feat'],
+                                    T = model_args['T'],
+                                    M = model_args['M'],
+                                    batch_size = model_args['batch_size'],
+                                    learning_rate = model_args['learning_rate'],
+                                    use_queue = model_args['use_queue'],
+                                    mode = model_args['mode'])        
                 
-        metric = dc.metrics.Metric(dc.metrics.rms_score, np.mean)
-        model.fit(train_dataset, nb_epoch = nb_epoch) 
-        score = list( model.evaluate(test_dataset, [metric],transformers).values()).pop()
-        print("=================================")
-        print("MPNN\n -----------------------------\n RMSE score is: ", score)        
-        print("=================================")
-        return score
+        metric_rms = dc.metrics.Metric(dc.metrics.rms_score, np.mean) # RMSE score
+        metric_mae = dc.metrics.Metric(dc.metrics.mae_score, np.mean) # MAE score
+        model.fit(train_dataset, nb_epoch = model_args['nb_epoch'])
+        pred = model.predict(test_dataset)
+        pred = undo_transforms(pred, transformers)
+        rms_score = list( model.evaluate(test_dataset, [metric_rms],transformers).values()).pop()
+        mae_socre = list( model.evaluate(test_dataset, [metric_mae],transformers).values()).pop()
+        print("MPNN\n ===============================\n RMSE score is: ", score)
+        return rms_score,mae_score,pred,return_test_dataset
+
 			
 			
 class Plot:
