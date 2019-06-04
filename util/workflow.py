@@ -5,7 +5,7 @@ import pandas as pd
 import random                                            # for randomly choosing indices from left-out group as test indices
 import bokeh                                             # TODO for interactive plot
 import statistics as stat
-import seaborn as sns
+import seaborn
 import matplotlib.pyplot as plt
 import integration_helpers                               # for removing duplicates
 from sklearn.model_selection import KFold
@@ -210,7 +210,7 @@ class Model:
         model_args = Model.default_args['graphconv']
         if args != None:
             for key in args:
-                model_agrs[key] = args[key]
+                model_args[key] = args[key]
         flashpoint_tasks = ['flashpoint']  # Need to set the column name to be excatly "flashPoint"
         loader = dc.data.CSVLoader(tasks = flashpoint_tasks, 
                                         smiles_field="smiles", 
@@ -231,7 +231,6 @@ class Model:
         for transformer in transformers:
              test_dataset = transformer.transform(test_dataset)
                 
-                
         model = dc.models.GraphConvModel(n_tasks = model_args['n_tasks'], 
                                          mode = model_args['mode'], 
                                          dropout = model_args['dropout'])
@@ -242,7 +241,7 @@ class Model:
         pred = undo_transforms(pred, transformers)
         rms_score = list( model.evaluate(test_dataset, [metric_rms],transformers).values()).pop()
         mae_socre = list( model.evaluate(test_dataset, [metric_mae],transformers).values()).pop()
-        print("GraphConv\n ===============================\n RMSE score is: ", score)
+        # print("GraphConv\n ===============================\n RMSE score is: ", score)
         return rms_score, mae_score,pred,return_test_dataset
 
     def MPNN(args, train_set, test_set):
@@ -287,7 +286,7 @@ class Model:
         pred = undo_transforms(pred, transformers)
         rms_score = list( model.evaluate(test_dataset, [metric_rms],transformers).values()).pop()
         mae_socre = list( model.evaluate(test_dataset, [metric_mae],transformers).values()).pop()
-        print("MPNN\n ===============================\n RMSE score is: ", score)
+        # print("MPNN\n ===============================\n RMSE score is: ", score)
         return rms_score,mae_score,pred,return_test_dataset
 
 			
@@ -300,7 +299,7 @@ class Plot:
         errorbar: if true, plot scatter plot for error bars
         """
         # add pred_result to the test_dataset DataFrame
-        sns.set(style = 'white',font_scale = 2)
+        seaborn.set(style = 'white',font_scale = 2)
         yeer = []
         avg_pred = []
         if errorbar == True:
@@ -329,7 +328,7 @@ class Plot:
         plt.title("Parity Plot") 
         plt.ylabel("Predicted") 
         plt.xlabel("Experimental") 
-        sns.despine(fg.fig,top=False, right=False)#, left=True, bottom=True,)
+        seaborn.despine(fg.fig,top=False, right=False)#, left=True, bottom=True,)
     
     def interactive_plot(pred_result,true_result):
         return 0
