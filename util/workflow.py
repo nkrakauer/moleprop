@@ -2,12 +2,15 @@ import os
 import sys
 import numpy as np
 import pandas as pd
-# import bokeh             # TODO for interactive plot
+import random                                            # for randomly choosing indices from left-out group as test indices
+import bokeh                                             # TODO for interactive plot
 import statistics as stat
-import seaborn as sns
+import seaborn
 import matplotlib.pyplot as plt
-import integration_helpers # for removing duplicates
+import integration_helpers                               # for removing duplicates
 from sklearn.model_selection import KFold
+from deepchem.trans.transformers import undo_transforms  # for getting real predictions
+
 
 ## pkg needed for DeepChem
 import tensorflow as tf
@@ -51,34 +54,37 @@ class Loader:
         for s in sources:
             print("  Source Name: " + s + ", Number of Data: " + str(source_info[s]))
         print('-----------------------------------------------------')
-        print("Mean: " + data['flashpoint'].mean())
+        print("Mean: " + str(data['flashpoint'].mean()))
         print('-----------------------------------------------------')
-        print("Std: " + data['flashpoint'].std())
+        print("Std: " + str(data['flashpoint'].std()))
 
 
 
 class Splitter:
-
-    def k_fold(dataset, n_splits = 3, shuffle = True):
+	
+    def k_fold(dataset, n_splits = 3, shuffle = True, random_state = None):
         """
         split data into k-fold
-	
+
         Return:
-	indices of k-fold training and test sets
-	new dataset after removing duplicates
+        indices of k-fold training and test sets
+        new dataset after removing duplicates
         """
-    dataset = integration_helpers.remove_duplicates(dataset)
-    if shuffle == True:
-        random_state = 4396
+        dataset = integration_helpers.remove_duplicates(dataset) # remove duplicates
+        if shuffle == True:
+            random_state = 4396
         kf = KFold(n_splits, shuffle, random_state)
         indices = kf.split(dataset)
         return (indices, dataset)
 
-    def LOG(dataset, test_group):  # leave out group
+    def LOG(dataset, test_group, frac = 1):  # leave out group
         """
         split dataset by leaving out a specific source as test set
+        
+        params:
         dataset: data frame
         test_group: string
+        frac: fraction of the left-out group that will be used as test set
         """
         # remove duplicates in train group.
         test_df = dataset[dataset['source'] == test_group]
@@ -92,14 +98,18 @@ class Splitter:
         frames = [train_df, test_df]
         dataset = pd.concat(frames)
         dataset.reset_index(drop=True, inplace=True)
-        test_indices = []
-        train_indices = list(range(len(dataset.index)))
+        raw_test_indices = []
+        raw_train_indices = list(range(len(dataset.index)))
         print("||||||||||||||||||| "+test_group+ " will be used as test set|||||||||||||||||||")
         for i in range(0,len(dataset.index)):
             if dataset.iloc[i]['source'] == test_group:
-                test_indices.append(i)
-                train_indices.remove(i)
-        return (train_indices, test_indices, dataset)
+                raw_test_indices.append(i)
+                raw_train_indices.remove(i)
+        test_indices = random.choices(raw_test_indices, k = int(frac*len(raw_test_indices)))
+        print(test_indices)
+        raw_test_indices = [x for x in raw_test_indices if x not in test_indices]
+        train_indices = raw_train_indices.extend(raw_test_indices)
+        return ((train_indices, test_indices), dataset)
     
     def leave_out_moleClass(dataset, mole_class_to_leave_out):
         """
@@ -128,21 +138,26 @@ class Simulate:
         if not (model == 'MPNN' or model == 'graphconv' or model == 'GC' or model == 'GraphConv'):
             sys.exit("Only support MPNN model and GraphConv model")
         cv_rms_scores = []
-        cv_mae_score = []
+        cv_mae_scores = []
+        cv_predictions = []
+        cv_test_datasets = []
         for train_indices, test_indices in indices:
             train_set = data.iloc[train_indices]
             test_set = data.iloc[test_indices]
             train_set.to_csv('train_set.csv',index = False)
             test_set.to_csv('test_set.csv',index = False)
             if model == 'MPNN':
-                rms_score,mae_score = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
+                rms_score,mae_score,pred,test_dataset = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
             elif model == 'graphconv' or model == 'GC' or model == 'GraphConv':
-                rms_score,mae_score = Model.graphconv(model_args,"train_set.csv", "test_set.csv")       
+                rms_score,mae_score,pred,test_dataset = Model.graphconv(model_args,"train_set.csv", "test_set.csv")       
             cv_rms_scores.append(rms_score)
             cv_mae_scores.append(mae_score)
+            cv_predictions.append(pred)
+            cv_test_datasets.append(test_dataset)
         avg_cv_rms_score = sum(cv_rms_scores)/n_splits
         avg_cv_ame_score = sum(cv_mae_scores)/n_splits
-        return avg_cv_rms_score,avg_cv_mae_score,cv_rms_scores,cv_mae_scores
+        scores = (avg_cv_rms_score,avg_cv_mae_score,cv_rms_scores,cv_mae_scores)
+        return scores, cv_predictions, cv_test_datasets
 
     def LOG_validation(data,
                        indices, 
@@ -160,11 +175,10 @@ class Simulate:
         train_set.to_csv('train_set.csv',index = False)
         test_set.to_csv('test_set.csv',index = False)
         if model == 'MPNN':
-            rms_score,mae_score = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
+            rms_score,mae_score,pred,test_dataset = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
         elif model == 'GraphConv':
-            rms_score,mae_score = Model.graphconv(model_args,"train_set.csv", "test_set.csv")       
-        return rms_score,mae_score
-
+            rms_score,mae_score,pred,test_dataset = Model.graphconv(model_args,"train_set.csv", "test_set.csv")       
+        return rms_score,mae_score,pred,test_dataset
 
 class Model:
     
@@ -179,37 +193,31 @@ class Model:
             'mode': 'regression'},
         'MPNN':{
             'n_tasks':1,
-            'n_atom_feat':75,
-            'n_pair_feat':14,
-            'T':1,
-            'M':1,
+            'n_atom_feat':70,
+            'n_pair_feat':14,      # NEED to be 14 for WaveFeaturizer
+            'T':5,
+            'M':10,
             'batch_size':32,
             'nb_epoch': 50,
             'learning_rate':0.0001,
             'use_queue':False,
-            'mode':"regression",
-            'n_hidden' :75
+            'mode':"regression"
         }
     }
     
     def graphconv(args, train_set, test_set):
         # parse arguments
-        if args == None:
-            args = Model.default_args['graphconv']
-        nb_epoch = args["nb_epoch"]
-        batch_size =  args["batch_size"]
-        n_tasks = args["n_tasks"]
-        graph_conv_layers = args["graph_conv_layers"]
-        dense_layer_size = args["dense_layer_size"]
-        dropout = args["dropout"]
-        mode = args["mode"]  # regression or classificiation
-
-        flashpoint_tasks = ['flashPoint']  # Need to set the column name to be excatly "flashPoint"
+        model_args = Model.default_args['graphconv']
+        if args != None:
+            for key in args:
+                model_args[key] = args[key]
+        flashpoint_tasks = ['flashpoint']  # Need to set the column name to be excatly "flashPoint"
         loader = dc.data.CSVLoader(tasks = flashpoint_tasks, 
                                         smiles_field="smiles", 
                                         featurizer = dc.feat.ConvMolFeaturizer())
         train_dataset = loader.featurize(train_set, shard_size=8192)
         test_dataset = loader.featurize(test_set, shard_size=8192)
+        return_test_dataset = test_dataset  # used to return test dataset for plotting
         transformers = [
             dc.trans.NormalizationTransformer(
             transform_y=True, dataset=train_dataset, move_mean=True) # sxy: move_mean may need to change (3/23/2019)
@@ -223,39 +231,33 @@ class Model:
         for transformer in transformers:
              test_dataset = transformer.transform(test_dataset)
                 
-                
-        model = dc.models.GraphConvModel(n_tasks = n_tasks, mode = mode, dropout = dropout)
-        metric = dc.metrics.Metric(dc.metrics.rms_score, np.mean)
-        model.fit(train_dataset, batch_size = batch_size, nb_epoch = nb_epoch) 
-        score = list( model.evaluate(test_dataset, [metric],transformers).values()).pop()
-        print("=================================")
-        print("GraphConv\n -----------------------------\n RMSE score is: ", score)        
-        print("=================================")        
-        return score
+        model = dc.models.GraphConvModel(n_tasks = model_args['n_tasks'], 
+                                         mode = model_args['mode'], 
+                                         dropout = model_args['dropout'])
+        metric_rms = dc.metrics.Metric(dc.metrics.rms_score, np.mean) # RMSE score
+        metric_mae = dc.metrics.Metric(dc.metrics.mae_score, np.mean) # MAE score
+        model.fit(train_dataset, nb_epoch = model_args['nb_epoch']) 
+        pred = model.predict(test_dataset)
+        pred = undo_transforms(pred, transformers)
+        rms_score = list( model.evaluate(test_dataset, [metric_rms],transformers).values()).pop()
+        mae_socre = list( model.evaluate(test_dataset, [metric_mae],transformers).values()).pop()
+        # print("GraphConv\n ===============================\n RMSE score is: ", score)
+        return rms_score, mae_score,pred,return_test_dataset
 
     def MPNN(args, train_set, test_set):
         # parse arguments
-        if args == None:
-            args = Model.default_args['MPNN']       
-        n_tasks = args['n_tasks']
-        n_atom_feat = args['n_atom_feat']
-        n_pair_feat = args['n_pair_feat']
-        T = args['T']
-        M = args['M']
-        batch_size = args['batch_size']
-        learning_rate = args['learning_rate']
-        use_queue = args['use_queue']
-        mode = args['mode']
-        nb_epoch = args['nb_epoch']
-        n_hidden = args['n_hidden]
+        model_args = Model.default_args['MPNN']
+        if args != None:
+            for key in args:
+                model_args[key] = args[key]
 
         flashpoint_tasks = ['flashPoint']  # Need to set the column name to be excatly "flashPoint"
         loader = dc.data.CSVLoader(tasks = flashpoint_tasks, 
                                         smiles_field="smiles", 
                                         featurizer = dc.feat.WeaveFeaturizer())
-
         train_dataset = loader.featurize(train_set, shard_size=8192)
         test_dataset = loader.featurize(test_set, shard_size=8192)
+        return_test_dataset = test_dataset  # used to return test dataset for plotting
         transformers = [
             dc.trans.NormalizationTransformer(
             transform_y=True, dataset=train_dataset, move_mean=True) # sxy: move_mean may need to change (3/23/2019)
@@ -268,26 +270,25 @@ class Model:
         ]
         for transformer in transformers:
              test_dataset = transformer.transform(test_dataset)
+        model = dc.models.MPNNModel(n_tasks = model_args['n_tasks'],
+                                    n_atom_feat = model_args['n_atom_feat'],
+                                    n_pair_feat = model_args['n_pair_feat'],
+                                    T = model_args['T'],
+                                    M = model_args['M'],
+                                    batch_size = model_args['batch_size'],
+                                    learning_rate = model_args['learning_rate'],
+                                    use_queue = model_args['use_queue'],
+                                    mode = model_args['mode'])                    
+        metric_rms = dc.metrics.Metric(dc.metrics.rms_score, np.mean) # RMSE score
+        metric_mae = dc.metrics.Metric(dc.metrics.mae_score, np.mean) # MAE score
+        model.fit(train_dataset, nb_epoch = model_args['nb_epoch'])
+        pred = model.predict(test_dataset)
+        pred = undo_transforms(pred, transformers)
+        rms_score = list( model.evaluate(test_dataset, [metric_rms],transformers).values()).pop()
+        mae_socre = list( model.evaluate(test_dataset, [metric_mae],transformers).values()).pop()
+        # print("MPNN\n ===============================\n RMSE score is: ", score)
+        return rms_score,mae_score,pred,return_test_dataset
 
-        model = dc.models.MPNNModel(n_tasks = n_tasks,
-                                    n_atom_feat=n_atom_feat,
-                                    n_pair_feat=n_pair_feat,
-                                    n_hidden= n_hidden,
-				                    T=T,
-                                    M=M,
-                                    batch_size=batch_size,
-                                    learning_rate=learning_rate,
-                                    use_queue=True,#use_queue,
-                                    mode=mode)        
-                
-        metric = dc.metrics.Metric(dc.metrics.rms_score, np.mean)
-        model.fit(train_dataset, nb_epoch = nb_epoch) 
-        score = list( model.evaluate(test_dataset, [metric],transformers).values()).pop()
-        print("=================================")
-        print("MPNN\n -----------------------------\n RMSE score is: ", score)        
-        print("=================================")
-        return score
-			
 			
 class Plot:
     
@@ -298,7 +299,7 @@ class Plot:
         errorbar: if true, plot scatter plot for error bars
         """
         # add pred_result to the test_dataset DataFrame
-        sns.set(style = 'white',font_scale = 2)
+        seaborn.set(style = 'white',font_scale = 2)
         yeer = []
         avg_pred = []
         if errorbar == True:
@@ -327,7 +328,7 @@ class Plot:
         plt.title("Parity Plot") 
         plt.ylabel("Predicted") 
         plt.xlabel("Experimental") 
-        sns.despine(fg.fig,top=False, right=False)#, left=True, bottom=True,)
+        seaborn.despine(fg.fig,top=False, right=False)#, left=True, bottom=True,)
     
     def interactive_plot(pred_result,true_result):
         return 0
