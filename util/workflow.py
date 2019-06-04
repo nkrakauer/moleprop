@@ -138,21 +138,26 @@ class Simulate:
         if not (model == 'MPNN' or model == 'graphconv' or model == 'GC' or model == 'GraphConv'):
             sys.exit("Only support MPNN model and GraphConv model")
         cv_rms_scores = []
-        cv_mae_score = []
+        cv_mae_scores = []
+        cv_predictions = []
+        cv_test_datasets = []
         for train_indices, test_indices in indices:
             train_set = data.iloc[train_indices]
             test_set = data.iloc[test_indices]
             train_set.to_csv('train_set.csv',index = False)
             test_set.to_csv('test_set.csv',index = False)
             if model == 'MPNN':
-                rms_score,mae_score = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
+                rms_score,mae_score,pred,test_dataset = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
             elif model == 'graphconv' or model == 'GC' or model == 'GraphConv':
-                rms_score,mae_score = Model.graphconv(model_args,"train_set.csv", "test_set.csv")       
+                rms_score,mae_score,pred,test_dataset = Model.graphconv(model_args,"train_set.csv", "test_set.csv")       
             cv_rms_scores.append(rms_score)
             cv_mae_scores.append(mae_score)
+            cv_predictions.append(pred)
+            cv_test_datasets.append(test_dataset)
         avg_cv_rms_score = sum(cv_rms_scores)/n_splits
         avg_cv_ame_score = sum(cv_mae_scores)/n_splits
-        return avg_cv_rms_score,avg_cv_mae_score,cv_rms_scores,cv_mae_scores
+        scores = (avg_cv_rms_score,avg_cv_mae_score,cv_rms_scores,cv_mae_scores)
+        return scores, cv_predictions, cv_test_datasets
 
     def LOG_validation(data,
                        indices, 
@@ -170,11 +175,10 @@ class Simulate:
         train_set.to_csv('train_set.csv',index = False)
         test_set.to_csv('test_set.csv',index = False)
         if model == 'MPNN':
-            rms_score,mae_score = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
+            rms_score,mae_score,pred,test_dataset = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
         elif model == 'GraphConv':
-            rms_score,mae_score = Model.graphconv(model_args,"train_set.csv", "test_set.csv")       
-        return rms_score,mae_score
-
+            rms_score,mae_score,pred,test_dataset = Model.graphconv(model_args,"train_set.csv", "test_set.csv")       
+        return rms_score,mae_score,pred,test_dataset
 
 class Model:
     
@@ -267,7 +271,6 @@ class Model:
         ]
         for transformer in transformers:
              test_dataset = transformer.transform(test_dataset)
-
         model = dc.models.MPNNModel(n_tasks = model_args['n_tasks'],
                                     n_atom_feat = model_args['n_atom_feat'],
                                     n_pair_feat = model_args['n_pair_feat'],
@@ -276,8 +279,7 @@ class Model:
                                     batch_size = model_args['batch_size'],
                                     learning_rate = model_args['learning_rate'],
                                     use_queue = model_args['use_queue'],
-                                    mode = model_args['mode'])        
-                
+                                    mode = model_args['mode'])                    
         metric_rms = dc.metrics.Metric(dc.metrics.rms_score, np.mean) # RMSE score
         metric_mae = dc.metrics.Metric(dc.metrics.mae_score, np.mean) # MAE score
         model.fit(train_dataset, nb_epoch = model_args['nb_epoch'])
@@ -288,7 +290,6 @@ class Model:
         print("MPNN\n ===============================\n RMSE score is: ", score)
         return rms_score,mae_score,pred,return_test_dataset
 
-			
 			
 class Plot:
     
