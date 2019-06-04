@@ -2,6 +2,7 @@ import os
 import sys
 import numpy as np
 import pandas as pd
+import random              # for randomly choosing indices from left-out group as test indices
 # import bokeh             # TODO for interactive plot
 import statistics as stat
 import seaborn as sns
@@ -51,34 +52,37 @@ class Loader:
         for s in sources:
             print("  Source Name: " + s + ", Number of Data: " + str(source_info[s]))
         print('-----------------------------------------------------')
-        print("Mean: " + data['flashpoint'].mean())
+        print("Mean: " + str(data['flashpoint'].mean()))
         print('-----------------------------------------------------')
-        print("Std: " + data['flashpoint'].std())
+        print("Std: " + str(data['flashpoint'].std()))
 
 
 
 class Splitter:
-
-    def k_fold(dataset, n_splits = 3, shuffle = True):
+	
+    def k_fold(dataset, n_splits = 3, shuffle = True, random_state = None):
         """
         split data into k-fold
-	
+
         Return:
-	indices of k-fold training and test sets
-	new dataset after removing duplicates
+        indices of k-fold training and test sets
+        new dataset after removing duplicates
         """
-    dataset = integration_helpers.remove_duplicates(dataset)
-    if shuffle == True:
-        random_state = 4396
+        dataset = integration_helpers.remove_duplicates(dataset) # remove duplicates
+        if shuffle == True:
+            random_state = 4396
         kf = KFold(n_splits, shuffle, random_state)
         indices = kf.split(dataset)
         return (indices, dataset)
 
-    def LOG(dataset, test_group):  # leave out group
+    def LOG(dataset, test_group, frac = 1):  # leave out group
         """
         split dataset by leaving out a specific source as test set
+        
+        params:
         dataset: data frame
         test_group: string
+        frac: fraction of the left-out group that will be used as test set
         """
         # remove duplicates in train group.
         test_df = dataset[dataset['source'] == test_group]
@@ -92,14 +96,18 @@ class Splitter:
         frames = [train_df, test_df]
         dataset = pd.concat(frames)
         dataset.reset_index(drop=True, inplace=True)
-        test_indices = []
-        train_indices = list(range(len(dataset.index)))
+        raw_test_indices = []
+        raw_train_indices = list(range(len(dataset.index)))
         print("||||||||||||||||||| "+test_group+ " will be used as test set|||||||||||||||||||")
         for i in range(0,len(dataset.index)):
             if dataset.iloc[i]['source'] == test_group:
-                test_indices.append(i)
-                train_indices.remove(i)
-        return (train_indices, test_indices, dataset)
+                raw_test_indices.append(i)
+                raw_train_indices.remove(i)
+        test_indices = random.choices(raw_test_indices, k = int(frac*len(raw_test_indices)))
+        print(test_indices)
+        raw_test_indices = [x for x in raw_test_indices if x not in test_indices]
+        train_indices = raw_train_indices.extend(raw_test_indices)
+        return ((train_indices, test_indices), dataset)
     
     def leave_out_moleClass(dataset, mole_class_to_leave_out):
         """
@@ -273,7 +281,7 @@ class Model:
                                     n_atom_feat=n_atom_feat,
                                     n_pair_feat=n_pair_feat,
                                     n_hidden= n_hidden,
-				                    T=T,
+				    T=T,
                                     M=M,
                                     batch_size=batch_size,
                                     learning_rate=learning_rate,
