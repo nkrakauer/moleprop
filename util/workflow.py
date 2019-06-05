@@ -3,14 +3,13 @@ import sys
 import numpy as np
 import pandas as pd
 import random                                            # for randomly choosing indices from left-out group as test indices
-import bokeh                                             # TODO for interactive plot
+import bokeh                                             # for interactive plot
 import statistics as stat
 import seaborn
 import matplotlib.pyplot as plt
 import integration_helpers                               # for removing duplicates
 from sklearn.model_selection import KFold
 from deepchem.trans.transformers import undo_transforms  # for getting real predictions
-
 
 ## pkg needed for DeepChem
 import tensorflow as tf
@@ -75,7 +74,7 @@ class Splitter:
             random_state = 4396
         kf = KFold(n_splits, shuffle, random_state)
         indices = kf.split(dataset)
-        return (indices, dataset)
+        return indices, dataset
 
     def LOG(dataset, test_group, frac = 1):  # leave out group
         """
@@ -105,11 +104,11 @@ class Splitter:
             if dataset.iloc[i]['source'] == test_group:
                 raw_test_indices.append(i)
                 raw_train_indices.remove(i)
-        test_indices = random.choices(raw_test_indices, k = int(frac*len(raw_test_indices)))
-        print(test_indices)
+        test_indices = random.sample(raw_test_indices, int(frac*len(raw_test_indices)))
+        # print(test_indices)
         raw_test_indices = [x for x in raw_test_indices if x not in test_indices]
-        train_indices = raw_train_indices.extend(raw_test_indices)
-        return ((train_indices, test_indices), dataset)
+        train_indices = raw_train_indices + raw_test_indices
+        return (train_indices, test_indices), dataset
     
     def leave_out_moleClass(dataset, mole_class_to_leave_out):
         """
@@ -144,18 +143,20 @@ class Simulate:
         for train_indices, test_indices in indices:
             train_set = data.iloc[train_indices]
             test_set = data.iloc[test_indices]
+            cv_test_datasets.append(test_set)        
             train_set.to_csv('train_set.csv',index = False)
             test_set.to_csv('test_set.csv',index = False)
             if model == 'MPNN':
-                rms_score,mae_score,pred,test_dataset = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
+                rms_score,mae_score,pred = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
             elif model == 'graphconv' or model == 'GC' or model == 'GraphConv':
-                rms_score,mae_score,pred,test_dataset = Model.graphconv(model_args,"train_set.csv", "test_set.csv")       
+                rms_score,mae_score,pred = Model.graphconv(model_args,"train_set.csv", "test_set.csv")       
             cv_rms_scores.append(rms_score)
             cv_mae_scores.append(mae_score)
             cv_predictions.append(pred)
-            cv_test_datasets.append(test_dataset)
+            os.remove("train_set.csv")
+            os.remove("test_set.csv")
         avg_cv_rms_score = sum(cv_rms_scores)/n_splits
-        avg_cv_ame_score = sum(cv_mae_scores)/n_splits
+        avg_cv_mae_score = sum(cv_mae_scores)/n_splits
         scores = (avg_cv_rms_score,avg_cv_mae_score,cv_rms_scores,cv_mae_scores)
         return scores, cv_predictions, cv_test_datasets
 
@@ -175,10 +176,12 @@ class Simulate:
         train_set.to_csv('train_set.csv',index = False)
         test_set.to_csv('test_set.csv',index = False)
         if model == 'MPNN':
-            rms_score,mae_score,pred,test_dataset = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
-        elif model == 'GraphConv':
-            rms_score,mae_score,pred,test_dataset = Model.graphconv(model_args,"train_set.csv", "test_set.csv")       
-        return rms_score,mae_score,pred,test_dataset
+            rms_score,mae_score,pred = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
+        elif model == 'GraphConv' or model == 'graphconv' or model == 'GC':
+            rms_score,mae_score,pred = Model.graphconv(model_args,"train_set.csv", "test_set.csv")       
+        os.remove("train_set.csv")
+        os.remove("test_set.csv")
+        return rms_score,mae_score,pred,test_set
 
 class Model:
     
@@ -193,10 +196,10 @@ class Model:
             'mode': 'regression'},
         'MPNN':{
             'n_tasks':1,
-            'n_atom_feat':70,
+            'n_atom_feat':75,
             'n_pair_feat':14,      # NEED to be 14 for WaveFeaturizer
-            'T':5,
-            'M':10,
+            'T':1,
+            'M':1,
             'batch_size':32,
             'nb_epoch': 50,
             'learning_rate':0.0001,
@@ -211,13 +214,13 @@ class Model:
         if args != None:
             for key in args:
                 model_args[key] = args[key]
+                print(key + " is: " + str(args[key]))
         flashpoint_tasks = ['flashpoint']  # Need to set the column name to be excatly "flashPoint"
         loader = dc.data.CSVLoader(tasks = flashpoint_tasks, 
                                         smiles_field="smiles", 
                                         featurizer = dc.feat.ConvMolFeaturizer())
         train_dataset = loader.featurize(train_set, shard_size=8192)
         test_dataset = loader.featurize(test_set, shard_size=8192)
-        return_test_dataset = test_dataset  # used to return test dataset for plotting
         transformers = [
             dc.trans.NormalizationTransformer(
             transform_y=True, dataset=train_dataset, move_mean=True) # sxy: move_mean may need to change (3/23/2019)
@@ -231,6 +234,7 @@ class Model:
         for transformer in transformers:
              test_dataset = transformer.transform(test_dataset)
                 
+                
         model = dc.models.GraphConvModel(n_tasks = model_args['n_tasks'], 
                                          mode = model_args['mode'], 
                                          dropout = model_args['dropout'])
@@ -240,9 +244,8 @@ class Model:
         pred = model.predict(test_dataset)
         pred = undo_transforms(pred, transformers)
         rms_score = list( model.evaluate(test_dataset, [metric_rms],transformers).values()).pop()
-        mae_socre = list( model.evaluate(test_dataset, [metric_mae],transformers).values()).pop()
-        # print("GraphConv\n ===============================\n RMSE score is: ", score)
-        return rms_score, mae_score,pred,return_test_dataset
+        mae_score = list( model.evaluate(test_dataset, [metric_mae],transformers).values()).pop()
+        return rms_score, mae_score,pred
 
     def MPNN(args, train_set, test_set):
         # parse arguments
@@ -251,13 +254,12 @@ class Model:
             for key in args:
                 model_args[key] = args[key]
 
-        flashpoint_tasks = ['flashPoint']  # Need to set the column name to be excatly "flashPoint"
+        flashpoint_tasks = ['flashpoint']  # Need to set the column name to be excatly "flashPoint"
         loader = dc.data.CSVLoader(tasks = flashpoint_tasks, 
                                         smiles_field="smiles", 
                                         featurizer = dc.feat.WeaveFeaturizer())
         train_dataset = loader.featurize(train_set, shard_size=8192)
         test_dataset = loader.featurize(test_set, shard_size=8192)
-        return_test_dataset = test_dataset  # used to return test dataset for plotting
         transformers = [
             dc.trans.NormalizationTransformer(
             transform_y=True, dataset=train_dataset, move_mean=True) # sxy: move_mean may need to change (3/23/2019)
@@ -285,12 +287,11 @@ class Model:
         pred = model.predict(test_dataset)
         pred = undo_transforms(pred, transformers)
         rms_score = list( model.evaluate(test_dataset, [metric_rms],transformers).values()).pop()
-        mae_socre = list( model.evaluate(test_dataset, [metric_mae],transformers).values()).pop()
-        # print("MPNN\n ===============================\n RMSE score is: ", score)
-        return rms_score,mae_score,pred,return_test_dataset
+        mae_score = list( model.evaluate(test_dataset, [metric_mae],transformers).values()).pop()
+        return rms_score,mae_score,pred
 
 			
-class Plot:
+class Plotter:
     
     def parity_plot(pred, test_dataset, errorbar = False):
         """
@@ -311,18 +312,18 @@ class Plot:
             yeer = [0]*len(test_dataset)
         test_dataset['pred'] = avg_pred
         test_dataset['yeer'] = yeer
-        x = list(test_dataset['flashPoint'].values)
+        x = list(test_dataset['flashpoint'].values)
         y = list(test_dataset['pred'].values)
         # set figure parameters
         fg = seaborn.FacetGrid(data=test_dataset, hue='source', height = 8, aspect=1)
         fg.map(plt.errorbar,                  # type of plot
                'flashPoint', 'pred', 'yeer',  # data column
-               fmt = 'o', markersize = 10     # args for errorbar
+               fmt = 'o', markersize = 5     # args for errorbar
               ).add_legend()                  # add legend
         # set x,y limit
         min_val = min(min(y),min(y)-max(yeer),min(x)-max(yeer))
         max_val = max(max(y),max(y)+max(yeer),max(x)+max(yeer))
-	fg.set(xlim = (min_val,max_val), ylim =(min_val, max_val))
+        fg.set(xlim = (min_val,max_val), ylim =(min_val, max_val))
         for ax in fg.axes.flat:
             ax.plot((min_val, max_val),(min_val, max_val))
         plt.title("Parity Plot") 
