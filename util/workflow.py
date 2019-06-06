@@ -18,7 +18,6 @@ import deepchem as dc
 
 
 class Loader:
-    data = pd.DataFrame()
     def load(file_name, data_dir = './'):
         """
         load data from .csv file
@@ -34,7 +33,7 @@ class Loader:
         data = pd.read_csv(data_file) # encoding='latin-1' might be needed
         return data
 
-    def getinfo():
+    def getinfo(data):
         """
         get information of the dataset
         """
@@ -317,7 +316,7 @@ class Plotter:
         # set figure parameters
         fg = seaborn.FacetGrid(data=test_dataset, hue='source', height = 8, aspect=1)
         fg.map(plt.errorbar,                  # type of plot
-               'flashPoint', 'pred', 'yeer',  # data column
+               'flashpoint', 'pred', 'yeer',  # data column
                fmt = 'o', markersize = 5     # args for errorbar
               ).add_legend()                  # add legend
         # set x,y limit
@@ -330,6 +329,7 @@ class Plotter:
         plt.ylabel("Predicted") 
         plt.xlabel("Experimental") 
         seaborn.despine(fg.fig,top=False, right=False)#, left=True, bottom=True,)
+	plt.savefig('parity_plot.png')
     
     def interactive_plot(pred_result,true_result):
         return 0
