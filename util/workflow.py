@@ -3,13 +3,16 @@ import sys
 import numpy as np
 import pandas as pd
 import random                                            # for randomly choosing indices from left-out group as test indices
-import bokeh                                             # for interactive plot
+#  import bokeh                                             # TODO for interactive plot
 import statistics as stat
 import seaborn
 import matplotlib.pyplot as plt
 import integration_helpers                               # for removing duplicates
 from sklearn.model_selection import KFold
 from deepchem.trans.transformers import undo_transforms  # for getting real predictions
+import matplotlib
+plt.switch_backend('agg')
+# matplotlib.use('agg')
 
 ## pkg needed for DeepChem
 import tensorflow as tf
@@ -104,7 +107,6 @@ class Splitter:
                 raw_test_indices.append(i)
                 raw_train_indices.remove(i)
         test_indices = random.sample(raw_test_indices, int(frac*len(raw_test_indices)))
-        # print(test_indices)
         raw_test_indices = [x for x in raw_test_indices if x not in test_indices]
         train_indices = raw_train_indices + raw_test_indices
         return (train_indices, test_indices), dataset
@@ -117,7 +119,7 @@ class Splitter:
         return 0
 
 
-class Simulate:
+class Exec:
         
     def cv(data,
            indices, # k-fold indices of training and test sets
@@ -139,6 +141,7 @@ class Simulate:
         cv_mae_scores = []
         cv_predictions = []
         cv_test_datasets = []
+        i = 1       # track the number of iteration
         for train_indices, test_indices in indices:
             train_set = data.iloc[train_indices]
             test_set = data.iloc[test_indices]
@@ -149,6 +152,13 @@ class Simulate:
                 rms_score,mae_score,pred = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
             elif model == 'graphconv' or model == 'GC' or model == 'GraphConv':
                 rms_score,mae_score,pred = Model.graphconv(model_args,"train_set.csv", "test_set.csv")       
+            print("=============== CV ",i," Training set info =================")
+            Loader.getinfo(train_set)
+            print("===================================================")            
+            print("=============== CV ",i," test set info =================")
+            Loader.getinfo(test_set)
+            print("===================================================")
+            i += 1
             cv_rms_scores.append(rms_score)
             cv_mae_scores.append(mae_score)
             cv_predictions.append(pred)
@@ -292,13 +302,16 @@ class Model:
 			
 class Plotter:
     
-    def parity_plot(pred, test_dataset, errorbar = False):
+    def parity_plot(pred, test_dataset, errorbar = False, plot_name = "parity_plot,png",text = None):
         """
-        pred_rsutl: List - predicted results
+        text: dict of text that you want to add to the plot
+        pred: List - predicted results
         test_dataset: DataFrame - original test dataset containing index, true flashpoints, source
         errorbar: if true, plot scatter plot for error bars
         """
+
         # add pred_result to the test_dataset DataFrame
+        test_dataset = pd.DataFrame(test_dataset)
         seaborn.set(style = 'white',font_scale = 2)
         yeer = []
         avg_pred = []
@@ -314,14 +327,23 @@ class Plotter:
         x = list(test_dataset['flashpoint'].values)
         y = list(test_dataset['pred'].values)
         # set figure parameters
-        fg = seaborn.FacetGrid(data=test_dataset, hue='source', height = 8, aspect=1)
+        fg = seaborn.FacetGrid(data=test_dataset, hue='source', height = 8, aspect=1.25)
         fg.map(plt.errorbar,                  # type of plot
                'flashpoint', 'pred', 'yeer',  # data column
-               fmt = 'o', markersize = 5     # args for errorbar
+               fmt = 'o', markersize = 5      # args for errorbar
               ).add_legend()                  # add legend
         # set x,y limit
-        min_val = min(min(y),min(y)-max(yeer),min(x)-max(yeer))
-        max_val = max(max(y),max(y)+max(yeer),max(x)+max(yeer))
+        min_val = min(min(y),min(y)-max(yeer),min(x)-max(yeer)) - 20
+        max_val = max(max(y),max(y)+max(yeer),max(x)+max(yeer)) + 20
+        x = min_val
+        y = max_val
+        if text != None:
+            i =  2*(max_val-min_val)/15
+            scores = dict()
+            for key in text:
+                t = str(key +': ' + str(text[key]))
+                plt.text(x,y - i,t)
+                i -= (max_val-min_val)/15
         fg.set(xlim = (min_val,max_val), ylim =(min_val, max_val))
         for ax in fg.axes.flat:
             ax.plot((min_val, max_val),(min_val, max_val))
@@ -329,7 +351,7 @@ class Plotter:
         plt.ylabel("Predicted") 
         plt.xlabel("Experimental") 
         seaborn.despine(fg.fig,top=False, right=False)#, left=True, bottom=True,)
-	plt.savefig('parity_plot.png')
-    
+        plt.savefig(plot_name, dpi = 1000) 
+
     def interactive_plot(pred_result,true_result):
         return 0
