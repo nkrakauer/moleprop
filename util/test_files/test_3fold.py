@@ -15,6 +15,16 @@ wf.Loader.getinfo(data)
 print("about to split\n")
 indices, newdata = wf.Splitter.k_fold(data,n_splits = 3,shuffle = True)
 
+'''
+GCNN_args = {'nb_epoch': 80,
+        'batch_size': 50,
+        'n_tasks': 1,
+        'graph_conv_layers':[64,64],
+        'dense_layer_size': 256,
+#        'dropout': 0.0,           # for testing if this workflow tool can correctly use default dropout if it is not inputted
+        'mode': 'regression'}
+'''
+
 ## Conduct CV
 print("about to do CV\n")
 scores,predictions,datasets = wf.Exec.cv(newdata, indices, 'GC', n_splits = 3)
