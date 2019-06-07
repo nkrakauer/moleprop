@@ -3,11 +3,11 @@ import pandas as pd
 
 print("About to load")
 loader = wf.Loader
-data = loader.load(file_name = 'carroll_all.csv',data_dir = '/srv/home/xsun256/Moleprop/summer19/datasets')
+data = loader.load(file_name = 'file.csv',data_dir = './')
 
 print("About to split")
 splitter = wf.Splitter
-indices,dataset = splitter.k_fold(data, n_splits = 2)
+indices,dataset = splitter.k_fold(data, n_splits = 3)
 
 args = {'nb_epoch': 80,
         'batch_size': 50,
@@ -17,16 +17,15 @@ args = {'nb_epoch': 80,
 #        'dropout': 0.0,           # for testing if this workflow tool can correctly use default dropout if it is not inputted
         'mode': 'regression'}
 
-dataset['flashpoint'] = dataset['flashPoint']
-
 print("About to simulate")
-scores,predictions,test_datasets = wf.Simulate.cv(dataset,indices, 'graphconv',model_args = args,n_splits = 2)
+scores,predictions,test_datasets = wf.Simulate.cv(dataset,indices, 'graphconv',model_args = args,n_splits = 3)
 
 # save predictions and corresponding testsets for testing parity_plot function
-#print(test_datasets[1])
+# save test datasets to csv files
 t = pd.DataFrame(data = test_datasets[1])
 t.to_csv("./test_dataset.csv")
 
+# save predictions to files
 f = open("./pred.txt",'w')
 predc = predictions[1].tolist()
 pred = " ".join(str(x) for x in predc)
@@ -44,8 +43,4 @@ print(rms_all)
 
 print("mae_all is: ")
 print(mae_all)
-
-for i in range(2):
-    print("predictions[",i,"]:")
-    print(predictions[i])
     
