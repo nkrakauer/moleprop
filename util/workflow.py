@@ -119,7 +119,7 @@ class Splitter:
         return 0
 
 
-class Simulate:
+class Exec:
         
     def cv(data,
            indices, # k-fold indices of training and test sets
