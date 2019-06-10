@@ -2,8 +2,8 @@ import os
 import sys
 import numpy as np
 import pandas as pd
-import random                                            # for randomly choosing indices from left-out group as test indices
-#  import bokeh                                             # TODO for interactive plot
+import random                                 # for randomly choosing indices from left-out group as test indices
+#import bokeh                                             # TODO for interactive plot
 import statistics as stat
 import seaborn
 import matplotlib.pyplot as plt
@@ -17,7 +17,7 @@ plt.switch_backend('agg')
 ## pkg needed for DeepChem
 import tensorflow as tf
 import deepchem as dc
-# from deepchem.models.tensorgraph.models.graph_models import GraphConvModel
+from deepchem.models.tensorgraph.models.graph_models import GraphConvModel
 
 
 class Loader:
@@ -60,18 +60,17 @@ class Loader:
         print("Std: " + str(data['flashpoint'].std()))
 
 
-
 class Splitter:
-	
     def k_fold(dataset, n_splits = 3, shuffle = True, random_state = None):
         """
         split data into k-fold
-
         Return:
         indices of k-fold training and test sets
         new dataset after removing duplicates
         """
         dataset = integration_helpers.remove_duplicates(dataset) # remove duplicates
+        print("================== Full dataset info =====================")
+        Loader.getinfo(dataset)
         if shuffle == True:
             random_state = 4396
         kf = KFold(n_splits, shuffle, random_state)
@@ -99,6 +98,8 @@ class Splitter:
         frames = [train_df, test_df]
         dataset = pd.concat(frames)
         dataset.reset_index(drop=True, inplace=True)
+        print("================== Full dataset info =====================")
+        Loader.getinfo(dataset)
         raw_test_indices = []
         raw_train_indices = list(range(len(dataset.index)))
         print("||||||||||||||||||| "+test_group+ " will be used as test set|||||||||||||||||||")
@@ -119,12 +120,12 @@ class Splitter:
         return 0
 
 
-class Exec:
-        
+class Run:
     def cv(data,
            indices, # k-fold indices of training and test sets
            model,  # need to be either MPNN or GraphConv
            model_args = None,
+           metrics = None,
            n_splits = 3):   
         """
         pass data into models (MPNN or graphconv) and conduct cross validation
@@ -139,6 +140,8 @@ class Exec:
             sys.exit("Only support MPNN model and GraphConv model")
         cv_rms_scores = []
         cv_mae_scores = []
+        cv_r2_scores = []
+        cv_aad_scores = []
         cv_predictions = []
         cv_test_datasets = []
         i = 1       # track the number of iteration
@@ -149,30 +152,51 @@ class Exec:
             train_set.to_csv('train_set.csv',index = False)
             test_set.to_csv('test_set.csv',index = False)
             if model == 'MPNN':
-                rms_score,mae_score,pred = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
+                rms_score,mae_score,r2_score,pred = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
             elif model == 'graphconv' or model == 'GC' or model == 'GraphConv':
-                rms_score,mae_score,pred = Model.graphconv(model_args,"train_set.csv", "test_set.csv")       
+                rms_score,mae_score,r2_score,pred = Model.graphconv(model_args,"train_set.csv", "test_set.csv")       
             print("=============== CV ",i," Training set info =================")
             Loader.getinfo(train_set)
             print("===================================================")            
-            print("=============== CV ",i," test set info =================")
+            print("=============== CV ",i," Test set info =================")
             Loader.getinfo(test_set)
             print("===================================================")
             i += 1
             cv_rms_scores.append(rms_score)
             cv_mae_scores.append(mae_score)
+            cv_r2_scores.append(r2_score)
+            cv_aad_scores.append(Run.getAAPD(test_set,pred))
             cv_predictions.append(pred)
             os.remove("train_set.csv")
             os.remove("test_set.csv")
-        avg_cv_rms_score = sum(cv_rms_scores)/n_splits
-        avg_cv_mae_score = sum(cv_mae_scores)/n_splits
-        scores = (avg_cv_rms_score,avg_cv_mae_score,cv_rms_scores,cv_mae_scores)
+        avg_rms_score = sum(cv_rms_scores)/n_splits
+        avg_mae_score = sum(cv_mae_scores)/n_splits
+        avg_r2_score = sum(cv_r2_scores)/n_splits
+        avg_aad_score = sum(cv_aad_scores)/n_splits
+        scores_all = {'RMSE':avg_rms_score,'RMSE_list':cv_rms_scores,
+                      'MAE': avg_mae_score,'MAE_list':cv_mae_scores,
+                      'R2': avg_r2_score, 'R2_list': cv_r2_scores,
+                      'AAD':avg_aad_score, 'AAD_list': cv_aad_scores}
+        scores = dict()
+        if metrics == None:  # return default scores (RMSE and R2)
+            scores = {'RMSE':scores_all['RMSE'], 
+                      'R2':scores_all['R2'],
+                      'RMSE_list':scores_all['RMSE_list'],
+                      'R2_list':scores_all['R2_list']}
+        else:
+            for m in metrics:
+                if not ( m == 'RMSE' or m == 'MAE' or m == 'AAD' or m == 'R2'):
+                    sys.exit('only supports RMSE, MAE, AAD, AAE, and R2')
+                scores[m] = scores_all[m]
+                list_name = str(m + '_list')
+                scores[list_name] = scores_all[list_name]
         return scores, cv_predictions, cv_test_datasets
 
     def LOG_validation(data,
                        indices, 
                        model, 
-                       model_args = None):
+                       model_args = None,
+                       metrics = None):
         """
         Conduct leave-out-group validation
         """
@@ -184,16 +208,47 @@ class Exec:
         test_set = data.iloc[test_indices]
         train_set.to_csv('train_set.csv',index = False)
         test_set.to_csv('test_set.csv',index = False)
+        print("=============== CV ",i," Training set info =================")
+        Loader.getinfo(train_set)
+        print("===================================================")            
+        print("=============== CV ",i," Test set info =================")
+        Loader.getinfo(test_set)
+        print("===================================================")
         if model == 'MPNN':
-            rms_score,mae_score,pred = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
+            rms_score,mae_score,r2_score,pred = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
         elif model == 'GraphConv' or model == 'graphconv' or model == 'GC':
-            rms_score,mae_score,pred = Model.graphconv(model_args,"train_set.csv", "test_set.csv")       
+            rms_score,mae_score,r2_score,pred = Model.graphconv(model_args,"train_set.csv", "test_set.csv")       
         os.remove("train_set.csv")
         os.remove("test_set.csv")
-        return rms_score,mae_score,pred,test_set
+        return rms_score,mae_score,r2_score,pred,test_set
+        scores_all = {'RMSE':rms_score,
+                      'MAE': mae_score,
+                      'R2': r2_score,
+                      'AAD':Run.getAAPD(test_set,pred)}
+        scores = dict()
+        if metrics == None:  # return default scores (RMSE and R2)
+            scores = {'RMSE':scores_all['RMSE'], 
+                      'R2':scores_all['R2']}
+        else:
+            for m in metrics:
+                if not ( m == 'RMSE' or m == 'MAE' or m == 'AAD' or m == 'R2'):
+                    sys.exit('only supports RMSE, MAE, AAD, AAE, and R2')
+                scores[m] = scores_all[m]
+        return scores, cv_predictions, cv_test_datasets
+    
+    def getAAPD(dataset, pred):  # Average absolute percent deviation
+        expt = dataset['flashpoint'].tolist()
+        sum = 0
+        for i in range(len(dataset)):
+            sum += (abs(expt[i] - pred[i])/expt[i])
+        sum = sum*100/len(dataset)
+        return sum
+
 
 class Model:
-    
+    """
+    return results for all metrics
+    """
     default_args = {
         'graphconv': {
             'nb_epoch': 50, 
@@ -223,7 +278,7 @@ class Model:
         if args != None:
             for key in args:
                 model_args[key] = args[key]
-                print(key + " is: " + str(args[key]))
+        #        print(key + " is: " + str(args[key]))
         flashpoint_tasks = ['flashpoint']  # Need to set the column name to be excatly "flashPoint"
         loader = dc.data.CSVLoader(tasks = flashpoint_tasks, 
                                         smiles_field="smiles", 
@@ -249,12 +304,14 @@ class Model:
                                          dropout = model_args['dropout'])
         metric_rms = dc.metrics.Metric(dc.metrics.rms_score, np.mean) # RMSE score
         metric_mae = dc.metrics.Metric(dc.metrics.mae_score, np.mean) # MAE score
+        metric_r2 = dc.metrics.Metric(dc.metrics.pearson_r2_score, np.mean) # R2 score
         model.fit(train_dataset, nb_epoch = model_args['nb_epoch']) 
         pred = model.predict(test_dataset)
         pred = undo_transforms(pred, transformers)
         rms_score = list( model.evaluate(test_dataset, [metric_rms],transformers).values()).pop()
         mae_score = list( model.evaluate(test_dataset, [metric_mae],transformers).values()).pop()
-        return rms_score, mae_score,pred
+        r2_score =  list( model.evaluate(test_dataset, [metric_r2], transformers).values()).pop()
+        return rms_score, mae_score, r2_score, pred
 
     def MPNN(args, train_set, test_set):
         # parse arguments
@@ -262,7 +319,6 @@ class Model:
         if args != None:
             for key in args:
                 model_args[key] = args[key]
-
         flashpoint_tasks = ['flashpoint']  # Need to set the column name to be excatly "flashPoint"
         loader = dc.data.CSVLoader(tasks = flashpoint_tasks, 
                                         smiles_field="smiles", 
@@ -292,17 +348,18 @@ class Model:
                                     mode = model_args['mode'])                    
         metric_rms = dc.metrics.Metric(dc.metrics.rms_score, np.mean) # RMSE score
         metric_mae = dc.metrics.Metric(dc.metrics.mae_score, np.mean) # MAE score
+        metric_r2 = dc.metrics.Metric(dc.metrics.pearson_r2_score, np.mean) # R2 score
         model.fit(train_dataset, nb_epoch = model_args['nb_epoch'])
         pred = model.predict(test_dataset)
         pred = undo_transforms(pred, transformers)
         rms_score = list( model.evaluate(test_dataset, [metric_rms],transformers).values()).pop()
         mae_score = list( model.evaluate(test_dataset, [metric_mae],transformers).values()).pop()
-        return rms_score,mae_score,pred
+        r2_score = list( model.evaluate(test_dataset, [metric_r2],transformers).values()).pop()
+        return rms_score,mae_score,r2_score, pred
 
-			
-class Plotter:
-    
-    def parity_plot(pred, test_dataset, errorbar = False, plot_name = "parity_plot,png",text = None):
+
+class Plotter: 
+    def parity_plot(pred, test_dataset, errorbar = False, plot_name = "parity_plot",text = None):
         """
         text: dict of text that you want to add to the plot
         pred: List - predicted results
@@ -351,7 +408,19 @@ class Plotter:
         plt.ylabel("Predicted") 
         plt.xlabel("Experimental") 
         seaborn.despine(fg.fig,top=False, right=False)#, left=True, bottom=True,)
-        plt.savefig(plot_name, dpi = 1000) 
+        plt.savefig(plot_name+'.png', dpi = 1000) 
+
+    def residual_histogram(pred, dataset, plot_name = 'histogram'):
+        expt = dataset['flashpoint'].tolist()
+        residual = []
+        for i in range(len(dataset)):
+            residual.append(expt[i] - pred[i])
+        plt.hist(residual, bins = 20)
+        plt.title("Histogram of the Residuals")
+        plt.ylabel("Frequency")
+        plt.xlabel("Residual")
+        #plt.show()
+        plt.savefig(plot_name+'.png', dpi = 1000)
 
     def interactive_plot(pred_result,true_result):
         return 0
