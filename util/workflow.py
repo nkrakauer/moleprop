@@ -12,6 +12,7 @@ from sklearn.model_selection import KFold
 from deepchem.trans.transformers import undo_transforms  # for getting real predictions
 import matplotlib
 plt.switch_backend('agg')
+plt.rc('font', size = 10)                                # change plot font size
 # matplotlib.use('agg')
 
 ## pkg needed for DeepChem
@@ -166,7 +167,7 @@ class Run:
             cv_rms_scores.append(rms_score)
             cv_mae_scores.append(mae_score)
             cv_r2_scores.append(r2_score)
-            cv_aad_scores.append(Run.getAAPD(test_set,pred))
+            cv_aad_scores.append((Run.getAAPD(test_set,pred))[0])
             cv_predictions.append(pred)
             outliers.append(Run.get_outliers(test_set, pred))
             os.remove("train_set.csv")
@@ -193,10 +194,7 @@ class Run:
                 list_name = str(m + '_list')
                 scores[list_name] = scores_all[list_name]
         outliers = pd.concat(outliers)
-        print("///////////////OUTLIERS///////////////")
-        print(outliers)
         outliers.to_csv('outliers.csv')
-        print("//////////////////////////////////////")
         return scores, cv_predictions, cv_test_datasets
 
     def LOG_validation(data,
@@ -230,7 +228,7 @@ class Run:
         scores_all = {'RMSE':rms_score,
                       'MAE': mae_score,
                       'R2': r2_score,
-                      'AAD':Run.getAAPD(test_set,pred)}
+                      'AAD':(Run.getAAPD(test_set,pred))[0]}
         scores = dict()
         if metrics == None:  # return default scores (RMSE and R2)
             scores = {'RMSE':scores_all['RMSE'], 
@@ -241,10 +239,7 @@ class Run:
                     sys.exit('only supports RMSE, MAE, AAD, AAE, and R2')
                 scores[m] = scores_all[m]
         outliers = Run.get_outliers(test_set, pred)
-        print("///////////////OUTLIERS///////////////")
-        print(outliers)
         outliers.to_csv('outliers.csv')
-        print("//////////////////////////////////////")        
         return scores, cv_predictions, cv_test_datasets
     
     def getAAPD(dataset, pred):  # Average absolute percent deviation
@@ -257,11 +252,12 @@ class Run:
     
     def get_outliers(dataset,pred):
         expt = dataset['flashpoint'].tolist()
-        outliers = list()
+        residual = list()
         for i in range(len(dataset)):
-            if abs(expt[i] - pred[i]) > 100:
-                outliers.append(dataset.loc[dataset['flashpoint'] == expt[i]])
-        return pd.concat(outliers)
+            residual.append((expt[i]-pred[i])[0])
+        dataset['residual'] = residual
+        outliers = dataset[(dataset.residual > 100) | (dataset.residual < -100)]
+        return outliers
 
 class Model:
     """
@@ -296,7 +292,6 @@ class Model:
         if args != None:
             for key in args:
                 model_args[key] = args[key]
-        #        print(key + " is: " + str(args[key]))
         flashpoint_tasks = ['flashpoint']  # Need to set the column name to be excatly "flashPoint"
         loader = dc.data.CSVLoader(tasks = flashpoint_tasks, 
                                         smiles_field="smiles", 
@@ -315,8 +310,6 @@ class Model:
         ]
         for transformer in transformers:
              test_dataset = transformer.transform(test_dataset)
-                
-                
         model = dc.models.GraphConvModel(n_tasks = model_args['n_tasks'], 
                                          mode = model_args['mode'], 
                                          dropout = model_args['dropout'])
@@ -337,7 +330,7 @@ class Model:
         if args != None:
             for key in args:
                 model_args[key] = args[key]
-        flashpoint_tasks = ['flashpoint']  # Need to set the column name to be excatly "flashPoint"
+        flashpoint_tasks = ['flashpoint']
         loader = dc.data.CSVLoader(tasks = flashpoint_tasks, 
                                         smiles_field="smiles", 
                                         featurizer = dc.feat.WeaveFeaturizer())
@@ -413,12 +406,12 @@ class Plotter:
         x = min_val
         y = max_val
         if text != None:
-            i =  2*(max_val-min_val)/15
-            scores = dict()
+            i =  (max_val-min_val)/20
             for key in text:
-                t = str(key +': ' + str(text[key]))
-                plt.text(x,y - i,t)
-                i -= (max_val-min_val)/15
+                if key.find('list') == -1:
+                    t = str(key +': ' + str(round(text[key],2)))
+                    plt.text(x,y - i,t)
+                    i += (max_val-min_val)/15
         fg.set(xlim = (min_val,max_val), ylim =(min_val, max_val))
         for ax in fg.axes.flat:
             ax.plot((min_val, max_val),(min_val, max_val))
@@ -427,18 +420,28 @@ class Plotter:
         plt.xlabel("Experimental") 
         seaborn.despine(fg.fig,top=False, right=False)#, left=True, bottom=True,)
         plt.savefig(plot_name+'.png', dpi = 1000) 
+        plt.clf()
 
-    def residual_histogram(pred, dataset, plot_name = 'histogram'):
+    def residual_histogram(pred, dataset, plot_name = 'histogram', text = None):
         expt = dataset['flashpoint'].tolist()
         residual = []
         for i in range(len(dataset)):
-            residual.append(expt[i] - pred[i])
+            residual.append((expt[i] - pred[i])[0])
         plt.hist(residual, bins = 50)
         plt.title("Histogram of the Residuals")
-#         plt.ylabel("Frequency")
+        plt.ylabel("Frequency")
         plt.xlabel("Residual")
-        #plt.show()
+        left,right = plt.xlim()
+        bottom,top = plt.ylim()
+        i = top/20
+        if text != None:
+            for key in text:
+                if key.find('list') == -1:
+                    t = str(key +': ' + str(round((text[key]),2)))
+                    plt.text(left,top - i,t)
+                    i += top/15
         plt.savefig(plot_name+'.png', dpi = 1000)
+        plt.clf()
 
     def interactive_plot(pred_result,true_result):
         return 0
