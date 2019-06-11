@@ -144,6 +144,7 @@ class Run:
         cv_aad_scores = []
         cv_predictions = []
         cv_test_datasets = []
+        outliers = list()
         i = 1       # track the number of iteration
         for train_indices, test_indices in indices:
             train_set = data.iloc[train_indices]
@@ -167,6 +168,7 @@ class Run:
             cv_r2_scores.append(r2_score)
             cv_aad_scores.append(Run.getAAPD(test_set,pred))
             cv_predictions.append(pred)
+            outliers.append(Run.get_outliers(test_set, pred))
             os.remove("train_set.csv")
             os.remove("test_set.csv")
         avg_rms_score = sum(cv_rms_scores)/n_splits
@@ -190,6 +192,11 @@ class Run:
                 scores[m] = scores_all[m]
                 list_name = str(m + '_list')
                 scores[list_name] = scores_all[list_name]
+        outliers = pd.concat(outliers)
+        print("///////////////OUTLIERS///////////////")
+        print(outliers)
+        outliers.to_csv('outliers.csv')
+        print("//////////////////////////////////////")
         return scores, cv_predictions, cv_test_datasets
 
     def LOG_validation(data,
@@ -220,7 +227,6 @@ class Run:
             rms_score,mae_score,r2_score,pred = Model.graphconv(model_args,"train_set.csv", "test_set.csv")       
         os.remove("train_set.csv")
         os.remove("test_set.csv")
-        return rms_score,mae_score,r2_score,pred,test_set
         scores_all = {'RMSE':rms_score,
                       'MAE': mae_score,
                       'R2': r2_score,
@@ -234,6 +240,11 @@ class Run:
                 if not ( m == 'RMSE' or m == 'MAE' or m == 'AAD' or m == 'R2'):
                     sys.exit('only supports RMSE, MAE, AAD, AAE, and R2')
                 scores[m] = scores_all[m]
+        outliers = Run.get_outliers(test_set, pred)
+        print("///////////////OUTLIERS///////////////")
+        print(outliers)
+        outliers.to_csv('outliers.csv')
+        print("//////////////////////////////////////")        
         return scores, cv_predictions, cv_test_datasets
     
     def getAAPD(dataset, pred):  # Average absolute percent deviation
@@ -243,7 +254,14 @@ class Run:
             sum += (abs(expt[i] - pred[i])/expt[i])
         sum = sum*100/len(dataset)
         return sum
-
+    
+    def get_outliers(dataset,pred):
+        expt = dataset['flashpoint'].tolist()
+        outliers = list()
+        for i in range(len(dataset)):
+            if abs(expt[i] - pred[i]) > 100:
+                outliers.append(dataset.loc[dataset['flashpoint'] == expt[i]])
+        return pd.concat(outliers)
 
 class Model:
     """
@@ -415,9 +433,9 @@ class Plotter:
         residual = []
         for i in range(len(dataset)):
             residual.append(expt[i] - pred[i])
-        plt.hist(residual, bins = 20)
+        plt.hist(residual, bins = 50)
         plt.title("Histogram of the Residuals")
-        plt.ylabel("Frequency")
+#         plt.ylabel("Frequency")
         plt.xlabel("Residual")
         #plt.show()
         plt.savefig(plot_name+'.png', dpi = 1000)
