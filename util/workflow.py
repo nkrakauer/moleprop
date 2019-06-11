@@ -213,7 +213,7 @@ class Model:
         dropout = args["dropout"]
         mode = args["mode"]  # regression or classificiation
 
-        flashpoint_tasks = ['flashPoint']  # Need to set the column name to be excatly "flashPoint"
+        flashpoint_tasks = ['flashpoint']  # Need to set the column name to be excatly "flashpoint"
         loader = dc.data.CSVLoader(tasks = flashpoint_tasks, 
                                         smiles_field="smiles", 
                                         featurizer = dc.feat.ConvMolFeaturizer())
@@ -258,7 +258,7 @@ class Model:
         nb_epoch = args['nb_epoch']
         n_hidden = args['n_hidden]
 
-        flashpoint_tasks = ['flashPoint']  # Need to set the column name to be excatly "flashPoint"
+        flashpoint_tasks = ['flashpoint']  # Need to set the column name to be excatly "flashpoint"
         loader = dc.data.CSVLoader(tasks = flashpoint_tasks, 
                                         smiles_field="smiles", 
                                         featurizer = dc.feat.WeaveFeaturizer())
