@@ -1,5 +1,6 @@
 # moleprop
 Summer materials informatics work.
+Applying ML models (Neural Network) to predict molecular property (working on predicting flashpoint now)
 
 # Structure
 ## Models
@@ -16,6 +17,13 @@ Summer materials informatics work.
 - PubChem
 
 ## Util
-- GetCanonicalSMILE (RDKit)
-- C/FtoK
-- DuplicateCheck
+- integration tool
+  - GetCanonicalSMILE (RDKit)
+  - C/FtoK
+  - DuplicateCheck
+
+- workflow tool
+  - Loader
+  - SPlitter
+  - Exec
+  - Plotter

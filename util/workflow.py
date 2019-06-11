@@ -2,17 +2,25 @@ import os
 import sys
 import numpy as np
 import pandas as pd
-import integration_helpers ##for removing duplicates for k_fold splitter or other place where we need to remove duplicates 
+import random                                 # for randomly choosing indices from left-out group as test indices
+#import bokeh                                             # TODO for interactive plot
+import statistics as stat
+import seaborn
+import matplotlib.pyplot as plt
+import integration_helpers                               # for removing duplicates
 from sklearn.model_selection import KFold
+from deepchem.trans.transformers import undo_transforms  # for getting real predictions
+import matplotlib
+plt.switch_backend('agg')
+# matplotlib.use('agg')
 
-# pkg needed for DeepChem
+## pkg needed for DeepChem
 import tensorflow as tf
 import deepchem as dc
-# from deepchem.models.tensorgraph.models.graph_models import GraphConvModel
+from deepchem.models.tensorgraph.models.graph_models import GraphConvModel
 
 
 class Loader:
-    data = pd.DataFrame()
     def load(file_name, data_dir = './'):
         """
         load data from .csv file
@@ -28,7 +36,7 @@ class Loader:
         data = pd.read_csv(data_file) # encoding='latin-1' might be needed
         return data
 
-    def getinfo():
+    def getinfo(data):
         """
         get information of the dataset
         """
@@ -47,34 +55,36 @@ class Loader:
         for s in sources:
             print("  Source Name: " + s + ", Number of Data: " + str(source_info[s]))
         print('-----------------------------------------------------')
-        print("Mean: " + data['flashpoint'].mean())
+        print("Mean: " + str(data['flashpoint'].mean()))
         print('-----------------------------------------------------')
-        print("Std: " + data['flashpoint'].std())
-
+        print("Std: " + str(data['flashpoint'].std()))
 
 
 class Splitter:
-
-    def k_fold(dataset, n_splits = 3, shuffle = True):
+    def k_fold(dataset, n_splits = 3, shuffle = True, random_state = None):
         """
         split data into k-fold
-	
         Return:
-	indices of k-fold training and test sets
-	new dataset after removing duplicates
+        indices of k-fold training and test sets
+        new dataset after removing duplicates
         """
-    dataset = integration_helpers.remove_duplicates(dataset)
-    if shuffle == True:
-        random_state = 4396
+        dataset = integration_helpers.remove_duplicates(dataset) # remove duplicates
+        print("================== Full dataset info =====================")
+        Loader.getinfo(dataset)
+        if shuffle == True:
+            random_state = 4396
         kf = KFold(n_splits, shuffle, random_state)
         indices = kf.split(dataset)
-        return (indices, dataset)
+        return indices, dataset
 
-    def LOG(dataset, test_group):  # leave out group
+    def LOG(dataset, test_group, frac = 1):  # leave out group
         """
         split dataset by leaving out a specific source as test set
+        
+        params:
         dataset: data frame
         test_group: string
+        frac: fraction of the left-out group that will be used as test set
         """
         # remove duplicates in train group.
         test_df = dataset[dataset['source'] == test_group]
@@ -88,32 +98,19 @@ class Splitter:
         frames = [train_df, test_df]
         dataset = pd.concat(frames)
         dataset.reset_index(drop=True, inplace=True)
-        test_indices = []
-        train_indices = list(range(len(dataset.index)))
+        print("================== Full dataset info =====================")
+        Loader.getinfo(dataset)
+        raw_test_indices = []
+        raw_train_indices = list(range(len(dataset.index)))
         print("||||||||||||||||||| "+test_group+ " will be used as test set|||||||||||||||||||")
         for i in range(0,len(dataset.index)):
             if dataset.iloc[i]['source'] == test_group:
-                test_indices.append(i)
-                train_indices.remove(i)
-        return (train_indices, test_indices, dataset)
-
-#     def leave_out_duplicates(data):
-#         """
-#         dataset: dataframe of integrated dataset
-#         returns: dataframe with no duplicates
-#         """
-#         result = data.drop_duplicates(subset='smiles', keep=False)#[~duplicates]
-#         #for each unique smiles that has duplicates
-#         for smiles in data[data.duplicated(subset='smiles')]['smiles'].unique():
-#             dup_rows = data.loc[data['smiles'] == smiles]
-#             if dup_rows['flashpoint'].unique().shape[0] == 1:
-#                 # remove all but one
-#                 result = result.append(dup_rows.iloc[0], sort=False)
-#             else:
-#                 if dup_rows['flashpoint'].std() < 5:
-#                     # add 1 back
-#                     result = result.append(dup_rows.iloc[0], sort=False)
-#         return result  
+                raw_test_indices.append(i)
+                raw_train_indices.remove(i)
+        test_indices = random.sample(raw_test_indices, int(frac*len(raw_test_indices)))
+        raw_test_indices = [x for x in raw_test_indices if x not in test_indices]
+        train_indices = raw_train_indices + raw_test_indices
+        return (train_indices, test_indices), dataset
     
     def leave_out_moleClass(dataset, mole_class_to_leave_out):
         """
@@ -123,60 +120,135 @@ class Splitter:
         return 0
 
 
-
-class Simulate:
-        
+class Run:
     def cv(data,
            indices, # k-fold indices of training and test sets
            model,  # need to be either MPNN or GraphConv
-           model_args = None, 
+           model_args = None,
+           metrics = None,
            n_splits = 3):   
         """
         pass data into models (MPNN or graphconv) and conduct cross validation
+        
+        Return:
+        avg_cv_rms_score
+        avg_cv_mae_score
+        cv_rms_scores: a list of RMSE scores from cross validation
+        cv_mae_scores: a list of MAE scores from cross validation
         """
-        if not (model == 'MPNN' or model == 'graphconv'):
+        if not (model == 'MPNN' or model == 'graphconv' or model == 'GC' or model == 'GraphConv'):
             sys.exit("Only support MPNN model and GraphConv model")
-        cv_scores = []
+        cv_rms_scores = []
+        cv_mae_scores = []
+        cv_r2_scores = []
+        cv_aad_scores = []
+        cv_predictions = []
+        cv_test_datasets = []
+        i = 1       # track the number of iteration
         for train_indices, test_indices in indices:
             train_set = data.iloc[train_indices]
             test_set = data.iloc[test_indices]
+            cv_test_datasets.append(test_set)        
             train_set.to_csv('train_set.csv',index = False)
             test_set.to_csv('test_set.csv',index = False)
             if model == 'MPNN':
-                score = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
-            elif model == 'graphconv':
-                score = Model.graphconv(model_args,"train_set.csv", "test_set.csv")       
-            cv_scores.append(score)
-        avg_cv_score = sum(cv_scores)/n_splits
-        return avg_cv_score
+                rms_score,mae_score,r2_score,pred = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
+            elif model == 'graphconv' or model == 'GC' or model == 'GraphConv':
+                rms_score,mae_score,r2_score,pred = Model.graphconv(model_args,"train_set.csv", "test_set.csv")       
+            print("=============== CV ",i," Training set info =================")
+            Loader.getinfo(train_set)
+            print("===================================================")            
+            print("=============== CV ",i," Test set info =================")
+            Loader.getinfo(test_set)
+            print("===================================================")
+            i += 1
+            cv_rms_scores.append(rms_score)
+            cv_mae_scores.append(mae_score)
+            cv_r2_scores.append(r2_score)
+            cv_aad_scores.append(Run.getAAPD(test_set,pred))
+            cv_predictions.append(pred)
+            os.remove("train_set.csv")
+            os.remove("test_set.csv")
+        avg_rms_score = sum(cv_rms_scores)/n_splits
+        avg_mae_score = sum(cv_mae_scores)/n_splits
+        avg_r2_score = sum(cv_r2_scores)/n_splits
+        avg_aad_score = sum(cv_aad_scores)/n_splits
+        scores_all = {'RMSE':avg_rms_score,'RMSE_list':cv_rms_scores,
+                      'MAE': avg_mae_score,'MAE_list':cv_mae_scores,
+                      'R2': avg_r2_score, 'R2_list': cv_r2_scores,
+                      'AAD':avg_aad_score, 'AAD_list': cv_aad_scores}
+        scores = dict()
+        if metrics == None:  # return default scores (RMSE and R2)
+            scores = {'RMSE':scores_all['RMSE'], 
+                      'R2':scores_all['R2'],
+                      'RMSE_list':scores_all['RMSE_list'],
+                      'R2_list':scores_all['R2_list']}
+        else:
+            for m in metrics:
+                if not ( m == 'RMSE' or m == 'MAE' or m == 'AAD' or m == 'R2'):
+                    sys.exit('only supports RMSE, MAE, AAD, AAE, and R2')
+                scores[m] = scores_all[m]
+                list_name = str(m + '_list')
+                scores[list_name] = scores_all[list_name]
+        return scores, cv_predictions, cv_test_datasets
 
     def LOG_validation(data,
                        indices, 
                        model, 
-                       model_args = None):
+                       model_args = None,
+                       metrics = None):
         """
         Conduct leave-out-group validation
         """
         
-        if not (model == 'MPNN' or model == 'graphconv'):
+        if not (model == 'MPNN' or model == 'graphconv' or model == 'GC' or model == 'GraphConv'):
             sys.exit("Only supports MPNN model and graphconv model")
         train_indices, test_indices = indices
         train_set = data.iloc[train_indices]
         test_set = data.iloc[test_indices]
         train_set.to_csv('train_set.csv',index = False)
         test_set.to_csv('test_set.csv',index = False)
+        print("=============== CV ",i," Training set info =================")
+        Loader.getinfo(train_set)
+        print("===================================================")            
+        print("=============== CV ",i," Test set info =================")
+        Loader.getinfo(test_set)
+        print("===================================================")
         if model == 'MPNN':
-            score = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
-        elif model == 'GraphConv':
-            score = Model.graphconv(model_args, "train_set.csv", "test_set.csv")       
-        return score
-
-
-
+            rms_score,mae_score,r2_score,pred = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
+        elif model == 'GraphConv' or model == 'graphconv' or model == 'GC':
+            rms_score,mae_score,r2_score,pred = Model.graphconv(model_args,"train_set.csv", "test_set.csv")       
+        os.remove("train_set.csv")
+        os.remove("test_set.csv")
+        return rms_score,mae_score,r2_score,pred,test_set
+        scores_all = {'RMSE':rms_score,
+                      'MAE': mae_score,
+                      'R2': r2_score,
+                      'AAD':Run.getAAPD(test_set,pred)}
+        scores = dict()
+        if metrics == None:  # return default scores (RMSE and R2)
+            scores = {'RMSE':scores_all['RMSE'], 
+                      'R2':scores_all['R2']}
+        else:
+            for m in metrics:
+                if not ( m == 'RMSE' or m == 'MAE' or m == 'AAD' or m == 'R2'):
+                    sys.exit('only supports RMSE, MAE, AAD, AAE, and R2')
+                scores[m] = scores_all[m]
+        return scores, cv_predictions, cv_test_datasets
+    
+    def getAAPD(dataset, pred):  # Average absolute percent deviation
+        expt = dataset['flashpoint'].tolist()
+        sum = 0
+        for i in range(len(dataset)):
+            sum += (abs(expt[i] - pred[i])/expt[i])
+        sum = sum*100/len(dataset)
+        return sum
 
 
 class Model:
-    
+    """
+    return results for all metrics
+    """
     default_args = {
         'graphconv': {
             'nb_epoch': 50, 
@@ -189,31 +261,25 @@ class Model:
         'MPNN':{
             'n_tasks':1,
             'n_atom_feat':75,
-            'n_pair_feat':14,
+            'n_pair_feat':14,      # NEED to be 14 for WaveFeaturizer
             'T':1,
             'M':1,
             'batch_size':32,
             'nb_epoch': 50,
             'learning_rate':0.0001,
             'use_queue':False,
-            'mode':"regression",
-            'n_hidden' :75
+            'mode':"regression"
         }
     }
     
     def graphconv(args, train_set, test_set):
         # parse arguments
-        if args == None:
-            args = Model.default_args['graphconv']
-        nb_epoch = args["nb_epoch"]
-        batch_size =  args["batch_size"]
-        n_tasks = args["n_tasks"]
-        graph_conv_layers = args["graph_conv_layers"]
-        dense_layer_size = args["dense_layer_size"]
-        dropout = args["dropout"]
-        mode = args["mode"]  # regression or classificiation
-
-        flashpoint_tasks = ['flashpoint']  # Need to set the column name to be excatly "flashpoint"
+        model_args = Model.default_args['graphconv']
+        if args != None:
+            for key in args:
+                model_args[key] = args[key]
+        #        print(key + " is: " + str(args[key]))
+        flashpoint_tasks = ['flashpoint']  # Need to set the column name to be excatly "flashPoint"
         loader = dc.data.CSVLoader(tasks = flashpoint_tasks, 
                                         smiles_field="smiles", 
                                         featurizer = dc.feat.ConvMolFeaturizer())
@@ -233,36 +299,30 @@ class Model:
              test_dataset = transformer.transform(test_dataset)
                 
                 
-        model = dc.models.GraphConvModel(n_tasks = n_tasks, mode = mode, dropout = dropout)
-        metric = dc.metrics.Metric(dc.metrics.rms_score, np.mean)
-        model.fit(train_dataset, batch_size = batch_size, nb_epoch = nb_epoch) 
-        score = list( model.evaluate(test_dataset, [metric],transformers).values()).pop()
-        print("=================================")
-        print("GraphConv\n -----------------------------\n RMSE score is: ", score)        
-        print("=================================")        
-        return score
+        model = dc.models.GraphConvModel(n_tasks = model_args['n_tasks'], 
+                                         mode = model_args['mode'], 
+                                         dropout = model_args['dropout'])
+        metric_rms = dc.metrics.Metric(dc.metrics.rms_score, np.mean) # RMSE score
+        metric_mae = dc.metrics.Metric(dc.metrics.mae_score, np.mean) # MAE score
+        metric_r2 = dc.metrics.Metric(dc.metrics.pearson_r2_score, np.mean) # R2 score
+        model.fit(train_dataset, nb_epoch = model_args['nb_epoch']) 
+        pred = model.predict(test_dataset)
+        pred = undo_transforms(pred, transformers)
+        rms_score = list( model.evaluate(test_dataset, [metric_rms],transformers).values()).pop()
+        mae_score = list( model.evaluate(test_dataset, [metric_mae],transformers).values()).pop()
+        r2_score =  list( model.evaluate(test_dataset, [metric_r2], transformers).values()).pop()
+        return rms_score, mae_score, r2_score, pred
 
     def MPNN(args, train_set, test_set):
         # parse arguments
-        if args == None:
-            args = Model.default_args['MPNN']       
-        n_tasks = args['n_tasks']
-        n_atom_feat = args['n_atom_feat']
-        n_pair_feat = args['n_pair_feat']
-        T = args['T']
-        M = args['M']
-        batch_size = args['batch_size']
-        learning_rate = args['learning_rate']
-        use_queue = args['use_queue']
-        mode = args['mode']
-        nb_epoch = args['nb_epoch']
-        n_hidden = args['n_hidden]
-
-        flashpoint_tasks = ['flashpoint']  # Need to set the column name to be excatly "flashpoint"
+        model_args = Model.default_args['MPNN']
+        if args != None:
+            for key in args:
+                model_args[key] = args[key]
+        flashpoint_tasks = ['flashpoint']  # Need to set the column name to be excatly "flashPoint"
         loader = dc.data.CSVLoader(tasks = flashpoint_tasks, 
                                         smiles_field="smiles", 
                                         featurizer = dc.feat.WeaveFeaturizer())
-
         train_dataset = loader.featurize(train_set, shard_size=8192)
         test_dataset = loader.featurize(test_set, shard_size=8192)
         transformers = [
@@ -277,22 +337,90 @@ class Model:
         ]
         for transformer in transformers:
              test_dataset = transformer.transform(test_dataset)
+        model = dc.models.MPNNModel(n_tasks = model_args['n_tasks'],
+                                    n_atom_feat = model_args['n_atom_feat'],
+                                    n_pair_feat = model_args['n_pair_feat'],
+                                    T = model_args['T'],
+                                    M = model_args['M'],
+                                    batch_size = model_args['batch_size'],
+                                    learning_rate = model_args['learning_rate'],
+                                    use_queue = model_args['use_queue'],
+                                    mode = model_args['mode'])                    
+        metric_rms = dc.metrics.Metric(dc.metrics.rms_score, np.mean) # RMSE score
+        metric_mae = dc.metrics.Metric(dc.metrics.mae_score, np.mean) # MAE score
+        metric_r2 = dc.metrics.Metric(dc.metrics.pearson_r2_score, np.mean) # R2 score
+        model.fit(train_dataset, nb_epoch = model_args['nb_epoch'])
+        pred = model.predict(test_dataset)
+        pred = undo_transforms(pred, transformers)
+        rms_score = list( model.evaluate(test_dataset, [metric_rms],transformers).values()).pop()
+        mae_score = list( model.evaluate(test_dataset, [metric_mae],transformers).values()).pop()
+        r2_score = list( model.evaluate(test_dataset, [metric_r2],transformers).values()).pop()
+        return rms_score,mae_score,r2_score, pred
 
-        model = dc.models.MPNNModel(n_tasks = n_tasks,
-                                    n_atom_feat=n_atom_feat,
-                                    n_pair_feat=n_pair_feat,
-                                    n_hidden= n_hidden,
-				                    T=T,
-                                    M=M,
-                                    batch_size=batch_size,
-                                    learning_rate=learning_rate,
-                                    use_queue=True,#use_queue,
-                                    mode=mode)        
-                
-        metric = dc.metrics.Metric(dc.metrics.rms_score, np.mean)
-        model.fit(train_dataset, nb_epoch = nb_epoch) 
-        score = list( model.evaluate(test_dataset, [metric],transformers).values()).pop()
-        print("=================================")
-        print("MPNN\n -----------------------------\n RMSE score is: ", score)        
-        print("=================================")
-        return score
+
+class Plotter: 
+    def parity_plot(pred, test_dataset, errorbar = False, plot_name = "parity_plot",text = None):
+        """
+        text: dict of text that you want to add to the plot
+        pred: List - predicted results
+        test_dataset: DataFrame - original test dataset containing index, true flashpoints, source
+        errorbar: if true, plot scatter plot for error bars
+        """
+
+        # add pred_result to the test_dataset DataFrame
+        test_dataset = pd.DataFrame(test_dataset)
+        seaborn.set(style = 'white',font_scale = 2)
+        yeer = []
+        avg_pred = []
+        if errorbar == True:
+            for i in range(len(test_dataset)):
+                yeer.append(max(pred[i]) - min(pred[i]))
+                avg_pred.append(stat.mean(pred[i]))
+        else:
+            avg_pred = pred
+            yeer = [0]*len(test_dataset)
+        test_dataset['pred'] = avg_pred
+        test_dataset['yeer'] = yeer
+        x = list(test_dataset['flashpoint'].values)
+        y = list(test_dataset['pred'].values)
+        # set figure parameters
+        fg = seaborn.FacetGrid(data=test_dataset, hue='source', height = 8, aspect=1.25)
+        fg.map(plt.errorbar,                  # type of plot
+               'flashpoint', 'pred', 'yeer',  # data column
+               fmt = 'o', markersize = 5      # args for errorbar
+              ).add_legend()                  # add legend
+        # set x,y limit
+        min_val = min(min(y),min(y)-max(yeer),min(x)-max(yeer)) - 20
+        max_val = max(max(y),max(y)+max(yeer),max(x)+max(yeer)) + 20
+        x = min_val
+        y = max_val
+        if text != None:
+            i =  2*(max_val-min_val)/15
+            scores = dict()
+            for key in text:
+                t = str(key +': ' + str(text[key]))
+                plt.text(x,y - i,t)
+                i -= (max_val-min_val)/15
+        fg.set(xlim = (min_val,max_val), ylim =(min_val, max_val))
+        for ax in fg.axes.flat:
+            ax.plot((min_val, max_val),(min_val, max_val))
+        plt.title("Parity Plot") 
+        plt.ylabel("Predicted") 
+        plt.xlabel("Experimental") 
+        seaborn.despine(fg.fig,top=False, right=False)#, left=True, bottom=True,)
+        plt.savefig(plot_name+'.png', dpi = 1000) 
+
+    def residual_histogram(pred, dataset, plot_name = 'histogram'):
+        expt = dataset['flashpoint'].tolist()
+        residual = []
+        for i in range(len(dataset)):
+            residual.append(expt[i] - pred[i])
+        plt.hist(residual, bins = 20)
+        plt.title("Histogram of the Residuals")
+        plt.ylabel("Frequency")
+        plt.xlabel("Residual")
+        #plt.show()
+        plt.savefig(plot_name+'.png', dpi = 1000)
+
+    def interactive_plot(pred_result,true_result):
+        return 0
