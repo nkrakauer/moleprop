@@ -1,5 +1,20 @@
 from rdkit import Chem
 
+def remove_invalid_smiles(data):
+    invalid = []
+    for index, row in data.iterrows():
+        #print(row['smiles'])
+        if Chem.MolFromSmiles(row['smiles']) == None:
+            invalid.append(row['smiles'])
+            #data.drop(row.index[0], inplace=True)
+    print('invalid smiles strings')
+    print('------------------------------')
+    print(invalid)
+    print('------------------------------')
+    for smi in invalid:
+        data.drop([data[data['smiles'] == smi].index[0]], inplace=True)
+    return data
+
 def remove_duplicates(data):
     result = data.drop_duplicates(subset='smiles', keep=False)#[~duplicates]
     #for each unique smiles that has duplicates

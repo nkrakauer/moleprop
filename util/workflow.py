@@ -22,20 +22,6 @@ from deepchem.models.tensorgraph.models.graph_models import GraphConvModel
 
 
 class Loader:
-    def remove_invalid_smiles(data):
-    invalid = []
-    for index, row in data.iterrows():
-        #print(row['smiles'])
-        if Chem.MolFromSmiles(row['smiles']) == None:
-            invalid.append(row['smiles'])
-            #data.drop(row.index[0], inplace=True)
-    print('invalid smiles strings')
-    print('------------------------------')
-    print(invalid)
-    print('------------------------------')
-    for smi in invalid:
-        data.drop([data[data['smiles'] == smi].index[0]], inplace=True)
-
     def load(file_name, data_dir = './'):
         """
         load data from .csv file
@@ -49,14 +35,13 @@ class Loader:
             sys.exit(error_msg)
         print("|||||||||||||||||||||Loading " + file_name+ "|||||||||||||||||||||||")
         data = pd.read_csv(data_file) # encoding='latin-1' might be needed
-        Loader.remove_invalid_smiles(data)
+        Loader.getinfo(data, 'Original_dataset')
         return data
 
-    def getinfo(data):
+    def getinfo(data, name = 'getinfo'):
         """
         get information of the dataset
         """
-        print("================== Full dataset info =====================")
         sources = data.source.unique()
         source_info = dict()
         for s in sources:
@@ -65,17 +50,23 @@ class Loader:
                 if data.iloc[i]['source'] == s:
                     counter += 1
             source_info[s] = [counter]
-        print('-----------------------------------------------------')
-        print("Dataset length is: ", len(data.index))
-        print('-----------------------------------------------------')
-        print("Dataset sources info: ")
+        output = ("=====================================================\n" +
+                 name + " info:\n"+
+                 "-----------------------------------------------------\n" +
+                 "Dataset length is: " + str(len(data.index)) + "\n" + 
+                 "-----------------------------------------------------\n" +
+                 "Dataset sources info: \n")
         for s in sources:
-            print("  Source Name: " + s + ", Number of Data: " + str(source_info[s]))
-        print('-----------------------------------------------------')
-        print("Mean: " + str(data['flashpoint'].mean()))
-        print('-----------------------------------------------------')
-        print("Std: " + str(data['flashpoint'].std()))
-
+            output += (str("  Source name:" + str(s) + ", Number of data: " + str(source_info[s]) + "\n"))
+        output += ("-----------------------------------------------------\n" + 
+                  "Mean: " + str(data['flashpoint'].mean()) + "\n"
+                  "-----------------------------------------------------\n" + 
+                  "Std: " + str(data['flashpoint'].std()) + "\n" + 
+                  "=====================================================\n")
+        print(output)
+        file = open(name+'.txt', 'w')
+        file.write(output)
+        file.close()
 
 class Splitter:
     def k_fold(dataset, n_splits = 3, shuffle = True, random_state = None):
@@ -86,7 +77,7 @@ class Splitter:
         new dataset after removing duplicates
         """
         dataset = integration_helpers.remove_duplicates(dataset) # remove duplicates
-        Loader.getinfo(dataset)
+        Loader.getinfo(dataset, 'Full_dataset')
         if shuffle == True:
             random_state = 4396
         kf = KFold(n_splits, shuffle, random_state)
@@ -114,8 +105,7 @@ class Splitter:
         frames = [train_df, test_df]
         dataset = pd.concat(frames)
         dataset.reset_index(drop=True, inplace=True)
-        print("================== Full dataset info =====================")
-        Loader.getinfo(dataset)
+        Loader.getinfo(dataset, 'Full_dataset')
         raw_test_indices = []
         raw_train_indices = list(range(len(dataset.index)))
         print("||||||||||||||||||| "+test_group+ " will be used as test set|||||||||||||||||||")
@@ -172,12 +162,8 @@ class Run:
                 rms_score,mae_score,r2_score,pred = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
             elif model == 'graphconv' or model == 'GC' or model == 'GraphConv':
                 rms_score,mae_score,r2_score,pred = Model.graphconv(model_args,"train_set.csv", "test_set.csv")       
-            print("=============== CV ",i," Training set info =================")
-            Loader.getinfo(train_set)
-            print("===================================================")            
-            print("=============== CV ",i," Test set info =================")
-            Loader.getinfo(test_set)
-            print("===================================================")
+            Loader.getinfo(train_set, 'CV_'+str(i)+"_Train")
+            Loader.getinfo(test_set, 'CV_'+str(i)+"_Test")
             i += 1
             cv_rms_scores.append(rms_score)
             cv_mae_scores.append(mae_score)
@@ -228,12 +214,8 @@ class Run:
         test_set = data.iloc[test_indices]
         train_set.to_csv('train_set.csv',index = False)
         test_set.to_csv('test_set.csv',index = False)
-        print("=============== CV ",i," Training set info =================")
-        Loader.getinfo(train_set)
-        print("===================================================")            
-        print("=============== CV ",i," Test set info =================")
-        Loader.getinfo(test_set)
-        print("===================================================")
+        Loader.getinfo(train_set, "CV_"+str(i)+"_Train")
+        Loader.getinfo(test_set, "CV_"+str(i)+"_Test")
         if model == 'MPNN':
             rms_score,mae_score,r2_score,pred = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
         elif model == 'GraphConv' or model == 'graphconv' or model == 'GC':
