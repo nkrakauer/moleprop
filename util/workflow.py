@@ -22,6 +22,20 @@ from deepchem.models.tensorgraph.models.graph_models import GraphConvModel
 
 
 class Loader:
+    def remove_invalid_smiles(data):
+    invalid = []
+    for index, row in data.iterrows():
+        #print(row['smiles'])
+        if Chem.MolFromSmiles(row['smiles']) == None:
+            invalid.append(row['smiles'])
+            #data.drop(row.index[0], inplace=True)
+    print('invalid smiles strings')
+    print('------------------------------')
+    print(invalid)
+    print('------------------------------')
+    for smi in invalid:
+        data.drop([data[data['smiles'] == smi].index[0]], inplace=True)
+
     def load(file_name, data_dir = './'):
         """
         load data from .csv file
@@ -35,12 +49,14 @@ class Loader:
             sys.exit(error_msg)
         print("|||||||||||||||||||||Loading " + file_name+ "|||||||||||||||||||||||")
         data = pd.read_csv(data_file) # encoding='latin-1' might be needed
+        Loader.remove_invalid_smiles(data)
         return data
 
     def getinfo(data):
         """
         get information of the dataset
         """
+        print("================== Full dataset info =====================")
         sources = data.source.unique()
         source_info = dict()
         for s in sources:
@@ -70,7 +86,6 @@ class Splitter:
         new dataset after removing duplicates
         """
         dataset = integration_helpers.remove_duplicates(dataset) # remove duplicates
-        print("================== Full dataset info =====================")
         Loader.getinfo(dataset)
         if shuffle == True:
             random_state = 4396
