@@ -1,6 +1,11 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# ## New features (updated 6/13/2019):
+#     1. implementation for integrated plot
+#     2. workflow tool can automatically create folders for plots and data info now
+#     3. more well-structured output files
+
 # # STEP 1
 # - import workflow.py and need to make sure that integration_helpers.py is under the same dir as workflow.py<br/>
 # - change '../' to your dir of workflow.py
@@ -86,7 +91,7 @@ indices,dataset = splitter.k_fold(data, n_splits = 3)
 #     - predictions: list of predictions from every iteration
 #     - test_Dataset: list of test datasets from every iteration
 
-# In[ ]:
+# In[1]:
 
 
 '''
@@ -99,7 +104,19 @@ GC_args_example = {'nb_epoch': 80,
         'mode': 'regression'}
 '''
 print("About to simulate")
-scores,predictions,test_datasets = wf.Run.cv(dataset,indices, 'GC',model_args = None,n_splits = 3, metrics = ['AAD', 'RMSE', 'MAE', 'R2'])
+# Cross Validation
+scores,predictions,test_datasets = wf.Run.cv(dataset,indices, 
+                                             'GC',
+                                             model_args = None,
+                                             n_splits = 3, 
+                                             metrics = ['AAD', 'RMSE', 'MAE', 'R2'])
+# LOG validation
+'''
+scores,predictions,test_datasets = wf.Run.cv(dataset,indices, 
+                                             'GC',
+                                             model_args = None,
+                                             metrics = ['AAD', 'RMSE', 'MAE', 'R2'])
+'''
 
 
 # # STEP5
@@ -111,16 +128,43 @@ scores,predictions,test_datasets = wf.Run.cv(dataset,indices, 'GC',model_args = 
 # In[ ]:
 
 
+# Make plots for every fold
 for key in scores:
     print(key+" = "+str(scores[key]))
 
+print("About to make parity plots")
 for i in range(len(predictions)):
-    p_name = "./parity_plot/MPNN_parity_"+str(i)
-    txt = {"Iteration number ":i+1,"RMSE":scores['RMSE_list'][i], "R2":scores['R2_list'][i], "MAE":scores['MAE_list'][i], "AAD":scores['AAD_list'][i]}
+    p_name = "parity_"+str(i)
+    std = test_datasets[i]['flashpoint'].std()
+    txt = {
+           "RMSE":scores['RMSE_list'][i], 
+           "R2":scores['R2_list'][i], 
+           "MAE":scores['MAE_list'][i], 
+           "AAD":scores['AAD_list'][i],
+           "RMSE/std":scores['RMSE_list'][i]/std}
     wf.Plotter.parity_plot(predictions[i],test_datasets[i], plot_name = p_name, text = txt)
 
+print("About to make residual plot")
 for i in range(len(predictions)):
-    r_name = "./residual_plot/MPNN_residual_"+str(i)
-    txt = {"Iteration number ":i+1,"RMSE":scores['RMSE_list'][i], "R2":scores['R2_list'][i], "MAE":scores['MAE_list'][i], "AAD":scores['AAD_list'][i]}
+    r_name = "residual_"+str(i)
+    std = test_datasets[i]['flashpoint'].std()
+    txt = {
+           "RMSE":scores['RMSE_list'][i],
+           "R2":scores['R2_list'][i],
+           "MAE":scores['MAE_list'][i],
+           "AAD":scores['AAD_list'][i],
+           "RMSE/std":scores['RMSE_list'][i]/std}
     wf.Plotter.residual_histogram(predictions[i],test_datasets[i], plot_name = r_name, text = txt)
+
+# For making integrated plots 
+print("About to plot full data")
+P = predictions[0] + predictions[1]+ predictions[2]
+D = pd.concat(test_datasets)
+txt = {'RMSE/STD': scores['RMSE']/D['flashpoint'].std(),
+       'RMSE': scores['RMSE'],
+       'MAE': scores['MAE'],
+       'R2': scores['R2'],
+       'AAD': scores['AAD']}
+wf.Plotter.parity_plot(P,D,plot_name = "Full_parity", text = txt)
+wf.Plotter.residual_histogram(P,D,plot_name = "Full_residual", text = txt)
 
