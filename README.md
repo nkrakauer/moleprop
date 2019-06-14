@@ -21,9 +21,10 @@ Applying ML models (Neural Network) to predict molecular property (working on pr
   - GetCanonicalSMILE (RDKit)
   - C/FtoK
   - DuplicateCheck
-
+  - Invalid_SMILES_Check
+  
 - workflow tool
   - Loader
-  - SPlitter
-  - Exec
+  - Splitter
+  - Run
   - Plotter

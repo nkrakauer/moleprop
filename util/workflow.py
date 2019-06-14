@@ -12,7 +12,7 @@ from sklearn.model_selection import KFold
 from deepchem.trans.transformers import undo_transforms  # for getting real predictions
 import matplotlib
 plt.switch_backend('agg')
-plt.rc('font', size = 10)                                # change plot font size
+plt.rc('font', size = 8)                                # change plot font size
 # matplotlib.use('agg')
 
 ## pkg needed for DeepChem
@@ -22,20 +22,6 @@ from deepchem.models.tensorgraph.models.graph_models import GraphConvModel
 
 
 class Loader:
-    def remove_invalid_smiles(data):
-    invalid = []
-    for index, row in data.iterrows():
-        #print(row['smiles'])
-        if Chem.MolFromSmiles(row['smiles']) == None:
-            invalid.append(row['smiles'])
-            #data.drop(row.index[0], inplace=True)
-    print('invalid smiles strings')
-    print('------------------------------')
-    print(invalid)
-    print('------------------------------')
-    for smi in invalid:
-        data.drop([data[data['smiles'] == smi].index[0]], inplace=True)
-
     def load(file_name, data_dir = './'):
         """
         load data from .csv file
@@ -49,14 +35,17 @@ class Loader:
             sys.exit(error_msg)
         print("|||||||||||||||||||||Loading " + file_name+ "|||||||||||||||||||||||")
         data = pd.read_csv(data_file) # encoding='latin-1' might be needed
-        Loader.remove_invalid_smiles(data)
+        Loader.getinfo(data, 'Original_dataset')
         return data
 
-    def getinfo(data):
+    def getinfo(data, name = 'getinfo'):
         """
         get information of the dataset
         """
-        print("================== Full dataset info =====================")
+        # Create target Directory if don't exist
+        if not os.path.exists('dataset_info'):
+            os.mkdir('dataset_info')
+            print("||||||||||||||||Directory dataset_info Created||||||||||||||||")
         sources = data.source.unique()
         source_info = dict()
         for s in sources:
@@ -65,17 +54,23 @@ class Loader:
                 if data.iloc[i]['source'] == s:
                     counter += 1
             source_info[s] = [counter]
-        print('-----------------------------------------------------')
-        print("Dataset length is: ", len(data.index))
-        print('-----------------------------------------------------')
-        print("Dataset sources info: ")
+        output = ("=====================================================\n" +
+                 name + " info:\n"+
+                 "-----------------------------------------------------\n" +
+                 "Dataset length is: " + str(len(data.index)) + "\n" + 
+                 "-----------------------------------------------------\n" +
+                 "Dataset sources info: \n")
         for s in sources:
-            print("  Source Name: " + s + ", Number of Data: " + str(source_info[s]))
-        print('-----------------------------------------------------')
-        print("Mean: " + str(data['flashpoint'].mean()))
-        print('-----------------------------------------------------')
-        print("Std: " + str(data['flashpoint'].std()))
-
+            output += (str("  Source name:" + str(s) + ", Number of data: " + str(source_info[s]) + "\n"))
+        output += ("-----------------------------------------------------\n" + 
+                  "Mean: " + str(data['flashpoint'].mean()) + "\n"
+                  "-----------------------------------------------------\n" + 
+                  "Std: " + str(data['flashpoint'].std()) + "\n" + 
+                  "=====================================================\n")
+        print(output)
+        file = open('./dataset_info/'+name+'.txt', 'w')
+        file.write(output)
+        file.close()
 
 class Splitter:
     def k_fold(dataset, n_splits = 3, shuffle = True, random_state = None):
@@ -86,7 +81,7 @@ class Splitter:
         new dataset after removing duplicates
         """
         dataset = integration_helpers.remove_duplicates(dataset) # remove duplicates
-        Loader.getinfo(dataset)
+        Loader.getinfo(dataset, 'Full_dataset')
         if shuffle == True:
             random_state = 4396
         kf = KFold(n_splits, shuffle, random_state)
@@ -114,8 +109,7 @@ class Splitter:
         frames = [train_df, test_df]
         dataset = pd.concat(frames)
         dataset.reset_index(drop=True, inplace=True)
-        print("================== Full dataset info =====================")
-        Loader.getinfo(dataset)
+        Loader.getinfo(dataset, 'Full_dataset')
         raw_test_indices = []
         raw_train_indices = list(range(len(dataset.index)))
         print("||||||||||||||||||| "+test_group+ " will be used as test set|||||||||||||||||||")
@@ -172,17 +166,13 @@ class Run:
                 rms_score,mae_score,r2_score,pred = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
             elif model == 'graphconv' or model == 'GC' or model == 'GraphConv':
                 rms_score,mae_score,r2_score,pred = Model.graphconv(model_args,"train_set.csv", "test_set.csv")       
-            print("=============== CV ",i," Training set info =================")
-            Loader.getinfo(train_set)
-            print("===================================================")            
-            print("=============== CV ",i," Test set info =================")
-            Loader.getinfo(test_set)
-            print("===================================================")
+            Loader.getinfo(train_set, 'CV_'+str(i)+"_Train")
+            Loader.getinfo(test_set, 'CV_'+str(i)+"_Test")
             i += 1
             cv_rms_scores.append(rms_score)
             cv_mae_scores.append(mae_score)
             cv_r2_scores.append(r2_score)
-            cv_aad_scores.append((Run.getAAPD(test_set,pred))[0])
+            cv_aad_scores.append((Run.getAAPD(test_set,pred)))
             cv_predictions.append(pred)
             outliers.append(Run.get_outliers(test_set, pred))
             os.remove("train_set.csv")
@@ -210,6 +200,12 @@ class Run:
                 scores[list_name] = scores_all[list_name]
         outliers = pd.concat(outliers)
         outliers.to_csv('outliers.csv')
+        file = open('FINAL_RESULT.txt', 'w')
+        for key in scores:
+            s = key + " = " + str(scores[key])+"\n"
+            file.write(s)
+        #file.write(str(scores))
+        file.close()
         return scores, cv_predictions, cv_test_datasets
 
     def LOG_validation(data,
@@ -228,12 +224,8 @@ class Run:
         test_set = data.iloc[test_indices]
         train_set.to_csv('train_set.csv',index = False)
         test_set.to_csv('test_set.csv',index = False)
-        print("=============== CV ",i," Training set info =================")
-        Loader.getinfo(train_set)
-        print("===================================================")            
-        print("=============== CV ",i," Test set info =================")
-        Loader.getinfo(test_set)
-        print("===================================================")
+        Loader.getinfo(train_set, "CV_"+str(i)+"_Train")
+        Loader.getinfo(test_set, "CV_"+str(i)+"_Test")
         if model == 'MPNN':
             rms_score,mae_score,r2_score,pred = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
         elif model == 'GraphConv' or model == 'graphconv' or model == 'GC':
@@ -243,7 +235,7 @@ class Run:
         scores_all = {'RMSE':rms_score,
                       'MAE': mae_score,
                       'R2': r2_score,
-                      'AAD':(Run.getAAPD(test_set,pred))[0]}
+                      'AAD':(Run.getAAPD(test_set,pred))}
         scores = dict()
         if metrics == None:  # return default scores (RMSE and R2)
             scores = {'RMSE':scores_all['RMSE'], 
@@ -255,6 +247,12 @@ class Run:
                 scores[m] = scores_all[m]
         outliers = Run.get_outliers(test_set, pred)
         outliers.to_csv('outliers.csv')
+        file = open('FINAL_RESULT.txt', 'w')
+        for key in scores:
+            s = key + " = " + str(scores[key]) + "\n"
+            file.write(s)        
+        #file.write(str(scores))
+        file.close()
         return scores, cv_predictions, cv_test_datasets
     
     def getAAPD(dataset, pred):  # Average absolute percent deviation
@@ -269,7 +267,7 @@ class Run:
         expt = dataset['flashpoint'].tolist()
         residual = list()
         for i in range(len(dataset)):
-            residual.append((expt[i]-pred[i])[0])
+            residual.append((expt[i]-pred[i]))
         dataset['residual'] = residual
         outliers = dataset[(dataset.residual > 100) | (dataset.residual < -100)]
         return outliers
@@ -334,10 +332,11 @@ class Model:
         model.fit(train_dataset, nb_epoch = model_args['nb_epoch']) 
         pred = model.predict(test_dataset)
         pred = undo_transforms(pred, transformers)
+        flattened_pred = [y for x in pred for y in x]    # convert list of lists to faltten list
         rms_score = list( model.evaluate(test_dataset, [metric_rms],transformers).values()).pop()
         mae_score = list( model.evaluate(test_dataset, [metric_mae],transformers).values()).pop()
         r2_score =  list( model.evaluate(test_dataset, [metric_r2], transformers).values()).pop()
-        return rms_score, mae_score, r2_score, pred
+        return rms_score, mae_score, r2_score, flattened_pred
 
     def MPNN(args, train_set, test_set):
         # parse arguments
@@ -378,10 +377,11 @@ class Model:
         model.fit(train_dataset, nb_epoch = model_args['nb_epoch'])
         pred = model.predict(test_dataset)
         pred = undo_transforms(pred, transformers)
+        flattened_pred = [y for x in pred for y in x]    # convert list of lists to faltten list
         rms_score = list( model.evaluate(test_dataset, [metric_rms],transformers).values()).pop()
         mae_score = list( model.evaluate(test_dataset, [metric_mae],transformers).values()).pop()
         r2_score = list( model.evaluate(test_dataset, [metric_r2],transformers).values()).pop()
-        return rms_score,mae_score,r2_score, pred
+        return rms_score,mae_score,r2_score, flattened_pred
 
 
 class Plotter: 
@@ -392,7 +392,10 @@ class Plotter:
         test_dataset: DataFrame - original test dataset containing index, true flashpoints, source
         errorbar: if true, plot scatter plot for error bars
         """
-
+        # Create target Directory if don't exist
+        if not os.path.exists('parity_plot'):
+            os.mkdir('parity_plot')
+            print("||||||||||||||||Directory parity_plot Created||||||||||||||||")
         # add pred_result to the test_dataset DataFrame
         test_dataset = pd.DataFrame(test_dataset)
         seaborn.set(style = 'white',font_scale = 2)
@@ -425,6 +428,8 @@ class Plotter:
             for key in text:
                 if key.find('list') == -1:
                     t = str(key +': ' + str(round(text[key],2)))
+                    if key == 'AAD':
+                        t = t+str('%')
                     plt.text(x,y - i,t)
                     i += (max_val-min_val)/15
         fg.set(xlim = (min_val,max_val), ylim =(min_val, max_val))
@@ -434,14 +439,18 @@ class Plotter:
         plt.ylabel("Predicted") 
         plt.xlabel("Experimental") 
         seaborn.despine(fg.fig,top=False, right=False)#, left=True, bottom=True,)
-        plt.savefig(plot_name+'.png', dpi = 1000) 
+        plt.savefig('./parity_plot/'+plot_name+'.png', dpi = 1000) 
         plt.clf()
 
     def residual_histogram(pred, dataset, plot_name = 'histogram', text = None):
+        # Create target Directory if don't exist
+        if not os.path.exists('residual_plot'):
+            os.mkdir('residual_plot')
+            print("||||||||||||||||Directory residual_plot Created||||||||||||||||")
         expt = dataset['flashpoint'].tolist()
         residual = []
         for i in range(len(dataset)):
-            residual.append((expt[i] - pred[i])[0])
+            residual.append((expt[i] - pred[i]))
         plt.hist(residual, bins = 50)
         plt.title("Histogram of the Residuals")
         plt.ylabel("Frequency")
@@ -452,10 +461,12 @@ class Plotter:
         if text != None:
             for key in text:
                 if key.find('list') == -1:
-                    t = str(key +': ' + str(round((text[key]),2)))
+                    t = str(key +': ' + str(round(text[key],2)))
+                    if key == 'AAD':
+                        t = t+str('%')
                     plt.text(left,top - i,t)
                     i += top/15
-        plt.savefig(plot_name+'.png', dpi = 1000)
+        plt.savefig('./residual_plot/'+plot_name+'.png', dpi = 1000)
         plt.clf()
 
     def interactive_plot(pred_result,true_result):
