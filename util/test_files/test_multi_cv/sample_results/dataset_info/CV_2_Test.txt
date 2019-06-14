@@ -1,0 +1,18 @@
+=====================================================
+CV_2_Test info:
+-----------------------------------------------------
+Dataset length is: 33
+-----------------------------------------------------
+Dataset sources info: 
+  Source name:hazardous materials, Number of data: [2]
+  Source name:pubchem, Number of data: [17]
+  Source name:carroll11, Number of data: [9]
+  Source name:gelest_germanium, Number of data: [1]
+  Source name:chen14, Number of data: [1]
+  Source name:Saldana11, Number of data: [2]
+  Source name:gelest_tin, Number of data: [1]
+-----------------------------------------------------
+Mean: 339.5545454545454
+-----------------------------------------------------
+Std: 64.48765550916067
+=====================================================
