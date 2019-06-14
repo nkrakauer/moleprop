@@ -1,0 +1,15 @@
+=====================================================
+CV_9_Test info:
+-----------------------------------------------------
+Dataset length is: 10
+-----------------------------------------------------
+Dataset sources info: 
+  Source name:pubchem, Number of data: [4]
+  Source name:Saldana11, Number of data: [3]
+  Source name:carroll11, Number of data: [2]
+  Source name:hazardous materials, Number of data: [1]
+-----------------------------------------------------
+Mean: 340.175
+-----------------------------------------------------
+Std: 55.57008212858586
+=====================================================
