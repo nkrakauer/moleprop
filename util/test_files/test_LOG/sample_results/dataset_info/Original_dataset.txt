@@ -1,0 +1,21 @@
+=====================================================
+Original_dataset info:
+-----------------------------------------------------
+Dataset length is: 4270
+-----------------------------------------------------
+Dataset sources info: 
+  Source name:pubchem, Number of data: [1744]
+  Source name:carroll11, Number of data: [937]
+  Source name:chen14, Number of data: [211]
+  Source name:Saldana11, Number of data: [631]
+  Source name:gelest_germanium, Number of data: [35]
+  Source name:gelest_metal-organics, Number of data: [56]
+  Source name:pan12, Number of data: [193]
+  Source name:gelest_silanes, Number of data: [53]
+  Source name:gelest_tin, Number of data: [42]
+  Source name:hazardous materials, Number of data: [368]
+-----------------------------------------------------
+Mean: 337.213018735363
+-----------------------------------------------------
+Std: 63.87645963883474
+=====================================================
