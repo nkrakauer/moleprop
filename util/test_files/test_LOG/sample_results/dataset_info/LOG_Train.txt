@@ -1,0 +1,20 @@
+=====================================================
+LOG_Train info:
+-----------------------------------------------------
+Dataset length is: 2185
+-----------------------------------------------------
+Dataset sources info: 
+  Source name:carroll11, Number of data: [894]
+  Source name:chen14, Number of data: [205]
+  Source name:Saldana11, Number of data: [498]
+  Source name:gelest_germanium, Number of data: [35]
+  Source name:gelest_metal-organics, Number of data: [51]
+  Source name:pan12, Number of data: [187]
+  Source name:gelest_silanes, Number of data: [51]
+  Source name:gelest_tin, Number of data: [42]
+  Source name:hazardous materials, Number of data: [222]
+-----------------------------------------------------
+Mean: 323.3958077803204
+-----------------------------------------------------
+Std: 50.91031590340292
+=====================================================
