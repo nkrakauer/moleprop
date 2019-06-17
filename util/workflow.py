@@ -438,7 +438,7 @@ class Plotter:
         plt.ylabel("Predicted") 
         plt.xlabel("Experimental") 
         seaborn.despine(fg.fig,top=False, right=False)#, left=True, bottom=True,)
-        plt.savefig('./parity_plot/'+plot_name+'.png', dpi = 1000) 
+        plt.savefig('./parity_plot/'+plot_name+'.png', dpi = 500) 
         plt.clf()
 
     def residual_histogram(pred, dataset, plot_name = 'histogram', text = None):
@@ -465,7 +465,7 @@ class Plotter:
                         t = t+str('%')
                     plt.text(left,top - i,t)
                     i += top/15
-        plt.savefig('./residual_plot/'+plot_name+'.png', dpi = 1000)
+        plt.savefig('./residual_plot/'+plot_name+'.png', dpi = 500)
         plt.clf()
 
     def interactive_plot(pred_result,true_result):
