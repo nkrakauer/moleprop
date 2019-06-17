@@ -71,6 +71,21 @@ class Loader:
         file = open('./dataset_info/'+name+'.txt', 'w')
         file.write(output)
         file.close()
+        
+    def get_single_dataset(integrated_dataset, source_name):
+        """
+        this method is used to extract dataset from intgrated dataset
+
+        integrated_dataset: DataFrame
+        source_name: name of the source you want to extract from the integrated dataset
+        """
+        seperate_dataset_list = list()
+        for i in range(len(integrated_dataset.index)):
+            if integrated_dataset.iloc[i]['source'] == source_name:
+                seperate_dataset_list.append(integrated_dataset.iloc[i])
+        seperate_dataset = pd.DataFrame(seperate_dataset_list)
+#        seperate_dataset.to_csv('./'+source_name+'.csv')   #(optional) for saving this seperate dataset 
+        return seperate_dataset
 
 class Splitter:
     def k_fold(dataset, n_splits = 3, shuffle = True, random_state = None):
