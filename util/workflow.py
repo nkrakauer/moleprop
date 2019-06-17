@@ -113,7 +113,7 @@ class Splitter:
         raw_test_indices = []
         raw_train_indices = list(range(len(dataset.index)))
         print("||||||||||||||||||| "+test_group+ " will be used as test set|||||||||||||||||||")
-        for i in range(0,len(dataset.index)):
+        for i in range(len(dataset.index)):
             if dataset.iloc[i]['source'] == test_group:
                 raw_test_indices.append(i)
                 raw_train_indices.remove(i)
@@ -224,8 +224,8 @@ class Run:
         test_set = data.iloc[test_indices]
         train_set.to_csv('train_set.csv',index = False)
         test_set.to_csv('test_set.csv',index = False)
-        Loader.getinfo(train_set, "CV_"+str(i)+"_Train")
-        Loader.getinfo(test_set, "CV_"+str(i)+"_Test")
+        Loader.getinfo(train_set, "LOG_Train")
+        Loader.getinfo(test_set, "LOG_Test")
         if model == 'MPNN':
             rms_score,mae_score,r2_score,pred = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
         elif model == 'GraphConv' or model == 'graphconv' or model == 'GC':
@@ -251,9 +251,8 @@ class Run:
         for key in scores:
             s = key + " = " + str(scores[key]) + "\n"
             file.write(s)        
-        #file.write(str(scores))
         file.close()
-        return scores, cv_predictions, cv_test_datasets
+        return scores, pred, test_set
     
     def getAAPD(dataset, pred):  # Average absolute percent deviation
         expt = dataset['flashpoint'].tolist()
@@ -416,7 +415,7 @@ class Plotter:
         fg = seaborn.FacetGrid(data=test_dataset, hue='source', height = 8, aspect=1.25)
         fg.map(plt.errorbar,                  # type of plot
                'flashpoint', 'pred', 'yeer',  # data column
-               fmt = 'o', markersize = 5      # args for errorbar
+               fmt = 'o', markersize = 4      # args for errorbar
               ).add_legend()                  # add legend
         # set x,y limit
         min_val = min(min(y),min(y)-max(yeer),min(x)-max(yeer)) - 20
