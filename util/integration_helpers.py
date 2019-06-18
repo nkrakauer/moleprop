@@ -1,5 +1,19 @@
 from rdkit import Chem
 
+def check_similarity(dataset1, dataset2):
+    count = 0
+    print('Number of data in ' + dataset1.iloc[2]['source'] + ': ' +  str(len(dataset1)))
+    print('Number of data in ' + dataset2.iloc[2]['source'] + ': '+ str(len(dataset2)))
+    for i in range(len(dataset1)):
+        for j in range(len(dataset2)):
+            if dataset1.iloc[i]['compound'] == dataset2.iloc[j]['compound']:
+                count += 1
+    sim1 = count/len(dataset1)
+    sim2 = count/len(dataset2)
+    print('similarity for '+ dataset1.iloc[2]['source'] + '= ' + str(sim1) +
+          '\nsimilarity for ' + dataset2.iloc[2]['source'] + '= ' + str(sim2))
+    return (sim1,sim2)
+
 def remove_invalid_smiles(data):
     invalid = []
     for index, row in data.iterrows():
