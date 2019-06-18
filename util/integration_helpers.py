@@ -1,4 +1,5 @@
 from rdkit import Chem
+import pandas as pd
 
 def check_similarity(dataset1, dataset2):
     count = 0
