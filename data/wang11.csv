@@ -1,0 +1,423 @@
+,compound,flashpoint,pure substance,smiles,source
+11607,Methyltrichlorosilane,276.15,1.0,C[Si](Cl)(Cl)Cl,wang11
+11608,Vinyltrichlorosilane,294.15,1.0,C=C[Si](Cl)(Cl)Cl,wang11
+11609,Dichloromethylmethyldichlorosilane,301.15,1.0,C[Si](Cl)(Cl)C(Cl)Cl,wang11
+11610,Ethyltrichlorosilane,263.15,1.0,CC[Si](Cl)(Cl)Cl,wang11
+11611,Dimethylchlorosilane,245.15,1.0,C[SiH](C)Cl,wang11
+11612,Ethylsilane,213.15,1.0,CC[SiH3],wang11
+11613,"1,1,1-Trifluoropropyltrichlorosilane",288.15,1.0,CC(C(F)(F)F)[Si](Cl)(Cl)Cl,wang11
+11614,Allyltrichlorosilane,304.15,1.0,C=CC[Si](Cl)(Cl)Cl,wang11
+11615,Methylvinyldichlorosilane,272.15,1.0,CC=C[SiH](Cl)Cl,wang11
+11616,3-Chloropropyltrichlorosilane,357.15,1.0,ClCCC[Si](Cl)(Cl)Cl,wang11
+11617,n-Propyltrichlorosilane,310.15,1.0,CCC[Si](Cl)(Cl)Cl,wang11
+11618,Chloromethyldimethylchlorosilane,295.15,1.0,C[Si](C)(Cl)CCl,wang11
+11619,Trimethylbromosilane,270.15,1.0,C[Si](C)(C)Br,wang11
+11620,Trimethylchlorosilane,255.15,1.0,C[Si](C)(C)Cl,wang11
+11621,Trimethylfluorosilane,238.15,1.0,C[Si](C)(C)F,wang11
+11622,Trimethoxysilane,264.15,1.0,CO[SiH](OC)OC,wang11
+11623,Cyanoethylmethyldichlorosilane,333.15,1.0,C[Si](Cl)(Cl)CCC#N,wang11
+11624,Allylmethyldichlorosilane,300.15,1.0,C=CCC[SiH](Cl)Cl,wang11
+11625, 3-Chloropropylmethyldichlorosilane,359.15,1.0,C[Si](Cl)(Cl)CCCCl,wang11
+11626, t-Butyltrichlorosilane,294.15,1.0,CC(C)(C)[Si](Cl)(Cl)Cl,wang11
+11627, Isobutyltrichlorosilane,310.15,1.0,CC(C)C[Si](Cl)(Cl)Cl,wang11
+11628, n-Butyltrichlorosilane,327.15,1.0,CCCC[Si](Cl)(Cl)Cl,wang11
+11629, Trimethylsilylisothiocyanate,308.15,1.0,C[Si](C)(C)N=C=S,wang11
+11630, n-Propylmethyldichlorosilane,300.15,1.0,CCC[Si](C)(Cl)Cl,wang11
+11631, Bromomethyltrimethylsilane,289.15,1.0,C[Si](C)(C)CBr,wang11
+11632, Ethyldimethylchlorosilane,269.15,1.0,CC[Si](C)(C)Cl,wang11
+11633, Methoxytrimethylsilane,243.15,1.0,CO[Si](C)(C)C,wang11
+11634, Dimethyldimethoxysilane,265.15,1.0,CO[Si](C)(C)OC,wang11
+11635," Methyltrimethoxysilane
+",284.15,1.0,CO[Si](C)(OC)OC,wang11
+11636, Tetramethoxysilane,294.15,1.0,CO[Si](OC)(OC)OC,wang11
+11637, Tetramethylsilane,245.15,1.0,C[Si](C)(C)C,wang11
+11638, Diethylsilane,253.15,1.0,CC[SiH2]CC,wang11
+11639," (N,N-Dimethylamino)dimethylsilane",260.15,1.0,CN(C)[SiH](C)C,wang11
+11640, Tetraisocyanatosilane,323.15,1.0,O=C=N[Si](N=C=O)(N=C=O)N=C=O,wang11
+11641, Cyclopentyltrichlorosilane,350.15,1.0,Cl[Si](Cl)(Cl)C1CCCC1,wang11
+11642, Trimethylsilyltrifluoroacetate,273.15,1.0,C[Si](C)(C)OC(=O)C(F)(F)F,wang11
+11643, Cyclopentyldichlorosilane,316.15,1.0,Cl[SiH](Cl)C1CCCC1,wang11
+11644, 3-Chloro-2-methylpropylmethyldichlorosilane,363.15,1.0,CC(CCl)C[Si](C)(Cl)Cl,wang11
+11645, Methylvinyldimethoxysilane,277.15,1.0,CC=C[SiH](OC)OC,wang11
+11646, Vinyltrimethoxysilane,296.15,1.0,C=C[Si](OC)(OC)OC,wang11
+11647, Trimethylvinylsilane,239.15,1.0,CC(C)=C(C)[SiH3],wang11
+11648, Diethylmethylchlorosilane,288.15,1.0,CC[Si](C)(Cl)CC,wang11
+11649, Chloromethyldimethylethoxysilane,299.15,1.0,CCO[Si](C)(C)CCl,wang11
+11650, Ethoxytrimethylsilane,246.15,1.0,CCO[Si](C)(C)C,wang11
+11651, Ethyltrimethoxysilane,300.15,1.0,CC[Si](OC)(OC)OC,wang11
+11652," (N,N-Dimethylamino)trimethylsilane",254.15,1.0,CN(C)[Si](C)(C)C,wang11
+11653, Pentamethyldisiloxane,254.15,1.0,C[SiH](C)O[Si](C)(C)C,wang11
+11654,Phenyldichlorosilane,333.15,1.0,Cl[SiH](Cl)c1ccccc1,wang11
+11655,Phenylsilane,281.15,1.0,[SiH3]c1ccccc1,wang11
+11656,1-Hexenyltrichlorosilane,333.15,1.0,CCCCC=C[Si](Cl)(Cl)Cl,wang11
+11657,Cyclohexyltrichlorosilane,358.15,1.0,Cl[Si](Cl)(Cl)C1CCCCC1,wang11
+11658,Bis(chloromethyl)tetramethyldisiloxane,346.15,1.0,C[Si](C)(C)O[Si](C)(CCl)CCl,wang11
+11659,Propargyloxytrimethylsilane,300.15,1.0,C#CCO[Si](C)(C)C,wang11
+11660,Divinyldimethylsilane,281.15,1.0,C=C[Si](C)(C)C=C,wang11
+11661,n-Hexyltrichlorosilane,358.15,1.0,CCCCCC[Si](Cl)(Cl)Cl,wang11
+11662,Hexyldichlorosilane,337.15,1.0,CCCCCC[SiH](Cl)Cl,wang11
+11663,"1,1-Dimethyl-1-sila-2-oxacyclohexane",287.15,1.0,C[Si]1(C)CCCCO1,wang11
+11664,Acetoxymethyltrimethylsilane,293.15,1.0,CC(=O)OC[Si](C)(C)C,wang11
+11665,Allyltrimethylsilane,280.15,1.0,C=CC[Si](C)(C)C,wang11
+11666,Triethylchlorosilane,303.15,1.0,CC[Si](Cl)(CC)CC,wang11
+11667,t-Butyldimethylchlorosilane,295.15,1.0,CC(C)(C)[Si](C)(C)Cl,wang11
+11668,3-Chloropropylmethyldimethoxysilane,318.15,1.0,CO[Si](C)(CCCCl)OC,wang11
+11669,Trimethyl-n-propoxysilane,283.15,1.0,CCCO[Si](C)(C)C,wang11
+11670,t-Butyldimethylsilanol,318.15,1.0,CC(C)(C)[Si](C)(C)O,wang11
+11671,Dimethyldiethoxysilane,284.15,1.0,CCO[Si](C)(C)OCC,wang11
+11672,Triethylsilane,270.15,1.0,CC[SiH](CC)CC,wang11
+11673,Hexylsilane,285.15,1.0,CCCCCC[SiH3],wang11
+11674,t-Butyldimethylsilane,251.15,1.0,C[SiH](C)C(C)(C)C,wang11
+11675,Bis(dimethylamino)dimethylsilane,266.15,1.0,CN(C)[Si](C)(C)N(C)C,wang11
+11676,Hexamethylcyclotrisiloxane,305.15,1.0,C[Si]1(C)O[Si](C)(C)O[Si](C)(C)O1,wang11
+11677,Hexamethyldisilthiane,299.15,1.0,C[Si](C)(C)S[Si](C)(C)C,wang11
+11678,Hexamethyldisilazane,281.15,1.0,C[Si](C)(C)N[Si](C)(C)C,wang11
+11679,Tris(dimethylamino)silane,298.15,1.0,CN(C)[SiH](N(C)C)N(C)C,wang11
+11680,Hexamethyltrisiloxane,293.15,1.0,C[Si](C)(C)O[SiH2]O[Si](C)(C)C,wang11
+11681,Phenylmethyldichlorosilane,340.15,1.0,Cl[SiH](Cl)Cc1ccccc1,wang11
+11682,Phenylmethylchlorosilane,355.15,1.0,Cl[SiH2]Cc1ccccc1,wang11
+11683,Methyltriacetoxysilane,358.15,1.0,CC(=O)O[Si](C)(OC(C)=O)OC(C)=O,wang11
+11684,Trivinylmethylsilane,288.15,1.0,C=CC([SiH3])(C=C)C=C,wang11
+11685,Cyclohexylmethyldichlorosilane,355.15,1.0,Cl[SiH](Cl)CC1CCCCC1,wang11
+11686,"1-(Trimethylsiloxy)-1,3-butadiene",298.15,1.0,C=CC=CO[Si](C)(C)C,wang11
+11687,2-Chloromethyl-3-trimethylsilyl-1-propene,316.15,1.0,C=C(CCl)C[Si](C)(C)C,wang11
+11688,n-Heptyltrichlorosilane,337.15,1.0,CCCCCCC[Si](Cl)(Cl)Cl,wang11
+11689,n-Hexylmethyldichlorosilane,358.15,1.0,CCCCCC[Si](C)(Cl)Cl,wang11
+11690,Vinylmethyldiethoxysilane,289.15,1.0,C=CC[SiH](OCC)OCC,wang11
+11691,N-(Trimethylsilyl)morpholine,300.15,1.0,C[Si](C)(C)N1CCOCC1,wang11
+11692,t-Butoxytrimethylsilane,287.15,1.0,CC(C)(C)O[Si](C)(C)C,wang11
+11693,Vinylpentamethyldisiloxane,285.15,1.0,C=C[Si](C)(C)O[Si](C)(C)C,wang11
+11694,(1-Methoxy-2-propoxy)trimethylsilane,293.15,1.0,COCC(C)O[Si](C)(C)C,wang11
+11695,Methyltriethoxysilane,297.15,1.0,CCO[Si](C)(OCC)OCC,wang11
+11696,(Diethylamino)trimethylsilane,283.15,1.0,CCN(CC)[Si](C)(C)C,wang11
+11697,Bis(trimethylsilyl)methane,285.15,1.0,C[Si](C)(C)C[Si](C)(C)C,wang11
+11698,Heptamethyldisilazane,300.15,1.0,CN([Si](C)(C)C)[Si](C)(C)C,wang11
+11699,Phenylethyldichlorosilane,365.15,1.0,Cl[SiH](Cl)CCc1ccccc1,wang11
+11700,Tetravinylsilane,291.15,1.0,C=C[Si](C=C)(C=C)C=C,wang11
+11701,Phenyldimethylsilane,311.15,1.0,C[SiH](C)c1ccccc1,wang11
+11702,Cyclopentadienyltrimethylsilane,302.15,1.0,C[Si](C)(C)C1C=CC=C1,wang11
+11703,(Cyclopentenyloxy)trimethylsilane,311.15,1.0,C[Si](C)(C)OC1=CCCC1,wang11
+11704,"(2,4-Pentadienyl)trimethylsilane",291.15,1.0,C=CC=CC[Si](C)(C)C,wang11
+11705,n-Octyltrichlorosilane,369.15,1.0,CCCCCCCC[Si](Cl)(Cl)Cl,wang11
+11706,n-Heptylmethyldichlorosilane,339.15,1.0,CCCCCCC[Si](C)(Cl)Cl,wang11
+11707,Tetramethyldivinyldisiloxane,292.15,1.0,C=C[Si](C)(C=C)O[Si](C)(C)C,wang11
+11708,Triethylacetoxysilane,314.15,1.0,CCC(CC)(CC)C(=O)O[SiH3],wang11
+11709,Vinyltriethoxysilane,307.15,1.0,C=C[Si](OCC)(OCC)OCC,wang11
+11710,"1,3-Divinyltetramethyldisilazane",307.15,1.0,C=C[Si](C)(C)N[Si](C)(C)C=C,wang11
+11711,Diethyldiethoxysilane,316.15,1.0,CCO[Si](CC)(CC)OCC,wang11
+11712,Tetraethoxysilane,323.15,1.0,CCO[Si](OCC)(OCC)OCC,wang11
+11713,Tetraethylsilane,305.15,1.0,CC[Si](CC)(CC)CC,wang11
+11714,Aminoethylaminopropyltrimethoxysilane,369.15,1.0,CO[Si](CCCNCCN)(OC)OC,wang11
+11715,Tetramethyldiethoxysiloxane,311.15,1.0,CCO[Si]([O])OC(C)(C)C(C)C,wang11
+11716,Octamethyltrisiloxane,303.15,1.0,C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)C,wang11
+11717,Octamethylcyclotetrasiloxane,330.15,1.0,C[Si]1(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O1,wang11
+11718,Octamethylcyclotetrasilazane,339.15,1.0,C[Si]1(C)N[Si](C)(C)N[Si](C)(C)N[Si](C)(C)N1,wang11
+11719,Tetrakisdimethylsiloxysilane,340.15,1.0,C[SiH](C)O[Si](O[SiH](C)C)(O[SiH](C)C)O[SiH](C)C,wang11
+11720,p-Chlorophenyltrimethylsilane,322.15,1.0,C[Si](C)(C)c1ccc(Cl)cc1,wang11
+11721,Phenyltrimethoxysilane,358.15,1.0,CO[Si](OC)(OC)c1ccccc1,wang11
+11722,Trimethylphenylsilane,313.15,1.0,C[Si](C)(C)c1ccccc1,wang11
+11723,Cyclohexylmethyldimethoxysilane,343.15,1.0,CO[SiH](CC1CCCCC1)OC,wang11
+11724, Hexyltrimethoxysilane,335.15,1.0,CCCCCC[Si](OC)(OC)OC,wang11
+11725,Triisopropylsilane,310.15,1.0,CC(C)[SiH](C(C)C)C(C)C,wang11
+11726,Tri-n-propylsilane,316.15,1.0,CCC[SiH](CCC)CCC,wang11
+11727, Propyltris(dimethylsiloxy)silane,323.15,1.0,CCC[Si](O[SiH](C)C)(O[SiH](C)C)O[SiH](C)C,wang11
+11728, Benzyltrimethylsilane,335.15,1.0,C[Si](C)(C)Cc1ccccc1,wang11
+11729, 3-Methacryloxypropyltrimethoxysilane,365.15,1.0,C=C(C)C(=O)OCCC[Si](OC)(OC)OC,wang11
+11730, 1-Heptynyltrimethylsilane,315.15,1.0,CCCCCC#C[Si](C)(C)C,wang11
+11731, n-Octyldimethylchlorosilane,370.15,1.0,CCCCCCCC[Si](C)(C)Cl,wang11
+11732, Bis(diethylamino)dimethylsilane,308.15,1.0,CCN(CC)[Si](C)(C)N(CC)CC,wang11
+11733, Decamethyltetrasiloxane,335.15,1.0,C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)C,wang11
+11734, Decamethylcyclopentasiloxane,350.15,1.0,C[Si]1(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O1,wang11
+11735," 2-(3,4-epoxycyclohexyl)ethyltrimethoxysilane",419.15,1.0,CO[Si](CCC1CCC2OC2C1)(OC)OC,wang11
+11736, n-Decylmethyldichlorosilane,393.15,1.0,CCCCCCCCCC[Si](C)(Cl)Cl,wang11
+11737, Vinyltriethylsilane,318.15,1.0,C=C[Si](CC)(CC)CC,wang11
+11738, Diphenyldichlorosilane,415.15,1.0,Cl[Si](Cl)(c1ccccc1)c1ccccc1,wang11
+11739, Phenyltriethoxysilane,393.15,1.0,CCO[Si](OCC)(OCC)c1ccccc1,wang11
+11740, Diphenylsilane,371.15,1.0,c1ccc([SiH2]c2ccccc2)cc1,wang11
+11741, Tetramethyltetravinylcyclotetrasilane,385.15,1.0,C=C[Si]1(C)[Si](C)(C=C)[Si](C)(C=C)[Si]1(C)C=C,wang11
+11742, n-Dodecyltrichlorosilane,435.15,1.0,CCCCCCCCCCCC[Si](Cl)(Cl)Cl,wang11
+11743, Tetra-n-propoxysilane,368.15,1.0,CCCO[Si](OCCC)(OCCC)OCCC,wang11
+11744, Hexaethyldisiloxane,349.15,1.0,CC[Si](CC)(CC)O[Si](CC)(CC)CC,wang11
+11745, Dodecamethylpentasiloxane,352.15,1.0,C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)C,wang11
+11746, Dodecamethylcyclohexasiloxane,366.15,1.0,C[Si]1(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O1,wang11
+11747,Methyldiphenylchlorosilane,411.15,1.0,C[Si](Cl)(c1ccccc1)c1ccccc1,wang11
+11748,n-Dodecylmethyldichlorosilane,416.15,1.0,CCCCCCCCCCCC[Si](C)(Cl)Cl,wang11
+11749,Diphenyldimethoxysilane,394.15,1.0,CO[Si](OC)(c1ccccc1)c1ccccc1,wang11
+11750,Octyltriethoxysilane,373.15,1.0,CCCCCCCC[Si](OCC)(OCC)OCC,wang11
+11751,Tetradecamethylhexasiloxane,375.15,1.0,C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)C,wang11
+11752,Hexadecamethylheptasiloxane,406.15,1.0,C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)C,wang11
+11753,Octadecamethyloctasiloxane,417.15,1.0,C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)C,wang11
+11754,Vinyltris(methoxyethoxy)silane,353.15,1.0,C=C[Si](OCCOC)(OCCOC)OCCOC,wang11
+11755,Trimethyl(vinyloxy)silane,263.15,1.0,C=CO[Si](C)(C)C,wang11
+11756,Trichloro(3-cyanopropyl) Silane,365.15,1.0,N#CCCC[Si](Cl)(Cl)Cl,wang11
+11757,Trichloro(2-phenylethyl)silane,364.15,1.0,Cl[Si](Cl)(Cl)CCc1ccccc1,wang11
+11758,"Chlorodimethyl(3,3,3-trifluoropropyl) silane",293.15,1.0,C[Si](C)(Cl)CCC(F)(F)F,wang11
+11759,Vinylmethylbis (trimethylsiloxy) silane,324.15,1.0,C=CC[SiH](O[Si](C)(C)C)O[Si](C)(C)C,wang11
+11760,Trichloro(Chloromethyl) silane,342.15,1.0,ClC[Si](Cl)(Cl)Cl,wang11
+11761,Dimethyl(pentafluorophenyl) silane,313.15,1.0,C[SiH](C)c1c(F)c(F)c(F)c(F)c1F,wang11
+11762,Trichloro(p-chlorophenyl)silane,397.05,1.0,Clc1ccc([Si](Cl)(Cl)Cl)cc1,wang11
+11763,Trisilane,273.15,1.0,[SiH3][SiH2][SiH3],wang11
+11764,Trichlorononylsilane,387.15,1.0,[SiH3]CCCCCCCCC(Cl)(Cl)Cl,wang11
+11765,Dichloroethylsilane,263.75,1.0,[SiH3]CC(Cl)Cl,wang11
+11766,Trichloro(dichlorophenyl)silane,419.15,1.0,Clc1cccc([Si](Cl)(Cl)Cl)c1Cl,wang11
+11767,Tris(trimethylsilyl)silane,328.15,1.0,C[Si](C)(C)[SiH]([Si](C)(C)C)[Si](C)(C)C,wang11
+11768,Tris(trimethylsiloxy)silane,323.15,1.0,C[Si](C)(C)O[SiH](O[Si](C)(C)C)O[Si](C)(C)C,wang11
+11769,Hexadecyltrichlorosilane,427.15,1.0,CCCCCCCCCCCCCCCC[Si](Cl)(Cl)Cl,wang11
+11770,Dichlorosilane,236.15,1.0,Cl[SiH2]Cl,wang11
+11771,Methyldichlorosilane,241.15,1.0,C[SiH](Cl)Cl,wang11
+11772,Iodotrimethylsilane,288.15,1.0,C[Si](C)(C)I,wang11
+11773,Dimethyldichlorosilane,257.15,1.0,C[Si](C)(Cl)Cl,wang11
+11774,Bromomethyldimethylchlorosilane,314.15,1.0,C[Si](C)(Cl)CBr,wang11
+11775,Trimethylsilane,204.15,1.0,C[SiH](C)C,wang11
+11776, Dimethylvinylchlorosilane,268.15,1.0,CC(C)=C[SiH2]Cl,wang11
+11777," 1,3-Dichlorotetramethyldisiloxane",288.15,1.0,C[Si](C)(Cl)O[Si](C)(C)Cl,wang11
+11778," 1,1,3,3-Tetramethyldisiloxane",251.15,1.0,C[SiH](C)O[SiH](C)C,wang11
+11779, Tetramethyldisilazane,284.15,1.0,CN([SiH3])[Si](C)(C)C,wang11
+11780, Allyldimethylchlorosilane,278.15,1.0,C=CC[Si](C)(C)Cl,wang11
+11781, sec-Amyltrichlorosilane,303.15,1.0,CCCC(C)[Si](Cl)(Cl)Cl,wang11
+11782, n-Butylmethyldichlorosilane,303.15,1.0,CCCC[Si](C)(Cl)Cl,wang11
+11783, Bis(dimethylamino)methylsilane,270.15,1.0,CN(C)C([SiH3])N(C)C,wang11
+11784, Phenyltrichlorosilane,364.15,1.0,Cl[Si](Cl)(Cl)c1ccccc1,wang11
+11785,Dimethyldiacetoxysilane,310.15,1.0,CC(=O)O[Si](C)(C)OC(C)=O,wang11
+11786,1-Trimethylsilylpropyne,270.15,1.0,CC#C[Si](C)(C)C,wang11
+11787,Vinyldimethylethoxysilane,277.15,1.0,C=C[Si](C)(C)OCC,wang11
+11788,Allyloxytrimethylsilane,273.15,1.0,C=CCO[Si](C)(C)C,wang11
+11789,Allyltrimethoxysilane,319.15,1.0,C=CC[Si](OC)(OC)OC,wang11
+11790,3-Chloropropyltrimethoxysilane,348.15,1.0,CO[Si](CCCCl)(OC)OC,wang11
+11791,n-Propyltrimethoxysilane,298.15,1.0,CCC[Si](OC)(OC)OC,wang11
+11792,Hexamethyldisiloxane,270.15,1.0,C[Si](C)(C)O[Si](C)(C)C,wang11
+11793,Hexamethyldisilane,272.15,1.0,C[Si](C)(C)[Si](C)(C)C,wang11
+11794,Vinyldiethylmethylsilane,288.15,1.0,C=C[Si](C)(CC)CC,wang11
+11795,Isobutyltrimethoxysilane,315.15,1.0,CO[Si](CC(C)C)(OC)OC,wang11
+11796,Phenyldimethylchlorosilane,334.15,1.0,C[Si](C)(Cl)c1ccccc1,wang11
+11797,"(N,N-Dimethylamino)triethylsilane",299.15,1.0,CC[Si](CC)(CC)N(C)C,wang11
+11798,Vinyltriacetoxysilane,361.15,1.0,C=C[Si](OC(C)=O)(OC(C)=O)OC(C)=O,wang11
+11799,Ethyltriacetoxysilane,377.15,1.0,CC[Si](OC(C)=O)(OC(C)=O)OC(C)=O,wang11
+11800,3-(Trimethylsilyl)cyclopentene,299.15,1.0,C[Si](C)(C)C1C=CCC1,wang11
+11801,Vinyltriethylsilane,298.15,1.0,C=C[Si](CC)(CC)CC,wang11
+11802,n-Octylsilane,309.15,1.0,CCCCCCCC[SiH3],wang11
+11803,Methylphenyldimethoxysilane,349.15,1.0,CO[Si](C)(OC)c1ccccc1,wang11
+11804,2-Cyanoethyltriethoxysilane,359.15,1.0,CCO[Si](CCC#N)(OCC)OCC,wang11
+11805,3-Glycidoxypropyltrimethoxysilane,383.15,1.0,CO[Si](CCCOCC1CO1)(OC)OC,wang11
+11806, Di-t-butylmethylchlorosilane,342.15,1.0,CC(C)(C)[Si](C)(Cl)C(C)(C)C,wang11
+11807,Tri-n-propylchlorosilane,349.15,1.0,CCC[Si](Cl)(CCC)CCC,wang11
+11808, (Diisopropylamino)trimethylsilane,301.15,1.0,CC(C)N(C(C)C)[Si](C)(C)C,wang11
+11809, 1-Chlorononamethyltetrasiloxane,347.15,1.0,C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)Cl,wang11
+11810, Tristrimethylsiloxymethylsilane,336.15,1.0,C[Si](C)(C)OC([SiH3])(O[Si](C)(C)C)O[Si](C)(C)C,wang11
+11811,Diphenylmethylsilane,393.15,1.0,[SiH3]C(c1ccccc1)c1ccccc1,wang11
+11812,Trimethyl[(1-methylethenyl)oxy]silane,272.15,1.0,C=C(C)O[Si](C)(C)C,wang11
+11813,"Dichloromethyl-3,3,3-trifluoropropylsilane",288.15,1.0,FC(F)(F)CC[SiH2]C(Cl)Cl,wang11
+11814,[2-(chloromethoxy)ethyl]trimethylsilane,319.15,1.0,C[Si](C)(C)CCOCCl,wang11
+11815,Triphenylsilane,416.35,1.0,c1ccc([SiH](c2ccccc2)c2ccccc2)cc1,wang11
+11816,Trichlorosilane,245.15,1.0,Cl[SiH](Cl)Cl,wang11
+11817,Methyltrichlorosilane,276.15,1.0,C[Si](Cl)(Cl)Cl,wang11
+11818,Vinyltrichlorosilane,294.15,1.0,C=C[Si](Cl)(Cl)Cl,wang11
+11819,Dichloromethylmethyldichlorosilane,301.15,1.0,C[Si](Cl)(Cl)C(Cl)Cl,wang11
+11820,Ethyltrichlorosilane,263.15,1.0,CC[Si](Cl)(Cl)Cl,wang11
+11821,Dimethylchlorosilane,245.15,1.0,C[SiH](C)Cl,wang11
+11822,Ethylsilane,213.15,1.0,CC[SiH3],wang11
+11823,"1,1,1-Trifluoropropyltrichlorosilane",288.15,1.0,CC(C(F)(F)F)[Si](Cl)(Cl)Cl,wang11
+11824,Allyltrichlorosilane,304.15,1.0,C=CC[Si](Cl)(Cl)Cl,wang11
+11825,Methylvinyldichlorosilane,272.15,1.0,CC=C[SiH](Cl)Cl,wang11
+11826,3-Chloropropyltrichlorosilane,357.15,1.0,ClCCC[Si](Cl)(Cl)Cl,wang11
+11827,n-Propyltrichlorosilane,310.15,1.0,CCC[Si](Cl)(Cl)Cl,wang11
+11828,Chloromethyldimethylchlorosilane,295.15,1.0,C[Si](C)(Cl)CCl,wang11
+11829,Trimethylbromosilane,270.15,1.0,C[Si](C)(C)Br,wang11
+11830,Trimethylchlorosilane,255.15,1.0,C[Si](C)(C)Cl,wang11
+11831,Trimethylfluorosilane,238.15,1.0,C[Si](C)(C)F,wang11
+11832,Trimethoxysilane,264.15,1.0,CO[SiH](OC)OC,wang11
+11833,Cyanoethylmethyldichlorosilane,333.15,1.0,C[Si](Cl)(Cl)CCC#N,wang11
+11834,Allylmethyldichlorosilane,300.15,1.0,C=CCC[SiH](Cl)Cl,wang11
+11835, 3-Chloropropylmethyldichlorosilane,359.15,1.0,C[Si](Cl)(Cl)CCCCl,wang11
+11836, t-Butyltrichlorosilane,294.15,1.0,CC(C)(C)[Si](Cl)(Cl)Cl,wang11
+11837, Isobutyltrichlorosilane,310.15,1.0,CC(C)C[Si](Cl)(Cl)Cl,wang11
+11838, n-Butyltrichlorosilane,327.15,1.0,CCCC[Si](Cl)(Cl)Cl,wang11
+11839, Trimethylsilylisothiocyanate,308.15,1.0,C[Si](C)(C)N=C=S,wang11
+11840, n-Propylmethyldichlorosilane,300.15,1.0,CCC[Si](C)(Cl)Cl,wang11
+11841, Bromomethyltrimethylsilane,289.15,1.0,C[Si](C)(C)CBr,wang11
+11842, Ethyldimethylchlorosilane,269.15,1.0,CC[Si](C)(C)Cl,wang11
+11843, Methoxytrimethylsilane,243.15,1.0,CO[Si](C)(C)C,wang11
+11844, Dimethyldimethoxysilane,265.15,1.0,CO[Si](C)(C)OC,wang11
+11845," Methyltrimethoxysilane
+",284.15,1.0,CO[Si](C)(OC)OC,wang11
+11846, Tetramethoxysilane,294.15,1.0,CO[Si](OC)(OC)OC,wang11
+11847, Tetramethylsilane,245.15,1.0,C[Si](C)(C)C,wang11
+11848, Diethylsilane,253.15,1.0,CC[SiH2]CC,wang11
+11849," (N,N-Dimethylamino)dimethylsilane",260.15,1.0,CN(C)[SiH](C)C,wang11
+11850, Tetraisocyanatosilane,323.15,1.0,O=C=N[Si](N=C=O)(N=C=O)N=C=O,wang11
+11851, Cyclopentyltrichlorosilane,350.15,1.0,Cl[Si](Cl)(Cl)C1CCCC1,wang11
+11852, Trimethylsilyltrifluoroacetate,273.15,1.0,C[Si](C)(C)OC(=O)C(F)(F)F,wang11
+11853, Cyclopentyldichlorosilane,316.15,1.0,Cl[SiH](Cl)C1CCCC1,wang11
+11854, 3-Chloro-2-methylpropylmethyldichlorosilane,363.15,1.0,CC(CCl)C[Si](C)(Cl)Cl,wang11
+11855, Methylvinyldimethoxysilane,277.15,1.0,CC=C[SiH](OC)OC,wang11
+11856, Vinyltrimethoxysilane,296.15,1.0,C=C[Si](OC)(OC)OC,wang11
+11857, Trimethylvinylsilane,239.15,1.0,CC(C)=C(C)[SiH3],wang11
+11858, Diethylmethylchlorosilane,288.15,1.0,CC[Si](C)(Cl)CC,wang11
+11859, Chloromethyldimethylethoxysilane,299.15,1.0,CCO[Si](C)(C)CCl,wang11
+11860, Ethoxytrimethylsilane,246.15,1.0,CCO[Si](C)(C)C,wang11
+11861, Ethyltrimethoxysilane,300.15,1.0,CC[Si](OC)(OC)OC,wang11
+11862," (N,N-Dimethylamino)trimethylsilane",254.15,1.0,CN(C)[Si](C)(C)C,wang11
+11863, Pentamethyldisiloxane,254.15,1.0,C[SiH](C)O[Si](C)(C)C,wang11
+11864,Phenyldichlorosilane,333.15,1.0,Cl[SiH](Cl)c1ccccc1,wang11
+11865,Phenylsilane,281.15,1.0,[SiH3]c1ccccc1,wang11
+11866,1-Hexenyltrichlorosilane,333.15,1.0,CCCCC=C[Si](Cl)(Cl)Cl,wang11
+11867,Cyclohexyltrichlorosilane,358.15,1.0,Cl[Si](Cl)(Cl)C1CCCCC1,wang11
+11868,Bis(chloromethyl)tetramethyldisiloxane,346.15,1.0,C[Si](C)(C)O[Si](C)(CCl)CCl,wang11
+11869,Propargyloxytrimethylsilane,300.15,1.0,C#CCO[Si](C)(C)C,wang11
+11870,Divinyldimethylsilane,281.15,1.0,C=C[Si](C)(C)C=C,wang11
+11871,n-Hexyltrichlorosilane,358.15,1.0,CCCCCC[Si](Cl)(Cl)Cl,wang11
+11872,Hexyldichlorosilane,337.15,1.0,CCCCCC[SiH](Cl)Cl,wang11
+11873,"1,1-Dimethyl-1-sila-2-oxacyclohexane",287.15,1.0,C[Si]1(C)CCCCO1,wang11
+11874,Acetoxymethyltrimethylsilane,293.15,1.0,CC(=O)OC[Si](C)(C)C,wang11
+11875,Allyltrimethylsilane,280.15,1.0,C=CC[Si](C)(C)C,wang11
+11876,Triethylchlorosilane,303.15,1.0,CC[Si](Cl)(CC)CC,wang11
+11877,t-Butyldimethylchlorosilane,295.15,1.0,CC(C)(C)[Si](C)(C)Cl,wang11
+11878,3-Chloropropylmethyldimethoxysilane,318.15,1.0,CO[Si](C)(CCCCl)OC,wang11
+11879,Trimethyl-n-propoxysilane,283.15,1.0,CCCO[Si](C)(C)C,wang11
+11880,t-Butyldimethylsilanol,318.15,1.0,CC(C)(C)[Si](C)(C)O,wang11
+11881,Dimethyldiethoxysilane,284.15,1.0,CCO[Si](C)(C)OCC,wang11
+11882,Triethylsilane,270.15,1.0,CC[SiH](CC)CC,wang11
+11883,Hexylsilane,285.15,1.0,CCCCCC[SiH3],wang11
+11884,t-Butyldimethylsilane,251.15,1.0,C[SiH](C)C(C)(C)C,wang11
+11885,Bis(dimethylamino)dimethylsilane,266.15,1.0,CN(C)[Si](C)(C)N(C)C,wang11
+11886,Hexamethylcyclotrisiloxane,305.15,1.0,C[Si]1(C)O[Si](C)(C)O[Si](C)(C)O1,wang11
+11887,Hexamethyldisilthiane,299.15,1.0,C[Si](C)(C)S[Si](C)(C)C,wang11
+11888,Hexamethyldisilazane,281.15,1.0,C[Si](C)(C)N[Si](C)(C)C,wang11
+11889,Tris(dimethylamino)silane,298.15,1.0,CN(C)[SiH](N(C)C)N(C)C,wang11
+11890,Hexamethyltrisiloxane,293.15,1.0,C[Si](C)(C)O[SiH2]O[Si](C)(C)C,wang11
+11891,Phenylmethyldichlorosilane,340.15,1.0,Cl[SiH](Cl)Cc1ccccc1,wang11
+11892,Phenylmethylchlorosilane,355.15,1.0,Cl[SiH2]Cc1ccccc1,wang11
+11893,Methyltriacetoxysilane,358.15,1.0,CC(=O)O[Si](C)(OC(C)=O)OC(C)=O,wang11
+11894,Trivinylmethylsilane,288.15,1.0,C=CC([SiH3])(C=C)C=C,wang11
+11895,Cyclohexylmethyldichlorosilane,355.15,1.0,Cl[SiH](Cl)CC1CCCCC1,wang11
+11896,"1-(Trimethylsiloxy)-1,3-butadiene",298.15,1.0,C=CC=CO[Si](C)(C)C,wang11
+11897,2-Chloromethyl-3-trimethylsilyl-1-propene,316.15,1.0,C=C(CCl)C[Si](C)(C)C,wang11
+11898,n-Heptyltrichlorosilane,337.15,1.0,CCCCCCC[Si](Cl)(Cl)Cl,wang11
+11899,n-Hexylmethyldichlorosilane,358.15,1.0,CCCCCC[Si](C)(Cl)Cl,wang11
+11900,Vinylmethyldiethoxysilane,289.15,1.0,C=CC[SiH](OCC)OCC,wang11
+11901,N-(Trimethylsilyl)morpholine,300.15,1.0,C[Si](C)(C)N1CCOCC1,wang11
+11902,t-Butoxytrimethylsilane,287.15,1.0,CC(C)(C)O[Si](C)(C)C,wang11
+11903,Vinylpentamethyldisiloxane,285.15,1.0,C=C[Si](C)(C)O[Si](C)(C)C,wang11
+11904,(1-Methoxy-2-propoxy)trimethylsilane,293.15,1.0,COCC(C)O[Si](C)(C)C,wang11
+11905,Methyltriethoxysilane,297.15,1.0,CCO[Si](C)(OCC)OCC,wang11
+11906,(Diethylamino)trimethylsilane,283.15,1.0,CCN(CC)[Si](C)(C)C,wang11
+11907,Bis(trimethylsilyl)methane,285.15,1.0,C[Si](C)(C)C[Si](C)(C)C,wang11
+11908,Heptamethyldisilazane,300.15,1.0,CN([Si](C)(C)C)[Si](C)(C)C,wang11
+11909,Phenylethyldichlorosilane,365.15,1.0,Cl[SiH](Cl)CCc1ccccc1,wang11
+11910,Tetravinylsilane,291.15,1.0,C=C[Si](C=C)(C=C)C=C,wang11
+11911,Phenyldimethylsilane,311.15,1.0,C[SiH](C)c1ccccc1,wang11
+11912,Cyclopentadienyltrimethylsilane,302.15,1.0,C[Si](C)(C)C1C=CC=C1,wang11
+11913,(Cyclopentenyloxy)trimethylsilane,311.15,1.0,C[Si](C)(C)OC1=CCCC1,wang11
+11914,"(2,4-Pentadienyl)trimethylsilane",291.15,1.0,C=CC=CC[Si](C)(C)C,wang11
+11915,n-Octyltrichlorosilane,369.15,1.0,CCCCCCCC[Si](Cl)(Cl)Cl,wang11
+11916,n-Heptylmethyldichlorosilane,339.15,1.0,CCCCCCC[Si](C)(Cl)Cl,wang11
+11917,Tetramethyldivinyldisiloxane,292.15,1.0,C=C[Si](C)(C=C)O[Si](C)(C)C,wang11
+11918,Triethylacetoxysilane,314.15,1.0,CCC(CC)(CC)C(=O)O[SiH3],wang11
+11919,Vinyltriethoxysilane,307.15,1.0,C=C[Si](OCC)(OCC)OCC,wang11
+11920,"1,3-Divinyltetramethyldisilazane",307.15,1.0,C=C[Si](C)(C)N[Si](C)(C)C=C,wang11
+11921,Diethyldiethoxysilane,316.15,1.0,CCO[Si](CC)(CC)OCC,wang11
+11922,Tetraethoxysilane,323.15,1.0,CCO[Si](OCC)(OCC)OCC,wang11
+11923,Tetraethylsilane,305.15,1.0,CC[Si](CC)(CC)CC,wang11
+11924,Aminoethylaminopropyltrimethoxysilane,369.15,1.0,CO[Si](CCCNCCN)(OC)OC,wang11
+11925,Tetramethyldiethoxysiloxane,311.15,1.0,CCO[Si]([O])OC(C)(C)C(C)C,wang11
+11926,Octamethyltrisiloxane,303.15,1.0,C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)C,wang11
+11927,Octamethylcyclotetrasiloxane,330.15,1.0,C[Si]1(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O1,wang11
+11928,Octamethylcyclotetrasilazane,339.15,1.0,C[Si]1(C)N[Si](C)(C)N[Si](C)(C)N[Si](C)(C)N1,wang11
+11929,Tetrakisdimethylsiloxysilane,340.15,1.0,C[SiH](C)O[Si](O[SiH](C)C)(O[SiH](C)C)O[SiH](C)C,wang11
+11930,p-Chlorophenyltrimethylsilane,322.15,1.0,C[Si](C)(C)c1ccc(Cl)cc1,wang11
+11931,Phenyltrimethoxysilane,358.15,1.0,CO[Si](OC)(OC)c1ccccc1,wang11
+11932,Trimethylphenylsilane,313.15,1.0,C[Si](C)(C)c1ccccc1,wang11
+11933,Cyclohexylmethyldimethoxysilane,343.15,1.0,CO[SiH](CC1CCCCC1)OC,wang11
+11934, Hexyltrimethoxysilane,335.15,1.0,CCCCCC[Si](OC)(OC)OC,wang11
+11935,Triisopropylsilane,310.15,1.0,CC(C)[SiH](C(C)C)C(C)C,wang11
+11936,Tri-n-propylsilane,316.15,1.0,CCC[SiH](CCC)CCC,wang11
+11937, Propyltris(dimethylsiloxy)silane,323.15,1.0,CCC[Si](O[SiH](C)C)(O[SiH](C)C)O[SiH](C)C,wang11
+11938, Benzyltrimethylsilane,335.15,1.0,C[Si](C)(C)Cc1ccccc1,wang11
+11939, 3-Methacryloxypropyltrimethoxysilane,365.15,1.0,C=C(C)C(=O)OCCC[Si](OC)(OC)OC,wang11
+11940, 1-Heptynyltrimethylsilane,315.15,1.0,CCCCCC#C[Si](C)(C)C,wang11
+11941, n-Octyldimethylchlorosilane,370.15,1.0,CCCCCCCC[Si](C)(C)Cl,wang11
+11942, Bis(diethylamino)dimethylsilane,308.15,1.0,CCN(CC)[Si](C)(C)N(CC)CC,wang11
+11943, Decamethyltetrasiloxane,335.15,1.0,C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)C,wang11
+11944, Decamethylcyclopentasiloxane,350.15,1.0,C[Si]1(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O1,wang11
+11945," 2-(3,4-epoxycyclohexyl)ethyltrimethoxysilane",419.15,1.0,CO[Si](CCC1CCC2OC2C1)(OC)OC,wang11
+11946, n-Decylmethyldichlorosilane,393.15,1.0,CCCCCCCCCC[Si](C)(Cl)Cl,wang11
+11947, Vinyltriethylsilane,318.15,1.0,C=C[Si](CC)(CC)CC,wang11
+11948, Diphenyldichlorosilane,415.15,1.0,Cl[Si](Cl)(c1ccccc1)c1ccccc1,wang11
+11949, Phenyltriethoxysilane,393.15,1.0,CCO[Si](OCC)(OCC)c1ccccc1,wang11
+11950, Diphenylsilane,371.15,1.0,c1ccc([SiH2]c2ccccc2)cc1,wang11
+11951, Tetramethyltetravinylcyclotetrasilane,385.15,1.0,C=C[Si]1(C)[Si](C)(C=C)[Si](C)(C=C)[Si]1(C)C=C,wang11
+11952, n-Dodecyltrichlorosilane,435.15,1.0,CCCCCCCCCCCC[Si](Cl)(Cl)Cl,wang11
+11953, Tetra-n-propoxysilane,368.15,1.0,CCCO[Si](OCCC)(OCCC)OCCC,wang11
+11954, Hexaethyldisiloxane,349.15,1.0,CC[Si](CC)(CC)O[Si](CC)(CC)CC,wang11
+11955, Dodecamethylpentasiloxane,352.15,1.0,C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)C,wang11
+11956, Dodecamethylcyclohexasiloxane,366.15,1.0,C[Si]1(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O1,wang11
+11957,Methyldiphenylchlorosilane,411.15,1.0,C[Si](Cl)(c1ccccc1)c1ccccc1,wang11
+11958,n-Dodecylmethyldichlorosilane,416.15,1.0,CCCCCCCCCCCC[Si](C)(Cl)Cl,wang11
+11959,Diphenyldimethoxysilane,394.15,1.0,CO[Si](OC)(c1ccccc1)c1ccccc1,wang11
+11960,Octyltriethoxysilane,373.15,1.0,CCCCCCCC[Si](OCC)(OCC)OCC,wang11
+11961,Tetradecamethylhexasiloxane,375.15,1.0,C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)C,wang11
+11962,Hexadecamethylheptasiloxane,406.15,1.0,C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)C,wang11
+11963,Octadecamethyloctasiloxane,417.15,1.0,C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)C,wang11
+11964,Vinyltris(methoxyethoxy)silane,353.15,1.0,C=C[Si](OCCOC)(OCCOC)OCCOC,wang11
+11965,Trimethyl(vinyloxy)silane,263.15,1.0,C=CO[Si](C)(C)C,wang11
+11966,Trichloro(3-cyanopropyl) Silane,365.15,1.0,N#CCCC[Si](Cl)(Cl)Cl,wang11
+11967,Trichloro(2-phenylethyl)silane,364.15,1.0,Cl[Si](Cl)(Cl)CCc1ccccc1,wang11
+11968,"Chlorodimethyl(3,3,3-trifluoropropyl) silane",293.15,1.0,C[Si](C)(Cl)CCC(F)(F)F,wang11
+11969,Vinylmethylbis (trimethylsiloxy) silane,324.15,1.0,C=CC[SiH](O[Si](C)(C)C)O[Si](C)(C)C,wang11
+11970,Trichloro(Chloromethyl) silane,342.15,1.0,ClC[Si](Cl)(Cl)Cl,wang11
+11971,Dimethyl(pentafluorophenyl) silane,313.15,1.0,C[SiH](C)c1c(F)c(F)c(F)c(F)c1F,wang11
+11972,Trichloro(p-chlorophenyl)silane,397.05,1.0,Clc1ccc([Si](Cl)(Cl)Cl)cc1,wang11
+11973,Trisilane,273.15,1.0,[SiH3][SiH2][SiH3],wang11
+11974,Trichlorononylsilane,387.15,1.0,[SiH3]CCCCCCCCC(Cl)(Cl)Cl,wang11
+11975,Dichloroethylsilane,263.75,1.0,[SiH3]CC(Cl)Cl,wang11
+11976,Trichloro(dichlorophenyl)silane,419.15,1.0,Clc1cccc([Si](Cl)(Cl)Cl)c1Cl,wang11
+11977,Tris(trimethylsilyl)silane,328.15,1.0,C[Si](C)(C)[SiH]([Si](C)(C)C)[Si](C)(C)C,wang11
+11978,Tris(trimethylsiloxy)silane,323.15,1.0,C[Si](C)(C)O[SiH](O[Si](C)(C)C)O[Si](C)(C)C,wang11
+11979,Hexadecyltrichlorosilane,427.15,1.0,CCCCCCCCCCCCCCCC[Si](Cl)(Cl)Cl,wang11
+11980,Dichlorosilane,236.15,1.0,Cl[SiH2]Cl,wang11
+11981,Methyldichlorosilane,241.15,1.0,C[SiH](Cl)Cl,wang11
+11982,Iodotrimethylsilane,288.15,1.0,C[Si](C)(C)I,wang11
+11983,Dimethyldichlorosilane,257.15,1.0,C[Si](C)(Cl)Cl,wang11
+11984,Bromomethyldimethylchlorosilane,314.15,1.0,C[Si](C)(Cl)CBr,wang11
+11985,Trimethylsilane,204.15,1.0,C[SiH](C)C,wang11
+11986, Dimethylvinylchlorosilane,268.15,1.0,CC(C)=C[SiH2]Cl,wang11
+11987," 1,3-Dichlorotetramethyldisiloxane",288.15,1.0,C[Si](C)(Cl)O[Si](C)(C)Cl,wang11
+11988," 1,1,3,3-Tetramethyldisiloxane",251.15,1.0,C[SiH](C)O[SiH](C)C,wang11
+11989, Tetramethyldisilazane,284.15,1.0,CN([SiH3])[Si](C)(C)C,wang11
+11990, Allyldimethylchlorosilane,278.15,1.0,C=CC[Si](C)(C)Cl,wang11
+11991, sec-Amyltrichlorosilane,303.15,1.0,CCCC(C)[Si](Cl)(Cl)Cl,wang11
+11992, n-Butylmethyldichlorosilane,303.15,1.0,CCCC[Si](C)(Cl)Cl,wang11
+11993, Bis(dimethylamino)methylsilane,270.15,1.0,CN(C)C([SiH3])N(C)C,wang11
+11994, Phenyltrichlorosilane,364.15,1.0,Cl[Si](Cl)(Cl)c1ccccc1,wang11
+11995,Dimethyldiacetoxysilane,310.15,1.0,CC(=O)O[Si](C)(C)OC(C)=O,wang11
+11996,1-Trimethylsilylpropyne,270.15,1.0,CC#C[Si](C)(C)C,wang11
+11997,Vinyldimethylethoxysilane,277.15,1.0,C=C[Si](C)(C)OCC,wang11
+11998,Allyloxytrimethylsilane,273.15,1.0,C=CCO[Si](C)(C)C,wang11
+11999,Allyltrimethoxysilane,319.15,1.0,C=CC[Si](OC)(OC)OC,wang11
+12000,3-Chloropropyltrimethoxysilane,348.15,1.0,CO[Si](CCCCl)(OC)OC,wang11
+12001,n-Propyltrimethoxysilane,298.15,1.0,CCC[Si](OC)(OC)OC,wang11
+12002,Hexamethyldisiloxane,270.15,1.0,C[Si](C)(C)O[Si](C)(C)C,wang11
+12003,Hexamethyldisilane,272.15,1.0,C[Si](C)(C)[Si](C)(C)C,wang11
+12004,Vinyldiethylmethylsilane,288.15,1.0,C=C[Si](C)(CC)CC,wang11
+12005,Isobutyltrimethoxysilane,315.15,1.0,CO[Si](CC(C)C)(OC)OC,wang11
+12006,Phenyldimethylchlorosilane,334.15,1.0,C[Si](C)(Cl)c1ccccc1,wang11
+12007,"(N,N-Dimethylamino)triethylsilane",299.15,1.0,CC[Si](CC)(CC)N(C)C,wang11
+12008,Vinyltriacetoxysilane,361.15,1.0,C=C[Si](OC(C)=O)(OC(C)=O)OC(C)=O,wang11
+12009,Ethyltriacetoxysilane,377.15,1.0,CC[Si](OC(C)=O)(OC(C)=O)OC(C)=O,wang11
+12010,3-(Trimethylsilyl)cyclopentene,299.15,1.0,C[Si](C)(C)C1C=CCC1,wang11
+12011,Vinyltriethylsilane,298.15,1.0,C=C[Si](CC)(CC)CC,wang11
+12012,n-Octylsilane,309.15,1.0,CCCCCCCC[SiH3],wang11
+12013,Methylphenyldimethoxysilane,349.15,1.0,CO[Si](C)(OC)c1ccccc1,wang11
+12014,2-Cyanoethyltriethoxysilane,359.15,1.0,CCO[Si](CCC#N)(OCC)OCC,wang11
+12015,3-Glycidoxypropyltrimethoxysilane,383.15,1.0,CO[Si](CCCOCC1CO1)(OC)OC,wang11
+12016, Di-t-butylmethylchlorosilane,342.15,1.0,CC(C)(C)[Si](C)(Cl)C(C)(C)C,wang11
+12017,Tri-n-propylchlorosilane,349.15,1.0,CCC[Si](Cl)(CCC)CCC,wang11
+12018, (Diisopropylamino)trimethylsilane,301.15,1.0,CC(C)N(C(C)C)[Si](C)(C)C,wang11
+12019, 1-Chlorononamethyltetrasiloxane,347.15,1.0,C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)Cl,wang11
+12020, Tristrimethylsiloxymethylsilane,336.15,1.0,C[Si](C)(C)OC([SiH3])(O[Si](C)(C)C)O[Si](C)(C)C,wang11
+12021,Diphenylmethylsilane,393.15,1.0,[SiH3]C(c1ccccc1)c1ccccc1,wang11
+12022,Trimethyl[(1-methylethenyl)oxy]silane,272.15,1.0,C=C(C)O[Si](C)(C)C,wang11
+12023,"Dichloromethyl-3,3,3-trifluoropropylsilane",288.15,1.0,FC(F)(F)CC[SiH2]C(Cl)Cl,wang11
+12024,[2-(chloromethoxy)ethyl]trimethylsilane,319.15,1.0,C[Si](C)(C)CCOCCl,wang11
+12025,Triphenylsilane,416.35,1.0,c1ccc([SiH](c2ccccc2)c2ccccc2)cc1,wang11
+12026,Trichlorosilane,245.15,1.0,Cl[SiH](Cl)Cl,wang11
