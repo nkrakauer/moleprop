@@ -1,76 +1,76 @@
-,compound,flashpoint,pure substance,smiles,source
-15255,toluene,280.2,1.0,Cc1ccccc1,godinho11
-15256,ethylbenzene,299.1,1.0,CCc1ccccc1,godinho11
-15257,p -xylene,298.2,1.0,Cc1ccc(C)cc1,godinho11
-15258,m -xylene,298.2,1.0,Cc1cccc(C)c1,godinho11
-15259,o -xylene,303.2,1.0,Cc1ccccc1C,godinho11
-15260,cumene,304.2,1.0,CC(C)c1ccccc1,godinho11
-15261,propylbenzene,315.2,1.0,CCCc1ccccc1,godinho11
-15262,m -ethyltoluene,311.2,1.0,CCc1cccc(C)c1,godinho11
-15263,p -ethyltoluene,309.2,1.0,CCc1ccc(C)cc1,godinho11
-15264,"1,3,5-trimethylbenzene",317.2,1.0,Cc1cc(C)cc(C)c1,godinho11
-15265,o -ethyltoluene,312.2,1.0,CCc1ccccc1C,godinho11
-15266,tert -butylbenzene,317.2,1.0,CC(C)(C)c1ccccc1,godinho11
-15267,"1,2,4-trimethylbenzene",318.7,1.0,Cc1ccc(C)c(C)c1,godinho11
-15268,sec -butylbenzene,325.0,1.0,CCC(C)c1ccccc1,godinho11
-15269,m -cymene,320.2,1.0,Cc1cccc(C(C)C)c1,godinho11
-15270,isobutylbenzene,323.2,1.0,CC(C)Cc1ccccc1,godinho11
-15271,"1,2,3-trimethylbenzene",324.2,1.0,Cc1cccc(C)c1C,godinho11
-15272,p -cymene,320.2,1.0,Cc1ccc(C(C)C)cc1,godinho11
-15273,o -cymene,323.2,1.0,Cc1ccccc1C(C)C,godinho11
-15274,m -diethylbenzene,324.2,1.0,CCc1cccc(CC)c1,godinho11
-15275,m -propyltoluene,325.0,1.0,CCCc1cccc(C)c1,godinho11
-15276,butylbenzene,331.2,1.0,CCCCc1ccccc1,godinho11
-15277,p -propyltoluene,329.5,1.0,CCCc1ccc(C)cc1,godinho11
-15278,o -diethylbenzene,328.2,1.0,CCc1ccccc1CC,godinho11
-15279,"1-ethyl-3,5-dimethylbenzene",330.5,1.0,CCc1cc(C)cc(C)c1,godinho11
-15280,p -diethylbenzene,328.2,1.0,CCc1ccc(CC)cc1,godinho11
-15281,o -propyltoluene,330.9,1.0,CCCc1ccccc1C,godinho11
-15282,neopentylbenzene,323.2,1.0,CC(C)(C)Cc1ccccc1,godinho11
-15283,1-tert -butyl-3-methylbenzene,333.7,1.0,Cc1cccc(C(C)(C)C)c1,godinho11
-15284,2-ethyl-p -xylene,329.2,1.0,CCc1cc(C)ccc1C,godinho11
-15285,"(1,2-dimethylpropyl)benzene",330.1,1.0,CC(C)C(C)c1ccccc1,godinho11
-15286,"1-ethyl-2,4-dimethylbenzene",330.2,1.0,CCc1ccc(C)cc1C,godinho11
-15287,4-ethyl-o -xylene,331.2,1.0,CCc1ccc(C)c(C)c1,godinho11
-15288,"2-ethyl-1,3-dimethylbenzene",335.1,1.0,CCc1c(C)cccc1C,godinho11
-15289,2-tert -butyltoluene,334.6,1.0,Cc1ccccc1C(C)(C)C,godinho11
-15290,4-tert -butyltoluene,327.2,1.0,Cc1ccc(C(C)(C)C)cc1,godinho11
-15291,2-phenyl-2-methylbutane,332.5,1.0,CCC(C)(C)c1ccccc1,godinho11
-15292,m -ethylcumene,336.0,1.0,CCc1cccc(C(C)C)c1,godinho11
-15293,"1-ethyl-2,3-dimethylbenzene",338.2,1.0,CCc1cccc(C)c1C,godinho11
-15294,1-sec -butyl-3-methylbenzene,336.2,1.0,CCC(C)c1cccc(C)c1,godinho11
-15295,1-isobutyl-2-methylbenzene,341.8,1.0,Cc1ccccc1CC(C)C,godinho11
-15296,1-isobutyl-4-methylbenzene,340.5,1.0,Cc1ccc(CC(C)C)cc1,godinho11
-15297,"1,4-dimethyl-2-isopropylbenzene",337.8,1.0,Cc1ccc(C)c(C(C)C)c1,godinho11
-15298,1-sec -butyl-4-methylbenzene,338.0,1.0,CCC(C)c1ccc(C)cc1,godinho11
-15299,(2-methylbutyl)benzene,337.2,1.0,CCC(C)Cc1ccccc1,godinho11
-15300,p -ethylcumene,338.9,1.0,CCc1ccc(C(C)C)cc1,godinho11
-15301,isopentylbenzene,335.2,1.0,CC(C)CCc1ccccc1,godinho11
-15302,sec -pentylbenzene,333.8,1.0,CCCC(C)c1ccccc1,godinho11
-15303,"1,3-dimethyl-4-isopropylbenzene",340.3,1.0,Cc1ccc(C(C)C)c(C)c1,godinho11
-15304,"1,3-diethyl-5-methylbenzene",343.0,1.0,CCc1cc(C)cc(CC)c1,godinho11
-15305,1-ethyl-3-propylbenzene,342.8,1.0,CCCc1cccc(CC)c1,godinho11
-15306,"1,2-dimethyl-4-isopropylbenzene",341.2,1.0,Cc1ccc(C(C)C)cc1C,godinho11
-15307,"1,3-diisopropylbenzene",349.9,1.0,CC(C)c1cccc(C(C)C)c1,godinho11
-15308,1-butyl-3-methylbenzene,343.9,1.0,CCCCc1cccc(C)c1,godinho11
-15309,"1,3-diethyl-4-methylbenzene",345.4,1.0,CCc1ccc(C)c(CC)c1,godinho11
-15310,pentylbenzene,339.2,1.0,CCCCCc1ccccc1,godinho11
-15311,1-butyl-4-methylbenzene,344.3,1.0,CCCCc1ccc(C)cc1,godinho11
-15312,"1-tert -butyl-3,5-dimethylbenzene",345.0,1.0,Cc1cc(C)cc(C(C)(C)C)c1,godinho11
-15313,"1,4-diethyl-2-methylbenzene",346.1,1.0,CCc1ccc(CC)c(C)c1,godinho11
-15314,1-butyl-2-methylbenzene,345.6,1.0,CCCCc1ccccc1C,godinho11
-15315,"1,4-diisopropylbenzene",349.2,1.0,CC(C)c1ccc(C(C)C)cc1,godinho11
-15316,"1,2-dimethyl-3-propylbenzene",345.0,1.0,CCCc1cccc(C)c1C,godinho11
-15317,1-tert -butyl-4-ethylbenzene,349.1,1.0,CCc1ccc(C(C)(C)C)cc1,godinho11
-15318,(1-ethylbutyl)benzene,347.4,1.0,CCCC(CC)c1ccccc1,godinho11
-15319,"1,3,5-triethylbenzene",354.2,1.0,CCc1cc(CC)cc(CC)c1,godinho11
-15320,"1,2,3-triethylbenzene",352.0,1.0,CCc1cccc(CC)c1CC,godinho11
-15321,"1-sec -butyl-2,4-dimethylbenzene",354.5,1.0,CCC(C)c1ccc(C)cc1C,godinho11
-15322,hexylbenzene,356.7,1.0,CCCCCCc1ccccc1,godinho11
-15323,"(2,4-dimethylpentyl)benzene",360.1,1.0,CC(C)CC(C)Cc1ccccc1,godinho11
-15324,(1-methylhexyl)benzene,360.4,1.0,CCCCCC(C)c1ccccc1,godinho11
-15325,"1,4-di-tert -butylbenzene",370.1,1.0,CC(C)(C)c1ccc(C(C)(C)C)cc1,godinho11
-15326,heptylbenzene,368.6,1.0,CCCCCCCc1ccccc1,godinho11
-15327,(1-methylheptyl)benzene,373.2,1.0,CCCCCCC(C)c1ccccc1,godinho11
-15328,"1,3-dibutylbenzene",382.4,1.0,CCCCc1cccc(CCCC)c1,godinho11
-15329,octylbenzene,380.2,1.0,CCCCCCCCc1ccccc1,godinho11
+,Unnamed: 0,compound,flashpoint,pure substance,smiles,source
+14835,15255,toluene,280.2,1.0,Cc1ccccc1,godinho11
+14836,15256,ethylbenzene,299.1,1.0,CCc1ccccc1,godinho11
+14837,15257,p -xylene,298.2,1.0,Cc1ccc(C)cc1,godinho11
+14838,15258,m -xylene,298.2,1.0,Cc1cccc(C)c1,godinho11
+14839,15259,o -xylene,303.2,1.0,Cc1ccccc1C,godinho11
+14840,15260,cumene,304.2,1.0,CC(C)c1ccccc1,godinho11
+14841,15261,propylbenzene,315.2,1.0,CCCc1ccccc1,godinho11
+14842,15262,m -ethyltoluene,311.2,1.0,CCc1cccc(C)c1,godinho11
+14843,15263,p -ethyltoluene,309.2,1.0,CCc1ccc(C)cc1,godinho11
+14844,15264,"1,3,5-trimethylbenzene",317.2,1.0,Cc1cc(C)cc(C)c1,godinho11
+14845,15265,o -ethyltoluene,312.2,1.0,CCc1ccccc1C,godinho11
+14846,15266,tert -butylbenzene,317.2,1.0,CC(C)(C)c1ccccc1,godinho11
+14847,15267,"1,2,4-trimethylbenzene",318.7,1.0,Cc1ccc(C)c(C)c1,godinho11
+14848,15268,sec -butylbenzene,325.0,1.0,CCC(C)c1ccccc1,godinho11
+14849,15269,m -cymene,320.2,1.0,Cc1cccc(C(C)C)c1,godinho11
+14850,15270,isobutylbenzene,323.2,1.0,CC(C)Cc1ccccc1,godinho11
+14851,15271,"1,2,3-trimethylbenzene",324.2,1.0,Cc1cccc(C)c1C,godinho11
+14852,15272,p -cymene,320.2,1.0,Cc1ccc(C(C)C)cc1,godinho11
+14853,15273,o -cymene,323.2,1.0,Cc1ccccc1C(C)C,godinho11
+14854,15274,m -diethylbenzene,324.2,1.0,CCc1cccc(CC)c1,godinho11
+14855,15275,m -propyltoluene,325.0,1.0,CCCc1cccc(C)c1,godinho11
+14856,15276,butylbenzene,331.2,1.0,CCCCc1ccccc1,godinho11
+14857,15277,p -propyltoluene,329.5,1.0,CCCc1ccc(C)cc1,godinho11
+14858,15278,o -diethylbenzene,328.2,1.0,CCc1ccccc1CC,godinho11
+14859,15279,"1-ethyl-3,5-dimethylbenzene",330.5,1.0,CCc1cc(C)cc(C)c1,godinho11
+14860,15280,p -diethylbenzene,328.2,1.0,CCc1ccc(CC)cc1,godinho11
+14861,15281,o -propyltoluene,330.9,1.0,CCCc1ccccc1C,godinho11
+14862,15282,neopentylbenzene,323.2,1.0,CC(C)(C)Cc1ccccc1,godinho11
+14863,15283,1-tert -butyl-3-methylbenzene,333.7,1.0,Cc1cccc(C(C)(C)C)c1,godinho11
+14864,15284,2-ethyl-p -xylene,329.2,1.0,CCc1cc(C)ccc1C,godinho11
+14865,15285,"(1,2-dimethylpropyl)benzene",330.1,1.0,CC(C)C(C)c1ccccc1,godinho11
+14866,15286,"1-ethyl-2,4-dimethylbenzene",330.2,1.0,CCc1ccc(C)cc1C,godinho11
+14867,15287,4-ethyl-o -xylene,331.2,1.0,CCc1ccc(C)c(C)c1,godinho11
+14868,15288,"2-ethyl-1,3-dimethylbenzene",335.1,1.0,CCc1c(C)cccc1C,godinho11
+14869,15289,2-tert -butyltoluene,334.6,1.0,Cc1ccccc1C(C)(C)C,godinho11
+14870,15290,4-tert -butyltoluene,327.2,1.0,Cc1ccc(C(C)(C)C)cc1,godinho11
+14871,15291,2-phenyl-2-methylbutane,332.5,1.0,CCC(C)(C)c1ccccc1,godinho11
+14872,15292,m -ethylcumene,336.0,1.0,CCc1cccc(C(C)C)c1,godinho11
+14873,15293,"1-ethyl-2,3-dimethylbenzene",338.2,1.0,CCc1cccc(C)c1C,godinho11
+14874,15294,1-sec -butyl-3-methylbenzene,336.2,1.0,CCC(C)c1cccc(C)c1,godinho11
+14875,15295,1-isobutyl-2-methylbenzene,341.8,1.0,Cc1ccccc1CC(C)C,godinho11
+14876,15296,1-isobutyl-4-methylbenzene,340.5,1.0,Cc1ccc(CC(C)C)cc1,godinho11
+14877,15297,"1,4-dimethyl-2-isopropylbenzene",337.8,1.0,Cc1ccc(C)c(C(C)C)c1,godinho11
+14878,15298,1-sec -butyl-4-methylbenzene,338.0,1.0,CCC(C)c1ccc(C)cc1,godinho11
+14879,15299,(2-methylbutyl)benzene,337.2,1.0,CCC(C)Cc1ccccc1,godinho11
+14880,15300,p -ethylcumene,338.9,1.0,CCc1ccc(C(C)C)cc1,godinho11
+14881,15301,isopentylbenzene,335.2,1.0,CC(C)CCc1ccccc1,godinho11
+14882,15302,sec -pentylbenzene,333.8,1.0,CCCC(C)c1ccccc1,godinho11
+14883,15303,"1,3-dimethyl-4-isopropylbenzene",340.3,1.0,Cc1ccc(C(C)C)c(C)c1,godinho11
+14884,15304,"1,3-diethyl-5-methylbenzene",343.0,1.0,CCc1cc(C)cc(CC)c1,godinho11
+14885,15305,1-ethyl-3-propylbenzene,342.8,1.0,CCCc1cccc(CC)c1,godinho11
+14886,15306,"1,2-dimethyl-4-isopropylbenzene",341.2,1.0,Cc1ccc(C(C)C)cc1C,godinho11
+14887,15307,"1,3-diisopropylbenzene",349.9,1.0,CC(C)c1cccc(C(C)C)c1,godinho11
+14888,15308,1-butyl-3-methylbenzene,343.9,1.0,CCCCc1cccc(C)c1,godinho11
+14889,15309,"1,3-diethyl-4-methylbenzene",345.4,1.0,CCc1ccc(C)c(CC)c1,godinho11
+14890,15310,pentylbenzene,339.2,1.0,CCCCCc1ccccc1,godinho11
+14891,15311,1-butyl-4-methylbenzene,344.3,1.0,CCCCc1ccc(C)cc1,godinho11
+14892,15312,"1-tert -butyl-3,5-dimethylbenzene",345.0,1.0,Cc1cc(C)cc(C(C)(C)C)c1,godinho11
+14893,15313,"1,4-diethyl-2-methylbenzene",346.1,1.0,CCc1ccc(CC)c(C)c1,godinho11
+14894,15314,1-butyl-2-methylbenzene,345.6,1.0,CCCCc1ccccc1C,godinho11
+14895,15315,"1,4-diisopropylbenzene",349.2,1.0,CC(C)c1ccc(C(C)C)cc1,godinho11
+14896,15316,"1,2-dimethyl-3-propylbenzene",345.0,1.0,CCCc1cccc(C)c1C,godinho11
+14897,15317,1-tert -butyl-4-ethylbenzene,349.1,1.0,CCc1ccc(C(C)(C)C)cc1,godinho11
+14898,15318,(1-ethylbutyl)benzene,347.4,1.0,CCCC(CC)c1ccccc1,godinho11
+14899,15319,"1,3,5-triethylbenzene",354.2,1.0,CCc1cc(CC)cc(CC)c1,godinho11
+14900,15320,"1,2,3-triethylbenzene",352.0,1.0,CCc1cccc(CC)c1CC,godinho11
+14901,15321,"1-sec -butyl-2,4-dimethylbenzene",354.5,1.0,CCC(C)c1ccc(C)cc1C,godinho11
+14902,15322,hexylbenzene,356.7,1.0,CCCCCCc1ccccc1,godinho11
+14903,15323,"(2,4-dimethylpentyl)benzene",360.1,1.0,CC(C)CC(C)Cc1ccccc1,godinho11
+14904,15324,(1-methylhexyl)benzene,360.4,1.0,CCCCCC(C)c1ccccc1,godinho11
+14905,15325,"1,4-di-tert -butylbenzene",370.1,1.0,CC(C)(C)c1ccc(C(C)(C)C)cc1,godinho11
+14906,15326,heptylbenzene,368.6,1.0,CCCCCCCc1ccccc1,godinho11
+14907,15327,(1-methylheptyl)benzene,373.2,1.0,CCCCCCC(C)c1ccccc1,godinho11
+14908,15328,"1,3-dibutylbenzene",382.4,1.0,CCCCc1cccc(CCCC)c1,godinho11
+14909,15329,octylbenzene,380.2,1.0,CCCCCCCCc1ccccc1,godinho11
