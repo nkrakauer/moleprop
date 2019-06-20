@@ -46,27 +46,29 @@ class Loader:
         if not os.path.exists('dataset_info'):
             os.mkdir('dataset_info')
             print("||||||||||||||||Directory dataset_info Created||||||||||||||||")
-        sources = data.source.unique()
-        source_info = dict()
-        for s in sources:
-            counter = 0
-            for i in range(0,len(data.index)):
-                if data.iloc[i]['source'] == s:
-                    counter += 1
-            source_info[s] = [counter]
         output = ("=====================================================\n" +
-                 name + " info:\n"+
-                 "-----------------------------------------------------\n" +
-                 "Dataset length is: " + str(len(data.index)) + "\n" + 
-                 "-----------------------------------------------------\n" +
-                 "Dataset sources info: \n")
-        for s in sources:
-            output += (str("  Source name:" + str(s) + ", Number of data: " + str(source_info[s]) + "\n"))
+                  name + " info:\n"+
+                  "-----------------------------------------------------\n" +
+                  "Dataset length is: " + str(len(data.index)) + "\n")
+        if 'source' in data.columns:    
+            sources = data.source.unique()
+            source_info = dict()
+            for s in sources:
+                counter = 0
+                for i in range(0,len(data.index)):
+                    if data.iloc[i]['source'] == s:
+                        counter += 1
+                source_info[s] = [counter]
+            output += ("-----------------------------------------------------\n" +
+                     "Dataset sources info: \n")
+            for s in sources:
+                output += (str("  Source name:" + str(s) + ", Number of data: " + str(source_info[s]) + "\n"))
+        
         output += ("-----------------------------------------------------\n" + 
-                  "Mean: " + str(data['flashpoint'].mean()) + "\n"
-                  "-----------------------------------------------------\n" + 
-                  "Std: " + str(data['flashpoint'].std()) + "\n" + 
-                  "=====================================================\n")
+                   "Mean: " + str(data['flashpoint'].mean()) + "\n"
+                   "-----------------------------------------------------\n" + 
+                   "Std: " + str(data['flashpoint'].std()) + "\n" + 
+                   "=====================================================\n")
         print(output)
         file = open('./dataset_info/'+name+'.txt', 'w')
         file.write(output)
@@ -292,11 +294,11 @@ class Model:
     """
     default_args = {
         'graphconv': {
-            'nb_epoch': 50, 
-            'batch_size': 64, 
+            'nb_epoch': 100, 
+            'batch_size': 100, 
             'n_tasks': 1, 
             'graph_conv_layers':[64,64],
-            'dense_layer_size': 256,
+            'dense_layer_size': 128,
             'dropout': 0,
             'mode': 'regression'},
         'MPNN':{
