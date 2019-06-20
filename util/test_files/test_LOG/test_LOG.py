@@ -1,12 +1,12 @@
 import sys
-sys.path.append('../')     # change the path to your dir of workflow.py
+sys.path.append('/srv/home/apolitowicz/moleprop/util/')
 import workflow as wf
 import pandas as pd
 
 print("About to load")
 loader = wf.Loader
 # TODO: need to change name and dir to your local dataset name and path
-data = loader.load(file_name = '9k_dataset.csv',data_dir = '/srv/home/xsun256/Moleprop/summer19/datasets')
+data = loader.load(file_name = 'new_integrated_dataset.csv',data_dir = '/srv/home/apolitowicz/moleprop/data')
 
 print("About to split")
 splitter = wf.Splitter
