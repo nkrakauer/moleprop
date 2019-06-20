@@ -3,7 +3,6 @@ import sys
 import numpy as np
 import pandas as pd
 import random                                 # for randomly choosing indices from left-out group as test indices
-#import bokeh                                             # TODO for interactive plot
 import statistics as stat
 import seaborn
 import matplotlib.pyplot as plt
@@ -115,7 +114,7 @@ class Splitter:
         # remove duplicates in train group.
         test_df = dataset[dataset['source'] == test_group]
         train_df = dataset[dataset['source'] != test_group]
-
+        train_df = integration_helpers.remove_duplicates(train_df)
         # remove data points in  train dataframe that match smiles strings in
         # test dataframe
         for index, row in test_df.iterrows():
