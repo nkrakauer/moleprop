@@ -1,0 +1,19 @@
+=====================================================
+CV_1_Test info:
+-----------------------------------------------------
+Dataset length is: 34
+-----------------------------------------------------
+Dataset sources info: 
+  Source name:carroll11, Number of data: [7]
+  Source name:pubchem, Number of data: [13]
+  Source name:Saldana11, Number of data: [5]
+  Source name:chen14, Number of data: [1]
+  Source name:hazardous materials, Number of data: [5]
+  Source name:gelest_metal-organics, Number of data: [1]
+  Source name:pan12, Number of data: [1]
+  Source name:gelest_tin, Number of data: [1]
+-----------------------------------------------------
+Mean: 331.1514705882352
+-----------------------------------------------------
+Std: 55.03979068254071
+=====================================================

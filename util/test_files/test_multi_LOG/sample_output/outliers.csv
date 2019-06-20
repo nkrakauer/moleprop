@@ -1,0 +1,4 @@
+,Unnamed: 0,Unnamed: 0.1,smiles,compound,flashpoint,source,pure substance,residual
+86,1699,1700,C1C=CC=[C-]1.C1C=CC=[C-]1.[Ni+2],"cyclopenta-1,3-diene;nickel(2+)",277.15,pubchem,1,-103.09432294031961
+58,463,463,C1=CC(=CC=C1C(=O)O)C(=O)O,terephthalic acid,533.15,pubchem,1,133.43342578383783
+61,863,863,C1CC=CC1,cyclopentene,239.15,pubchem,1,-100.55458727489687

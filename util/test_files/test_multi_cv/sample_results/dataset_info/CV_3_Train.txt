@@ -1,0 +1,20 @@
+=====================================================
+CV_3_Train info:
+-----------------------------------------------------
+Dataset length is: 67
+-----------------------------------------------------
+Dataset sources info: 
+  Source name:hazardous materials, Number of data: [7]
+  Source name:pubchem, Number of data: [30]
+  Source name:carroll11, Number of data: [16]
+  Source name:Saldana11, Number of data: [7]
+  Source name:gelest_germanium, Number of data: [1]
+  Source name:chen14, Number of data: [2]
+  Source name:gelest_metal-organics, Number of data: [1]
+  Source name:pan12, Number of data: [1]
+  Source name:gelest_tin, Number of data: [2]
+-----------------------------------------------------
+Mean: 335.29029850746275
+-----------------------------------------------------
+Std: 59.5728508932207
+=====================================================

@@ -3,7 +3,6 @@ import sys
 import numpy as np
 import pandas as pd
 import random                                 # for randomly choosing indices from left-out group as test indices
-#import bokeh                                             # TODO for interactive plot
 import statistics as stat
 import seaborn
 import matplotlib.pyplot as plt
@@ -46,31 +45,48 @@ class Loader:
         if not os.path.exists('dataset_info'):
             os.mkdir('dataset_info')
             print("||||||||||||||||Directory dataset_info Created||||||||||||||||")
-        sources = data.source.unique()
-        source_info = dict()
-        for s in sources:
-            counter = 0
-            for i in range(0,len(data.index)):
-                if data.iloc[i]['source'] == s:
-                    counter += 1
-            source_info[s] = [counter]
         output = ("=====================================================\n" +
-                 name + " info:\n"+
-                 "-----------------------------------------------------\n" +
-                 "Dataset length is: " + str(len(data.index)) + "\n" + 
-                 "-----------------------------------------------------\n" +
-                 "Dataset sources info: \n")
-        for s in sources:
-            output += (str("  Source name:" + str(s) + ", Number of data: " + str(source_info[s]) + "\n"))
+                  name + " info:\n"+
+                  "-----------------------------------------------------\n" +
+                  "Dataset length is: " + str(len(data.index)) + "\n")
+        if 'source' in data.columns:    
+            sources = data.source.unique()
+            source_info = dict()
+            for s in sources:
+                counter = 0
+                for i in range(0,len(data.index)):
+                    if data.iloc[i]['source'] == s:
+                        counter += 1
+                source_info[s] = [counter]
+            output += ("-----------------------------------------------------\n" +
+                     "Dataset sources info: \n")
+            for s in sources:
+                output += (str("  Source name:" + str(s) + ", Number of data: " + str(source_info[s]) + "\n"))
+        
         output += ("-----------------------------------------------------\n" + 
-                  "Mean: " + str(data['flashpoint'].mean()) + "\n"
-                  "-----------------------------------------------------\n" + 
-                  "Std: " + str(data['flashpoint'].std()) + "\n" + 
-                  "=====================================================\n")
+                   "Mean: " + str(data['flashpoint'].mean()) + "\n"
+                   "-----------------------------------------------------\n" + 
+                   "Std: " + str(data['flashpoint'].std()) + "\n" + 
+                   "=====================================================\n")
         print(output)
         file = open('./dataset_info/'+name+'.txt', 'w')
         file.write(output)
         file.close()
+        
+    def get_single_dataset(integrated_dataset, source_name):
+        """
+        this method is used to extract dataset from intgrated dataset
+
+        integrated_dataset: DataFrame
+        source_name: name of the source you want to extract from the integrated dataset
+        """
+        seperate_dataset_list = list()
+        for i in range(len(integrated_dataset.index)):
+            if integrated_dataset.iloc[i]['source'] == source_name:
+                seperate_dataset_list.append(integrated_dataset.iloc[i])
+        seperate_dataset = pd.DataFrame(seperate_dataset_list)
+#        seperate_dataset.to_csv('./'+source_name+'.csv')   #(optional) for saving this seperate dataset 
+        return seperate_dataset
 
 class Splitter:
     def k_fold(dataset, n_splits = 3, shuffle = True, random_state = None):
@@ -100,7 +116,7 @@ class Splitter:
         # remove duplicates in train group.
         test_df = dataset[dataset['source'] == test_group]
         train_df = dataset[dataset['source'] != test_group]
-
+        train_df = integration_helpers.remove_duplicates(train_df)
         # remove data points in  train dataframe that match smiles strings in
         # test dataframe
         for index, row in test_df.iterrows():
@@ -113,7 +129,7 @@ class Splitter:
         raw_test_indices = []
         raw_train_indices = list(range(len(dataset.index)))
         print("||||||||||||||||||| "+test_group+ " will be used as test set|||||||||||||||||||")
-        for i in range(0,len(dataset.index)):
+        for i in range(len(dataset.index)):
             if dataset.iloc[i]['source'] == test_group:
                 raw_test_indices.append(i)
                 raw_train_indices.remove(i)
@@ -224,8 +240,8 @@ class Run:
         test_set = data.iloc[test_indices]
         train_set.to_csv('train_set.csv',index = False)
         test_set.to_csv('test_set.csv',index = False)
-        Loader.getinfo(train_set, "CV_"+str(i)+"_Train")
-        Loader.getinfo(test_set, "CV_"+str(i)+"_Test")
+        Loader.getinfo(train_set, "LOG_Train")
+        Loader.getinfo(test_set, "LOG_Test")
         if model == 'MPNN':
             rms_score,mae_score,r2_score,pred = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
         elif model == 'GraphConv' or model == 'graphconv' or model == 'GC':
@@ -251,9 +267,8 @@ class Run:
         for key in scores:
             s = key + " = " + str(scores[key]) + "\n"
             file.write(s)        
-        #file.write(str(scores))
         file.close()
-        return scores, cv_predictions, cv_test_datasets
+        return scores, pred, test_set
     
     def getAAPD(dataset, pred):  # Average absolute percent deviation
         expt = dataset['flashpoint'].tolist()
@@ -278,11 +293,11 @@ class Model:
     """
     default_args = {
         'graphconv': {
-            'nb_epoch': 50, 
-            'batch_size': 64, 
+            'nb_epoch': 100, 
+            'batch_size': 100, 
             'n_tasks': 1, 
             'graph_conv_layers':[64,64],
-            'dense_layer_size': 256,
+            'dense_layer_size': 128,
             'dropout': 0,
             'mode': 'regression'},
         'MPNN':{
@@ -416,7 +431,7 @@ class Plotter:
         fg = seaborn.FacetGrid(data=test_dataset, hue='source', height = 8, aspect=1.25)
         fg.map(plt.errorbar,                  # type of plot
                'flashpoint', 'pred', 'yeer',  # data column
-               fmt = 'o', markersize = 5      # args for errorbar
+               fmt = 'o', markersize = 4      # args for errorbar
               ).add_legend()                  # add legend
         # set x,y limit
         min_val = min(min(y),min(y)-max(yeer),min(x)-max(yeer)) - 20
@@ -439,7 +454,7 @@ class Plotter:
         plt.ylabel("Predicted") 
         plt.xlabel("Experimental") 
         seaborn.despine(fg.fig,top=False, right=False)#, left=True, bottom=True,)
-        plt.savefig('./parity_plot/'+plot_name+'.png', dpi = 1000) 
+        plt.savefig('./parity_plot/'+plot_name+'.png', dpi = 500) 
         plt.clf()
 
     def residual_histogram(pred, dataset, plot_name = 'histogram', text = None):
@@ -466,7 +481,7 @@ class Plotter:
                         t = t+str('%')
                     plt.text(left,top - i,t)
                     i += top/15
-        plt.savefig('./residual_plot/'+plot_name+'.png', dpi = 1000)
+        plt.savefig('./residual_plot/'+plot_name+'.png', dpi = 500)
         plt.clf()
 
     def interactive_plot(pred_result,true_result):
