@@ -56,6 +56,7 @@ butan-1-ol;titanium,350.15,1.0,CCCCO.CCCCO.CCCCO.CCCCO.[Ti],pubchem,0
 manganese(2+);N-[2-(sulfidocarbothioylamino)ethyl]carbamodithioate,411.15,1.0,C(CNC(=S)[S-])NC(=S)[S-].[Mn+2],pubchem,0
 chromium(3+);octadecanoate;tetrachloride;hydroxide,275.15,1.0,CCCCCCCCCCCCCCCCCC(=O)[O-].[OH-].[Cl-].[Cl-].[Cl-].[Cl-].[Cr+3].[Cr+3],pubchem,0
 zinc;manganese(2+);N-[2-(sulfidocarbothioylamino)ethyl]carbamodithioate,411.15,1.0,C(CNC(=S)[S-])NC(=S)[S-].C(CNC(=S)[S-])NC(=S)[S-].[Mn+2].[Zn+2],pubchem,0
+zinc;manganese(2+);N-[2-(sulfidocarbothioylamino)ethyl]carbamodithioate,411.15,1.0,C(CNC(=S)[S-])NC(=S)[S-].C(CNC(=S)[S-])NC(=S)[S-].[Mn+2].[Zn+2],pubchem,0
 sodium;chloro-(4-methylphenyl)sulfonylazanide,465.15,1.0,CC1=CC=C(C=C1)S(=O)(=O)[N-]Cl.[Na+],pubchem,0
 dichlorochromium;1-hydroxyoctadecylideneoxidanium;hydrate,275.15,1.0,CCCCCCCCCCCCCCCCCC(=[OH+])O.O.Cl[Cr]Cl.Cl[Cr]Cl,pubchem,0
 "trichloro-(3,4-dichlorophenyl)silane",414.15,1.0,C1=CC(=C(C=C1[Si](Cl)(Cl)Cl)Cl)Cl,pubchem,1
@@ -72,6 +73,7 @@ triphenyltin;hydrate,673.15,1.0,C1=CC=C(C=C1)[Sn](C2=CC=CC=C2)C3=CC=CC=C3.O,pubc
 boranylidyneborane,183.15,1.0,B#B,pubchem,0
 InChI=1S/CH3ClSi/c1-3-2/h1H3,264.15,1.0,C[Si]Cl,pubchem,1
 "cyclopenta-1,3-diene;nickel",277.15,1.0,C1C=CC=C1.C1C=CC=C1.[Ni],pubchem,0
+zinc;manganese(2+);N-[2-(sulfidocarbothioylamino)ethyl]carbamodithioate,411.15,1.0,C(CNC(=S)[S-])NC(=S)[S-].C(CNC(=S)[S-])NC(=S)[S-].[Mn+2].[Zn+2],pubchem,0
 zinc;manganese(2+);N-[2-(sulfidocarbothioylamino)ethyl]carbamodithioate,411.15,1.0,C(CNC(=S)[S-])NC(=S)[S-].C(CNC(=S)[S-])NC(=S)[S-].[Mn+2].[Zn+2],pubchem,0
 "cyclopenta-1,3-diene;nickel(2+)",277.15,1.0,[CH-]1C=CC=C1.[CH-]1C=CC=C1.[Ni+2],pubchem,0
 acetyloxy(phenyl)mercury,333.15,1.0,CC(=O)O[Hg]C1=CC=CC=C1,pubchem,0
@@ -352,6 +354,8 @@ NICKEL DI-n-BUTYLDITHIOCARBAMATE,533.15,1.0,CCCCN(CCCC)C(=S)[S-].CCCCN(CCCC)C(=S
 NIOBIUM(V) n-BUTOXIDE,363.15,1.0,CCCC[O-].CCCC[O-].CCCC[O-].CCCC[O-].CCCC[O-].[Nb+5],gelest_metal-organics,0
 NIOBIUM(V) ETHOXIDE,347.15,1.0,CC[O-].CC[O-].CC[O-].CC[O-].CC[O-].[Nb+5],gelest_metal-organics,0
 TANTALUM(V) n-BUTOXIDE,339.15,1.0,CCCC[O-].CCCC[O-].CCCC[O-].CCCC[O-].CCCC[O-].[Ta+5],gelest_metal-organics,0
+TANTALUM(V) n-BUTOXIDE,339.15,1.0,CCCC[O-].CCCC[O-].CCCC[O-].CCCC[O-].CCCC[O-].[Ta+5],gelest_metal-organics,0
+TANTALUM(V) ETHOXIDE,313.15,1.0,CC[O-].CC[O-].CC[O-].CC[O-].CC[O-].[Ta+5],gelest_metal-organics,0
 TANTALUM(V) ETHOXIDE,313.15,1.0,CC[O-].CC[O-].CC[O-].CC[O-].CC[O-].[Ta+5],gelest_metal-organics,0
 TITANIUM n-BUTOXIDE,349.15,1.0,CCCC[O-].CCCC[O-].CCCC[O-].CCCC[O-].[Ti+4],gelest_metal-organics,0
 TITANIUM CHLORIDE TRIISOPROPOXIDE,295.15,1.0,CC(C)[O-].CC(C)[O-].CC(C)[O-].[Cl-].[Ti+4],gelest_metal-organics,0
@@ -379,11 +383,13 @@ TRIS(DIMETHYLAMINO)GALLIUM,329.15,1.0,CN(C)[Ga](N(C)C)N(C)C,gelest_metal-organic
 HAFNIUM TETRAKIS(ETHYLMETHYLAMIDE),283.15,1.0,CC[N-]C.CC[N-]C.CC[N-]C.CC[N-]C.[Hf+4],gelest_metal-organics,0
 HAFNIUM TETRAKIS(ETHYLMETHYLAMIDE),283.15,1.0,CC[N-]C.CC[N-]C.CC[N-]C.CC[N-]C.[Hf+4],gelest_metal-organics,0
 TRIS(DIETHYLAMINO)(t-BUTYLIMINO) TANTALUM,319.15,1.0,CCN(CC)[Ta](=NC(C)(C)C)(N(CC)CC)N(CC)CC,gelest_metal-organics,0
+TRIS(DIETHYLAMINO)(t-BUTYLIMINO) TANTALUM,319.15,1.0,CCN(CC)[Ta](=NC(C)(C)C)(N(CC)CC)N(CC)CC,gelest_metal-organics,0
 TITANIUM TETRAKIS(DIETHYLAMIDE),310.15,1.0,CC[N-]CC.CC[N-]CC.CC[N-]CC.CC[N-]CC.[Ti+4],gelest_metal-organics,0
 TITANIUM TETRAKIS(DIMETHYLAMIDE),281.15,1.0,C[N-]C.C[N-]C.C[N-]C.C[N-]C.[Ti+4],gelest_metal-organics,0
 TITANIUM TETRAKIS(ETHYLMETHYLAMIDE),283.15,1.0,CC[N-]C.CC[N-]C.CC[N-]C.CC[N-]C.[Ti+4],gelest_metal-organics,0
 ZIRCONIUM TETRAKIS(ETHYLMETHYLAMIDE),283.15,1.0,CC[N-]C.CC[N-]C.CC[N-]C.CC[N-]C.[Zr+4],gelest_metal-organics,0
 TETRAETHYLLEAD,346.15,1.0,CC[Pb](CC)(CC)CC,gelest_metal-organics,0
+TRIS(TRIMETHYLSILOXY)BORON,315.15,1.0,C[Si](C)(C)OB(O[Si](C)(C)C)O[Si](C)(C)C,gelest_metal-organics,1
 TRIS(TRIMETHYLSILOXY)BORON,315.15,1.0,C[Si](C)(C)OB(O[Si](C)(C)C)O[Si](C)(C)C,gelest_metal-organics,1
 Trichlorosilane,245.0,1.0,Cl[SiH](Cl)Cl,pan12,1
 Dichlorosilane,236.0,1.0,Cl[SiH2]Cl,pan12,1
@@ -572,6 +578,7 @@ Diethyldiethoxysilane,316.0,1.0,C(C)[Si](OCC)(OCC)CC,pan12,1
 Tetramethyldiethoxysiloxane,311.0,1.0,CC(C(O[Si]([O])OCC)(C)C)C,pan12,1
 Tri-n-propylchlorosilane,349.0,1.0,C(CC)[Si](Cl)(CCC)CCC,pan12,1
 Tris(trimethylsiloxy)boron,315.0,1.0,C[Si](OB(O[Si](C)(C)C)O[Si](C)(C)C)(C)C,pan12,1
+Tris(trimethylsiloxy)boron,315.0,1.0,C[Si](OB(O[Si](C)(C)C)O[Si](C)(C)C)(C)C,pan12,1
 1-Heptynyltrimethylsilane,315.0,1.0,C(#CCCCCC)[Si](C)(C)C,pan12,1
 Tristrimethylsiloxymethylsilane,336.0,1.0,C[Si](OC(O[Si](C)(C)C)(O[Si](C)(C)C)[SiH3])(C)C,pan12,1
 Diphenyldichlorosilane,415.0,1.0,C1(=CC=CC=C1)[Si](Cl)(Cl)C1=CC=CC=C1,pan12,1
@@ -632,6 +639,7 @@ BENZYLDIMETHYLCHLOROSILANE,346.15,1.0,C[Si](C)(Cl)Cc1ccccc1,gelest_silanes,1
 BENZYLDIMETHYLSILANE,338.15,1.0,C[SiH](C)Cc1ccccc1,gelest_silanes,1
 N-BENZYL-N-METHOXYMETHYL-N-(TRIMETHYLSILYLMETHYL)AMINE,339.15,1.0,COCN(Cc1ccccc1)C[Si](C)(C)C,gelest_silanes,1
 ALLYLTRI-n-BUTYLTIN,376.15,1.0,C=CC[Sn](CCCC)(CCCC)CCCC,gelest_tin,0
+BIS[BIS(TRIMETHYLSILYL)AMINO]TIN(II),329.15,1.0,C[Si](C)(C)N([Sn]N([Si](C)(C)C)[Si](C)(C)C)[Si](C)(C)C,gelest_tin,1
 BIS[BIS(TRIMETHYLSILYL)AMINO]TIN(II),329.15,1.0,C[Si](C)(C)N([Sn]N([Si](C)(C)C)[Si](C)(C)C)[Si](C)(C)C,gelest_tin,1
 t-BUTYLTRI n-BUTYLTIN,375.15,1.0,CCCC[Sn](CCCC)(CCCC)C(C)(C)C,gelest_tin,0
 CHLOROMETHYLTRIMETHYLTIN,312.15,1.0,C[Sn](C)(C)CCl,gelest_tin,0
@@ -1393,7 +1401,7 @@ Allylmethyldichlorosilane,300.15,1.0,C=CCC[SiH](Cl)Cl,wang11,1
  Ethyldimethylchlorosilane,269.15,1.0,CC[Si](C)(C)Cl,wang11,1
  Methoxytrimethylsilane,243.15,1.0,CO[Si](C)(C)C,wang11,1
  Dimethyldimethoxysilane,265.15,1.0,CO[Si](C)(C)OC,wang11,1
-" Methyltrimethoxysilane",284.15,1.0,CO[Si](C)(OC)OC,wang11,1
+",284.15,1.0,CO[Si](C)(OC)OC,wang11,1
  Tetramethoxysilane,294.15,1.0,CO[Si](OC)(OC)OC,wang11,1
  Tetramethylsilane,245.15,1.0,C[Si](C)(C)C,wang11,1
  Diethylsilane,253.15,1.0,CC[SiH2]CC,wang11,1

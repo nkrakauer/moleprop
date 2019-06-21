@@ -1199,7 +1199,7 @@ Allylmethyldichlorosilane,300.15,1.0,C=CCC[SiH](Cl)Cl,wang11
  Ethyldimethylchlorosilane,269.15,1.0,CC[Si](C)(C)Cl,wang11
  Methoxytrimethylsilane,243.15,1.0,CO[Si](C)(C)C,wang11
  Dimethyldimethoxysilane,265.15,1.0,CO[Si](C)(C)OC,wang11
-" Methyltrimethoxysilane",284.15,1.0,CO[Si](C)(OC)OC,wang11
+",284.15,1.0,CO[Si](C)(OC)OC,wang11
  Tetramethoxysilane,294.15,1.0,CO[Si](OC)(OC)OC,wang11
  Tetramethylsilane,245.15,1.0,C[Si](C)(C)C,wang11
  Diethylsilane,253.15,1.0,CC[SiH2]CC,wang11

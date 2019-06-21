@@ -8,7 +8,7 @@ import pandas as pd
 
 print("About to load")
 loader = wf.Loader
-data = loader.load(file_name = 'new_integrated_dataset_grouped.csv',data_dir = '/srv/home/apolitowicz/moleprop/data')
+data = loader.load(file_name = 'integrated_dataset_grouped.csv',data_dir = '/srv/home/apolitowicz/moleprop/data')
 #data = loader.load(file_name = 'geleste_complete.csv',data_dir = '/srv/home/apolitowicz/moleprop/data')
 
 print("About to split")

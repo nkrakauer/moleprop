@@ -1,9 +1,9 @@
 #!/usr/bin/bash
 
 # initial setup
-#sed -i 's/$/\,/' new_integrated_dataset_grouped.csv
-#sed -i 's/\r//' new_integrated_dataset_grouped.csv
-cp new_integrated_dataset.csv new_integrated_dataset_grouped.csv
+#sed -i 's/$/\,/' integrated_dataset_grouped.csv
+#sed -i 's/\r//' integrated_dataset_grouped.csv
+cp integrated_dataset.csv integrated_dataset_grouped.csv
 rm organosilicons.csv
 rm organometallics.csv
 rm buffer.txt
@@ -20,7 +20,7 @@ do
   else
     echo "$p,0" >> buffer.txt
   fi
-done < new_integrated_dataset.csv
+done < integrated_dataset.csv
 sed -i 's/\r//' buffer.txt
 
 # collect organometallics into a file
@@ -102,11 +102,11 @@ do
   if [ "$found" = false ]; then
     echo "$p,0" >> finished.txt
   fi
-#done < new_integrated_dataset.csv
+#done < integrated_dataset.csv
 done < buffer.txt
 sed -i 's/\r//' finished.txt
 
 # clean up
-cp finished.txt new_integrated_dataset_grouped.csv
+cp finished.txt integrated_dataset_grouped.csv
 rm buffer.txt
 rm finished.txt

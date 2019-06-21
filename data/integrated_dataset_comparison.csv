@@ -11606,428 +11606,6 @@ Bis(perfluorohexyl)ether,345.95,1.0,FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)O
 "3,3-Bis(4-hydroxy-3,5-diiodophenyl)-1(3H)-isobenzofuranone",624.95,1.0,O=C1OC(c2cc(I)c(O)c(I)c2)(c2cc(I)c(O)c(I)c2)c2ccccc21,le15
 "2,3-bis[[(Z)-octadec-9-enoyl]oxy]propyl (Z)-octadec-9-enoate",575.75,1.0,CCCCCCCC/C=C\CCCCCCCC(=O)OCC(COC(=O)CCCCCCC/C=C\CCCCCCCC)OC(=O)CCCCCCC/C=C\CCCCCCCC,le15
 "Benzene, 1,1'-oxybis(2,3,4,5,6-pentabromo-",514.55,1.0,Brc1c(Br)c(Br)c(Oc2c(Br)c(Br)c(Br)c(Br)c2Br)c(Br)c1Br,le15
-Methyltrichlorosilane,276.15,1.0,C[Si](Cl)(Cl)Cl,wang11
-Vinyltrichlorosilane,294.15,1.0,C=C[Si](Cl)(Cl)Cl,wang11
-Dichloromethylmethyldichlorosilane,301.15,1.0,C[Si](Cl)(Cl)C(Cl)Cl,wang11
-Ethyltrichlorosilane,263.15,1.0,CC[Si](Cl)(Cl)Cl,wang11
-Dimethylchlorosilane,245.15,1.0,C[SiH](C)Cl,wang11
-Ethylsilane,213.15,1.0,CC[SiH3],wang11
-"1,1,1-Trifluoropropyltrichlorosilane",288.15,1.0,CC(C(F)(F)F)[Si](Cl)(Cl)Cl,wang11
-Allyltrichlorosilane,304.15,1.0,C=CC[Si](Cl)(Cl)Cl,wang11
-Methylvinyldichlorosilane,272.15,1.0,CC=C[SiH](Cl)Cl,wang11
-3-Chloropropyltrichlorosilane,357.15,1.0,ClCCC[Si](Cl)(Cl)Cl,wang11
-n-Propyltrichlorosilane,310.15,1.0,CCC[Si](Cl)(Cl)Cl,wang11
-Chloromethyldimethylchlorosilane,295.15,1.0,C[Si](C)(Cl)CCl,wang11
-Trimethylbromosilane,270.15,1.0,C[Si](C)(C)Br,wang11
-Trimethylchlorosilane,255.15,1.0,C[Si](C)(C)Cl,wang11
-Trimethylfluorosilane,238.15,1.0,C[Si](C)(C)F,wang11
-Trimethoxysilane,264.15,1.0,CO[SiH](OC)OC,wang11
-Cyanoethylmethyldichlorosilane,333.15,1.0,C[Si](Cl)(Cl)CCC#N,wang11
-Allylmethyldichlorosilane,300.15,1.0,C=CCC[SiH](Cl)Cl,wang11
- 3-Chloropropylmethyldichlorosilane,359.15,1.0,C[Si](Cl)(Cl)CCCCl,wang11
- t-Butyltrichlorosilane,294.15,1.0,CC(C)(C)[Si](Cl)(Cl)Cl,wang11
- Isobutyltrichlorosilane,310.15,1.0,CC(C)C[Si](Cl)(Cl)Cl,wang11
- n-Butyltrichlorosilane,327.15,1.0,CCCC[Si](Cl)(Cl)Cl,wang11
- Trimethylsilylisothiocyanate,308.15,1.0,C[Si](C)(C)N=C=S,wang11
- n-Propylmethyldichlorosilane,300.15,1.0,CCC[Si](C)(Cl)Cl,wang11
- Bromomethyltrimethylsilane,289.15,1.0,C[Si](C)(C)CBr,wang11
- Ethyldimethylchlorosilane,269.15,1.0,CC[Si](C)(C)Cl,wang11
- Methoxytrimethylsilane,243.15,1.0,CO[Si](C)(C)C,wang11
- Dimethyldimethoxysilane,265.15,1.0,CO[Si](C)(C)OC,wang11
-" Methyltrimethoxysilane
-",284.15,1.0,CO[Si](C)(OC)OC,wang11
- Tetramethoxysilane,294.15,1.0,CO[Si](OC)(OC)OC,wang11
- Tetramethylsilane,245.15,1.0,C[Si](C)(C)C,wang11
- Diethylsilane,253.15,1.0,CC[SiH2]CC,wang11
-" (N,N-Dimethylamino)dimethylsilane",260.15,1.0,CN(C)[SiH](C)C,wang11
- Tetraisocyanatosilane,323.15,1.0,O=C=N[Si](N=C=O)(N=C=O)N=C=O,wang11
- Cyclopentyltrichlorosilane,350.15,1.0,Cl[Si](Cl)(Cl)C1CCCC1,wang11
- Trimethylsilyltrifluoroacetate,273.15,1.0,C[Si](C)(C)OC(=O)C(F)(F)F,wang11
- Cyclopentyldichlorosilane,316.15,1.0,Cl[SiH](Cl)C1CCCC1,wang11
- 3-Chloro-2-methylpropylmethyldichlorosilane,363.15,1.0,CC(CCl)C[Si](C)(Cl)Cl,wang11
- Methylvinyldimethoxysilane,277.15,1.0,CC=C[SiH](OC)OC,wang11
- Vinyltrimethoxysilane,296.15,1.0,C=C[Si](OC)(OC)OC,wang11
- Trimethylvinylsilane,239.15,1.0,CC(C)=C(C)[SiH3],wang11
- Diethylmethylchlorosilane,288.15,1.0,CC[Si](C)(Cl)CC,wang11
- Chloromethyldimethylethoxysilane,299.15,1.0,CCO[Si](C)(C)CCl,wang11
- Ethoxytrimethylsilane,246.15,1.0,CCO[Si](C)(C)C,wang11
- Ethyltrimethoxysilane,300.15,1.0,CC[Si](OC)(OC)OC,wang11
-" (N,N-Dimethylamino)trimethylsilane",254.15,1.0,CN(C)[Si](C)(C)C,wang11
- Pentamethyldisiloxane,254.15,1.0,C[SiH](C)O[Si](C)(C)C,wang11
-Phenyldichlorosilane,333.15,1.0,Cl[SiH](Cl)c1ccccc1,wang11
-Phenylsilane,281.15,1.0,[SiH3]c1ccccc1,wang11
-1-Hexenyltrichlorosilane,333.15,1.0,CCCCC=C[Si](Cl)(Cl)Cl,wang11
-Cyclohexyltrichlorosilane,358.15,1.0,Cl[Si](Cl)(Cl)C1CCCCC1,wang11
-Bis(chloromethyl)tetramethyldisiloxane,346.15,1.0,C[Si](C)(C)O[Si](C)(CCl)CCl,wang11
-Propargyloxytrimethylsilane,300.15,1.0,C#CCO[Si](C)(C)C,wang11
-Divinyldimethylsilane,281.15,1.0,C=C[Si](C)(C)C=C,wang11
-n-Hexyltrichlorosilane,358.15,1.0,CCCCCC[Si](Cl)(Cl)Cl,wang11
-Hexyldichlorosilane,337.15,1.0,CCCCCC[SiH](Cl)Cl,wang11
-"1,1-Dimethyl-1-sila-2-oxacyclohexane",287.15,1.0,C[Si]1(C)CCCCO1,wang11
-Acetoxymethyltrimethylsilane,293.15,1.0,CC(=O)OC[Si](C)(C)C,wang11
-Allyltrimethylsilane,280.15,1.0,C=CC[Si](C)(C)C,wang11
-Triethylchlorosilane,303.15,1.0,CC[Si](Cl)(CC)CC,wang11
-t-Butyldimethylchlorosilane,295.15,1.0,CC(C)(C)[Si](C)(C)Cl,wang11
-3-Chloropropylmethyldimethoxysilane,318.15,1.0,CO[Si](C)(CCCCl)OC,wang11
-Trimethyl-n-propoxysilane,283.15,1.0,CCCO[Si](C)(C)C,wang11
-t-Butyldimethylsilanol,318.15,1.0,CC(C)(C)[Si](C)(C)O,wang11
-Dimethyldiethoxysilane,284.15,1.0,CCO[Si](C)(C)OCC,wang11
-Triethylsilane,270.15,1.0,CC[SiH](CC)CC,wang11
-Hexylsilane,285.15,1.0,CCCCCC[SiH3],wang11
-t-Butyldimethylsilane,251.15,1.0,C[SiH](C)C(C)(C)C,wang11
-Bis(dimethylamino)dimethylsilane,266.15,1.0,CN(C)[Si](C)(C)N(C)C,wang11
-Hexamethylcyclotrisiloxane,305.15,1.0,C[Si]1(C)O[Si](C)(C)O[Si](C)(C)O1,wang11
-Hexamethyldisilthiane,299.15,1.0,C[Si](C)(C)S[Si](C)(C)C,wang11
-Hexamethyldisilazane,281.15,1.0,C[Si](C)(C)N[Si](C)(C)C,wang11
-Tris(dimethylamino)silane,298.15,1.0,CN(C)[SiH](N(C)C)N(C)C,wang11
-Hexamethyltrisiloxane,293.15,1.0,C[Si](C)(C)O[SiH2]O[Si](C)(C)C,wang11
-Phenylmethyldichlorosilane,340.15,1.0,Cl[SiH](Cl)Cc1ccccc1,wang11
-Phenylmethylchlorosilane,355.15,1.0,Cl[SiH2]Cc1ccccc1,wang11
-Methyltriacetoxysilane,358.15,1.0,CC(=O)O[Si](C)(OC(C)=O)OC(C)=O,wang11
-Trivinylmethylsilane,288.15,1.0,C=CC([SiH3])(C=C)C=C,wang11
-Cyclohexylmethyldichlorosilane,355.15,1.0,Cl[SiH](Cl)CC1CCCCC1,wang11
-"1-(Trimethylsiloxy)-1,3-butadiene",298.15,1.0,C=CC=CO[Si](C)(C)C,wang11
-2-Chloromethyl-3-trimethylsilyl-1-propene,316.15,1.0,C=C(CCl)C[Si](C)(C)C,wang11
-n-Heptyltrichlorosilane,337.15,1.0,CCCCCCC[Si](Cl)(Cl)Cl,wang11
-n-Hexylmethyldichlorosilane,358.15,1.0,CCCCCC[Si](C)(Cl)Cl,wang11
-Vinylmethyldiethoxysilane,289.15,1.0,C=CC[SiH](OCC)OCC,wang11
-N-(Trimethylsilyl)morpholine,300.15,1.0,C[Si](C)(C)N1CCOCC1,wang11
-t-Butoxytrimethylsilane,287.15,1.0,CC(C)(C)O[Si](C)(C)C,wang11
-Vinylpentamethyldisiloxane,285.15,1.0,C=C[Si](C)(C)O[Si](C)(C)C,wang11
-(1-Methoxy-2-propoxy)trimethylsilane,293.15,1.0,COCC(C)O[Si](C)(C)C,wang11
-Methyltriethoxysilane,297.15,1.0,CCO[Si](C)(OCC)OCC,wang11
-(Diethylamino)trimethylsilane,283.15,1.0,CCN(CC)[Si](C)(C)C,wang11
-Bis(trimethylsilyl)methane,285.15,1.0,C[Si](C)(C)C[Si](C)(C)C,wang11
-Heptamethyldisilazane,300.15,1.0,CN([Si](C)(C)C)[Si](C)(C)C,wang11
-Phenylethyldichlorosilane,365.15,1.0,Cl[SiH](Cl)CCc1ccccc1,wang11
-Tetravinylsilane,291.15,1.0,C=C[Si](C=C)(C=C)C=C,wang11
-Phenyldimethylsilane,311.15,1.0,C[SiH](C)c1ccccc1,wang11
-Cyclopentadienyltrimethylsilane,302.15,1.0,C[Si](C)(C)C1C=CC=C1,wang11
-(Cyclopentenyloxy)trimethylsilane,311.15,1.0,C[Si](C)(C)OC1=CCCC1,wang11
-"(2,4-Pentadienyl)trimethylsilane",291.15,1.0,C=CC=CC[Si](C)(C)C,wang11
-n-Octyltrichlorosilane,369.15,1.0,CCCCCCCC[Si](Cl)(Cl)Cl,wang11
-n-Heptylmethyldichlorosilane,339.15,1.0,CCCCCCC[Si](C)(Cl)Cl,wang11
-Tetramethyldivinyldisiloxane,292.15,1.0,C=C[Si](C)(C=C)O[Si](C)(C)C,wang11
-Triethylacetoxysilane,314.15,1.0,CCC(CC)(CC)C(=O)O[SiH3],wang11
-Vinyltriethoxysilane,307.15,1.0,C=C[Si](OCC)(OCC)OCC,wang11
-"1,3-Divinyltetramethyldisilazane",307.15,1.0,C=C[Si](C)(C)N[Si](C)(C)C=C,wang11
-Diethyldiethoxysilane,316.15,1.0,CCO[Si](CC)(CC)OCC,wang11
-Tetraethoxysilane,323.15,1.0,CCO[Si](OCC)(OCC)OCC,wang11
-Tetraethylsilane,305.15,1.0,CC[Si](CC)(CC)CC,wang11
-Aminoethylaminopropyltrimethoxysilane,369.15,1.0,CO[Si](CCCNCCN)(OC)OC,wang11
-Tetramethyldiethoxysiloxane,311.15,1.0,CCO[Si]([O])OC(C)(C)C(C)C,wang11
-Octamethyltrisiloxane,303.15,1.0,C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)C,wang11
-Octamethylcyclotetrasiloxane,330.15,1.0,C[Si]1(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O1,wang11
-Octamethylcyclotetrasilazane,339.15,1.0,C[Si]1(C)N[Si](C)(C)N[Si](C)(C)N[Si](C)(C)N1,wang11
-Tetrakisdimethylsiloxysilane,340.15,1.0,C[SiH](C)O[Si](O[SiH](C)C)(O[SiH](C)C)O[SiH](C)C,wang11
-p-Chlorophenyltrimethylsilane,322.15,1.0,C[Si](C)(C)c1ccc(Cl)cc1,wang11
-Phenyltrimethoxysilane,358.15,1.0,CO[Si](OC)(OC)c1ccccc1,wang11
-Trimethylphenylsilane,313.15,1.0,C[Si](C)(C)c1ccccc1,wang11
-Cyclohexylmethyldimethoxysilane,343.15,1.0,CO[SiH](CC1CCCCC1)OC,wang11
- Hexyltrimethoxysilane,335.15,1.0,CCCCCC[Si](OC)(OC)OC,wang11
-Triisopropylsilane,310.15,1.0,CC(C)[SiH](C(C)C)C(C)C,wang11
-Tri-n-propylsilane,316.15,1.0,CCC[SiH](CCC)CCC,wang11
- Propyltris(dimethylsiloxy)silane,323.15,1.0,CCC[Si](O[SiH](C)C)(O[SiH](C)C)O[SiH](C)C,wang11
- Benzyltrimethylsilane,335.15,1.0,C[Si](C)(C)Cc1ccccc1,wang11
- 3-Methacryloxypropyltrimethoxysilane,365.15,1.0,C=C(C)C(=O)OCCC[Si](OC)(OC)OC,wang11
- 1-Heptynyltrimethylsilane,315.15,1.0,CCCCCC#C[Si](C)(C)C,wang11
- n-Octyldimethylchlorosilane,370.15,1.0,CCCCCCCC[Si](C)(C)Cl,wang11
- Bis(diethylamino)dimethylsilane,308.15,1.0,CCN(CC)[Si](C)(C)N(CC)CC,wang11
- Decamethyltetrasiloxane,335.15,1.0,C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)C,wang11
- Decamethylcyclopentasiloxane,350.15,1.0,C[Si]1(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O1,wang11
-" 2-(3,4-epoxycyclohexyl)ethyltrimethoxysilane",419.15,1.0,CO[Si](CCC1CCC2OC2C1)(OC)OC,wang11
- n-Decylmethyldichlorosilane,393.15,1.0,CCCCCCCCCC[Si](C)(Cl)Cl,wang11
- Vinyltriethylsilane,318.15,1.0,C=C[Si](CC)(CC)CC,wang11
- Diphenyldichlorosilane,415.15,1.0,Cl[Si](Cl)(c1ccccc1)c1ccccc1,wang11
- Phenyltriethoxysilane,393.15,1.0,CCO[Si](OCC)(OCC)c1ccccc1,wang11
- Diphenylsilane,371.15,1.0,c1ccc([SiH2]c2ccccc2)cc1,wang11
- Tetramethyltetravinylcyclotetrasilane,385.15,1.0,C=C[Si]1(C)[Si](C)(C=C)[Si](C)(C=C)[Si]1(C)C=C,wang11
- n-Dodecyltrichlorosilane,435.15,1.0,CCCCCCCCCCCC[Si](Cl)(Cl)Cl,wang11
- Tetra-n-propoxysilane,368.15,1.0,CCCO[Si](OCCC)(OCCC)OCCC,wang11
- Hexaethyldisiloxane,349.15,1.0,CC[Si](CC)(CC)O[Si](CC)(CC)CC,wang11
- Dodecamethylpentasiloxane,352.15,1.0,C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)C,wang11
- Dodecamethylcyclohexasiloxane,366.15,1.0,C[Si]1(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O1,wang11
-Methyldiphenylchlorosilane,411.15,1.0,C[Si](Cl)(c1ccccc1)c1ccccc1,wang11
-n-Dodecylmethyldichlorosilane,416.15,1.0,CCCCCCCCCCCC[Si](C)(Cl)Cl,wang11
-Diphenyldimethoxysilane,394.15,1.0,CO[Si](OC)(c1ccccc1)c1ccccc1,wang11
-Octyltriethoxysilane,373.15,1.0,CCCCCCCC[Si](OCC)(OCC)OCC,wang11
-Tetradecamethylhexasiloxane,375.15,1.0,C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)C,wang11
-Hexadecamethylheptasiloxane,406.15,1.0,C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)C,wang11
-Octadecamethyloctasiloxane,417.15,1.0,C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)C,wang11
-Vinyltris(methoxyethoxy)silane,353.15,1.0,C=C[Si](OCCOC)(OCCOC)OCCOC,wang11
-Trimethyl(vinyloxy)silane,263.15,1.0,C=CO[Si](C)(C)C,wang11
-Trichloro(3-cyanopropyl) Silane,365.15,1.0,N#CCCC[Si](Cl)(Cl)Cl,wang11
-Trichloro(2-phenylethyl)silane,364.15,1.0,Cl[Si](Cl)(Cl)CCc1ccccc1,wang11
-"Chlorodimethyl(3,3,3-trifluoropropyl) silane",293.15,1.0,C[Si](C)(Cl)CCC(F)(F)F,wang11
-Vinylmethylbis (trimethylsiloxy) silane,324.15,1.0,C=CC[SiH](O[Si](C)(C)C)O[Si](C)(C)C,wang11
-Trichloro(Chloromethyl) silane,342.15,1.0,ClC[Si](Cl)(Cl)Cl,wang11
-Dimethyl(pentafluorophenyl) silane,313.15,1.0,C[SiH](C)c1c(F)c(F)c(F)c(F)c1F,wang11
-Trichloro(p-chlorophenyl)silane,397.05,1.0,Clc1ccc([Si](Cl)(Cl)Cl)cc1,wang11
-Trisilane,273.15,1.0,[SiH3][SiH2][SiH3],wang11
-Trichlorononylsilane,387.15,1.0,[SiH3]CCCCCCCCC(Cl)(Cl)Cl,wang11
-Dichloroethylsilane,263.75,1.0,[SiH3]CC(Cl)Cl,wang11
-Trichloro(dichlorophenyl)silane,419.15,1.0,Clc1cccc([Si](Cl)(Cl)Cl)c1Cl,wang11
-Tris(trimethylsilyl)silane,328.15,1.0,C[Si](C)(C)[SiH]([Si](C)(C)C)[Si](C)(C)C,wang11
-Tris(trimethylsiloxy)silane,323.15,1.0,C[Si](C)(C)O[SiH](O[Si](C)(C)C)O[Si](C)(C)C,wang11
-Hexadecyltrichlorosilane,427.15,1.0,CCCCCCCCCCCCCCCC[Si](Cl)(Cl)Cl,wang11
-Dichlorosilane,236.15,1.0,Cl[SiH2]Cl,wang11
-Methyldichlorosilane,241.15,1.0,C[SiH](Cl)Cl,wang11
-Iodotrimethylsilane,288.15,1.0,C[Si](C)(C)I,wang11
-Dimethyldichlorosilane,257.15,1.0,C[Si](C)(Cl)Cl,wang11
-Bromomethyldimethylchlorosilane,314.15,1.0,C[Si](C)(Cl)CBr,wang11
-Trimethylsilane,204.15,1.0,C[SiH](C)C,wang11
- Dimethylvinylchlorosilane,268.15,1.0,CC(C)=C[SiH2]Cl,wang11
-" 1,3-Dichlorotetramethyldisiloxane",288.15,1.0,C[Si](C)(Cl)O[Si](C)(C)Cl,wang11
-" 1,1,3,3-Tetramethyldisiloxane",251.15,1.0,C[SiH](C)O[SiH](C)C,wang11
- Tetramethyldisilazane,284.15,1.0,CN([SiH3])[Si](C)(C)C,wang11
- Allyldimethylchlorosilane,278.15,1.0,C=CC[Si](C)(C)Cl,wang11
- sec-Amyltrichlorosilane,303.15,1.0,CCCC(C)[Si](Cl)(Cl)Cl,wang11
- n-Butylmethyldichlorosilane,303.15,1.0,CCCC[Si](C)(Cl)Cl,wang11
- Bis(dimethylamino)methylsilane,270.15,1.0,CN(C)C([SiH3])N(C)C,wang11
- Phenyltrichlorosilane,364.15,1.0,Cl[Si](Cl)(Cl)c1ccccc1,wang11
-Dimethyldiacetoxysilane,310.15,1.0,CC(=O)O[Si](C)(C)OC(C)=O,wang11
-1-Trimethylsilylpropyne,270.15,1.0,CC#C[Si](C)(C)C,wang11
-Vinyldimethylethoxysilane,277.15,1.0,C=C[Si](C)(C)OCC,wang11
-Allyloxytrimethylsilane,273.15,1.0,C=CCO[Si](C)(C)C,wang11
-Allyltrimethoxysilane,319.15,1.0,C=CC[Si](OC)(OC)OC,wang11
-3-Chloropropyltrimethoxysilane,348.15,1.0,CO[Si](CCCCl)(OC)OC,wang11
-n-Propyltrimethoxysilane,298.15,1.0,CCC[Si](OC)(OC)OC,wang11
-Hexamethyldisiloxane,270.15,1.0,C[Si](C)(C)O[Si](C)(C)C,wang11
-Hexamethyldisilane,272.15,1.0,C[Si](C)(C)[Si](C)(C)C,wang11
-Vinyldiethylmethylsilane,288.15,1.0,C=C[Si](C)(CC)CC,wang11
-Isobutyltrimethoxysilane,315.15,1.0,CO[Si](CC(C)C)(OC)OC,wang11
-Phenyldimethylchlorosilane,334.15,1.0,C[Si](C)(Cl)c1ccccc1,wang11
-"(N,N-Dimethylamino)triethylsilane",299.15,1.0,CC[Si](CC)(CC)N(C)C,wang11
-Vinyltriacetoxysilane,361.15,1.0,C=C[Si](OC(C)=O)(OC(C)=O)OC(C)=O,wang11
-Ethyltriacetoxysilane,377.15,1.0,CC[Si](OC(C)=O)(OC(C)=O)OC(C)=O,wang11
-3-(Trimethylsilyl)cyclopentene,299.15,1.0,C[Si](C)(C)C1C=CCC1,wang11
-Vinyltriethylsilane,298.15,1.0,C=C[Si](CC)(CC)CC,wang11
-n-Octylsilane,309.15,1.0,CCCCCCCC[SiH3],wang11
-Methylphenyldimethoxysilane,349.15,1.0,CO[Si](C)(OC)c1ccccc1,wang11
-2-Cyanoethyltriethoxysilane,359.15,1.0,CCO[Si](CCC#N)(OCC)OCC,wang11
-3-Glycidoxypropyltrimethoxysilane,383.15,1.0,CO[Si](CCCOCC1CO1)(OC)OC,wang11
- Di-t-butylmethylchlorosilane,342.15,1.0,CC(C)(C)[Si](C)(Cl)C(C)(C)C,wang11
-Tri-n-propylchlorosilane,349.15,1.0,CCC[Si](Cl)(CCC)CCC,wang11
- (Diisopropylamino)trimethylsilane,301.15,1.0,CC(C)N(C(C)C)[Si](C)(C)C,wang11
- 1-Chlorononamethyltetrasiloxane,347.15,1.0,C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)Cl,wang11
- Tristrimethylsiloxymethylsilane,336.15,1.0,C[Si](C)(C)OC([SiH3])(O[Si](C)(C)C)O[Si](C)(C)C,wang11
-Diphenylmethylsilane,393.15,1.0,[SiH3]C(c1ccccc1)c1ccccc1,wang11
-Trimethyl[(1-methylethenyl)oxy]silane,272.15,1.0,C=C(C)O[Si](C)(C)C,wang11
-"Dichloromethyl-3,3,3-trifluoropropylsilane",288.15,1.0,FC(F)(F)CC[SiH2]C(Cl)Cl,wang11
-[2-(chloromethoxy)ethyl]trimethylsilane,319.15,1.0,C[Si](C)(C)CCOCCl,wang11
-Triphenylsilane,416.35,1.0,c1ccc([SiH](c2ccccc2)c2ccccc2)cc1,wang11
-Trichlorosilane,245.15,1.0,Cl[SiH](Cl)Cl,wang11
-Methyltrichlorosilane,276.15,1.0,C[Si](Cl)(Cl)Cl,wang11
-Vinyltrichlorosilane,294.15,1.0,C=C[Si](Cl)(Cl)Cl,wang11
-Dichloromethylmethyldichlorosilane,301.15,1.0,C[Si](Cl)(Cl)C(Cl)Cl,wang11
-Ethyltrichlorosilane,263.15,1.0,CC[Si](Cl)(Cl)Cl,wang11
-Dimethylchlorosilane,245.15,1.0,C[SiH](C)Cl,wang11
-Ethylsilane,213.15,1.0,CC[SiH3],wang11
-"1,1,1-Trifluoropropyltrichlorosilane",288.15,1.0,CC(C(F)(F)F)[Si](Cl)(Cl)Cl,wang11
-Allyltrichlorosilane,304.15,1.0,C=CC[Si](Cl)(Cl)Cl,wang11
-Methylvinyldichlorosilane,272.15,1.0,CC=C[SiH](Cl)Cl,wang11
-3-Chloropropyltrichlorosilane,357.15,1.0,ClCCC[Si](Cl)(Cl)Cl,wang11
-n-Propyltrichlorosilane,310.15,1.0,CCC[Si](Cl)(Cl)Cl,wang11
-Chloromethyldimethylchlorosilane,295.15,1.0,C[Si](C)(Cl)CCl,wang11
-Trimethylbromosilane,270.15,1.0,C[Si](C)(C)Br,wang11
-Trimethylchlorosilane,255.15,1.0,C[Si](C)(C)Cl,wang11
-Trimethylfluorosilane,238.15,1.0,C[Si](C)(C)F,wang11
-Trimethoxysilane,264.15,1.0,CO[SiH](OC)OC,wang11
-Cyanoethylmethyldichlorosilane,333.15,1.0,C[Si](Cl)(Cl)CCC#N,wang11
-Allylmethyldichlorosilane,300.15,1.0,C=CCC[SiH](Cl)Cl,wang11
- 3-Chloropropylmethyldichlorosilane,359.15,1.0,C[Si](Cl)(Cl)CCCCl,wang11
- t-Butyltrichlorosilane,294.15,1.0,CC(C)(C)[Si](Cl)(Cl)Cl,wang11
- Isobutyltrichlorosilane,310.15,1.0,CC(C)C[Si](Cl)(Cl)Cl,wang11
- n-Butyltrichlorosilane,327.15,1.0,CCCC[Si](Cl)(Cl)Cl,wang11
- Trimethylsilylisothiocyanate,308.15,1.0,C[Si](C)(C)N=C=S,wang11
- n-Propylmethyldichlorosilane,300.15,1.0,CCC[Si](C)(Cl)Cl,wang11
- Bromomethyltrimethylsilane,289.15,1.0,C[Si](C)(C)CBr,wang11
- Ethyldimethylchlorosilane,269.15,1.0,CC[Si](C)(C)Cl,wang11
- Methoxytrimethylsilane,243.15,1.0,CO[Si](C)(C)C,wang11
- Dimethyldimethoxysilane,265.15,1.0,CO[Si](C)(C)OC,wang11
-" Methyltrimethoxysilane
-",284.15,1.0,CO[Si](C)(OC)OC,wang11
- Tetramethoxysilane,294.15,1.0,CO[Si](OC)(OC)OC,wang11
- Tetramethylsilane,245.15,1.0,C[Si](C)(C)C,wang11
- Diethylsilane,253.15,1.0,CC[SiH2]CC,wang11
-" (N,N-Dimethylamino)dimethylsilane",260.15,1.0,CN(C)[SiH](C)C,wang11
- Tetraisocyanatosilane,323.15,1.0,O=C=N[Si](N=C=O)(N=C=O)N=C=O,wang11
- Cyclopentyltrichlorosilane,350.15,1.0,Cl[Si](Cl)(Cl)C1CCCC1,wang11
- Trimethylsilyltrifluoroacetate,273.15,1.0,C[Si](C)(C)OC(=O)C(F)(F)F,wang11
- Cyclopentyldichlorosilane,316.15,1.0,Cl[SiH](Cl)C1CCCC1,wang11
- 3-Chloro-2-methylpropylmethyldichlorosilane,363.15,1.0,CC(CCl)C[Si](C)(Cl)Cl,wang11
- Methylvinyldimethoxysilane,277.15,1.0,CC=C[SiH](OC)OC,wang11
- Vinyltrimethoxysilane,296.15,1.0,C=C[Si](OC)(OC)OC,wang11
- Trimethylvinylsilane,239.15,1.0,CC(C)=C(C)[SiH3],wang11
- Diethylmethylchlorosilane,288.15,1.0,CC[Si](C)(Cl)CC,wang11
- Chloromethyldimethylethoxysilane,299.15,1.0,CCO[Si](C)(C)CCl,wang11
- Ethoxytrimethylsilane,246.15,1.0,CCO[Si](C)(C)C,wang11
- Ethyltrimethoxysilane,300.15,1.0,CC[Si](OC)(OC)OC,wang11
-" (N,N-Dimethylamino)trimethylsilane",254.15,1.0,CN(C)[Si](C)(C)C,wang11
- Pentamethyldisiloxane,254.15,1.0,C[SiH](C)O[Si](C)(C)C,wang11
-Phenyldichlorosilane,333.15,1.0,Cl[SiH](Cl)c1ccccc1,wang11
-Phenylsilane,281.15,1.0,[SiH3]c1ccccc1,wang11
-1-Hexenyltrichlorosilane,333.15,1.0,CCCCC=C[Si](Cl)(Cl)Cl,wang11
-Cyclohexyltrichlorosilane,358.15,1.0,Cl[Si](Cl)(Cl)C1CCCCC1,wang11
-Bis(chloromethyl)tetramethyldisiloxane,346.15,1.0,C[Si](C)(C)O[Si](C)(CCl)CCl,wang11
-Propargyloxytrimethylsilane,300.15,1.0,C#CCO[Si](C)(C)C,wang11
-Divinyldimethylsilane,281.15,1.0,C=C[Si](C)(C)C=C,wang11
-n-Hexyltrichlorosilane,358.15,1.0,CCCCCC[Si](Cl)(Cl)Cl,wang11
-Hexyldichlorosilane,337.15,1.0,CCCCCC[SiH](Cl)Cl,wang11
-"1,1-Dimethyl-1-sila-2-oxacyclohexane",287.15,1.0,C[Si]1(C)CCCCO1,wang11
-Acetoxymethyltrimethylsilane,293.15,1.0,CC(=O)OC[Si](C)(C)C,wang11
-Allyltrimethylsilane,280.15,1.0,C=CC[Si](C)(C)C,wang11
-Triethylchlorosilane,303.15,1.0,CC[Si](Cl)(CC)CC,wang11
-t-Butyldimethylchlorosilane,295.15,1.0,CC(C)(C)[Si](C)(C)Cl,wang11
-3-Chloropropylmethyldimethoxysilane,318.15,1.0,CO[Si](C)(CCCCl)OC,wang11
-Trimethyl-n-propoxysilane,283.15,1.0,CCCO[Si](C)(C)C,wang11
-t-Butyldimethylsilanol,318.15,1.0,CC(C)(C)[Si](C)(C)O,wang11
-Dimethyldiethoxysilane,284.15,1.0,CCO[Si](C)(C)OCC,wang11
-Triethylsilane,270.15,1.0,CC[SiH](CC)CC,wang11
-Hexylsilane,285.15,1.0,CCCCCC[SiH3],wang11
-t-Butyldimethylsilane,251.15,1.0,C[SiH](C)C(C)(C)C,wang11
-Bis(dimethylamino)dimethylsilane,266.15,1.0,CN(C)[Si](C)(C)N(C)C,wang11
-Hexamethylcyclotrisiloxane,305.15,1.0,C[Si]1(C)O[Si](C)(C)O[Si](C)(C)O1,wang11
-Hexamethyldisilthiane,299.15,1.0,C[Si](C)(C)S[Si](C)(C)C,wang11
-Hexamethyldisilazane,281.15,1.0,C[Si](C)(C)N[Si](C)(C)C,wang11
-Tris(dimethylamino)silane,298.15,1.0,CN(C)[SiH](N(C)C)N(C)C,wang11
-Hexamethyltrisiloxane,293.15,1.0,C[Si](C)(C)O[SiH2]O[Si](C)(C)C,wang11
-Phenylmethyldichlorosilane,340.15,1.0,Cl[SiH](Cl)Cc1ccccc1,wang11
-Phenylmethylchlorosilane,355.15,1.0,Cl[SiH2]Cc1ccccc1,wang11
-Methyltriacetoxysilane,358.15,1.0,CC(=O)O[Si](C)(OC(C)=O)OC(C)=O,wang11
-Trivinylmethylsilane,288.15,1.0,C=CC([SiH3])(C=C)C=C,wang11
-Cyclohexylmethyldichlorosilane,355.15,1.0,Cl[SiH](Cl)CC1CCCCC1,wang11
-"1-(Trimethylsiloxy)-1,3-butadiene",298.15,1.0,C=CC=CO[Si](C)(C)C,wang11
-2-Chloromethyl-3-trimethylsilyl-1-propene,316.15,1.0,C=C(CCl)C[Si](C)(C)C,wang11
-n-Heptyltrichlorosilane,337.15,1.0,CCCCCCC[Si](Cl)(Cl)Cl,wang11
-n-Hexylmethyldichlorosilane,358.15,1.0,CCCCCC[Si](C)(Cl)Cl,wang11
-Vinylmethyldiethoxysilane,289.15,1.0,C=CC[SiH](OCC)OCC,wang11
-N-(Trimethylsilyl)morpholine,300.15,1.0,C[Si](C)(C)N1CCOCC1,wang11
-t-Butoxytrimethylsilane,287.15,1.0,CC(C)(C)O[Si](C)(C)C,wang11
-Vinylpentamethyldisiloxane,285.15,1.0,C=C[Si](C)(C)O[Si](C)(C)C,wang11
-(1-Methoxy-2-propoxy)trimethylsilane,293.15,1.0,COCC(C)O[Si](C)(C)C,wang11
-Methyltriethoxysilane,297.15,1.0,CCO[Si](C)(OCC)OCC,wang11
-(Diethylamino)trimethylsilane,283.15,1.0,CCN(CC)[Si](C)(C)C,wang11
-Bis(trimethylsilyl)methane,285.15,1.0,C[Si](C)(C)C[Si](C)(C)C,wang11
-Heptamethyldisilazane,300.15,1.0,CN([Si](C)(C)C)[Si](C)(C)C,wang11
-Phenylethyldichlorosilane,365.15,1.0,Cl[SiH](Cl)CCc1ccccc1,wang11
-Tetravinylsilane,291.15,1.0,C=C[Si](C=C)(C=C)C=C,wang11
-Phenyldimethylsilane,311.15,1.0,C[SiH](C)c1ccccc1,wang11
-Cyclopentadienyltrimethylsilane,302.15,1.0,C[Si](C)(C)C1C=CC=C1,wang11
-(Cyclopentenyloxy)trimethylsilane,311.15,1.0,C[Si](C)(C)OC1=CCCC1,wang11
-"(2,4-Pentadienyl)trimethylsilane",291.15,1.0,C=CC=CC[Si](C)(C)C,wang11
-n-Octyltrichlorosilane,369.15,1.0,CCCCCCCC[Si](Cl)(Cl)Cl,wang11
-n-Heptylmethyldichlorosilane,339.15,1.0,CCCCCCC[Si](C)(Cl)Cl,wang11
-Tetramethyldivinyldisiloxane,292.15,1.0,C=C[Si](C)(C=C)O[Si](C)(C)C,wang11
-Triethylacetoxysilane,314.15,1.0,CCC(CC)(CC)C(=O)O[SiH3],wang11
-Vinyltriethoxysilane,307.15,1.0,C=C[Si](OCC)(OCC)OCC,wang11
-"1,3-Divinyltetramethyldisilazane",307.15,1.0,C=C[Si](C)(C)N[Si](C)(C)C=C,wang11
-Diethyldiethoxysilane,316.15,1.0,CCO[Si](CC)(CC)OCC,wang11
-Tetraethoxysilane,323.15,1.0,CCO[Si](OCC)(OCC)OCC,wang11
-Tetraethylsilane,305.15,1.0,CC[Si](CC)(CC)CC,wang11
-Aminoethylaminopropyltrimethoxysilane,369.15,1.0,CO[Si](CCCNCCN)(OC)OC,wang11
-Tetramethyldiethoxysiloxane,311.15,1.0,CCO[Si]([O])OC(C)(C)C(C)C,wang11
-Octamethyltrisiloxane,303.15,1.0,C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)C,wang11
-Octamethylcyclotetrasiloxane,330.15,1.0,C[Si]1(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O1,wang11
-Octamethylcyclotetrasilazane,339.15,1.0,C[Si]1(C)N[Si](C)(C)N[Si](C)(C)N[Si](C)(C)N1,wang11
-Tetrakisdimethylsiloxysilane,340.15,1.0,C[SiH](C)O[Si](O[SiH](C)C)(O[SiH](C)C)O[SiH](C)C,wang11
-p-Chlorophenyltrimethylsilane,322.15,1.0,C[Si](C)(C)c1ccc(Cl)cc1,wang11
-Phenyltrimethoxysilane,358.15,1.0,CO[Si](OC)(OC)c1ccccc1,wang11
-Trimethylphenylsilane,313.15,1.0,C[Si](C)(C)c1ccccc1,wang11
-Cyclohexylmethyldimethoxysilane,343.15,1.0,CO[SiH](CC1CCCCC1)OC,wang11
- Hexyltrimethoxysilane,335.15,1.0,CCCCCC[Si](OC)(OC)OC,wang11
-Triisopropylsilane,310.15,1.0,CC(C)[SiH](C(C)C)C(C)C,wang11
-Tri-n-propylsilane,316.15,1.0,CCC[SiH](CCC)CCC,wang11
- Propyltris(dimethylsiloxy)silane,323.15,1.0,CCC[Si](O[SiH](C)C)(O[SiH](C)C)O[SiH](C)C,wang11
- Benzyltrimethylsilane,335.15,1.0,C[Si](C)(C)Cc1ccccc1,wang11
- 3-Methacryloxypropyltrimethoxysilane,365.15,1.0,C=C(C)C(=O)OCCC[Si](OC)(OC)OC,wang11
- 1-Heptynyltrimethylsilane,315.15,1.0,CCCCCC#C[Si](C)(C)C,wang11
- n-Octyldimethylchlorosilane,370.15,1.0,CCCCCCCC[Si](C)(C)Cl,wang11
- Bis(diethylamino)dimethylsilane,308.15,1.0,CCN(CC)[Si](C)(C)N(CC)CC,wang11
- Decamethyltetrasiloxane,335.15,1.0,C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)C,wang11
- Decamethylcyclopentasiloxane,350.15,1.0,C[Si]1(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O1,wang11
-" 2-(3,4-epoxycyclohexyl)ethyltrimethoxysilane",419.15,1.0,CO[Si](CCC1CCC2OC2C1)(OC)OC,wang11
- n-Decylmethyldichlorosilane,393.15,1.0,CCCCCCCCCC[Si](C)(Cl)Cl,wang11
- Vinyltriethylsilane,318.15,1.0,C=C[Si](CC)(CC)CC,wang11
- Diphenyldichlorosilane,415.15,1.0,Cl[Si](Cl)(c1ccccc1)c1ccccc1,wang11
- Phenyltriethoxysilane,393.15,1.0,CCO[Si](OCC)(OCC)c1ccccc1,wang11
- Diphenylsilane,371.15,1.0,c1ccc([SiH2]c2ccccc2)cc1,wang11
- Tetramethyltetravinylcyclotetrasilane,385.15,1.0,C=C[Si]1(C)[Si](C)(C=C)[Si](C)(C=C)[Si]1(C)C=C,wang11
- n-Dodecyltrichlorosilane,435.15,1.0,CCCCCCCCCCCC[Si](Cl)(Cl)Cl,wang11
- Tetra-n-propoxysilane,368.15,1.0,CCCO[Si](OCCC)(OCCC)OCCC,wang11
- Hexaethyldisiloxane,349.15,1.0,CC[Si](CC)(CC)O[Si](CC)(CC)CC,wang11
- Dodecamethylpentasiloxane,352.15,1.0,C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)C,wang11
- Dodecamethylcyclohexasiloxane,366.15,1.0,C[Si]1(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O1,wang11
-Methyldiphenylchlorosilane,411.15,1.0,C[Si](Cl)(c1ccccc1)c1ccccc1,wang11
-n-Dodecylmethyldichlorosilane,416.15,1.0,CCCCCCCCCCCC[Si](C)(Cl)Cl,wang11
-Diphenyldimethoxysilane,394.15,1.0,CO[Si](OC)(c1ccccc1)c1ccccc1,wang11
-Octyltriethoxysilane,373.15,1.0,CCCCCCCC[Si](OCC)(OCC)OCC,wang11
-Tetradecamethylhexasiloxane,375.15,1.0,C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)C,wang11
-Hexadecamethylheptasiloxane,406.15,1.0,C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)C,wang11
-Octadecamethyloctasiloxane,417.15,1.0,C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)C,wang11
-Vinyltris(methoxyethoxy)silane,353.15,1.0,C=C[Si](OCCOC)(OCCOC)OCCOC,wang11
-Trimethyl(vinyloxy)silane,263.15,1.0,C=CO[Si](C)(C)C,wang11
-Trichloro(3-cyanopropyl) Silane,365.15,1.0,N#CCCC[Si](Cl)(Cl)Cl,wang11
-Trichloro(2-phenylethyl)silane,364.15,1.0,Cl[Si](Cl)(Cl)CCc1ccccc1,wang11
-"Chlorodimethyl(3,3,3-trifluoropropyl) silane",293.15,1.0,C[Si](C)(Cl)CCC(F)(F)F,wang11
-Vinylmethylbis (trimethylsiloxy) silane,324.15,1.0,C=CC[SiH](O[Si](C)(C)C)O[Si](C)(C)C,wang11
-Trichloro(Chloromethyl) silane,342.15,1.0,ClC[Si](Cl)(Cl)Cl,wang11
-Dimethyl(pentafluorophenyl) silane,313.15,1.0,C[SiH](C)c1c(F)c(F)c(F)c(F)c1F,wang11
-Trichloro(p-chlorophenyl)silane,397.05,1.0,Clc1ccc([Si](Cl)(Cl)Cl)cc1,wang11
-Trisilane,273.15,1.0,[SiH3][SiH2][SiH3],wang11
-Trichlorononylsilane,387.15,1.0,[SiH3]CCCCCCCCC(Cl)(Cl)Cl,wang11
-Dichloroethylsilane,263.75,1.0,[SiH3]CC(Cl)Cl,wang11
-Trichloro(dichlorophenyl)silane,419.15,1.0,Clc1cccc([Si](Cl)(Cl)Cl)c1Cl,wang11
-Tris(trimethylsilyl)silane,328.15,1.0,C[Si](C)(C)[SiH]([Si](C)(C)C)[Si](C)(C)C,wang11
-Tris(trimethylsiloxy)silane,323.15,1.0,C[Si](C)(C)O[SiH](O[Si](C)(C)C)O[Si](C)(C)C,wang11
-Hexadecyltrichlorosilane,427.15,1.0,CCCCCCCCCCCCCCCC[Si](Cl)(Cl)Cl,wang11
-Dichlorosilane,236.15,1.0,Cl[SiH2]Cl,wang11
-Methyldichlorosilane,241.15,1.0,C[SiH](Cl)Cl,wang11
-Iodotrimethylsilane,288.15,1.0,C[Si](C)(C)I,wang11
-Dimethyldichlorosilane,257.15,1.0,C[Si](C)(Cl)Cl,wang11
-Bromomethyldimethylchlorosilane,314.15,1.0,C[Si](C)(Cl)CBr,wang11
-Trimethylsilane,204.15,1.0,C[SiH](C)C,wang11
- Dimethylvinylchlorosilane,268.15,1.0,CC(C)=C[SiH2]Cl,wang11
-" 1,3-Dichlorotetramethyldisiloxane",288.15,1.0,C[Si](C)(Cl)O[Si](C)(C)Cl,wang11
-" 1,1,3,3-Tetramethyldisiloxane",251.15,1.0,C[SiH](C)O[SiH](C)C,wang11
- Tetramethyldisilazane,284.15,1.0,CN([SiH3])[Si](C)(C)C,wang11
- Allyldimethylchlorosilane,278.15,1.0,C=CC[Si](C)(C)Cl,wang11
- sec-Amyltrichlorosilane,303.15,1.0,CCCC(C)[Si](Cl)(Cl)Cl,wang11
- n-Butylmethyldichlorosilane,303.15,1.0,CCCC[Si](C)(Cl)Cl,wang11
- Bis(dimethylamino)methylsilane,270.15,1.0,CN(C)C([SiH3])N(C)C,wang11
- Phenyltrichlorosilane,364.15,1.0,Cl[Si](Cl)(Cl)c1ccccc1,wang11
-Dimethyldiacetoxysilane,310.15,1.0,CC(=O)O[Si](C)(C)OC(C)=O,wang11
-1-Trimethylsilylpropyne,270.15,1.0,CC#C[Si](C)(C)C,wang11
-Vinyldimethylethoxysilane,277.15,1.0,C=C[Si](C)(C)OCC,wang11
-Allyloxytrimethylsilane,273.15,1.0,C=CCO[Si](C)(C)C,wang11
-Allyltrimethoxysilane,319.15,1.0,C=CC[Si](OC)(OC)OC,wang11
-3-Chloropropyltrimethoxysilane,348.15,1.0,CO[Si](CCCCl)(OC)OC,wang11
-n-Propyltrimethoxysilane,298.15,1.0,CCC[Si](OC)(OC)OC,wang11
-Hexamethyldisiloxane,270.15,1.0,C[Si](C)(C)O[Si](C)(C)C,wang11
-Hexamethyldisilane,272.15,1.0,C[Si](C)(C)[Si](C)(C)C,wang11
-Vinyldiethylmethylsilane,288.15,1.0,C=C[Si](C)(CC)CC,wang11
-Isobutyltrimethoxysilane,315.15,1.0,CO[Si](CC(C)C)(OC)OC,wang11
-Phenyldimethylchlorosilane,334.15,1.0,C[Si](C)(Cl)c1ccccc1,wang11
-"(N,N-Dimethylamino)triethylsilane",299.15,1.0,CC[Si](CC)(CC)N(C)C,wang11
-Vinyltriacetoxysilane,361.15,1.0,C=C[Si](OC(C)=O)(OC(C)=O)OC(C)=O,wang11
-Ethyltriacetoxysilane,377.15,1.0,CC[Si](OC(C)=O)(OC(C)=O)OC(C)=O,wang11
-3-(Trimethylsilyl)cyclopentene,299.15,1.0,C[Si](C)(C)C1C=CCC1,wang11
-Vinyltriethylsilane,298.15,1.0,C=C[Si](CC)(CC)CC,wang11
-n-Octylsilane,309.15,1.0,CCCCCCCC[SiH3],wang11
-Methylphenyldimethoxysilane,349.15,1.0,CO[Si](C)(OC)c1ccccc1,wang11
-2-Cyanoethyltriethoxysilane,359.15,1.0,CCO[Si](CCC#N)(OCC)OCC,wang11
-3-Glycidoxypropyltrimethoxysilane,383.15,1.0,CO[Si](CCCOCC1CO1)(OC)OC,wang11
- Di-t-butylmethylchlorosilane,342.15,1.0,CC(C)(C)[Si](C)(Cl)C(C)(C)C,wang11
-Tri-n-propylchlorosilane,349.15,1.0,CCC[Si](Cl)(CCC)CCC,wang11
- (Diisopropylamino)trimethylsilane,301.15,1.0,CC(C)N(C(C)C)[Si](C)(C)C,wang11
- 1-Chlorononamethyltetrasiloxane,347.15,1.0,C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)Cl,wang11
- Tristrimethylsiloxymethylsilane,336.15,1.0,C[Si](C)(C)OC([SiH3])(O[Si](C)(C)C)O[Si](C)(C)C,wang11
-Diphenylmethylsilane,393.15,1.0,[SiH3]C(c1ccccc1)c1ccccc1,wang11
-Trimethyl[(1-methylethenyl)oxy]silane,272.15,1.0,C=C(C)O[Si](C)(C)C,wang11
-"Dichloromethyl-3,3,3-trifluoropropylsilane",288.15,1.0,FC(F)(F)CC[SiH2]C(Cl)Cl,wang11
-[2-(chloromethoxy)ethyl]trimethylsilane,319.15,1.0,C[Si](C)(C)CCOCCl,wang11
-Triphenylsilane,416.35,1.0,c1ccc([SiH](c2ccccc2)c2ccccc2)cc1,wang11
-Trichlorosilane,245.15,1.0,Cl[SiH](Cl)Cl,wang11
 Cyclopentanamine,284.6,1.0,NC1CCCC1,didier14
 Ethylbenzene,296.1,1.0,CCc1ccccc1,didier14
 "Benzenamine, N-methyl-",351.0,1.0,CNc1ccccc1,didier14
@@ -15331,3 +14909,1478 @@ heptylbenzene,368.6,1.0,CCCCCCCc1ccccc1,godinho11
 (1-methylheptyl)benzene,373.2,1.0,CCCCCCC(C)c1ccccc1,godinho11
 "1,3-dibutylbenzene",382.4,1.0,CCCCc1cccc(CCCC)c1,godinho11
 octylbenzene,380.2,1.0,CCCCCCCCc1ccccc1,godinho11
+acrylonitrile,272.0,1.0,C=CC#N,katritzky07
+acrolein,247.0,1.0,C=CC=O,katritzky07
+acrylic acid,327.0,1.0,C=CC(=O)O,katritzky07
+3-chloropropene,241.0,1.0,C=CCCl,katritzky07
+allyl alcohol,294.0,1.0,C=CCO,katritzky07
+propionaldehyde,233.0,1.0,CCC=O,katritzky07
+ethyl formate,253.0,1.0,CCOC=O,katritzky07
+methyl acetate,260.0,1.0,COC(C)=O,katritzky07
+propionic acid,324.0,1.0,CCC(=O)O,katritzky07
+1-bromopropane,294.0,1.0,CCCBr,katritzky07
+2-chloropropane,238.0,1.0,CC(C)Cl,katritzky07
+1-chloropropane,242.0,1.0,CCCCl,katritzky07
+allylamine,343.0,1.0,C=CCN,katritzky07
+1-propanol,288.0,1.0,CCCO,katritzky07
+dimethoxymethane,255.0,1.0,COCOC,katritzky07
+"1,2-propanediol",372.0,1.0,CC(O)CO,katritzky07
+isopropylamine,236.0,1.0,CC(C)N,katritzky07
+propylamine,261.0,1.0,CCCN,katritzky07
+trimethylamine,266.0,1.0,CN(C)C,katritzky07
+"1,3-butadiene",197.0,1.0,C=CC=C,katritzky07
+isobutenal,273.0,1.0,C=C(C)C=O,katritzky07
+crotonic acid,361.0,1.0,C/C=C/C(=O)O,katritzky07
+n-butyronitrile,289.0,1.0,CCCC#N,katritzky07
+butyraldehyde,267.0,1.0,CCCC=O,katritzky07
+isobutyraldehyde,249.0,1.0,CC(C)C=O,katritzky07
+2-butanone,264.0,1.0,CCC(C)=O,katritzky07
+tetrahydrofuran,252.0,1.0,C1CCOC1,katritzky07
+n-butyric acid,342.0,1.0,CCCC(=O)O,katritzky07
+ethyl acetate,269.0,1.0,CCOC(C)=O,katritzky07
+isobutyric acid,328.0,1.0,CC(C)C(=O)O,katritzky07
+methyl propionate,279.0,1.0,CCC(=O)OC,katritzky07
+propyl formate,273.0,1.0,CCCOC=O,katritzky07
+1-bromobutane,286.0,1.0,CCCCBr,katritzky07
+1-chlorobutane,261.0,1.0,CCCCCl,katritzky07
+1-butanol,302.0,1.0,CCCCO,katritzky07
+sec-butanol,299.0,1.0,CCC(C)O,katritzky07
+tert-butyl alcohol,284.0,1.0,CC(C)(C)O,katritzky07
+2-methyl-1-propanol,300.0,1.0,CC(C)CO,katritzky07
+"1,3-butanediol",394.0,1.0,CC(O)CCO,katritzky07
+n-butylamine,266.0,1.0,CCCCN,katritzky07
+diethylamine,247.0,1.0,CCNCC,katritzky07
+isobutylamine,264.0,1.0,CC(C)CN,katritzky07
+pyridine,293.0,1.0,c1ccncc1,katritzky07
+cyclopentene,273.0,1.0,C1=CCCC1,katritzky07
+"2-methyl-1,3-butadiene",225.0,1.0,C=CC(=C)C,katritzky07
+"2,4-pentanedione",307.0,1.0,CC(=O)CC(C)=O,katritzky07
+allyl acetate,279.0,1.0,C=CCOC(C)=O,katritzky07
+ethyl acrylate,282.0,1.0,C=CC(=O)OCC,katritzky07
+cyclopentane,236.0,1.0,C1CCCC1,katritzky07
+1-pentene,222.0,1.0,C=CCCC,katritzky07
+3-pentanone,286.0,1.0,CCC(=O)CC,katritzky07
+2-pentanone,280.0,1.0,CCCC(C)=O,katritzky07
+valeraldehyde,285.0,1.0,CCCCC=O,katritzky07
+ethyl propionate,285.0,1.0,CCOC(=O)CC,katritzky07
+isobutyl formate,283.0,1.0,CC(C)COC=O,katritzky07
+n-propyl acetate,283.0,1.0,CCCOC(C)=O,katritzky07
+1-butanecarboxylic acid,359.0,1.0,CCCCC(=O)O,katritzky07
+1-chloropentane,284.0,1.0,CCCCCCl,katritzky07
+2-methylbutane,222.0,1.0,CCC(C)C,katritzky07
+pentane,224.0,1.0,CCCCC,katritzky07
+2-methyl-1-butanol,316.0,1.0,CCC(C)CO,katritzky07
+tert-amyl alcohol (2-methyl-2-butanol),293.0,1.0,CCC(C)(C)O.CCC(C)(C)O,katritzky07
+3-methyl-1-butanol,316.0,1.0,CC(C)CCO,katritzky07
+1-pentanol,306.0,1.0,CCCCCO,katritzky07
+3-pentanol,307.0,1.0,CCC(O)CC,katritzky07
+"2,2-dimethyl-1,3-propanediol",380.0,1.0,CC(C)(CO)CO,katritzky07
+"1,5-pentanediol",409.0,1.0,OCCCCCO,katritzky07
+"1,2-dichlorobenzene",340.0,1.0,Clc1ccccc1Cl,katritzky07
+bromobenzene,324.0,1.0,Brc1ccccc1,katritzky07
+chlorobenzene,300.0,1.0,Clc1ccccc1,katritzky07
+benzene,262.0,1.0,c1ccccc1,katritzky07
+phenol,352.0,1.0,Oc1ccccc1,katritzky07
+hydroquinone,438.0,1.0,Oc1ccc(O)cc1,katritzky07
+aniline,343.0,1.0,Nc1ccccc1,katritzky07
+2-picoline,301.0,1.0,Cc1ccccn1,katritzky07
+"1,4-dicyanobutane",432.0,1.0,N#CCCCCC#N,katritzky07
+cyclohexene,261.0,1.0,C1=CCCCC1,katritzky07
+cyclohexanone,317.0,1.0,O=C1CCCCC1,katritzky07
+mesityl oxide,298.0,1.0,CC(=O)C=C(C)C,katritzky07
+cyclohexane,255.0,1.0,C1CCCCC1,katritzky07
+"2,3-dimethyl-1-butene",255.0,1.0,C=C(C)C(C)C,katritzky07
+"2,3-dimethyl-2-butene",253.0,1.0,CC(C)=C(C)C,katritzky07
+2-ethyl-1-butene,253.0,1.0,C=C(CC)CC,katritzky07
+1-hexene,247.0,1.0,C=CCCCC,katritzky07
+2-hexene,252.0,1.0,CC=CCCC,katritzky07
+trans-2-hexene,253.0,1.0,C/C=C/CCC,katritzky07
+methylcyclopentane,244.0,1.0,CC1CCCC1,katritzky07
+2-methyl-1-pentene,247.0,1.0,C=C(C)CCC,katritzky07
+4-methyl-1-pentene,242.0,1.0,C=CCC(C)C,katritzky07
+n-butyl vinyl ether,264.0,1.0,C=COCCCC,katritzky07
+cyclohexanol,341.0,1.0,OC1CCCCC1,katritzky07
+2-hexanone,296.0,1.0,CCCCC(C)=O,katritzky07
+4-methyl-2-pentanone,287.0,1.0,CC(=O)CC(C)C,katritzky07
+ethyl butyrate,292.0,1.0,CCCC(=O)OCC,katritzky07
+2-ethylbutyric acid,360.0,1.0,CCC(CC)C(=O)O,katritzky07
+hexanoic acid,375.0,1.0,CCCCCC(=O)O,katritzky07
+isobutyl acetate,291.0,1.0,CC(=O)OCC(C)C,katritzky07
+cyclohexylamine,301.0,1.0,NC1CCCCC1,katritzky07
+"2,2-dimethylbutane",225.0,1.0,CCC(C)(C)C,katritzky07
+"2,3-dimethylbutane",244.0,1.0,CC(C)C(C)C,katritzky07
+n-hexane,251.0,1.0,CCCCCC,katritzky07
+2-methylpentane,241.0,1.0,CCCC(C)C,katritzky07
+3-methylpentane,241.0,1.0,CCC(C)CC,katritzky07
+isopropyl ether,244.0,1.0,CC(C)OC(C)C,katritzky07
+n-propyl ether,245.0,1.0,CCCOCCC,katritzky07
+diisopropylamine,267.0,1.0,CC(C)NC(C)C,katritzky07
+dipropylamine,280.0,1.0,CCCNCCC,katritzky07
+benzaldehyde,335.0,1.0,O=Cc1ccccc1,katritzky07
+benzoic acid,394.0,1.0,O=C(O)c1ccccc1,katritzky07
+toluene,277.0,1.0,Cc1ccccc1,katritzky07
+benzyl alcohol,366.0,1.0,OCc1ccccc1,katritzky07
+m-cresol,359.0,1.0,Cc1cccc(O)c1,katritzky07
+o-cresol,354.0,1.0,Cc1ccccc1O,katritzky07
+m-toluidine,359.0,1.0,Cc1cccc(N)c1,katritzky07
+o-toluidine,358.0,1.0,Cc1ccccc1N,katritzky07
+butyl acrylate,312.0,1.0,C=CC(=O)OCCCC,katritzky07
+ethyl cyclopentane,288.0,1.0,CCC1CCCC1,katritzky07
+"2,3-dimethylpentane",267.0,1.0,CCC(C)C(C)C,katritzky07
+heptane,269.0,1.0,CCCCCCC,katritzky07
+2-methylhexane,255.0,1.0,CCCCC(C)C,katritzky07
+3-methylhexane,270.0,1.0,CCCC(C)CC,katritzky07
+styrene,304.0,1.0,C=Cc1ccccc1,katritzky07
+acetophenone,355.0,1.0,CC(=O)c1ccccc1,katritzky07
+ethylbenzene,291.0,1.0,CCc1ccccc1,katritzky07
+m-xylene,298.0,1.0,Cc1cccc(C)c1,katritzky07
+p-xylene,300.0,1.0,Cc1ccc(C)cc1,katritzky07
+"2,6-dimethylphenol",346.0,1.0,Cc1cccc(C)c1O,katritzky07
+"1,2-dimethylcyclohexane",288.0,1.0,CC1CCCCC1C,katritzky07
+"trans-1,2-dimethylcyclohexane",279.0,1.0,C[C@@H]1CCCC[C@H]1C,katritzky07
+"cis-1,3-dimethylcyclohexane",278.0,1.0,C[C@H]1CCC[C@@H](C)C1,katritzky07
+"cis-1,2-dimethylcyclohexane",285.0,1.0,C[C@H]1CCCC[C@H]1C,katritzky07
+"1,4-dimethylcyclohexane",283.0,1.0,CC1CCC(C)CC1,katritzky07
+"cis-1,4-dimethylcyclohexane",279.0,1.0,C[C@H]1CC[C@@H](C)CC1,katritzky07
+ethylcyclohexane,291.0,1.0,CCC1CCCCC1,katritzky07
+n-propylcyclohexane,308.0,1.0,CCCC1CCCCC1,katritzky07
+"2,4,4-trimethyl-1-pentene",268.0,1.0,C=C(C)CC(C)(C)C,katritzky07
+"2,4,4-trimethyl-2-pentene",275.0,1.0,CC(C)=CC(C)(C)C,katritzky07
+isobutyl isobutyrate,313.0,1.0,CC(C)COC(=O)C(C)C,katritzky07
+"2,3-dimethylhexane",270.0,1.0,CCCC(C)C(C)C,katritzky07
+octane,286.0,1.0,CCCCCCCC,katritzky07
+"2,2,4-trimethylpentane",261.0,1.0,CC(C)CC(C)(C)C,katritzky07
+di-n-butyl ether,298.0,1.0,CCCCOCCCC,katritzky07
+2-ethyl-1-hexanol,350.0,1.0,CCCCC(CC)CO,katritzky07
+quinoline,378.0,1.0,c1ccc2ncccc2c1,katritzky07
+alpha-methylstyrene,318.0,1.0,C=C(C)c1ccccc1,katritzky07
+ethyl benzoate,361.0,1.0,CCOC(=O)c1ccccc1,katritzky07
+cumene,304.0,1.0,CC(C)c1ccccc1,katritzky07
+o-ethyltoluene,312.0,1.0,CCc1ccccc1C,katritzky07
+p-ethyltoluene,309.0,1.0,CCc1ccc(C)cc1,katritzky07
+mesitylene,323.0,1.0,Cc1cc(C)cc(C)c1,katritzky07
+propylbenzene,320.0,1.0,CCCc1ccccc1,katritzky07
+"1,2,3-trimethylbenzene",317.0,1.0,Cc1cccc(C)c1C,katritzky07
+"1,2,4-trimethylbenzene",317.0,1.0,Cc1ccc(C)c(C)c1,katritzky07
+isophorone,357.0,1.0,CC1=CC(=O)CC(C)(C)C1,katritzky07
+n-propylcyclohexane,308.0,1.0,CCCC1CCCCC1,katritzky07
+n-nonane,304.0,1.0,CCCCCCCCC,katritzky07
+"1,2,3,4-tetrahydronaphthalene",350.0,1.0,c1ccc2c(c1)CCCC2,katritzky07
+n-butylbenzene,332.0,1.0,CCCCc1ccccc1,katritzky07
+tert-butylbenzene,317.0,1.0,CC(C)(C)c1ccccc1,katritzky07
+p-cymene,320.0,1.0,Cc1ccc(C(C)C)cc1,katritzky07
+m-diethylbenzene,329.0,1.0,CCc1cccc(CC)c1,katritzky07
+o-diethyl benzene,322.0,1.0,CCc1ccccc1CC,katritzky07
+isobutylbenzene,328.0,1.0,CC(C)Cc1ccccc1,katritzky07
+n-butylcyclohexane,314.0,1.0,CCCCC1CCCCC1,katritzky07
+decane,319.0,1.0,CCCCCCCCCC,katritzky07
+2-ethylhexyl acrylate,359.0,1.0,C=CC(=O)OCC(CC)CCCC,katritzky07
+phenyl ether,388.0,1.0,c1ccc(Oc2ccccc2)cc1,katritzky07
+diphenylamine,426.0,1.0,c1ccc(Nc2ccccc2)cc1,katritzky07
+diethyl phthalate,433.0,1.0,CCOC(=O)c1ccccc1C(=O)OCC,katritzky07
+"1,3-diisopropylbenzene",349.0,1.0,CC(C)c1cccc(C(C)C)c1,katritzky07
+bicyclohexyl,347.0,1.0,C1CCC(C2CCCCC2)CC1,katritzky07
+1-dodecene,350.0,1.0,C=CCCCCCCCCCC,katritzky07
+dodecane,347.0,1.0,CCCCCCCCCCCC,katritzky07
+di-n-hexyl ether,351.0,1.0,CCCCCCOCCCCCC,katritzky07
+diphenylmethane,400.0,1.0,c1ccc(Cc2ccccc2)cc1,katritzky07
+benzyl benzoate,420.0,1.0,O=C(OCc1ccccc1)c1ccccc1,katritzky07
+bibenzyl,402.0,1.0,c1ccc(CCc2ccccc2)cc1,katritzky07
+1-tetradecene,383.0,1.0,C=CCCCCCCCCCCCC,katritzky07
+dibutyl phthalate,390.0,1.0,CCCCOC(=O)c1ccccc1C(=O)OCCCC,katritzky07
+1-hexadecene,405.0,1.0,C=CCCCCCCCCCCCCCC,katritzky07
+dibutyl sebacate,440.0,1.0,CCCCOC(=O)CCCCCCCCC(=O)OCCCC,katritzky07
+1-octadecene,421.0,1.0,C=CCCCCCCCCCCCCCCCC,katritzky07
+stearic acid,469.0,1.0,CCCCCCCCCCCCCCCCCC(=O)O,katritzky07
+octadecane,439.0,1.0,CCCCCCCCCCCCCCCCCC,katritzky07
+nonadecane,441.0,1.0,CCCCCCCCCCCCCCCCCCC,katritzky07
+methyl isopropenyl ketone,286.0,1.0,C=C(C)C(C)=O,katritzky07
+"1,1-dichloropropane",280.0,1.0,CCC(Cl)Cl,katritzky07
+"1,3-dichloropropane",305.0,1.0,ClCCCCl,katritzky07
+"1,3-propanediol",404.0,1.0,OCCCO,katritzky07
+isobutyronitrile,281.0,1.0,CC(C)C#N,katritzky07
+"1,4-dichlorobutane",313.0,1.0,ClCCCCCl,katritzky07
+2-bromobutane,294.0,1.0,CCC(C)Br,katritzky07
+2-chlorobutane,258.0,1.0,CCC(C)Cl,katritzky07
+"1,4-butanediol",408.0,1.0,OCCCCO,katritzky07
+"2,3-butanediol",358.0,1.0,CC(O)C(C)O,katritzky07
+sec-butylamine,264.0,1.0,CCC(C)N,katritzky07
+tert-butylamine,264.0,1.0,CC(C)(C)N,katritzky07
+valeronitrile,313.0,1.0,CCCCC#N,katritzky07
+2-methyl-1-butene,239.0,1.0,C=C(C)CC,katritzky07
+2-methyl-2-butene,228.0,1.0,CC=C(C)C,katritzky07
+3-methyl-1-butene,216.0,1.0,C=CC(C)C,katritzky07
+"1,5-dichloropentane",299.0,1.0,ClCCCCCCl,katritzky07
+3-methyl-2-butanone,279.0,1.0,CC(=O)C(C)C,katritzky07
+isopropyl acetate,275.0,1.0,CC(=O)OC(C)C,katritzky07
+methyl butyrate,284.0,1.0,CCCC(=O)OC,katritzky07
+piperidine hydrochloride,338.0,1.0,C1CCNCC1.Cl,katritzky07
+"2,2-dimethyl-1-propanol",309.0,1.0,CC(C)(C)CO,katritzky07
+tert-butyl methyl ether,245.0,1.0,COC(C)(C)C,katritzky07
+methyl sec-butyl ether,243.0,1.0,CCC(C)OC,katritzky07
+3-picoline,313.0,1.0,Cc1cccnc1,katritzky07
+"1,3-cyclohexadiene",299.0,1.0,C1=CCCC=C1,katritzky07
+methylcyclopentadiene,299.0,1.0,CC1=CC=CC1,katritzky07
+"2,3-dimethyl-1,3-butadiene",251.0,1.0,C=C(C)C(=C)C,katritzky07
+"1,5-hexadiene",246.0,1.0,C=CCCC=C,katritzky07
+hexanenitrile,316.0,1.0,CCCCCC#N,katritzky07
+"3,3-dimethyl-1-butene",245.0,1.0,C=CC(C)(C)C,katritzky07
+2-methyl-2-pentene,250.0,1.0,CCC=C(C)C,katritzky07
+3-methyl-1-pentene,245.0,1.0,C=CC(C)CC,katritzky07
+hexanal,298.0,1.0,CCCCCC=O,katritzky07
+3-hexanone,308.0,1.0,CCCC(=O)CC,katritzky07
+sec-butyl acetate,289.0,1.0,CCC(C)OC(C)=O,katritzky07
+tert-butyl acetate,288.0,1.0,CC(=O)OC(C)(C)C,katritzky07
+ethyl isobutyrate,286.0,1.0,CCOC(=O)C(C)C,katritzky07
+ethyl n-butyrate,292.0,1.0,CCCC(=O)OCC,katritzky07
+butyl ethyl ether,268.0,1.0,CCCCOCC,katritzky07
+2-ethyl-1-butanol,326.0,1.0,CCC(CC)CO,katritzky07
+hexyl alcohol,333.0,1.0,CCCCCCO,katritzky07
+2-hexanol,314.0,1.0,CCCCC(C)O,katritzky07
+2-methyl-1-pentanol,327.0,1.0,CCCC(C)CO,katritzky07
+4-methyl-2-pentanol,314.0,1.0,CC(C)CC(C)O,katritzky07
+methyl tert-pentyl ether,262.0,1.0,CCC(C)(C)OC,katritzky07
+"1,6-hexanediol",374.0,1.0,OCCCCCCO,katritzky07
+hexylamine,302.0,1.0,CCCCCCN,katritzky07
+acetone,255.0,1.0,CC(C)=O,katritzky07
+2-propanol,285.0,1.0,CC(C)O,katritzky07
+ethyl vinyl ether,228.0,1.0,C=COCC,katritzky07
+butyl formate,291.0,1.0,CCCCOC=O,katritzky07
+isovaleric acid,343.0,1.0,CC(C)CC(=O)O,katritzky07
+n-butyl acetate,295.0,1.0,CCCCOC(C)=O,katritzky07
+hexamethyleneimine,291.0,1.0,C1CCCNCC1,katritzky07
+p-cresol,359.0,1.0,Cc1ccc(O)cc1,katritzky07
+p-toluidine,360.0,1.0,Cc1ccc(N)cc1,katritzky07
+1-heptene,265.0,1.0,C=CCCCCC,katritzky07
+methylcyclohexane,269.0,1.0,CC1CCCCC1,katritzky07
+"2,2,3-trimethylbutane",267.0,1.0,CC(C)C(C)(C)C,katritzky07
+o-xylene,305.0,1.0,Cc1ccccc1C,katritzky07
+1-octene,294.0,1.0,C=CCCCCCC,katritzky07
+benzyl acetate,375.0,1.0,CC(=O)OCc1ccccc1,katritzky07
+m-ethyltoluene,311.0,1.0,CCc1cccc(C)c1,katritzky07
+dimethyl phthalate,419.0,1.0,COC(=O)c1ccccc1C(=O)OC,katritzky07
+sec-butylbenzene,318.0,1.0,CCC(C)c1ccccc1,katritzky07
+"1,4-diethylbenzene",329.0,1.0,CCc1ccc(CC)cc1,katritzky07
+1-decene,320.0,1.0,C=CCCCCCCCC,katritzky07
+decyl alcohol,355.0,1.0,CCCCCCCCCCO,katritzky07
+"1,4-diisopropylbenzene",349.0,1.0,CC(C)c1ccc(C(C)C)cc1,katritzky07
+hexadecane,407.0,1.0,CCCCCCCCCCCCCCCC,katritzky07
+propionitrile,279.0,1.0,CCC#N,katritzky07
+2-bromopropane,274.0,1.0,CC(C)Br,katritzky07
+2-chloro-2-methylpropane,246.0,1.0,CC(C)(C)Cl,katritzky07
+4-picoline,313.0,1.0,Cc1ccncc1,katritzky07
+"1,1,1,2-tetrachloroethane",320.0,1.0,ClCC(Cl)(Cl)Cl,katritzky07
+"1,1,1-trichloroethane",272.0,1.0,CC(Cl)(Cl)Cl,katritzky07
+"1,1,2-trichloroethane",305.0,1.0,ClCC(Cl)Cl,katritzky07
+"1,1-dichloroethane",267.0,1.0,CC(Cl)Cl,katritzky07
+"1,1-dichloroethylene",248.0,1.0,C=C(Cl)Cl,katritzky07
+"1,1-diethoxyethane",252.0,1.0,CCOC(C)OCC,katritzky07
+"1,1-dimethoxyethane",256.0,1.0,COC(C)OC,katritzky07
+"1,2-butanediol",366.0,1.0,CCC(O)CO,katritzky07
+"1,2-cyclohexanedione",357.0,1.0,O=C1CCCCC1=O,katritzky07
+"1,2-dichlorobutane",299.0,1.0,CCC(Cl)CCl,katritzky07
+"1,2-dichloroethane",286.0,1.0,ClCCCl,katritzky07
+"1,2-dichloropropane",289.0,1.0,CC(Cl)CCl,katritzky07
+"1,2-dimethoxyethane",273.0,1.0,COCCOC,katritzky07
+"1,2-dimethylbenzene",305.0,1.0,Cc1ccccc1C,katritzky07
+"1,2-ethanediamine",307.0,1.0,NCCN,katritzky07
+"1,2-ethanediol",384.0,1.0,OCCO,katritzky07
+"1,2-ethanedithiol",323.0,1.0,SCCS,katritzky07
+"1,2-propadiene",172.0,1.0,C=C=C,katritzky07
+"1,2-propanediamine",306.0,1.0,CC(N)CN,katritzky07
+"1,3,5,7-cyclooctatetraene",295.0,1.0,C1=CC=CC=CC=C1,katritzky07
+"1,3-cyclohexadiene",299.0,1.0,C1=CCCC=C1,katritzky07
+"1,3-cyclopentadiene",298.0,1.0,C1=CCC=C1,katritzky07
+"1,3-dioxolane",275.0,1.0,C1COCO1,katritzky07
+"1,3-propanediamine",321.0,1.0,NCCCN,katritzky07
+"1,4-cyclohexadiene",267.0,1.0,C1=CCC=CC1,katritzky07
+"1,4-dimethylbenzene",298.0,1.0,Cc1ccc(C)cc1,katritzky07
+"1,4-dioxane",285.0,1.0,C1COCCO1,katritzky07
+"1,4-hexadiene",252.0,1.0,C=CCC=CC,katritzky07
+"1,4-pentadiene",277.0,1.0,C=CCC=C,katritzky07
+"1,5-cyclooctadiene",305.0,1.0,C1=CCCC=CCC1,katritzky07
+"1,5-pentanedithiol",368.0,1.0,SCCCCCS,katritzky07
+"1,6-heptadiene",263.0,1.0,C=CCCCC=C,katritzky07
+"1,6-heptadiyne",282.0,1.0,C#CCCCC#C,katritzky07
+"1,7-octadiene",282.0,1.0,C=CCCCCC=C,katritzky07
+"1,7-octadiyne",296.0,1.0,C#CCCCCC#C,katritzky07
+"1,8-nonadiene",299.0,1.0,C=CCCCCCC=C,katritzky07
+"1,8-nonadiyne",314.0,1.0,C#CCCCCCC#C,katritzky07
+1-amino-2-propanol,350.0,1.0,CC(O)CN,katritzky07
+1-bromoheptane,333.0,1.0,CCCCCCCBr,katritzky07
+1-bromooctane,351.0,1.0,CCCCCCCCBr,katritzky07
+1-bromopentane,304.0,1.0,CCCCCBr,katritzky07
+1-bromopropane,294.0,1.0,CCCBr,katritzky07
+1-butanethiol,275.0,1.0,CCCCS,katritzky07
+1-butene,193.0,1.0,C=CCC,katritzky07
+1-chloro-2-methylpropane,294.0,1.0,CC(C)CCl,katritzky07
+1-chloro-4-ethylbenzene,337.0,1.0,CCc1ccc(Cl)cc1,katritzky07
+1-chloroheptane,314.0,1.0,CCCCCCCCl,katritzky07
+1-chlorohexane,299.0,1.0,CCCCCCCl,katritzky07
+1-chlorononane,347.0,1.0,CCCCCCCCCCl,katritzky07
+1-chlorooctane,336.0,1.0,CCCCCCCCCl,katritzky07
+1-cyclopropylethanone,286.0,1.0,CC(=O)C1CC1,katritzky07
+1-decanamine,359.0,1.0,CCCCCCCCCCN,katritzky07
+1-decanethiol,371.0,1.0,CCCCCCCCCCS,katritzky07
+1-decanol,355.0,1.0,CCCCCCCCCCO,katritzky07
+1-decyne,323.0,1.0,C#CCCCCCCCC,katritzky07
+1-dodecanol,400.0,1.0,CCCCCCCCCCCCO,katritzky07
+1-ethoxybutane,268.0,1.0,CCCCOCC,katritzky07
+1-ethyl-1-methylcyclopentane,279.0,1.0,CCC1(C)CCCC1,katritzky07
+1-ethylpiperidine,291.0,1.0,CCN1CCCCC1,katritzky07
+1-fluoroheptane,286.0,1.0,CCCCCCCF,katritzky07
+1-heptanethiol,314.0,1.0,CCCCCCCS,katritzky07
+1-heptanol,344.0,1.0,CCCCCCCO,katritzky07
+1-heptyne,271.0,1.0,C#CCCCCC,katritzky07
+1-hexyne,253.0,1.0,C#CCCCC,katritzky07
+1-iodo-3-methylbenzene,355.0,1.0,Cc1cccc(I)c1,katritzky07
+1-iodobutane,306.0,1.0,CCCCI,katritzky07
+1-iodohexane,340.0,1.0,CCCCCCI,katritzky07
+1-iodopentane,316.0,1.0,CCCCCI,katritzky07
+1-methoxy-2-propanol,311.0,1.0,COCC(C)O,katritzky07
+1-methoxybutane,263.0,1.0,CCCCOC,katritzky07
+1-methyl-2-pyrrolidinone,359.0,1.0,CN1CCCC1=O,katritzky07
+1-methylcyclohexene,270.0,1.0,CC1=CCCCC1,katritzky07
+1-methylcyclopentene,256.0,1.0,CC1=CCCC1,katritzky07
+1-methylnaphthalene,355.0,1.0,Cc1cccc2ccccc12,katritzky07
+1-methylpyrrole,288.0,1.0,Cn1cccc1,katritzky07
+1-methylpyrrolidine,255.0,1.0,CN1CCCC1,katritzky07
+1-nonanol,371.0,1.0,CCCCCCCCCO,katritzky07
+1-octanethiol,342.0,1.0,CCCCCCCCS,katritzky07
+1-octanol,354.0,1.0,CCCCCCCCO,katritzky07
+1-octene,294.0,1.0,C=CCCCCCC,katritzky07
+1-pentanethiol,291.0,1.0,CCCCCS,katritzky07
+1-pentyne,239.0,1.0,C#CCCC,katritzky07
+1-phenyl-1-butanone,361.0,1.0,CCCC(=O)c1ccccc1,katritzky07
+1-propanethiol,252.0,1.0,CCCS,katritzky07
+1-tridecene,353.0,1.0,C=CCCCCCCCCCCC,katritzky07
+1-undecyne,338.0,1.0,C#CCCCCCCCCC,katritzky07
+"2,2-dichloropropane",268.0,1.0,CC(C)(Cl)Cl,katritzky07
+"2,2-dimethylbutane",225.0,1.0,CCC(C)(C)C,katritzky07
+"2,2-dimethylpropane",208.0,1.0,CC(C)(C)C,katritzky07
+"2,2-dimethylpropanenitrile",277.0,1.0,CC(C)(C)C#N,katritzky07
+"2,3-butanedione",279.0,1.0,CC(=O)C(C)=O,katritzky07
+"2,3-dichloro-1-propanol",366.0,1.0,OCC(Cl)CCl,katritzky07
+"2,3-dihydro-5-methylfuran",261.0,1.0,CC1=CCCO1,katritzky07
+"2,3-dihydrofuran",249.0,1.0,C1=COCC1,katritzky07
+"2,3-dimethyl-2,3-butanediol",350.0,1.0,CC(C)(O)C(C)(C)O,katritzky07
+"2,3-dimethylaniline",370.0,1.0,Cc1cccc(N)c1C,katritzky07
+"2,3-dimethylheptane",363.0,1.0,CCCCC(C)C(C)C,katritzky07
+"2,3-dimethylphenol",368.0,1.0,Cc1cccc(O)c1C,katritzky07
+"2,4,6-trimethylpyridine",330.0,1.0,Cc1cc(C)nc(C)c1,katritzky07
+"2,4-dimethylpentane",261.0,1.0,CC(C)CC(C)C,katritzky07
+"2,4-dimethylphenol",367.0,1.0,Cc1ccc(O)c(C)c1,katritzky07
+"2,4-dimethylpyridine",310.0,1.0,Cc1ccnc(C)c1,katritzky07
+"2,5-dimethoxy-2,5-dihydrofuran",324.0,1.0,COC1C=CC(OC)O1,katritzky07
+"2,5-dimethyl-2,4-hexadiene",302.0,1.0,CC(C)=CC=C(C)C,katritzky07
+"2,5-dimethylphenol",368.0,1.0,Cc1ccc(C)c(O)c1,katritzky07
+"2,5-hexanediol",374.0,1.0,CC(O)CCC(C)O,katritzky07
+"2,5-hexanedione",352.0,1.0,CC(=O)CCC(C)=O,katritzky07
+"2,5-norbornadiene",262.0,1.0,C1=CC2C=CC1C2,katritzky07
+2-amino-2-methyl-1-propanol,340.0,1.0,CC(C)(N)CO,katritzky07
+"2-bromo-1,1-dimethoxyethane",326.0,1.0,COC(CBr)OC,katritzky07
+2-butanethiol,250.0,1.0,CCC(C)S,katritzky07
+2-butanol,297.0,1.0,CCC(C)O,katritzky07
+2-butenal,286.0,1.0,CC=CC=O,katritzky07
+2-butenenitrile,293.0,1.0,CC=CC#N,katritzky07
+2-butoxyethanol,334.0,1.0,CCCCOCCO,katritzky07
+2-butoxyethyl acetate,344.0,1.0,CCCCOCCOC(C)=O,katritzky07
+2-carene,311.0,1.0,CC1=CC2C(CC1)C2(C)C,katritzky07
+"2-chloro-1,3-butadiene",253.0,1.0,C=CC(=C)Cl,katritzky07
+2-chloro-1-propanol,325.0,1.0,CC(Cl)CO,katritzky07
+2-chloroethanol,333.0,1.0,OCCCl,katritzky07
+2-chloropentane,273.0,1.0,CCCC(C)Cl,katritzky07
+2-chloropyridine,339.0,1.0,Clc1ccccn1,katritzky07
+2-chlorotoluene,316.0,1.0,Cc1ccccc1Cl,katritzky07
+2-cyclohexen-1-one,307.0,1.0,O=C1C=CCCC1,katritzky07
+2-dimethylaminoethanol,313.0,1.0,CN(C)CCO,katritzky07
+2-ethoxy-2-methyl-propane,254.0,1.0,CCOC(C)(C)C,katritzky07
+2-ethoxyethanol,317.0,1.0,CCOCCO,katritzky07
+2-ethyl-1-hexanamine,323.0,1.0,CCCCC(CC)CN,katritzky07
+2-ethylbutanal,294.0,1.0,CCC(C=O)CC,katritzky07
+2-ethylhexanal,319.0,1.0,CCCCC(C=O)CC,katritzky07
+2-ethylhexanol,346.0,1.0,CCCCC(CC)CO,katritzky07
+2-ethyloxazoline,302.0,1.0,CCC1=NCCO1,katritzky07
+2-heptanol,344.0,1.0,CCCCCC(C)O,katritzky07
+2-heptanone,312.0,1.0,CCCCCC(C)=O,katritzky07
+2-hexyne,262.0,1.0,CC#CCCC,katritzky07
+2-iodobutane,296.0,1.0,CCC(C)I,katritzky07
+2-isopropoxyethanol,316.0,1.0,CC(C)OCCO,katritzky07
+2-mercaptoethanol,346.0,1.0,OCCS,katritzky07
+2-methoxybutane,243.0,1.0,CCC(C)OC,katritzky07
+2-methoxyethanol,312.0,1.0,COCCO,katritzky07
+2-methoxyethylacetate,318.0,1.0,COCCOC(C)=O,katritzky07
+"2-methyl-1,3-dioxolane",271.0,1.0,CC1OCCO1,katritzky07
+2-methyl-1-butanethiol,292.0,1.0,CCC(C)CS,katritzky07
+2-methyl-1-heptene,283.0,1.0,C=C(C)CCCCC,katritzky07
+2-methyl-1-hexene,267.0,1.0,C=C(C)CCCC,katritzky07
+2-methyl-1-propanal,248.0,1.0,CC(C)C=O,katritzky07
+2-methyl-2-butanol,294.0,1.0,CCC(C)(C)O,katritzky07
+2-methyl-2-heptene,281.0,1.0,CCCCC=C(C)C,katritzky07
+2-methyl-2-propanethiol,247.0,1.0,CC(C)(C)S,katritzky07
+2-methyl-2-propen-1-ol,306.0,1.0,C=C(C)CO,katritzky07
+2-methyl-2-propenal,258.0,1.0,C=C(C)C=O,katritzky07
+2-methyl-3-pentanol,319.0,1.0,CCC(O)C(C)C,katritzky07
+2-methyl-3-pentanone,286.0,1.0,CCC(=O)C(C)C,katritzky07
+2-methylaminoethanol,344.0,1.0,CNCCO,katritzky07
+2-methylaniline,358.0,1.0,Cc1ccccc1N,katritzky07
+2-methylcyclohexanol,331.0,1.0,CC1CCCCC1O,katritzky07
+2-methylcyclohexanone,321.0,1.0,CC1CCCCC1=O,katritzky07
+2-methylfuran,243.0,1.0,Cc1ccco1,katritzky07
+2-methylheptane,277.0,1.0,CCCCCC(C)C,katritzky07
+2-methylnaphthalene,370.0,1.0,Cc1ccc2ccccc2c1,katritzky07
+2-methylpentane,241.0,1.0,CCCC(C)C,katritzky07
+2-methyl-propanoic acid,329.0,1.0,CC(C)C(=O)O,katritzky07
+2-methylpyridine,299.0,1.0,Cc1ccccn1,katritzky07
+2-methyltetrahydrofuran,262.0,1.0,CC1CCCO1,katritzky07
+2-methylthiophene,280.0,1.0,Cc1cccs1,katritzky07
+2-nonanone,342.0,1.0,CCCCCCCC(C)=O,katritzky07
+2-norbornene,258.0,1.0,C1=CC2CCC1C2,katritzky07
+2-octanol,349.0,1.0,CCCCCCC(C)O,katritzky07
+2-octanone,335.0,1.0,CCCCCCC(C)=O,katritzky07
+2-octene,287.0,1.0,CC=CCCCCC,katritzky07
+2-octyne,301.0,1.0,CC#CCCCCC,katritzky07
+2-pentanethiol,282.0,1.0,CCCC(C)S,katritzky07
+2-pentanol,313.0,1.0,CCCC(C)O,katritzky07
+2-pentyl acetate,305.0,1.0,CCCC(C)OC(C)=O,katritzky07
+2-pentyne,243.0,1.0,CC#CCC,katritzky07
+2-phenylethanol,375.0,1.0,OCCc1ccccc1,katritzky07
+2-propene-1-ol,294.0,1.0,C=CCO,katritzky07
+"2-propenoic acid, butyl ester",310.0,1.0,C=CC(=O)OCCCC,katritzky07
+2-propenyl-cyclopentane,285.0,1.0,CC=CC1CCCC1,katritzky07
+2-propyn-1-ol,306.0,1.0,C#CCO,katritzky07
+2-t-butyl-4-methylphenol,373.0,1.0,Cc1ccc(O)c(C(C)(C)C)c1,katritzky07
+2-t-butyl-6-methylphenol,380.0,1.0,Cc1cccc(C(C)(C)C)c1O,katritzky07
+2-t-butylfuran,280.0,1.0,CC(C)(C)c1ccco1,katritzky07
+2-undecanol,380.0,1.0,CCCCCCCCCC(C)O,katritzky07
+2-undecanone,362.0,1.0,CCCCCCCCCC(C)=O,katritzky07
+"3,3-dimethylbutanoic acid",361.0,1.0,CC(C)(C)CC(=O)O,katritzky07
+"3,5,5-trimethyl-1-hexanol",352.0,1.0,CC(CCO)CC(C)(C)C,katritzky07
+3-buten-1-ol,306.0,1.0,C=CCCO,katritzky07
+3-buten-2-ol,293.0,1.0,C=CC(C)O,katritzky07
+3-butenenitrile,294.0,1.0,C=CCC#N,katritzky07
+3-butoxypropylamine,336.0,1.0,CCCCOCCCN,katritzky07
+3-chloro-1-propanethiol,316.0,1.0,SCCCCl,katritzky07
+3-chloro-1-propanol,346.0,1.0,OCCCCl,katritzky07
+3-chloro-2-methyl-1-propene,261.0,1.0,C=C(C)CCl,katritzky07
+3-chlorotoluene,323.0,1.0,Cc1cccc(Cl)c1,katritzky07
+3-ethylhexane,279.0,1.0,CCCC(CC)CC,katritzky07
+3-hydroxypropanenitrile,402.0,1.0,N#CCCO,katritzky07
+3-iodo-1-propene,291.0,1.0,C=CCI,katritzky07
+3-methoxypropylamine,305.0,1.0,COCCCN,katritzky07
+"3-methyl-1,3-pentadiene",245.0,1.0,C=CC(C)=CC,katritzky07
+3-methyl-1-pentanol,331.0,1.0,CCC(C)CCO,katritzky07
+3-methyl-2-butanethiol,292.0,1.0,CC(C)C(C)S,katritzky07
+3-methyl-2-pentanol,313.0,1.0,CCC(C)C(C)O,katritzky07
+3-methyl-2-pentanone,285.0,1.0,CCC(C)C(C)=O,katritzky07
+3-methyl-2-pentene,267.0,1.0,CC=C(C)CC,katritzky07
+3-methyl-4-ethylhexane,297.0,1.0,CCC(C)C(CC)CC,katritzky07
+3-methylaniline,359.0,1.0,Cc1cccc(N)c1,katritzky07
+3-methylbutanoic acid,347.0,1.0,CC(C)CC(=O)O,katritzky07
+3-methylcyclohexanol,335.0,1.0,CC1CCCC(O)C1,katritzky07
+3-methylheptane,280.0,1.0,CCCCC(C)CC,katritzky07
+3-methylpyridine,311.0,1.0,Cc1cccnc1,katritzky07
+3-methylstyrene,324.0,1.0,C=Cc1cccc(C)c1,katritzky07
+3-methylthiophene,284.0,1.0,Cc1ccsc1,katritzky07
+3-octanol,338.0,1.0,CCCCCC(O)CC,katritzky07
+3-octanone,326.0,1.0,CCCCCC(=O)CC,katritzky07
+3-oxobutanoic acid ethyl ester,343.0,1.0,CCOC(=O)CC(C)=O,katritzky07
+4-bromo-1-butene,282.0,1.0,C=CCCBr,katritzky07
+4-bromobiphenyl,417.0,1.0,Brc1ccc(-c2ccccc2)cc1,katritzky07
+4-chlorophenol,388.0,1.0,Oc1ccc(Cl)cc1,katritzky07
+4-chlorotoluene,322.0,1.0,Cc1ccc(Cl)cc1,katritzky07
+4-ethylphenol,377.0,1.0,CCc1ccc(O)cc1,katritzky07
+4-heptanone,322.0,1.0,CCCC(=O)CCC,katritzky07
+"4-methyl-1,3-pentadiene",239.0,1.0,C=CC=C(C)C,katritzky07
+4-methyl-1-pentanol,324.0,1.0,CC(C)CCCO,katritzky07
+4-methylaniline,359.0,1.0,Cc1ccc(N)cc1,katritzky07
+4-methylcyclohexanol,343.0,1.0,CC1CCC(O)CC1,katritzky07
+4-methylnonane,311.0,1.0,CCCCCC(C)CCC,katritzky07
+4-methylpyridine,310.0,1.0,Cc1ccncc1,katritzky07
+4-methylstyrene,318.0,1.0,C=Cc1ccc(C)cc1,katritzky07
+4-octyne,291.0,1.0,CCCC#CCCC,katritzky07
+4-thiapentanal,331.0,1.0,CSCCC=O,katritzky07
+4-vinyl-1-cyclohexene,289.0,1.0,C=CC1CC=CCC1,katritzky07
+5-chloro-1-pentyne,288.0,1.0,C#CCCCCl,katritzky07
+5-decene,319.0,1.0,CCCCC=CCCCC,katritzky07
+5-ethylidene-2-norbornene,311.0,1.0,CC=C1CC2C=CC1C2,katritzky07
+5-hexen-1-ol,320.0,1.0,C=CCCCCO,katritzky07
+5-methyl-2-hexanone,309.0,1.0,CC(=O)CCC(C)C,katritzky07
+5-methyl-3-heptanone,316.0,1.0,CCC(=O)CC(C)CC,katritzky07
+5-nonanone,333.0,1.0,CCCCC(=O)CCCC,katritzky07
+6-undecanone,361.0,1.0,CCCCCC(=O)CCCCC,katritzky07
+9-decen-1-ol,392.0,1.0,C=CCCCCCCCCO,katritzky07
+acetaldoxime,309.0,1.0,CC=NO,katritzky07
+acetic acid ethenyl ester,265.0,1.0,C=COC(C)=O,katritzky07
+"acetic acid, 1,1-dimethylethyl ester",289.0,1.0,CC(=O)OC(C)(C)C,katritzky07
+acetic anhydride,322.0,1.0,CC(=O)OC(C)=O,katritzky07
+acetonitrile,286.0,1.0,CC#N,katritzky07
+adiponitrile,432.0,1.0,N#CCCCCC#N,katritzky07
+allyl isothiocyanate,319.0,1.0,C=CCN=C=S,katritzky07
+anethole,363.0,1.0,CC=Cc1ccc(OC)cc1,katritzky07
+benzenemethanethiol,343.0,1.0,SCc1ccccc1,katritzky07
+benzenethiol,323.0,1.0,Sc1ccccc1,katritzky07
+benzofuran,329.0,1.0,c1ccc2occc2c1,katritzky07
+benzonitrile,348.0,1.0,N#Cc1ccccc1,katritzky07
+benzoyl chloride,345.0,1.0,O=C(Cl)c1ccccc1,katritzky07
+benzyl bromide,352.0,1.0,BrCc1ccccc1,katritzky07
+benzyl chloride,340.0,1.0,ClCc1ccccc1,katritzky07
+benzyl cyanide,374.0,1.0,N#CCc1ccccc1,katritzky07
+benzyl methyl sulfide,346.0,1.0,CSCc1ccccc1,katritzky07
+biphenyl,386.0,1.0,c1ccc(-c2ccccc2)cc1,katritzky07
+bromoethane,253.0,1.0,CCBr,katritzky07
+bromoform,356.0,1.0,BrC(Br)Br,katritzky07
+butanal,266.0,1.0,CCCC=O,katritzky07
+butanenitrile,290.0,1.0,CCCC#N,katritzky07
+butanoic acid,345.0,1.0,CCCC(=O)O,katritzky07
+butyl acetate,295.0,1.0,CCCCOC(C)=O,katritzky07
+butyl cyanide,313.0,1.0,CCCCC#N,katritzky07
+butyl isocyanate,302.0,1.0,CCCCN=C=O,katritzky07
+butyl propionate,305.0,1.0,CCCCOC(=O)CC,katritzky07
+butyl vinyl ether,264.0,1.0,C=COCCCC,katritzky07
+butylbenzene,322.0,1.0,CCCCc1ccccc1,katritzky07
+butylcyclohexane,314.0,1.0,CCCCC1CCCCC1,katritzky07
+butyric anhydride,360.0,1.0,CCCC(=O)OC(=O)CCC,katritzky07
+camphor,339.0,1.0,CC12CCC(CC1=O)C2(C)C,katritzky07
+"carbonochloridic acid, ethyl ester",289.0,1.0,CCOC(=O)Cl,katritzky07
+carvacrol,379.0,1.0,Cc1ccc(C(C)C)cc1O,katritzky07
+chlorocyclohexane,305.0,1.0,ClC1CCCCC1,katritzky07
+chlorocyclopentane,288.0,1.0,ClC1CCCC1,katritzky07
+chloroethane,223.0,1.0,CCCl,katritzky07
+cinnamaldehyde,344.0,1.0,O=CC=Cc1ccccc1,katritzky07
+citronellal,348.0,1.0,CC(C)=CCCC(C)CC=O,katritzky07
+cyclobutane,208.0,1.0,C1CCC1,katritzky07
+cyclobutanone,283.0,1.0,O=C1CCC1,katritzky07
+cyclobutylamine,269.0,1.0,NC1CCC1,katritzky07
+cyclodecane,338.0,1.0,C1CCCCCCCCC1,katritzky07
+cycloheptane,279.0,1.0,C1CCCCCC1,katritzky07
+cycloheptanol,344.0,1.0,OC1CCCCCC1,katritzky07
+cycloheptanone,328.0,1.0,O=C1CCCCCC1,katritzky07
+cyclohexanecarbonitrile,338.0,1.0,N#CC1CCCCC1,katritzky07
+cyclohexanemethylamine,316.0,1.0,NCC1CCCCC1,katritzky07
+cyclohexanethiol,316.0,1.0,SC1CCCCC1,katritzky07
+cyclohexene oxide,297.0,1.0,C1CCC2OC2C1,katritzky07
+cyclohexyl acetate,331.0,1.0,CC(=O)OC1CCCCC1,katritzky07
+cyclooctane,301.0,1.0,C1CCCCCCC1,katritzky07
+cyclopentanethiol,298.0,1.0,SC1CCCC1,katritzky07
+cyclopentanol,324.0,1.0,OC1CCCC1,katritzky07
+cyclopentanone,299.0,1.0,O=C1CCCC1,katritzky07
+cyclopentylamine,285.0,1.0,NC1CCCC1,katritzky07
+cyclopropane,178.0,1.0,C1CC1,katritzky07
+cyclopropanecarbonitrile,305.0,1.0,N#CC1CC1,katritzky07
+cyclopropylamine,248.0,1.0,NC1CC1,katritzky07
+decanal,358.0,1.0,CCCCCCCCCC=O,katritzky07
+dibutyl disulfide,386.0,1.0,CCCCSSCCCC,katritzky07
+dibutyl sulfide,333.0,1.0,CCCCSCCCC,katritzky07
+dibutylether,298.0,1.0,CCCCOCCCC,katritzky07
+diethanolamine,410.0,1.0,OCCNCCO,katritzky07
+diethyl carbonate,298.0,1.0,CCOC(=O)OCC,katritzky07
+diethyl disulfide,313.0,1.0,CCSSCC,katritzky07
+diethyl fumarate,364.0,1.0,CCOC(=O)/C=C/C(=O)OCC,katritzky07
+diethyl glutarate,369.0,1.0,CCOC(=O)CCCC(=O)OCC,katritzky07
+diethyl sulfate,377.0,1.0,CCOS(=O)(=O)OCC,katritzky07
+diethyl sulfite,326.0,1.0,CCOS(=O)OCC,katritzky07
+diethylamine,250.0,1.0,CCNCC,katritzky07
+diethylaniline,358.0,1.0,CCN(CC)c1ccccc1,katritzky07
+diethylcyanamide,342.0,1.0,CCN(C#N)CC,katritzky07
+diethylene glycol,397.0,1.0,OCCOCCO,katritzky07
+diethylene glycol dibutyl ether,390.0,1.0,CCCCOCCOCCOCCCC,katritzky07
+diethylene glycol dimethyl ether,324.0,1.0,COCCOCCOC,katritzky07
+diethylenetriamine,370.0,1.0,NCCNCCN,katritzky07
+diethylether,228.0,1.0,CCOCC,katritzky07
+diisobutyl ketone,322.0,1.0,CC(C)CC(=O)CC(C)C,katritzky07
+diisobutylamine,302.0,1.0,CC(C)CNCC(C)C,katritzky07
+diisopropyl ether,245.0,1.0,CC(C)OC(C)C,katritzky07
+dimethyl carbonate,291.0,1.0,COC(=O)OC,katritzky07
+dimethyl disulfide,297.0,1.0,CSSC,katritzky07
+dimethyl ether,232.0,1.0,COC,katritzky07
+dimethyl sulfide,235.0,1.0,CSC,katritzky07
+dimethylamine,255.0,1.0,CNC,katritzky07
+dimethylether,190.0,1.0,COC,katritzky07
+dimethylsulfoxide,361.0,1.0,CS(C)=O,katritzky07
+di-n-butylamine,320.0,1.0,CCCCNCCCC,katritzky07
+dipentylether,330.0,1.0,CCCCCOCCCCC,katritzky07
+diphenyl ether,388.0,1.0,c1ccc(Oc2ccccc2)cc1,katritzky07
+dipropyl ether,294.0,1.0,CCCOCCC,katritzky07
+di-t-butyl sulfide,321.0,1.0,CC(C)(C)SC(C)(C)C,katritzky07
+di-tert-butyl disulfide,340.0,1.0,CC(C)(C)SSC(C)(C)C,katritzky07
+di-tert-butyl peroxide,285.0,1.0,CC(C)(C)OOC(C)(C)C,katritzky07
+eicosane,442.0,1.0,CCCCCCCCCCCCCCCCCCCC,katritzky07
+ethanal,234.0,1.0,CC=O,katritzky07
+ethane,138.0,1.0,CC,katritzky07
+ethanethiol,225.0,1.0,CCS,katritzky07
+ethanoic acid,312.0,1.0,CC(=O)O,katritzky07
+Ethanol,286.0,1.0,CCO,katritzky07
+ethenylcyclohexane,295.0,1.0,C=CC1CCCCC1,katritzky07
+ethyl chloroacetate,326.0,1.0,CCOC(=O)CCl,katritzky07
+ethyl cyanide,279.0,1.0,CCC#N,katritzky07
+ethyl propyl ether,253.0,1.0,CCCOCC,katritzky07
+ethylamine,256.0,1.0,CCN,katritzky07
+ethylcyclopentane,288.0,1.0,CCC1CCCC1,katritzky07
+ethylene carbonate,423.0,1.0,O=C1OCCO1,katritzky07
+fluorobenzene,258.0,1.0,Fc1ccccc1,katritzky07
+fluorocyclohexane,278.0,1.0,FC1CCCCC1,katritzky07
+formic acid,342.0,1.0,O=CO,katritzky07
+furan,238.0,1.0,c1ccoc1,katritzky07
+furfural,333.0,1.0,O=Cc1ccco1,katritzky07
+furfuryl alcohol,338.0,1.0,OCc1ccco1,katritzky07
+glycerol,457.0,1.0,OCC(O)CO,katritzky07
+heptadecane,421.0,1.0,CCCCCCCCCCCCCCCCC,katritzky07
+heptanal,314.0,1.0,CCCCCCC=O,katritzky07
+heptanenitrile,331.0,1.0,CCCCCCC#N,katritzky07
+heptanoic acid,385.0,1.0,CCCCCCC(=O)O,katritzky07
+heptylbenzene,368.0,1.0,CCCCCCCc1ccccc1,katritzky07
+iodobenzene,347.0,1.0,Ic1ccccc1,katritzky07
+isoamyl alcohol,318.0,1.0,CC(C)CCO,katritzky07
+isobutene,197.0,1.0,C=C(C)C,katritzky07
+isobutyl vinyl ether,264.0,1.0,C=COCC(C)C,katritzky07
+isooctane,261.0,1.0,CC(C)CC(C)(C)C,katritzky07
+isopentane,216.0,1.0,CCC(C)C,katritzky07
+isopentanol,316.0,1.0,CC(C)CCO,katritzky07
+isopentyl acetate,298.0,1.0,CC(=O)OCCC(C)C,katritzky07
+isoprene,219.0,1.0,C=CC(=C)C,katritzky07
+isopropyl glycidyl ether,306.0,1.0,CC(C)OCC1CO1,katritzky07
+isopropylcyclohexane,308.0,1.0,CC(C)C1CCCCC1,katritzky07
+m-dichlorobenzene,336.0,1.0,Clc1cccc(Cl)c1,katritzky07
+methacrylonitrile,274.0,1.0,C=C(C)C#N,katritzky07
+methanethiol,255.0,1.0,CS,katritzky07
+Methanol,284.0,1.0,CO,katritzky07
+methoxybenzene,325.0,1.0,COc1ccccc1,katritzky07
+methyl 2-octynoate,361.0,1.0,CCCCCC#CC(=O)OC,katritzky07
+methyl benzoate,356.0,1.0,COC(=O)c1ccccc1,katritzky07
+methyl cyclopropanecarboxylate,290.0,1.0,COC(=O)C1CC1,katritzky07
+methyl formate,254.0,1.0,COC=O,katritzky07
+methyl heptanoate,325.0,1.0,CCCCCCC(=O)OC,katritzky07
+methyl isobutyl ketone,287.0,1.0,CC(=O)CC(C)C,katritzky07
+methyl isobutyrate,276.0,1.0,COC(=O)C(C)C,katritzky07
+methyl isothiocyanate,305.0,1.0,CN=C=S,katritzky07
+methyl methacrylate,283.0,1.0,C=C(C)C(=O)OC,katritzky07
+methyl salicylate,369.0,1.0,COC(=O)c1ccccc1O,katritzky07
+methyl valerate,295.0,1.0,CCCCC(=O)OC,katritzky07
+methylal,255.0,1.0,COCOC,katritzky07
+methylamine,211.0,1.0,CN,katritzky07
+methyldiethanolamine,411.0,1.0,CN(CCO)CCO,katritzky07
+methylenecyclohexane,267.0,1.0,C=C1CCCCC1,katritzky07
+methylenecyclopentane,254.0,1.0,C=C1CCCC1,katritzky07
+morpholine,308.0,1.0,C1COCCN1,katritzky07
+"N,N-diethylmethylamine",250.0,1.0,CCN(C)CC,katritzky07
+"N,N-dimethyl formamide",331.0,1.0,CN(C)C=O,katritzky07
+"N,N-dimethyl-1,3-propanediamine",308.0,1.0,CN(C)CCCN,katritzky07
+"N,N-dimethylacetamide",336.0,1.0,CC(=O)N(C)C,katritzky07
+"N,N-dimethylcyclohexanemethylamine",321.0,1.0,CN(C)CC1CCCCC1,katritzky07
+"N,N-dimethylcyclohexylamine",312.0,1.0,CN(C)C1CCCCC1,katritzky07
+naphthalene,352.0,1.0,c1ccc2ccccc2c1,katritzky07
+n-butyl nitrite,260.0,1.0,CCCCON=O,katritzky07
+N-butylacetamide,389.0,1.0,CCCCNC(C)=O,katritzky07
+n-decane,324.0,1.0,CCCCCCCCCC,katritzky07
+N-ethylacetamide,383.0,1.0,CCNC(C)=O,katritzky07
+N-ethylisopropylamine,289.0,1.0,CCNC(C)C,katritzky07
+N-ethylmorpholine,305.0,1.0,CCN1CCOCC1,katritzky07
+n-heptane,269.0,1.0,CCCCCCC,katritzky07
+n-hexadecane,407.0,1.0,CCCCCCCCCCCCCCCC,katritzky07
+n-hexylbenzene,356.0,1.0,CCCCCCc1ccccc1,katritzky07
+N-methyl-2-propanamine,242.0,1.0,CNC(C)C,katritzky07
+N-methylaniline,353.0,1.0,CNc1ccccc1,katritzky07
+N-methylbutylamine,274.0,1.0,CCCCNC,katritzky07
+N-methylformamide,371.0,1.0,CNC=O,katritzky07
+N-methylmorpholine,287.0,1.0,CN1CCOCC1,katritzky07
+n-nonanal,344.0,1.0,CCCCCCCCC=O,katritzky07
+n-octane,286.0,1.0,CCCCCCCC,katritzky07
+n-octylbenzene,380.0,1.0,CCCCCCCCc1ccccc1,katritzky07
+n-pentane,224.0,1.0,CCCCC,katritzky07
+n-pentyl acetate,298.0,1.0,CCCCCOC(C)=O,katritzky07
+n-propylbenzene,303.0,1.0,CCCc1ccccc1,katritzky07
+octanal,325.0,1.0,CCCCCCCC=O,katritzky07
+octanenitrile,346.0,1.0,CCCCCCCC#N,katritzky07
+octanoic acid,383.0,1.0,CCCCCCCC(=O)O,katritzky07
+octanoyl chloride,355.0,1.0,CCCCCCCC(=O)Cl,katritzky07
+octylamine,333.0,1.0,CCCCCCCCN,katritzky07
+o-dichlorobenzene,339.0,1.0,Clc1ccccc1Cl,katritzky07
+p-dichlorobenzene,339.0,1.0,Clc1ccc(Cl)cc1,katritzky07
+p-diethylbenzene,330.0,1.0,CCc1ccc(CC)cc1,katritzky07
+pentanal,281.0,1.0,CCCCC=O,katritzky07
+pentanenitrile,314.0,1.0,CCCCC#N,katritzky07
+pentanoic acid,359.0,1.0,CCCCC(=O)O,katritzky07
+pentylbenzene,338.0,1.0,CCCCCc1ccccc1,katritzky07
+phenyl isocyanate,324.0,1.0,O=C=Nc1ccccc1,katritzky07
+phthalic anhydride,425.0,1.0,O=C1OC(=O)c2ccccc21,katritzky07
+pinacolone,278.0,1.0,CC(=O)C(C)(C)C,katritzky07
+pivalic acid,337.0,1.0,CC(C)(C)C(=O)O,katritzky07
+propanal,243.0,1.0,CCC=O,katritzky07
+propane,169.0,1.0,CCC,katritzky07
+propanoic acid,327.0,1.0,CCC(=O)O,katritzky07
+propanoyl chloride,285.0,1.0,CCC(=O)Cl,katritzky07
+propene,165.0,1.0,C=CC,katritzky07
+propionic anhydride,336.0,1.0,CCC(=O)OC(=O)CC,katritzky07
+propyl acetate,287.0,1.0,CCCOC(C)=O,katritzky07
+propyl butyrate,310.0,1.0,CCCOC(=O)CCC,katritzky07
+propylcyclohexane,308.0,1.0,CCCC1CCCCC1,katritzky07
+propylene oxide,236.0,1.0,CC1CO1,katritzky07
+pyrimidine,304.0,1.0,c1cncnc1,katritzky07
+pyrrole,306.0,1.0,c1cc[nH]c1,katritzky07
+pyrrolidine,276.0,1.0,C1CCNC1,katritzky07
+s-butyl sulfide,312.0,1.0,CCC(C)SC(C)CC,katritzky07
+s-butylbenzene,325.0,1.0,CCC(C)c1ccccc1,katritzky07
+S-t-butyl thioacetate,306.0,1.0,CC(=O)SC(C)(C)C,katritzky07
+succinonitrile,405.0,1.0,N#CCCC#N,katritzky07
+t-butanol,284.0,1.0,CC(C)(C)O,katritzky07
+t-butyl acetoacetate,333.0,1.0,CC(=O)CC(=O)OC(C)(C)C,katritzky07
+t-butyl formate,264.0,1.0,CC(C)(C)OC=O,katritzky07
+t-butyl methyl sulfide,270.0,1.0,CSC(C)(C)C,katritzky07
+t-butyl nitrite,250.0,1.0,CC(C)(C)ON=O,katritzky07
+t-butyl propionate,293.0,1.0,CCC(=O)OC(C)(C)C,katritzky07
+t-butylamine,264.0,1.0,CC(C)(C)N,katritzky07
+t-butylbenzene,333.0,1.0,CC(C)(C)c1ccccc1,katritzky07
+t-butylcyclohexane,315.0,1.0,CC(C)(C)C1CCCCC1,katritzky07
+tetrachloroethylene,318.0,1.0,ClC(Cl)=C(Cl)Cl,katritzky07
+tetradecane,382.0,1.0,CCCCCCCCCCCCCC,katritzky07
+tetraethyltin,326.0,1.0,CC[Sn](CC)(CC)CC,katritzky07
+tetralin,350.0,1.0,c1ccc2c(c1)CCCC2,katritzky07
+thiacyclopentane,285.0,1.0,C1CCSC1,katritzky07
+thiophene,272.0,1.0,c1ccsc1,katritzky07
+tribenzylamine,476.0,1.0,c1ccc(CN(Cc2ccccc2)Cc2ccccc2)cc1,katritzky07
+tributylamine,345.0,1.0,CCCCN(CCCC)CCCC,katritzky07
+tridecane,375.0,1.0,CCCCCCCCCCCCC,katritzky07
+triethoxymethane,303.0,1.0,CCOC(OCC)OCC,katritzky07
+triethylamine,256.0,1.0,CCN(CC)CC,katritzky07
+triethylenetetramine,408.0,1.0,NCCNCCNCCN,katritzky07
+trimethoxymethane,288.0,1.0,COC(OC)OC,katritzky07
+trimethylphosphite,300.0,1.0,COP(OC)OC,katritzky07
+undecane,340.0,1.0,CCCCCCCCCCC,katritzky07
+undecylbenzene,417.0,1.0,CCCCCCCCCCCc1ccccc1,katritzky07
+2-methylbutane,222.0,1.0,CCC(C)C,carroll10
+n-pentane,233.0,1.0,CCCCC,carroll10
+cyclopentane,236.0,1.0,C1CCCC1,carroll10
+"2,2-dimethylbutane",244.0,1.0,CCC(C)(C)C,carroll10
+"2,3-dimethylbutane",244.0,1.0,CC(C)C(C)C,carroll10
+2-methylpentane,241.0,1.0,CCCC(C)C,carroll10
+3-methylpentane,241.0,1.0,CCC(C)CC,carroll10
+n-hexane,250.0,1.0,CCCCCC,carroll10
+methylcyclopentane,250.0,1.0,CC1CCCC1,carroll10
+"2,2-dimethylpentane",250.0,1.0,CCCC(C)(C)C,carroll10
+"2,2,3-trimethylbutane",249.0,1.0,CC(C)C(C)(C)C,carroll10
+"2,4-dimethylpentane",261.0,1.0,CC(C)CC(C)C,carroll10
+cyclohexane,255.0,1.0,C1CCCCC1,carroll10
+"3,3-dimethylpentane",254.0,1.0,CCC(C)(C)CC,carroll10
+"1,1-dimethylcyclopentane",257.0,1.0,CC1(C)CCCC1,carroll10
+2-methylhexane,255.0,1.0,CCCCC(C)C,carroll10
+"2,3-dimethylpentane",258.0,1.0,CCC(C)C(C)C,carroll10
+3-methylhexane,258.0,1.0,CCCC(C)CC,carroll10
+3-ethylpentane,261.0,1.0,CCC(CC)CC,carroll10
+"2,2,4-trimethylpentane",261.0,1.0,CC(C)CC(C)(C)C,carroll10
+n-heptane,269.0,1.0,CCCCCCC,carroll10
+"cis-1,2-dimethylcyclopentane",269.0,1.0,C[C@H]1CCC[C@H]1C,carroll10
+methylcyclohexane,269.0,1.0,CC1CCCCC1,carroll10
+ethylcyclopentane,269.0,1.0,CCC1CCCC1,carroll10
+"2,2,3,3-tetramethylbutane",273.0,1.0,CC(C)(C)C(C)(C)C,carroll10
+"2,2-dimethylhexane",270.0,1.0,CCCCC(C)(C)C,carroll10
+"2,5-dimethylhexane",271.0,1.0,CC(C)CCC(C)C,carroll10
+"2,2,3-trimethylpentane",270.0,1.0,CCC(C)C(C)(C)C,carroll10
+"3,3-dimethylhexane",272.0,1.0,CCCC(C)(C)CC,carroll10
+"2,3,4-trimethylpentane",273.0,1.0,CC(C)C(C)C(C)C,carroll10
+"2,3,3-trimethylpentane",273.0,1.0,CCC(C)(C)C(C)C,carroll10
+3-ethyl-2-methylpentane,276.0,1.0,CCC(CC)C(C)C,carroll10
+"2,3-dimethylhexane",278.0,1.0,CCCC(C)C(C)C,carroll10
+"3,4-dimethylhexane",277.0,1.0,CCC(C)C(C)CC,carroll10
+4-methylheptane,278.0,1.0,CCCC(C)CCC,carroll10
+2-methylheptane,278.0,1.0,CCCCCC(C)C,carroll10
+"trans-1,4-dimethylcyclohexane",279.0,1.0,C[C@H]1CC[C@H](C)CC1,carroll10
+3-ethyl-3-methylpentane,276.0,1.0,CCC(C)(CC)CC,carroll10
+3-methylheptane,280.0,1.0,CCCCC(C)CC,carroll10
+cycloheptane,279.0,1.0,C1CCCCCC1,carroll10
+3-ethylhexane,279.0,1.0,CCCC(CC)CC,carroll10
+"cis-1,3-dimethylcyclohexane",279.0,1.0,C[C@H]1CCC[C@@H](C)C1,carroll10
+"1,1-dimethylcyclohexane",280.0,1.0,CC1(C)CCCCC1,carroll10
+"2,2,4,4-tetramethylpentane",276.0,1.0,CC(C)(C)CC(C)(C)C,carroll10
+1-ethyl-1-methylcyclopentane,279.0,1.0,CCC1(C)CCCC1,carroll10
+"cis-1,4-dimethylcyclohexane",279.0,1.0,C[C@H]1CC[C@@H](C)CC1,carroll10
+"2,2,5-trimethylhexane",286.0,1.0,CC(C)CCC(C)(C)C,carroll10
+"trans-1,2-dimethylcyclohexane",280.0,1.0,C[C@@H]1CCCC[C@H]1C,carroll10
+"trans-1,3-dimethylcyclohexane",281.0,1.0,C[C@H]1CCC[C@H](C)C1,carroll10
+n-octane,286.0,1.0,CCCCCCCC,carroll10
+isopropylcyclopentane,287.0,1.0,CC(C)C1CCCC1,carroll10
+"2,2,4-trimethylhexane",288.0,1.0,CCC(C)CC(C)(C)C,carroll10
+"cis-1,2-dimethylcyclohexane",284.0,1.0,C[C@H]1CCCC[C@H]1C,carroll10
+"2,4,4-trimethylhexane",288.0,1.0,CCC(C)(C)CC(C)C,carroll10
+"2,3,5-trimethylhexane",288.0,1.0,CC(C)CC(C)C(C)C,carroll10
+propylcyclopentane,289.0,1.0,CCCC1CCCC1,carroll10
+ethylcyclohexane,291.0,1.0,CCC1CCCCC1,carroll10
+"2,2-dimethylheptane",297.0,1.0,CCCCCC(C)(C)C,carroll10
+"2,2,3,4-tetramethylpentane",284.0,1.0,CC(C)C(C)C(C)(C)C,carroll10
+"2,4-dimethylheptane",288.0,1.0,CCCC(C)CC(C)C,carroll10
+"3-ethyl-2,2-dimethylpentane",286.0,1.0,CCC(CC)C(C)(C)C,carroll10
+"2,2,3-trimethylhexane",288.0,1.0,CCCC(C)C(C)(C)C,carroll10
+"2,6-dimethylheptane",299.0,1.0,CC(C)CCCC(C)C,carroll10
+"4,4-dimethylheptane",288.0,1.0,CCCC(C)(C)CCC,carroll10
+"2,5-dimethylheptane",288.0,1.0,CCC(C)CCC(C)C,carroll10
+"3,5-dimethylheptane",288.0,1.0,CCC(C)CC(C)CC,carroll10
+"3-ethyl-2,4-dimethylpentane",288.0,1.0,CCC(C(C)C)C(C)C,carroll10
+"2,3,3-trimethylhexane",288.0,1.0,CCCC(C)(C)C(C)C,carroll10
+"2,2,5,5-tetramethylhexane",289.0,1.0,CC(C)(C)CCC(C)(C)C,carroll10
+"2,3,4-trimethylhexane",288.0,1.0,CCC(C)C(C)C(C)C,carroll10
+"2,3,3,4-tetramethylpentane",284.0,1.0,CC(C)C(C)(C)C(C)C,carroll10
+"2,3-dimethylheptane",288.0,1.0,CCCCC(C)C(C)C,carroll10
+"2,2,3,3-tetramethylpentane",289.0,1.0,CCC(C)(C)C(C)(C)C,carroll10
+4-ethylheptane,288.0,1.0,CCCC(CC)CCC,carroll10
+3-ethyl-4-methylhexane,288.0,1.0,CCC(C)C(CC)CC,carroll10
+"3,4-dimethylheptane",288.0,1.0,CCCC(C)C(C)CC,carroll10
+"3,3,4-trimethylhexane",288.0,1.0,CCC(C)C(C)(C)CC,carroll10
+"3-ethyl-2,3-dimethylpentane",288.0,1.0,CCC(C)(CC)C(C)C,carroll10
+4-methyloctane,295.0,1.0,CCCCC(C)CCC,carroll10
+2-methyloctane,297.0,1.0,CCCCCCC(C)C,carroll10
+3-methyloctane,297.0,1.0,CCCCCC(C)CC,carroll10
+"2,4,6-trimethylheptane",304.0,1.0,CC(C)CC(C)CC(C)C,carroll10
+"3,3-diethylpentane",294.0,1.0,CCC(CC)(CC)CC,carroll10
+cyclooctane,301.0,1.0,C1CCCCCCC1,carroll10
+n-nonane,304.0,1.0,CCCCCCCCC,carroll10
+isopropylcyclohexane,308.0,1.0,CC(C)C1CCCCC1,carroll10
+"2,2,4,4-tetramethylhexane",304.0,1.0,CCC(C)(C)CC(C)(C)C,carroll10
+"2,2-dimethyloctane",304.0,1.0,CCCCCCC(C)(C)C,carroll10
+"2,2,3,4-tetramethylhexane",304.0,1.0,CCC(C)C(C)C(C)(C)C,carroll10
+n-propylcyclohexane,304.0,1.0,CCCC1CCCCC1,carroll10
+"3,3,5-trimethylheptane",304.0,1.0,CCC(C)CC(C)(C)CC,carroll10
+"2,3,4,5-tetramethylhexane",304.0,1.0,CC(C)C(C)C(C)C(C)C,carroll10
+n-butylcyclopentane,308.0,1.0,CCCCC1CCCC1,carroll10
+3-ethyl-5-methylheptane,304.0,1.0,CCC(C)CC(CC)CC,carroll10
+"3,5-dimethyloctane",314.0,1.0,CCCC(C)CC(C)CC,carroll10
+"3-ethyl-2,2-dimethylhexane",311.0,1.0,CCCC(CC)C(C)(C)C,carroll10
+"2,6-dimethyloctane",307.0,1.0,CCC(C)CCCC(C)C,carroll10
+"2,2,3,3-tetramethylhexane",304.0,1.0,CCCC(C)(C)C(C)(C)C,carroll10
+"3,3-dimethyloctane",314.0,1.0,CCCCCC(C)(C)CC,carroll10
+4-propylheptane,314.0,1.0,CCCC(CCC)CCC,carroll10
+"2,3,4,4-tetramethylhexane",304.0,1.0,CCC(C)(C)C(C)C(C)C,carroll10
+4-ethyloctane,314.0,1.0,CCCCC(CC)CCC,carroll10
+3-ethyl-3-methylheptane,314.0,1.0,CCCCC(C)(CC)CC,carroll10
+"3,4,5-trimethylheptane",304.0,1.0,CCC(C)C(C)C(C)CC,carroll10
+"2,3-dimethyloctane",309.0,1.0,CCCCCC(C)C(C)C,carroll10
+"2,3,3,4-tetramethylhexane",304.0,1.0,CCC(C)C(C)(C)C(C)C,carroll10
+5-methylnonane,312.0,1.0,CCCCC(C)CCCC,carroll10
+4-ethyl-3-methylheptane,314.0,1.0,CCCC(CC)C(C)CC,carroll10
+2-methylnonane,314.0,1.0,CCCCCCCC(C)C,carroll10
+4-methylnonane,311.0,1.0,CCCCCC(C)CCC,carroll10
+3-methylnonane,314.0,1.0,CCCCCCC(C)CC,carroll10
+"3-ethyl-2,3,4-trimethylpentane",304.0,1.0,CCC(C)(C(C)C)C(C)C,carroll10
+"3,3,4,4-tetramethylhexane",304.0,1.0,CCC(C)(C)C(C)(C)CC,carroll10
+tert-butylcyclohexane,315.0,1.0,CC(C)(C)C1CCCCC1,carroll10
+n-decane,319.0,1.0,CCCCCCCCCC,carroll10
+cyclononane,316.0,1.0,C1CCCCCCCC1,carroll10
+n-butylcyclohexane,321.0,1.0,CCCCC1CCCCC1,carroll10
+trans-decalin,325.0,1.0,C1CC[C@H]2CCCC[C@@H]2C1,carroll10
+cis-decalin,331.0,1.0,C1CC[C@H]2CCCC[C@H]2C1,carroll10
+n-undecane,333.0,1.0,CCCCCCCCCCC,carroll10
+cyclodecane,338.0,1.0,C1CCCCCCCCC1,carroll10
+n-pentylcyclohexane,339.0,1.0,CCCCCC1CCCCC1,carroll10
+n-dodecane,344.0,1.0,CCCCCCCCCCCC,carroll10
+bicyclohexyl,365.0,1.0,C1CCC(C2CCCCC2)CC1,carroll10
+n-tridecane,367.0,1.0,CCCCCCCCCCCCC,carroll10
+"2,2,4,4,6,8,8-heptamethylnonane",368.0,1.0,CC(CC(C)(C)C)CC(C)(C)CC(C)(C)C,carroll10
+n-tetradecane,372.0,1.0,CCCCCCCCCCCCCC,carroll10
+n-pentadecane,388.0,1.0,CCCCCCCCCCCCCCC,carroll10
+n-hexadecane,407.0,1.0,CCCCCCCCCCCCCCCC,carroll10
+n-heptadecane,421.0,1.0,CCCCCCCCCCCCCCCCC,carroll10
+3-methyl-1-butene,217.0,1.0,C=CC(C)C,carroll10
+1-pentene,222.0,1.0,C=CCCC,carroll10
+2-methyl-1-butene,226.0,1.0,C=C(C)CC,carroll10
+cis-2-pentene,226.0,1.0,C/C=C\CC,carroll10
+trans-2-pentene,228.0,1.0,C/C=C/CC,carroll10
+2-methyl-2-butene,228.0,1.0,CC=C(C)C,carroll10
+"3,3-dimethyl-1-butene",244.0,1.0,C=CC(C)(C)C,carroll10
+cyclopentene,243.0,1.0,C1=CCCC1,carroll10
+3-methyl-1-pentene,245.0,1.0,C=CC(C)CC,carroll10
+4-methyl-1-pentene,242.0,1.0,C=CCC(C)C,carroll10
+"2,3-dimethyl-1-butene",255.0,1.0,C=C(C)C(C)C,carroll10
+cis-4-methyl-2-pentene,237.0,1.0,C/C=C\C(C)C,carroll10
+trans-4-methyl-2-pentene,239.0,1.0,C/C=C/C(C)C,carroll10
+2-methyl-1-pentene,247.0,1.0,C=C(C)CCC,carroll10
+1-hexene,247.0,1.0,C=CCCCC,carroll10
+2-ethyl-1-butene,247.0,1.0,C=C(CC)CC,carroll10
+cis-3-hexene,245.0,1.0,CC/C=C\CC,carroll10
+2-methyl-2-pentene,250.0,1.0,CCC=C(C)C,carroll10
+trans-3-hexene,248.0,1.0,CC/C=C/CC,carroll10
+trans-2-hexene,246.0,1.0,C/C=C/CCC,carroll10
+cis-2-hexene,247.0,1.0,C/C=C\CCC,carroll10
+"4,4-dimethyl-1-pentene",261.0,1.0,C=CCC(C)(C)C,carroll10
+"2,3-dimethyl-2-butene",253.0,1.0,CC(C)=C(C)C,carroll10
+1-methylcyclopentene,256.0,1.0,CC1=CCCC1,carroll10
+methylenecyclopentane,254.0,1.0,C=C1CCCC1,carroll10
+"3-methyl-1,3-pentadiene",245.0,1.0,C=CC(C)=CC,carroll10
+"2,3,3-trimethyl-1-butene",256.0,1.0,C=C(C)C(C)(C)C,carroll10
+cyclohexene,256.0,1.0,C1=CCCCC1,carroll10
+3-methyl-1-hexene,255.0,1.0,C=CC(C)CCC,carroll10
+"2,3-dimethyl-1-pentene",256.0,1.0,C=C(C)C(C)CC,carroll10
+5-methyl-1-hexene,263.0,1.0,C=CCCC(C)C,carroll10
+3-ethyl-1-pentene,256.0,1.0,C=CC(CC)CC,carroll10
+4-methyl-1-hexene,258.0,1.0,C=CCC(C)CC,carroll10
+2-methyl-1-hexene,267.0,1.0,C=C(C)CCCC,carroll10
+2-ethyl-1-pentene,263.0,1.0,C=C(CC)CCC,carroll10
+1-heptene,265.0,1.0,C=CCCCCC,carroll10
+2-norbornene,259.0,1.0,C1=CC2CCC1C2,carroll10
+cis-3-heptene,264.0,1.0,CC/C=C\CCC,carroll10
+3-ethyl-2-pentene,267.0,1.0,CC=C(CC)CC,carroll10
+trans-3-heptene,267.0,1.0,CC/C=C/CCC,carroll10
+trans-2-heptene,267.0,1.0,C/C=C/CCCC,carroll10
+cis-2-heptene,265.0,1.0,C/C=C\CCCC,carroll10
+3-methylcyclohexene,270.0,1.0,CC1C=CCCC1,carroll10
+"2,4,4-trimethyl-2-pentene",272.0,1.0,CC(C)=CC(C)(C)C,carroll10
+1-methylcyclohexene,272.0,1.0,CC1=CCCCC1,carroll10
+3-ethyl-1-hexene,274.0,1.0,C=CC(CC)CCC,carroll10
+4-methyl-1-heptene,275.0,1.0,C=CCC(C)CCC,carroll10
+2-methyl-1-heptene,283.0,1.0,C=C(C)CCCCC,carroll10
+1-octene,281.0,1.0,C=CCCCCCC,carroll10
+trans-4-octene,281.0,1.0,CCC/C=C/CCC,carroll10
+cis-4-octene,290.0,1.0,CCC/C=C\CCC,carroll10
+cis-3-octene,290.0,1.0,CC/C=C\CCCC,carroll10
+2-methyl-2-heptene,281.0,1.0,CCCCC=C(C)C,carroll10
+trans-3-octene,282.0,1.0,CC/C=C/CCCC,carroll10
+trans-2-octene,287.0,1.0,C/C=C/CCCCC,carroll10
+"1,3-dimethylcyclohexene",285.0,1.0,CC1=CC(C)CCC1,carroll10
+2-propenylcyclopentane,285.0,1.0,CC=CC1CCCC1,carroll10
+vinylcyclohexane,294.0,1.0,C=CC1CCCCC1,carroll10
+7-methyl-1-octene,291.0,1.0,C=CCCCCC(C)C,carroll10
+5-ethylidene-2-norbornene,311.0,1.0,CC=C1CC2C=CC1C2,carroll10
+cyclooctene,298.0,1.0,C1=CCCCCCC1,carroll10
+1-nonene,298.0,1.0,C=CCCCCCCC,carroll10
+allylcyclohexane,302.0,1.0,C=CCC1CCCCC1,carroll10
+2-carene,311.0,1.0,CC1=CC2C(CC1)C2(C)C,carroll10
+1-decene,311.0,1.0,C=CCCCCCCCC,carroll10
+1-undecene,327.0,1.0,C=CCCCCCCCCC,carroll10
+1-dodecene,346.0,1.0,C=CCCCCCCCCCC,carroll10
+1-tridecene,352.0,1.0,C=CCCCCCCCCCCC,carroll10
+1-tetradecene,370.0,1.0,C=CCCCCCCCCCCCC,carroll10
+1-pentadecene,385.0,1.0,C=CCCCCCCCCCCCCC,carroll10
+1-hexadecene,405.0,1.0,C=CCCCCCCCCCCCCCC,carroll10
+1-heptadecene,408.0,1.0,C=CCCCCCCCCCCCCCCC,carroll10
+1-octadecene,427.0,1.0,C=CCCCCCCCCCCCCCCCC,carroll10
+isoprene,225.0,1.0,C=CC(=C)C,carroll10
+"1,5-hexadiene",246.0,1.0,C=CCCC=C,carroll10
+"1,4-hexadiene",248.0,1.0,C=CCC=CC,carroll10
+"2,3-dimethyl-1,3-butadiene",251.0,1.0,C=C(C)C(=C)C,carroll10
+"4-methyl-1,3-pentadiene",255.0,1.0,C=CC=C(C)C,carroll10
+"1,3-cyclohexadiene",257.0,1.0,C1=CCCC=C1,carroll10
+"1,4-cyclohexadiene",262.0,1.0,C1=CCC=CC1,carroll10
+"2,5-norbornadiene",262.0,1.0,C1=CC2C=CC1C2,carroll10
+"1,6-heptadiene",263.0,1.0,C=CCCCC=C,carroll10
+"1,7-octadiene",282.0,1.0,C=CCCCCC=C,carroll10
+4-vinyl-1-cyclohexene,289.0,1.0,C=CC1CC=CCC1,carroll10
+"2,5-dimethyl-2,4-hexadiene",297.0,1.0,CC(C)=CC=C(C)C,carroll10
+"1,8-nonadiene",299.0,1.0,C=CCCCCCC=C,carroll10
+"1,5-cyclooctadiene",305.0,1.0,C1=CCCC=CCC1,carroll10
+"1,3,5,7-cyclooctatetraene",295.0,1.0,C1=CC=CC=CC=C1,carroll10
+"3,3-dimethyl-1-butyne",239.0,1.0,C#CC(C)(C)C,carroll10
+1-pentyne,239.0,1.0,C#CCCC,carroll10
+2-pentyne,243.0,1.0,CC#CCC,carroll10
+4-methyl-1-pentyne,249.0,1.0,C#CCC(C)C,carroll10
+1-hexyne,253.0,1.0,C#CCCCC,carroll10
+3-hexyne,259.0,1.0,CCC#CCC,carroll10
+"4,4-dimethyl-2-pentyne",263.0,1.0,CC#CC(C)(C)C,carroll10
+2-hexyne,262.0,1.0,CC#CCCC,carroll10
+5-methyl-1-hexyne,269.0,1.0,C#CCCC(C)C,carroll10
+1-heptyne,271.0,1.0,C#CCCCCC,carroll10
+2-heptyne,275.0,1.0,CC#CCCCC,carroll10
+1-octyne,289.0,1.0,C#CCCCCCC,carroll10
+4-octyne,291.0,1.0,CCCC#CCCC,carroll10
+2-octyne,291.0,1.0,CC#CCCCCC,carroll10
+1-nonyne,306.0,1.0,C#CCCCCCCC,carroll10
+1-decyne,323.0,1.0,C#CCCCCCCCC,carroll10
+1-undecyne,338.0,1.0,C#CCCCCCCCCC,carroll10
+1-dodecyne,352.0,1.0,C#CCCCCCCCCCC,carroll10
+"1,6-heptadiyne",282.0,1.0,C#CCCCC#C,carroll10
+"1,7-octadiyne",296.0,1.0,C#CCCCCC#C,carroll10
+"1,8-nonadiyne",314.0,1.0,C#CCCCCCC#C,carroll10
+benzene,262.0,1.0,c1ccccc1,carroll10
+toluene,277.0,1.0,Cc1ccccc1,carroll10
+ethylbenzene,291.0,1.0,CCc1ccccc1,carroll10
+p-xylene,298.0,1.0,Cc1ccc(C)cc1,carroll10
+m-xylene,298.0,1.0,Cc1cccc(C)c1,carroll10
+o-xylene,303.0,1.0,Cc1ccccc1C,carroll10
+cumene,304.0,1.0,CC(C)c1ccccc1,carroll10
+n-propylbenzene,303.0,1.0,CCCc1ccccc1,carroll10
+p-ethyltoluene,309.0,1.0,CCc1ccc(C)cc1,carroll10
+m-ethyltoluene,311.0,1.0,CCc1cccc(C)c1,carroll10
+"1,3,5-trimethylbenzene",317.0,1.0,Cc1cc(C)cc(C)c1,carroll10
+o-ethyltoluene,312.0,1.0,CCc1ccccc1C,carroll10
+"1,2,4-trimethylbenzene",317.0,1.0,Cc1ccc(C)c(C)c1,carroll10
+tert-butylbenzene,317.0,1.0,CC(C)(C)c1ccccc1,carroll10
+isobutylbenzene,323.0,1.0,CC(C)Cc1ccccc1,carroll10
+sec-butylbenzene,318.0,1.0,CCC(C)c1ccccc1,carroll10
+m-isopropyltoluene,323.0,1.0,Cc1cccc(C(C)C)c1,carroll10
+"1,2,3-trimethylbenzene",317.0,1.0,Cc1cccc(C)c1C,carroll10
+p-isopropyltoluene,320.0,1.0,Cc1ccc(C(C)C)cc1,carroll10
+o-isopropyltoluene,323.0,1.0,Cc1ccccc1C(C)C,carroll10
+m-diethylbenzene,324.0,1.0,CCc1cccc(CC)c1,carroll10
+m-propyltoluene,325.0,1.0,CCCc1cccc(C)c1,carroll10
+n-butylbenzene,323.0,1.0,CCCCc1ccccc1,carroll10
+p-diethylbenzene,328.0,1.0,CCc1ccc(CC)cc1,carroll10
+o-diethylbenzene,328.0,1.0,CCc1ccccc1CC,carroll10
+neopentylbenzene,323.0,1.0,CC(C)(C)Cc1ccccc1,carroll10
+"2-ethyl-1,4-dimethylbenzene",329.0,1.0,CCc1cc(C)ccc1C,carroll10
+"1-ethyl-2,4-dimethylbenzene",330.0,1.0,CCc1ccc(C)cc1C,carroll10
+"4-ethyl-1,2-dimethylbenzene",331.0,1.0,CCc1ccc(C)c(C)c1,carroll10
+1-ethyl-2-isopropylbenzene,331.0,1.0,CCc1ccccc1C(C)C,carroll10
+"1-ethyl-2,3-dimethylbenzene",338.0,1.0,CCc1cccc(C)c1C,carroll10
+(2-methylbutyl)benzene,337.0,1.0,CCC(C)Cc1ccccc1,carroll10
+isopentylbenzene,335.0,1.0,CC(C)CCc1ccccc1,carroll10
+"1,2,3,5-tetramethylbenzene",336.0,1.0,Cc1cc(C)c(C)c(C)c1,carroll10
+"1,3-diisopropylbenzene",349.0,1.0,CC(C)c1cccc(C(C)C)c1,carroll10
+"1,2,3,4-tetramethylbenzene",341.0,1.0,Cc1ccc(C)c(C)c1C,carroll10
+2-phenyl-2-methylbutane,338.0,1.0,CCC(C)(C)c1ccccc1,carroll10
+n-pentylbenzene,339.0,1.0,CCCCCc1ccccc1,carroll10
+"1,4-diisopropylbenzene",349.0,1.0,CC(C)c1ccc(C(C)C)cc1,carroll10
+"1,2-dimethyl-3-propylbenzene",345.0,1.0,CCCc1cccc(C)c1C,carroll10
+"1,2,3,4-tetrahydronaphthalene",350.0,1.0,c1ccc2c(c1)CCCC2,carroll10
+n-hexylbenzene,356.0,1.0,CCCCCCc1ccccc1,carroll10
+cyclohexylbenzene,372.0,1.0,c1ccc(C2CCCCC2)cc1,carroll10
+n-heptylbenzene,368.0,1.0,CCCCCCCc1ccccc1,carroll10
+(1-methylheptyl)benzene,373.0,1.0,CCCCCCC(C)c1ccccc1,carroll10
+n-octylbenzene,380.0,1.0,CCCCCCCCc1ccccc1,carroll10
+diphenylmethane,400.0,1.0,c1ccc(Cc2ccccc2)cc1,carroll10
+n-nonylbenzene,390.0,1.0,CCCCCCCCCc1ccccc1,carroll10
+n-undecylbenzene,417.0,1.0,CCCCCCCCCCCc1ccccc1,carroll10
+styrene,304.0,1.0,C=Cc1ccccc1,carroll10
+α-methylstyrene,318.0,1.0,C=C(C)c1ccccc1,carroll10
+3-methylstyrene,324.0,1.0,C=Cc1cccc(C)c1,carroll10
+4-methylstyrene,318.0,1.0,C=Cc1ccc(C)cc1,carroll10
+Methyltrichlorosilane,276.15,1.0,C[Si](Cl)(Cl)Cl,wang11
+Vinyltrichlorosilane,294.15,1.0,C=C[Si](Cl)(Cl)Cl,wang11
+Dichloromethylmethyldichlorosilane,301.15,1.0,C[Si](Cl)(Cl)C(Cl)Cl,wang11
+Ethyltrichlorosilane,263.15,1.0,CC[Si](Cl)(Cl)Cl,wang11
+Dimethylchlorosilane,245.15,1.0,C[SiH](C)Cl,wang11
+Ethylsilane,213.15,1.0,CC[SiH3],wang11
+"1,1,1-Trifluoropropyltrichlorosilane",288.15,1.0,CC(C(F)(F)F)[Si](Cl)(Cl)Cl,wang11
+Allyltrichlorosilane,304.15,1.0,C=CC[Si](Cl)(Cl)Cl,wang11
+Methylvinyldichlorosilane,272.15,1.0,CC=C[SiH](Cl)Cl,wang11
+3-Chloropropyltrichlorosilane,357.15,1.0,ClCCC[Si](Cl)(Cl)Cl,wang11
+n-Propyltrichlorosilane,310.15,1.0,CCC[Si](Cl)(Cl)Cl,wang11
+Chloromethyldimethylchlorosilane,295.15,1.0,C[Si](C)(Cl)CCl,wang11
+Trimethylbromosilane,270.15,1.0,C[Si](C)(C)Br,wang11
+Trimethylchlorosilane,255.15,1.0,C[Si](C)(C)Cl,wang11
+Trimethylfluorosilane,238.15,1.0,C[Si](C)(C)F,wang11
+Trimethoxysilane,264.15,1.0,CO[SiH](OC)OC,wang11
+Cyanoethylmethyldichlorosilane,333.15,1.0,C[Si](Cl)(Cl)CCC#N,wang11
+Allylmethyldichlorosilane,300.15,1.0,C=CCC[SiH](Cl)Cl,wang11
+ 3-Chloropropylmethyldichlorosilane,359.15,1.0,C[Si](Cl)(Cl)CCCCl,wang11
+ t-Butyltrichlorosilane,294.15,1.0,CC(C)(C)[Si](Cl)(Cl)Cl,wang11
+ Isobutyltrichlorosilane,310.15,1.0,CC(C)C[Si](Cl)(Cl)Cl,wang11
+ n-Butyltrichlorosilane,327.15,1.0,CCCC[Si](Cl)(Cl)Cl,wang11
+ Trimethylsilylisothiocyanate,308.15,1.0,C[Si](C)(C)N=C=S,wang11
+ n-Propylmethyldichlorosilane,300.15,1.0,CCC[Si](C)(Cl)Cl,wang11
+ Bromomethyltrimethylsilane,289.15,1.0,C[Si](C)(C)CBr,wang11
+ Ethyldimethylchlorosilane,269.15,1.0,CC[Si](C)(C)Cl,wang11
+ Methoxytrimethylsilane,243.15,1.0,CO[Si](C)(C)C,wang11
+ Dimethyldimethoxysilane,265.15,1.0,CO[Si](C)(C)OC,wang11
+" Methyltrimethoxysilane",284.15,1.0,CO[Si](C)(OC)OC,wang11
+ Tetramethoxysilane,294.15,1.0,CO[Si](OC)(OC)OC,wang11
+ Tetramethylsilane,245.15,1.0,C[Si](C)(C)C,wang11
+ Diethylsilane,253.15,1.0,CC[SiH2]CC,wang11
+" (N,N-Dimethylamino)dimethylsilane",260.15,1.0,CN(C)[SiH](C)C,wang11
+ Tetraisocyanatosilane,323.15,1.0,O=C=N[Si](N=C=O)(N=C=O)N=C=O,wang11
+ Cyclopentyltrichlorosilane,350.15,1.0,Cl[Si](Cl)(Cl)C1CCCC1,wang11
+ Trimethylsilyltrifluoroacetate,273.15,1.0,C[Si](C)(C)OC(=O)C(F)(F)F,wang11
+ Cyclopentyldichlorosilane,316.15,1.0,Cl[SiH](Cl)C1CCCC1,wang11
+ 3-Chloro-2-methylpropylmethyldichlorosilane,363.15,1.0,CC(CCl)C[Si](C)(Cl)Cl,wang11
+ Methylvinyldimethoxysilane,277.15,1.0,CC=C[SiH](OC)OC,wang11
+ Vinyltrimethoxysilane,296.15,1.0,C=C[Si](OC)(OC)OC,wang11
+ Trimethylvinylsilane,239.15,1.0,CC(C)=C(C)[SiH3],wang11
+ Diethylmethylchlorosilane,288.15,1.0,CC[Si](C)(Cl)CC,wang11
+ Chloromethyldimethylethoxysilane,299.15,1.0,CCO[Si](C)(C)CCl,wang11
+ Ethoxytrimethylsilane,246.15,1.0,CCO[Si](C)(C)C,wang11
+ Ethyltrimethoxysilane,300.15,1.0,CC[Si](OC)(OC)OC,wang11
+" (N,N-Dimethylamino)trimethylsilane",254.15,1.0,CN(C)[Si](C)(C)C,wang11
+ Pentamethyldisiloxane,254.15,1.0,C[SiH](C)O[Si](C)(C)C,wang11
+Phenyldichlorosilane,333.15,1.0,Cl[SiH](Cl)c1ccccc1,wang11
+Phenylsilane,281.15,1.0,[SiH3]c1ccccc1,wang11
+1-Hexenyltrichlorosilane,333.15,1.0,CCCCC=C[Si](Cl)(Cl)Cl,wang11
+Cyclohexyltrichlorosilane,358.15,1.0,Cl[Si](Cl)(Cl)C1CCCCC1,wang11
+Bis(chloromethyl)tetramethyldisiloxane,346.15,1.0,C[Si](C)(C)O[Si](C)(CCl)CCl,wang11
+Propargyloxytrimethylsilane,300.15,1.0,C#CCO[Si](C)(C)C,wang11
+Divinyldimethylsilane,281.15,1.0,C=C[Si](C)(C)C=C,wang11
+n-Hexyltrichlorosilane,358.15,1.0,CCCCCC[Si](Cl)(Cl)Cl,wang11
+Hexyldichlorosilane,337.15,1.0,CCCCCC[SiH](Cl)Cl,wang11
+"1,1-Dimethyl-1-sila-2-oxacyclohexane",287.15,1.0,C[Si]1(C)CCCCO1,wang11
+Acetoxymethyltrimethylsilane,293.15,1.0,CC(=O)OC[Si](C)(C)C,wang11
+Allyltrimethylsilane,280.15,1.0,C=CC[Si](C)(C)C,wang11
+Triethylchlorosilane,303.15,1.0,CC[Si](Cl)(CC)CC,wang11
+t-Butyldimethylchlorosilane,295.15,1.0,CC(C)(C)[Si](C)(C)Cl,wang11
+3-Chloropropylmethyldimethoxysilane,318.15,1.0,CO[Si](C)(CCCCl)OC,wang11
+Trimethyl-n-propoxysilane,283.15,1.0,CCCO[Si](C)(C)C,wang11
+t-Butyldimethylsilanol,318.15,1.0,CC(C)(C)[Si](C)(C)O,wang11
+Dimethyldiethoxysilane,284.15,1.0,CCO[Si](C)(C)OCC,wang11
+Triethylsilane,270.15,1.0,CC[SiH](CC)CC,wang11
+Hexylsilane,285.15,1.0,CCCCCC[SiH3],wang11
+t-Butyldimethylsilane,251.15,1.0,C[SiH](C)C(C)(C)C,wang11
+Bis(dimethylamino)dimethylsilane,266.15,1.0,CN(C)[Si](C)(C)N(C)C,wang11
+Hexamethylcyclotrisiloxane,305.15,1.0,C[Si]1(C)O[Si](C)(C)O[Si](C)(C)O1,wang11
+Hexamethyldisilthiane,299.15,1.0,C[Si](C)(C)S[Si](C)(C)C,wang11
+Hexamethyldisilazane,281.15,1.0,C[Si](C)(C)N[Si](C)(C)C,wang11
+Tris(dimethylamino)silane,298.15,1.0,CN(C)[SiH](N(C)C)N(C)C,wang11
+Hexamethyltrisiloxane,293.15,1.0,C[Si](C)(C)O[SiH2]O[Si](C)(C)C,wang11
+Phenylmethyldichlorosilane,340.15,1.0,Cl[SiH](Cl)Cc1ccccc1,wang11
+Phenylmethylchlorosilane,355.15,1.0,Cl[SiH2]Cc1ccccc1,wang11
+Methyltriacetoxysilane,358.15,1.0,CC(=O)O[Si](C)(OC(C)=O)OC(C)=O,wang11
+Trivinylmethylsilane,288.15,1.0,C=CC([SiH3])(C=C)C=C,wang11
+Cyclohexylmethyldichlorosilane,355.15,1.0,Cl[SiH](Cl)CC1CCCCC1,wang11
+"1-(Trimethylsiloxy)-1,3-butadiene",298.15,1.0,C=CC=CO[Si](C)(C)C,wang11
+2-Chloromethyl-3-trimethylsilyl-1-propene,316.15,1.0,C=C(CCl)C[Si](C)(C)C,wang11
+n-Heptyltrichlorosilane,337.15,1.0,CCCCCCC[Si](Cl)(Cl)Cl,wang11
+n-Hexylmethyldichlorosilane,358.15,1.0,CCCCCC[Si](C)(Cl)Cl,wang11
+Vinylmethyldiethoxysilane,289.15,1.0,C=CC[SiH](OCC)OCC,wang11
+N-(Trimethylsilyl)morpholine,300.15,1.0,C[Si](C)(C)N1CCOCC1,wang11
+t-Butoxytrimethylsilane,287.15,1.0,CC(C)(C)O[Si](C)(C)C,wang11
+Vinylpentamethyldisiloxane,285.15,1.0,C=C[Si](C)(C)O[Si](C)(C)C,wang11
+(1-Methoxy-2-propoxy)trimethylsilane,293.15,1.0,COCC(C)O[Si](C)(C)C,wang11
+Methyltriethoxysilane,297.15,1.0,CCO[Si](C)(OCC)OCC,wang11
+(Diethylamino)trimethylsilane,283.15,1.0,CCN(CC)[Si](C)(C)C,wang11
+Bis(trimethylsilyl)methane,285.15,1.0,C[Si](C)(C)C[Si](C)(C)C,wang11
+Heptamethyldisilazane,300.15,1.0,CN([Si](C)(C)C)[Si](C)(C)C,wang11
+Phenylethyldichlorosilane,365.15,1.0,Cl[SiH](Cl)CCc1ccccc1,wang11
+Tetravinylsilane,291.15,1.0,C=C[Si](C=C)(C=C)C=C,wang11
+Phenyldimethylsilane,311.15,1.0,C[SiH](C)c1ccccc1,wang11
+Cyclopentadienyltrimethylsilane,302.15,1.0,C[Si](C)(C)C1C=CC=C1,wang11
+(Cyclopentenyloxy)trimethylsilane,311.15,1.0,C[Si](C)(C)OC1=CCCC1,wang11
+"(2,4-Pentadienyl)trimethylsilane",291.15,1.0,C=CC=CC[Si](C)(C)C,wang11
+n-Octyltrichlorosilane,369.15,1.0,CCCCCCCC[Si](Cl)(Cl)Cl,wang11
+n-Heptylmethyldichlorosilane,339.15,1.0,CCCCCCC[Si](C)(Cl)Cl,wang11
+Tetramethyldivinyldisiloxane,292.15,1.0,C=C[Si](C)(C=C)O[Si](C)(C)C,wang11
+Triethylacetoxysilane,314.15,1.0,CCC(CC)(CC)C(=O)O[SiH3],wang11
+Vinyltriethoxysilane,307.15,1.0,C=C[Si](OCC)(OCC)OCC,wang11
+"1,3-Divinyltetramethyldisilazane",307.15,1.0,C=C[Si](C)(C)N[Si](C)(C)C=C,wang11
+Diethyldiethoxysilane,316.15,1.0,CCO[Si](CC)(CC)OCC,wang11
+Tetraethoxysilane,323.15,1.0,CCO[Si](OCC)(OCC)OCC,wang11
+Tetraethylsilane,305.15,1.0,CC[Si](CC)(CC)CC,wang11
+Aminoethylaminopropyltrimethoxysilane,369.15,1.0,CO[Si](CCCNCCN)(OC)OC,wang11
+Tetramethyldiethoxysiloxane,311.15,1.0,CCO[Si]([O])OC(C)(C)C(C)C,wang11
+Octamethyltrisiloxane,303.15,1.0,C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)C,wang11
+Octamethylcyclotetrasiloxane,330.15,1.0,C[Si]1(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O1,wang11
+Octamethylcyclotetrasilazane,339.15,1.0,C[Si]1(C)N[Si](C)(C)N[Si](C)(C)N[Si](C)(C)N1,wang11
+Tetrakisdimethylsiloxysilane,340.15,1.0,C[SiH](C)O[Si](O[SiH](C)C)(O[SiH](C)C)O[SiH](C)C,wang11
+p-Chlorophenyltrimethylsilane,322.15,1.0,C[Si](C)(C)c1ccc(Cl)cc1,wang11
+Phenyltrimethoxysilane,358.15,1.0,CO[Si](OC)(OC)c1ccccc1,wang11
+Trimethylphenylsilane,313.15,1.0,C[Si](C)(C)c1ccccc1,wang11
+Cyclohexylmethyldimethoxysilane,343.15,1.0,CO[SiH](CC1CCCCC1)OC,wang11
+ Hexyltrimethoxysilane,335.15,1.0,CCCCCC[Si](OC)(OC)OC,wang11
+Triisopropylsilane,310.15,1.0,CC(C)[SiH](C(C)C)C(C)C,wang11
+Tri-n-propylsilane,316.15,1.0,CCC[SiH](CCC)CCC,wang11
+ Propyltris(dimethylsiloxy)silane,323.15,1.0,CCC[Si](O[SiH](C)C)(O[SiH](C)C)O[SiH](C)C,wang11
+ Benzyltrimethylsilane,335.15,1.0,C[Si](C)(C)Cc1ccccc1,wang11
+ 3-Methacryloxypropyltrimethoxysilane,365.15,1.0,C=C(C)C(=O)OCCC[Si](OC)(OC)OC,wang11
+ 1-Heptynyltrimethylsilane,315.15,1.0,CCCCCC#C[Si](C)(C)C,wang11
+ n-Octyldimethylchlorosilane,370.15,1.0,CCCCCCCC[Si](C)(C)Cl,wang11
+ Bis(diethylamino)dimethylsilane,308.15,1.0,CCN(CC)[Si](C)(C)N(CC)CC,wang11
+ Decamethyltetrasiloxane,335.15,1.0,C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)C,wang11
+ Decamethylcyclopentasiloxane,350.15,1.0,C[Si]1(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O1,wang11
+" 2-(3,4-epoxycyclohexyl)ethyltrimethoxysilane",419.15,1.0,CO[Si](CCC1CCC2OC2C1)(OC)OC,wang11
+ n-Decylmethyldichlorosilane,393.15,1.0,CCCCCCCCCC[Si](C)(Cl)Cl,wang11
+ Vinyltriethylsilane,318.15,1.0,C=C[Si](CC)(CC)CC,wang11
+ Diphenyldichlorosilane,415.15,1.0,Cl[Si](Cl)(c1ccccc1)c1ccccc1,wang11
+ Phenyltriethoxysilane,393.15,1.0,CCO[Si](OCC)(OCC)c1ccccc1,wang11
+ Diphenylsilane,371.15,1.0,c1ccc([SiH2]c2ccccc2)cc1,wang11
+ Tetramethyltetravinylcyclotetrasilane,385.15,1.0,C=C[Si]1(C)[Si](C)(C=C)[Si](C)(C=C)[Si]1(C)C=C,wang11
+ n-Dodecyltrichlorosilane,435.15,1.0,CCCCCCCCCCCC[Si](Cl)(Cl)Cl,wang11
+ Tetra-n-propoxysilane,368.15,1.0,CCCO[Si](OCCC)(OCCC)OCCC,wang11
+ Hexaethyldisiloxane,349.15,1.0,CC[Si](CC)(CC)O[Si](CC)(CC)CC,wang11
+ Dodecamethylpentasiloxane,352.15,1.0,C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)C,wang11
+ Dodecamethylcyclohexasiloxane,366.15,1.0,C[Si]1(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O1,wang11
+Methyldiphenylchlorosilane,411.15,1.0,C[Si](Cl)(c1ccccc1)c1ccccc1,wang11
+n-Dodecylmethyldichlorosilane,416.15,1.0,CCCCCCCCCCCC[Si](C)(Cl)Cl,wang11
+Diphenyldimethoxysilane,394.15,1.0,CO[Si](OC)(c1ccccc1)c1ccccc1,wang11
+Octyltriethoxysilane,373.15,1.0,CCCCCCCC[Si](OCC)(OCC)OCC,wang11
+Tetradecamethylhexasiloxane,375.15,1.0,C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)C,wang11
+Hexadecamethylheptasiloxane,406.15,1.0,C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)C,wang11
+Octadecamethyloctasiloxane,417.15,1.0,C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)C,wang11
+Vinyltris(methoxyethoxy)silane,353.15,1.0,C=C[Si](OCCOC)(OCCOC)OCCOC,wang11
+Trimethyl(vinyloxy)silane,263.15,1.0,C=CO[Si](C)(C)C,wang11
+Trichloro(3-cyanopropyl) Silane,365.15,1.0,N#CCCC[Si](Cl)(Cl)Cl,wang11
+Trichloro(2-phenylethyl)silane,364.15,1.0,Cl[Si](Cl)(Cl)CCc1ccccc1,wang11
+"Chlorodimethyl(3,3,3-trifluoropropyl) silane",293.15,1.0,C[Si](C)(Cl)CCC(F)(F)F,wang11
+Vinylmethylbis (trimethylsiloxy) silane,324.15,1.0,C=CC[SiH](O[Si](C)(C)C)O[Si](C)(C)C,wang11
+Trichloro(Chloromethyl) silane,342.15,1.0,ClC[Si](Cl)(Cl)Cl,wang11
+Dimethyl(pentafluorophenyl) silane,313.15,1.0,C[SiH](C)c1c(F)c(F)c(F)c(F)c1F,wang11
+Trichloro(p-chlorophenyl)silane,397.05,1.0,Clc1ccc([Si](Cl)(Cl)Cl)cc1,wang11
+Trisilane,273.15,1.0,[SiH3][SiH2][SiH3],wang11
+Trichlorononylsilane,387.15,1.0,[SiH3]CCCCCCCCC(Cl)(Cl)Cl,wang11
+Dichloroethylsilane,263.75,1.0,[SiH3]CC(Cl)Cl,wang11
+Trichloro(dichlorophenyl)silane,419.15,1.0,Clc1cccc([Si](Cl)(Cl)Cl)c1Cl,wang11
+Tris(trimethylsilyl)silane,328.15,1.0,C[Si](C)(C)[SiH]([Si](C)(C)C)[Si](C)(C)C,wang11
+Tris(trimethylsiloxy)silane,323.15,1.0,C[Si](C)(C)O[SiH](O[Si](C)(C)C)O[Si](C)(C)C,wang11
+Hexadecyltrichlorosilane,427.15,1.0,CCCCCCCCCCCCCCCC[Si](Cl)(Cl)Cl,wang11
+Dichlorosilane,236.15,1.0,Cl[SiH2]Cl,wang11
+Methyldichlorosilane,241.15,1.0,C[SiH](Cl)Cl,wang11
+Iodotrimethylsilane,288.15,1.0,C[Si](C)(C)I,wang11
+Dimethyldichlorosilane,257.15,1.0,C[Si](C)(Cl)Cl,wang11
+Bromomethyldimethylchlorosilane,314.15,1.0,C[Si](C)(Cl)CBr,wang11
+Trimethylsilane,204.15,1.0,C[SiH](C)C,wang11
+ Dimethylvinylchlorosilane,268.15,1.0,CC(C)=C[SiH2]Cl,wang11
+" 1,3-Dichlorotetramethyldisiloxane",288.15,1.0,C[Si](C)(Cl)O[Si](C)(C)Cl,wang11
+" 1,1,3,3-Tetramethyldisiloxane",251.15,1.0,C[SiH](C)O[SiH](C)C,wang11
+ Tetramethyldisilazane,284.15,1.0,CN([SiH3])[Si](C)(C)C,wang11
+ Allyldimethylchlorosilane,278.15,1.0,C=CC[Si](C)(C)Cl,wang11
+ sec-Amyltrichlorosilane,303.15,1.0,CCCC(C)[Si](Cl)(Cl)Cl,wang11
+ n-Butylmethyldichlorosilane,303.15,1.0,CCCC[Si](C)(Cl)Cl,wang11
+ Bis(dimethylamino)methylsilane,270.15,1.0,CN(C)C([SiH3])N(C)C,wang11
+ Phenyltrichlorosilane,364.15,1.0,Cl[Si](Cl)(Cl)c1ccccc1,wang11
+Dimethyldiacetoxysilane,310.15,1.0,CC(=O)O[Si](C)(C)OC(C)=O,wang11
+1-Trimethylsilylpropyne,270.15,1.0,CC#C[Si](C)(C)C,wang11
+Vinyldimethylethoxysilane,277.15,1.0,C=C[Si](C)(C)OCC,wang11
+Allyloxytrimethylsilane,273.15,1.0,C=CCO[Si](C)(C)C,wang11
+Allyltrimethoxysilane,319.15,1.0,C=CC[Si](OC)(OC)OC,wang11
+3-Chloropropyltrimethoxysilane,348.15,1.0,CO[Si](CCCCl)(OC)OC,wang11
+n-Propyltrimethoxysilane,298.15,1.0,CCC[Si](OC)(OC)OC,wang11
+Hexamethyldisiloxane,270.15,1.0,C[Si](C)(C)O[Si](C)(C)C,wang11
+Hexamethyldisilane,272.15,1.0,C[Si](C)(C)[Si](C)(C)C,wang11
+Vinyldiethylmethylsilane,288.15,1.0,C=C[Si](C)(CC)CC,wang11
+Isobutyltrimethoxysilane,315.15,1.0,CO[Si](CC(C)C)(OC)OC,wang11
+Phenyldimethylchlorosilane,334.15,1.0,C[Si](C)(Cl)c1ccccc1,wang11
+"(N,N-Dimethylamino)triethylsilane",299.15,1.0,CC[Si](CC)(CC)N(C)C,wang11
+Vinyltriacetoxysilane,361.15,1.0,C=C[Si](OC(C)=O)(OC(C)=O)OC(C)=O,wang11
+Ethyltriacetoxysilane,377.15,1.0,CC[Si](OC(C)=O)(OC(C)=O)OC(C)=O,wang11
+3-(Trimethylsilyl)cyclopentene,299.15,1.0,C[Si](C)(C)C1C=CCC1,wang11
+Vinyltriethylsilane,298.15,1.0,C=C[Si](CC)(CC)CC,wang11
+n-Octylsilane,309.15,1.0,CCCCCCCC[SiH3],wang11
+Methylphenyldimethoxysilane,349.15,1.0,CO[Si](C)(OC)c1ccccc1,wang11
+2-Cyanoethyltriethoxysilane,359.15,1.0,CCO[Si](CCC#N)(OCC)OCC,wang11
+3-Glycidoxypropyltrimethoxysilane,383.15,1.0,CO[Si](CCCOCC1CO1)(OC)OC,wang11
+ Di-t-butylmethylchlorosilane,342.15,1.0,CC(C)(C)[Si](C)(Cl)C(C)(C)C,wang11
+Tri-n-propylchlorosilane,349.15,1.0,CCC[Si](Cl)(CCC)CCC,wang11
+ (Diisopropylamino)trimethylsilane,301.15,1.0,CC(C)N(C(C)C)[Si](C)(C)C,wang11
+ 1-Chlorononamethyltetrasiloxane,347.15,1.0,C[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)Cl,wang11
+ Tristrimethylsiloxymethylsilane,336.15,1.0,C[Si](C)(C)OC([SiH3])(O[Si](C)(C)C)O[Si](C)(C)C,wang11
+Diphenylmethylsilane,393.15,1.0,[SiH3]C(c1ccccc1)c1ccccc1,wang11
+Trimethyl[(1-methylethenyl)oxy]silane,272.15,1.0,C=C(C)O[Si](C)(C)C,wang11
+"Dichloromethyl-3,3,3-trifluoropropylsilane",288.15,1.0,FC(F)(F)CC[SiH2]C(Cl)Cl,wang11
+[2-(chloromethoxy)ethyl]trimethylsilane,319.15,1.0,C[Si](C)(C)CCOCCl,wang11
+Triphenylsilane,416.35,1.0,c1ccc([SiH](c2ccccc2)c2ccccc2)cc1,wang11
+Trichlorosilane,245.15,1.0,Cl[SiH](Cl)Cl,wang11
+methanol,283.706,1.0,CO,patel10
+ethanol,286.483,1.0,CCO,patel10
+propan-1-ol,298.15,1.0,CCCO,patel10
+butan-2-ol,295.372,1.0,CCC(C)O,patel10
+2-methylpropan-1-ol,303.15,1.0,CC(C)CO,patel10
+2-methylpropan-2-ol,284.261,1.0,CC(C)(C)O,patel10
+pentan-2-ol,313.706,1.0,CCCC(C)O,patel10
+2-methylbutan-2-ol,294.261,1.0,CCC(C)(C)O,patel10
+hexan-1-ol,347.039,1.0,CCCCCCO,patel10
+2-ethylbutan-1-ol,331.483,1.0,CCC(CC)CO,patel10
+octan-2-ol,358.15,1.0,CCCCCCC(C)O,patel10
+nonan-1-ol,353.15,1.0,CCCCCCCCCO,patel10
+decan-1-ol,377.594,1.0,CCCCCCCCCCO,patel10
+phenylmethanol,373.706,1.0,OCc1ccccc1,patel10
+4-hydroxy-4-methylpentan-2-one,325.372,1.0,CC(=O)CC(C)(C)O,patel10
+2-furylmethanol,356.483,1.0,OCc1ccco1,patel10
+"2-methylpropanoic acid (3-hydroxy-2,2,4-trimethylpentyl) ester",393.15,1.0,CC(C)C(=O)OCC(C)(C)C(O)C(C)C,patel10
+1-chloropropan-2-ol,324.15,1.0,CC(O)CCl,patel10
+"1,4-dibromobutan-2-ol",386.15,1.0,OC(CBr)CCBr,patel10
+heptan-2-ol,332.15,1.0,CCCCCC(C)O,patel10
+heptan-1-ol,346.15,1.0,CCCCCCCO,patel10
+hexan-2-ol,314.15,1.0,CCCCC(C)O,patel10
+1-methoxypropan-2-ol,306.15,1.0,COCC(C)O,patel10
+octan-1-ol,354.15,1.0,CCCCCCCCO,patel10
+"(2r)-2,4-dihydroxy-N-(3-hydroxypropyl)-3,3-dimethylbutanamide",386.15,1.0,CC(C)(CO)[C@@H](O)C(=O)NCCCO,patel10
+pentan-3-ol,313.15,1.0,CCC(O)CC,patel10
+oct-1-en-3-ol,341.15,1.0,C=CC(O)CCCCC,patel10
+"2,2,2-trifluoroethanol",302.15,1.0,OCC(F)(F)F,patel10
+"2,3,4-trimethylpentan-1-ol",333.15,1.0,CC(C)C(C)C(C)CO,patel10
+4-methylpentan-2-ol,314.15,1.0,CC(C)CC(C)O,patel10
+2-methylbutan-2-ol,293.15,1.0,CCC(C)(C)O,patel10
+"3,3-dimethylbutan-1-ol",302.15,1.0,CC(C)(C)CCO,patel10
+2-ethylbutan-1-ol,330.15,1.0,CCC(CC)CO,patel10
+2-ethylhexan-1-ol,350.15,1.0,CCCCC(CC)CO,patel10
+"2,2,4-trimethylpentan-1-ol",333.15,1.0,CC(C)CC(C)(C)CO,patel10
+3-methylheptan-3-ol,327.15,1.0,CCCCC(C)(O)CC,patel10
+tetradecan-1-ol,418.15,1.0,CCCCCCCCCCCCCCO,patel10
+5-methylheptan-3-ol,327.15,1.0,CCC(C)CC(O)CC,patel10
+8-methylnonan-1-ol,377.15,1.0,CC(C)CCCCCCCO,patel10
+tridecan-1-ol,389.15,1.0,CCCCCCCCCCCCCO,patel10
+propan-2-ol,284.817,1.0,CC(C)O,patel10
+butan-1-ol,309.817,1.0,CCCCO,patel10
+pentan-1-ol,330.372,1.0,CCCCCO,patel10
+3-methylbutan-1-ol,324.817,1.0,CC(C)CCO,patel10
+cyclohexanol,340.92800000000005,1.0,OC1CCCCC1,patel10
+octan-1-ol,363.706,1.0,CCCCCCCCO,patel10
+prop-2-en-1-ol,295.372,1.0,C=CCO,patel10
+2-tetrahydrofuranylmethanol,347.039,1.0,OCC1CCCO1,patel10
+(1R)-1-(2-furyl)ethanol,383.15,1.0,C[C@@H](O)c1ccco1,patel10
+ethylene glycol,392.594,1.0,OCCO,patel10
+2-(2-hydroxyethoxy)ethanol,411.483,1.0,OCCOCCO,patel10
+2-[2-(2-hydroxyethoxy)ethoxy]ethanol,435.92800000000005,1.0,OCCOCCOCCO,patel10
+2-[2-[2-(2-hydroxyethoxy)ethoxy]ethoxy]ethanol,477.594,1.0,OCCOCCOCCOCCO,patel10
+"propane-1,2-diol",377.594,1.0,CC(O)CO,patel10
+3-(3-hydroxypropoxy)propan-1-ol,397.039,1.0,OCCCOCCCO,patel10
+2-[2-(2-hydroxypropoxy)propoxy]propan-1-ol,416.483,1.0,CC(O)COC(C)COC(C)CO,patel10
+glycerol,433.15,1.0,OCC(O)CO,patel10
+"butane-1,3-diol",382.039,1.0,CC(O)CCO,patel10
+"butane-1,4-diol",394.261,1.0,OCCCCO,patel10
+"pentane-1,5-diol",402.594,1.0,OCCCCCO,patel10
+"propane-1,1-diol",372.15,1.0,CCC(O)O,patel10
+"propane-1,3-diol",352.15,1.0,OCCCO,patel10
+"butane-1,2-diol",366.15,1.0,CCC(O)CO,patel10
+"butane-2,3-diol",358.15,1.0,CC(O)C(C)O,patel10
+"(E)-but-2-ene-1,4-diol",401.15,1.0,OC/C=C/CO,patel10
+"but-2-yne-1,4-diol",425.15,1.0,OCC#CCO,patel10
+"hexane-1,6-diol",420.15,1.0,OCCCCCCO,patel10
+"hexane-2,5-diol",374.15,1.0,CC(O)CCC(C)O,patel10
+"2,2-diethylpropane-1,3-diol",380.15,1.0,CCC(CC)(CO)CO,patel10
+"2,5-dimethylhex-3-yne-2,5-diol",347.05,1.0,CC(C)(O)C#CC(C)(C)O,patel10
+benzoic acid [4-[(oxo-phenylmethoxy)methyl]cyclohexyl]methyl ester,434.15,1.0,O=C(OCC1CCC(COC(=O)c2ccccc2)CC1)c1ccccc1,patel10
+[4-(hydroxymethyl)phenyl]methanol,460.95,1.0,OCc1ccc(CO)cc1,patel10
+"2-butyl-2-ethylpropane-1,3-diol",386.15,1.0,CCCCC(CC)(CO)CO,patel10
+"3,6-dimethyloct-4-yne-3,6-diol",382.15,1.0,CCC(C)(O)C#CC(C)(O)CC,patel10
+"2-ethyl-2-(hydroxymethyl)propane-1,3-diol",445.15,1.0,CCC(CO)(CO)CO,patel10
+"2,2-bis(hydroxymethyl)propane-1,3-diol",513.15,1.0,OCC(CO)(CO)CO,patel10
+"(2R,3R,4R,5S)-hexane-1,2,3,4,5,6-hexol",422.05,1.0,OC[C@H](O)[C@@H](O)[C@H](O)[C@H](O)CO,patel10
+"2-(hydroxymethyl)-2-methylpropane-1,3-diol",433.15,1.0,CC(CO)(CO)CO,patel10
+"2,2-dimethylpropane-1,3-diol",424.817,1.0,CC(C)(CO)CO,patel10
+"2-methylpentane-2,4-diol",374.817,1.0,CC(O)CC(C)(C)O,patel10
+"(2S)-butane-1,2,4-triol",385.15,1.0,OCC[C@H](O)CO,patel10
+"2,3-dimethylbutane-2,3-diol",350.15,1.0,CC(C)(O)C(C)(C)O,patel10
+"2-ethylhexane-1,3-diol",409.15,1.0,CCCC(O)C(CC)CO,patel10
+2-(2-hydroxyethylthio)ethanol,433.15,1.0,OCCSCCO,patel10
+"hexane-1,2,6-triol",471.15,1.0,OCCCCC(O)CO,patel10
+pentane,224.15,1.0,CCCCC,patel10
+hexane,250.15,1.0,CCCCCC,patel10
+octane,289.15,1.0,CCCCCCCC,patel10
+nonane,304.15,1.0,CCCCCCCCC,patel10
+decane,319.15,1.0,CCCCCCCCCC,patel10
+dodecane,344.15,1.0,CCCCCCCCCCCC,patel10
+cyclohexane,255.15,1.0,C1CCCCC1,patel10
+cyclohexene,243.15,1.0,C1=CCCCC1,patel10
+benzene,262.15,1.0,c1ccccc1,patel10
+methylbenzene,280.15,1.0,Cc1ccccc1,patel10
+"1,2-dimethylbenzene",305.15,1.0,Cc1ccccc1C,patel10
+"1,4-dimethylbenzene",300.15,1.0,Cc1ccc(C)cc1,patel10
+"1,3,5-trimethylbenzene",317.15,1.0,Cc1cc(C)cc(C)c1,patel10
+isopropylbenzene,319.15,1.0,CC(C)c1ccccc1,patel10
+tridecane,352.15,1.0,CCCCCCCCCCCCC,patel10
+tetradecane,372.15,1.0,CCCCCCCCCCCCCC,patel10
+hexadecane,408.15,1.0,CCCCCCCCCCCCCCCC,patel10
+heptadecane,421.15,1.0,CCCCCCCCCCCCCCCCC,patel10
+nonadecane,441.15,1.0,CCCCCCCCCCCCCCCCCCC,patel10
+isopentane,222.15,1.0,CCC(C)C,patel10
+isohexane,250.15,1.0,CCCC(C)C,patel10
+3-methylpentane,241.15,1.0,CCC(C)CC,patel10
+"2,3-dimethylbutane",244.15,1.0,CC(C)C(C)C,patel10
+"buta-1,3-diene",197.05,1.0,C=CC=C,patel10
+but-2-ene,199.85,1.0,CC=CC,patel10
+(z)-but-2-ene,200.15,1.0,C/C=C\C,patel10
+but-1-ene,193.15,1.0,C=CCC,patel10
+2-methylprop-1-ene,157.15,1.0,C=C(C)C,patel10
+(Z)-pent-2-ene,255.15,1.0,C/C=C\CC,patel10
+pent-1-ene,222.15,1.0,C=CCCC,patel10
+dec-1-ene,320.15,1.0,C=CCCCCCCCC,patel10
+hept-1-ene,264.15,1.0,C=CCCCCC,patel10
+cyclooctane,301.15,1.0,C1CCCCCCC1,patel10
+"cyclopenta-1,3-diene",273.15,1.0,C1=CCC=C1,patel10
+cyclopentane,236.15,1.0,C1CCCC1,patel10
+cyclopentene,243.15,1.0,C1=CCCC1,patel10
+2-methylheptane,277.15,1.0,CCCCCC(C)C,patel10
+4-vinylcyclohexene,294.15,1.0,C=CC1CC=CCC1,patel10
+4-methylpent-1-yne,269.15,1.0,C#CCC(C)C,patel10
+ethylbenzene,295.15,1.0,CCc1ccccc1,patel10
+undecane,335.15,1.0,CCCCCCCCCCC,patel10
+pentadecane,405.15,1.0,CCCCCCCCCCCCCCC,patel10
+octadecane,439.15,1.0,CCCCCCCCCCCCCCCCCC,patel10
+tricosane,386.15,1.0,CCCCCCCCCCCCCCCCCCCCCCC,patel10
+"2,2-dimethylbutane",225.15,1.0,CCC(C)(C)C,patel10
+2-methylhexane,270.15,1.0,CCCCC(C)C,patel10
+but-2-yne,260.15,1.0,CC#CC,patel10
+"2,4,4-trimethylpent-1-ene",267.15,1.0,C=C(C)CC(C)(C)C,patel10
+"2,3,4-trimethylpent-2-ene",275.15,1.0,CC(C)=C(C)C(C)C,patel10
+methoxymethane,232.039,1.0,COC,patel10
+ethoxyethane,233.15,1.0,CCOCC,patel10
+2-methoxy-2-methylpropane,238.706,1.0,COC(C)(C)C,patel10
+2-isopropoxypropane,245.372,1.0,CC(C)OC(C)C,patel10
+1-butoxybutane,304.261,1.0,CCCCOCCCC,patel10
+1-pentoxypentane,330.372,1.0,CCCCCOCCCCC,patel10
+1-ethenoxybutane,263.706,1.0,C=COCCCC,patel10
+2-methyloxirane,235.928,1.0,CC1CO1,patel10
+2-ethyloxirane,260.928,1.0,CCC1CO1,patel10
+"1,4-dioxane",291.483,1.0,C1COCCO1,patel10
+"(2,2-dimethyl-1,3-dioxolan-4-yl)methanol",267.039,1.0,CC1(C)OCC(CO)O1,patel10
+2-methylfuran,243.15,1.0,Cc1ccco1,patel10
+tetrahydrofuran,247.594,1.0,C1CCOC1,patel10
+tetrahydropyran,253.15,1.0,C1CCOCC1,patel10
+methoxybenzene,324.817,1.0,COc1ccccc1,patel10
+"1,2-bis(2-methoxyethoxy)ethane",386.15,1.0,COCCOCCOCCOC,patel10
+2-(phenoxymethyl)oxirane,388.15,1.0,c1ccc(OCC2CO2)cc1,patel10
+2-methoxy-2-methylbutane,262.15,1.0,CCC(C)(C)OC,patel10
+2-(2-hydroxyethoxy)ethanol,416.15,1.0,OCCOCCO,patel10
+ethoxyethylene,228.15,1.0,C=COCC,patel10
+allyloxybenzene,335.15,1.0,C=CCOc1ccccc1,patel10
+2-methoxy-2-methylpropane,245.15,1.0,COC(C)(C)C,patel10
+phenylmethoxymethylbenzene,408.15,1.0,c1ccc(COCc2ccccc2)cc1,patel10
+1-chloro-2-(2-chloroethoxy)ethane,328.15,1.0,ClCCOCCCl,patel10
+1-chloro-2-methoxyethane,288.15,1.0,COCCCl,patel10
+1-[2-(2-butoxyethoxy)ethoxy]butane,374.15,1.0,CCCCOCCOCCOCCCC,patel10
+3-allyloxyprop-1-ene,266.15,1.0,C=CCOCC=C,patel10
+1-chloro-4-(phenoxy)benzene,386.15,1.0,Clc1ccc(Oc2ccccc2)cc1,patel10
+1-isopentyloxy-3-methylbutane,319.15,1.0,CC(C)CCOCCC(C)C,patel10
+2-(allyloxymethyl)oxirane,321.15,1.0,C=CCOCC1CO1,patel10
+chloro-(chloromethoxy)methane,292.15,1.0,ClCOCCl,patel10
+2-(butoxymethyl)oxirane,314.15,1.0,CCCCOCC1CO1,patel10
+1-chloro-1-(1-chloroethoxy)ethane,328.15,1.0,CC(Cl)OC(C)Cl,patel10
+1-butoxybutane,298.15,1.0,CCCCOCCCC,patel10
+"1,2-dimethoxybenzene",345.15,1.0,COc1ccccc1OC,patel10
+"1,2-dimethoxyethane",271.15,1.0,COCCOC,patel10
+"(3S,3aR,6R,6aR)-3,6-dimethoxy-2,3,3a,5,6,6a-hexahydrofuro[3,2-b]furan",376.15,1.0,CO[C@H]1CO[C@@H]2[C@H](OC)CO[C@H]12,patel10
+phenoxybenzene,388.15,1.0,c1ccc(Oc2ccccc2)cc1,patel10
+"1,3,5-trioxane",318.15,1.0,C1OCOCO1,patel10
+ethoxyethylene,227.15,1.0,C=COCC,patel10
+1-hexoxyhexane,349.81699999999995,1.0,CCCCCCOCCCCCC,patel10
+ethoxyethylene,227.594,1.0,C=COCC,patel10
+1-ethenoxy-2-methylpropane,263.706,1.0,C=COCC(C)C,patel10
+furan,237.594,1.0,c1ccoc1,patel10
+phenoxybenzene,388.15,1.0,c1ccc(Oc2ccccc2)cc1,patel10
+4-(4-aminophenoxy)aniline,491.15,1.0,Nc1ccc(Oc2ccc(N)cc2)cc1,patel10
+chloro-methoxymethane,289.15,1.0,COCCl,patel10
+"4,7,7-trimethyl-8-oxabicyclo[2.2.2]octane",322.15,1.0,CC12CCC(CC1)C(C)(C)O2,patel10
+1-pentoxypentane,330.15,1.0,CCCCCOCCCCC,patel10
+1-ethenoxypropane,247.15,1.0,C=COCCC,patel10
+acetamide,315.15,1.0,CC(N)=O,patel10
+1-(2-pyridyl)ethanone,349.15,1.0,CC(=O)c1ccccn1,patel10
+2-(bis(2-hydroxyethyl)amino)ethanol,452.15,1.0,OCCN(CCO)CCO,patel10
+prop-2-en-1-amine,245.15,1.0,C=CCN,patel10
+6-methyl-2-pyridinamine,376.15,1.0,Cc1cccc(N)n1,patel10
+2-(2-aminoethoxy)ethanol,400.15,1.0,NCCOCCO,patel10
+2-pyridinamine,236.15,1.0,Nc1ccccn1,patel10
+aniline,343.15,1.0,Nc1ccccc1,patel10
+phenylmethanamine,345.15,1.0,NCc1ccccc1,patel10
+3-bromopyridine,324.15,1.0,Brc1cccnc1,patel10
+butan-2-amine,254.15,1.0,CCC(C)N,patel10
+2-methylpropan-2-amine,235.15,1.0,CC(C)(C)N,patel10
+3-chloroaniline,391.15,1.0,Nc1cccc(Cl)c1,patel10
+2-chloroaniline,371.15,1.0,Nc1ccccc1Cl,patel10
+2-chloropyridine,337.15,1.0,Clc1ccccn1,patel10
+"2,4,6-trimethylpyridine",330.15,1.0,Cc1cc(C)nc(C)c1,patel10
+2-pyridinecarbonitrile,362.15,1.0,N#Cc1ccccn1,patel10
+3-pyridinecarbonitrile,357.15,1.0,N#Cc1cccnc1,patel10
+4-pyridinecarbonitrile,361.15,1.0,N#Cc1ccncc1,patel10
+1-cyclohexyl-2-pyrrolidinone,418.15,1.0,O=C1CCCN1C1CCCCC1,patel10
+cyclohexanamine,300.15,1.0,NC1CCCCC1,patel10
+N-pentylpentan-1-amine,277.15,1.0,CCCCCNCCCCC,patel10
+"2,6-ditert-butylpyridine",345.15,1.0,CC(C)(C)c1cccc(C(C)(C)C)n1,patel10
+"ethane-1,2-diamine",330.35,1.0,NCCN,patel10
+N-cyclohexylcyclohexanamine,376.15,1.0,C1CCC(NC2CCCCC2)CC1,patel10
+"N,N-diethylacetamide",343.15,1.0,CCN(CC)C(C)=O,patel10
+N-ethylethanamine,245.15,1.0,CCNCC,patel10
+2-diethylaminoethanol,324.65,1.0,CCN(CC)CCO,patel10
+diethylcyanamide,342.15,1.0,CCN(C#N)CC,patel10
+"N-(2-aminoethyl)ethane-1,2-diamine",363.15,1.0,NCCNCCN,patel10
+"N,N-diethylformamide",333.15,1.0,CCN(C=O)CC,patel10
+1-(2-hydroxypropylamino)propan-2-ol,399.15,1.0,CC(O)CNCC(C)O,patel10
+N-isopropylpropan-2-amine,266.15,1.0,CC(C)NC(C)C,patel10
+N-methylmethanamine,255.15,1.0,CNC,patel10
+"N,N-dimethylaniline",336.15,1.0,CN(C)c1ccccc1,patel10
+2-dimethylaminoethanol,313.15,1.0,CN(C)CCO,patel10
+"N,N-dimethylformamide",330.15,1.0,CN(C)C=O,patel10
+"3,5-dimethylpiperidine",294.65,1.0,CC1CNCC(C)C1,patel10
+heptan-2-amine,327.15,1.0,CCCCCC(C)N,patel10
+heptan-1-amine,317.15,1.0,CCCCCCCN,patel10
+3-methyl-2-pyridinamine,384.15,1.0,Cc1cccnc1N,patel10
+propan-1-amine,243.15,1.0,CCCN,patel10
+2-bromopyridine,327.15,1.0,Brc1ccccn1,patel10
+butan-1-amine,261.15,1.0,CCCCN,patel10
+4-chloroaniline,461.15,1.0,Nc1ccc(Cl)cc1,patel10
+N-allylprop-2-en-1-amine,280.15,1.0,C=CCNCC=C,patel10
+N-butylbutan-1-amine,312.15,1.0,CCCCNCCCC,patel10
+2-(2-hydroxyethylamino)ethanol,411.15,1.0,OCCNCCO,patel10
+"N,N-dimethylacetamide",336.15,1.0,CC(=O)N(C)C,patel10
+2-aminoethanol,358.15,1.0,NCCO,patel10
