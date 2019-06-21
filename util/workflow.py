@@ -160,11 +160,23 @@ class Splitter:
                     break
         return indices, dataset
 
-    def basic_transfer_splits(dataset, test_group):
+    def basic_transfer_splits(dataset, test_group, use_metallics, use_silicons):
         # remove duplicates in train group.
-        test_df = dataset[dataset['source'] == test_group]
-        train_df = dataset[dataset['source'] != test_group]
-        train_df = integration_helpers.remove_duplicates(train_df) # remove duplicates
+        if not use_metallics and not use_silicons:
+          print("using group to split datasets")
+          test_df = dataset[dataset['source'] == test_group]
+          train_df = dataset[dataset['source'] != test_group]
+          train_df = integration_helpers.remove_duplicates(train_df) # remove duplicates
+        elif use_metallics and not use_silicons:
+          print("using metallics as transfer target")
+          test_df = dataset[dataset['is_metallic'] == 1]
+          train_df = dataset[dataset['is_metallic'] != 1]
+          train_df = integration_helpers.remove_duplicates(train_df) # remove duplicates
+        else: # always default to silicons
+          print("using silicons as transfer target")
+          test_df = dataset[dataset['is_silicon'] == 1]
+          train_df = dataset[dataset['is_silicon'] != 1]
+          train_df = integration_helpers.remove_duplicates(train_df) # remove duplicates
 
         # remove data points in  train dataframe that match smiles strings in
         # test dataframe
@@ -182,9 +194,9 @@ class Splitter:
             if dataset.iloc[i]['source'] == test_group:
                 raw_test_indices.append(i)
                 raw_train_indices.remove(i)
-        non_geleste_test_indices = random.sample(raw_train_indices, int(0.05*len(raw_train_indices)))
+        non_geleste_test_indices = random.sample(raw_train_indices, int(0*len(raw_train_indices)))
         train_indices = [x for x in raw_train_indices if x not in non_geleste_test_indices]
-        test_indices = random.sample(raw_test_indices, int(0.7*len(raw_test_indices)))
+        test_indices = random.sample(raw_test_indices, int(0.5*len(raw_test_indices)))
         raw_test_indices = [x for x in raw_test_indices if x not in test_indices]
         second_train_indices = raw_test_indices
         test_indices = test_indices + non_geleste_test_indices

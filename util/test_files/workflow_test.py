@@ -8,16 +8,22 @@ import pandas as pd
 
 print("About to load")
 loader = wf.Loader
-data = loader.load(file_name = 'new_integrated_dataset.csv',data_dir = '/srv/home/apolitowicz/moleprop/data')
+data = loader.load(file_name = 'new_integrated_dataset_grouped.csv',data_dir = '/srv/home/apolitowicz/moleprop/data')
 #data = loader.load(file_name = 'geleste_complete.csv',data_dir = '/srv/home/apolitowicz/moleprop/data')
 
 print("About to split")
 splitter = wf.Splitter
 #indices,dataset = splitter.k_fold(data, n_splits = 10)
 #indices,dataset = splitter.LOG(data,'gelest_germanium',1)  # LOG splitter
-indices,dataset = splitter.basic_transfer_splits(data,'gelest_germanium')
+indices,dataset = splitter.basic_transfer_splits(data,'gelest_germanium', True, False)
 #silicon_dataset = splitter.get_organosilicons(data)
 #metallic_dataset = splitter.get_organometallics(data)
+
+# DEBUG
+#print(silicon_dataset.shape)
+#silicon_dataset.to_csv("silicons.csv")
+#print(metallic_dataset.shape)
+#metallic_dataset.to_csv("metallics.csv")
 
 '''
 GC_args_example = {'nb_epoch': 80,
@@ -47,7 +53,7 @@ scores,predictions,test_datasets = wf.Run.basic_transfer(dataset,indices,
                                              'GC',
                                              model_args = None,
                                              metrics = ['AAD', 'RMSE', 'MAE', 'R2'],
-                                             nn_edit = True)
+                                             nn_edit = False)
 
 # Make plots for every fold
 for key in scores:
