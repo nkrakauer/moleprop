@@ -270,6 +270,40 @@ class Run:
             file.write(s)        
         file.close()
         return scores, pred, test_set
+
+    def custom_validation(train_dataset,
+                          test_dataset,
+                          model, 
+                          model_args = None,
+                          metrics = None):
+        """
+        Do custom validation:
+        we can use customized training and test sets for our models now
+        """
+        if not (model == 'MPNN' or model == 'graphconv' or model == 'GC' or model == 'GraphConv'):
+            sys.exit("Only supports MPNN model and graphconv model")
+        train_set = Loader.load(train_dataset)
+        test_set = Loader.load(test_dataset)
+        if model == 'MPNN':
+            rms_score,mae_score,r2_score,pred = Model.MPNN(model_args, train_dataset, test_dataset)
+        elif model == 'GraphConv' or model == 'graphconv' or model == 'GC':
+            rms_score,mae_score,r2_score,pred = Model.graphconv(model_args, train_dataset, test_dataset)       
+        scores_all = {'RMSE':rms_score,
+                      'MAE': mae_score,
+                      'R2': r2_score,
+                      'AAD':Run.getAAPD(test_set,pred)}
+        scores = dict()
+        if metrics == None:  # return default scores (RMSE and R2)
+            scores = {'RMSE':scores_all['RMSE'], 
+                      'R2':scores_all['R2']}
+        else:
+            for m in metrics:
+                if not ( m == 'RMSE' or m == 'MAE' or m == 'AAD' or m == 'R2'):
+                    sys.exit('only supports RMSE, MAE, AAD, AAE, and R2')
+                scores[m] = scores_all[m]
+        outliers = Run.get_outliers(test_set, pred)
+        outliers.to_csv('outliers.csv')
+        return scores, pred, test_set
     
     def getAAPD(dataset, pred):  # Average absolute percent deviation
         expt = dataset['flashpoint'].tolist()
@@ -300,7 +334,8 @@ class Model:
             'graph_conv_layers':[64,64],
             'dense_layer_size': 128,
             'dropout': 0,
-            'mode': 'regression'},
+            'mode': 'regression',
+            'learning_rate': 0.0005},
         'MPNN':{
             'n_tasks':1,
             'n_atom_feat':75,
@@ -341,7 +376,8 @@ class Model:
              test_dataset = transformer.transform(test_dataset)
         model = dc.models.GraphConvModel(n_tasks = model_args['n_tasks'], 
                                          mode = model_args['mode'], 
-                                         dropout = model_args['dropout'])
+                                         dropout = model_args['dropout'],
+                                         learning_rate = model_args['learning_rate'])
         metric_rms = dc.metrics.Metric(dc.metrics.rms_score, np.mean) # RMSE score
         metric_mae = dc.metrics.Metric(dc.metrics.mae_score, np.mean) # MAE score
         metric_r2 = dc.metrics.Metric(dc.metrics.pearson_r2_score, np.mean) # R2 score
@@ -443,7 +479,7 @@ class Plotter:
             i =  (max_val-min_val)/20
             for key in text:
                 if key.find('list') == -1:
-                    t = str(key +': ' + str(round(text[key],2)))
+                    t = str(key +': ' + str(round(text[key],4)))
                     if key == 'AAD':
                         t = t+str('%')
                     plt.text(x,y - i,t)
@@ -477,7 +513,7 @@ class Plotter:
         if text != None:
             for key in text:
                 if key.find('list') == -1:
-                    t = str(key +': ' + str(round(text[key],2)))
+                    t = str(key +': ' + str(round(text[key],4)))
                     if key == 'AAD':
                         t = t+str('%')
                     plt.text(left,top - i,t)
