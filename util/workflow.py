@@ -272,7 +272,7 @@ class Run:
 
     def custom_validation(train_dataset,
                           test_dataset,
-                          model,
+                          model, 
                           model_args = None,
                           metrics = None):
         """
@@ -333,7 +333,8 @@ class Model:
             'graph_conv_layers':[64,64],
             'dense_layer_size': 128,
             'dropout': 0,
-            'mode': 'regression'},
+            'mode': 'regression',
+            'learning_rate': 0.0005},
         'MPNN':{
             'n_tasks':1,
             'n_atom_feat':75,
@@ -374,7 +375,8 @@ class Model:
              test_dataset = transformer.transform(test_dataset)
         model = dc.models.GraphConvModel(n_tasks = model_args['n_tasks'], 
                                          mode = model_args['mode'], 
-                                         dropout = model_args['dropout'])
+                                         dropout = model_args['dropout'],
+                                         learning_rate = model_args['learning_rate'])
         metric_rms = dc.metrics.Metric(dc.metrics.rms_score, np.mean) # RMSE score
         metric_mae = dc.metrics.Metric(dc.metrics.mae_score, np.mean) # MAE score
         metric_r2 = dc.metrics.Metric(dc.metrics.pearson_r2_score, np.mean) # R2 score
@@ -476,7 +478,7 @@ class Plotter:
             i =  (max_val-min_val)/20
             for key in text:
                 if key.find('list') == -1:
-                    t = str(key +': ' + str(round(text[key],2)))
+                    t = str(key +': ' + str(round(text[key],4)))
                     if key == 'AAD':
                         t = t+str('%')
                     plt.text(x,y - i,t)
@@ -510,7 +512,7 @@ class Plotter:
         if text != None:
             for key in text:
                 if key.find('list') == -1:
-                    t = str(key +': ' + str(round(text[key],2)))
+                    t = str(key +': ' + str(round(text[key],4)))
                     if key == 'AAD':
                         t = t+str('%')
                     plt.text(left,top - i,t)
