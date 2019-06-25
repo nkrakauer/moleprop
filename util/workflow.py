@@ -49,24 +49,21 @@ class Loader:
                   name + " info:\n"+
                   "-----------------------------------------------------\n" +
                   "Dataset length is: " + str(len(data.index)) + "\n")
-        if 'source' in data.columns:    
+        if 'source' in data.columns:
             sources = data.source.unique()
             source_info = dict()
             for s in sources:
-                counter = 0
-                for i in range(0,len(data.index)):
-                    if data.iloc[i]['source'] == s:
-                        counter += 1
-                source_info[s] = [counter]
+                temp = data.loc[data.source == s]
+                source_info[s] = [len(temp)]
             output += ("-----------------------------------------------------\n" +
                      "Dataset sources info: \n")
             for s in sources:
                 output += (str("  Source name:" + str(s) + ", Number of data: " + str(source_info[s]) + "\n"))
-        
-        output += ("-----------------------------------------------------\n" + 
+
+        output += ("-----------------------------------------------------\n" +
                    "Mean: " + str(data['flashpoint'].mean()) + "\n"
-                   "-----------------------------------------------------\n" + 
-                   "Std: " + str(data['flashpoint'].std()) + "\n" + 
+                   "-----------------------------------------------------\n" +
+                   "Std: " + str(data['flashpoint'].std()) + "\n" +
                    "=====================================================\n")
         print(output)
         file = open('./dataset_info/'+name+'.txt', 'w')
