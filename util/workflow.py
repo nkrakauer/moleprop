@@ -3,7 +3,6 @@ import sys
 import numpy as np
 import pandas as pd
 import random                                 # for randomly choosing indices from left-out group as test indices
-#import bokeh                                             # TODO for interactive plot
 import statistics as stat
 import seaborn
 import matplotlib.pyplot as plt
@@ -117,7 +116,7 @@ class Splitter:
         # remove duplicates in train group.
         test_df = dataset[dataset['source'] == test_group]
         train_df = dataset[dataset['source'] != test_group]
-
+        train_df = integration_helpers.remove_duplicates(train_df)
         # remove data points in  train dataframe that match smiles strings in
         # test dataframe
         for index, row in test_df.iterrows():
@@ -287,14 +286,14 @@ class Run:
         if model == 'MPNN':
             rms_score,mae_score,r2_score,pred = Model.MPNN(model_args, train_dataset, test_dataset)
         elif model == 'GraphConv' or model == 'graphconv' or model == 'GC':
-            rms_score,mae_score,r2_score,pred = Model.graphconv(model_args, train_dataset, test_dataset)       
+            rms_score,mae_score,r2_score,pred = Model.graphconv(model_args, train_dataset, test_dataset)
         scores_all = {'RMSE':rms_score,
                       'MAE': mae_score,
                       'R2': r2_score,
                       'AAD':Run.getAAPD(test_set,pred)}
         scores = dict()
         if metrics == None:  # return default scores (RMSE and R2)
-            scores = {'RMSE':scores_all['RMSE'], 
+            scores = {'RMSE':scores_all['RMSE'],
                       'R2':scores_all['R2']}
         else:
             for m in metrics:

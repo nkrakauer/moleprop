@@ -1,6 +1,19 @@
 from rdkit import Chem
 import pandas as pd
 
+def remove_duplicates_by_source(dataframe):
+    sources = dataframe.source.unique()
+    for source in sources:
+        sourceframe = dataframe[dataframe['source'] == source]
+        dataframe = dataframe[dataframe['source'] != source]
+        sourceframe.drop_duplicates(subset ='smiles',keep='first', inplace=True)
+        frames = [dataframe, sourceframe]
+        dataframe = pd.concat(frames)
+    return dataframe
+
+def check_null_values(dataframe):
+    return dataframe.isnull().sum()
+
 def check_similarity(dataset1, dataset2):
     count = 0
     print('Number of data in ' + dataset1.iloc[2]['source'] + ': ' +  str(len(dataset1)))
