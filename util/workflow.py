@@ -380,7 +380,10 @@ class Model:
         metric_rms = dc.metrics.Metric(dc.metrics.rms_score, np.mean) # RMSE score
         metric_mae = dc.metrics.Metric(dc.metrics.mae_score, np.mean) # MAE score
         metric_r2 = dc.metrics.Metric(dc.metrics.pearson_r2_score, np.mean) # R2 score
-        model.fit(train_dataset, nb_epoch = model_args['nb_epoch']) 
+        callback = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=25)
+        reduce_lr = tf.keras.callbacks.ReduceLROnPlateau(monitor='val_loss', factor=0.2,
+                                              patience=5, min_lr=0.001)
+        model.fit(train_dataset, nb_epoch = model_args['nb_epoch'], callbacks=[callback, reduce_lr])
         pred = model.predict(test_dataset)
         pred = undo_transforms(pred, transformers)
         flattened_pred = [y for x in pred for y in x]    # convert list of lists to faltten list
@@ -425,7 +428,10 @@ class Model:
         metric_rms = dc.metrics.Metric(dc.metrics.rms_score, np.mean) # RMSE score
         metric_mae = dc.metrics.Metric(dc.metrics.mae_score, np.mean) # MAE score
         metric_r2 = dc.metrics.Metric(dc.metrics.pearson_r2_score, np.mean) # R2 score
-        model.fit(train_dataset, nb_epoch = model_args['nb_epoch'])
+        callback = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=25)
+        reduce_lr = tf.keras.callbacks.ReduceLROnPlateau(monitor='val_loss', factor=0.2,
+                                              patience=5, min_lr=0.001)
+        model.fit(train_dataset, nb_epoch = model_args['nb_epoch'], callbacks=[callback, reduce_lr])
         pred = model.predict(test_dataset)
         pred = undo_transforms(pred, transformers)
         flattened_pred = [y for x in pred for y in x]    # convert list of lists to faltten list
