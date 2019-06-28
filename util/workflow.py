@@ -86,6 +86,12 @@ class Loader:
         return seperate_dataset
 
 class Splitter:
+    def k_fold_source(dataset, source, n_splits = 3, shuffle = True, random_state = None):
+        dataset = integration_helpers.remove_duplicates(dataset) # remove duplicates
+        dataset_source = dataset[dataset['source'] == source]
+        indices, data = Splitter.k_fold(dataset_source, n_splits, shuffle, random_state)
+        return indices, data
+
     def k_fold(dataset, n_splits = 3, shuffle = True, random_state = None):
         """
         split data into k-fold
@@ -167,6 +173,7 @@ class Run:
         cv_aad_scores = []
         cv_predictions = []
         cv_test_datasets = []
+        cv_history = []
         outliers = list()
         i = 1       # track the number of iteration
         for train_indices, test_indices in indices:
@@ -176,9 +183,9 @@ class Run:
             train_set.to_csv('train_set.csv',index = False)
             test_set.to_csv('test_set.csv',index = False)
             if model == 'MPNN':
-                rms_score,mae_score,r2_score,pred = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
+                rms_score,mae_score,r2_score,pred, history = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
             elif model == 'graphconv' or model == 'GC' or model == 'GraphConv':
-                rms_score,mae_score,r2_score,pred = Model.graphconv(model_args,"train_set.csv", "test_set.csv")       
+                rms_score,mae_score,r2_score,pred, history = Model.graphconv(model_args,"train_set.csv", "test_set.csv")       
             Loader.getinfo(train_set, 'CV_'+str(i)+"_Train")
             Loader.getinfo(test_set, 'CV_'+str(i)+"_Test")
             i += 1
@@ -187,6 +194,7 @@ class Run:
             cv_r2_scores.append(r2_score)
             cv_aad_scores.append((Run.getAAPD(test_set,pred)))
             cv_predictions.append(pred)
+            cv_history.append(history)
             outliers.append(Run.get_outliers(test_set, pred))
             os.remove("train_set.csv")
             os.remove("test_set.csv")
@@ -225,24 +233,28 @@ class Run:
                        indices, 
                        model, 
                        model_args = None,
-                       metrics = None):
+                       metrics = None,
+                       cv = 1):
         """
         Conduct leave-out-group validation
-        """
-        
+        """ 
         if not (model == 'MPNN' or model == 'graphconv' or model == 'GC' or model == 'GraphConv'):
             sys.exit("Only supports MPNN model and graphconv model")
+
         train_indices, test_indices = indices
         train_set = data.iloc[train_indices]
         test_set = data.iloc[test_indices]
         train_set.to_csv('train_set.csv',index = False)
         test_set.to_csv('test_set.csv',index = False)
+
         Loader.getinfo(train_set, "LOG_Train")
         Loader.getinfo(test_set, "LOG_Test")
+
         if model == 'MPNN':
-            rms_score,mae_score,r2_score,pred = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
+            rms_score,mae_score,r2_score,pred, history = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
         elif model == 'GraphConv' or model == 'graphconv' or model == 'GC':
-            rms_score,mae_score,r2_score,pred = Model.graphconv(model_args,"train_set.csv", "test_set.csv")       
+            rms_score,mae_score,r2_score,pred, history = Model.graphconv(model_args,"train_set.csv", "test_set.csv")
+
         os.remove("train_set.csv")
         os.remove("test_set.csv")
         scores_all = {'RMSE':rms_score,
@@ -265,7 +277,7 @@ class Run:
             s = key + " = " + str(scores[key]) + "\n"
             file.write(s)        
         file.close()
-        return scores, pred, test_set
+        return scores, pred, test_set, history
 
     def custom_validation(train_dataset,
                           test_dataset,
@@ -281,7 +293,7 @@ class Run:
         train_set = Loader.load(train_dataset)
         test_set = Loader.load(test_dataset)
         if model == 'MPNN':
-            rms_score,mae_score,r2_score,pred = Model.MPNN(model_args, train_dataset, test_dataset)
+            rms_score,mae_score,r2_score,pred, history = Model.MPNN(model_args, train_dataset, test_dataset)
         elif model == 'GraphConv' or model == 'graphconv' or model == 'GC':
             rms_score,mae_score,r2_score,pred = Model.graphconv(model_args, train_dataset, test_dataset)
         scores_all = {'RMSE':rms_score,
@@ -299,7 +311,7 @@ class Run:
                 scores[m] = scores_all[m]
         outliers = Run.get_outliers(test_set, pred)
         outliers.to_csv('outliers.csv')
-        return scores, pred, test_set
+        return scores, pred, test_set, history
     
     def getAAPD(dataset, pred):  # Average absolute percent deviation
         expt = dataset['flashpoint'].tolist()
@@ -377,17 +389,14 @@ class Model:
         metric_rms = dc.metrics.Metric(dc.metrics.rms_score, np.mean) # RMSE score
         metric_mae = dc.metrics.Metric(dc.metrics.mae_score, np.mean) # MAE score
         metric_r2 = dc.metrics.Metric(dc.metrics.pearson_r2_score, np.mean) # R2 score
-        callback = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=25)
-        reduce_lr = tf.keras.callbacks.ReduceLROnPlateau(monitor='val_loss', factor=0.2,
-                                              patience=5, min_lr=0.001)
-        model.fit(train_dataset, nb_epoch = model_args['nb_epoch'], callbacks=[callback, reduce_lr])
+        history = model.fit(train_dataset, nb_epoch = model_args['nb_epoch'])
         pred = model.predict(test_dataset)
         pred = undo_transforms(pred, transformers)
         flattened_pred = [y for x in pred for y in x]    # convert list of lists to faltten list
         rms_score = list( model.evaluate(test_dataset, [metric_rms],transformers).values()).pop()
         mae_score = list( model.evaluate(test_dataset, [metric_mae],transformers).values()).pop()
         r2_score =  list( model.evaluate(test_dataset, [metric_r2], transformers).values()).pop()
-        return rms_score, mae_score, r2_score, flattened_pred
+        return rms_score, mae_score, r2_score, flattened_pred, history
 
     def MPNN(args, train_set, test_set):
         # parse arguments
@@ -425,20 +434,29 @@ class Model:
         metric_rms = dc.metrics.Metric(dc.metrics.rms_score, np.mean) # RMSE score
         metric_mae = dc.metrics.Metric(dc.metrics.mae_score, np.mean) # MAE score
         metric_r2 = dc.metrics.Metric(dc.metrics.pearson_r2_score, np.mean) # R2 score
-        callback = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=25)
-        reduce_lr = tf.keras.callbacks.ReduceLROnPlateau(monitor='val_loss', factor=0.2,
-                                              patience=5, min_lr=0.001)
-        model.fit(train_dataset, nb_epoch = model_args['nb_epoch'], callbacks=[callback, reduce_lr])
+        history = tf.keras.callbacks.History()
+        model.fit(train_dataset, nb_epoch = model_args['nb_epoch'])
+        #print(hist)
         pred = model.predict(test_dataset)
         pred = undo_transforms(pred, transformers)
         flattened_pred = [y for x in pred for y in x]    # convert list of lists to faltten list
         rms_score = list( model.evaluate(test_dataset, [metric_rms],transformers).values()).pop()
         mae_score = list( model.evaluate(test_dataset, [metric_mae],transformers).values()).pop()
         r2_score = list( model.evaluate(test_dataset, [metric_r2],transformers).values()).pop()
-        return rms_score,mae_score,r2_score, flattened_pred
+        return rms_score,mae_score,r2_score, flattened_pred, history
 
 
-class Plotter: 
+class Plotter:
+    def loss_plot(history, cv=0):
+        plt.plot(history.history['loss'])
+        plt.plot(history.history['val_loss'])
+        plt.title('model loss')
+        plt.ylabel('loss')
+        plt.xlabel('epoch')
+        plt.legend(['train', 'test'], loc='upper left')
+        plt.savefig('loss' + cv + '.png')
+        plt.clf()
+
     def parity_plot(pred, test_dataset, errorbar = False, plot_name = "parity_plot",text = None):
         """
         text: dict of text that you want to add to the plot
@@ -493,7 +511,7 @@ class Plotter:
         plt.ylabel("Predicted") 
         plt.xlabel("Experimental") 
         seaborn.despine(fg.fig,top=False, right=False)#, left=True, bottom=True,)
-        plt.savefig('./parity_plot/'+plot_name+'.png', dpi = 500) 
+        plt.savefig('./parity_plot/'+plot_name+'.png', dpi = 100) 
         plt.clf()
 
     def residual_histogram(pred, dataset, plot_name = 'histogram', text = None):
@@ -520,7 +538,7 @@ class Plotter:
                         t = t+str('%')
                     plt.text(left,top - i,t)
                     i += top/15
-        plt.savefig('./residual_plot/'+plot_name+'.png', dpi = 500)
+        plt.savefig('./residual_plot/'+plot_name+'.png', dpi = 100)
         plt.clf()
 
     def interactive_plot(pred_result,true_result):
