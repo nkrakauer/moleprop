@@ -165,15 +165,15 @@ class Run:
         cv_rms_scores: a list of RMSE scores from cross validation
         cv_mae_scores: a list of MAE scores from cross validation
         """
-        if not (model == 'MPNN' or model == 'graphconv' or model == 'GC' or model == 'GraphConv'):
-            sys.exit("Only support MPNN model and GraphConv model")
+        if not (model == 'MPNN' or model == 'graphconv' or model == 'GC' or model == 'GraphConv' or model == 'weave'):
+            sys.exit("Only support MPNN model and GraphConv and weave model")
         cv_rms_scores = []
         cv_mae_scores = []
         cv_r2_scores = []
         cv_aad_scores = []
         cv_predictions = []
         cv_test_datasets = []
-        cv_history = []
+        cv_train_scores = []
         outliers = list()
         i = 1       # track the number of iteration
         for train_indices, test_indices in indices:
@@ -183,18 +183,20 @@ class Run:
             train_set.to_csv('train_set.csv',index = False)
             test_set.to_csv('test_set.csv',index = False)
             if model == 'MPNN':
-                rms_score,mae_score,r2_score,pred, history = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
+                rms_score,mae_score,r2_score,train_scores,pred = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
             elif model == 'graphconv' or model == 'GC' or model == 'GraphConv':
-                rms_score,mae_score,r2_score,pred, history = Model.graphconv(model_args,"train_set.csv", "test_set.csv")       
+                rms_score,mae_score,r2_score,train_scores,pred = Model.graphconv(model_args,"train_set.csv", "test_set.csv")
+            elif model == 'weave':
+                rms_score,mae_score,r2_score,train_scores,pred = Model.weave(model_args,"train_set.csv", "test_set.csv") 
             Loader.getinfo(train_set, 'CV_'+str(i)+"_Train")
             Loader.getinfo(test_set, 'CV_'+str(i)+"_Test")
             i += 1
+            cv_train_scores.append(train_scores)
             cv_rms_scores.append(rms_score)
             cv_mae_scores.append(mae_score)
             cv_r2_scores.append(r2_score)
             cv_aad_scores.append((Run.getAAPD(test_set,pred)))
             cv_predictions.append(pred)
-            cv_history.append(history)
             outliers.append(Run.get_outliers(test_set, pred))
             os.remove("train_set.csv")
             os.remove("test_set.csv")
@@ -202,23 +204,29 @@ class Run:
         avg_mae_score = sum(cv_mae_scores)/n_splits
         avg_r2_score = sum(cv_r2_scores)/n_splits
         avg_aad_score = sum(cv_aad_scores)/n_splits
+        # calculate avg train scores
+        avg_train_scores = (sum(cv_train_scores[i][0] for i in range(n_splits))/n_splits,
+                            sum(cv_train_scores[i][1] for i in range(n_splits))/n_splits)
         scores_all = {'RMSE':avg_rms_score,'RMSE_list':cv_rms_scores,
                       'MAE': avg_mae_score,'MAE_list':cv_mae_scores,
                       'R2': avg_r2_score, 'R2_list': cv_r2_scores,
-                      'AAD':avg_aad_score, 'AAD_list': cv_aad_scores}
+                      'AAD':avg_aad_score, 'AAD_list': cv_aad_scores,
+                     'train_scores':avg_train_scores}
         scores = dict()
         if metrics == None:  # return default scores (RMSE and R2)
             scores = {'RMSE':scores_all['RMSE'], 
                       'R2':scores_all['R2'],
                       'RMSE_list':scores_all['RMSE_list'],
-                      'R2_list':scores_all['R2_list']}
+                      'R2_list':scores_all['R2_list'],
+                     'train_scores': scores_all['train_scores']}
         else:
             for m in metrics:
-                if not ( m == 'RMSE' or m == 'MAE' or m == 'AAD' or m == 'R2'):
+                if not ( m == 'RMSE' or m == 'MAE' or m == 'AAD' or m == 'R2' or m == 'train'):
                     sys.exit('only supports RMSE, MAE, AAD, AAE, and R2')
                 scores[m] = scores_all[m]
-                list_name = str(m + '_list')
-                scores[list_name] = scores_all[list_name]
+                if m != 'train':
+                    list_name = str(m + '_list')
+                    scores[list_name] = scores_all[list_name]
         outliers = pd.concat(outliers)
         outliers.to_csv('outliers.csv')
         file = open('FINAL_RESULT.txt', 'w')
@@ -233,42 +241,42 @@ class Run:
                        indices, 
                        model, 
                        model_args = None,
-                       metrics = None,
-                       cv = 1):
+                       metrics = None):
         """
         Conduct leave-out-group validation
-        """ 
-        if not (model == 'MPNN' or model == 'graphconv' or model == 'GC' or model == 'GraphConv'):
-            sys.exit("Only supports MPNN model and graphconv model")
-
+        """
+        
+        if not (model == 'MPNN' or model == 'graphconv' or model == 'GC' or model == 'GraphConv' or model == 'weave'):
+            sys.exit("Only supports MPNN model and graphconv and weave model")
         train_indices, test_indices = indices
         train_set = data.iloc[train_indices]
         test_set = data.iloc[test_indices]
         train_set.to_csv('train_set.csv',index = False)
         test_set.to_csv('test_set.csv',index = False)
-
         Loader.getinfo(train_set, "LOG_Train")
         Loader.getinfo(test_set, "LOG_Test")
-
         if model == 'MPNN':
-            rms_score,mae_score,r2_score,pred, history = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
+            rms_score,mae_score,r2_score,train_scores,pred = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
         elif model == 'GraphConv' or model == 'graphconv' or model == 'GC':
-            rms_score,mae_score,r2_score,pred, history = Model.graphconv(model_args,"train_set.csv", "test_set.csv")
-
+            rms_score,mae_score,r2_score,train_scores,pred = Model.graphconv(model_args,"train_set.csv", "test_set.csv")
+        elif model == 'weave':
+            rms_score,mae_score,r2_score,train_scores,pred = Model.weave(model_args,"train_set.csv", "test_set.csv")
         os.remove("train_set.csv")
         os.remove("test_set.csv")
         scores_all = {'RMSE':rms_score,
                       'MAE': mae_score,
                       'R2': r2_score,
-                      'AAD':(Run.getAAPD(test_set,pred))}
+                      'AAD':(Run.getAAPD(test_set,pred)),
+                     'train':train_scores}
         scores = dict()
         if metrics == None:  # return default scores (RMSE and R2)
             scores = {'RMSE':scores_all['RMSE'], 
-                      'R2':scores_all['R2']}
+                      'R2':scores_all['R2'],
+                     'train':scores_all['train']}
         else:
             for m in metrics:
-                if not ( m == 'RMSE' or m == 'MAE' or m == 'AAD' or m == 'R2'):
-                    sys.exit('only supports RMSE, MAE, AAD, AAE, and R2')
+                if not ( m == 'RMSE' or m == 'MAE' or m == 'AAD' or m == 'R2' or m =='train'):
+                    sys.exit('only supports RMSE, MAE, AAD, AAE, R2, and train')
                 scores[m] = scores_all[m]
         outliers = Run.get_outliers(test_set, pred)
         outliers.to_csv('outliers.csv')
@@ -277,7 +285,7 @@ class Run:
             s = key + " = " + str(scores[key]) + "\n"
             file.write(s)        
         file.close()
-        return scores, pred, test_set, history
+        return scores, pred, test_set
 
     def custom_validation(train_dataset,
                           test_dataset,
@@ -293,25 +301,29 @@ class Run:
         train_set = Loader.load(train_dataset)
         test_set = Loader.load(test_dataset)
         if model == 'MPNN':
-            rms_score,mae_score,r2_score,pred, history = Model.MPNN(model_args, train_dataset, test_dataset)
+            rms_score,mae_score,r2_score,train_scores,pred = Model.MPNN(model_args, train_set.csv, test_set.csv)
         elif model == 'GraphConv' or model == 'graphconv' or model == 'GC':
-            rms_score,mae_score,r2_score,pred = Model.graphconv(model_args, train_dataset, test_dataset)
+            rms_score,mae_score,r2_score,train_scores,pred = Model.graphconv(model_args,train_set.csv, test_set.csv)
+        elif model == 'weave':
+            rms_score,mae_score,r2_score,train_scores,pred = Model.weave(model_args,train_set.csv, test_set.csv)
         scores_all = {'RMSE':rms_score,
                       'MAE': mae_score,
                       'R2': r2_score,
-                      'AAD':Run.getAAPD(test_set,pred)}
+                      'AAD':(Run.getAAPD(test_set,pred)),
+                     'train':train_scores}
         scores = dict()
         if metrics == None:  # return default scores (RMSE and R2)
-            scores = {'RMSE':scores_all['RMSE'],
-                      'R2':scores_all['R2']}
+            scores = {'RMSE':scores_all['RMSE'], 
+                      'R2':scores_all['R2'],
+                     'train':scores_all['train']}
         else:
             for m in metrics:
-                if not ( m == 'RMSE' or m == 'MAE' or m == 'AAD' or m == 'R2'):
-                    sys.exit('only supports RMSE, MAE, AAD, AAE, and R2')
+                if not ( m == 'RMSE' or m == 'MAE' or m == 'AAD' or m == 'R2' or m =='train'):
+                    sys.exit('only supports RMSE, MAE, AAD, AAE, R2, and train')
                 scores[m] = scores_all[m]
         outliers = Run.get_outliers(test_set, pred)
         outliers.to_csv('outliers.csv')
-        return scores, pred, test_set, history
+        return scores, pred, test_set
     
     def getAAPD(dataset, pred):  # Average absolute percent deviation
         expt = dataset['flashpoint'].tolist()
@@ -329,6 +341,7 @@ class Run:
         dataset['residual'] = residual
         outliers = dataset[(dataset.residual > 100) | (dataset.residual < -100)]
         return outliers
+
 
 class Model:
     """
@@ -354,8 +367,17 @@ class Model:
             'nb_epoch': 50,
             'learning_rate':0.0001,
             'use_queue':False,
-            'mode':"regression"
-        }
+            'mode':"regression"},
+        'weave':{
+            'learning_rate':0.0005,
+            'n_tasks':1,
+            'n_atom_feat':75,
+            'n_pair_feat':14,
+            'n_hidden':50,
+            'n_graph_feat':128,
+            'mode':"regression",
+            'batch_size':100,
+            'nb_epoch':100}
     }
     
     def graphconv(args, train_set, test_set):
@@ -388,15 +410,17 @@ class Model:
                                          learning_rate = model_args['learning_rate'])
         metric_rms = dc.metrics.Metric(dc.metrics.rms_score, np.mean) # RMSE score
         metric_mae = dc.metrics.Metric(dc.metrics.mae_score, np.mean) # MAE score
-        metric_r2 = dc.metrics.Metric(dc.metrics.pearson_r2_score, np.mean) # R2 score
-        history = model.fit(train_dataset, nb_epoch = model_args['nb_epoch'])
+        metric_r2 = dc.metrics.Metric(dc.metrics.pearson_r2_score, np.mean) # R2 score      
+        model.fit(train_dataset, nb_epoch = model_args['nb_epoch'])
         pred = model.predict(test_dataset)
         pred = undo_transforms(pred, transformers)
         flattened_pred = [y for x in pred for y in x]    # convert list of lists to faltten list
         rms_score = list( model.evaluate(test_dataset, [metric_rms],transformers).values()).pop()
         mae_score = list( model.evaluate(test_dataset, [metric_mae],transformers).values()).pop()
         r2_score =  list( model.evaluate(test_dataset, [metric_r2], transformers).values()).pop()
-        return rms_score, mae_score, r2_score, flattened_pred, history
+        train_rms_score = list( model.evaluate(train_dataset, [metric_rms],transformers).values()).pop()
+        train_r2_score =  list( model.evaluate(train_dataset, [metric_r2], transformers).values()).pop()
+        return rms_score, mae_score, r2_score, (train_rms_score,train_r2_score),flattened_pred
 
     def MPNN(args, train_set, test_set):
         # parse arguments
@@ -434,29 +458,65 @@ class Model:
         metric_rms = dc.metrics.Metric(dc.metrics.rms_score, np.mean) # RMSE score
         metric_mae = dc.metrics.Metric(dc.metrics.mae_score, np.mean) # MAE score
         metric_r2 = dc.metrics.Metric(dc.metrics.pearson_r2_score, np.mean) # R2 score
-        history = tf.keras.callbacks.History()
         model.fit(train_dataset, nb_epoch = model_args['nb_epoch'])
-        #print(hist)
         pred = model.predict(test_dataset)
         pred = undo_transforms(pred, transformers)
         flattened_pred = [y for x in pred for y in x]    # convert list of lists to faltten list
         rms_score = list( model.evaluate(test_dataset, [metric_rms],transformers).values()).pop()
         mae_score = list( model.evaluate(test_dataset, [metric_mae],transformers).values()).pop()
         r2_score = list( model.evaluate(test_dataset, [metric_r2],transformers).values()).pop()
-        return rms_score,mae_score,r2_score, flattened_pred, history
+        train_rms_score = list( model.evaluate(train_dataset, [metric_rms],transformers).values()).pop()
+        train_r2_score =  list( model.evaluate(train_dataset, [metric_r2], transformers).values()).pop()
+        return rms_score, mae_score, r2_score, (train_rms_score,train_r2_score),flattened_pred
+    
+    def weave(args, train_set, test_set):
+        # parse arguments
+        model_args = Model.default_args['weave']
+        if args != None:
+            for key in args:
+                model_args[key] = args[key]
+        flashpoint_tasks = ['flashpoint']  # Need to set the column name to be excatly "flashPoint"
+        loader = dc.data.CSVLoader(tasks = flashpoint_tasks,
+                                        smiles_field="smiles",
+                                        featurizer = dc.feat.WeaveFeaturizer())
+        train_dataset = loader.featurize(train_set, shard_size=8192)
+        test_dataset = loader.featurize(test_set, shard_size=8192)
+        transformers = [
+            dc.trans.NormalizationTransformer(
+            transform_y=True, dataset=train_dataset, move_mean=True) # sxy: move_mean may need to change (3/23/2019)
+        ]
+        for transformer in transformers:
+            train_dataset = transformer.transform(train_dataset)
+        transformers = [
+            dc.trans.NormalizationTransformer(
+            transform_y=True, dataset=test_dataset, move_mean=True) # sxy: move_mean may need to change (3/23/2019)
+        ]
+        for transformer in transformers:
+             test_dataset = transformer.transform(test_dataset)
+        model = dc.models.WeaveModel(n_tasks = model_args['n_tasks'],
+                                    n_atom_feat = model_args['n_atom_feat'],
+                                    n_pair_feat = model_args['n_pair_feat'],
+                                    n_graph_feat = model_args['n_atom_feat'],
+                                    n_hidden = model_args['n_hidden'],
+                                    batch_size = model_args['batch_size'],
+                                    learning_rate = model_args['learning_rate'],
+                                    mode = model_args['mode'])
+        metric_rms = dc.metrics.Metric(dc.metrics.rms_score, np.mean) # RMSE score
+        metric_mae = dc.metrics.Metric(dc.metrics.mae_score, np.mean) # MAE score
+        metric_r2 = dc.metrics.Metric(dc.metrics.pearson_r2_score, np.mean) # R2 score
+        model.fit(train_dataset, nb_epoch = model_args['nb_epoch'])
+        pred = model.predict(test_dataset)
+        pred = undo_transforms(pred, transformers)
+        flattened_pred = [y for x in pred for y in x]    # convert list of lists to faltten list
+        rms_score = list( model.evaluate(test_dataset, [metric_rms],transformers).values()).pop()
+        mae_score = list( model.evaluate(test_dataset, [metric_mae],transformers).values()).pop()
+        r2_score =  list( model.evaluate(test_dataset, [metric_r2], transformers).values()).pop()
+        train_rms_score = list( model.evaluate(train_dataset, [metric_rms],transformers).values()).pop()
+        train_r2_score =  list( model.evaluate(train_dataset, [metric_r2], transformers).values()).pop()
+        return rms_score, mae_score, r2_score, (train_rms_score,train_r2_score),flattened_pred
 
 
-class Plotter:
-    def loss_plot(history, cv=0):
-        plt.plot(history.history['loss'])
-        plt.plot(history.history['val_loss'])
-        plt.title('model loss')
-        plt.ylabel('loss')
-        plt.xlabel('epoch')
-        plt.legend(['train', 'test'], loc='upper left')
-        plt.savefig('loss' + cv + '.png')
-        plt.clf()
-
+class Plotter: 
     def parity_plot(pred, test_dataset, errorbar = False, plot_name = "parity_plot",text = None):
         """
         text: dict of text that you want to add to the plot
@@ -499,7 +559,10 @@ class Plotter:
             i =  (max_val-min_val)/20
             for key in text:
                 if key.find('list') == -1:
-                    t = str(key +': ' + str(round(text[key],4)))
+                    if key == 'train':
+                        t = str(key+': '+ str(text[key]))
+                    else:
+                        t = str(key +': ' + str(round(text[key],4)))                    
                     if key == 'AAD':
                         t = t+str('%')
                     plt.text(x,y - i,t)
@@ -511,7 +574,7 @@ class Plotter:
         plt.ylabel("Predicted") 
         plt.xlabel("Experimental") 
         seaborn.despine(fg.fig,top=False, right=False)#, left=True, bottom=True,)
-        plt.savefig('./parity_plot/'+plot_name+'.png', dpi = 100) 
+        plt.savefig('./parity_plot/'+plot_name+'.png', dpi = 500) 
         plt.clf()
 
     def residual_histogram(pred, dataset, plot_name = 'histogram', text = None):
@@ -533,12 +596,15 @@ class Plotter:
         if text != None:
             for key in text:
                 if key.find('list') == -1:
-                    t = str(key +': ' + str(round(text[key],4)))
+                    if key == 'train':
+                        t = str(key+': '+ str(text[key]))
+                    else:
+                        t = str(key +': ' + str(round(text[key],4)))
                     if key == 'AAD':
                         t = t+str('%')
                     plt.text(left,top - i,t)
                     i += top/15
-        plt.savefig('./residual_plot/'+plot_name+'.png', dpi = 100)
+        plt.savefig('./residual_plot/'+plot_name+'.png', dpi = 500)
         plt.clf()
 
     def interactive_plot(pred_result,true_result):
