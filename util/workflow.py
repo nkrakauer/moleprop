@@ -87,7 +87,6 @@ class Loader:
 
 class Splitter:
     def k_fold_source(dataset, source, n_splits = 3, shuffle = True, random_state = None):
-        dataset = integration_helpers.remove_duplicates(dataset) # remove duplicates
         dataset_source = dataset[dataset['source'] == source]
         indices, data = Splitter.k_fold(dataset_source, n_splits, shuffle, random_state)
         return indices, data
@@ -576,6 +575,7 @@ class Plotter:
         seaborn.despine(fg.fig,top=False, right=False)#, left=True, bottom=True,)
         plt.savefig('./parity_plot/'+plot_name+'.png', dpi = 500) 
         plt.clf()
+        plt.close()
 
     def residual_histogram(pred, dataset, plot_name = 'histogram', text = None):
         # Create target Directory if don't exist
@@ -606,6 +606,7 @@ class Plotter:
                     i += top/15
         plt.savefig('./residual_plot/'+plot_name+'.png', dpi = 500)
         plt.clf()
+        plt.close()
 
     def interactive_plot(pred_result,true_result):
         return 0
