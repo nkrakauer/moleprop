@@ -106,7 +106,7 @@ class Splitter:
         indices = kf.split(dataset)
         return indices, dataset
 
-    def LOG(dataset, test_group, frac = 1):  # leave out group
+    def LOG(dataset, test_group, n_splits = None):  # leave out group
         """
         split dataset by leaving out a specific source as test set
         
@@ -135,10 +135,29 @@ class Splitter:
             if dataset.iloc[i]['source'] == test_group:
                 raw_test_indices.append(i)
                 raw_train_indices.remove(i)
-        test_indices = random.sample(raw_test_indices, int(frac*len(raw_test_indices)))
-        raw_test_indices = [x for x in raw_test_indices if x not in test_indices]
-        train_indices = raw_train_indices + raw_test_indices
-        return (train_indices, test_indices), dataset
+        indices = []
+        if n_splits == None:
+            indices.append((raw_train_indices,raw_test_indices))
+        else:
+            test_chunks = []
+            n = int(len(raw_test_indices)/n_splits)
+            split_num = 0
+            for i in range(0,len(raw_test_indices),n):
+                split_num +=1
+                if split_num == n_splits:
+                    test_chunk = raw_test_indices[i:]
+                    i = len(raw_test_indices)+1
+                else:
+                    test_chunk = raw_test_indices[i:i+n]
+                train = raw_train_indices+ test_chunk
+                test = [ind for ind in raw_test_indices if ind not in test_chunk]
+                indices.append((train,test))
+#                 print(train)
+#                 print(test)
+#                 print("=======================================")
+                if split_num == n_splits:
+                    break
+        return indices, dataset
     
     def leave_out_moleClass(dataset, mole_class_to_leave_out):
         """
@@ -235,56 +254,6 @@ class Run:
         #file.write(str(scores))
         file.close()
         return scores, cv_predictions, cv_test_datasets
-
-    def LOG_validation(data,
-                       indices, 
-                       model, 
-                       model_args = None,
-                       metrics = None):
-        """
-        Conduct leave-out-group validation
-        """
-        
-        if not (model == 'MPNN' or model == 'graphconv' or model == 'GC' or model == 'GraphConv' or model == 'weave'):
-            sys.exit("Only supports MPNN model and graphconv and weave model")
-        train_indices, test_indices = indices
-        train_set = data.iloc[train_indices]
-        test_set = data.iloc[test_indices]
-        train_set.to_csv('train_set.csv',index = False)
-        test_set.to_csv('test_set.csv',index = False)
-        Loader.getinfo(train_set, "LOG_Train")
-        Loader.getinfo(test_set, "LOG_Test")
-        if model == 'MPNN':
-            rms_score,mae_score,r2_score,train_scores,pred = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
-        elif model == 'GraphConv' or model == 'graphconv' or model == 'GC':
-            rms_score,mae_score,r2_score,train_scores,pred = Model.graphconv(model_args,"train_set.csv", "test_set.csv")
-        elif model == 'weave':
-            rms_score,mae_score,r2_score,train_scores,pred = Model.weave(model_args,"train_set.csv", "test_set.csv")
-        os.remove("train_set.csv")
-        os.remove("test_set.csv")
-        scores_all = {'RMSE':rms_score,
-                      'MAE': mae_score,
-                      'R2': r2_score,
-                      'AAD':(Run.getAAPD(test_set,pred)),
-                     'train':train_scores}
-        scores = dict()
-        if metrics == None:  # return default scores (RMSE and R2)
-            scores = {'RMSE':scores_all['RMSE'], 
-                      'R2':scores_all['R2'],
-                     'train':scores_all['train']}
-        else:
-            for m in metrics:
-                if not ( m == 'RMSE' or m == 'MAE' or m == 'AAD' or m == 'R2' or m =='train'):
-                    sys.exit('only supports RMSE, MAE, AAD, AAE, R2, and train')
-                scores[m] = scores_all[m]
-        outliers = Run.get_outliers(test_set, pred)
-        outliers.to_csv('outliers.csv')
-        file = open('FINAL_RESULT.txt', 'w')
-        for key in scores:
-            s = key + " = " + str(scores[key]) + "\n"
-            file.write(s)        
-        file.close()
-        return scores, pred, test_set
 
     def custom_validation(train_dataset,
                           test_dataset,
