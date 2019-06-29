@@ -17,8 +17,8 @@ plt.rc('font', size = 8)                                # change plot font size
 ## pkg needed for DeepChem
 import tensorflow as tf
 import deepchem as dc
-#from deepchem.models.tensorgraph.models.graph_models import GraphConvModel
-from EDIT_graph_models import GraphConvModel
+from deepchem.models.tensorgraph.models.graph_models import GraphConvModel
+from transfer_graph_models import TransferGraphConvModel
 
 class Loader:
     def load(file_name, data_dir = './'):
@@ -106,7 +106,7 @@ class Splitter:
         indices = kf.split(dataset)
         return indices, dataset
 
-    def LOG(dataset, test_group, n_splits = None):  # leave out group
+    def LOG(dataset, test_group, use_metallics, use_silicons, n_splits = None, frac = 1):  # leave out group
         """
         split dataset by leaving out a specific source as test set
 
@@ -116,91 +116,198 @@ class Splitter:
         frac: fraction of the left-out group that will be used as test set
         """
         # remove duplicates in train group.
-        test_df = dataset[dataset['source'] == test_group]
-        train_df = dataset[dataset['source'] != test_group]
-        train_df = integration_helpers.remove_duplicates(train_df)
+        if not use_metallics and not use_silicons:
+          if test_group != "random":
+            print("using group to split datasets")
+            nodup_dataset = integration_helpers.remove_duplicates(dataset) # remove duplicates
+            test_df = nodup_dataset[nodup_dataset['source'] == test_group]
+            train_df = nodup_dataset[nodup_dataset['source'] != test_group]
+            #train_df = integration_helpers.remove_duplicates(train_df) # remove duplicates
+            print("||||||||||||||||||| "+test_group+ " will be used as test set|||||||||||||||||||")
+          else:
+            print("using random to split datasets")
+            nodup_dataset = integration_helpers.remove_duplicates(dataset) # remove duplicates
+            perm = np.random.permutation(nodup_dataset.index)
+            m = len(nodup_dataset.index)
+            train_end = int(0.9 * m)
+            test_end = int(0.1 * m) + train_end
+            train_df = nodup_dataset.ix[perm[:train_end]]
+            test_df = nodup_dataset.ix[perm[train_end:test_end]]
+            print("||||||||||||||||||| random data will be used as test set|||||||||||||||||||")
+        elif use_metallics and not use_silicons:
+          print("using metallics as transfer target")
+          nodup_dataset = integration_helpers.remove_duplicates(dataset) # remove duplicates
+          test_df = nodup_dataset[nodup_dataset['is_metallic'] == 1]
+          train_df = nodup_dataset[nodup_dataset['is_metallic'] != 1]
+          #train_df = integration_helpers.remove_duplicates(train_df) # remove duplicates
+          print("||||||||||||||||||| metallics will be used as test set|||||||||||||||||||")
+        else: # always default to silicons
+          print("using silicons as transfer target")
+          nodup_dataset = integration_helpers.remove_duplicates(dataset) # remove duplicates
+          test_df = nodup_dataset[nodup_dataset['is_silicon'] == 1]
+          train_df = nodup_dataset[nodup_dataset['is_silicon'] != 1]
+          #train_df = integration_helpers.remove_duplicates(train_df) # remove duplicates
+          print("||||||||||||||||||| silicons will be used as test set|||||||||||||||||||")
 
         # remove data points in  train dataframe that match smiles strings in
         # test dataframe
         for index, row in test_df.iterrows():
             smi = row['smiles']
             train_df = train_df[train_df['smiles'] != smi]
+        if test_group == "random":
+          temp_train_indices = []
+          for index, row in train_df.iterrows():
+            temp_train_indices.append(index)
+          temp_test_indices = []
+          for index, row in test_df.iterrows():
+            temp_test_indices.append(index)
+        orig_dataset = dataset
         frames = [train_df, test_df]
         dataset = pd.concat(frames)
         dataset.reset_index(drop=True, inplace=True)
         Loader.getinfo(dataset, 'Full_dataset')
         raw_test_indices = []
         raw_train_indices = list(range(len(dataset.index)))
-        print("||||||||||||||||||| "+test_group+ " will be used as test set|||||||||||||||||||")
-        for i in range(len(dataset.index)):
-            if dataset.iloc[i]['source'] == test_group:
-                raw_test_indices.append(i)
-                raw_train_indices.remove(i)
-        indices = []
-        if n_splits == None:
-            indices.append((raw_train_indices,raw_test_indices))
+#        print("||||||||||||||||||| "+test_group+ " will be used as test set|||||||||||||||||||")
+#        for i in range(len(dataset.index)):
+#            if dataset.iloc[i]['source'] == test_group:
+#                raw_test_indices.append(i)
+#                raw_train_indices.remove(i)
+#        indices = []
+#        if n_splits == None:
+#            indices.append((raw_train_indices,raw_test_indices))
+#        else:
+#            test_chunks = []
+#            n = int(len(raw_test_indices)/n_splits)
+#            split_num = 0
+#            for i in range(0,len(raw_test_indices),n):
+#                split_num +=1
+#                if split_num == n_splits:
+#                    test_chunk = raw_test_indices[i:]
+#                    i = len(raw_test_indices)+1
+#                else:
+#                    test_chunk = raw_test_indices[i:i+n]
+#                train = raw_train_indices+ test_chunk
+#                test = [ind for ind in raw_test_indices if ind not in test_chunk]
+#                indices.append((train,test))
+##                 print(train)
+##                 print(test)
+##                 print("=======================================")
+#                if split_num == n_splits:
+#                    break
+#        return indices, dataset
+        if not use_metallics and not use_silicons:
+          if test_group != "random":
+            for i in range(len(dataset.index)):
+                if dataset.iloc[i]['source'] == test_group:
+                    raw_test_indices.append(i)
+                    raw_train_indices.remove(i)
+          else:
+            print("in random data splits for LOG")
+            raw_test_indices = temp_test_indices
+            raw_train_indices = temp_train_indices
+        elif use_metallics and not use_silicons:
+          for i in range(len(dataset.index)):
+              if dataset.iloc[i]['is_metallic'] == 1:
+                  raw_test_indices.append(i)
+                  raw_train_indices.remove(i)
         else:
-            test_chunks = []
-            n = int(len(raw_test_indices)/n_splits)
-            split_num = 0
-            for i in range(0,len(raw_test_indices),n):
-                split_num +=1
-                if split_num == n_splits:
-                    test_chunk = raw_test_indices[i:]
-                    i = len(raw_test_indices)+1
-                else:
-                    test_chunk = raw_test_indices[i:i+n]
-                train = raw_train_indices+ test_chunk
-                test = [ind for ind in raw_test_indices if ind not in test_chunk]
-                indices.append((train,test))
-#                 print(train)
-#                 print(test)
-#                 print("=======================================")
-                if split_num == n_splits:
-                    break
-        return indices, dataset
+          for i in range(len(dataset.index)):
+              if dataset.iloc[i]['is_silicon'] == 1:
+                  raw_test_indices.append(i)
+                  raw_train_indices.remove(i)
+        test_indices = random.sample(raw_test_indices, int(frac*len(raw_test_indices)))
+        raw_test_indices = [x for x in raw_test_indices if x not in test_indices]
+        train_indices = raw_train_indices + raw_test_indices
+        if test_group != "random":
+          return (train_indices, test_indices), dataset
+        else:
+          return (train_indices, test_indices), orig_dataset
 
     def basic_transfer_splits(dataset, test_group, use_metallics, use_silicons):
         # remove duplicates in train group.
         if not use_metallics and not use_silicons:
-          print("using group to split datasets")
-          test_df = dataset[dataset['source'] == test_group]
-          train_df = dataset[dataset['source'] != test_group]
-          train_df = integration_helpers.remove_duplicates(train_df) # remove duplicates
+          if test_group != "random":
+            print("using group to split datasets")
+            nodup_dataset = integration_helpers.remove_duplicates(dataset) # remove duplicates
+            test_df = nodup_dataset[nodup_dataset['source'] == test_group]
+            train_df = nodup_dataset[nodup_dataset['source'] != test_group]
+            #train_df = integration_helpers.remove_duplicates(train_df) # remove duplicates
+            print("||||||||||||||||||| "+test_group+ " will be used as test set|||||||||||||||||||")
+          else:
+            print("using random to split datasets")
+            nodup_dataset = integration_helpers.remove_duplicates(dataset) # remove duplicates
+            perm = np.random.permutation(nodup_dataset.index)
+            m = len(nodup_dataset.index)
+            train_end = int(0.9 * m)
+            test_end = int(0.1 * m) + train_end
+            train_df = nodup_dataset.ix[perm[:train_end]]
+            test_df = nodup_dataset.ix[perm[train_end:test_end]]
+            print("||||||||||||||||||| random data will be used as test set|||||||||||||||||||")
         elif use_metallics and not use_silicons:
           print("using metallics as transfer target")
-          test_df = dataset[dataset['is_metallic'] == 1]
-          train_df = dataset[dataset['is_metallic'] != 1]
-          train_df = integration_helpers.remove_duplicates(train_df) # remove duplicates
+          nodup_dataset = integration_helpers.remove_duplicates(dataset) # remove duplicates
+          test_df = nodup_dataset[nodup_dataset['is_metallic'] == 1]
+          train_df = nodup_dataset[nodup_dataset['is_metallic'] != 1]
+          #train_df = integration_helpers.remove_duplicates(train_df) # remove duplicates
+          print("||||||||||||||||||| metallics will be used as test set|||||||||||||||||||")
         else: # always default to silicons
           print("using silicons as transfer target")
-          test_df = dataset[dataset['is_silicon'] == 1]
-          train_df = dataset[dataset['is_silicon'] != 1]
-          train_df = integration_helpers.remove_duplicates(train_df) # remove duplicates
+          nodup_dataset = integration_helpers.remove_duplicates(dataset) # remove duplicates
+          test_df = nodup_dataset[nodup_dataset['is_silicon'] == 1]
+          train_df = nodup_dataset[nodup_dataset['is_silicon'] != 1]
+          #train_df = integration_helpers.remove_duplicates(train_df) # remove duplicates
+          print("||||||||||||||||||| silicons will be used as test set|||||||||||||||||||")
 
         # remove data points in  train dataframe that match smiles strings in
         # test dataframe
         for index, row in test_df.iterrows():
             smi = row['smiles']
             train_df = train_df[train_df['smiles'] != smi]
+        if test_group == "random":
+          temp_train_indices = []
+          for index, row in train_df.iterrows():
+            temp_train_indices.append(index)
+          temp_test_indices = []
+          for index, row in test_df.iterrows():
+            temp_test_indices.append(index)
+        orig_dataset = dataset
         frames = [train_df, test_df]
         dataset = pd.concat(frames)
         dataset.reset_index(drop=True, inplace=True)
         Loader.getinfo(dataset, 'Full_dataset')
         raw_test_indices = []
         raw_train_indices = list(range(len(dataset.index)))
-        print("||||||||||||||||||| "+test_group+ " will be used as test set|||||||||||||||||||")
-        for i in range(len(dataset.index)):
-            if dataset.iloc[i]['source'] == test_group:
-                raw_test_indices.append(i)
-                raw_train_indices.remove(i)
-        non_geleste_test_indices = random.sample(raw_train_indices, int(0*len(raw_train_indices)))
-        train_indices = [x for x in raw_train_indices if x not in non_geleste_test_indices]
+        if not use_metallics and not use_silicons:
+          if test_group != "random":
+            for i in range(len(dataset.index)):
+                if dataset.iloc[i]['source'] == test_group:
+                    raw_test_indices.append(i)
+                    raw_train_indices.remove(i)
+          else:
+            print("in random data splits for transfer learning")
+            raw_test_indices = temp_test_indices
+            raw_train_indices = temp_train_indices
+        elif use_metallics and not use_silicons:
+          for i in range(len(dataset.index)):
+              if dataset.iloc[i]['is_metallic'] == 1:
+                  raw_test_indices.append(i)
+                  raw_train_indices.remove(i)
+        else:
+          for i in range(len(dataset.index)):
+              if dataset.iloc[i]['is_silicon'] == 1:
+                  raw_test_indices.append(i)
+                  raw_train_indices.remove(i)
+        non_target_test_indices = random.sample(raw_train_indices, int(0*len(raw_train_indices)))
+        train_indices = [x for x in raw_train_indices if x not in non_target_test_indices]
         test_indices = random.sample(raw_test_indices, int(0.5*len(raw_test_indices)))
         raw_test_indices = [x for x in raw_test_indices if x not in test_indices]
         second_train_indices = raw_test_indices
-        test_indices = test_indices + non_geleste_test_indices
-        return (train_indices, test_indices, second_train_indices), dataset
+        test_indices = test_indices + non_target_test_indices
+        if test_group != "random":
+          return (train_indices, test_indices, second_train_indices), dataset
+        else:
+          return (train_indices, test_indices, second_train_indices), orig_dataset
 
     def get_organosilicons(dataset):
         train_df = dataset.copy()
@@ -490,7 +597,14 @@ class Run:
         print("[DEBUG] size of second_train_set: ", len(second_train_set.index))
 
         # get model
-        if model == 'GraphConv' or model == 'graphconv' or model == 'GC':
+        model_obj = None
+        if nn_edit:
+
+            # DEBUG
+            print("[DEBUG] creating transfer graph conv model")
+
+            model_obj = Model.transfergraphconv(model_args,"train_set.csv", "test_set.csv", True)
+        elif model == 'GraphConv' or model == 'graphconv' or model == 'GC':
             model_obj = Model.graphconv(model_args,"train_set.csv", "test_set.csv", True)
         else:
           print("you messed up boy")
@@ -499,6 +613,10 @@ class Run:
         # DEBUG
         print("[DEBUG] model object built, trained, and saved")
 
+        # NOTE
+        # sources:
+        #  - https://github.com/deepchem/deepchem/issues/844
+        #  - https://github.com/deepchem/deepchem/pull/850/commits
         if nn_edit:
 
           # DEBUG
@@ -506,39 +624,46 @@ class Run:
           print("[DEBUG] model_obj: ", model_obj)
           print("[DEBUG] model_obj.poop: ", model_obj.poop)
           print("[DEBUG] model_obj.model: ", model_obj.model)
-          model_obj.model.summary()
-          # NOTE if the above doesn't work try this:
-          #from keras.utils import plot_model
-          #plot_model(model_obj, to_file="model.png")
+#          model_obj.model.summary()
+#          # NOTE if the above doesn't work try this:
+#          from keras.utils import plot_model
+#          plot_model(model_obj.model, to_file="model.png")
 
           # edit model structure
           #  - freeze base model
-          model_obj.model.trainable = False
-          for l in model_obj.model.layers:
-            l.trainable = False
+#          model_obj.model.trainable = False
+#          for l in model_obj.model.layers:
+#            l.trainable = False
 
           # DEBUG
-          print("[DEBUG] checking layers for trainability")
-          pd.set_option('max_colwidth', -1)
-          layers = [(layer, layer.name, layer.trainable) for layer in vgg_model.layers]
-          pd.DataFrame(layers, columns=['Layer Type', 'Layer Name', 'Layer Trainable'])
+#          print("[DEBUG] checking layers for trainability")
+#          pd.set_option('max_colwidth', -1)
+#          layers = [(layer, layer.name, layer.trainable) for layer in vgg_model.layers]
+#          pd.DataFrame(layers, columns=['Layer Type', 'Layer Name', 'Layer Trainable'])
 
           #  - add layers
-          model_obj.model = tf.keras.Sequential([
-            model_obj.model,
-            keras.layers.GlobalAveragePooling2D(),
-            keras.layers.Dense(1, activation='sigmoid')
-          ])
+#          model_obj.model = tf.keras.Sequential([
+#            model_obj.model,
+#            keras.layers.GlobalAveragePooling2D(),
+#            keras.layers.Dense(1, activation='sigmoid')
+#          ])
 
           #  - recompile model
-          model_obj.model.compile(optimizer=tf.keras.optimizers.RMSprop(lr=0.0001),
-              loss='binary_crossentropy',
-              metrics=['accuracy'])
+#          model_obj.model.compile(optimizer=tf.keras.optimizers.RMSprop(lr=0.0001),
+#              loss='binary_crossentropy',
+#              metrics=['accuracy'])
 
           # DEBUG
-          print("[DEBUG] viewing new model")
-          model_obj.model.summary()
-          len(model_obj.model.trainable_variables)
+#          print("[DEBUG] viewing new model")
+#          model_obj.model.summary()
+#          len(model_obj.model.trainable_variables)
+          with open("/srv/home/apolitowicz/moleprop/util/before_add_layers.txt", 'a'):
+            os.utime("/srv/home/apolitowicz/moleprop/util/before_add_layers.txt", None)
+
+          model_obj.add_layers()
+
+          # DEBUG
+          print("[DEBUG] layers added and old model (hopefully) frozen")
 
           # continue training, then test
           rms_score,mae_score,r2_score,pred = Model.update_model(model_obj,"second_train_set.csv", "test_set.csv")
@@ -678,13 +803,17 @@ class Model:
           # DEBUG
           print("[DEBUG] in only_model mode")
 
+          #model = dc.models.GraphConvModel(n_tasks = model_args['n_tasks'],
+          #                                 mode = model_args['mode'],
+          #                                 dropout = model_args['dropout'],
+          #                                 model_dir='models')
           model = dc.models.GraphConvModel(n_tasks = model_args['n_tasks'],
                                            mode = model_args['mode'],
                                            dropout = model_args['dropout'],
                                            model_dir='models',
                                            learning_rate = model_args['learning_rate'])
           model.fit(train_dataset, nb_epoch = model_args['nb_epoch'])
-          model.save()
+          #model.save()
           return model
         else:
           model = dc.models.GraphConvModel(n_tasks = model_args['n_tasks'],
@@ -835,12 +964,24 @@ class Model:
         metric_mae = dc.metrics.Metric(dc.metrics.mae_score, np.mean) # MAE score
         metric_r2 = dc.metrics.Metric(dc.metrics.pearson_r2_score, np.mean) # R2 score
 
+        # DEBUG
+        with open("/srv/home/apolitowicz/moleprop/util/before_second_fit.txt", 'a'):
+          os.utime("/srv/home/apolitowicz/moleprop/util/before_second_fit.txt", None)
+
         # continue fitting
         model.fit(train_dataset, nb_epoch = model_args['nb_epoch'])
+
+        # DEBUG
+        with open("/srv/home/apolitowicz/moleprop/util/after_second_fit.txt", 'a'):
+          os.utime("/srv/home/apolitowicz/moleprop/util/after_second_fit.txt", None)
 
         # predict
         pred = model.predict(test_dataset)
         pred = undo_transforms(pred, transformers)
+
+        # DEBUG
+        with open("/srv/home/apolitowicz/moleprop/util/after_predict.txt", 'a'):
+          os.utime("/srv/home/apolitowicz/moleprop/util/after_predict.txt", None)
 
         output_stuff = []
         untransformed_test_labels = undo_transforms(test_dataset.y, transformers)
@@ -855,6 +996,71 @@ class Model:
         train_rms_score = list( model.evaluate(train_dataset, [metric_rms],transformers).values()).pop()
         train_r2_score =  list( model.evaluate(train_dataset, [metric_r2], transformers).values()).pop()
         return rms_score, mae_score, r2_score, (train_rms_score,train_r2_score),flattened_pred
+
+    def transfergraphconv(args, train_set, test_set, only_model = False):
+        # parse arguments
+        model_args = Model.default_args['graphconv']
+        if args != None:
+            for key in args:
+                model_args[key] = args[key]
+        flashpoint_tasks = ['flashpoint']  # Need to set the column name to be excatly "flashpoint"
+        loader = dc.data.CSVLoader(tasks = flashpoint_tasks,
+                                        smiles_field="smiles",
+                                        featurizer = dc.feat.ConvMolFeaturizer())
+        train_dataset = loader.featurize(train_set, shard_size=8192)
+        test_dataset = loader.featurize(test_set, shard_size=8192)
+        transformers = [
+            dc.trans.NormalizationTransformer(
+            transform_y=True, dataset=train_dataset, move_mean=True) # sxy: move_mean may need to change (3/23/2019)
+        ]
+        for transformer in transformers:
+            train_dataset = transformer.transform(train_dataset)
+        transformers = [
+            dc.trans.NormalizationTransformer(
+            transform_y=True, dataset=test_dataset, move_mean=True) # sxy: move_mean may need to change (3/23/2019)
+        ]
+        for transformer in transformers:
+             test_dataset = transformer.transform(test_dataset)
+        if only_model:
+          # DEBUG
+          print("[DEBUG] in only_model mode")
+
+          #model = TransferGraphConvModel(n_tasks = model_args['n_tasks'],
+          #                                 mode = model_args['mode'],
+          #                                 dropout = model_args['dropout'],
+          #                                 model_dir='models')
+          model = TransferGraphConvModel(n_tasks = model_args['n_tasks'],
+                                           mode = model_args['mode'],
+                                           dropout = model_args['dropout'],
+                                           learning_rate = model_args['learning_rate'])
+          model.fit(train_dataset, nb_epoch = model_args['nb_epoch'])
+          #model.save()
+          return model
+        else:
+          model = TransferGraphConvModel(n_tasks = model_args['n_tasks'],
+                                           mode = model_args['mode'],
+                                           dropout = model_args['dropout'],
+                                           learning_rate = model_args['learning_rate'])
+          metric_rms = dc.metrics.Metric(dc.metrics.rms_score, np.mean) # RMSE score
+          metric_mae = dc.metrics.Metric(dc.metrics.mae_score, np.mean) # MAE score
+          metric_r2 = dc.metrics.Metric(dc.metrics.pearson_r2_score, np.mean) # R2 score
+          model.fit(train_dataset, nb_epoch = model_args['nb_epoch'])
+          pred = model.predict(test_dataset)
+          pred = undo_transforms(pred, transformers)
+
+          output_stuff = []
+          untransformed_test_labels = undo_transforms(test_dataset.y, transformers)
+          for idx,y in enumerate(untransformed_test_labels):
+            output_stuff.append((y[0],pred[idx][0]))
+          np.savetxt("predictions.csv", output_stuff, delimiter=",")
+
+          flattened_pred = [y for x in pred for y in x]    # convert list of lists to faltten list
+          rms_score = list( model.evaluate(test_dataset, [metric_rms],transformers).values()).pop()
+          mae_score = list( model.evaluate(test_dataset, [metric_mae],transformers).values()).pop()
+          r2_score =  list( model.evaluate(test_dataset, [metric_r2], transformers).values()).pop()
+          train_rms_score = list( model.evaluate(train_dataset, [metric_rms],transformers).values()).pop()
+          train_r2_score =  list( model.evaluate(train_dataset, [metric_r2], transformers).values()).pop()
+          return rms_score, mae_score, r2_score, (train_rms_score,train_r2_score),flattened_pred
 
 class Plotter:
     def parity_plot(pred, test_dataset, errorbar = False, plot_name = "parity_plot",text = None):
