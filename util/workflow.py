@@ -116,17 +116,15 @@ class Splitter:
         frac: fraction of the left-out group that will be used as test set
         """
         # remove duplicates in train group.
+        nodup_dataset = integration_helpers.remove_duplicates(dataset) # remove duplicates
         if not use_metallics and not use_silicons:
           if test_group != "random":
             print("using group to split datasets")
-            nodup_dataset = integration_helpers.remove_duplicates(dataset) # remove duplicates
             test_df = nodup_dataset[nodup_dataset['source'] == test_group]
             train_df = nodup_dataset[nodup_dataset['source'] != test_group]
-            #train_df = integration_helpers.remove_duplicates(train_df) # remove duplicates
             print("||||||||||||||||||| "+test_group+ " will be used as test set|||||||||||||||||||")
           else:
             print("using random to split datasets")
-            nodup_dataset = integration_helpers.remove_duplicates(dataset) # remove duplicates
             perm = np.random.permutation(nodup_dataset.index)
             m = len(nodup_dataset.index)
             train_end = int(0.9 * m)
@@ -136,17 +134,13 @@ class Splitter:
             print("||||||||||||||||||| random data will be used as test set|||||||||||||||||||")
         elif use_metallics and not use_silicons:
           print("using metallics as transfer target")
-          nodup_dataset = integration_helpers.remove_duplicates(dataset) # remove duplicates
           test_df = nodup_dataset[nodup_dataset['is_metallic'] == 1]
           train_df = nodup_dataset[nodup_dataset['is_metallic'] != 1]
-          #train_df = integration_helpers.remove_duplicates(train_df) # remove duplicates
           print("||||||||||||||||||| metallics will be used as test set|||||||||||||||||||")
         else: # always default to silicons
           print("using silicons as transfer target")
-          nodup_dataset = integration_helpers.remove_duplicates(dataset) # remove duplicates
           test_df = nodup_dataset[nodup_dataset['is_silicon'] == 1]
           train_df = nodup_dataset[nodup_dataset['is_silicon'] != 1]
-          #train_df = integration_helpers.remove_duplicates(train_df) # remove duplicates
           print("||||||||||||||||||| silicons will be used as test set|||||||||||||||||||")
 
         # remove data points in  train dataframe that match smiles strings in
@@ -168,34 +162,6 @@ class Splitter:
         Loader.getinfo(dataset, 'Full_dataset')
         raw_test_indices = []
         raw_train_indices = list(range(len(dataset.index)))
-#        print("||||||||||||||||||| "+test_group+ " will be used as test set|||||||||||||||||||")
-#        for i in range(len(dataset.index)):
-#            if dataset.iloc[i]['source'] == test_group:
-#                raw_test_indices.append(i)
-#                raw_train_indices.remove(i)
-#        indices = []
-#        if n_splits == None:
-#            indices.append((raw_train_indices,raw_test_indices))
-#        else:
-#            test_chunks = []
-#            n = int(len(raw_test_indices)/n_splits)
-#            split_num = 0
-#            for i in range(0,len(raw_test_indices),n):
-#                split_num +=1
-#                if split_num == n_splits:
-#                    test_chunk = raw_test_indices[i:]
-#                    i = len(raw_test_indices)+1
-#                else:
-#                    test_chunk = raw_test_indices[i:i+n]
-#                train = raw_train_indices+ test_chunk
-#                test = [ind for ind in raw_test_indices if ind not in test_chunk]
-#                indices.append((train,test))
-##                 print(train)
-##                 print(test)
-##                 print("=======================================")
-#                if split_num == n_splits:
-#                    break
-#        return indices, dataset
         if not use_metallics and not use_silicons:
           if test_group != "random":
             for i in range(len(dataset.index)):
@@ -216,13 +182,35 @@ class Splitter:
               if dataset.iloc[i]['is_silicon'] == 1:
                   raw_test_indices.append(i)
                   raw_train_indices.remove(i)
-        test_indices = random.sample(raw_test_indices, int(frac*len(raw_test_indices)))
-        raw_test_indices = [x for x in raw_test_indices if x not in test_indices]
-        train_indices = raw_train_indices + raw_test_indices
-        if test_group != "random":
-          return (train_indices, test_indices), dataset
+        if n_splits == None:
+          test_indices = random.sample(raw_test_indices, int(frac*len(raw_test_indices)))
+          raw_test_indices = [x for x in raw_test_indices if x not in test_indices]
+          train_indices = raw_train_indices + raw_test_indices
+          indices = []
+          indices.append((train_indices, test_indices))
         else:
-          return (train_indices, test_indices), orig_dataset
+          test_chunks = []
+          n = int(len(raw_test_indices)/n_splits)
+          split_num = 0
+          for i in range(0,len(raw_test_indices),n):
+              split_num +=1
+              if split_num == n_splits:
+                  test_chunk = raw_test_indices[i:]
+                  i = len(raw_test_indices)+1
+              else:
+                  test_chunk = raw_test_indices[i:i+n]
+              train = raw_train_indices+ test_chunk
+              test = [ind for ind in raw_test_indices if ind not in test_chunk]
+              indices.append((train,test))
+              #print(train)
+              #print(test)
+              #print("=======================================")
+              if split_num == n_splits:
+                  break
+        if test_group != "random":
+          return indices, dataset
+        else:
+          return indices, orig_dataset
 
     def basic_transfer_splits(dataset, test_group, use_metallics, use_silicons):
         # remove duplicates in train group.
@@ -484,6 +472,69 @@ class Run:
         file.close()
         return scores, cv_predictions, cv_test_datasets
 
+    def LOG_validation(data,
+                       indices,
+                       model,
+                       model_args = None,
+                       metrics = None):
+      if not (model == 'MPNN' or model == 'graphconv' or model == 'GC' or model == 'GraphConv' or model == 'weave'):
+        sys.exit("Only supports MPNN model and graphconv and weave model")
+      train_indices, test_indices = indices
+      train_set = data.iloc[train_indices]
+      test_set = data.iloc[test_indices]
+      train_set.to_csv('train_set.csv',index = False)
+      test_set.to_csv('test_set.csv',index = False)
+      Loader.getinfo(train_set, "LOG_Train")
+      Loader.getinfo(test_set, "LOG_Test")
+      if model == "MPNN":
+        rms_score,mae_score,r2_score,train_score,pred = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
+      elif model == "GraphConv" or model == "graphconv" or model == "GC":
+        rms_score,mae_score,r2_score,train_score,pred = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
+      elif model == "weave":
+        rms_score,mae_score,r2_score,train_score,pred = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
+      os.remove("train_set.csv")
+      os.remove("test_set.csv")
+      scores_all = {
+      rms_scores = []
+      rms_scores.append(rms_score)
+      mae_scores = []
+      mae_scores.append(mae_score)
+      r2_scores = []
+      r2_scores.append(r2_score)
+      aad_scores = []
+      aad_score = (Run.getAAPD(test_set,pred))
+      aad_scores.append(aad_score)
+      train_scores = []
+      train_scores.append(train_score)
+      scores_all = {'RMSE':rms_score,'RMSE_list':rms_scores,
+                    'MAE': mae_score,'MAE_list':mae_scores,
+                    'R2': r2_score,'R2_list': r2_scores,
+                    'AAD':aad_score,'AAD_list':aad_scores,
+                    'train':train_score,'train_list':train_scores}
+      scores = dict()
+      if metrics == None:  # return default scores (RMSE and R2)
+          scores = {'RMSE':scores_all['RMSE'],
+                    'R2':scores_all['R2'],
+                    'RMSE_list':scores_all['RMSE_list'],
+                    'R2_list':scores_all['R2_list']}
+      else:
+        for m in metrics:
+          if not (m == 'RMSE' or m == 'MAE' or m == 'AAD' or m == 'R2' or m == 'train'):
+            sys.exit('only supports RMSE, MAE, AAD, AAE, R2, and train')
+          scores[m] = scores_all[m]
+      outliers = Run.get_outliers(test_set, pred)
+      outliers.to_csv('outliers.csv')
+      file = open('FINAL_RESULT.txt', 'w')
+      for key in scores:
+          s = key + " = " + str(scores[key]) + "\n"
+          file.write(s)
+      file.close()
+      predictions = []
+      predictions.append(pred)
+      test_datasets = []
+      test_datasets.append(test_set)
+      return scores, predictions, test_datasets
+
     def custom_validation(train_dataset,
                           test_dataset,
                           model, 
@@ -513,28 +564,6 @@ class Run:
             scores = {'RMSE':scores_all['RMSE'], 
                       'R2':scores_all['R2'],
                      'train':scores_all['train']}
-#            rms_score,mae_score,r2_score,pred = Model.graphconv(model_args,"train_set.csv", "test_set.csv")
-#        os.remove("train_set.csv")
-#        os.remove("test_set.csv")
-#        rms_scores = []
-#        rms_scores.append(rms_score)
-#        mae_scores = []
-#        mae_scores.append(mae_score)
-#        r2_scores = []
-#        r2_scores.append(r2_score)
-#        aad_scores = []
-#        aad_score = (Run.getAAPD(test_set,pred))
-#        aad_scores.append(aad_score)
-#        scores_all = {'RMSE':rms_score,'RMSE_list':rms_scores,
-#                      'MAE': mae_score,'MAE_list':mae_scores,
-#                      'R2': r2_score,'R2_list': r2_scores,
-#                      'AAD':aad_score,'AAD_list':aad_scores}
-#        scores = dict()
-#        if metrics == None:  # return default scores (RMSE and R2)
-#            scores = {'RMSE':scores_all['RMSE'],
-#                      'R2':scores_all['R2'],
-#                      'RMSE_list':scores_all['RMSE_list'],
-#                      'R2_list':scores_all['R2_list']}
         else:
             for m in metrics:
                 if not ( m == 'RMSE' or m == 'MAE' or m == 'AAD' or m == 'R2' or m =='train'):
@@ -545,17 +574,6 @@ class Run:
         outliers = Run.get_outliers(test_set, pred)
         outliers.to_csv('outliers.csv')
         return scores, pred, test_set
-    
-#        file = open('FINAL_RESULT.txt', 'w')
-#        for key in scores:
-#            s = key + " = " + str(scores[key]) + "\n"
-#            file.write(s)
-#        file.close()
-#        predictions = []
-#        predictions.append(pred)
-#        test_datasets = []
-#        test_datasets.append(test_set)
-#        return scores, predictions, test_datasets
 
     def basic_transfer(data,
                        indices,
