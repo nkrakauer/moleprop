@@ -663,12 +663,13 @@ class Model:
         ]
         for transformer in transformers:
             train_dataset = transformer.transform(train_dataset)
-        transformers = [
-            dc.trans.NormalizationTransformer(
-            transform_y=True, dataset=test_dataset, move_mean=True) # sxy: move_mean may need to change (3/23/2019)
-        ]
-        for transformer in transformers:
-             test_dataset = transformer.transform(test_dataset)
+            test_dataset = transformer.transform(test_dataset)
+#         transformers = [
+#             dc.trans.NormalizationTransformer(
+#             transform_y=True, dataset=test_dataset, move_mean=True) # sxy: move_mean may need to change (3/23/2019)
+#         ]
+#         for transformer in transformers:
+#              test_dataset = transformer.transform(test_dataset)
         if only_model:
           # DEBUG
           print("[DEBUG] in only_model mode")
@@ -725,12 +726,13 @@ class Model:
         ]
         for transformer in transformers:
             train_dataset = transformer.transform(train_dataset)
-        transformers = [
-            dc.trans.NormalizationTransformer(
-            transform_y=True, dataset=test_dataset, move_mean=True) # sxy: move_mean may need to change (3/23/2019)
-        ]
-        for transformer in transformers:
-             test_dataset = transformer.transform(test_dataset)
+            test_dataset = transformer.transform(test_dataset)
+#         transformers = [
+#             dc.trans.NormalizationTransformer(
+#             transform_y=True, dataset=test_dataset, move_mean=True) # sxy: move_mean may need to change (3/23/2019)
+#         ]
+#         for transformer in transformers:
+#              test_dataset = transformer.transform(test_dataset)
         model = dc.models.MPNNModel(n_tasks = model_args['n_tasks'],
                                     n_atom_feat = model_args['n_atom_feat'],
                                     n_pair_feat = model_args['n_pair_feat'],
@@ -772,12 +774,13 @@ class Model:
         ]
         for transformer in transformers:
             train_dataset = transformer.transform(train_dataset)
-        transformers = [
-            dc.trans.NormalizationTransformer(
-            transform_y=True, dataset=test_dataset, move_mean=True) # sxy: move_mean may need to change (3/23/2019)
-        ]
-        for transformer in transformers:
-             test_dataset = transformer.transform(test_dataset)
+            test_dataset = transformer.transform(test_dataset)
+#         transformers = [
+#             dc.trans.NormalizationTransformer(
+#             transform_y=True, dataset=test_dataset, move_mean=True) # sxy: move_mean may need to change (3/23/2019)
+#         ]
+#         for transformer in transformers:
+#              test_dataset = transformer.transform(test_dataset)
         model = dc.models.WeaveModel(n_tasks = model_args['n_tasks'],
                                     n_atom_feat = model_args['n_atom_feat'],
                                     n_pair_feat = model_args['n_pair_feat'],
