@@ -31,21 +31,19 @@ train = [i for i in range(len(data))]
 for x in test:
     train.remove(x)
 
-ind = (train,test)
+ind = [(train,test)]
 # conduct multiple cross validation
 for r in range(repetition):
 
-    '''
-    args = {'nb_epoch': 80,
-        'batch_size': 50,
+    args = {'nb_epoch': 70,
+        'batch_size': 8,
         'n_tasks': 1,
         'graph_conv_layers':[64,64],
-        'dense_layer_size': 256,
-#        'dropout': 0.0,           # for testing if this workflow tool can correctly use default dropout if it is not inputted
+        'dense_layer_size': 512,
+        'learning_rate':0.005,
+        'dropout': 0.0,           # for testing if this workflow tool can correctly use default dropout if it is not inputted
         'mode': 'regression'}
-    '''
 
-    args = None
     print("About to simulate")
     scores,pred,test_dataset = wf.Run.LOG_validation(data,ind, model ='GC',model_args = args, metrics = ['AAD', 'RMSE', 'MAE', 'R2'])
 
@@ -78,6 +76,10 @@ for i in range(repetition):
         f_pred[k].append(multi_predictions[i][k])
 
 f_scores['RMSE/STD'] = f_scores['RMSE']/leave_out_group['flashpoint'].std()
+
+for key in f_scores:
+    print("\n"+key+":")
+    print(f_scores[key])
 
 wf.Plotter.parity_plot(f_pred,leave_out_group,plot_name = "FINAL_Full_parity", text = f_scores, errorbar = True)
 f_avg_pred = list()

@@ -10,11 +10,11 @@ data = loader.load(file_name = 'godinho11.csv',data_dir = '/srv/home/xsun256/mol
 
 multi_predictions = list() # list of lists of lists
 multi_scores = list()      # for getting the average scores 
-repetition = 5             # number of cv we want to conduct
+repetition = 10             # number of cv we want to conduct
 
 print("About to split")
 splitter = wf.Splitter
-ind,dataset = splitter.k_fold(data, n_splits = 5)
+ind,dataset = splitter.k_fold(data, n_splits = 10)
 
 indices = list()
 for train,test in ind:
@@ -23,19 +23,17 @@ for train,test in ind:
 # conduct multiple cross validation
 for r in range(repetition):
 
-    '''
-    args = {'nb_epoch': 80,
-        'batch_size': 50,
+    args = {'nb_epoch': 50,
+        'batch_size': 32,
         'n_tasks': 1,
         'graph_conv_layers':[64,64],
-        'dense_layer_size': 256,
-#        'dropout': 0.0,           # for testing if this workflow tool can correctly use default dropout if it is not inputted
+        'dense_layer_size': 128,
+        'learning_rate':0.001,
+        'dropout': 0.2,           # for testing if this workflow tool can correctly use default dropout if it is not inputted
         'mode': 'regression'}
-    '''
 
-    args = None
     print("About to simulate")
-    scores,predictions,test_datasets = wf.Run.cv(dataset,indices, 'GC',model_args = args,n_splits = 5, metrics = ['AAD', 'RMSE', 'MAE', 'R2'])
+    scores,predictions,test_datasets = wf.Run.cv(dataset,indices, 'GC',model_args = args,n_splits = 10, metrics = ['AAD', 'RMSE', 'MAE', 'R2','train'])
 
     for key in scores:
         print(key+" = "+str(scores[key]))
@@ -93,6 +91,10 @@ for i in range(repetition):
         f_pred[k].append(multi_predictions[i][k])
 
 f_scores['RMSE/STD'] = f_scores['RMSE']/dataset['flashpoint'].std()
+
+for key in f_scores:
+    print("\n"+ key + ":")
+    print(f_scores[key])
 
 wf.Plotter.parity_plot(f_pred,D,plot_name = "FINAL_Full_parity", text = f_scores, errorbar = True)
 f_avg_pred = list()

@@ -6,25 +6,23 @@ import pandas as pd
 print("About to load")
 loader = wf.Loader
 # TODO need to change file name and dir to your local environment
-data = loader.load(file_name = 'Saldana11.csv',data_dir = '/srv/home/xsun256/moleprop/data')
+data = loader.load(file_name = 'saldana11.csv',data_dir = '/srv/home/xsun256/moleprop/data')
 
 print("About to split")
 splitter = wf.Splitter
-indices,dataset = splitter.k_fold(data, n_splits = 5)
+indices,dataset = splitter.k_fold(data, n_splits = 10)
 
-'''
-args = {'nb_epoch': 80,
-        'batch_size': 50,
+args = {'nb_epoch': 200,
+        'batch_size': 8,
         'n_tasks': 1,
         'graph_conv_layers':[64,64],
-        'dense_layer_size': 256,
-#        'dropout': 0.0,           # for testing if this workflow tool can correctly use default dropout if it is not inputted
+        'dense_layer_size': 512,
+        'learning_rate':0.0005,
+        'dropout': 0.2,           # for testing if this workflow tool can correctly use default dropout if it is not inputted
         'mode': 'regression'}
-'''
 
-args = None
 print("About to conduct cross validation")
-scores,predictions,test_datasets = wf.Run.cv(dataset,indices, model = 'GC',model_args = args,n_splits = 5, metrics = ['AAD', 'RMSE', 'MAE', 'R2'])
+scores,predictions,test_datasets = wf.Run.cv(dataset,indices, model = 'GC',model_args = args,n_splits = 10, metrics = ['AAD', 'RMSE', 'MAE', 'R2','train'])
 
 for key in scores:
     print(key+" = "+str(scores[key]))

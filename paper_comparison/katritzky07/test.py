@@ -12,19 +12,18 @@ print("About to split")
 splitter = wf.Splitter
 indices,dataset = splitter.k_fold(data, n_splits = 3)
 
-'''
-args = {'nb_epoch': 80,
-        'batch_size': 50,
+args = {'nb_epoch': 150,
+        'batch_size': 8,
         'n_tasks': 1,
         'graph_conv_layers':[64,64],
-        'dense_layer_size': 256,
-#        'dropout': 0.0,           # for testing if this workflow tool can correctly use default dropout if it is not inputted
+        'dense_layer_size': 512,
+        'learning_rate':0.005,
+        'dropout': 0.0,           # for testing if this workflow tool can correctly use default dropout if it is not inputted
         'mode': 'regression'}
-'''
 
-args = None
+# args = None
 print("About to conduct cross validation")
-scores,predictions,test_datasets = wf.Run.cv(dataset,indices, model = 'GC',model_args = args,n_splits = 3, metrics = ['AAD', 'RMSE', 'MAE', 'R2'])
+scores,predictions,test_datasets = wf.Run.cv(dataset,indices, model = 'GC',model_args = args,n_splits = 3, metrics = ['train','AAD', 'RMSE', 'MAE', 'R2'])
 
 for key in scores:
     print(key+" = "+str(scores[key]))
