@@ -173,7 +173,7 @@ class Splitter:
                 if dataset.iloc[i]['is_silicon'] == 1:
                     raw_test_indices.append(i)
                     raw_train_indices.remove(i)
-        indices = None
+        indices = []
         if transfer_learning == None:
             if n_splits == None:
                 test_indices = random.sample(raw_test_indices, int(frac*len(raw_test_indices)))
