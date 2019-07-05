@@ -11,8 +11,8 @@ from sklearn.model_selection import KFold
 from deepchem.trans.transformers import undo_transforms  # for getting real predictions
 import matplotlib
 plt.switch_backend('agg')
-plt.rc('font', size = 8)                                # change plot font size
-# matplotlib.use('agg')
+#plt.rc('font', size = 8)                                # change plot font size
+#matplotlib.use('agg')
 
 ## pkg needed for DeepChem
 import tensorflow as tf
@@ -373,18 +373,18 @@ class Run:
                       'MAE': avg_mae_score,'MAE_list':cv_mae_scores,
                       'R2': avg_r2_score, 'R2_list': cv_r2_scores,
                       'AAD':avg_aad_score, 'AAD_list': cv_aad_scores,
-                     'train_scores':avg_train_scores}
+                     'train':avg_train_scores}
         scores = dict()
         if metrics == None:  # return default scores (RMSE and R2)
             scores = {'RMSE':scores_all['RMSE'],
                       'R2':scores_all['R2'],
                       'RMSE_list':scores_all['RMSE_list'],
                       'R2_list':scores_all['R2_list'],
-                     'train_scores': scores_all['train_scores']}
+                     'train': scores_all['train']}
         else:
             for m in metrics:
                 if not ( m == 'RMSE' or m == 'MAE' or m == 'AAD' or m == 'R2' or m == 'train'):
-                    sys.exit('only supports RMSE, MAE, AAD, AAE, and R2')
+                    sys.exit('only supports RMSE, MAE, AAD, AAE, R2, and train')
                 scores[m] = scores_all[m]
                 if m != 'train':
                     list_name = str(m + '_list')
@@ -410,7 +410,7 @@ class Run:
 
         if not (model == 'MPNN' or model == 'graphconv' or model == 'GC' or model == 'GraphConv' or model == 'weave'):
             sys.exit("Only supports MPNN model and graphconv and weave model")
-        train_indices, test_indices = indices
+        train_indices, test_indices = indices[0]
         train_set = data.iloc[train_indices]
         test_set = data.iloc[test_indices]
         train_set.to_csv('train_set.csv',index = False)
@@ -612,8 +612,8 @@ class Model:
     """
     default_args = {
         'graphconv': {
-#            'nb_epoch': 100, 
-#            'batch_size': 100, 
+            'nb_epoch': 100, 
+            'batch_size': 100, 
             'nb_epoch': 50,
             'batch_size': 64,
             'n_tasks': 1,
@@ -664,12 +664,6 @@ class Model:
         for transformer in transformers:
             train_dataset = transformer.transform(train_dataset)
             test_dataset = transformer.transform(test_dataset)
-#         transformers = [
-#             dc.trans.NormalizationTransformer(
-#             transform_y=True, dataset=test_dataset, move_mean=True) # sxy: move_mean may need to change (3/23/2019)
-#         ]
-#         for transformer in transformers:
-#              test_dataset = transformer.transform(test_dataset)
         if only_model:
           # DEBUG
           print("[DEBUG] in only_model mode")
@@ -727,12 +721,6 @@ class Model:
         for transformer in transformers:
             train_dataset = transformer.transform(train_dataset)
             test_dataset = transformer.transform(test_dataset)
-#         transformers = [
-#             dc.trans.NormalizationTransformer(
-#             transform_y=True, dataset=test_dataset, move_mean=True) # sxy: move_mean may need to change (3/23/2019)
-#         ]
-#         for transformer in transformers:
-#              test_dataset = transformer.transform(test_dataset)
         model = dc.models.MPNNModel(n_tasks = model_args['n_tasks'],
                                     n_atom_feat = model_args['n_atom_feat'],
                                     n_pair_feat = model_args['n_pair_feat'],
@@ -775,12 +763,6 @@ class Model:
         for transformer in transformers:
             train_dataset = transformer.transform(train_dataset)
             test_dataset = transformer.transform(test_dataset)
-#         transformers = [
-#             dc.trans.NormalizationTransformer(
-#             transform_y=True, dataset=test_dataset, move_mean=True) # sxy: move_mean may need to change (3/23/2019)
-#         ]
-#         for transformer in transformers:
-#              test_dataset = transformer.transform(test_dataset)
         model = dc.models.WeaveModel(n_tasks = model_args['n_tasks'],
                                     n_atom_feat = model_args['n_atom_feat'],
                                     n_pair_feat = model_args['n_pair_feat'],
@@ -821,12 +803,13 @@ class Model:
         ]
         for transformer in transformers:
             train_dataset = transformer.transform(train_dataset)
-        transformers = [
-            dc.trans.NormalizationTransformer(
-            transform_y=True, dataset=test_dataset, move_mean=True) # sxy: move_mean may need to change (3/23/2019)
-        ]
-        for transformer in transformers:
-             test_dataset = transformer.transform(test_dataset)
+            test_dataset = transformer.transform(test_dataset)     # Modified by Sean 5/6/2019
+#        transformers = [
+#            dc.trans.NormalizationTransformer(
+#            transform_y=True, dataset=test_dataset, move_mean=True) # sxy: move_mean may need to change (3/23/2019)
+#        ]
+#        for transformer in transformers:
+#             test_dataset = transformer.transform(test_dataset)
 
         # setup metrics
         metric_rms = dc.metrics.Metric(dc.metrics.rms_score, np.mean) # RMSE score
@@ -895,7 +878,7 @@ class Plotter:
         y = max_val
         if text != None:
             i =  (max_val-min_val)/20
-            for key in text:
+            for key in sorted(text.keys()):
                 if key.find('list') == -1:
                     if key == 'train':
                         t = str(key+': '+ str(text[key]))
@@ -912,7 +895,7 @@ class Plotter:
         plt.ylabel("Predicted")
         plt.xlabel("Experimental")
         seaborn.despine(fg.fig,top=False, right=False)#, left=True, bottom=True,)
-        plt.savefig('./parity_plot/'+plot_name+'.png', dpi = 500) 
+        plt.savefig('./parity_plot/'+plot_name+'.png', dpi = 500,  bbox_inches='tight') 
         plt.clf()
         plt.close()
 
@@ -925,15 +908,19 @@ class Plotter:
         residual = []
         for i in range(len(dataset)):
             residual.append((expt[i] - pred[i]))
+       # plt.style.use('ggplot')
+        plt.rc('font', size = 14)                                # change plot font size
+        plt.rc('xtick',labelsize=14)
+        plt.rc('ytick',labelsize=14)
         plt.hist(residual, bins = 50)
-        plt.title("Histogram of the Residuals")
-        plt.ylabel("Frequency")
-        plt.xlabel("Residual")
+        plt.title("Histogram of the Residuals", fontsize = 14)
+        plt.ylabel("Frequency", fontsize = 14)
+        plt.xlabel("Residual", fontsize = 14)
         left,right = plt.xlim()
         bottom,top = plt.ylim()
         i = top/20
         if text != None:
-            for key in text:
+            for key in sorted(text.keys()):
                 if key.find('list') == -1:
                     if key == 'train':
                         t = str(key+': '+ str(text[key]))
@@ -943,7 +930,7 @@ class Plotter:
                         t = t+str('%')
                     plt.text(left,top - i,t)
                     i += top/15
-        plt.savefig('./residual_plot/'+plot_name+'.png', dpi = 500)
+        plt.savefig('./residual_plot/'+plot_name+'.png', dpi = 500, bbox_inches='tight')
         plt.clf()
         plt.close()
 
