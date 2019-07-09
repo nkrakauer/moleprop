@@ -407,50 +407,37 @@ class Run:
         """
         Conduct leave-out-group validation
         """
+
         if not (model == 'MPNN' or model == 'graphconv' or model == 'GC' or model == 'GraphConv' or model == 'weave'):
             sys.exit("Only supports MPNN model and graphconv and weave model")
-        train_indices, test_indices = indices
+        train_indices, test_indices = indices[0]
         train_set = data.iloc[train_indices]
         test_set = data.iloc[test_indices]
         train_set.to_csv('train_set.csv',index = False)
         test_set.to_csv('test_set.csv',index = False)
         Loader.getinfo(train_set, "LOG_Train")
         Loader.getinfo(test_set, "LOG_Test")
-        if model == "MPNN":
-            rms_score,mae_score,r2_score,train_score,pred = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
-        elif model == "GraphConv" or model == "graphconv" or model == "GC":
-            rms_score,mae_score,r2_score,train_score,pred = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
-        elif model == "weave":
-            rms_score,mae_score,r2_score,train_score,pred = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
+        if model == 'MPNN':
+            rms_score,mae_score,r2_score,train_scores,pred = Model.MPNN(model_args, "train_set.csv", "test_set.csv")
+        elif model == 'GraphConv' or model == 'graphconv' or model == 'GC':
+            rms_score,mae_score,r2_score,train_scores,pred = Model.graphconv(model_args,"train_set.csv", "test_set.csv")
+        elif model == 'weave':
+            rms_score,mae_score,r2_score,train_scores,pred = Model.weave(model_args,"train_set.csv", "test_set.csv")
         os.remove("train_set.csv")
         os.remove("test_set.csv")
-        rms_scores = []
-        rms_scores.append(rms_score)
-        mae_scores = []
-        mae_scores.append(mae_score)
-        r2_scores = []
-        r2_scores.append(r2_score)
-        aad_scores = []
-        aad_score = (Run.getAAPD(test_set,pred))
-        aad_scores.append(aad_score)
-        train_scores = []
-        train_scores.append(train_score)
-        scores_all = {'RMSE':rms_score,'RMSE_list':rms_scores,
-                    'MAE': mae_score,'MAE_list':mae_scores,
-                    'R2': r2_score,'R2_list': r2_scores,
-                    'AAD':aad_score,'AAD_list':aad_scores,
-                    'train':train_score,'train_list':train_scores}
+        scores_all = {'RMSE':rms_score,
+                      'MAE': mae_score,
+                      'R2': r2_score,
+                      'AAD':(Run.getAAPD(test_set,pred))}
         scores = dict()
         if metrics == None:  # return default scores (RMSE and R2)
             scores = {'RMSE':scores_all['RMSE'],
-                    'R2':scores_all['R2'],
-                    'RMSE_list':scores_all['RMSE_list'],
-                    'R2_list':scores_all['R2_list']}
+                      'R2':scores_all['R2']}
         else:
             for m in metrics:
-                if not (m == 'RMSE' or m == 'MAE' or m == 'AAD' or m == 'R2' or m == 'train'):
-                    sys.exit('only supports RMSE, MAE, AAD, AAE, R2, and train')
-            scores[m] = scores_all[m]
+                if not ( m == 'RMSE' or m == 'MAE' or m == 'AAD' or m == 'R2' or m == 'train'):
+                    sys.exit('only supports RMSE, MAE, AAD, AAE, and R2 and train')
+                scores[m] = scores_all[m]
         outliers = Run.get_outliers(test_set, pred)
         outliers.to_csv('outliers.csv')
         file = open('FINAL_RESULT.txt', 'w')
@@ -458,11 +445,7 @@ class Run:
             s = key + " = " + str(scores[key]) + "\n"
             file.write(s)
         file.close()
-        predictions = []
-        predictions.append(pred)
-        test_datasets = []
-        test_datasets.append(test_set)
-        return scores, predictions, test_datasets
+        return scores, pred, test_set
 
     def custom_validation(train_dataset,
                           test_dataset,
