@@ -6,14 +6,24 @@ Applying ML models (Neural Network) to predict molecular property (working on pr
 ## Models
 - GraphConv
 - MPNN
+- Weave
 
 ## Data
 - Integrated_Dataset
-- Chen
-- Pan
-- Carroll
+- Chen14
+- Pan07
+- pan12
+- Carroll10
+- Carroll11
+- Carroll15
+- Saldana11
+- Patel10
+- Katrizky07
+- Le15
+- Didier12
+- Didier14
+- Wang11
 - Gelest
-- Saldano
 - PubChem
 
 ## Util
@@ -28,3 +38,11 @@ Applying ML models (Neural Network) to predict molecular property (working on pr
   - Splitter
   - Run
   - Plotter
+
+- Optimizer
+
+- Test files
+  - test_10-fold_CV
+  - test_LOG
+  - test_multi_CV
+  - test_multi_LOG
