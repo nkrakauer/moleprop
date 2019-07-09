@@ -1,17 +1,26 @@
 import sys
+<<<<<<< Updated upstream
 sys.path.append('/srv/home/apolitowicz/moleprop/util/')
+=======
+sys.path.append('/srv/home/nkrakauer/moleprop/util')
+>>>>>>> Stashed changes
 import workflow as wf
 import pandas as pd
 
 print("About to load")
 loader = wf.Loader
 # TODO: need to change name and dir to your local dataset name and path
+<<<<<<< Updated upstream
 data = loader.load(file_name = 'new_integrated_dataset.csv',data_dir = '/srv/home/apolitowicz/moleprop/data')
 
+=======
+data = loader.load(file_name = 'integrated_dataset.csv',data_dir = '/srv/home/nkrakauer/moleprop/data/')
+group = 'pan07'
+>>>>>>> Stashed changes
 print("About to split")
 splitter = wf.Splitter
 # TODO: change test_group to the group name you want to leave out
-indices,dataset = splitter.LOG(data, test_group = 'pubchem')
+indices,dataset = splitter.LOG(data, test_group = group, frac=1/3)
 
 '''
 args = {'nb_epoch': 80,
@@ -38,5 +47,5 @@ txt = {'RMSE/STD': scores['RMSE']/test_dataset['flashpoint'].std(),
        'MAE': scores['MAE'],
        'R2': scores['R2'],
        'AAD': scores['AAD']}
-wf.Plotter.parity_plot(prediction,test_dataset,plot_name = "LOG_puchem_parity", text = txt)
-wf.Plotter.residual_histogram(prediction,test_dataset,plot_name = "LOG_pubchem_residual", text = txt)
+wf.Plotter.parity_plot(prediction,test_dataset,plot_name = group+"_parity", text = txt)
+wf.Plotter.residual_histogram(prediction,test_dataset,plot_name = group+"_residual", text = txt)

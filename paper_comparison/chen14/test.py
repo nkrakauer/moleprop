@@ -1,12 +1,12 @@
 import sys
-sys.path.append('../../moleprop/util/')     # change the path to your dir of workflow.py
+sys.path.append('../../util/')     # change the path to your dir of workflow.py
 import workflow as wf
 import pandas as pd
 
 print("About to load")
 loader = wf.Loader
 # TODO need to change file name and dir to your local environment
-data = loader.load(file_name = 'chen14.csv',data_dir = '/srv/home/xsun256/moleprop/data')
+data = loader.load(file_name = 'chen14.csv',data_dir = '/srv/home/nkrakauer/moleprop/data')
 
 print("About to split")
 splitter = wf.Splitter
@@ -21,9 +21,18 @@ args = {'nb_epoch': 70,
         'learning_rate':0.005,
         'mode': 'regression'}
 
-# best opt hyper: ([64, 64], 1, 0.0, 8, 'regression', 150, 75, 0.005, 512)
+mpnnargs = {'nb_epoch':70,
+        'batch_size':32,
+        'n_tasks':1,
+        'n_atom_feat':75,
+        'n_pair_feat':14,
+        'learning_rate':0.0005,
+        'dropout':0.2,
+        'mode':'regression'
+        }
+
 print("About to conduct cross validation")
-scores,predictions,test_datasets = wf.Run.cv(dataset,indices, model = 'GC',model_args = args,n_splits = 5, metrics = ['AAD', 'RMSE', 'MAE', 'R2','train'])
+scores,predictions,test_datasets = wf.Run.cv(dataset,indices, model = 'MPNN',model_args = mpnnargs,n_splits = 5, metrics = ['AAD', 'RMSE', 'MAE', 'R2','train'])
 
 for key in scores:
     print(key+" = "+str(scores[key]))

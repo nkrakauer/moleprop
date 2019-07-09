@@ -10,12 +10,12 @@
 #SBATCH -c 1
 
 ## Request a GPU from the scheduler, we don't care what kind
-#SBATCH --gres=gpu:1
+##SBATCH --gres=gpu:1
 #SBATCH -t 1-01:30 # time (D-HH:MM)
 
 ## Create a unique output file for the job
-#SBATCH --error=/srv/home/xsun256//paper_comparison/pan12/test-pan12-%j.err
-#SBATCH --output=/srv/home/xsun256//paper_comparison/pan12/test-pan12-%j.out
+#SBATCH --error=/srv/home/nkrakauer/moleprop/paper_comparison/pan12/test-pan12-%j.err
+#SBATCH --output=/srv/home/nkrakauer/moleprop/paper_comparison/pan12/test-pan12-%j.out
 
 ## Load CUDA
 #module load usermods
@@ -29,5 +29,5 @@ source activate deepchem
 #pip uninstall -y tensorflow-gpu
 
 ## run the training scripts
-python /srv/home/xsun256/paper_comparison/pan12/test.py
+python /srv/home/nkrakauer/moleprop/paper_comparison/pan12/test.py
 

@@ -1,12 +1,12 @@
 import sys
-sys.path.append('../../moleprop/util/')     # change the path to your dir of workflow.py
+sys.path.append('../../util/')     # change the path to your dir of workflow.py
 import workflow as wf
 import pandas as pd
 import statistics as stat
 
 print("About to load")
 loader = wf.Loader
-data = loader.load(file_name = 'patel10.csv',data_dir = '/srv/home/xsun256/moleprop/data')
+data = loader.load(file_name = 'patel10.csv',data_dir = '/srv/home/nkrakauer/moleprop/data')
 data['source'] = ['patel10']*len(data)
 
 multi_predictions = list() # list of lists of lists
@@ -43,9 +43,11 @@ for r in range(repetition):
         'learning_rate':0.005,
         'dropout': 0.0,           # for testing if this workflow tool can correctly use default dropout if it is not inputted
         'mode': 'regression'}
+    mpnnargs = {
+            }
 
     print("About to simulate")
-    scores,pred,test_dataset = wf.Run.LOG_validation(data,ind, model ='GC',model_args = args, metrics = ['AAD', 'RMSE', 'MAE', 'R2'])
+    scores,pred,test_dataset = wf.Run.LOG_validation(data,ind, model ='MPNN',model_args = mpnnargs, metrics = ['AAD', 'RMSE', 'MAE', 'R2'])
 
     for key in scores:
         print(key+" = "+str(scores[key]))

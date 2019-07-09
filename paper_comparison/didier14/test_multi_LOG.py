@@ -1,12 +1,12 @@
 import sys
-sys.path.append('../../moleprop/util/')     # change the path to your dir of workflow.py
+sys.path.append('../../util/')     # change the path to your dir of workflow.py
 import workflow as wf
 import pandas as pd
 import statistics as stat
 
 print("About to load")
 loader = wf.Loader
-data = loader.load(file_name = 'didier14.csv',data_dir = '/srv/home/xsun256/moleprop/data')
+data = loader.load(file_name = 'didier14.csv',data_dir = '/srv/home/nkrakauer/moleprop/data')
 
 multi_predictions = list() # list of lists of lists
 multi_scores = list()      # for getting the average scores 
@@ -20,17 +20,19 @@ leave_out_group = pd.DataFrame()
 # conduct multiple cross validation
 for r in range(repetition):
 
-    args = {'nb_epoch': 200,
+    args = {'nb_epoch': 400,
         'batch_size': 8,
         'n_tasks': 1,
-        'graph_conv_layers':[64,64],
-        'dense_layer_size': 512,
+        'n_atom_feat': 75,
+        'n_pair_feat': 14,
+        'M':1,
+        'T':1,
         'learning_rate':0.001,
-        'dropout': 0.4,           # for testing if this workflow tool can correctly use default dropout if it is not inputted
+        'dropout': 0.0,           # for testing if this workflow tool can correctly use default dropout if it is not inputted
         'mode': 'regression'}
 
     print("About to simulate")
-    scores,pred,test_dataset = wf.Run.LOG_validation(dataset,ind, model ='GC',model_args = args, metrics = ['AAD', 'RMSE', 'MAE', 'R2'])
+    scores,pred,test_dataset = wf.Run.LOG_validation(dataset,ind, model ='MPNN',model_args = args, metrics = ['AAD', 'RMSE', 'MAE', 'R2'])
 
     for key in scores:
         print(key+" = "+str(scores[key]))

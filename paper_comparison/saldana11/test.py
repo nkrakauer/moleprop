@@ -1,12 +1,12 @@
 import sys
-sys.path.append('../../moleprop/util/')     # change the path to your dir of workflow.py
+sys.path.append('../../util/')     # change the path to your dir of workflow.py
 import workflow as wf
 import pandas as pd
 
 print("About to load")
 loader = wf.Loader
 # TODO need to change file name and dir to your local environment
-data = loader.load(file_name = 'saldana11.csv',data_dir = '/srv/home/xsun256/moleprop/data')
+data = loader.load(file_name = 'saldana11.csv',data_dir = '/srv/home/nkrakauer/moleprop/data')
 
 print("About to split")
 splitter = wf.Splitter
@@ -21,8 +21,20 @@ args = {'nb_epoch': 200,
         'dropout': 0.2,           # for testing if this workflow tool can correctly use default dropout if it is not inputted
         'mode': 'regression'}
 
+mpnnargs = {'nb_epoch':400,
+        'batch_size':21,
+        'n_tasks':1,
+        'T':1,
+        'M':1,
+        'n_atom_feat':75,
+        'n_pair_feat':14,
+        'learniing_rate':0.0005,
+        'dropout':0.2,
+        'mode':'regression'
+        }
+
 print("About to conduct cross validation")
-scores,predictions,test_datasets = wf.Run.cv(dataset,indices, model = 'GC',model_args = args,n_splits = 10, metrics = ['AAD', 'RMSE', 'MAE', 'R2','train'])
+scores,predictions,test_datasets = wf.Run.cv(dataset,indices, model = 'MPNN',model_args = mpnnargs,n_splits = 10, metrics = ['AAD', 'RMSE', 'MAE', 'R2','train'])
 
 for key in scores:
     print(key+" = "+str(scores[key]))

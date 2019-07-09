@@ -1,12 +1,12 @@
 import sys
-sys.path.append('../../moleprop/util/')     # change the path to your dir of workflow.py
+sys.path.append('../../util/')     # change the path to your dir of workflow.py
 import workflow as wf
 import pandas as pd
 import statistics as stat
 
 print("About to load")
 loader = wf.Loader
-data = loader.load(file_name = 'carroll15.csv',data_dir = '/srv/home/xsun256/moleprop/data')
+data = loader.load(file_name = 'carroll15.csv',data_dir = '/srv/home/nkrakauer/moleprop/data')
 
 multi_predictions = list() # list of lists of lists
 multi_scores = list()      # for getting the average scores 
@@ -27,9 +27,20 @@ for r in range(repetition):
         'dense_layer_size': 128,
 #        'dropout': 0.0,           # for testing if this workflow tool can correctly use default dropout if it is not inputted
         'mode': 'regression'}
+    mpnnargs = {'nb_epoch':250,
+                'batch_size':8,
+                'n_tasks':1,
+                'learning_rate':0.0005,
+                'n_atom_feat':75,
+                'm_pair_feat':14,
+                'T':1,
+                'M':1,
+                'dropout':0.4,
+                'mode':'regression'
+            }
     
     print("About to simulate")
-    scores,pred,test_dataset = wf.Run.LOG_validation(data,ind, model ='GC',model_args = args, metrics = ['AAD', 'RMSE', 'MAE', 'R2'])
+    scores,pred,test_dataset = wf.Run.LOG_validation(data,ind, model ='MPNN',model_args = mpnnargs, metrics = ['AAD', 'RMSE', 'MAE', 'R2'])
 
     for key in scores:
         print(key+" = "+str(scores[key]))

@@ -1,5 +1,5 @@
 import sys
-sys.path.append('../../moleprop/util/')     # change the path to your dir of workflow.py
+sys.path.append('../../util/')     # change the path to your dir of workflow.py
 import workflow as wf
 import pandas as pd
 
@@ -7,7 +7,7 @@ print("About to load")
 loader = wf.Loader
 # TODO need to change file name and dir to your local environment
 #data = loader.load(file_name = 'pan12.csv',data_dir = '/srv/home/xsun256/moleprop/data')
-data = loader.load(file_name = 'pan12.csv',data_dir = '/srv/home/xsun256/moleprop/data')
+data = loader.load(file_name = 'pan12.csv',data_dir = '/srv/home/nkrakauer/moleprop/data')
 print("About to split")
 splitter = wf.Splitter
 indices,dataset = splitter.k_fold(data, n_splits = 5)
@@ -21,10 +21,23 @@ args = {'nb_epoch': 150,
         'dropout': 0.2,           # for testing if this workflow tool can correctly use default dropout if it is not inputted
         'mode': 'regression'}
 
+mpnnargs = {
+        'nb_epoch':100,
+        'batch_size':32,
+        'n_tasks':1,
+        'M':1,
+        'T':1,
+        'n_atom_feat': 75,
+        'n_pair_feat': 14,
+        'dropout': 0.2,
+        'learning_rate':0.001,
+        'mode':'regression'
+        }
+
 # best hyper from opt: (0.0, 0.005, [64, 64], 75, 512, 'regression', 8, 1, 60)
 # args = None
 print("About to conduct cross validation")
-scores,predictions,test_datasets = wf.Run.cv(dataset,indices, model = 'GC',model_args = args,n_splits = 5, metrics = ['train','AAD', 'RMSE', 'MAE', 'R2'])
+scores,predictions,test_datasets = wf.Run.cv(dataset,indices, model = 'MPNN',model_args = mpnnargs,n_splits = 5, metrics = ['train','AAD', 'RMSE', 'MAE', 'R2'])
 
 for key in scores:
     print(key+" = "+str(scores[key]))
