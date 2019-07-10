@@ -75,14 +75,9 @@ class Loader:
 
         integrated_dataset: DataFrame
         source_name: name of the source you want to extract from the integrated dataset
+        return: DataFrame
         """
-        seperate_dataset_list = list()
-        for i in range(len(integrated_dataset.index)):
-            if integrated_dataset.iloc[i]['source'] == source_name:
-                seperate_dataset_list.append(integrated_dataset.iloc[i])
-        seperate_dataset = pd.DataFrame(seperate_dataset_list)
-#        seperate_dataset.to_csv('./'+source_name+'.csv')   #(optional) for saving this seperate dataset 
-        return seperate_dataset
+        return integrated_dataset.loc[integrated_dataset['source']==source_name]
 
 class Splitter:
     def k_fold_source(dataset, source, n_splits = 3, shuffle = True, random_state = None):
