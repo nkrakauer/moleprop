@@ -614,9 +614,7 @@ class Model:
     default_args = {
         'graphconv': {
             'nb_epoch': 100, 
-            'batch_size': 100, 
-            'nb_epoch': 50,
-            'batch_size': 64,
+            'batch_size': 128, 
             'n_tasks': 1,
             'graph_conv_layers':[64,64],
             'dense_layer_size': 128,
@@ -629,7 +627,7 @@ class Model:
             'n_pair_feat':14,      # NEED to be 14 for WaveFeaturizer
             'T':1,
             'M':1,
-            'batch_size':32,
+            'batch_size':16,
             'nb_epoch': 50,
             'learning_rate':0.0001,
             'use_queue':False,
@@ -642,8 +640,8 @@ class Model:
             'n_hidden':50,
             'n_graph_feat':128,
             'mode':"regression",
-            'batch_size':100,
-            'nb_epoch':100}
+            'batch_size':64,
+            'nb_epoch':40}
     }
 
     def graphconv(args, train_set, test_set, only_model = False):
