@@ -1,369 +1,369 @@
-,Unnamed: 0,compound,flashpoint,pure substance,smiles,source
-3913,3913,Acetaldehyde,235.15,1.0,CC=O,hazardous materials
-3914,3914,Acetanilide,447.15,1.0,CC(=O)Nc1ccccc1,hazardous materials
-3915,3915,Acetic acid,316.15,1.0,CC(=O)O,hazardous materials
-3916,3916,Acetic anhydride,327.15,1.0,CC(=O)OC(C)=O,hazardous materials
-3917,3917,Acetone,255.15,1.0,CC(C)=O,hazardous materials
-3918,3918,Acetone cyanohydrin,347.15,1.0,CC(C)(O)C#N,hazardous materials
-3919,3919,Acetonitrile,279.15,1.0,CC#N,hazardous materials
-3920,3920,Acetyl chloride,277.15,1.0,CC(=O)Cl,hazardous materials
-3921,3921,Acetyl peroxide,386.15,1.0,CC(=O)OOC(C)=O,hazardous materials
-3922,3922,Acrolein,247.15,1.0,C=CC=O,hazardous materials
-3923,3923,Acrylic acid,325.15,1.0,C=CC(=O)O,hazardous materials
-3924,3924,Acrylonitrile,273.15,1.0,C=CC#N,hazardous materials
-3925,3925,Adipic acid,464.15,1.0,O=C(O)CCCCC(=O)O,hazardous materials
-3926,3926,Adiponitrile,366.15,1.0,N#CCCCCC#N,hazardous materials
-3927,3927,Allyl acetate,294.15,1.0,C=CCOC(C)=O,hazardous materials
-3928,3928,Allyl alcohol,294.15,1.0,C=CCO,hazardous materials
-3929,3929,Allyl amine,244.15,1.0,C=CCN,hazardous materials
-3930,3930,Allyl bromide,272.15,1.0,C=CCBr,hazardous materials
-3931,3931,Allyl chloride,241.15,1.0,C=CCCl,hazardous materials
-3932,3932,Allyl chloroformate,304.15,1.0,C=CCOC(=O)Cl,hazardous materials
-3933,3933,Allyl glycidyl ether,330.15,1.0,C=CCOCC1CO1,hazardous materials
-3934,3934,Aminoethylethanol amine,402.15,1.0,NCCC(O)CN,hazardous materials
-3935,3935,iso-Amyl acetate,296.15,1.0,CC(=O)OCCC(C)C,hazardous materials
-3936,3936,sec-Amyl acetate,305.15,1.0,CCCC(C)OC(C)=O,hazardous materials
-3937,3937,iso-Amyl alcohol,316.15,1.0,CC(C)CCO,hazardous materials
-3938,3938,tert-Amyl alcohol,292.15,1.0,CCC(C)(C)O,hazardous materials
-3939,3939,Amylamine,280.15,1.0,CCCCCN,hazardous materials
-3940,3940,iso-Amyl formate,299.15,1.0,CC(C)CCOC=O,hazardous materials
-3941,3941,Amyl mercaptan,291.15,1.0,CCCCCS,hazardous materials
-3942,3942,iso-Amyl nitrate,325.15,1.0,CC(C)CCO[N+](=O)[O-],hazardous materials
-3943,3943,Amyl nitrite,283.15,1.0,CCCCCON=O,hazardous materials
-3944,3944,Aniline,343.15,1.0,Nc1ccccc1,hazardous materials
-3945,3945,o-Anisaldehyde,391.15,1.0,COc1ccccc1C=O,hazardous materials
-3946,3946,Anisole,325.15,1.0,COc1ccccc1,hazardous materials
-3947,3947,Anthracene,394.15,1.0,c1ccc2cc3ccccc3cc2c1,hazardous materials
-3948,3948,Anthraquinone,458.15,1.0,O=C1c2ccccc2C(=O)c2ccccc21,hazardous materials
-3949,3949,Aziridine,262.15,1.0,C1CN1,hazardous materials
-3950,3950,Benzaldehyde,337.15,1.0,O=Cc1ccccc1,hazardous materials
-3951,3951,Benzene,262.15,1.0,c1ccccc1,hazardous materials
-3952,3952,Benzoic acid,394.15,1.0,O=C(O)c1ccccc1,hazardous materials
-3953,3953,Benzonitrile,358.15,1.0,N#Cc1ccccc1,hazardous materials
-3954,3954,Benzotrifluoride,285.15,1.0,FC(F)(F)c1ccccc1,hazardous materials
-3955,3955,Benzoyl chloride,345.15,1.0,O=C(Cl)c1ccccc1,hazardous materials
-3956,3956,Benzyl acetate,375.15,1.0,CC(=O)OCc1ccccc1,hazardous materials
-3957,3957,Benzyl alcohol,374.15,1.0,OCc1ccccc1,hazardous materials
-3958,3958,Benzylamine,336.15,1.0,NCc1ccccc1,hazardous materials
-3959,3959,Benzyl benzoate,421.15,1.0,O=C(OCc1ccccc1)c1ccccc1,hazardous materials
-3960,3960,Benzyl chloride,340.15,1.0,ClCc1ccccc1,hazardous materials
-3961,3961,Benzyl mercaptan,343.15,1.0,SCc1ccccc1,hazardous materials
-3962,3962,Bicyclohexyl,347.15,1.0,C1CCC(C2CCCCC2)CC1,hazardous materials
-3963,3963,Biphenyl,386.15,1.0,c1ccc(-c2ccccc2)cc1,hazardous materials
-3964,3964,Bromobenzene,324.15,1.0,Brc1ccccc1,hazardous materials
-3965,3965,o-Bromotoluene,352.15,1.0,Cc1ccccc1Br,hazardous materials
-3966,3966,n-Butane,213.15,1.0,CCCC,hazardous materials
-3967,3967,1-Butene,193.15,1.0,C=CCC,hazardous materials
-3968,3968,n-Butyl acetate,300.15,1.0,CCCCOC(C)=O,hazardous materials
-3969,3969,iso-Butyl acetate,291.15,1.0,CC(=O)OCC(C)C,hazardous materials
-3970,3970,sec-Butyl acetate,304.15,1.0,CCC(C)OC(C)=O,hazardous materials
-3971,3971,n-Butyl alcohol,302.15,1.0,CCCCO,hazardous materials
-3972,3972,iso-Butyl alcohol,301.15,1.0,CC(C)CO,hazardous materials
-3973,3973,sec-Butyl alcohol,297.15,1.0,CCC(C)O,hazardous materials
-3974,3974,tert-Butyl alcohol,283.15,1.0,CC(C)(C)O,hazardous materials
-3975,3975,Butylamine,261.15,1.0,CCCCN,hazardous materials
-3976,3976,iso-Butylamine,264.15,1.0,CC(C)CN,hazardous materials
-3977,3977,n-Butyl benzene,344.15,1.0,CCCCc1ccccc1,hazardous materials
-3978,3978,iso-Butyl benzene,325.15,1.0,CC(C)Cc1ccccc1,hazardous materials
-3979,3979,n-Butyl bromide,291.15,1.0,CCCCBr,hazardous materials
-3980,3980,n-Butyl chloride,280.15,1.0,CCCCCl,hazardous materials
-3981,3981,"1,3-Butylene glycol ",394.15,1.0,CC(O)CCO,hazardous materials
-3982,3982,"2,3-Butylene glycol ",358.15,1.0,CC(O)C(C)O,hazardous materials
-3983,3983,n-Butyl formate,291.15,1.0,CCCCOC=O,hazardous materials
-3984,3984,Butyl lactate,344.15,1.0,CCCCOC(=O)C(C)O,hazardous materials
-3985,3985,Butyl mercaptan,275.15,1.0,CCCCS,hazardous materials
-3986,3986,Butyl methacrylate,325.15,1.0,C=C(C)C(=O)OCCCC,hazardous materials
-3987,3987,Isobutyl methyl ketone,290.15,1.0,CC(=O)CC(C)C,hazardous materials
-3988,3988,tert-Butyl perbenzoate,361.15,1.0,CC(C)(C)OOC(=O)c1ccccc1,hazardous materials
-3989,3989,Butyl vinyl ether,264.15,1.0,C=COCCCC,hazardous materials
-3990,3990,n-Butyraldehyde,266.45,1.0,CCCC=O,hazardous materials
-3991,3991,n-Butyric acid,339.15,1.0,CCCC(=O)O,hazardous materials
-3992,3992,n-Butyric anhydride,361.15,1.0,CCCC(=O)OC(=O)CCC,hazardous materials
-3993,3993,2-Butyrolactone,371.15,1.0,CCC1OC1=O,hazardous materials
-3994,3994,n-Butyronitrile,299.15,1.0,CCCC#N,hazardous materials
-3995,3995,Camphor,339.15,1.0,CC12CCC(CC1=O)C2(C)C,hazardous materials
-3996,3996,Caproic acid,375.15,1.0,CCCCCC(=O)O,hazardous materials
-3997,3997,Caprylaldehyde,325.15,1.0,CCCCCCCC=O,hazardous materials
-3998,3998,Carbon disulphide,243.15,1.0,S=C=S,hazardous materials
-3999,3999,Chloroacetaldehyde,361.15,1.0,O=CCCl,hazardous materials
-4000,4000,Chlorobenzene,302.15,1.0,Clc1ccccc1,hazardous materials
-4001,4001,"1-Chloro-2,4-dinitrobenzene ",467.15,1.0,O=[N+]([O-])c1ccc(Cl)c([N+](=O)[O-])c1,hazardous materials
-4002,4002,Chloronaphthalene,405.15,1.0,Clc1cccc2ccccc12,hazardous materials
-4003,4003,1-Chloro-1-nitropropane,335.15,1.0,CCC(Cl)[N+](=O)[O-],hazardous materials
-4004,4004,o-Chlorophenol,337.15,1.0,Oc1ccccc1Cl,hazardous materials
-4005,4005,p-Chlorophenol,394.15,1.0,Oc1ccc(Cl)cc1,hazardous materials
-4006,4006,Chlorotrifluoroethylene,246.15,1.0,FC(F)=C(F)Cl,hazardous materials
-4007,4007,Cinnamaldehyde,322.15,1.0,O=CC=Cc1ccccc1,hazardous materials
-4008,4008,m-Cresol,367.15,1.0,Cc1cccc(O)c1,hazardous materials
-4009,4009,o-Cresol,354.15,1.0,Cc1ccccc1O,hazardous materials
-4010,4010,p-Cresol,367.15,1.0,Cc1ccc(O)cc1,hazardous materials
-4011,4011,Crotonaldehyde,286.15,1.0,C/C=C/C=O,hazardous materials
-4012,4012,Cumene,317.15,1.0,CC(C)c1ccccc1,hazardous materials
-4013,4013,Cumene hydroperoxide,352.15,1.0,CC(C)c1ccccc1.[O-]O,hazardous materials
-4014,4014,Cyclohexane,253.15,1.0,C1CCCCC1,hazardous materials
-4015,4015,Cyclohexanol,341.15,1.0,OC1CCCCC1,hazardous materials
-4016,4016,Cyclohexanone,317.15,1.0,O=C1CCCCC1,hazardous materials
-4017,4017,Cyclohexylamine,305.15,1.0,NC1CCCCC1,hazardous materials
-4018,4018,Cyclohexylbenzene,372.15,1.0,c1ccc(C2CCCCC2)cc1,hazardous materials
-4019,4019,Cyclopentane,266.15,1.0,C1CCCC1,hazardous materials
-4020,4020,Cyclopentanone,299.15,1.0,O=C1CCCC1,hazardous materials
-4021,4021,p-Cymene,320.15,1.0,Cc1ccc(C(C)C)cc1,hazardous materials
-4022,4022,Decahydronaphthalene,330.15,1.0,C1CCC2CCCCC2C1,hazardous materials
-4023,4023,iso-Decaldehyde,358.15,1.0,CC(C)CCCCCCC=O,hazardous materials
-4024,4024,n-Decane,319.15,1.0,CCCCCCCCCC,hazardous materials
-4025,4025,n-Decyl alcohol,355.15,1.0,CCCCCCCCCCO,hazardous materials
-4026,4026,Diacetone alcohol,337.15,1.0,CC(=O)CC(C)(C)O,hazardous materials
-4027,4027,Dibutylamine,325.15,1.0,CCCCNCCCC,hazardous materials
-4028,4028,Dibutyldichlorotin,628.15,1.0,CCCC[Sn](Cl)(Cl)CCCC,hazardous materials
-4029,4029,Di-n-butyl ether,298.15,1.0,CCCCOCCCC,hazardous materials
-4030,4030,Dibutyl oxalate,377.15,1.0,CCCCOC(=O)C(=O)OCCCC,hazardous materials
-4031,4031,Dibutyl peroxide,291.15,1.0,CCCCOOCCCC,hazardous materials
-4032,4032,Dibutyl phosphite,322.15,1.0,CCCCOP([O-])OCCCC,hazardous materials
-4033,4033,Dibutyl phthalate,430.15,1.0,CCCCOC(=O)c1ccccc1C(=O)OCCCC,hazardous materials
-4034,4034,Dibutyl tartrate,364.15,1.0,CCCCOC(=O)C(O)C(O)C(=O)OCCCC,hazardous materials
-4035,4035,Dichloroacetyl chloride,339.15,1.0,O=C(Cl)C(Cl)Cl,hazardous materials
-4036,4036,"2,5-Dichloroaniline ",439.15,1.0,Nc1cc(Cl)ccc1Cl,hazardous materials
-4037,4037,o-Dichlorobenzene,339.15,1.0,Clc1ccccc1Cl,hazardous materials
-4038,4038,"1,4-Dichlorobutane ",325.15,1.0,ClCCCCCl,hazardous materials
-4039,4039,"1,3-Dichloro-2-butene ",300.15,1.0,CC(Cl)=CCCl,hazardous materials
-4040,4040,"1,1-Dichloroethane ",267.15,1.0,CC(Cl)Cl,hazardous materials
-4041,4041,"1,1-Dichloro-1-nitroethane ",349.15,1.0,CC(Cl)(Cl)[N+](=O)[O-],hazardous materials
-4042,4042,"2,4-Dichlorophenol ",387.15,1.0,Oc1ccc(Cl)cc1Cl,hazardous materials
-4043,4043,"1,2-Dichloropropane ",289.15,1.0,CC(Cl)CCl,hazardous materials
-4044,4044,"1,3-Dichloropropane ",308.15,1.0,ClCCCCl,hazardous materials
-4045,4045,Dicyclohexylamine,372.15,1.0,C1CCC(NC2CCCCC2)CC1,hazardous materials
-4046,4046,Diethanolamine,425.15,1.0,OCCNCCO,hazardous materials
-4047,4047,"N,N-Diethylaniline ",358.15,1.0,CCN(CC)c1ccccc1,hazardous materials
-4048,4048,Diethylcarbonate,298.15,1.0,CCOC(=O)OCC,hazardous materials
-4049,4049,Diethylene glycol,397.15,1.0,OCCOCCO,hazardous materials
-4050,4050,Diethylene glycol-monoethyl ether,369.15,1.0,CCOCCOCCO,hazardous materials
-4051,4051,Diethylenetriamine,375.15,1.0,NCCNCCN,hazardous materials
-4052,4052,Diethyl ketone,286.15,1.0,CCC(=O)CC,hazardous materials
-4053,4053,Diethyl malonate,366.15,1.0,CCOC(=O)CC(=O)OCC,hazardous materials
-4054,4054,Diethyl sulphate,377.15,1.0,CCOS(=O)(=O)OCC,hazardous materials
-4055,4055,"3,4-Dihydro-2H-pyran ",255.15,1.0,C1=COCCC1,hazardous materials
-4056,4056,Diisobutyl ketone,333.15,1.0,CC(C)CC(=O)CC(C)C,hazardous materials
-4057,4057,Diisobutyl carbinol,347.15,1.0,CC(C)CC(O)CC(C)C,hazardous materials
-4058,4058,Diisopropyl amine,272.15,1.0,CC(C)NC(C)C,hazardous materials
-4059,4059,Diisopropyl ether,245.15,1.0,CC(C)OC(C)C,hazardous materials
-4060,4060,Diisopropyl benzene,349.15,1.0,CC(C)c1ccccc1C(C)C,hazardous materials
-4061,4061,Dimethoxyethane,313.15,1.0,COCCOC,hazardous materials
-4062,4062,Dimethoxymethane,255.15,1.0,COCOC,hazardous materials
-4063,4063,Dimethoxypropane,266.15,1.0,COC(C)(C)OC,hazardous materials
-4064,4064,"N,N-Dimethyl acetamide ",350.15,1.0,CC(=O)N(C)C,hazardous materials
-4065,4065,"N,N-Dimethylaniline ",336.15,1.0,CN(C)c1ccccc1,hazardous materials
-4066,4066,"2,2-Dimethyl butane ",225.15,1.0,CCC(C)(C)C,hazardous materials
-4067,4067,"2,3-Dimethyl butane ",244.15,1.0,CC(C)C(C)C,hazardous materials
-4068,4068,Dimethyl carbonate,292.15,1.0,COC(=O)OC,hazardous materials
-4069,4069,Dimethylformamide,331.15,1.0,CN(C)C=O,hazardous materials
-4070,4070,Dimethyl phthalate,419.15,1.0,COC(=O)c1ccccc1C(=O)OC,hazardous materials
-4071,4071,Dimethyl sulphate,356.15,1.0,COS(=O)(=O)OC,hazardous materials
-4072,4072,Dimethyl sulphoxide,368.15,1.0,CS(C)=O,hazardous materials
-4073,4073,m-Dinitrobenzene,423.15,1.0,O=[N+]([O-])c1cccc([N+](=O)[O-])c1,hazardous materials
-4074,4074,o-Dinitrobenzene,423.15,1.0,O=[N+]([O-])c1ccccc1[N+](=O)[O-],hazardous materials
-4075,4075,p-Dinitrobenzene,423.15,1.0,O=[N+]([O-])c1ccc([N+](=O)[O-])cc1,hazardous materials
-4076,4076,"2,4-Dinitrotoluene ",480.15,1.0,Cc1ccc([N+](=O)[O-])cc1[N+](=O)[O-],hazardous materials
-4077,4077,Di-n-Octyl phthalate,492.15,1.0,CCCCCCCCOC(=O)c1ccccc1C(=O)OCCCCCCCC,hazardous materials
-4078,4078,Di-sec-Octyl phthalate,491.15,1.0,CCCCCCC(C)OC(=O)c1ccccc1C(=O)OC(C)CCCCCC,hazardous materials
-4079,4079,"1,4-Dioxane ",285.15,1.0,C1COCCO1,hazardous materials
-4080,4080,Diphenylamine,426.15,1.0,c1ccc(Nc2ccccc2)cc1,hazardous materials
-4081,4081,Diphenylmethane,403.15,1.0,c1ccc(Cc2ccccc2)cc1,hazardous materials
-4082,4082,Dipropylene glycol methyl ether,358.15,1.0,COC(C)COC(C)CO,hazardous materials
-4083,4083,n-Dodecane,347.15,1.0,CCCCCCCCCCCC,hazardous materials
-4084,4084,Epichlorohydrin,314.15,1.0,ClCC1CO1,hazardous materials
-4085,4085,"1,2-Epoxy-propane ",236.15,1.0,CC1CO1,hazardous materials
-4086,4086,Ethanol,285.15,1.0,CCO,hazardous materials
-4087,4087,Ethanolamine,358.15,1.0,NCCO,hazardous materials
-4088,4088,Ethyl acetanilide,325.15,1.0,CCCC(=O)Nc1ccccc1,hazardous materials
-4089,4089,Ethyl acetate,268.75,1.0,CCOC(C)=O,hazardous materials
-4090,4090,Ethyl acetoacetate,357.15,1.0,CCOC(=O)CC(C)=O,hazardous materials
-4091,4091,Ethyl acrylate,289.15,1.0,C=CC(=O)OCC,hazardous materials
-4092,4092,Ethyl amyl ketone,330.15,1.0,CCCCCC(=O)CC,hazardous materials
-4093,4093,n-Ethyl aniline,358.15,1.0,CCNc1ccccc1,hazardous materials
-4094,4094,Ethyl benzene,288.15,1.0,CCc1ccccc1,hazardous materials
-4095,4095,Ethyl bromoacetate,321.15,1.0,CCOC(=O)CBr,hazardous materials
-4096,4096,Ethyl butyl ketone,319.15,1.0,CCCCC(=O)CC,hazardous materials
-4097,4097,2-Ethyl butyraldehyde,294.15,1.0,CCC(C=O)CC,hazardous materials
-4098,4098,Ethyl butyrate,299.15,1.0,CCCC(=O)OCC,hazardous materials
-4099,4099,Ethyl chloride,223.15,1.0,CCCl,hazardous materials
-4100,4100,Ethyl chloroacetate,339.15,1.0,CCOC(=O)CCl,hazardous materials
-4101,4101,Ethyl chloroformate,289.15,1.0,CCOC(=O)Cl,hazardous materials
-4102,4102,Ethyl crotonate,275.15,1.0,C/C=C/C(=O)OCC,hazardous materials
-4103,4103,Ethyl cyanoacetate,383.15,1.0,CCOC(=O)CC#N,hazardous materials
-4104,4104,Ethylene chlorohydrin,333.15,1.0,OCCCl,hazardous materials
-4105,4105,Ethylene dichloride,286.15,1.0,ClCCCl,hazardous materials
-4106,4106,Ethylene glycol,384.15,1.0,OCCO,hazardous materials
-4107,4107,Ethyl ether,228.15,1.0,CCOCC,hazardous materials
-4108,4108,Ethyl formate,253.15,1.0,CCOC=O,hazardous materials
-4109,4109,2-Ethyl hexanol,357.15,1.0,CCCCC(CC)CO,hazardous materials
-4110,4110,Ethyl lactate,319.15,1.0,CCOC(=O)C(C)O,hazardous materials
-4111,4111,Ethyl methyl ether,236.15,1.0,CCOC,hazardous materials
-4112,4112,N-Ethylmorpholine,305.15,1.0,CCN1CCOCC1,hazardous materials
-4113,4113,Ethyl nitrite,238.15,1.0,CCON=O,hazardous materials
-4114,4114,Ethyl oxalate,349.15,1.0,CCOC(=O)C(=O)[O-],hazardous materials
-4115,4115,Ethyl propionate,285.15,1.0,CCOC(=O)CC,hazardous materials
-4116,4116,2-Ethyl-3-propyl acrolein,341.15,1.0,CCCC=C(C=O)CC,hazardous materials
-4117,4117,Ethyl silicate,325.15,1.0,CCO[Si]([O-])([O-])[O-],hazardous materials
-4118,4118,Formamide,428.15,1.0,NC=O,hazardous materials
-4119,4119,Formic acid,342.15,1.0,O=CO,hazardous materials
-4120,4120,Furfural,333.15,1.0,O=Cc1ccco1,hazardous materials
-4121,4121,Furfuryl alcohol,348.15,1.0,OCc1ccco1,hazardous materials
-4122,4122,Glycerol,433.15,1.0,OCC(O)CO,hazardous materials
-4123,4123,Heptane,269.15,1.0,CCCCCCC,hazardous materials
-4124,4124,n-Heptylamine,327.15,1.0,CCCCCCCN,hazardous materials
-4125,4125,Hexachlorobenzene,515.15,1.0,Clc1c(Cl)c(Cl)c(Cl)c(Cl)c1Cl,hazardous materials
-4126,4126,"2,4-Hexadienal ",341.15,1.0,CC=CC=CC=O,hazardous materials
-4127,4127,"1,4-Hexadiene ",252.15,1.0,C=CCC=CC,hazardous materials
-4128,4128,Hexane,251.15,1.0,CCCCCC,hazardous materials
-4129,4129,n-Hexanol,333.15,1.0,CCCCCCO,hazardous materials
-4130,4130,sec-Hexyl acetate,318.15,1.0,CCCCC(C)OC(C)=O,hazardous materials
-4131,4131,Hexyl amine,302.15,1.0,CCCCCCN,hazardous materials
-4132,4132,Hydrazine,311.15,1.0,NN,hazardous materials
-4133,4133,Hydrocyanic acid,255.15,1.0,C#N,hazardous materials
-4134,4134,Hydroquinone monomethyl ether,404.15,1.0,COc1ccc(O)cc1,hazardous materials
-4135,4135,Hydroxylamine,402.15,1.0,NO,hazardous materials
-4136,4136,Isoprene,219.15,1.0,C=CC(=C)C,hazardous materials
-4137,4137,Lactonitrile,350.15,1.0,CC(O)C#N,hazardous materials
-4138,4138,Maleic anhydride,375.15,1.0,O=C1C=CC(=O)O1,hazardous materials
-4139,4139,"p-Mentha-1,8-diene ",318.15,1.0,C=C(C)C1CC=C(C)CC1,hazardous materials
-4140,4140,2-Mercaptoethanol,347.15,1.0,OCCS,hazardous materials
-4141,4141,Mesityl oxide,304.15,1.0,CC(=O)C=C(C)C,hazardous materials
-4142,4142,Methyl acetate,264.15,1.0,COC(C)=O,hazardous materials
-4143,4143,Methyl acrylate,270.15,1.0,C=CC(=O)OC,hazardous materials
-4144,4144,Methyl alcohol,285.15,1.0,CO,hazardous materials
-4145,4145,Methyl amyl alcohol,314.15,1.0,CCCCC(C)O,hazardous materials
-4146,4146,N-Methylbutylamine,286.15,1.0,CCCCNC,hazardous materials
-4147,4147,Methyl butyl ketone,308.15,1.0,CCCCC(C)=O,hazardous materials
-4148,4148,Methyl butyrate,287.15,1.0,CCCC(=O)OC,hazardous materials
-4149,4149,Methyl chloroformate,285.15,1.0,COC(=O)Cl,hazardous materials
-4150,4150,Methyl cyclohexane,269.15,1.0,CC1CCCCC1,hazardous materials
-4151,4151,2-Methyl cyclohexanone,321.15,1.0,CC1CCCCC1=O,hazardous materials
-4152,4152,4-Methyl cyclohexene,272.15,1.0,CC1CC=CCC1,hazardous materials
-4153,4153,Methyl ether,232.15,1.0,COC,hazardous materials
-4154,4154,Methyl ethyl ether,236.15,1.0,CCOC,hazardous materials
-4155,4155,Methyl ethyl ketone,266.15,1.0,CCC(C)=O,hazardous materials
-4156,4156,Methyl formate,254.15,1.0,COC=O,hazardous materials
-4157,4157,2-Methyl furan,243.15,1.0,Cc1ccco1,hazardous materials
-4158,4158,Methyl isobutyl ketone,296.15,1.0,CC(=O)CC(C)C,hazardous materials
-4159,4159,Methyl isobutyrate,286.15,1.0,COC(=O)C(C)C,hazardous materials
-4160,4160,Methyl methacrylate,283.15,1.0,C=C(C)C(=O)OC,hazardous materials
-4161,4161,Methyl-n-Propyl ketone,280.15,1.0,CCCC(C)=O,hazardous materials
-4162,4162,Methyl salicylate,374.15,1.0,COC(=O)c1ccccc1O,hazardous materials
-4163,4163,Methyl vinyl ether,222.15,1.0,C=COC,hazardous materials
-4164,4164,Monomethylamine,263.15,1.0,CN,hazardous materials
-4165,4165,Morpholine,311.15,1.0,C1COCCN1,hazardous materials
-4166,4166,Naphthalene,352.15,1.0,c1ccc2ccccc2c1,hazardous materials
-4167,4167,2-Naphthol,426.15,1.0,Oc1ccc2ccccc2c1,hazardous materials
-4168,4168,1-Naphthylamine,430.15,1.0,Nc1cccc2ccccc12,hazardous materials
-4169,4169,o-Nitroaniline,441.15,1.0,Nc1ccccc1[N+](=O)[O-],hazardous materials
-4170,4170,p-Nitroaniline,472.15,1.0,Nc1ccc([N+](=O)[O-])cc1,hazardous materials
-4171,4171,Nitrobenzene,361.15,1.0,O=[N+]([O-])c1ccccc1,hazardous materials
-4172,4172,o-Nitrobiphenyl,416.15,1.0,O=[N+]([O-])c1ccccc1-c1ccccc1,hazardous materials
-4173,4173,Nitroethane,311.15,1.0,CC[N+](=O)[O-],hazardous materials
-4174,4174,Nitromethane,308.15,1.0,C[N+](=O)[O-],hazardous materials
-4175,4175,alpha-Nitronaphthalene,437.15,1.0,O=[N+]([O-])c1cccc2ccccc12,hazardous materials
-4176,4176,1-Nitropropane,322.15,1.0,CCC[N+](=O)[O-],hazardous materials
-4177,4177,2-Nitropropane,312.15,1.0,CC(C)[N+](=O)[O-],hazardous materials
-4178,4178,m-Nitrotoluene,379.15,1.0,Cc1cccc([N+](=O)[O-])c1,hazardous materials
-4179,4179,o-Nitrotoluene,379.15,1.0,Cc1ccccc1[N+](=O)[O-],hazardous materials
-4180,4180,p-Nitrotoluene,379.15,1.0,Cc1ccc([N+](=O)[O-])cc1,hazardous materials
-4181,4181,Nonyl phenol,414.15,1.0,CCCCCCCCCc1ccccc1O,hazardous materials
-4182,4182,Octane,286.15,1.0,CCCCCCCC,hazardous materials
-4183,4183,Octanoic acid,405.15,1.0,CCCCCCCC(=O)O,hazardous materials
-4184,4184,1-Octanol,354.15,1.0,CCCCCCCCO,hazardous materials
-4185,4185,2-Octanol,361.15,1.0,CCCCCCC(C)O,hazardous materials
-4186,4186,Oleic acid,462.15,1.0,CCCCCCCC/C=C\CCCCCCCC(=O)O,hazardous materials
-4187,4187,n-Pentane,224.15,1.0,CCCCC,hazardous materials
-4188,4188,iso-Pentane,222.15,1.0,CCC(C)C,hazardous materials
-4189,4189,"1,5-Pentanediol ",408.15,1.0,OCCCCCO,hazardous materials
-4190,4190,"2,4-Pentanedione ",314.15,1.0,CC(=O)CC(C)=O,hazardous materials
-4191,4191,2-Pentanol,312.15,1.0,CCCC(C)O,hazardous materials
-4192,4192,Phenol,352.15,1.0,Oc1ccccc1,hazardous materials
-4193,4193,Phenyl acetate,353.15,1.0,CC(=O)Oc1ccccc1,hazardous materials
-4194,4194,p-Phenylenediamine,429.15,1.0,Nc1ccc(N)cc1,hazardous materials
-4195,4195,Phenylethanolamine,425.15,1.0,NCC(O)c1ccccc1,hazardous materials
-4196,4196,Phenyl ether,369.15,1.0,c1ccc(Oc2ccccc2)cc1,hazardous materials
-4197,4197,Phenylhydrazine,362.15,1.0,NNc1ccccc1,hazardous materials
-4198,4198,o-Phenyl phenol,397.15,1.0,Oc1ccccc1-c1ccccc1,hazardous materials
-4199,4199,Phorone,358.15,1.0,CC(C)=CC(=O)C=C(C)C,hazardous materials
-4200,4200,Phthalic anhydride,424.15,1.0,O=C1OC(=O)c2ccccc21,hazardous materials
-4201,4201,2-Picoline,312.15,1.0,Cc1ccccn1,hazardous materials
-4202,4202,4-Picoline,330.15,1.0,Cc1ccncc1,hazardous materials
-4203,4203,Picric acid,423.15,1.0,O=[N+]([O-])c1cc([N+](=O)[O-])c(O)c([N+](=O)[O-])c1,hazardous materials
-4204,4204,2-Pinene,306.15,1.0,CC1=CCC2CC1C2(C)C,hazardous materials
-4205,4205,Piperidine,289.15,1.0,C1CCNCC1,hazardous materials
-4206,4206,Piperylene,230.15,1.0,C=CC=CC,hazardous materials
-4207,4207,"1,3-Propanediamine ",297.15,1.0,NCCCN,hazardous materials
-4208,4208,"1,2-Propanediol ",372.15,1.0,CC(O)CO,hazardous materials
-4209,4209,Propargyl alcohol,309.15,1.0,C#CCO,hazardous materials
-4210,4210,Propargyl bromide,283.15,1.0,C#CCBr,hazardous materials
-4211,4211,iso-Propenyl acetate,289.15,1.0,C=C(C)OC(C)=O,hazardous materials
-4212,4212,Propionaldehyde,264.15,1.0,CCC=O,hazardous materials
-4213,4213,Propionic acid,327.15,1.0,CCC(=O)O,hazardous materials
-4214,4214,Propionitrile,275.15,1.0,CCC#N,hazardous materials
-4215,4215,Propionyl chloride,285.15,1.0,CCC(=O)Cl,hazardous materials
-4216,4216,iso-Propyl acetate,277.15,1.0,CC(=O)OC(C)C,hazardous materials
-4217,4217,n-Propyl acetate,287.15,1.0,CCCOC(C)=O,hazardous materials
-4218,4218,n-Propyl alcohol,288.15,1.0,CCCO,hazardous materials
-4219,4219,iso-Propyl alcohol,285.15,1.0,CC(C)O,hazardous materials
-4220,4220,Propylamine,236.15,1.0,CCCN,hazardous materials
-4221,4221,iso-Propylamine,236.15,1.0,CC(C)N,hazardous materials
-4222,4222,Propyl benzene,303.15,1.0,CCCc1ccccc1,hazardous materials
-4223,4223,iso-Propyl benzoate,372.15,1.0,CC(C)OC(=O)c1ccccc1,hazardous materials
-4224,4224,Propylene,165.14999999999995,1.0,C=CC,hazardous materials
-4225,4225,Propylene carbonate,408.15,1.0,CC1COC(=O)O1,hazardous materials
-4226,4226,iso-Propyl ether,245.15,1.0,CC(C)OC(C)C,hazardous materials
-4227,4227,n-Propyl formate,270.15,1.0,CCCOC=O,hazardous materials
-4228,4228,iso-Propyl formate,267.15,1.0,CC(C)OC=O,hazardous materials
-4229,4229,Propyl nitrate,293.15,1.0,CCCO[N+](=O)[O-],hazardous materials
-4230,4230,Pyridine,293.15,1.0,c1ccncc1,hazardous materials
-4231,4231,Pyrrolidine,276.15,1.0,C1CCNC1,hazardous materials
-4232,4232,Pyruvic acid,276.15,1.0,CC(=O)C(=O)O,hazardous materials
-4233,4233,Resorcinol,400.15,1.0,Oc1cccc(O)c1,hazardous materials
-4234,4234,Salicylaldehyde,351.15,1.0,O=Cc1ccccc1O,hazardous materials
-4235,4235,Salicylic acid,430.15,1.0,O=C(O)c1ccccc1O,hazardous materials
-4236,4236,Stearic acid,469.15,1.0,CCCCCCCCCCCCCCCCCC(=O)O,hazardous materials
-4237,4237,Styrene,304.15,1.0,C=Cc1ccccc1,hazardous materials
-4238,4238,Succinonitrile,405.15,1.0,N#CCCC#N,hazardous materials
-4239,4239,Sulphur,480.15,1.0,[S],hazardous materials
-4240,4240,Sulphur monochloride,391.15,1.0,[S]Cl,hazardous materials
-4241,4241,m-Terphenyl,408.15,1.0,c1ccc(-c2cccc(-c3ccccc3)c2)cc1,hazardous materials
-4242,4242,o-Terphenyl,436.15,1.0,c1ccc(-c2ccccc2-c2ccccc2)cc1,hazardous materials
-4243,4243,"1,2,4,5-Tetrachlorobenzene ",428.15,1.0,Clc1cc(Cl)c(Cl)cc1Cl,hazardous materials
-4244,4244,Tetradecane,373.15,1.0,CCCCCCCCCCCCCC,hazardous materials
-4245,4245,Tetraethylenepentamine,436.15,1.0,NCCNCCNCCNCCN,hazardous materials
-4246,4246,Tetraethyl lead,366.15,1.0,CC[Pb](CC)(CC)CC,hazardous materials
-4247,4247,Tetrahydrofuran,259.15,1.0,C1CCOC1,hazardous materials
-4248,4248,Tetrahydronaphthalene,344.15,1.0,c1ccc2c(c1)CCCC2,hazardous materials
-4249,4249,"2,2'-Thiodiethanol ",433.15,1.0,OCCSCCO,hazardous materials
-4250,4250,Thiophene,272.15,1.0,c1ccsc1,hazardous materials
-4251,4251,Toluene,277.54999999999995,1.0,Cc1ccccc1,hazardous materials
-4252,4252,m-Toluidine,359.15,1.0,Cc1cccc(N)c1,hazardous materials
-4253,4253,o-Toluidine,358.15,1.0,Cc1ccccc1N,hazardous materials
-4254,4254,p-Toluidine,360.15,1.0,Cc1ccc(N)cc1,hazardous materials
-4255,4255,Triamylamine,375.15,1.0,CCCCCN(CCCCC)CCCCC,hazardous materials
-4256,4256,Tri-n-butyl amine,359.15,1.0,CCCCN(CCCC)CCCC,hazardous materials
-4257,4257,Tributyl phosphate,419.15,1.0,CCCCOP(=O)(OCCCC)OCCCC,hazardous materials
-4258,4258,"1,2,4-Trichlorobenzene ",372.15,1.0,Clc1ccc(Cl)c(Cl)c1,hazardous materials
-4259,4259,"1,2,3-Trichloropropane ",355.15,1.0,ClCC(Cl)CCl,hazardous materials
-4260,4260,Tridecanol,394.15,1.0,CCCCCCCCCCCCCO,hazardous materials
-4261,4261,Triethanolamine,452.15,1.0,OCCN(CCO)CCO,hazardous materials
-4262,4262,Triethylene glycol,450.15,1.0,OCCOCCOCCO,hazardous materials
-4263,4263,Triethylene-tetramine,408.15,1.0,NCCNCCNCCN,hazardous materials
-4264,4264,Trimethyl amine,266.15,1.0,CN(C)C,hazardous materials
-4265,4265,"2,2,4-Trimethyl pentane ",261.15,1.0,CC(C)CC(C)(C)C,hazardous materials
-4266,4266,"2,4,4-Trimethyl-2-pentene ",275.15,1.0,CC(C)=CC(C)(C)C,hazardous materials
-4267,4267,"1,3,5-Trioxane ",318.15,1.0,C1OCOCO1,hazardous materials
-4268,4268,Triphenyl phosphate,493.15,1.0,O=P(Oc1ccccc1)(Oc1ccccc1)Oc1ccccc1,hazardous materials
-4269,4269,Triphenyl phosphine,453.15,1.0,c1ccc(P(c2ccccc2)c2ccccc2)cc1,hazardous materials
-4270,4270,Tripropylamine,314.15,1.0,CCCN(CCC)CCC,hazardous materials
-4271,4271,Tritolyl phosphate,498.15,1.0,Cc1ccccc1OP(=O)(Oc1ccccc1C)Oc1ccccc1C,hazardous materials
-4272,4272,Valeraldehyde,285.15,1.0,CCCCC=O,hazardous materials
-4273,4273,Valeric acid,369.15,1.0,CCCCC(=O)O,hazardous materials
-4274,4274,Vinyl acetate,265.15,1.0,C=COC(C)=O,hazardous materials
-4275,4275,Vinyl chloride,195.15,1.0,C=CCl,hazardous materials
-4276,4276,Vinylidene chloride,258.15,1.0,C=C(Cl)Cl,hazardous materials
-4277,4277,m-Xylene,302.15,1.0,Cc1cccc(C)c1,hazardous materials
-4278,4278,o-Xylene,305.15,1.0,Cc1ccccc1C,hazardous materials
-4279,4279,p-Xylene,300.15,1.0,Cc1ccc(C)cc1,hazardous materials
-4280,4280,Xylidine,370.15,1.0,Cc1cccc(N)c1C,hazardous materials
+,compound,flashpoint,pure substance,smiles,source
+0,Acetaldehyde,235.15,1,CC=O,hazardous materials
+1,Acetanilide,447.15,1,CC(=O)Nc1ccccc1,hazardous materials
+2,Acetic acid,316.15,1,CC(=O)O,hazardous materials
+3,Acetic anhydride,327.15,1,CC(=O)OC(C)=O,hazardous materials
+4,Acetone,255.15,1,CC(C)=O,hazardous materials
+5,Acetone cyanohydrin,347.15,1,CC(C)(O)C#N,hazardous materials
+6,Acetonitrile,279.15,1,CC#N,hazardous materials
+7,Acetyl chloride,277.15,1,CC(=O)Cl,hazardous materials
+8,Acetyl peroxide,386.15,1,CC(=O)OOC(C)=O,hazardous materials
+9,Acrolein,247.15,1,C=CC=O,hazardous materials
+10,Acrylic acid,325.15,1,C=CC(=O)O,hazardous materials
+11,Acrylonitrile,273.15,1,C=CC#N,hazardous materials
+12,Adipic acid,464.15,1,O=C(O)CCCCC(=O)O,hazardous materials
+13,Adiponitrile,366.15,1,N#CCCCCC#N,hazardous materials
+14,Allyl acetate,294.15,1,C=CCOC(C)=O,hazardous materials
+15,Allyl alcohol,294.15,1,C=CCO,hazardous materials
+16,Allyl amine,244.15,1,C=CCN,hazardous materials
+17,Allyl bromide,272.15,1,C=CCBr,hazardous materials
+18,Allyl chloride,241.15,1,C=CCCl,hazardous materials
+19,Allyl chloroformate,304.15,1,C=CCOC(=O)Cl,hazardous materials
+20,Allyl glycidyl ether,330.15,1,C=CCOCC1CO1,hazardous materials
+21,Aminoethylethanol amine,402.15,1,NCCC(O)CN,hazardous materials
+22,iso-Amyl acetate,296.15,1,CC(=O)OCCC(C)C,hazardous materials
+23,sec-Amyl acetate,305.15,1,CCCC(C)OC(C)=O,hazardous materials
+24,iso-Amyl alcohol,316.15,1,CC(C)CCO,hazardous materials
+25,tert-Amyl alcohol,292.15,1,CCC(C)(C)O,hazardous materials
+26,Amylamine,280.15,1,CCCCCN,hazardous materials
+27,iso-Amyl formate,299.15,1,CC(C)CCOC=O,hazardous materials
+28,Amyl mercaptan,291.15,1,CCCCCS,hazardous materials
+29,iso-Amyl nitrate,325.15,1,CC(C)CCO[N+](=O)[O-],hazardous materials
+30,Amyl nitrite,283.15,1,CCCCCON=O,hazardous materials
+31,Aniline,343.15,1,Nc1ccccc1,hazardous materials
+32,o-Anisaldehyde,391.15,1,COc1ccccc1C=O,hazardous materials
+33,Anisole,325.15,1,COc1ccccc1,hazardous materials
+34,Anthracene,394.15,1,c1ccc2cc3ccccc3cc2c1,hazardous materials
+35,Anthraquinone,458.15,1,O=C1c2ccccc2C(=O)c2ccccc21,hazardous materials
+36,Aziridine,262.15,1,C1CN1,hazardous materials
+37,Benzaldehyde,337.15,1,O=Cc1ccccc1,hazardous materials
+38,Benzene,262.15,1,c1ccccc1,hazardous materials
+39,Benzoic acid,394.15,1,O=C(O)c1ccccc1,hazardous materials
+40,Benzonitrile,358.15,1,N#Cc1ccccc1,hazardous materials
+41,Benzotrifluoride,285.15,1,FC(F)(F)c1ccccc1,hazardous materials
+42,Benzoyl chloride,345.15,1,O=C(Cl)c1ccccc1,hazardous materials
+43,Benzyl acetate,375.15,1,CC(=O)OCc1ccccc1,hazardous materials
+44,Benzyl alcohol,374.15,1,OCc1ccccc1,hazardous materials
+45,Benzylamine,336.15,1,NCc1ccccc1,hazardous materials
+46,Benzyl benzoate,421.15,1,O=C(OCc1ccccc1)c1ccccc1,hazardous materials
+47,Benzyl chloride,340.15,1,ClCc1ccccc1,hazardous materials
+48,Benzyl mercaptan,343.15,1,SCc1ccccc1,hazardous materials
+49,Bicyclohexyl,347.15,1,C1CCC(C2CCCCC2)CC1,hazardous materials
+50,Biphenyl,386.15,1,c1ccc(-c2ccccc2)cc1,hazardous materials
+51,Bromobenzene,324.15,1,Brc1ccccc1,hazardous materials
+52,o-Bromotoluene,352.15,1,Cc1ccccc1Br,hazardous materials
+53,n-Butane,213.15,1,CCCC,hazardous materials
+54,1-Butene,193.15,1,C=CCC,hazardous materials
+55,n-Butyl acetate,300.15,1,CCCCOC(C)=O,hazardous materials
+56,iso-Butyl acetate,291.15,1,CC(=O)OCC(C)C,hazardous materials
+57,sec-Butyl acetate,304.15,1,CCC(C)OC(C)=O,hazardous materials
+58,n-Butyl alcohol,302.15,1,CCCCO,hazardous materials
+59,iso-Butyl alcohol,301.15,1,CC(C)CO,hazardous materials
+60,sec-Butyl alcohol,297.15,1,CCC(C)O,hazardous materials
+61,tert-Butyl alcohol,283.15,1,CC(C)(C)O,hazardous materials
+62,Butylamine,261.15,1,CCCCN,hazardous materials
+63,iso-Butylamine,264.15,1,CC(C)CN,hazardous materials
+64,n-Butyl benzene,344.15,1,CCCCc1ccccc1,hazardous materials
+65,iso-Butyl benzene,325.15,1,CC(C)Cc1ccccc1,hazardous materials
+66,n-Butyl bromide,291.15,1,CCCCBr,hazardous materials
+67,n-Butyl chloride,280.15,1,CCCCCl,hazardous materials
+68,"1,3-Butylene glycol",394.15,1,CC(O)CCO,hazardous materials
+69,"2,3-Butylene glycol",358.15,1,CC(O)C(C)O,hazardous materials
+70,n-Butyl formate,291.15,1,CCCCOC=O,hazardous materials
+71,Butyl lactate,344.15,1,CCCCOC(=O)C(C)O,hazardous materials
+72,Butyl mercaptan,275.15,1,CCCCS,hazardous materials
+73,Butyl methacrylate,325.15,1,C=C(C)C(=O)OCCCC,hazardous materials
+74,Isobutyl methyl ketone,290.15,1,CC(=O)CC(C)C,hazardous materials
+75,tert-Butyl perbenzoate,361.15,1,CC(C)(C)OOC(=O)c1ccccc1,hazardous materials
+76,Butyl vinyl ether,264.15,1,C=COCCCC,hazardous materials
+77,n-Butyraldehyde,266.45,1,CCCC=O,hazardous materials
+78,n-Butyric acid,339.15,1,CCCC(=O)O,hazardous materials
+79,n-Butyric anhydride,361.15,1,CCCC(=O)OC(=O)CCC,hazardous materials
+80,2-Butyrolactone,371.15,1,CCC1OC1=O,hazardous materials
+81,n-Butyronitrile,299.15,1,CCCC#N,hazardous materials
+82,Camphor,339.15,1,CC12CCC(CC1=O)C2(C)C,hazardous materials
+83,Caproic acid,375.15,1,CCCCCC(=O)O,hazardous materials
+84,Caprylaldehyde,325.15,1,CCCCCCCC=O,hazardous materials
+85,Carbon disulphide,243.15,1,S=C=S,hazardous materials
+86,Chloroacetaldehyde,361.15,1,O=CCCl,hazardous materials
+87,Chlorobenzene,302.15,1,Clc1ccccc1,hazardous materials
+88,"1-Chloro-2,4-dinitrobenzene",467.15,1,O=[N+]([O-])c1ccc(Cl)c([N+](=O)[O-])c1,hazardous materials
+89,Chloronaphthalene,405.15,1,Clc1cccc2ccccc12,hazardous materials
+90,1-Chloro-1-nitropropane,335.15,1,CCC(Cl)[N+](=O)[O-],hazardous materials
+91,o-Chlorophenol,337.15,1,Oc1ccccc1Cl,hazardous materials
+92,p-Chlorophenol,394.15,1,Oc1ccc(Cl)cc1,hazardous materials
+93,Chlorotrifluoroethylene,246.15,1,FC(F)=C(F)Cl,hazardous materials
+94,Cinnamaldehyde,322.15,1,O=CC=Cc1ccccc1,hazardous materials
+95,m-Cresol,367.15,1,Cc1cccc(O)c1,hazardous materials
+96,o-Cresol,354.15,1,Cc1ccccc1O,hazardous materials
+97,p-Cresol,367.15,1,Cc1ccc(O)cc1,hazardous materials
+98,Crotonaldehyde,286.15,1,C/C=C/C=O,hazardous materials
+99,Cumene,317.15,1,CC(C)c1ccccc1,hazardous materials
+100,Cumene hydroperoxide,352.15,1,CC(C)c1ccccc1.[O-]O,hazardous materials
+101,Cyclohexane,253.15,1,C1CCCCC1,hazardous materials
+102,Cyclohexanol,341.15,1,OC1CCCCC1,hazardous materials
+103,Cyclohexanone,317.15,1,O=C1CCCCC1,hazardous materials
+104,Cyclohexylamine,305.15,1,NC1CCCCC1,hazardous materials
+105,Cyclohexylbenzene,372.15,1,c1ccc(C2CCCCC2)cc1,hazardous materials
+106,Cyclopentane,266.15,1,C1CCCC1,hazardous materials
+107,Cyclopentanone,299.15,1,O=C1CCCC1,hazardous materials
+108,p-Cymene,320.15,1,Cc1ccc(C(C)C)cc1,hazardous materials
+109,Decahydronaphthalene,330.15,1,C1CCC2CCCCC2C1,hazardous materials
+110,iso-Decaldehyde,358.15,1,CC(C)CCCCCCC=O,hazardous materials
+111,n-Decane,319.15,1,CCCCCCCCCC,hazardous materials
+112,n-Decyl alcohol,355.15,1,CCCCCCCCCCO,hazardous materials
+113,Diacetone alcohol,337.15,1,CC(=O)CC(C)(C)O,hazardous materials
+114,Dibutylamine,325.15,1,CCCCNCCCC,hazardous materials
+115,Dibutyldichlorotin,628.15,1,CCCC[Sn](Cl)(Cl)CCCC,hazardous materials
+116,Di-n-butyl ether,298.15,1,CCCCOCCCC,hazardous materials
+117,Dibutyl oxalate,377.15,1,CCCCOC(=O)C(=O)OCCCC,hazardous materials
+118,Dibutyl peroxide,291.15,1,CCCCOOCCCC,hazardous materials
+119,Dibutyl phosphite,322.15,1,CCCCOP([O-])OCCCC,hazardous materials
+120,Dibutyl phthalate,430.15,1,CCCCOC(=O)c1ccccc1C(=O)OCCCC,hazardous materials
+121,Dibutyl tartrate,364.15,1,CCCCOC(=O)C(O)C(O)C(=O)OCCCC,hazardous materials
+122,Dichloroacetyl chloride,339.15,1,O=C(Cl)C(Cl)Cl,hazardous materials
+123,"2,5-Dichloroaniline",439.15,1,Nc1cc(Cl)ccc1Cl,hazardous materials
+124,o-Dichlorobenzene,339.15,1,Clc1ccccc1Cl,hazardous materials
+125,"1,4-Dichlorobutane",325.15,1,ClCCCCCl,hazardous materials
+126,"1,3-Dichloro-2-butene",300.15,1,CC(Cl)=CCCl,hazardous materials
+127,"1,1-Dichloroethane",267.15,1,CC(Cl)Cl,hazardous materials
+128,"1,1-Dichloro-1-nitroethane",349.15,1,CC(Cl)(Cl)[N+](=O)[O-],hazardous materials
+129,"2,4-Dichlorophenol",387.15,1,Oc1ccc(Cl)cc1Cl,hazardous materials
+130,"1,2-Dichloropropane",289.15,1,CC(Cl)CCl,hazardous materials
+131,"1,3-Dichloropropane",308.15,1,ClCCCCl,hazardous materials
+132,Dicyclohexylamine,372.15,1,C1CCC(NC2CCCCC2)CC1,hazardous materials
+133,Diethanolamine,425.15,1,OCCNCCO,hazardous materials
+134,"N,N-Diethylaniline ",358.15,1,CCN(CC)c1ccccc1,hazardous materials
+135,Diethylcarbonate,298.15,1,CCOC(=O)OCC,hazardous materials
+136,Diethylene glycol,397.15,1,OCCOCCO,hazardous materials
+137,Diethylene glycol-monoethyl ether,369.15,1,CCOCCOCCO,hazardous materials
+138,Diethylenetriamine,375.15,1,NCCNCCN,hazardous materials
+139,Diethyl ketone,286.15,1,CCC(=O)CC,hazardous materials
+140,Diethyl malonate,366.15,1,CCOC(=O)CC(=O)OCC,hazardous materials
+141,Diethyl sulphate,377.15,1,CCOS(=O)(=O)OCC,hazardous materials
+142,"3,4-Dihydro-2H-pyran",255.15,1,C1=COCCC1,hazardous materials
+143,Diisobutyl ketone,333.15,1,CC(C)CC(=O)CC(C)C,hazardous materials
+144,Diisobutyl carbinol,347.15,1,CC(C)CC(O)CC(C)C,hazardous materials
+145,Diisopropyl amine,272.15,1,CC(C)NC(C)C,hazardous materials
+146,Diisopropyl ether,245.15,1,CC(C)OC(C)C,hazardous materials
+147,Diisopropyl benzene,349.15,1,CC(C)c1ccccc1C(C)C,hazardous materials
+148,Dimethoxyethane,313.15,1,COCCOC,hazardous materials
+149,Dimethoxymethane,255.15,1,COCOC,hazardous materials
+150,Dimethoxypropane,266.15,1,COC(C)(C)OC,hazardous materials
+151,"N,N-Dimethyl acetamide ",350.15,1,CC(=O)N(C)C,hazardous materials
+152,"N,N-Dimethylaniline ",336.15,1,CN(C)c1ccccc1,hazardous materials
+153,"2,2-Dimethyl butane",225.15,1,CCC(C)(C)C,hazardous materials
+154,"2,3-Dimethyl butane",244.15,1,CC(C)C(C)C,hazardous materials
+155,Dimethyl carbonate,292.15,1,COC(=O)OC,hazardous materials
+156,Dimethylformamide,331.15,1,CN(C)C=O,hazardous materials
+157,Dimethyl phthalate,419.15,1,COC(=O)c1ccccc1C(=O)OC,hazardous materials
+158,Dimethyl sulphate,356.15,1,COS(=O)(=O)OC,hazardous materials
+159,Dimethyl sulphoxide,368.15,1,CS(C)=O,hazardous materials
+160,m-Dinitrobenzene,423.15,1,O=[N+]([O-])c1cccc([N+](=O)[O-])c1,hazardous materials
+161,o-Dinitrobenzene,423.15,1,O=[N+]([O-])c1ccccc1[N+](=O)[O-],hazardous materials
+162,p-Dinitrobenzene,423.15,1,O=[N+]([O-])c1ccc([N+](=O)[O-])cc1,hazardous materials
+163,"2,4-Dinitrotoluene",480.15,1,Cc1ccc([N+](=O)[O-])cc1[N+](=O)[O-],hazardous materials
+164,Di-n-Octyl phthalate,492.15,1,CCCCCCCCOC(=O)c1ccccc1C(=O)OCCCCCCCC,hazardous materials
+165,Di-sec-Octyl phthalate,491.15,1,CCCCCCC(C)OC(=O)c1ccccc1C(=O)OC(C)CCCCCC,hazardous materials
+166,"1,4-Dioxane",285.15,1,C1COCCO1,hazardous materials
+167,Diphenylamine,426.15,1,c1ccc(Nc2ccccc2)cc1,hazardous materials
+168,Diphenylmethane,403.15,1,c1ccc(Cc2ccccc2)cc1,hazardous materials
+169,Dipropylene glycol methyl ether,358.15,1,COC(C)COC(C)CO,hazardous materials
+170,n-Dodecane,347.15,1,CCCCCCCCCCCC,hazardous materials
+171,Epichlorohydrin,314.15,1,ClCC1CO1,hazardous materials
+172,"1,2-Epoxy-propane",236.15,1,CC1CO1,hazardous materials
+173,Ethanol,285.15,1,CCO,hazardous materials
+174,Ethanolamine,358.15,1,NCCO,hazardous materials
+175,Ethyl acetanilide,325.15,1,CCCC(=O)Nc1ccccc1,hazardous materials
+176,Ethyl acetate,268.75,1,CCOC(C)=O,hazardous materials
+177,Ethyl acetoacetate,357.15,1,CCOC(=O)CC(C)=O,hazardous materials
+178,Ethyl acrylate,289.15,1,C=CC(=O)OCC,hazardous materials
+179,Ethyl amyl ketone,330.15,1,CCCCCC(=O)CC,hazardous materials
+180,n-Ethyl aniline,358.15,1,CCNc1ccccc1,hazardous materials
+181,Ethyl benzene,288.15,1,CCc1ccccc1,hazardous materials
+182,Ethyl bromoacetate,321.15,1,CCOC(=O)CBr,hazardous materials
+183,Ethyl butyl ketone,319.15,1,CCCCC(=O)CC,hazardous materials
+184,2-Ethyl butyraldehyde,294.15,1,CCC(C=O)CC,hazardous materials
+185,Ethyl butyrate,299.15,1,CCCC(=O)OCC,hazardous materials
+186,Ethyl chloride,223.15,1,CCCl,hazardous materials
+187,Ethyl chloroacetate,339.15,1,CCOC(=O)CCl,hazardous materials
+188,Ethyl chloroformate,289.15,1,CCOC(=O)Cl,hazardous materials
+189,Ethyl crotonate,275.15,1,C/C=C/C(=O)OCC,hazardous materials
+190,Ethyl cyanoacetate,383.15,1,CCOC(=O)CC#N,hazardous materials
+191,Ethylene chlorohydrin,333.15,1,OCCCl,hazardous materials
+192,Ethylene dichloride,286.15,1,ClCCCl,hazardous materials
+193,Ethylene glycol,384.15,1,OCCO,hazardous materials
+194,Ethyl ether,228.15,1,CCOCC,hazardous materials
+195,Ethyl formate,253.15,1,CCOC=O,hazardous materials
+196,2-Ethyl hexanol,357.15,1,CCCCC(CC)CO,hazardous materials
+197,Ethyl lactate,319.15,1,CCOC(=O)C(C)O,hazardous materials
+198,Ethyl methyl ether,236.15,1,CCOC,hazardous materials
+199,N-Ethylmorpholine,305.15,1,CCN1CCOCC1,hazardous materials
+200,Ethyl nitrite,238.15,1,CCON=O,hazardous materials
+201,Ethyl oxalate,349.15,1,CCOC(=O)C(=O)[O-],hazardous materials
+202,Ethyl propionate,285.15,1,CCOC(=O)CC,hazardous materials
+203,2-Ethyl-3-propyl acrolein,341.15,1,CCCC=C(C=O)CC,hazardous materials
+204,Ethyl silicate,325.15,1,CCO[Si]([O-])([O-])[O-],hazardous materials
+205,Formamide,428.15,1,NC=O,hazardous materials
+206,Formic acid,342.15,1,O=CO,hazardous materials
+207,Furfural,333.15,1,O=Cc1ccco1,hazardous materials
+208,Furfuryl alcohol,348.15,1,OCc1ccco1,hazardous materials
+209,Glycerol,433.15,1,OCC(O)CO,hazardous materials
+210,Heptane,269.15,1,CCCCCCC,hazardous materials
+211,n-Heptylamine,327.15,1,CCCCCCCN,hazardous materials
+212,Hexachlorobenzene,515.15,1,Clc1c(Cl)c(Cl)c(Cl)c(Cl)c1Cl,hazardous materials
+213,"2,4-Hexadienal",341.15,1,CC=CC=CC=O,hazardous materials
+214,"1,4-Hexadiene",252.15,1,C=CCC=CC,hazardous materials
+215,Hexane,251.15,1,CCCCCC,hazardous materials
+216,n-Hexanol,333.15,1,CCCCCCO,hazardous materials
+217,sec-Hexyl acetate,318.15,1,CCCCC(C)OC(C)=O,hazardous materials
+218,Hexyl amine,302.15,1,CCCCCCN,hazardous materials
+219,Hydrazine,311.15,1,NN,hazardous materials
+220,Hydrocyanic acid,255.15,1,C#N,hazardous materials
+221,Hydroquinone monomethyl ether,404.15,1,COc1ccc(O)cc1,hazardous materials
+222,Hydroxylamine,402.15,1,NO,hazardous materials
+223,Isoprene,219.15,1,C=CC(=C)C,hazardous materials
+224,Lactonitrile,350.15,1,CC(O)C#N,hazardous materials
+225,Maleic anhydride,375.15,1,O=C1C=CC(=O)O1,hazardous materials
+226,"p-Mentha-1,8-diene",318.15,1,C=C(C)C1CC=C(C)CC1,hazardous materials
+227,2-Mercaptoethanol,347.15,1,OCCS,hazardous materials
+228,Mesityl oxide,304.15,1,CC(=O)C=C(C)C,hazardous materials
+229,Methyl acetate,264.15,1,COC(C)=O,hazardous materials
+230,Methyl acrylate,270.15,1,C=CC(=O)OC,hazardous materials
+231,Methyl alcohol,285.15,1,CO,hazardous materials
+232,Methyl amyl alcohol,314.15,1,CCCCC(C)O,hazardous materials
+233,N-Methylbutylamine,286.15,1,CCCCNC,hazardous materials
+234,Methyl butyl ketone,308.15,1,CCCCC(C)=O,hazardous materials
+235,Methyl butyrate,287.15,1,CCCC(=O)OC,hazardous materials
+236,Methyl chloroformate,285.15,1,COC(=O)Cl,hazardous materials
+237,Methyl cyclohexane,269.15,1,CC1CCCCC1,hazardous materials
+238,2-Methyl cyclohexanone,321.15,1,CC1CCCCC1=O,hazardous materials
+239,4-Methyl cyclohexene,272.15,1,CC1CC=CCC1,hazardous materials
+240,Methyl ether,232.15,1,COC,hazardous materials
+241,Methyl ethyl ether,236.15,1,CCOC,hazardous materials
+242,Methyl ethyl ketone,266.15,1,CCC(C)=O,hazardous materials
+243,Methyl formate,254.15,1,COC=O,hazardous materials
+244,2-Methyl furan,243.15,1,Cc1ccco1,hazardous materials
+245,Methyl isobutyl ketone,296.15,1,CC(=O)CC(C)C,hazardous materials
+246,Methyl isobutyrate,286.15,1,COC(=O)C(C)C,hazardous materials
+247,Methyl methacrylate,283.15,1,C=C(C)C(=O)OC,hazardous materials
+248,Methyl-n-Propyl ketone,280.15,1,CCCC(C)=O,hazardous materials
+249,Methyl salicylate,374.15,1,COC(=O)c1ccccc1O,hazardous materials
+250,Methyl vinyl ether,222.15,1,C=COC,hazardous materials
+251,Monomethylamine,263.15,1,CN,hazardous materials
+252,Morpholine,311.15,1,C1COCCN1,hazardous materials
+253,Naphthalene,352.15,1,c1ccc2ccccc2c1,hazardous materials
+254,2-Naphthol,426.15,1,Oc1ccc2ccccc2c1,hazardous materials
+255,1-Naphthylamine,430.15,1,Nc1cccc2ccccc12,hazardous materials
+256,o-Nitroaniline,441.15,1,Nc1ccccc1[N+](=O)[O-],hazardous materials
+257,p-Nitroaniline,472.15,1,Nc1ccc([N+](=O)[O-])cc1,hazardous materials
+258,Nitrobenzene,361.15,1,O=[N+]([O-])c1ccccc1,hazardous materials
+259,o-Nitrobiphenyl,416.15,1,O=[N+]([O-])c1ccccc1-c1ccccc1,hazardous materials
+260,Nitroethane,311.15,1,CC[N+](=O)[O-],hazardous materials
+261,Nitromethane,308.15,1,C[N+](=O)[O-],hazardous materials
+262,alpha-Nitronaphthalene,437.15,1,O=[N+]([O-])c1cccc2ccccc12,hazardous materials
+263,1-Nitropropane,322.15,1,CCC[N+](=O)[O-],hazardous materials
+264,2-Nitropropane,312.15,1,CC(C)[N+](=O)[O-],hazardous materials
+265,m-Nitrotoluene,379.15,1,Cc1cccc([N+](=O)[O-])c1,hazardous materials
+266,o-Nitrotoluene,379.15,1,Cc1ccccc1[N+](=O)[O-],hazardous materials
+267,p-Nitrotoluene,379.15,1,Cc1ccc([N+](=O)[O-])cc1,hazardous materials
+268,Nonyl phenol,414.15,1,CCCCCCCCCc1ccccc1O,hazardous materials
+269,Octane,286.15,1,CCCCCCCC,hazardous materials
+270,Octanoic acid,405.15,1,CCCCCCCC(=O)O,hazardous materials
+271,1-Octanol,354.15,1,CCCCCCCCO,hazardous materials
+272,2-Octanol,361.15,1,CCCCCCC(C)O,hazardous materials
+273,Oleic acid,462.15,1,CCCCCCCC/C=C\CCCCCCCC(=O)O,hazardous materials
+274,n-Pentane,224.15,1,CCCCC,hazardous materials
+275,iso-Pentane,222.15,1,CCC(C)C,hazardous materials
+276,"1,5-Pentanediol",408.15,1,OCCCCCO,hazardous materials
+277,"2,4-Pentanedione",314.15,1,CC(=O)CC(C)=O,hazardous materials
+278,2-Pentanol,312.15,1,CCCC(C)O,hazardous materials
+279,Phenol,352.15,1,Oc1ccccc1,hazardous materials
+280,Phenyl acetate,353.15,1,CC(=O)Oc1ccccc1,hazardous materials
+281,p-Phenylenediamine,429.15,1,Nc1ccc(N)cc1,hazardous materials
+282,Phenylethanolamine,425.15,1,NCC(O)c1ccccc1,hazardous materials
+283,Phenyl ether,369.15,1,c1ccc(Oc2ccccc2)cc1,hazardous materials
+284,Phenylhydrazine,362.15,1,NNc1ccccc1,hazardous materials
+285,o-Phenyl phenol,397.15,1,Oc1ccccc1-c1ccccc1,hazardous materials
+286,Phorone,358.15,1,CC(C)=CC(=O)C=C(C)C,hazardous materials
+287,Phthalic anhydride,424.15,1,O=C1OC(=O)c2ccccc21,hazardous materials
+288,2-Picoline,312.15,1,Cc1ccccn1,hazardous materials
+289,4-Picoline,330.15,1,Cc1ccncc1,hazardous materials
+290,Picric acid,423.15,1,O=[N+]([O-])c1cc([N+](=O)[O-])c(O)c([N+](=O)[O-])c1,hazardous materials
+291,2-Pinene,306.15,1,CC1=CCC2CC1C2(C)C,hazardous materials
+292,Piperidine,289.15,1,C1CCNCC1,hazardous materials
+293,Piperylene,230.15,1,C=CC=CC,hazardous materials
+294,"1,3-Propanediamine",297.15,1,NCCCN,hazardous materials
+295,"1,2-Propanediol",372.15,1,CC(O)CO,hazardous materials
+296,Propargyl alcohol,309.15,1,C#CCO,hazardous materials
+297,Propargyl bromide,283.15,1,C#CCBr,hazardous materials
+298,iso-Propenyl acetate,289.15,1,C=C(C)OC(C)=O,hazardous materials
+299,Propionaldehyde,264.15,1,CCC=O,hazardous materials
+300,Propionic acid,327.15,1,CCC(=O)O,hazardous materials
+301,Propionitrile,275.15,1,CCC#N,hazardous materials
+302,Propionyl chloride,285.15,1,CCC(=O)Cl,hazardous materials
+303,iso-Propyl acetate,277.15,1,CC(=O)OC(C)C,hazardous materials
+304,n-Propyl acetate,287.15,1,CCCOC(C)=O,hazardous materials
+305,n-Propyl alcohol,288.15,1,CCCO,hazardous materials
+306,iso-Propyl alcohol,285.15,1,CC(C)O,hazardous materials
+307,Propylamine,236.15,1,CCCN,hazardous materials
+308,iso-Propylamine,236.15,1,CC(C)N,hazardous materials
+309,Propyl benzene,303.15,1,CCCc1ccccc1,hazardous materials
+310,iso-Propyl benzoate,372.15,1,CC(C)OC(=O)c1ccccc1,hazardous materials
+311,Propylene,165.15,1,C=CC,hazardous materials
+312,Propylene carbonate,408.15,1,CC1COC(=O)O1,hazardous materials
+313,iso-Propyl ether,245.15,1,CC(C)OC(C)C,hazardous materials
+314,n-Propyl formate,270.15,1,CCCOC=O,hazardous materials
+315,iso-Propyl formate,267.15,1,CC(C)OC=O,hazardous materials
+316,Propyl nitrate,293.15,1,CCCO[N+](=O)[O-],hazardous materials
+317,Pyridine,293.15,1,c1ccncc1,hazardous materials
+318,Pyrrolidine,276.15,1,C1CCNC1,hazardous materials
+319,Pyruvic acid,276.15,1,CC(=O)C(=O)O,hazardous materials
+320,Resorcinol,400.15,1,Oc1cccc(O)c1,hazardous materials
+321,Salicylaldehyde,351.15,1,O=Cc1ccccc1O,hazardous materials
+322,Salicylic acid,430.15,1,O=C(O)c1ccccc1O,hazardous materials
+323,Stearic acid,469.15,1,CCCCCCCCCCCCCCCCCC(=O)O,hazardous materials
+324,Styrene,304.15,1,C=Cc1ccccc1,hazardous materials
+325,Succinonitrile,405.15,1,N#CCCC#N,hazardous materials
+326,Sulphur,480.15,1,[S],hazardous materials
+327,Sulphur monochloride,391.15,1,[S]Cl,hazardous materials
+328,m-Terphenyl,408.15,1,c1ccc(-c2cccc(-c3ccccc3)c2)cc1,hazardous materials
+329,o-Terphenyl,436.15,1,c1ccc(-c2ccccc2-c2ccccc2)cc1,hazardous materials
+330,"1,2,4,5-Tetrachlorobenzene",428.15,1,Clc1cc(Cl)c(Cl)cc1Cl,hazardous materials
+331,Tetradecane,373.15,1,CCCCCCCCCCCCCC,hazardous materials
+332,Tetraethylenepentamine,436.15,1,NCCNCCNCCNCCN,hazardous materials
+333,Tetraethyl lead,366.15,1,CC[Pb](CC)(CC)CC,hazardous materials
+334,Tetrahydrofuran,259.15,1,C1CCOC1,hazardous materials
+335,Tetrahydronaphthalene,344.15,1,c1ccc2c(c1)CCCC2,hazardous materials
+336,"2,2'-Thiodiethanol",433.15,1,OCCSCCO,hazardous materials
+337,Thiophene,272.15,1,c1ccsc1,hazardous materials
+338,Toluene,277.55,1,Cc1ccccc1,hazardous materials
+339,m-Toluidine,359.15,1,Cc1cccc(N)c1,hazardous materials
+340,o-Toluidine,358.15,1,Cc1ccccc1N,hazardous materials
+341,p-Toluidine,360.15,1,Cc1ccc(N)cc1,hazardous materials
+342,Triamylamine,375.15,1,CCCCCN(CCCCC)CCCCC,hazardous materials
+343,Tri-n-butyl amine,359.15,1,CCCCN(CCCC)CCCC,hazardous materials
+344,Tributyl phosphate,419.15,1,CCCCOP(=O)(OCCCC)OCCCC,hazardous materials
+345,"1,2,4-Trichlorobenzene",372.15,1,Clc1ccc(Cl)c(Cl)c1,hazardous materials
+346,"1,2,3-Trichloropropane",355.15,1,ClCC(Cl)CCl,hazardous materials
+347,Tridecanol,394.15,1,CCCCCCCCCCCCCO,hazardous materials
+348,Triethanolamine,452.15,1,OCCN(CCO)CCO,hazardous materials
+349,Triethylene glycol,450.15,1,OCCOCCOCCO,hazardous materials
+350,Triethylene-tetramine,408.15,1,NCCNCCNCCN,hazardous materials
+351,Trimethyl amine,266.15,1,CN(C)C,hazardous materials
+352,"2,2,4-Trimethyl pentane",261.15,1,CC(C)CC(C)(C)C,hazardous materials
+353,"2,4,4-Trimethyl-2-pentene",275.15,1,CC(C)=CC(C)(C)C,hazardous materials
+354,"1,3,5-Trioxane",318.15,1,C1OCOCO1,hazardous materials
+355,Triphenyl phosphate,493.15,1,O=P(Oc1ccccc1)(Oc1ccccc1)Oc1ccccc1,hazardous materials
+356,Triphenyl phosphine,453.15,1,c1ccc(P(c2ccccc2)c2ccccc2)cc1,hazardous materials
+357,Tripropylamine,314.15,1,CCCN(CCC)CCC,hazardous materials
+358,Tritolyl phosphate,498.15,1,Cc1ccccc1OP(=O)(Oc1ccccc1C)Oc1ccccc1C,hazardous materials
+359,Valeraldehyde,285.15,1,CCCCC=O,hazardous materials
+360,Valeric acid,369.15,1,CCCCC(=O)O,hazardous materials
+361,Vinyl acetate,265.15,1,C=COC(C)=O,hazardous materials
+362,Vinyl chloride,195.15,1,C=CCl,hazardous materials
+363,Vinylidene chloride,258.15,1,C=C(Cl)Cl,hazardous materials
+364,m-Xylene,302.15,1,Cc1cccc(C)c1,hazardous materials
+365,o-Xylene,305.15,1,Cc1ccccc1C,hazardous materials
+366,p-Xylene,300.15,1,Cc1ccc(C)cc1,hazardous materials
+367,Xylidine,370.15,1,Cc1cccc(N)c1C,hazardous materials
