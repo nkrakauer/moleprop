@@ -106,7 +106,6 @@ class Splitter:
             use_silicons = None,
             n_splits = None,
             transfer_learning = None,
-            tl_swap_frac = 0,
             tl_n_splits = None,
             frac = 1):  # leave out group
         """
@@ -116,10 +115,13 @@ class Splitter:
         dataset: data frame
         test_group: string
         frac: fraction of the left-out group that will be used as test set
-        n_splits: n-fold CV. If None, do single validation
+        n_splits: n-fold CV: leave 1/n of the test_group as test set, 
+                             the remaining 80% will be added to the training set. 
+                  If None, do single validation
         transfer_learning: flag for transfer learning
-        tl_swap_frac: frac for testing transfer learning
-        tl_n_splits: n-fold CV for transfer learning. If none, based on frac to do one transfer leaning validaiton
+        tl_n_splits: n-fold CV for transfer learning: leave 1/n of the test_group as test set, 
+                                                      the remaining 80% will be used as the second training set
+                     If none, based on frac to do one transfer leaning validaiton
         """
         # remove duplicates in train group.
         if not use_metallics and not use_silicons:
@@ -187,8 +189,8 @@ class Splitter:
                         i = len(raw_test_indices)+1
                     else:
                         test_chunk = raw_test_indices[i:i+n]
-                    train = raw_train_indices+ test_chunk
-                    test = [ind for ind in raw_test_indices if ind not in test_chunk]
+                    train = raw_train_indices+ [ind for ind in raw_test_indices if ind not in test_chunk]
+                    test = test_chunk
                     indices.append((train,test))
                     if split_num == n_splits:
                         break
@@ -196,9 +198,8 @@ class Splitter:
             if tl_n_splits == None:
                 test_indices = random.sample(raw_test_indices, int(frac*len(raw_test_indices)))
                 second_train_indices = [x for x in raw_test_indices if x not in test_indices]
-                non_target_test_indices = random.sample(raw_train_indices, int(tl_swap_frac*len(raw_train_indices)))
-                train_indices = [x for x in raw_train_indices if x not in non_target_test_indices]
-                test_indices = test_indices + non_target_test_indices
+                train_indices = raw_train_indices
+                test_indices = test_indices
                 indices.append((train_indices, test_indices, second_train_indices))
             else:
                 n = int(len(raw_test_indices)/tl_n_splits)
@@ -207,13 +208,12 @@ class Splitter:
                     split_num +=1
                     if split_num == tl_n_splits: 
                         # to make sure the additional several data at the end will not be generated as a new fold
-                        second_train_indices = raw_test_indices[i:]
+                        test_indices = raw_test_indices[i:]
                     else:
-                        second_train_indices = raw_test_indices[i:i+n]
-                    test_indices = [ind for ind in raw_test_indices if ind not in second_train_indices]
-                    non_target_test_indices = random.sample(raw_train_indices, int(tl_swap_frac*len(raw_train_indices)))
-                    train_indices = [x for x in raw_train_indices if x not in non_target_test_indices]
-                    test_indices = test_indices+non_target_test_indices
+                        test_indices = raw_test_indices[i:i+n]
+                    second_train_indices = [ind for ind in raw_test_indices if ind not in test_indices]
+                    train_indices = raw_train_indices
+                    test_indices = test_indices
                     indices.append((train_indices,test_indices, second_train_indices))
                     if split_num == tl_n_splits:
                         break                
