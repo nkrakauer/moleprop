@@ -527,15 +527,20 @@ class Run:
         model_obj = None
         if model == 'GraphConv' or model == 'graphconv' or model == 'GC':
             model_obj = Model.graphconv(model_args,"train_set.csv", "test_set.csv", True)
+        elif model == 'MPNN':
+            model_obj = Model.MPNN(model_args,"train_set.csv", "test_set.csv", True)
         else:
-          print("you messed up boy")
-          return None
+          print("you messed up boi")
+          return
 
         # DEBUG
         print("[DEBUG] model object built, trained, and saved")
 
         # continue training, then test
-        rms_score,mae_score,r2_score,train_scores,pred = Model.update_model(model_obj,"second_train_set.csv", "test_set.csv")
+        if model == 'GraphConv' or model == 'graphconv' or model == 'GC':
+            rms_score,mae_score,r2_score,train_scores,pred = Model.update_model_gc(model_obj,"second_train_set.csv", "test_set.csv")
+        elif model == 'MPNN':
+            rms_score,mae_score,r2_score,train_scores,pred = Model.update_model_mp(model_obj,"second_train_set.csv", "test_set.csv")
 
         # DEBUG
         print("[DEBUG] model updated and tested")
@@ -696,7 +701,7 @@ class Model:
           train_r2_score =  list( model.evaluate(train_dataset, [metric_r2], transformers).values()).pop()
           return rms_score, mae_score, r2_score, (train_rms_score,train_r2_score),flattened_pred
 
-    def MPNN(args, train_set, test_set):
+    def MPNN(args, train_set, test_set, only_model = False):
         # parse arguments
         model_args = Model.default_args['MPNN']
         if args != None:
@@ -715,28 +720,45 @@ class Model:
         for transformer in transformers:
             train_dataset = transformer.transform(train_dataset)
             test_dataset = transformer.transform(test_dataset)
-        model = dc.models.MPNNModel(n_tasks = model_args['n_tasks'],
-                                    n_atom_feat = model_args['n_atom_feat'],
-                                    n_pair_feat = model_args['n_pair_feat'],
-                                    T = model_args['T'],
-                                    M = model_args['M'],
-                                    batch_size = model_args['batch_size'],
-                                    learning_rate = model_args['learning_rate'],
-                                    use_queue = model_args['use_queue'],
-                                    mode = model_args['mode'])
-        metric_rms = dc.metrics.Metric(dc.metrics.rms_score, np.mean) # RMSE score
-        metric_mae = dc.metrics.Metric(dc.metrics.mae_score, np.mean) # MAE score
-        metric_r2 = dc.metrics.Metric(dc.metrics.pearson_r2_score, np.mean) # R2 score
-        model.fit(train_dataset, nb_epoch = model_args['nb_epoch'])
-        pred = model.predict(test_dataset)
-        pred = undo_transforms(pred, transformers)
-        flattened_pred = [y for x in pred for y in x]    # convert list of lists to faltten list
-        rms_score = list( model.evaluate(test_dataset, [metric_rms],transformers).values()).pop()
-        mae_score = list( model.evaluate(test_dataset, [metric_mae],transformers).values()).pop()
-        r2_score = list( model.evaluate(test_dataset, [metric_r2],transformers).values()).pop()
-        train_rms_score = list( model.evaluate(train_dataset, [metric_rms],transformers).values()).pop()
-        train_r2_score =  list( model.evaluate(train_dataset, [metric_r2], transformers).values()).pop()
-        return rms_score, mae_score, r2_score, (train_rms_score,train_r2_score),flattened_pred
+        if only_model:
+          # DEBUG
+          print("[DEBUG] in only_model mode")
+
+          model = dc.models.MPNNModel(n_tasks = model_args['n_tasks'],
+                                      n_atom_feat = model_args['n_atom_feat'],
+                                      n_pair_feat = model_args['n_pair_feat'],
+                                      T = model_args['T'],
+                                      M = model_args['M'],
+                                      batch_size = model_args['batch_size'],
+                                      learning_rate = model_args['learning_rate'],
+                                      use_queue = model_args['use_queue'],
+                                      mode = model_args['mode'])
+          model.fit(train_dataset, nb_epoch = model_args['nb_epoch'])
+          #model.save()
+          return model
+        else:
+          model = dc.models.MPNNModel(n_tasks = model_args['n_tasks'],
+                                      n_atom_feat = model_args['n_atom_feat'],
+                                      n_pair_feat = model_args['n_pair_feat'],
+                                      T = model_args['T'],
+                                      M = model_args['M'],
+                                      batch_size = model_args['batch_size'],
+                                      learning_rate = model_args['learning_rate'],
+                                      use_queue = model_args['use_queue'],
+                                      mode = model_args['mode'])
+          metric_rms = dc.metrics.Metric(dc.metrics.rms_score, np.mean) # RMSE score
+          metric_mae = dc.metrics.Metric(dc.metrics.mae_score, np.mean) # MAE score
+          metric_r2 = dc.metrics.Metric(dc.metrics.pearson_r2_score, np.mean) # R2 score
+          model.fit(train_dataset, nb_epoch = model_args['nb_epoch'])
+          pred = model.predict(test_dataset)
+          pred = undo_transforms(pred, transformers)
+          flattened_pred = [y for x in pred for y in x]    # convert list of lists to faltten list
+          rms_score = list( model.evaluate(test_dataset, [metric_rms],transformers).values()).pop()
+          mae_score = list( model.evaluate(test_dataset, [metric_mae],transformers).values()).pop()
+          r2_score = list( model.evaluate(test_dataset, [metric_r2],transformers).values()).pop()
+          train_rms_score = list( model.evaluate(train_dataset, [metric_rms],transformers).values()).pop()
+          train_r2_score =  list( model.evaluate(train_dataset, [metric_r2], transformers).values()).pop()
+          return rms_score, mae_score, r2_score, (train_rms_score,train_r2_score),flattened_pred
     
     def weave(args, train_set, test_set):
         # parse arguments
@@ -779,9 +801,9 @@ class Model:
         train_r2_score =  list( model.evaluate(train_dataset, [metric_r2], transformers).values()).pop()
         return rms_score, mae_score, r2_score, (train_rms_score,train_r2_score),flattened_pred
 
-    def update_model(model, train_set, test_set):
+    def update_model_gc(model, train_set, test_set):
         # DEBUG
-        print("[DEBUG] in update_model")
+        print("[DEBUG] in update_model_gc")
 
         # data processing
         model_args = Model.default_args['graphconv']
@@ -798,12 +820,6 @@ class Model:
         for transformer in transformers:
             train_dataset = transformer.transform(train_dataset)
             test_dataset = transformer.transform(test_dataset)     # Modified by Sean 5/6/2019
-#        transformers = [
-#            dc.trans.NormalizationTransformer(
-#            transform_y=True, dataset=test_dataset, move_mean=True) # sxy: move_mean may need to change (3/23/2019)
-#        ]
-#        for transformer in transformers:
-#             test_dataset = transformer.transform(test_dataset)
 
         # setup metrics
         metric_rms = dc.metrics.Metric(dc.metrics.rms_score, np.mean) # RMSE score
@@ -827,6 +843,52 @@ class Model:
         rms_score = list( model.evaluate(test_dataset, [metric_rms],transformers).values()).pop()
         mae_score = list( model.evaluate(test_dataset, [metric_mae],transformers).values()).pop()
         r2_score =  list( model.evaluate(test_dataset, [metric_r2], transformers).values()).pop()
+        train_rms_score = list( model.evaluate(train_dataset, [metric_rms],transformers).values()).pop()
+        train_r2_score =  list( model.evaluate(train_dataset, [metric_r2], transformers).values()).pop()
+        return rms_score, mae_score, r2_score, (train_rms_score,train_r2_score),flattened_pred
+
+    def update_model_mp(model, train_set, test_set):
+        # DEBUG
+        print("[DEBUG] in update_model_mp")
+
+        # parse arguments
+        model_args = Model.default_args['MPNN']
+        flashpoint_tasks = ['flashpoint']
+        loader = dc.data.CSVLoader(tasks = flashpoint_tasks,
+                                        smiles_field="smiles",
+                                        featurizer = dc.feat.WeaveFeaturizer())
+        train_dataset = loader.featurize(train_set, shard_size=8192)
+        test_dataset = loader.featurize(test_set, shard_size=8192)
+        transformers = [
+            dc.trans.NormalizationTransformer(
+            transform_y=True, dataset=train_dataset, move_mean=True) # sxy: move_mean may need to change (3/23/2019)
+        ]
+        for transformer in transformers:
+            train_dataset = transformer.transform(train_dataset)
+            test_dataset = transformer.transform(test_dataset)
+
+        # setup metrics
+        metric_rms = dc.metrics.Metric(dc.metrics.rms_score, np.mean) # RMSE score
+        metric_mae = dc.metrics.Metric(dc.metrics.mae_score, np.mean) # MAE score
+        metric_r2 = dc.metrics.Metric(dc.metrics.pearson_r2_score, np.mean) # R2 score
+
+        # continue fitting
+        model.fit(train_dataset, nb_epoch = model_args['nb_epoch'])
+
+        # predict
+        pred = model.predict(test_dataset)
+        pred = undo_transforms(pred, transformers)
+
+        output_stuff = []
+        untransformed_test_labels = undo_transforms(test_dataset.y, transformers)
+        for idx,y in enumerate(untransformed_test_labels):
+          output_stuff.append((y[0],pred[idx][0]))
+        np.savetxt("predictions.csv", output_stuff, delimiter=",")
+
+        flattened_pred = [y for x in pred for y in x]    # convert list of lists to faltten list
+        rms_score = list( model.evaluate(test_dataset, [metric_rms],transformers).values()).pop()
+        mae_score = list( model.evaluate(test_dataset, [metric_mae],transformers).values()).pop()
+        r2_score = list( model.evaluate(test_dataset, [metric_r2],transformers).values()).pop()
         train_rms_score = list( model.evaluate(train_dataset, [metric_rms],transformers).values()).pop()
         train_r2_score =  list( model.evaluate(train_dataset, [metric_r2], transformers).values()).pop()
         return rms_score, mae_score, r2_score, (train_rms_score,train_r2_score),flattened_pred
