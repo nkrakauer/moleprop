@@ -251,6 +251,34 @@ class Splitter:
                         break                
         return indices, dataset
 
+    def subset_sample(dataset, size):
+      perm = np.random.permutation(dataset.index)
+      m = len(dataset.index)
+      test_end = m
+      train_end = m - size
+      train_df = dataset.ix[perm[:train_end]]
+      test_df = dataset.ix[perm[train_end:test_end]]
+
+      train_df = integration_helpers.remove_duplicates(train_df) # remove duplicates
+      test_df = integration_helpers.remove_duplicates(test_df) # remove duplicates
+
+      for index, row in test_df.iterrows():
+          smi = row['smiles']
+          train_df = train_df[train_df['smiles'] != smi]
+      temp_train_indices = []
+      for index, row in train_df.iterrows():
+        temp_train_indices.append(index)
+      temp_test_indices = []
+      for index, row in test_df.iterrows():
+        temp_test_indices.append(index)
+      test_indices = temp_test_indices
+      train_indices = temp_train_indices
+
+      indices = []
+      indices.append((train_indices, test_indices))
+
+      return indices, dataset
+
     def get_organosilicons(dataset):
         train_df = dataset.copy()
         for idx, r in dataset.iterrows():
@@ -344,7 +372,8 @@ class Run:
            model,  # need to be either MPNN or GraphConv
            model_args = None,
            metrics = None,
-           n_splits = 3):
+           n_splits = 3,
+           model_obj = None):
         """
         pass data into models (MPNN or graphconv) and conduct cross validation
 
@@ -519,7 +548,9 @@ class Run:
                        indices,
                        model,
                        model_args = None,
-                       metrics = None):
+                       metrics = None,
+                       do_cv = False,
+                       n_splits = 5):
         """
         Conduct basic transfer learning
           - fit on non-target dataset
@@ -535,32 +566,17 @@ class Run:
         if not (model == 'MPNN' or model == 'graphconv' or model == 'GC' or model == 'GraphConv'):
             sys.exit("Only supports MPNN model and graphconv model")
 
-        # split data
         train_indices = indices[0][0]
-        test_indices = indices[0][1]
-        second_train_indices = indices[0][2]
         train_set = data.iloc[train_indices]
-        test_set = data.iloc[test_indices]
-        second_train_set = data.iloc[second_train_indices]
         train_set.to_csv('train_set.csv',index = False)
-        test_set.to_csv('test_set.csv',index = False)
-        second_train_set.to_csv('second_train_set.csv',index = False)
         Loader.getinfo(train_set, "LOG_Train")
-        Loader.getinfo(test_set, "LOG_Test")
-        Loader.getinfo(second_train_set, "LOG_SecondTrain")
-
-        # DEBUG
-        print("[DEBUG] in basic_transfer")
-        print("[DEBUG] size of train_set: ", len(train_set.index))
-        print("[DEBUG] size of test_set: ", len(test_set.index))
-        print("[DEBUG] size of second_train_set: ", len(second_train_set.index))
 
         # get model
         model_obj = None
         if model == 'GraphConv' or model == 'graphconv' or model == 'GC':
-            model_obj = Model.graphconv(model_args,"train_set.csv", "test_set.csv", True)
+            model_obj = Model.graphconv(model_args,"train_set.csv", "train_set.csv", True)
         elif model == 'MPNN':
-            model_obj = Model.MPNN(model_args,"train_set.csv", "test_set.csv", True)
+            model_obj = Model.MPNN(model_args,"train_set.csv", "train_set.csv", True)
         else:
           print("you messed up boi")
           return
@@ -569,58 +585,147 @@ class Run:
         print("[DEBUG] model object built, trained, and saved")
 
         # continue training, then test
-        if model == 'GraphConv' or model == 'graphconv' or model == 'GC':
-            rms_score,mae_score,r2_score,train_scores,pred = Model.update_model_gc(model_obj,"second_train_set.csv", "test_set.csv")
-        elif model == 'MPNN':
-            rms_score,mae_score,r2_score,train_scores,pred = Model.update_model_mp(model_obj,"second_train_set.csv", "test_set.csv")
+        if not do_cv:
+          # split data
+          test_indices = indices[0][1]
+          second_train_indices = indices[0][2]
+          test_set = data.iloc[test_indices]
+          second_train_set = data.iloc[second_train_indices]
+          test_set.to_csv('test_set.csv',index = False)
+          second_train_set.to_csv('second_train_set.csv',index = False)
+          Loader.getinfo(test_set, "LOG_Test")
+          Loader.getinfo(second_train_set, "LOG_SecondTrain")
+
+          # DEBUG
+          print("[DEBUG] in basic_transfer")
+          print("[DEBUG] size of train_set: ", len(train_set.index))
+          print("[DEBUG] size of test_set: ", len(test_set.index))
+          print("[DEBUG] size of second_train_set: ", len(second_train_set.index))
+
+          if model == 'GraphConv' or model == 'graphconv' or model == 'GC':
+              rms_score,mae_score,r2_score,train_scores,pred = Model.update_model_gc(model_obj,"second_train_set.csv", "test_set.csv")
+          elif model == 'MPNN':
+              rms_score,mae_score,r2_score,train_scores,pred = Model.update_model_mp(model_obj,"second_train_set.csv", "test_set.csv")
+
+          # DEBUG
+          print("[DEBUG] model updated and tested")
+
+          # collect results
+          os.remove("train_set.csv")
+          os.remove("test_set.csv")
+          os.remove("second_train_set.csv")
+          rms_scores = []
+          rms_scores.append(rms_score)
+          mae_scores = []
+          mae_scores.append(mae_score)
+          r2_scores = []
+          r2_scores.append(r2_score)
+          aad_scores = []
+          aad_score = (Run.getAAPD(test_set,pred))
+          aad_scores.append(aad_score)
+          scores_all = {'RMSE':rms_score,'RMSE_list':rms_scores,
+                        'MAE': mae_score,'MAE_list':mae_scores,
+                        'R2': r2_score,'R2_list': r2_scores,
+                        'AAD':aad_score,'AAD_list':aad_scores}
+          scores = dict()
+          if metrics == None:  # return default scores (RMSE and R2)
+              scores = {'RMSE':scores_all['RMSE'],
+                        'R2':scores_all['R2'],
+                        'RMSE_list':scores_all['RMSE_list'],
+                        'R2_list':scores_all['R2_list']}
+          else:
+              for m in metrics:
+                  if not ( m == 'RMSE' or m == 'MAE' or m == 'AAD' or m == 'R2'):
+                      sys.exit('only supports RMSE, MAE, AAD, AAE, and R2')
+                  scores[m] = scores_all[m]
+                  list_name = str(m + '_list')
+                  scores[list_name] = scores_all[list_name]
+          outliers = Run.get_outliers(test_set, pred)
+          outliers.to_csv('outliers.csv')
+          file = open('FINAL_RESULT.txt', 'w')
+          for key in scores:
+              s = key + " = " + str(scores[key]) + "\n"
+              file.write(s)
+          file.close()
+          predictions = []
+          predictions.append(pred)
+          test_datasets = []
+          test_datasets.append(test_set)
+        else:
+          cv_rms_scores = []
+          cv_mae_scores = []
+          cv_r2_scores = []
+          cv_aad_scores = []
+          cv_predictions = []
+          cv_test_datasets = []
+          cv_train_scores = []
+          outliers = list()
+          i = 1       # track the number of iteration
+          for train_indices, test_indices, second_train_indices in indices:
+              train_set = data.iloc[second_train_indices]
+              test_set = data.iloc[test_indices]
+              cv_test_datasets.append(test_set)
+              train_set.to_csv('train_set.csv',index = False)
+              test_set.to_csv('test_set.csv',index = False)
+              if model == 'MPNN':
+                  rms_score,mae_score,r2_score,train_scores,pred = Model.update_model_mp(model_obj, "train_set.csv", "test_set.csv")
+              elif model == 'graphconv' or model == 'GC' or model == 'GraphConv':
+                  rms_score,mae_score,r2_score,train_scores,pred = Model.update_model_gc(model_obj,"train_set.csv", "test_set.csv")
+              Loader.getinfo(train_set, 'CV_'+str(i)+"_Train")
+              Loader.getinfo(test_set, 'CV_'+str(i)+"_Test")
+              i += 1
+              cv_train_scores.append(train_scores)
+              cv_rms_scores.append(rms_score)
+              cv_mae_scores.append(mae_score)
+              cv_r2_scores.append(r2_score)
+              cv_aad_scores.append((Run.getAAPD(test_set,pred)))
+              cv_predictions.append(pred)
+              outliers.append(Run.get_outliers(test_set, pred))
+              os.remove("train_set.csv")
+              os.remove("test_set.csv")
+          avg_rms_score = sum(cv_rms_scores)/n_splits
+          avg_mae_score = sum(cv_mae_scores)/n_splits
+          avg_r2_score = sum(cv_r2_scores)/n_splits
+          avg_aad_score = sum(cv_aad_scores)/n_splits
+          # calculate avg train scores
+          avg_train_scores = (sum(cv_train_scores[i][0] for i in range(n_splits))/n_splits,
+                              sum(cv_train_scores[i][1] for i in range(n_splits))/n_splits)
+          scores_all = {'RMSE':avg_rms_score,'RMSE_list':cv_rms_scores,
+                        'MAE': avg_mae_score,'MAE_list':cv_mae_scores,
+                        'R2': avg_r2_score, 'R2_list': cv_r2_scores,
+                        'AAD':avg_aad_score, 'AAD_list': cv_aad_scores,
+                       'train':avg_train_scores}
+          scores = dict()
+          if metrics == None:  # return default scores (RMSE and R2)
+              scores = {'RMSE':scores_all['RMSE'],
+                        'R2':scores_all['R2'],
+                        'RMSE_list':scores_all['RMSE_list'],
+                        'R2_list':scores_all['R2_list'],
+                       'train': scores_all['train']}
+          else:
+              for m in metrics:
+                  if not ( m == 'RMSE' or m == 'MAE' or m == 'AAD' or m == 'R2' or m == 'train'):
+                      sys.exit('only supports RMSE, MAE, AAD, AAE, R2, and train')
+                  scores[m] = scores_all[m]
+                  if m != 'train':
+                      list_name = str(m + '_list')
+                      scores[list_name] = scores_all[list_name]
+          outliers = pd.concat(outliers)
+          outliers.to_csv('outliers.csv')
+          file = open('FINAL_RESULT.txt', 'w')
+          for key in scores:
+              s = key + " = " + str(scores[key])+"\n"
+              file.write(s)
+          #file.write(str(scores))
+          file.close()
+          predictions = cv_predictions
+          test_datasets = cv_test_datasets
 
         # DEBUG
         print("[DEBUG] model updated and tested")
 
-        # collect results
-        os.remove("train_set.csv")
-        os.remove("test_set.csv")
-        os.remove("second_train_set.csv")
-        rms_scores = []
-        rms_scores.append(rms_score)
-        mae_scores = []
-        mae_scores.append(mae_score)
-        r2_scores = []
-        r2_scores.append(r2_score)
-        aad_scores = []
-        aad_score = (Run.getAAPD(test_set,pred))
-        aad_scores.append(aad_score)
-        scores_all = {'RMSE':rms_score,'RMSE_list':rms_scores,
-                      'MAE': mae_score,'MAE_list':mae_scores,
-                      'R2': r2_score,'R2_list': r2_scores,
-                      'AAD':aad_score,'AAD_list':aad_scores}
-        scores = dict()
-        if metrics == None:  # return default scores (RMSE and R2)
-            scores = {'RMSE':scores_all['RMSE'],
-                      'R2':scores_all['R2'],
-                      'RMSE_list':scores_all['RMSE_list'],
-                      'R2_list':scores_all['R2_list']}
-        else:
-            for m in metrics:
-                if not ( m == 'RMSE' or m == 'MAE' or m == 'AAD' or m == 'R2'):
-                    sys.exit('only supports RMSE, MAE, AAD, AAE, and R2')
-                scores[m] = scores_all[m]
-                list_name = str(m + '_list')
-                scores[list_name] = scores_all[list_name]
-        outliers = Run.get_outliers(test_set, pred)
-        outliers.to_csv('outliers.csv')
-        file = open('FINAL_RESULT.txt', 'w')
-        for key in scores:
-            s = key + " = " + str(scores[key]) + "\n"
-            file.write(s)
-        file.close()
-        predictions = []
-        predictions.append(pred)
-        test_datasets = []
-        test_datasets.append(test_set)
-
         return scores, predictions, test_datasets
-
+          
     def getAAPD(dataset, pred):  # Average absolute percent deviation
         expt = dataset['flashpoint'].tolist()
         sum = 0
