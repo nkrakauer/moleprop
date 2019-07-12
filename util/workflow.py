@@ -137,17 +137,17 @@ class Splitter:
           train_df = dataset[dataset['is_metallic'] != 1]
           print("||||||||||||||||||| metallics will be used as test set|||||||||||||||||||")
         elif not use_metallics and use_silicons and not use_tin and not use_acids:
-          print("using metallics as transfer target")
+          print("using silicons as transfer target")
           test_df = dataset[dataset['is_silicon'] == 1]
           train_df = dataset[dataset['is_silicon'] != 1]
           print("||||||||||||||||||| silicons will be used as test set|||||||||||||||||||")
         elif not use_metallics and not use_silicons and use_tin and not use_acids:
-          print("using metallics as transfer target")
+          print("using tins as transfer target")
           test_df = dataset[dataset['is_tin'] == 1]
           train_df = dataset[dataset['is_tin'] != 1]
           print("||||||||||||||||||| tin will be used as test set|||||||||||||||||||")
         elif not use_metallics and not use_silicons and not use_tin and use_acids:
-          print("using metallics as transfer target")
+          print("using acids as transfer target")
           test_df = dataset[dataset['is_acid'] == 1]
           train_df = dataset[dataset['is_acid'] != 1]
           print("||||||||||||||||||| acids will be used as test set|||||||||||||||||||")
@@ -252,32 +252,21 @@ class Splitter:
         return indices, dataset
 
     def subset_sample(dataset, size):
-      perm = np.random.permutation(dataset.index)
+      perm = np.random.RandomState(seed=size).permutation(dataset.index)
       m = len(dataset.index)
       test_end = m
       train_end = m - size
       train_df = dataset.ix[perm[:train_end]]
       test_df = dataset.ix[perm[train_end:test_end]]
 
-      train_df = integration_helpers.remove_duplicates(train_df) # remove duplicates
-      test_df = integration_helpers.remove_duplicates(test_df) # remove duplicates
-
       for index, row in test_df.iterrows():
-          smi = row['smiles']
-          train_df = train_df[train_df['smiles'] != smi]
-      temp_train_indices = []
-      for index, row in train_df.iterrows():
-        temp_train_indices.append(index)
-      temp_test_indices = []
-      for index, row in test_df.iterrows():
-        temp_test_indices.append(index)
-      test_indices = temp_test_indices
-      train_indices = temp_train_indices
+          test_df.loc[index,'source'] = "random"
 
-      indices = []
-      indices.append((train_indices, test_indices))
+      frames = [train_df, test_df]
+      dataset = pd.concat(frames)
+      dataset.reset_index(drop=True, inplace=True)
 
-      return indices, dataset
+      return dataset
 
     def get_organosilicons(dataset):
         train_df = dataset.copy()
@@ -652,6 +641,7 @@ class Run:
           test_datasets = []
           test_datasets.append(test_set)
         else:
+          latest_checkpt_file = tf.train.latest_checkpoint("./models")
           cv_rms_scores = []
           cv_mae_scores = []
           cv_r2_scores = []
@@ -667,6 +657,7 @@ class Run:
               cv_test_datasets.append(test_set)
               train_set.to_csv('train_set.csv',index = False)
               test_set.to_csv('test_set.csv',index = False)
+              model_obj.restore(latest_checkpt_file)
               if model == 'MPNN':
                   rms_score,mae_score,r2_score,train_scores,pred = Model.update_model_mp(model_obj, "train_set.csv", "test_set.csv")
               elif model == 'graphconv' or model == 'GC' or model == 'GraphConv':
@@ -810,7 +801,7 @@ class Model:
                                            model_dir='models',
                                            learning_rate = model_args['learning_rate'])
           model.fit(train_dataset, nb_epoch = model_args['nb_epoch'])
-          #model.save()
+          model.save()
           return model
         else:
           model = dc.models.GraphConvModel(n_tasks = model_args['n_tasks'],
@@ -871,7 +862,7 @@ class Model:
                                       use_queue = model_args['use_queue'],
                                       mode = model_args['mode'])
           model.fit(train_dataset, nb_epoch = model_args['nb_epoch'])
-          #model.save()
+          model.save()
           return model
         else:
           model = dc.models.MPNNModel(n_tasks = model_args['n_tasks'],
