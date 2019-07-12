@@ -140,17 +140,17 @@ class Splitter:
           print("using metallics as transfer target")
           test_df = dataset[dataset['is_silicon'] == 1]
           train_df = dataset[dataset['is_silicon'] != 1]
-          print("||||||||||||||||||| metallics will be used as test set|||||||||||||||||||")
+          print("||||||||||||||||||| silicons will be used as test set|||||||||||||||||||")
         elif not use_metallics and not use_silicons and use_tin and not use_acids:
           print("using metallics as transfer target")
           test_df = dataset[dataset['is_tin'] == 1]
           train_df = dataset[dataset['is_tin'] != 1]
-          print("||||||||||||||||||| metallics will be used as test set|||||||||||||||||||")
+          print("||||||||||||||||||| tin will be used as test set|||||||||||||||||||")
         elif not use_metallics and not use_silicons and not use_tin and use_acids:
           print("using metallics as transfer target")
           test_df = dataset[dataset['is_acid'] == 1]
           train_df = dataset[dataset['is_acid'] != 1]
-          print("||||||||||||||||||| metallics will be used as test set|||||||||||||||||||")
+          print("||||||||||||||||||| acids will be used as test set|||||||||||||||||||")
         else: # always default to silicons
           print("using silicons as transfer target")
           test_df = dataset[dataset['is_silicon'] == 1]
