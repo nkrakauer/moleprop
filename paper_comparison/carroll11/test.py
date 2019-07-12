@@ -10,7 +10,7 @@ data = loader.load(file_name = 'carroll11.csv',data_dir = '/srv/home/nkrakauer/m
 
 print("About to split")
 splitter = wf.Splitter
-indices,dataset = splitter.k_fold(data, n_splits = 10)
+indices,dataset = splitter.k_fold(data, n_splits = 5)
 
 args = {'nb_epoch': 150,
         'learning_rate':0.001,
@@ -34,7 +34,7 @@ mpnnargs = {'nb_epoch': 250,
         }
 
 print("About to conduct cross validation")
-scores,predictions,test_datasets = wf.Run.cv(dataset,indices, model = 'MPNN',model_args = mpnnargs,n_splits = 10, metrics = ['train','AAD', 'RMSE', 'MAE', 'R2'])
+scores,predictions,test_datasets = wf.Run.cv(dataset,indices, model = 'MPNN',model_args = None,n_splits = 5, metrics = ['train','AAD', 'RMSE', 'MAE', 'R2'])
 
 for key in scores:
     print(key+" = "+str(scores[key]))
