@@ -104,6 +104,8 @@ class Splitter:
             test_group,
             use_metallics = None,
             use_silicons = None,
+            use_tin = None,
+            use_acids = None,
             n_splits = None,
             transfer_learning = None,
             tl_n_splits = None,
@@ -124,15 +126,30 @@ class Splitter:
                      If none, based on frac to do one transfer leaning validaiton
         """
         # remove duplicates in train group.
-        if not use_metallics and not use_silicons:
+        if not use_metallics and not use_silicons and not use_tin and not use_acids:
           print("using group to split datasets")
           test_df = dataset[dataset['source'] == test_group]
           train_df = dataset[dataset['source'] != test_group]
           print("||||||||||||||||||| "+test_group+ " will be used as test set|||||||||||||||||||")
-        elif use_metallics and not use_silicons:
+        elif use_metallics and not use_silicons and not use_tin and not use_acids:
           print("using metallics as transfer target")
           test_df = dataset[dataset['is_metallic'] == 1]
           train_df = dataset[dataset['is_metallic'] != 1]
+          print("||||||||||||||||||| metallics will be used as test set|||||||||||||||||||")
+        elif not use_metallics and use_silicons and not use_tin and not use_acids:
+          print("using metallics as transfer target")
+          test_df = dataset[dataset['is_silicon'] == 1]
+          train_df = dataset[dataset['is_silicon'] != 1]
+          print("||||||||||||||||||| metallics will be used as test set|||||||||||||||||||")
+        elif not use_metallics and not use_silicons and use_tin and not use_acids:
+          print("using metallics as transfer target")
+          test_df = dataset[dataset['is_tin'] == 1]
+          train_df = dataset[dataset['is_tin'] != 1]
+          print("||||||||||||||||||| metallics will be used as test set|||||||||||||||||||")
+        elif not use_metallics and not use_silicons and not use_tin and use_acids:
+          print("using metallics as transfer target")
+          test_df = dataset[dataset['is_acid'] == 1]
+          train_df = dataset[dataset['is_acid'] != 1]
           print("||||||||||||||||||| metallics will be used as test set|||||||||||||||||||")
         else: # always default to silicons
           print("using silicons as transfer target")
@@ -155,14 +172,29 @@ class Splitter:
         Loader.getinfo(dataset, 'Full_dataset')
         raw_test_indices = []
         raw_train_indices = list(range(len(dataset.index)))
-        if not use_metallics and not use_silicons:
+        if not use_metallics and not use_silicons and not use_tin and not use_acids:
             for i in range(len(dataset.index)):
                 if dataset.iloc[i]['source'] == test_group:
                     raw_test_indices.append(i)
                     raw_train_indices.remove(i)
-        elif use_metallics and not use_silicons:
+        elif use_metallics and not use_silicons and not use_tin and not use_acids:
             for i in range(len(dataset.index)):
                 if dataset.iloc[i]['is_metallic'] == 1:
+                    raw_test_indices.append(i)
+                    raw_train_indices.remove(i)
+        elif not use_metallics and use_silicons and not use_tin and not use_acids:
+            for i in range(len(dataset.index)):
+                if dataset.iloc[i]['is_silicon'] == 1:
+                    raw_test_indices.append(i)
+                    raw_train_indices.remove(i)
+        elif not use_metallics and not use_silicons and use_tin and not use_acids:
+            for i in range(len(dataset.index)):
+                if dataset.iloc[i]['is_tin'] == 1:
+                    raw_test_indices.append(i)
+                    raw_train_indices.remove(i)
+        elif not use_metallics and not use_silicons and not use_tin and use_acids:
+            for i in range(len(dataset.index)):
+                if dataset.iloc[i]['is_acid'] == 1:
                     raw_test_indices.append(i)
                     raw_train_indices.remove(i)
         else:
