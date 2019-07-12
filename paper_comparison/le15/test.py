@@ -1,12 +1,12 @@
 import sys
-sys.path.append('../../moleprop/util/')     # change the path to your dir of workflow.py
+sys.path.append('../../util/')     # change the path to your dir of workflow.py
 import workflow as wf
 import pandas as pd
 
 print("About to load")
 loader = wf.Loader
 # TODO need to change file name and dir to your local environment
-data = loader.load(file_name = 'le15_all.csv',data_dir = '/srv/home/xsun256/moleprop/data')
+data = loader.load(file_name = 'le15.csv',data_dir = '/srv/home/nkrakauer/moleprop/data')
 
 print("About to split")
 splitter = wf.Splitter
@@ -22,9 +22,18 @@ args = {'nb_epoch': 80,
         'mode': 'regression'}
 '''
 
-args = None
+mpnnargs = {'nb_epoch': 250,
+            'batch_size': 32,
+            'n_tasks':1,
+            'n_atom_feat': 75,
+            'n_pair_feat': 14,
+            'T':1,
+            'M':1,
+            'dropout':0.0,
+            'learning_rate':0.001
+        }
 print("About to conduct cross validation")
-scores,predictions,test_datasets = wf.Run.cv(dataset,indices, model = 'GC',model_args = args,n_splits = 5, metrics = ['AAD', 'RMSE', 'MAE', 'R2'])
+scores,predictions,test_datasets = wf.Run.cv(dataset,indices, model = 'MPNN',model_args = mpnnargs,n_splits = 5, metrics = ['AAD', 'RMSE', 'MAE', 'R2'])
 
 for key in scores:
     print(key+" = "+str(scores[key]))
