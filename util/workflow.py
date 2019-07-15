@@ -4,23 +4,31 @@ import numpy as np
 import pandas as pd
 import random                                 # for randomly choosing indices from left-out group as test indices
 import statistics as stat
+import integration_helpers                               # for removing duplicates
+import itertools
+import tempfile
+import shutil
+import collections
+import tensorflow as tf
+import deepchem as dc
 import seaborn
+import matplotlib
 import matplotlib.pyplot as plt
 import integration_helpers                               # for removing duplicates
-from sklearn.model_selection import KFold
-from deepchem.trans.transformers import undo_transforms  # for getting real predictions
-import matplotlib
 plt.switch_backend('agg')
 #plt.rc('font', size = 8)                                # change plot font size
 #matplotlib.use('agg')
-
-## pkg needed for DeepChem
-import tensorflow as tf
-import deepchem as dc
+from functools import reduce
+from operator import mul
+from sklearn.model_selection import KFold
+from deepchem.trans.transformers import undo_transforms  # for getting real predictions
 from deepchem.models.tensorgraph.models.graph_models import GraphConvModel
+from deepchem.utils.evaluate import Evaluator
+from deepchem.utils.save import log
+
 
 class Loader:
-    def load(file_name, data_dir = './'):
+    def load(file_name, data_dir = './', getinfo = True):
         """
         load data from .csv file
         """
@@ -33,7 +41,8 @@ class Loader:
             sys.exit(error_msg)
         print("|||||||||||||||||||||Loading " + file_name+ "|||||||||||||||||||||||")
         data = pd.read_csv(data_file) # encoding='latin-1' might be needed
-        Loader.getinfo(data, 'Original_dataset')
+        if getinfo:
+            Loader.getinfo(data, 'Original_dataset')
         return data
 
     def getinfo(data, name = 'getinfo'):
@@ -85,7 +94,7 @@ class Splitter:
         indices, data = Splitter.k_fold(dataset_source, n_splits, shuffle, random_state)
         return indices, data
 
-    def k_fold(dataset, n_splits = 3, shuffle = True, random_state = None):
+    def k_fold(dataset, n_splits = 3, shuffle = True, random_state = None, getinfo = True):
         """
         split data into k-fold
         Return:
@@ -93,7 +102,8 @@ class Splitter:
         new dataset after removing duplicates
         """
         dataset = integration_helpers.remove_duplicates(dataset) # remove duplicates
-        Loader.getinfo(dataset, 'Full_dataset')
+        if getinfo:
+            Loader.getinfo(dataset, 'Full_dataset')
         if shuffle == True:
             random_state = 4396
         kf = KFold(n_splits, shuffle, random_state)
@@ -109,7 +119,8 @@ class Splitter:
             n_splits = None,
             transfer_learning = None,
             tl_n_splits = None,
-            frac = 1):  # leave out group
+            frac = 1,
+           getinfo = True):  # leave out group
         """
         split dataset by leaving out a specific source as test set
     
@@ -169,7 +180,8 @@ class Splitter:
         frames = [train_df, test_df]
         dataset = pd.concat(frames)
         dataset.reset_index(drop=True, inplace=True)
-        Loader.getinfo(dataset, 'Full_dataset')
+        if getinfo:
+            Loader.getinfo(dataset, 'Full_dataset')
         raw_test_indices = []
         raw_train_indices = list(range(len(dataset.index)))
         if not use_metallics and not use_silicons and not use_tin and not use_acids:
@@ -1119,4 +1131,109 @@ class Plotter:
         plt.close()
 
     def interactive_plot(pred_result,true_result):
-        return 0
+        return 0 
+    
+
+class HyperparamOpt(object):
+  """
+  Provides simple hyperparameter search capabilities.
+  """
+
+  def __init__(self, model_class, verbose=True):
+    self.model_class = model_class
+    self.verbose = verbose
+
+  def CVgridsearch (self,
+                    params_dict,
+                    dataset, #added by Sean
+                    n_CV = 5, # added by Sean
+                    use_max=False,
+                    logdir=None):
+    metric = dc.metrics.Metric(dc.metrics.rms_score, np.mean)
+    hyperparams = params_dict.keys()
+    hyperparam_vals = params_dict.values()
+    for hyperparam_list in params_dict.values():
+        assert isinstance(hyperparam_list, collections.Iterable)
+
+    number_combinations = reduce(mul, [len(vals) for vals in hyperparam_vals])
+
+    if use_max:
+        best_validation_score = -np.inf
+    else:
+        best_validation_score = np.inf
+    best_hyperparams = None
+    best_model, best_model_dir = None, None
+    all_scores = {}
+    for ind, hyperparameter_tuple in enumerate(
+        itertools.product(*hyperparam_vals)):
+        valid_scores = []
+        model_params = {}
+        log("==========Fitting model %d/%d==========" % (ind + 1, number_combinations), self.verbose)
+        for hyperparam, hyperparam_val in zip(hyperparams, hyperparameter_tuple):
+            model_params[hyperparam] = hyperparam_val
+        log("hyperparameters: %s" % str(model_params), self.verbose)
+
+        if logdir is not None:
+            model_dir = os.path.join(logdir, str(ind))
+            log("model_dir is %s" % model_dir, self.verbose)
+            try:
+                os.makedirs(model_dir)
+            except OSError:
+                if not os.path.isdir(model_dir):
+                    log("Error creating model_dir, using tempfile directory",
+                        self.verbose)
+                model_dir = tempfile.mkdtemp()
+        else:
+            model_dir = tempfile.mkdtemp()
+
+        indices,new_dataset = Splitter.k_fold(dataset,n_splits = n_CV,getinfo = False)
+        i = 0
+        for train,val in indices:
+            print("\n----------Conducting CV "+ str(i)+"----------")
+            train_dataset = new_dataset.iloc[train]
+            valid_dataset = new_dataset.iloc[val]
+            train_dataset.to_csv('train_set.csv',index = False)
+            valid_dataset.to_csv('valid_set.csv',index = False)
+            flashpoint_tasks = ['flashpoint']
+            loader = dc.data.CSVLoader(tasks = flashpoint_tasks,
+                                        smiles_field="smiles",
+                                        featurizer = dc.feat.ConvMolFeaturizer())
+            train_dataset = loader.featurize("train_set.csv", shard_size=8192)
+            valid_dataset = loader.featurize("valid_set.csv", shard_size=8192)
+            transformers = [
+                dc.trans.NormalizationTransformer(
+                transform_y=True, dataset=train_dataset, move_mean=True) 
+            ]
+            for transformer in transformers:
+                train_dataset = transformer.transform(train_dataset)
+                valid_dataset = transformer.transform(valid_dataset)
+            model = self.model_class(model_params, model_dir)
+            model.fit(train_dataset)
+            evaluator = Evaluator(model, valid_dataset, transformers)
+            multitask_scores = evaluator.compute_model_performance([metric])
+            valid_scores.append(multitask_scores[metric.name])
+            i += 1
+            os.remove("train_set.csv")
+            os.remove("valid_set.csv")
+        valid_score = sum(valid_scores)/n_CV
+        all_scores[str(hyperparameter_tuple)] = valid_score
+        if (use_max and valid_score >= best_validation_score) or (
+              not use_max and valid_score <= best_validation_score):
+            best_validation_score = valid_score
+            best_hyperparams = hyperparameter_tuple
+            if best_model_dir is not None:
+                shutil.rmtree(best_model_dir)
+            best_model_dir = model_dir
+            best_model = model
+        else:
+            shutil.rmtree(model_dir)
+
+        log(
+           "Model %d/%d, Metric %s, Validation set %s: %f" %
+           (ind + 1, number_combinations, metric.name, ind, valid_score),
+           self.verbose)
+        log("\tbest_validation_score so far: %f" % best_validation_score,
+            self.verbose)
+    log("||||||||||Best hyperparameters: %s" % str(best_hyperparams), self.verbose)
+    log("||||||||||validation_score: %f" % best_validation_score, self.verbose)
+    return best_model, best_hyperparams, all_scores
