@@ -1,6 +1,6 @@
 import sys
 sys.path.append('../../../moleprop/util')
-import opt_workflow as wf
+import workflow as wf
 import pandas as pd
 from operator import itemgetter
 from deepchem.models.tensorgraph.models.graph_models import GraphConvModel
