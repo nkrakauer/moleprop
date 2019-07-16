@@ -45,13 +45,15 @@ class Loader:
             Loader.getinfo(data, 'Original_dataset')
         return data
 
-    def getinfo(data, name = 'getinfo'):
+    def getinfo(data, name = 'getinfo',dir_name = 'dataset_info'):
         """
+            name: .txt file name
+            dir_name: dir name
         get information of the dataset
         """
         # Create target Directory if don't exist
-        if not os.path.exists('dataset_info'):
-            os.mkdir('dataset_info')
+        if not os.path.exists(dir_name):
+            os.mkdir(dir_name)
             print("||||||||||||||||Directory dataset_info Created||||||||||||||||")
         output = ("=====================================================\n" +
                   name + " info:\n"+
@@ -74,7 +76,7 @@ class Loader:
                    "Std: " + str(data['flashpoint'].std()) + "\n" +
                    "=====================================================\n")
         print(output)
-        file = open('./dataset_info/'+name+'.txt', 'w')
+        file = open('./d'+dir_name+'/'+name+'.txt', 'w')
         file.write(output)
         file.close()
         
@@ -1034,7 +1036,7 @@ class Model:
         return rms_score, mae_score, r2_score, (train_rms_score,train_r2_score),flattened_pred
 
 class Plotter:
-    def parity_plot(pred, test_dataset, errorbar = False, plot_name = "parity_plot",text = None):
+    def parity_plot(pred, test_dataset, errorbar = False, plot_name = 'parity_plot',dir_name = 'parity_plot',text = None):
         """
         text: dict of text that you want to add to the plot
         pred: List - predicted results
@@ -1042,8 +1044,8 @@ class Plotter:
         errorbar: if true, plot scatter plot for error bars
         """
         # Create target Directory if don't exist
-        if not os.path.exists('parity_plot'):
-            os.mkdir('parity_plot')
+        if not os.path.exists(dir_name):
+            os.mkdir(dir_name)
             print("||||||||||||||||Directory parity_plot Created||||||||||||||||")
         # add pred_result to the test_dataset DataFrame
         test_dataset = pd.DataFrame(test_dataset)
@@ -1091,14 +1093,14 @@ class Plotter:
         plt.ylabel("Predicted")
         plt.xlabel("Experimental")
         seaborn.despine(fg.fig,top=False, right=False)#, left=True, bottom=True,)
-        plt.savefig('./parity_plot/'+plot_name+'.png', dpi = 500,  bbox_inches='tight') 
+        plt.savefig('./'+dir_name+'/'+plot_name+'.png', dpi = 500,  bbox_inches='tight')
         plt.clf()
         plt.close()
 
-    def residual_histogram(pred, dataset, plot_name = 'histogram', text = None):
+    def residual_histogram(pred, dataset, plot_name = 'histogram', dir_name = 'residual_plot',text = None):
         # Create target Directory if don't exist
-        if not os.path.exists('residual_plot'):
-            os.mkdir('residual_plot')
+        if not os.path.exists(dir_name):
+            os.mkdir(dir_name)
             print("||||||||||||||||Directory residual_plot Created||||||||||||||||")
         expt = dataset['flashpoint'].tolist()
         residual = []
@@ -1126,7 +1128,7 @@ class Plotter:
                         t = t+str('%')
                     plt.text(left,top - i,t)
                     i += top/15
-        plt.savefig('./residual_plot/'+plot_name+'.png', dpi = 500, bbox_inches='tight')
+        plt.savefig('./'+dir_name+'/'+plot_name+'.png', dpi = 500, bbox_inches='tight')
         plt.clf()
         plt.close()
 
