@@ -76,7 +76,7 @@ class Loader:
                    "Std: " + str(data['flashpoint'].std()) + "\n" +
                    "=====================================================\n")
         print(output)
-        file = open('./d'+dir_name+'/'+name+'.txt', 'w')
+        file = open('./'+dir_name+'/'+name+'.txt', 'w')
         file.write(output)
         file.close()
         
