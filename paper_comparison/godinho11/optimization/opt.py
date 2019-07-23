@@ -36,3 +36,4 @@ for train,test in ind:
         s =  k + " : " + str(v)+"\n"
         file.write(s)
     file.close()
+    i += 1

@@ -62,10 +62,10 @@ scores_mean = {'RMSE':stat.mean(scores_all['RMSE']),
                'MAE':stat.mean(scores_all['MAE']), 
                'R2':stat.mean(scores_all['R2']), 
                'AAD':stat.mean(scores_all['AAD'])}
-scores_std = {'RMSE':stat.std(scores_all['RMSE']),
-               'MAE':stat.std(scores_all['MAE']),
-               'R2':stat.std(scores_all['R2']),
-               'AAD':stat.std(scores_all['AAD'])}
+scores_std = {'RMSE':stat.stdev(scores_all['RMSE']),
+               'MAE':stat.stdev(scores_all['MAE']),
+               'R2':stat.stdev(scores_all['R2']),
+               'AAD':stat.stdev(scores_all['AAD'])}
 file = open('Final_test_result.txt', 'w')
 for key in scores_mean:
     s = "mean of " + key + " = " + str(scores_mean[key]) + "\n"
