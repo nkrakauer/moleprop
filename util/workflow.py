@@ -1146,6 +1146,7 @@ class HyperparamOpt(object):
   def CVgridsearch (self,
                     params_dict,
                     dataset, #added by Sean
+                    model = 'MPNN',
                     n_CV = 5, # added by Sean
                     use_max=False,
                     logdir=None):
@@ -1164,6 +1165,10 @@ class HyperparamOpt(object):
     best_hyperparams = None
     best_model, best_model_dir = None, None
     all_scores = {}
+    if model == 'MPNN':
+        feat = dc.feat.WeaveFeaturizer()
+    else if model == 'GCNN':
+        feat = dc.feat.ConvMolFeaturizer()
     for ind, hyperparameter_tuple in enumerate(
         itertools.product(*hyperparam_vals)):
         valid_scores = []
@@ -1197,7 +1202,7 @@ class HyperparamOpt(object):
             flashpoint_tasks = ['flashpoint']
             loader = dc.data.CSVLoader(tasks = flashpoint_tasks,
                                         smiles_field="smiles",
-                                        featurizer = dc.feat.ConvMolFeaturizer())
+                                        featurizer = feat)
             train_dataset = loader.featurize("train_set.csv", shard_size=8192)
             valid_dataset = loader.featurize("valid_set.csv", shard_size=8192)
             transformers = [
