@@ -265,20 +265,25 @@ class Splitter:
                         break                
         return indices, dataset
 
-    def subset_sample(dataset, size):
+    def subset_sample(dataset, size, n_splits=3):
       perm = np.random.RandomState(seed=size).permutation(dataset.index)
-      m = len(dataset.index)
-      test_end = m
-      train_end = m - size
-      train_df = dataset.ix[perm[:train_end]]
-      test_df = dataset.ix[perm[train_end:test_end]]
+      random_data = dataset.iloc[perm]
+      print('random sample size')
+      print(random_data.shape)
+      return Splitter.k_fold(random_data, n_splits)
+      #perm = np.random.RandomState(seed=size).permutation(dataset.index)
+      #m = len(dataset.index)
+      #test_end = m
+      #train_end = m - size
+      #train_df = dataset.ix[perm[:train_end]]
+      #test_df = dataset.ix[perm[train_end:test_end]]
 
-      for index, row in test_df.iterrows():
-          test_df.loc[index,'source'] = "random"
+      #for index, row in test_df.iterrows():
+      #    test_df.loc[index,'source'] = "random"
 
-      frames = [train_df, test_df]
-      dataset = pd.concat(frames)
-      dataset.reset_index(drop=True, inplace=True)
+      #frames = [train_df, test_df]
+      #dataset = pd.concat(frames)
+      #dataset.reset_index(drop=True, inplace=True)
 
       return dataset
 
@@ -535,12 +540,15 @@ class Run:
         if metrics == None:  # return default scores (RMSE and R2)
             scores = {'RMSE':scores_all['RMSE'], 
                       'R2':scores_all['R2'],
+                      'MAE':scores_all['MAE'],
                      'train':scores_all['train']}
         else:
             for m in metrics:
                 if not ( m == 'RMSE' or m == 'MAE' or m == 'AAD' or m == 'R2' or m =='train'):
                     sys.exit('only supports RMSE, MAE, AAD, AAE, R2, and train')
                 scores[m] = scores_all[m]
+                list_name = str(m + '_list')
+                scores[list_name] = scores_all[list_name]
         outliers = Run.get_outliers(test_set, pred)
         outliers.to_csv('outliers.csv')
         return scores, pred, test_set
@@ -1167,25 +1175,25 @@ class HyperparamOpt(object):
     all_scores = {}
     if model == 'MPNN':
         feat = dc.feat.WeaveFeaturizer()
-    else if model == 'GCNN':
+    elif model == 'GCNN':
         feat = dc.feat.ConvMolFeaturizer()
     for ind, hyperparameter_tuple in enumerate(
         itertools.product(*hyperparam_vals)):
         valid_scores = []
         model_params = {}
-        log("==========Fitting model %d/%d==========" % (ind + 1, number_combinations), self.verbose)
+        print("==========Fitting model %d/%d==========" % (ind + 1, number_combinations), self.verbose)
         for hyperparam, hyperparam_val in zip(hyperparams, hyperparameter_tuple):
             model_params[hyperparam] = hyperparam_val
         log("hyperparameters: %s" % str(model_params), self.verbose)
 
         if logdir is not None:
             model_dir = os.path.join(logdir, str(ind))
-            log("model_dir is %s" % model_dir, self.verbose)
+            print("model_dir is %s" % model_dir, self.verbose)
             try:
                 os.makedirs(model_dir)
             except OSError:
                 if not os.path.isdir(model_dir):
-                    log("Error creating model_dir, using tempfile directory",
+                    print("Error creating model_dir, using tempfile directory",
                         self.verbose)
                 model_dir = tempfile.mkdtemp()
         else:
