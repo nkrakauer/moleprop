@@ -547,8 +547,6 @@ class Run:
                 if not ( m == 'RMSE' or m == 'MAE' or m == 'AAD' or m == 'R2' or m =='train'):
                     sys.exit('only supports RMSE, MAE, AAD, AAE, R2, and train')
                 scores[m] = scores_all[m]
-                list_name = str(m + '_list')
-                scores[list_name] = scores_all[list_name]
         outliers = Run.get_outliers(test_set, pred)
         outliers.to_csv('outliers.csv')
         return scores, pred, test_set
