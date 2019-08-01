@@ -1,5 +1,5 @@
 import sys
-sys.path.append('../../../moleprop/util')
+sys.path.append('../../../util')
 import workflow as wf
 import pandas as pd
 import statistics as stat
@@ -16,14 +16,29 @@ args = [
         "mode":'regression'}
 ]
 
+mpnn_args = [
+		{
+		 "nb_epoch":200,
+		 "n_tasks":1,
+		 "batch_size":32,
+		 "n_atom_feat":75,
+		 "n_pair_feat":14,
+		 "T":1,
+		 "M":1,
+		 "dropout":0.2,
+		 "learning_rate":0.001,
+		 "mode": "regression"
+		}
+		]
+
 scores_all = {'RMSE':[], 'MAE':[], 'R2':[], 'AAD':[]}
 for i in range(M):
     print("==========Hyperparameter==========")
     print(args[i])
     scores,pred,test_set = wf.Run.custom_validation(train_dataset = '../optimization/train_'+str(i)+'.csv',
                                                      test_dataset = '../optimization/test_'+str(i)+'.csv',
-                                                     model = 'GC', 
-                                                     model_args = args[i],
+                                                     model = 'MPNN', 
+                                                     model_args = mpnn_args[i],
                                                      metrics = ['MAE','RMSE','R2','AAD'])
     for key in scores_all:
         scores_all[key].append(scores[key])
