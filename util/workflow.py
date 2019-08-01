@@ -1178,6 +1178,7 @@ class HyperparamOpt(object):
     for ind, hyperparameter_tuple in enumerate(
         itertools.product(*hyperparam_vals)):
         valid_scores = []
+        train_scores = []
         model_params = {}
         print("==========Fitting model %d/%d==========" % (ind + 1, number_combinations), self.verbose)
         for hyperparam, hyperparam_val in zip(hyperparams, hyperparameter_tuple):
@@ -1221,12 +1222,17 @@ class HyperparamOpt(object):
             model = self.model_class(model_params, model_dir)
             model.fit(train_dataset)
             evaluator = Evaluator(model, valid_dataset, transformers)
+            evaluator_train = Evaluator(model, train_dataset,transformers)
             multitask_scores = evaluator.compute_model_performance([metric])
+            log("train score:",self.verbose)
+            train_multitask_scores = evaluator_train.compute_model_performance([metric])
             valid_scores.append(multitask_scores[metric.name])
+            train_scores.append(train_multitask_scores[metric.name])
             i += 1
             os.remove("train_set.csv")
             os.remove("valid_set.csv")
         valid_score = sum(valid_scores)/n_CV
+        train_score = sum(train_scores)/n_CV
         all_scores[str(hyperparameter_tuple)] = valid_score
         if (use_max and valid_score >= best_validation_score) or (
               not use_max and valid_score <= best_validation_score):
@@ -1240,8 +1246,8 @@ class HyperparamOpt(object):
             shutil.rmtree(model_dir)
 
         log(
-           "Model %d/%d, Metric %s, Validation set %s: %f" %
-           (ind + 1, number_combinations, metric.name, ind, valid_score),
+           "Model %d/%d, Metric %s, Validation set %s: %f, Train set %s: %f" %
+           (ind + 1, number_combinations, metric.name, ind, valid_score, ind, train_score),
            self.verbose)
         log("\tbest_validation_score so far: %f" % best_validation_score,
             self.verbose)
